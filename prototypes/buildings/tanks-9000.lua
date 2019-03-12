@@ -40,7 +40,7 @@ ENTITY {
     two_direction_only = true,
     fluid_box = {
         base_area = 1000,
-        pipe_covers = DATA.Pipes.covers(true, true, true, true),
+        pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {position = {1.0, -4.0}},
             {position = {-1.5, -4.0}},
@@ -64,10 +64,10 @@ ENTITY {
                 shift = util.by_pixel(14, -33)
             }
         },
-        fluid_background = ENTITY.Pipes.empty_sprite(),
-        window_background = ENTITY.Pipes.empty_sprite(),
-        flow_sprite = ENTITY.Pipes.empty_sprite(),
-        gas_flow = ENTITY.Pipes.empty_animation()
+        fluid_background = ENTITY.Sprites.empty_sprite(),
+        window_background = ENTITY.Sprites.empty_sprite(),
+        flow_sprite = ENTITY.Sprites.empty_sprite(),
+        gas_flow = ENTITY.Sprites.empty_animation()
     },
     flow_length_in_ticks = 360,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
