@@ -1,5 +1,3 @@
-require("stdlib/data/data").create_data_globals()
-
 if mods["pyfusionenergy"] then
     require("prototypes/updates/pyfusionenergy-updates")
 end
