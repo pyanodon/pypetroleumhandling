@@ -1,0 +1,5 @@
+*.db
+Thumbs.*
+.build/
+.vscode/
+stdlib_repo/
