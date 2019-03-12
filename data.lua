@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
->>>>>>> 6e16296c4c74023a64d26d023db28e106babafd7
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
 
