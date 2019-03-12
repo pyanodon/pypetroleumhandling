@@ -21,6 +21,7 @@ require("prototypes.buildings.oil-sand-extractor-mk01")
 require("prototypes.buildings.oil-sand-extractor-mk02")
 require("prototypes.buildings.oil-sand-extractor-mk03")
 require("prototypes.buildings.oil-sand-extractor-mk04")
+require("prototypes.buildings.heavy-oil-refinery-mk01")
 require("prototypes.buildings.tanks-10000")
 require("prototypes.buildings.tanks-9000")
 --))
@@ -31,5 +32,7 @@ require("prototypes.recipes.oil-sand-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
+require("prototypes.fluids.bitumen-froth")
+require("prototypes.fluids.bitumen")
 
 --(( OTHERS ))--
