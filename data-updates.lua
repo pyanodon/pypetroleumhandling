@@ -1,4 +1,4 @@
-require("stdlib/data/data").create_data_globals()
+require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
 if mods["pyfusionenergy"] then
     require("prototypes/updates/pyfusionenergy-updates")
@@ -20,4 +20,3 @@ end
 --ADAPTATIONS
 
 --RECIPES UPDATES
-
