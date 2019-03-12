@@ -9,4 +9,5 @@ RECIPE("oil-sand-extractor-mk04"):add_ingredient({type = "item", name = "super-s
 --RECIPES--
 
 RECIPE("oil-sand-slurry"):change_category("hydroclassifier")
+RECIPE("bitumen"):change_category("flotation")
 RECIPE("py-tank-10000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
