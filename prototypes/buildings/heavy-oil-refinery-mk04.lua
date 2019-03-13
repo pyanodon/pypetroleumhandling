@@ -1,39 +1,37 @@
 RECIPE {
     type = "recipe",
-    name = "heavy-oil-refinery-mk01",
+    name = "heavy-oil-refinery-mk04",
     energy_required = 10,
     enabled = false,
     ingredients = {
-        {"advanced-foundry-mk01", 1},
-        {"steel-plate", 40},
-        {"iron-plate", 100},
-        {"steam-engine", 4},
-        {"electronic-circuit", 30},
+        {"heavy-oil-refinery-mk03", 1},
+        {"low-density-structure", 20},
+        {"nbfe-alloy", 20},
     },
     results = {
-        {"heavy-oil-refinery-mk01", 1}
+        {"heavy-oil-refinery-mk04", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk04")
 
 ITEM {
     type = "item",
-    name = "heavy-oil-refinery-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/hor-mk01.png",
+    name = "heavy-oil-refinery-mk04",
+    icon = "__pypetroleumhandling__/graphics/icons/hor-mk04.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-mk04",
     order = "b",
-    place_result = "heavy-oil-refinery-mk01",
+    place_result = "heavy-oil-refinery-mk04",
     stack_size = 10
 }
 
 ENTITY {
     type = "assembling-machine",
-    name = "heavy-oil-refinery-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/hor-mk01.png",
+    name = "heavy-oil-refinery-mk04",
+    icon = "__pypetroleumhandling__/graphics/icons/hor-mk04.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "heavy-oil-refinery-mk01"},
+    minable = {mining_time = 1, result = "heavy-oil-refinery-mk04"},
     fast_replaceable_group = "heavy-oil-refinery",
     max_health = 100,
     corpse = "medium-remnants",
@@ -45,18 +43,18 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"hor"},
-    crafting_speed = 1,
+    crafting_speed = 4,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions = 0.02
     },
-    energy_usage = "500kW",
+    energy_usage = "1100kW",
     ingredient_count = 10,
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk04/off-mk04.png",
                 width = 448,
                 height = 551,
                 frame_count = 1,
@@ -71,13 +69,13 @@ ENTITY {
             south_position = util.by_pixel(0, 62.5),
             east_position = util.by_pixel(0, 62.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk04/bot.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
                 width = 224,
                 height = 224,
-                animation_speed = 0.5
+                animation_speed = 0.1
             }
         },
         {
@@ -86,13 +84,13 @@ ENTITY {
             south_position = util.by_pixel(0, -177.5),
             east_position = util.by_pixel(0, -177.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/top.png",
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk04/top.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
                 width = 224,
                 height = 256,
-                animation_speed = 0.5
+                animation_speed = 0.1
             }
         },
     },

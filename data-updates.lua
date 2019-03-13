@@ -16,6 +16,9 @@ if mods["pyrawores"] then
     require("prototypes/updates/pyrawores-updates")
 end
 
+if mods["pyindustry"] then
+    require("prototypes/updates/pyindustry-updates")
+end
 
 --ADAPTATIONS
 
