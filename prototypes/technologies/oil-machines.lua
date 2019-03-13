@@ -32,3 +32,42 @@ TECHNOLOGY {
         time = 45
     }
 }
+
+TECHNOLOGY {
+    type = "technology",
+    name = "oil-machines-mk03",
+    icon = "__pypetroleumhandling__/graphics/technology/oil-machines-03.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {"oil-machines-mk02"},
+    effects = {},
+    unit = {
+        count = 200,
+        ingredients = {
+            {'automation-science-pack', 1},
+            {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1}
+        },
+        time = 45
+    }
+}
+
+TECHNOLOGY {
+    type = "technology",
+    name = "oil-machines-mk04",
+    icon = "__pypetroleumhandling__/graphics/technology/oil-machines-04.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {"oil-machines-mk03"},
+    effects = {},
+    unit = {
+        count = 200,
+        ingredients = {
+            {'automation-science-pack', 1},
+            {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1},
+            {'utility-science-pack', 1}
+        },
+        time = 45
+    }
+}

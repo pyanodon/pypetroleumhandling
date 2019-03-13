@@ -11,7 +11,7 @@ RECIPE {
     results = {
         {"oil-sand-extractor-mk03", 1}
     }
-}
+}:add_unlock("oil-machines-mk03")
 
 ITEM {
     type = "item",

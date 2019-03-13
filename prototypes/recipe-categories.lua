@@ -7,4 +7,8 @@ data:extend {
         type = "recipe-category",
         name = "hor"
     },
+    {
+        type = "recipe-category",
+        name = "upgrader"
+    },
 }

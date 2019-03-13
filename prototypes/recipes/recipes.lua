@@ -1,35 +1,79 @@
 RECIPE {
     type = "recipe",
-    name = "powdered-ralesia-seeds",
-    category = "ball-mill",
+    name = "tar-to-oil",
+    category = "upgrader",
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "item", name = "ralesia-seeds", amount = 15}
+        {type = "fluid", name = "tar", amount = 300},
     },
     results = {
-        {type = "item", name = "powdered-ralesia-seeds", amount = 1}
+        {type = "fluid", name = "crude-oil", amount = 100},
     },
-    main_product= "powdered-ralesia-seeds",
-    icon = "__pyrawores__/graphics/icons/powdered-ralesia-seeds.png",
+    main_product = "crude-oil",
+    icon = "__base__/graphics/icons/fluid/crude-oil.png",
     icon_size = 32,
-    subgroup = "py-rawores-recipes",
-    order = "j"
-}:add_unlock("machines-mk02")
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk01")
 
 RECIPE {
-    type = 'recipe',
-    name = 'p2s5',
-    category = 'hpf',
-    enabled = 'false',
-    energy_required = 3,
+    type = "recipe",
+    name = "tar-to-scrude",
+    category = "upgrader",
+    enabled = false,
+    energy_required = 4,
     ingredients = {
-        {type = 'item', name = 'stone', amount = 15},
-        {type = 'item', name = 'pyrite', amount = 10},
+        {type = "fluid", name = "tar", amount = 300},
+        {type = "item", name = "chromium", amount = 3},
     },
     results = {
-        {type = 'item', name = 'p2s5', amount = 1},
-        {type = 'item', name = 'iron-ore', amount = 3},
+        {type = "fluid", name = "scrude", amount = 100},
     },
-    main_product = "p2s5",
-}:add_unlock("machines-mk03"):replace_ingredient("stone", "phosphate-rock")
+    main_product = "scrude",
+    icon = "__pypetroleumhandling__/graphics/icons/scrude.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("scrude")
+
+RECIPE {
+    type = "recipe",
+    name = "scrude-to-natural-gas",
+    category = "distilator",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "scrude", amount = 100}, --add vacuum
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "natural-gas", amount = 100},
+    },
+    main_product = "natural-gas",
+    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("scrude")
+
+RECIPE {
+    type = "recipe",
+    name = "scrude-to-light-oil",
+    category = "distilator",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "scrude", amount = 100},
+        {type = "fluid", name = "water", amount = 200},
+    },
+    results = {
+        {type = "fluid", name = "light-oil", amount = 100},
+        {type = "fluid", name = "dirty-water", amount = 100},
+    },
+    main_product = "light-oil",
+    icon = "__base__/graphics/icons/fluid/light-oil.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("scrude")

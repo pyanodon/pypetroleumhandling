@@ -4,10 +4,11 @@ RECIPE {
     energy_required = 10,
     enabled = false,
     ingredients = {
+        {"advanced-foundry-mk01", 1},
+        {"steel-plate", 40},
+        {"iron-plate", 100},
         {"steam-engine", 4},
-        {"steel-plate", 10},
-        {"lab", 1},
-        {"electronic-circuit", 3},
+        {"electronic-circuit", 30},
     },
     results = {
         {"heavy-oil-refinery-mk01", 1}
@@ -33,7 +34,7 @@ ENTITY {
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "heavy-oil-refinery-mk01"},
-    fast_replaceable_group = "heavy-oil-refinery-mk01",
+    fast_replaceable_group = "heavy-oil-refinery",
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
@@ -65,10 +66,10 @@ ENTITY {
     },
     working_visualisations = {
         {
-            north_position = util.by_pixel(0, -32),
-            west_position = util.by_pixel(0, -32),
-            south_position = util.by_pixel(0, -32),
-            east_position = util.by_pixel(0, -32),
+            north_position = util.by_pixel(0, 62.5),
+            west_position = util.by_pixel(0, 62.5),
+            south_position = util.by_pixel(0, 62.5),
+            east_position = util.by_pixel(0, 62.5),
             animation = {
                 filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
                 --priority = "low",
@@ -80,10 +81,10 @@ ENTITY {
             }
         },
         {
-            north_position = util.by_pixel(0, -32),
-            west_position = util.by_pixel(0, -32),
-            south_position = util.by_pixel(0, -32),
-            east_position = util.by_pixel(0, -32),
+            north_position = util.by_pixel(0, -177.5),
+            west_position = util.by_pixel(0, -177.5),
+            south_position = util.by_pixel(0, -177.5),
+            east_position = util.by_pixel(0, -177.5),
             animation = {
                 filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/top.png",
                 --priority = "low",
@@ -131,8 +132,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/hor.ogg", volume = 1.0},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/hor.ogg", volume = 0.7},
+        sound = {filename = "__pypetroleumhandling__/sounds/hor.ogg", volume = 1.7},
+        idle_sound = {filename = "__pypetroleumhandling__/sounds/hor.ogg", volume = 1.3},
         apparent_volume = 2.5
     }
 }
