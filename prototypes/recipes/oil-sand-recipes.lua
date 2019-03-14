@@ -72,7 +72,7 @@ RECIPE {
     main_product = "tar",
     icon = "__pycoalprocessing__/graphics/icons/tar.png",
     icon_size = 32,
-    subgroup = "py-fluids",
+    subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")
 
@@ -92,6 +92,6 @@ RECIPE {
     main_product = "sulfur",
     icon = "__base__/graphics/icons/sulfur.png",
     icon_size = 32,
-    subgroup = "py-petroleum-handling-oil-sand-items",
+    subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")

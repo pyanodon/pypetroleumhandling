@@ -13,7 +13,7 @@ RECIPE {
         {type = "fluid", name = "oil-sand-slurry", amount = 100}
     },
     main_product = "oil-sand-slurry",
-    subgroup = "py-petroleum-handling-fluids",
+    subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("oil-sands")
 
@@ -29,6 +29,6 @@ FLUID {
     gas_temperature = 15,
     pressure_to_speed_ratio = 0.4,
     flow_to_energy_ratio = 0.59,
-    subgroup = "py-rawores-fluids",
+    subgroup = "py-petroleum-handling-fluids",
     order = "c"
 }

@@ -52,11 +52,29 @@ data:extend {
     group = "py-petroleum-handling",
     order = "f-a"
 },
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-scrude-recipes",
+    group = "py-petroleum-handling",
+    order = "g-a"
+},
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-recipes",
+    group = "py-petroleum-handling",
+    order = "h-a"
+},
 ------------ITEMS----------
 {
     type = "item-subgroup",
     name = "py-petroleum-handling-oil-sand-items",
     group = "py-petroleum-handling",
     order = "e-a"
+},
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-items",
+    group = "py-petroleum-handling",
+    order = "e-b"
 },
 }
