@@ -11,4 +11,8 @@ data:extend {
         type = "recipe-category",
         name = "upgrader"
     },
+    {
+        type = "recipe-category",
+        name = "cracker"
+    },
 }

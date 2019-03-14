@@ -12,6 +12,9 @@ RECIPE("upgrader-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amou
 
 RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('oil-sands')
 RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+RECIPE("scrude-to-methane"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
 
 
 ----EXCLUSIVE RECIPES----
@@ -23,7 +26,7 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "bitumen", amount = 300},
+        {type = "fluid", name = "bitumen", amount = 500},
         {type = "item", name = "agzn-alloy", amount = 1},
     },
     results = {
@@ -32,7 +35,7 @@ RECIPE {
     main_product = "vanadium-oxide",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
     icon_size = 32,
-    subgroup = "py-rawores-fluids",
+    subgroup = "py-fusion-items",
     order = "a"
 }:add_unlock("oil-machines-mk03")
 
@@ -43,7 +46,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "tar", amount = 400},
+        {type = "fluid", name = "tar", amount = 4000},
         {type = "item", name = "agzn-alloy", amount = 2},
     },
     results = {
@@ -52,6 +55,6 @@ RECIPE {
     main_product = "vanadium-oxide",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
     icon_size = 32,
-    subgroup = "py-rawores-fluids",
+    subgroup = "py-fusion-items",
     order = "a"
 }:add_unlock("oil-machines-mk03")

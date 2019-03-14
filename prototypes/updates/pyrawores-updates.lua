@@ -22,6 +22,7 @@ RECIPE("bitumen-to-oil"):add_ingredient({type = "fluid", name = "hydrogen", amou
 RECIPE("bitumen-to-oil2"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
 RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
 RECIPE("tar-to-scrude"):replace_ingredient("chromium", "duralumin")
+RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate")
 
 
 ----EXCLUSIVE RECIPES----
@@ -42,7 +43,7 @@ RECIPE {
     main_product = "sncr-alloy",
     icon = "__pypetroleumhandling__/graphics/icons/sncr-alloy.png",
     icon_size = 32,
-    subgroup = "py-petroleum-handling-oil-sand-recipes",
+    subgroup = "py-rawores-recipes",
     order = "a"
 }:add_unlock("oil-sands")
 
@@ -62,7 +63,7 @@ RECIPE {
     main_product = "ore-nickel",
     icon = "__pyrawores__/graphics/icons/ore-nickel.png",
     icon_size = 32,
-    subgroup = "py-rawores-nickel",
+    subgroup = "py-rawores-ores",
     order = "a"
 }:add_unlock("oil-sands"):replace_ingredient("hydrogen", "propene")
 
@@ -81,7 +82,7 @@ RECIPE {
     main_product = "nitrogen",
     icon = "__pyrawores__/graphics/icons/nitrogen.png",
     icon_size = 32,
-    subgroup = "py-rawores-fluids",
+    subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")
 
@@ -101,6 +102,47 @@ RECIPE {
     main_product = "ore-nickel",
     icon = "__pyrawores__/graphics/icons/ore-nickel.png",
     icon_size = 32,
-    subgroup = "py-rawores-nickel",
+    subgroup = "py-rawores-ores",
     order = "a"
 }:add_unlock("oil-machines-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "scrude-to-hydrogen",
+    category = "distilator",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "scrude", amount = 100}, --add vacuum
+        {type = "item", name = "sncr-alloy", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "hydrogen", amount = 400},
+    },
+    main_product = "hydrogen",
+    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("scrude"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+
+RECIPE {
+    type = "recipe",
+    name = "extract-nitrogen-scrude",
+    category = "desulfurization",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "scrude", amount = 100},
+        {type = "item", name = "nickel-plate", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "nitrogen", amount = 100},
+        {type = "item", name = "sulfur", amount = 1},
+    },
+    main_product = "nitrogen",
+    icon = "__pyrawores__/graphics/icons/nitrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("scrude")

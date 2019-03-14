@@ -31,6 +31,7 @@ require("prototypes.buildings.upgrader-mk03")
 require("prototypes.buildings.upgrader-mk04")
 require("prototypes.buildings.tanks-10000")
 require("prototypes.buildings.tanks-9000")
+require("prototypes.buildings.cracker-mk01")
 --))
 
 --(( RECIPES ))--
@@ -44,5 +45,6 @@ require("prototypes.fluids.bitumen")
 require("prototypes.fluids.scrude")
 require("prototypes.fluids.fuel-oil")
 require("prototypes.fluids.natural-gas")
+require("prototypes.fluids.naphtha")
 
 --(( OTHERS ))--

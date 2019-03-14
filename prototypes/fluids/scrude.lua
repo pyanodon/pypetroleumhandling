@@ -14,7 +14,7 @@ RECIPE {
     main_product = "scrude",
     icon = "__pypetroleumhandling__/graphics/icons/scrude.png",
     icon_size = 32,
-    subgroup = "py-fluids",
+    subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
 
@@ -30,6 +30,6 @@ FLUID {
     gas_temperature = 15,
     pressure_to_speed_ratio = 0.4,
     flow_to_energy_ratio = 0.59,
-    subgroup = "py-rawores-fluids",
+    subgroup = "py-petroleum-handling-fluids",
     order = "c"
 }
