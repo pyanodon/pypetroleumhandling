@@ -49,3 +49,4 @@ require("prototypes.fluids.natural-gas")
 require("prototypes.fluids.naphtha")
 
 --(( OTHERS ))--
+global_item_replacer("iron-gear-wheel","small-parts-01","small-parts-01")
