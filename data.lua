@@ -1,5 +1,6 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-require("functions/functions")
+
+local GIR = require("functions/functions")
 
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
@@ -49,4 +50,4 @@ require("prototypes.fluids.natural-gas")
 require("prototypes.fluids.naphtha")
 
 --(( OTHERS ))--
-global_item_replacer("iron-gear-wheel","small-parts-01","small-parts-01")
+GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
