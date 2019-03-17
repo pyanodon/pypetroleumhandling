@@ -15,4 +15,8 @@ data:extend {
         type = "recipe-category",
         name = "cracker"
     },
+    {
+        type = "recipe-category",
+        name = "reformer"
+    },
 }

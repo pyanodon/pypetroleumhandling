@@ -6,6 +6,7 @@ RECIPE {
     ingredients = {
         {"advanced-foundry-mk01", 1},
         {"steel-plate", 40},
+        {"small-parts-01", 10},
         {"iron-plate", 100},
         {"steam-engine", 4},
         {"electronic-circuit", 30},
@@ -128,7 +129,7 @@ ENTITY {
             base_level = 1,
             pipe_connections = {{type = "output", position = {7.0, 0}}}
         },
-        off_when_no_fluid_recipe = false
+        off_when_no_fluid_recipe = true,
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {

@@ -1,5 +1,4 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-
 local GIR = require("functions/functions")
 
 require("prototypes/item-groups")
@@ -34,6 +33,10 @@ require("prototypes.buildings.upgrader-mk04")
 require("prototypes.buildings.tanks-10000")
 require("prototypes.buildings.tanks-9000")
 require("prototypes.buildings.cracker-mk01")
+require("prototypes.buildings.reformer-mk01")
+require("prototypes.buildings.reformer-mk02")
+require("prototypes.buildings.reformer-mk03")
+require("prototypes.buildings.reformer-mk04")
 --))
 
 --(( RECIPES ))--
@@ -48,6 +51,9 @@ require("prototypes.fluids.scrude")
 require("prototypes.fluids.fuel-oil")
 require("prototypes.fluids.natural-gas")
 require("prototypes.fluids.naphtha")
+require("prototypes.fluids.polybutadiene")
+require("prototypes.fluids.hot-air")
+
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})

@@ -33,3 +33,20 @@ TECHNOLOGY {
         time = 45
     }
 }
+
+TECHNOLOGY {
+    type = "technology",
+    name = "rubber",
+    icon = "__pypetroleumhandling__/graphics/technology/rubber.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {"coal-processing-1", "oil-machines-mk01"},
+    effects = {},
+    unit = {
+        count = 200,
+        ingredients = {
+            {"automation-science-pack", 1},
+        },
+        time = 45
+    }
+}

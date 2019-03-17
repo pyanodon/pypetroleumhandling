@@ -6,6 +6,23 @@ RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "super-a
 RECIPE("heavy-oil-refinery-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amount = 30}):add_ingredient({type = "item", name = "wall-shield", amount = 5}):add_ingredient({type = "item", name = "science-coating", amount = 2}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("upgrader-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 15})
 RECIPE("upgrader-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amount = 10}):add_ingredient({type = "item", name = "wall-shield", amount = 4}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 3})
+RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "sc-unit", amount = 1}):add_ingredient({type = "item", name = "boron-carbide", amount = 15})
+RECIPE("reformer-mk04"):add_ingredient({type = "item", name = "wall-shield", amount = 2}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
+
+RECIPE("automated-screener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("bio-reactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("centrifugal-pan"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
+RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-03", amount = 50})
+RECIPE("gas-separator"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("grease-table"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("grease-table"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("jig"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("nmf"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("secondary-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("thickener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("xyhiphoe-pool"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 
 
 ----RECIPES----
@@ -14,6 +31,8 @@ RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('oil-sands')
 RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("scrude-to-methane"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
 
 
