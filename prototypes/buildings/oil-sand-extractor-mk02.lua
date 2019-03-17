@@ -9,6 +9,7 @@ RECIPE {
         {"concrete", 20},
         {"plastic-bar", 40},
         {"niobium-plate", 30},
+        {"small-parts-02", 20},
     },
     results = {
         {"oil-sand-extractor-mk02", 1}

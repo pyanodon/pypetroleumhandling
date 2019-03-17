@@ -1,3 +1,6 @@
+RECIPE("reformer-mk02"):add_ingredient({type = "item", name = "py-tank-5000", amount = 2})
+
+
 RECIPE {
     type = "recipe",
     name = "bitumen-to-asphalt",
@@ -17,3 +20,4 @@ RECIPE {
     subgroup = "py-tiles",
     order = "a-asphalt-b"
 }:add_unlock("oil-sands")
+

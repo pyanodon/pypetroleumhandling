@@ -8,7 +8,7 @@ RECIPE {
         {"iron-plate", 50},
         {"steam-engine", 5},
         {"electronic-circuit", 20},
-        {"iron-gear-wheel", 20},
+        {"small-parts-01", 20},
     },
     results = {
         {"cracker-mk01", 1}

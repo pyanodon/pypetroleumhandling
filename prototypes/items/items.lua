@@ -64,3 +64,58 @@ ITEM {
     order = "a",
     stack_size = 500
 }
+
+ITEM {
+    type = "item",
+    name = "ticl4",
+    icon = "__pypetroleumhandling__/graphics/icons/ticl4.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "carbon-black",
+    icon = "__pypetroleumhandling__/graphics/icons/carbon-black.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "bolts",
+    icon = "__pypetroleumhandling__/graphics/icons/bolts.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "rubber",
+    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "belt",
+    icon = "__pypetroleumhandling__/graphics/icons/belt.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}

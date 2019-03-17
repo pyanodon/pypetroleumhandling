@@ -6,6 +6,7 @@ RECIPE {
     ingredients = {
         {"heavy-oil-refinery-mk01", 1},
         {"advanced-circuit", 5},
+        {"small-parts-02", 20},
         {"concrete", 40},
         {"pipe", 40},
         {"niobium-plate", 10},

@@ -6,6 +6,16 @@ RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "heavy-f
 RECIPE("heavy-oil-refinery-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "var-josephson-junction", amount = 10})
 RECIPE("upgrader-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 15}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20})
 RECIPE("upgrader-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "nv-center", amount = 2})
+RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 50}):add_ingredient({type = "item", name = "biopolymer", amount = 35}):add_ingredient({type = "item", name = "aerogel", amount = 15})
+RECIPE("reformer-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
+
+RECIPE("cadaveric-arum"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
+RECIPE("electronics-factory"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
+RECIPE("fbreactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
+RECIPE("kicalk-plantation"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
+RECIPE("nano-assembler"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
+RECIPE("particle-accelerator"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
+RECIPE("pulp-mill"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
 
 
 ----RECIPES----
