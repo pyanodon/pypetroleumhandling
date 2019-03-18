@@ -19,4 +19,8 @@ data:extend {
         type = "recipe-category",
         name = "reformer"
     },
+    {
+        type = "recipe-category",
+        name = "rhe"
+    },
 }
