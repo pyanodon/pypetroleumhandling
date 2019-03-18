@@ -42,6 +42,8 @@ RECIPE("impact-crusher-mk02"):add_ingredient({type = "item", name = "small-parts
 RECIPE("leaching-station-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
 RECIPE("scrubber-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
 RECIPE("wet-scrubber-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
+RECIPE("py-logistic-robot-02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
+RECIPE("py-construction-robot-02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
 
 RECIPE("bof-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("casting-unit-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
