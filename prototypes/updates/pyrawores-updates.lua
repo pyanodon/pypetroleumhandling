@@ -16,7 +16,10 @@ RECIPE("reformer-mk01"):add_ingredient({type = "item", name = "lead-plate", amou
 RECIPE("reformer-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("reformer-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 20})
-
+RECIPE("cracker-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "nichrome", amount = 10})
+RECIPE("cracker-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
+RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("cracker-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -66,6 +69,7 @@ RECIPE("small-parts-02"):add_ingredient({type = "item", name = "aluminium-plate"
 RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate", amount = 2}):add_ingredient({type = "item", name = "glass", amount = 2}):add_ingredient({type = "item", name = "titanium-plate", amount = 3}):add_ingredient({type = "item", name = "tin-plate", amount = 3}):replace_ingredient("steel-plate", "super-steel")
 RECIPE("polybutadiene"):replace_ingredient("copper-plate", "titanium-plate")
 RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4")
+RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
 
 
 ----EXCLUSIVE RECIPES----
@@ -229,3 +233,63 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("coal-processing-1")
+
+RECIPE {
+    type = "recipe",
+    name = "plastic-bar-02",
+    category = "cracker",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+        {type = "fluid", name = "naphtha", amount = 50}, -- propene
+        {type = "item", name = "ticl4", amount = 2},
+    },
+    results = {
+        {type = "item", name = "plastic-bar", amount = 5},
+    },
+    main_product = "plastic-bar",
+    icon = "__base__/graphics/icons/plastic-bar.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("plastics"):replace_ingredient("naphtha", "propene"):change_category("fbreactor")
+
+RECIPE {
+    type = "recipe",
+    name = "aromatics-to-petgas",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "aromatics", amount = 100},
+        {type = "fluid", name = "hydrogen", amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "petroleum-gas", amount = 100},
+    },
+    main_product = "petroleum-gas",
+    icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("fuel-production")
+
+RECIPE {
+    type = "recipe",
+    name = "naphtha-to-h2",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "fluid", name = "steam", amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "hydrogen", amount = 300},
+    },
+    main_product = "hydrogen",
+    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("coal-processing-2")

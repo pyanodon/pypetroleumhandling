@@ -1,3 +1,22 @@
+RECIPE {
+    type = "recipe",
+    name = "hot-air",
+    category = "rhe",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+        {type = "item", name = "stone-brick", amount = 10},
+    },
+    results = {
+        {type = "fluid", name = "hot-air", amount = 300},
+    },
+    main_product = "hot-air",
+    icon = "__pypetroleumhandling__/graphics/icons/hot-air.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("coal-processing-1")
+
 FLUID {
     type = "fluid",
     name = "hot-air",

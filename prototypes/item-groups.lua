@@ -31,6 +31,12 @@ data:extend {
         group = "py-petroleum-handling",
         order = "a-d"
     },
+    {
+        type = "item-subgroup",
+        name = "py-petroleum-handling-buildings-extras",
+        group = "py-petroleum-handling",
+        order = "a-e"
+    },
     ------------ORES----------
     {
         type = "item-subgroup",

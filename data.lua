@@ -4,7 +4,6 @@ local GIR = require("functions/functions")
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
 
---require('prototypes/recipes/recipes')
 require('prototypes/items/items')
 
 
@@ -33,14 +32,19 @@ require("prototypes.buildings.upgrader-mk04")
 require("prototypes.buildings.tanks-10000")
 require("prototypes.buildings.tanks-9000")
 require("prototypes.buildings.cracker-mk01")
+require("prototypes.buildings.cracker-mk02")
+require("prototypes.buildings.cracker-mk03")
+require("prototypes.buildings.cracker-mk04")
 require("prototypes.buildings.reformer-mk01")
 require("prototypes.buildings.reformer-mk02")
 require("prototypes.buildings.reformer-mk03")
 require("prototypes.buildings.reformer-mk04")
+require("prototypes.buildings.rhe")
 --))
 
 --(( RECIPES ))--
 require("prototypes.recipes.recipes")
+require("prototypes.recipes.improved-recipes")
 require("prototypes.recipes.oil-sand-recipes")
 
 --(( FLUIDs ))--
@@ -53,6 +57,7 @@ require("prototypes.fluids.natural-gas")
 require("prototypes.fluids.naphtha")
 require("prototypes.fluids.polybutadiene")
 require("prototypes.fluids.hot-air")
+require("prototypes.fluids.styrene")
 
 
 --(( OTHERS ))--
