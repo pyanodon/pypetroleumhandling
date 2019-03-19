@@ -212,50 +212,142 @@ local brecipeset = {}
 	end
 end
 
-duplicatechecker = function()
-local AR = table.deepcopy(data.raw.recipe)
-local recipeswithdups = {}
-for i, recipe in pairs(AR) do
-	local ings = {}
-	if recipe.ingredients ~= nil then
-		for a, ing in pairs(recipe.ingredients) do
-			for b, INGS in pairs(ings) do
-				if ing.name ~= INGS then
-				log("this working")
-					table.insert(ings, ing.name)
-				elseif ing.name == INGS then
-					table.insert(recipeswithdups, recipe.name)
-				end
-				log(serpent.block(ings))
-			end
+--add 50 hot-air ingredient, output +2
+function overrides.hotairrecipes()
+--gather recipes for the advanced-foundry
+local recipes = table.deepcopy(data.raw.recipe)
+local afrecipes = {}
+local afrcount = 0
+local altrec = 0
+	for r, recipe in pairs(recipes) do
+		if recipe.category == "advanced-foundry" then
+			table.insert(afrecipes,recipe)
+		end
+		if recipe.category == "smelting" then
+			table.insert(afrecipes,recipe)
 		end
 	end
-	if recipe.normal or recipe.expensive then
-		if recipe.normal.ingredients ~= nil then
-			for a, ing in pairs(recipe.normal.ingredients) do
-				for b, INGS in pairs(ings) do
-					if ing.name ~= INGS then
-						table.insert(ings, ing.name)
-					elseif ing.name == INGS then
-						table.insert(recipeswithdups, recipe.name)
-					end
+--cycle thru afrecipes to make changes
+	for r,recipe in pairs(afrecipes) do
+		afrcount=afrcount+1
+		--add ingredient
+		log(serpent.block(recipe))
+		if recipe.normal == nil and recipe.expensive == nil then 
+			if recipe.ingredients[1] ~= nil then
+				if recipe.ingredients[1].name == nil then
+					local ing = recipe.ingredients
+					recipe.ingredients = {}
+					table.insert(recipe.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
+					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				elseif recipe.ingredients[1].name then
+					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				end
+			elseif recipe.ingredients[2] ~= nil then
+				if recipe.ingredients[2].name == nil then
+					local ing = recipe.ingredients
+					recipe.ingredients = {}
+					table.insert(recipe.ingredients, {type = "item", name = ing[2][1], amount = ing[2][2]})
+					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				elseif recipe.ingredients[2].name then
+					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				end
+			end
+			if type(recipe.result) == "string" then
+				local res = recipe.result
+				recipe.result=nil
+				recipe.results={{type="item",name=res,amount=3}}
+			elseif recipe.results then
+				if recipe.results[1].name == nil then
+					local res = recipe.results
+					recipe.results = {}
+					table.insert(recipe.results,{type = "item", name = res[1][1], amount = (res[1][2] + 2)})
+				elseif recipe.results[1].name then
+					local resnum = recipe.results[1].amount + 2
+					recipe.results[1].amount = resnum
 				end
 			end
 		end
-		if recipe.expensive.ingredients ~= nil then
-			for a, ing in pairs(recipe.expensive.ingredients) do
-				for b, INGS in pairs(ings) do
-					if ing.name ~= INGS then
-						table.insert(ings, ing.name)
-					elseif ing.name == INGS then
-						table.insert(recipeswithdups, recipe.name)
-					end
+		if recipe.normal or recipe.expensive then
+			if recipe.normal then
+				if recipe.normal.ingredients[1].name == nil then
+					local ing = recipe.normal.ingredients
+					recipe.normal.ingredients = {}
+					table.insert(recipe.normal.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
+					table.insert(recipe.normal.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				else
+					table.insert(recipe.normal.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				end
+				if type(recipe.normal.result) == "string" then
+					local res = recipe.normal.result
+					recipe.normal.result = nil
+					local rtab = {type = "item", name = res, amount = 3}
+					recipe.normal.results={}
+					table.insert(recipe.normal.results,rtab)
 				end
 			end
+			if recipe.expensive then
+				if recipe.expensive.ingredients[1].name == nil then
+					local ing = recipe.expensive.ingredients
+					recipe.expensive.ingredients = {}
+					table.insert(recipe.expensive.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
+					table.insert(recipe.expensive.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				else
+					table.insert(recipe.expensive.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				end
+				if type(recipe.expensive.result) == "string" then
+					local res = recipe.expensive.result
+					recipe.expensive.result = nil
+					local rtab = {type = "item", name = res, amount = 3}
+					recipe.expensive.results={}
+					table.insert(recipe.expensive.results,rtab)
+				end
+			end
+		end
+		log(serpent.block(recipe))
+		if recipe.results then
+			RECIPE {
+			type = "recipe",
+			name = "hotair-" .. recipe.name,
+			category = "hot-air-advanced-foundry",
+			enabled = true,
+			energy_required = recipe.energy_required,
+			ingredients = recipe.ingredients,
+			results = recipe.results,
+			icon = recipe.icon,
+			icons = recipe.icons,
+			icon_size = 32,
+			main_product = recipe.main_product or nil
+			}
+		altrec=altrec+1
+		end
+		if recipe.normal or recipe.expensive then
+			RECIPE {
+				type = "recipe",
+				name = "hotair-" .. recipe.name,
+				category = "hot-air-advanced-foundry",
+				normal = {
+					enabled = true,
+					energy_required = recipe.expensive.energy_required,
+					ingredients = recipe.normal.ingredients,
+					results = recipe.normal.results,
+					},
+				expensive = {
+					enabled = true,
+					energy_required = recipe.expensive.energy_required,
+					ingredients = recipe.expensive.ingredients,
+					results = recipe.expensive.results,
+					},
+				icon = recipe.icon,
+				icons = recipe.icons,
+				icon_size = 32,
+				main_product = recipe.main_product or nil
+				}
+		altrec=altrec+1
 		end
 	end
-end
---log(serpent.block(recipeswithdups))
+--log(serpent.block(afrecipes))
+--log(afrcount)
+--log(altrec)
 end
 
 return overrides
