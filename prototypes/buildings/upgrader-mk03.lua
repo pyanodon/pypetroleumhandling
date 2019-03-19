@@ -8,6 +8,7 @@ RECIPE {
         {"processing-unit", 15},
         {"concrete", 40},
         {"engine-unit", 4},
+        {"small-parts-03", 30},
     },
     results = {
         {"upgrader-mk03", 1}

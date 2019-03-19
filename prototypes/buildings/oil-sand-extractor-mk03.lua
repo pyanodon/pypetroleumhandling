@@ -7,6 +7,7 @@ RECIPE {
         {"oil-sand-extractor-mk02", 1},
         {"processing-unit", 25},
         {"electric-engine-unit", 10},
+        {"small-parts-03", 30},
     },
     results = {
         {"oil-sand-extractor-mk03", 1}

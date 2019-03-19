@@ -9,6 +9,7 @@ RECIPE {
         {"pipe", 30},
         {"engine-unit", 4},
         {"electronic-circuit", 30},
+        {"small-parts-01", 10},
     },
     results = {
         {"upgrader-mk01", 1}

@@ -15,4 +15,16 @@ data:extend {
         type = "recipe-category",
         name = "cracker"
     },
+    {
+        type = "recipe-category",
+        name = "reformer"
+    },
+    {
+        type = "recipe-category",
+        name = "rhe"
+    },
+	{
+        type = "recipe-category",
+        name = "hot-air-advanced-foundry"
+    },
 }

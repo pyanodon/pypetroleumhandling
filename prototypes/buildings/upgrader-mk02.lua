@@ -8,6 +8,7 @@ RECIPE {
         {"advanced-circuit", 10},
         {"plastic-bar", 40},
         {"niobium-plate", 20},
+        {"small-parts-02", 20},
     },
     results = {
         {"upgrader-mk02", 1}
