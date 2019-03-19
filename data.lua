@@ -62,3 +62,14 @@ require("prototypes.fluids.styrene")
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
+
+--(( Shortcut keys ))--
+local recipeselect=
+	{
+	type = "custom-input",
+	name = "recipe-selector",
+	key_sequence = "SHIFT + R",
+	consuming = "none"
+	}
+	
+data:extend{recipeselect}
