@@ -2,6 +2,7 @@ RECIPE {
     type = "recipe",
     name = "hot-air",
     category = "rhe",
+    hidden = true,
     enabled = false,
     energy_required = 2,
     ingredients = {

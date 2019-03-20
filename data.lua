@@ -15,6 +15,7 @@ require("prototypes.ores.oil-mk01")
 --(( Technology ))--
 require("prototypes.technologies.technologies")
 require("prototypes.technologies.oil-machines")
+require("prototypes.technologies.tholins")
 
 
 --(( BUILDINGS ))--
@@ -42,6 +43,10 @@ require("prototypes.buildings.reformer-mk03")
 require("prototypes.buildings.reformer-mk04")
 require("prototypes.buildings.rhe")
 require("prototypes.buildings.oil-derrick-mk01")
+require("prototypes.buildings.tholin-atm-mk01")
+require("prototypes.buildings.tholin-atm-mk02")
+require("prototypes.buildings.tholin-atm-mk03")
+require("prototypes.buildings.tholin-atm-mk04")
 --))
 
 --(( RECIPES ))--
@@ -61,6 +66,7 @@ require("prototypes.fluids.polybutadiene")
 require("prototypes.fluids.hot-air")
 require("prototypes.fluids.styrene")
 require("prototypes.fluids.btx")
+require("prototypes.fluids.tholins")
 
 
 --(( OTHERS ))--

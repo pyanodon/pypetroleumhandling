@@ -31,4 +31,8 @@ data:extend {
         type = "recipe-category",
         name = "hot-air-advanced-foundry"
     },
+    {
+        type = "recipe-category",
+        name = "tholin-atm"
+    },
 }
