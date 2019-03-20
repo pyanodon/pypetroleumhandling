@@ -2,13 +2,13 @@ RECIPE {
     type = "recipe",
     name = "oil-derrick-mk01",
     energy_required = 15,
-    enabled = false,
+    enabled = true,
     ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"engine-unit", 10},
+        {"steam-engine", 1},
+        {"iron-plate", 30},
+        {"electronic-circuit", 5},
         {"small-parts-01", 10},
+        {"pipe", 10},
     },
     results = {
         {"oil-derrick-mk01", 1}
@@ -66,7 +66,7 @@ ENTITY {
     },
     energy_usage = "90kW",
     mining_speed = 1,
-    resource_searching_radius = 2.49,
+    resource_searching_radius = 0.49,
     vector_to_place_result = {0, -2.65},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
