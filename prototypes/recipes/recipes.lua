@@ -208,7 +208,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "scrude-to-naphta",
+    name = "scrude-to-naphtha",
     category = "cracker",
     enabled = false,
     energy_required = 4,
@@ -311,7 +311,7 @@ RECIPE {
     name = "carbon-black-2",
     category = "reformer",
     enabled = false,
-    energy_required = 1,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 50},
         {type = "fluid", name = "hot-air", amount = 100},
@@ -331,7 +331,7 @@ RECIPE {
     name = "rubber-01",
     category = "hor",
     enabled = false,
-    energy_required = 1,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "polybutadiene", amount = 50},
         {type = "item", name = "carbon-black", amount = 2},
@@ -351,7 +351,7 @@ RECIPE {
     name = "rubber-02",
     category = "hor",
     enabled = false,
-    energy_required = 1,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "polybutadiene", amount = 50},
         {type = "fluid", name = "organic-solvent", amount = 50},
@@ -431,3 +431,85 @@ RECIPE {
     order = "a"
 }:add_unlock("scrude")
 
+RECIPE {
+    type = "recipe",
+    name = "rubber-03",
+    category = "hor",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "polybutadiene", amount = 50},
+        {type = "fluid", name = "styrene", amount = 50},
+        {type = "item", name = "carbon-black", amount = 3},
+    },
+    results = {
+        {type = "item", name = "rubber", amount = 10},
+    },
+    main_product = "rubber",
+    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("rubber")
+
+RECIPE {
+    type = "recipe",
+    name = "crude-oil-to-naphtha",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "crude-oil", amount = 200},
+    },
+    results = {
+        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "fluid", name = "btx", amount = 100},
+    },
+    main_product = "naphtha",
+    icon = "__pypetroleumhandling__/graphics/icons/naphtha.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-aromatics",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "aromatics", amount = 400},
+    },
+    main_product = "aromatics",
+    icon = "__pycoalprocessing__/graphics/icons/aromatics.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "naphtha-to-syngas",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "chromium", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "syngas", amount = 400},
+    },
+    main_product = "syngas",
+    icon = "__pycoalprocessing__/graphics/icons/syngas.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")

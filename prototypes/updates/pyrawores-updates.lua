@@ -72,6 +72,10 @@ RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate"
 RECIPE("polybutadiene"):replace_ingredient("copper-plate", "titanium-plate")
 RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4")
 RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
+RECIPE("rubber-03"):add_ingredient({type = "item", name = "salt", amount = 10})
+RECIPE("btx-to-ethylene"):replace_ingredient("nexelit-plate", "lead-plate")
+
+
 
 
 ----EXCLUSIVE RECIPES----
@@ -295,3 +299,24 @@ RECIPE {
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("coal-processing-2")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-xylenol",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "xylenol", amount = 100},
+    },
+    main_product = "xylenol",
+    icon = "__pyrawores__/graphics/icons/xylenol.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("machines-mk03")
