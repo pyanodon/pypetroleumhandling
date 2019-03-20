@@ -73,3 +73,88 @@ RECIPE {
     subgroup = "py-hightech-fluids",
     order = "a"
 }:add_unlock("scrude")
+
+RECIPE {
+    type = "recipe",
+    name = "rubber-04",
+    category = "upgrader",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "polybutadiene", amount = 50},
+        {type = "fluid", name = "styrene", amount = 50},
+        {type = "fluid", name = "dms", amount = 30},
+        {type = "item", name = "carbon-black", amount = 3},
+    },
+    results = {
+        {type = "item", name = "rubber", amount = 20},
+    },
+    main_product = "rubber",
+    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("advanced-electronics")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-benzene",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "benzene", amount = 200},
+    },
+    main_product = "benzene",
+    icon = "__pyhightech__/graphics/icons/benzene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-ethylene",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
+    },
+    results = {
+        {type = "fluid", name = "ethylene", amount = 100},
+    },
+    main_product = "ethylene",
+    icon = "__pyhightech__/graphics/icons/ethylene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-methane",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 150},
+    },
+    main_product = "methane",
+    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")

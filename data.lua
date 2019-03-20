@@ -9,6 +9,7 @@ require('prototypes/items/items')
 
 --(( RESOURCES ))--
 require("prototypes.ores.oil-sand")
+require("prototypes.ores.oil-mk01")
 --))
 
 --(( Technology ))--
@@ -40,6 +41,7 @@ require("prototypes.buildings.reformer-mk02")
 require("prototypes.buildings.reformer-mk03")
 require("prototypes.buildings.reformer-mk04")
 require("prototypes.buildings.rhe")
+require("prototypes.buildings.oil-derrick-mk01")
 --))
 
 --(( RECIPES ))--
@@ -58,6 +60,7 @@ require("prototypes.fluids.naphtha")
 require("prototypes.fluids.polybutadiene")
 require("prototypes.fluids.hot-air")
 require("prototypes.fluids.styrene")
+require("prototypes.fluids.btx")
 
 
 --(( OTHERS ))--

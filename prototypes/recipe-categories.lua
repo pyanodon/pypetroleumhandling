@@ -4,6 +4,10 @@ data:extend {
         name = "oil-sand"
     },
     {
+        type = "resource-category",
+        name = "oil-mk01"
+    },
+    {
         type = "recipe-category",
         name = "hor"
     },
