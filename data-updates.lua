@@ -24,3 +24,5 @@ end
 
 
 --RECIPES UPDATES
+
+RECIPE("electric-engine-unit"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
