@@ -48,6 +48,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
         {type = "item", name = "steel-plate", amount = 1},
+        {type = "item", name = "copper-cable", amount = 5},
         {type = "item", name = "belt", amount = 1},
         {type = "item", name = "bolts", amount = 10},
     },
