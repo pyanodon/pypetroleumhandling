@@ -303,7 +303,7 @@ local altrec = 0
 				end
 			end
 		end
-		log(serpent.block(recipe))
+		--log(serpent.block(recipe))
 		if recipe.results then
 			RECIPE {
 			type = "recipe",
@@ -317,8 +317,9 @@ local altrec = 0
 			icons = recipe.icons,
 			icon_size = 32,
 			main_product = recipe.main_product or nil
-			}
+			}:add_unlock("oil-machines-mk01")
 		altrec=altrec+1
+		--table.insert(data.raw.technology["oil-machines-mk01"]
 		end
 		if recipe.normal or recipe.expensive then
 			RECIPE {
@@ -341,7 +342,7 @@ local altrec = 0
 				icons = recipe.icons,
 				icon_size = 32,
 				main_product = recipe.main_product or nil
-				}
+				}:add_unlock("oil-machines-mk01")
 		altrec=altrec+1
 		end
 	end
