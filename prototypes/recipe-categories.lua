@@ -8,6 +8,14 @@ data:extend {
         name = "oil-mk01"
     },
     {
+        type = "resource-category",
+        name = "oil-mk02"
+    },
+    {
+        type = "resource-category",
+        name = "oil-mk03"
+    },
+    {
         type = "recipe-category",
         name = "hor"
     },

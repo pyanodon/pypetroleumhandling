@@ -1,46 +1,48 @@
 RECIPE {
     type = "recipe",
-    name = "oil-derrick-mk01",
-    energy_required = 15,
-    enabled = true,
+    name = "oil-derrick-mk02",
+    energy_required = 5,
+    enabled = false,
     ingredients = {
-        {"steam-engine", 1},
-        {"iron-plate", 30},
-        {"electronic-circuit", 5},
-        {"small-parts-01", 10},
-        {"pipe", 10},
+        {"evaporator", 1},
+        {"distilator", 1},
+        {"oil-derrick-mk01", 1},
+        {"steel-plate", 50},
+        {"advanced-circuit", 12},
+        {"small-parts-02", 30},
+        {"niobium-pipe", 30},
     },
     results = {
-        {"oil-derrick-mk01", 1}
+        {"oil-derrick-mk02", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk02")
 
 ITEM {
     type = "item",
-    name = "oil-derrick-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk01.png",
+    name = "oil-derrick-mk02",
+    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk02.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-mk02",
     order = "a",
-    place_result = "oil-derrick-mk01",
+    place_result = "oil-derrick-mk02",
     stack_size = 10
 }
 
 ENTITY {
     type = "mining-drill",
-    name = "oil-derrick-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk01.png",
+    name = "oil-derrick-mk02",
+    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk02.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "oil-derrick-mk01"},
-    fast_replaceable_group = "oil-derrick-mk01",
+    minable = {mining_time = 1, result = "oil-derrick-mk02"},
+    fast_replaceable_group = "oil-derrick-mk02",
     max_health = 700,
-    resource_categories = {"oil-mk01"},
+    resource_categories = {"oil-mk02"},
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
-    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
+    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     module_specification = {
         module_slots = 1
     },
@@ -60,14 +62,14 @@ ENTITY {
       pipe_connections =
       {
         {
-          positions = { {0, -3}, {3, 0}, {0, 3}, {-3, 0} }
+          positions = { {0, -4.0}, {4.0, 0}, {0, 4.0}, {-4.0, 0} }
         }
       }
     },
-    energy_usage = "90kW",
+    energy_usage = "300kW",
     mining_speed = 1,
     resource_searching_radius = 0.49,
-    vector_to_place_result = {0, -2.65},
+    vector_to_place_result = {0, -3.65},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
@@ -77,31 +79,23 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk01/base.png",
-                width = 169,
-                height = 179,
-                line_length = 10,
-                frame_count = 100,
+                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk02/base.png",
+                width = 224,
+                height = 427,
+                line_length = 9,
+                frame_count = 25,
                 animation_speed = 0.3,
-                shift = util.by_pixel(5, -10)
+                shift = util.by_pixel(0, -103)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk01/piston.png",
-                width = 32,
-                height = 64,
-                line_length = 25,
-                frame_count = 100,
+                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk02/shadow.png",
+                width = 313,
+                height = 192,
+                line_length = 5,
+                frame_count = 25,
                 animation_speed = 0.3,
-                shift = util.by_pixel(0, -4)
-            },
-            {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk01/gush.png",
-                frame_count = 100,
-                line_length = 25,
-                width = 32,
-                height = 96,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -97)
+                draw_as_shadow = true,
+                shift = util.by_pixel(48, 0)
             },
     },
 },

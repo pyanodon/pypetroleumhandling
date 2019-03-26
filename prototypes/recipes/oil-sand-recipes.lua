@@ -95,3 +95,25 @@ RECIPE {
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")
+
+RECIPE {
+    type = "recipe",
+    name = "bitumen-to-heavy-oil",
+    category = "upgrader",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "bitumen", amount = 100},
+        {type = "fluid", name = "water", amount = 200},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "heavy-oil", amount = 100},
+    },
+    main_product = "heavy-oil",
+    icon = "__base__/graphics/icons/fluid/heavy-oil.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-sands")
+

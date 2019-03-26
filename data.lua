@@ -10,6 +10,8 @@ require('prototypes/items/items')
 --(( RESOURCES ))--
 require("prototypes.ores.oil-sand")
 require("prototypes.ores.oil-mk01")
+require("prototypes.ores.oil-mk02")
+require("prototypes.ores.oil-mk03")
 --))
 
 --(( Technology ))--
@@ -43,6 +45,8 @@ require("prototypes.buildings.reformer-mk03")
 require("prototypes.buildings.reformer-mk04")
 require("prototypes.buildings.rhe")
 require("prototypes.buildings.oil-derrick-mk01")
+require("prototypes.buildings.oil-derrick-mk02")
+require("prototypes.buildings.oil-derrick-mk03")
 require("prototypes.buildings.tholin-atm-mk01")
 require("prototypes.buildings.tholin-atm-mk02")
 require("prototypes.buildings.tholin-atm-mk03")
