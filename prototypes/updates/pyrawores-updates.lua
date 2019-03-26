@@ -78,6 +78,7 @@ RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4")
 RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "salt", amount = 10})
 RECIPE("btx-to-ethylene"):replace_ingredient("nexelit-plate", "lead-plate")
+RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel-plate", amount = 1})
 
 
 

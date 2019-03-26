@@ -18,7 +18,7 @@ ENTITY {
     highlight = true,
     minimum = 60000,
     normal = 300000,
-    infinite_depletion_amount = 10,
+    infinite_depletion_amount = 5,
     resource_patch_search_radius = 12,
     tree_removal_probability = 0.7,
     tree_removal_max_distance = 32 * 32,

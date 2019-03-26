@@ -34,7 +34,7 @@ ENTITY {
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "oil-derrick-mk01"},
-    fast_replaceable_group = "oil-sand-extractor",
+    fast_replaceable_group = "oil-derrick-mk01",
     max_health = 700,
     resource_categories = {"oil-mk01"},
     corpse = "big-remnants",
