@@ -1,5 +1,5 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-local GIR = require("prototypes/functions/functions")
+local GIR = require("functions/functions")
 
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
@@ -12,6 +12,7 @@ require("prototypes.ores.oil-sand")
 require("prototypes.ores.oil-mk01")
 require("prototypes.ores.oil-mk02")
 require("prototypes.ores.oil-mk03")
+require("prototypes.ores.oil-mk04")
 --))
 
 --(( Technology ))--
@@ -47,16 +48,19 @@ require("prototypes.buildings.rhe")
 require("prototypes.buildings.oil-derrick-mk01")
 require("prototypes.buildings.oil-derrick-mk02")
 require("prototypes.buildings.oil-derrick-mk03")
+require("prototypes.buildings.oil-derrick-mk04")
 require("prototypes.buildings.tholin-atm-mk01")
 require("prototypes.buildings.tholin-atm-mk02")
 require("prototypes.buildings.tholin-atm-mk03")
 require("prototypes.buildings.tholin-atm-mk04")
+require("prototypes.buildings.pumpjack-mk01")
 --))
 
 --(( RECIPES ))--
 require("prototypes.recipes.recipes")
 require("prototypes.recipes.improved-recipes")
 require("prototypes.recipes.oil-sand-recipes")
+require("prototypes.recipes.pumpjack-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
@@ -75,3 +79,14 @@ require("prototypes.fluids.tholins")
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
+
+--(( Shortcut keys ))--
+local recipeselect=
+	{
+	type = "custom-input",
+	name = "recipe-selector",
+	key_sequence = "SHIFT + R",
+	consuming = "none"
+	}
+	
+data:extend{recipeselect}
