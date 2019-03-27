@@ -16,6 +16,10 @@ data:extend {
         name = "oil-mk03"
     },
     {
+        type = "resource-category",
+        name = "oil-mk04"
+    },
+    {
         type = "recipe-category",
         name = "hor"
     },
@@ -42,5 +46,9 @@ data:extend {
     {
         type = "recipe-category",
         name = "tholin-atm"
+    },
+    {
+        type = "recipe-category",
+        name = "pumpjack"
     },
 }

@@ -12,7 +12,8 @@ RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "super-alloy", amou
 RECIPE("cracker-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amount = 20}):add_ingredient({type = "item", name = "wall-shield", amount = 2}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("tholin-atm-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 20}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})
 RECIPE("tholin-atm-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amount = 10}):add_ingredient({type = "item", name = "boron-carbide", amount = 4}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
-
+RECIPE("oil-derrick-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "boron-carbide", amount = 20})
+RECIPE("oil-derrick-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amount = 15}):add_ingredient({type = "item", name = "wall-shield", amount = 8}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 
 
 RECIPE("automated-screener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -41,6 +42,7 @@ RECIPE("scrude-to-methane"):add_ingredient({type = "fluid", name = "vacuum", amo
 RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
+RECIPE("small-parts-03"):replace_ingredient("lubricant", "grease")
 
 
 ----EXCLUSIVE RECIPES----
