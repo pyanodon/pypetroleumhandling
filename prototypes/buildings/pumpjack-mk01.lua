@@ -34,7 +34,7 @@ ENTITY {
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "pumpjack-mk01"},
-    fast_replaceable_group = "pumpjack",
+    fast_replaceable_group = "pumpjack-mk01",
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
@@ -45,7 +45,7 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"pumpjack"},
-    crafting_speed = 1,
+    crafting_speed = 0.5,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",

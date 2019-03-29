@@ -28,6 +28,10 @@ RECIPE("oil-derrick-mk01"):add_ingredient({type = "item", name = "tin-plate", am
 RECIPE("oil-derrick-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 30}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("oil-derrick-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 30}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("oil-derrick-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 45})
+RECIPE("pumpjack-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "titanium-plate", amount = 20})
+RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("pumpjack-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
