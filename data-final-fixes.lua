@@ -1,4 +1,4 @@
-local GIR = require("prototypes/functions/functions")
+local GIR = require("functions/functions")
 
 --RECIPES UPDATES
 --add hot air

@@ -54,6 +54,9 @@ require("prototypes.buildings.tholin-atm-mk02")
 require("prototypes.buildings.tholin-atm-mk03")
 require("prototypes.buildings.tholin-atm-mk04")
 require("prototypes.buildings.pumpjack-mk01")
+require("prototypes.buildings.pumpjack-mk02")
+require("prototypes.buildings.pumpjack-mk03")
+require("prototypes.buildings.pumpjack-mk04")
 --))
 
 --(( RECIPES ))--
