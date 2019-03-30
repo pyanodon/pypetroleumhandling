@@ -1,27 +1,29 @@
+local pumpjacks =
+	{
+	"pumpjack"
+	}
 
-script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
+local jacks = {}
 
---local E = event.created_entity
-	
-	--if E.name == "py-sinkhole" or E.name == "py-gas-vent" then
-	
-		--E.insert({name = "coal", count = 1})
-	
-	--end
-
+script.on_init(function(event)
+	for name in pairs(pumpjacks) do
+		jacks[name] = true
+	end
 end)
 
---game.surfaces["nauvis"].create_entity{name=Rocks[SelectedRock],position={Randx,Randy},amount=math.random(1000000,15000000)}
+script.on_event(defines.events.on_put_item, function(event)
+local existingentitys
+	if event.name == "pumpjack-mk01" then
+		existingentitys = game.surfaces["nauvis"].find_entity("oil-mk01", event.position)
+		existingentitys.destroy()
+		game.surfaces["nauvis"].create_entity{name="natural-gas", position=event.position}
+		game.surfaces["nauvis"].create_entity{name="natural-gas-extractor-mk01", position=event.position}
+	end
+end)
 
-script.on_event("recipe-selector", function(event)
-local player = game.players[event.player_index]
-local recipe = player.selected.get_recipe()
---log(serpent.block(player.selected.name))
-	if string.find(player.selected.name,"advanced-foundry") ~= nil then
-	log("is this working")
-		if recipe.category == "advanced-foundry" or recipe.category == "smelting" then
-		log("how about here")
-			player.selected.set_recipe("hotair-" .. recipe.name)
-		end
+script.on_event(defines.events.on_built_entity, function(event)
+	local E = event.created_entity
+	if jacks[event.created_entity.name] then
+		event.created_entity.destroy()
 	end
 end)

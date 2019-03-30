@@ -1,5 +1,5 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-local GIR = require("functions/functions")
+local GIR = require("prototypes/functions/functions")
 
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
@@ -9,11 +9,16 @@ require('prototypes/items/items')
 
 --(( RESOURCES ))--
 require("prototypes.ores.oil-sand")
+require("prototypes.ores.oil-mk01")
+require("prototypes.ores.oil-mk02")
+require("prototypes.ores.oil-mk03")
+require("prototypes.ores.oil-mk04")
 --))
 
 --(( Technology ))--
 require("prototypes.technologies.technologies")
 require("prototypes.technologies.oil-machines")
+require("prototypes.technologies.tholins")
 
 
 --(( BUILDINGS ))--
@@ -40,12 +45,25 @@ require("prototypes.buildings.reformer-mk02")
 require("prototypes.buildings.reformer-mk03")
 require("prototypes.buildings.reformer-mk04")
 require("prototypes.buildings.rhe")
+require("prototypes.buildings.oil-derrick-mk01")
+require("prototypes.buildings.oil-derrick-mk02")
+require("prototypes.buildings.oil-derrick-mk03")
+require("prototypes.buildings.oil-derrick-mk04")
+require("prototypes.buildings.tholin-atm-mk01")
+require("prototypes.buildings.tholin-atm-mk02")
+require("prototypes.buildings.tholin-atm-mk03")
+require("prototypes.buildings.tholin-atm-mk04")
+require("prototypes.buildings.pumpjack-mk01")
+require("prototypes.buildings.pumpjack-mk02")
+require("prototypes.buildings.pumpjack-mk03")
+require("prototypes.buildings.pumpjack-mk04")
 --))
 
 --(( RECIPES ))--
 require("prototypes.recipes.recipes")
 require("prototypes.recipes.improved-recipes")
 require("prototypes.recipes.oil-sand-recipes")
+require("prototypes.recipes.pumpjack-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
@@ -58,6 +76,8 @@ require("prototypes.fluids.naphtha")
 require("prototypes.fluids.polybutadiene")
 require("prototypes.fluids.hot-air")
 require("prototypes.fluids.styrene")
+require("prototypes.fluids.btx")
+require("prototypes.fluids.tholins")
 
 
 --(( OTHERS ))--
