@@ -51,4 +51,8 @@ data:extend {
         type = "recipe-category",
         name = "pumpjack"
     },
+    {
+        type = "recipe-category",
+        name = "tholin-plant"
+    },
 }

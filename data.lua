@@ -57,6 +57,10 @@ require("prototypes.buildings.pumpjack-mk01")
 require("prototypes.buildings.pumpjack-mk02")
 require("prototypes.buildings.pumpjack-mk03")
 require("prototypes.buildings.pumpjack-mk04")
+require("prototypes.buildings.tholin-plant-mk01")
+require("prototypes.buildings.tholin-plant-mk02")
+require("prototypes.buildings.tholin-plant-mk03")
+require("prototypes.buildings.tholin-plant-mk04")
 --))
 
 --(( RECIPES ))--
@@ -64,6 +68,7 @@ require("prototypes.recipes.recipes")
 require("prototypes.recipes.improved-recipes")
 require("prototypes.recipes.oil-sand-recipes")
 require("prototypes.recipes.pumpjack-recipes")
+require("prototypes.recipes.tholin-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")

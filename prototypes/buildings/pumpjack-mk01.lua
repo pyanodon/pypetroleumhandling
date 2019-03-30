@@ -101,8 +101,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__base__/sound/pumpjack.ogg", volume = 1.2},
-        idle_sound = {filename = "__base__/sound/pumpjack.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk01.ogg", volume = 1.2},
+        idle_sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk01.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

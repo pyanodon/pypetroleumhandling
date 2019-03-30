@@ -31,6 +31,10 @@ RECIPE("oil-derrick-mk04"):add_ingredient({type = "item", name = "super-steel", 
 RECIPE("pumpjack-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "titanium-plate", amount = 20})
 RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("pumpjack-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("tholin-plant-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("tholin-plant-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
+RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("tholin-plant-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -333,3 +337,39 @@ RECIPE {
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("machines-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-nitrogen",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "nitrogen", amount = 50},
+    },
+    icon = "__pyrawores__/graphics/icons/nitrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "b"
+}:add_unlock("tholin-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-hydrogen",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "hydrogen", amount = 60},
+    },
+    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "b"
+}:add_unlock("tholin-mk01")
