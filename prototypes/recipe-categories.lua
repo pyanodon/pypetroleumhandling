@@ -55,4 +55,8 @@ data:extend {
         type = "recipe-category",
         name = "tholin-plant"
     },
+    {
+        type = "recipe-category",
+        name = "lor"
+    },
 }
