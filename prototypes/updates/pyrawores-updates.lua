@@ -20,6 +20,22 @@ RECIPE("cracker-mk01"):add_ingredient({type = "item", name = "lead-plate", amoun
 RECIPE("cracker-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("cracker-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("tholin-atm-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("tholin-atm-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
+RECIPE("tholin-atm-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("tholin-atm-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("oil-derrick-mk01"):add_ingredient({type = "item", name = "tin-plate", amount = 10})
+RECIPE("oil-derrick-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 30}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
+RECIPE("oil-derrick-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 30}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("oil-derrick-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 45})
+RECIPE("pumpjack-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "titanium-plate", amount = 20})
+RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("pumpjack-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("tholin-plant-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("tholin-plant-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
+RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("tholin-plant-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -67,11 +83,16 @@ RECIPE("bitumen-to-oil2"):add_ingredient({type = "fluid", name = "hydrogen", amo
 RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
 RECIPE("tar-to-scrude"):replace_ingredient("chromium", "duralumin")
 RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate")
-RECIPE("small-parts-02"):add_ingredient({type = "item", name = "aluminium-plate", amount = 1}):add_ingredient({type = "item", name = "glass", amount = 1}):add_ingredient({type = "item", name = "titanium-plate", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 1})
+RECIPE("small-parts-02"):add_ingredient({type = "item", name = "aluminium-plate", amount = 1}):add_ingredient({type = "item", name = "glass", amount = 1}):add_ingredient({type = "item", name = "titanium-plate", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 1}):replace_ingredient("steel-plate", "stainless-steel")
 RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate", amount = 2}):add_ingredient({type = "item", name = "glass", amount = 2}):add_ingredient({type = "item", name = "titanium-plate", amount = 3}):add_ingredient({type = "item", name = "tin-plate", amount = 3}):replace_ingredient("steel-plate", "super-steel")
 RECIPE("polybutadiene"):replace_ingredient("copper-plate", "titanium-plate")
 RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4")
 RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
+RECIPE("rubber-03"):add_ingredient({type = "item", name = "salt", amount = 10})
+RECIPE("btx-to-ethylene"):replace_ingredient("nexelit-plate", "lead-plate")
+RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel-plate", amount = 1})
+
+
 
 
 ----EXCLUSIVE RECIPES----
@@ -206,7 +227,7 @@ RECIPE {
         {type = "fluid", name = "heavy-oil", amount = 100},
     },
     results = {
-        {type = "fluid", name = "kerosene", amount = 50},
+        {type = "fluid", name = "kerosene", amount = 40},
     },
     main_product = "kerosene",
     icon = "__pyrawores__/graphics/icons/kerosene.png",
@@ -295,3 +316,60 @@ RECIPE {
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("coal-processing-2")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-xylenol",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "xylenol", amount = 100},
+    },
+    main_product = "xylenol",
+    icon = "__pyrawores__/graphics/icons/xylenol.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("machines-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-nitrogen",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "nitrogen", amount = 50},
+    },
+    icon = "__pyrawores__/graphics/icons/nitrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "b"
+}:add_unlock("tholin-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-hydrogen",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "hydrogen", amount = 60},
+    },
+    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "b"
+}:add_unlock("tholin-mk01")

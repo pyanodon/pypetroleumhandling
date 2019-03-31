@@ -1,3 +1,4 @@
+require("prototypes.buildings.pumpjack-hightech")
 ----BUILDINDS----
 
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "diamagnetic-material", amount = 20}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 15})
@@ -10,6 +11,14 @@ RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "phosphate-glass",
 RECIPE("reformer-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
 RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "re-magnet", amount = 30}):add_ingredient({type = "item", name = "superconductor", amount = 20}):add_ingredient({type = "item", name = "paramagnetic-material", amount = 15})
 RECIPE("cracker-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "quantum-vortex-storage-system", amount = 2})
+RECIPE("tholin-atm-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 15}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20})
+RECIPE("tholin-atm-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "quantum-dots", amount = 5})
+RECIPE("oil-derrick-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 15}):add_ingredient({type = "item", name = "heavy-fermion", amount = 10}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 10})
+RECIPE("oil-derrick-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 6}):add_ingredient({type = "item", name = "quantum-vortex-storage-system", amount = 4})
+RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 15}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20})
+RECIPE("pumpjack-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "quantum-dots", amount = 5})
+RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 50}):add_ingredient({type = "item", name = "biopolymer", amount = 35}):add_ingredient({type = "item", name = "aerogel", amount = 15})
+RECIPE("tholin-plant-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
 
 
 RECIPE("cadaveric-arum"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
@@ -73,3 +82,232 @@ RECIPE {
     subgroup = "py-hightech-fluids",
     order = "a"
 }:add_unlock("scrude")
+
+RECIPE {
+    type = "recipe",
+    name = "rubber-04",
+    category = "upgrader",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "polybutadiene", amount = 50},
+        {type = "fluid", name = "styrene", amount = 50},
+        {type = "fluid", name = "dms", amount = 30},
+        {type = "item", name = "carbon-black", amount = 3},
+    },
+    results = {
+        {type = "item", name = "rubber", amount = 20},
+    },
+    main_product = "rubber",
+    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("advanced-electronics")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-benzene",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "benzene", amount = 200},
+    },
+    main_product = "benzene",
+    icon = "__pyhightech__/graphics/icons/benzene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-ethylene",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
+    },
+    results = {
+        {type = "fluid", name = "ethylene", amount = 100},
+    },
+    main_product = "ethylene",
+    icon = "__pyhightech__/graphics/icons/ethylene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-methane",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 150},
+    },
+    main_product = "methane",
+    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("oil-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-cyanic-acid",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "cyanic-acid", amount = 40},
+    },
+    icon = "__pyhightech__/graphics/icons/cyanic-acid.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "c"
+}:add_unlock("tholin-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-ethylene",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "ethylene", amount = 40},
+    },
+    icon = "__pyhightech__/graphics/icons/ethylene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "c"
+}:add_unlock("tholin-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-benzene",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "benzene", amount = 40},
+    },
+    icon = "__pyhightech__/graphics/icons/benzene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "c"
+}:add_unlock("tholin-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-ammonia",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "ammonia", amount = 40},
+    },
+    icon = "__pyhightech__/graphics/icons/ammonia.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "c"
+}:add_unlock("tholin-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-methane",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 30},
+    },
+    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "c"
+}:add_unlock("tholin-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-acetone",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "acetone", amount = 25},
+    },
+    icon = "__pyhightech__/graphics/icons/acetone.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "d"
+}:add_unlock("tholin-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-methanal",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "methanal", amount = 25},
+    },
+    icon = "__pyhightech__/graphics/icons/methanal.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "d"
+}:add_unlock("tholin-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "tholin-to-propene",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "propene", amount = 20},
+    },
+    icon = "__pyhightech__/graphics/icons/propene.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "d"
+}:add_unlock("tholin-mk03")

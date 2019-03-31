@@ -70,6 +70,12 @@ data:extend {
     group = "py-petroleum-handling",
     order = "h-a"
 },
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-tholin-recipes",
+    group = "py-petroleum-handling",
+    order = "i-a"
+},
 ------------ITEMS----------
 {
     type = "item-subgroup",

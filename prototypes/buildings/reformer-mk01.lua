@@ -117,7 +117,7 @@ ENTITY {
             base_level = 1,
             pipe_connections = {{type = "output", position = {7.0, -2.0}}}
         },
-        off_when_no_fluid_recipe = true,
+        off_when_no_fluid_recipe = false,
     },
     animation = {
         layers = {

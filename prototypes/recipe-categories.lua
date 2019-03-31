@@ -4,6 +4,22 @@ data:extend {
         name = "oil-sand"
     },
     {
+        type = "resource-category",
+        name = "oil-mk01"
+    },
+    {
+        type = "resource-category",
+        name = "oil-mk02"
+    },
+    {
+        type = "resource-category",
+        name = "oil-mk03"
+    },
+    {
+        type = "resource-category",
+        name = "oil-mk04"
+    },
+    {
         type = "recipe-category",
         name = "hor"
     },
@@ -26,5 +42,17 @@ data:extend {
 	{
         type = "recipe-category",
         name = "hot-air-advanced-foundry"
+    },
+    {
+        type = "recipe-category",
+        name = "tholin-atm"
+    },
+    {
+        type = "recipe-category",
+        name = "pumpjack"
+    },
+    {
+        type = "recipe-category",
+        name = "tholin-plant"
     },
 }

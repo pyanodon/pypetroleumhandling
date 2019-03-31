@@ -89,6 +89,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "coke", amount = 4},
         {type = "fluid", name = "fuel-oil", amount = 100}
     },
     results = {
@@ -110,6 +111,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "coke", amount = 4},
         {type = "fluid", name = "scrude", amount = 100}
     },
     results = {
@@ -131,6 +133,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "coke", amount = 4},
         {type = "fluid", name = "crude-oil", amount = 100}
     },
     results = {
@@ -152,6 +155,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "coke", amount = 4},
         {type = "fluid", name = "naphtha", amount = 100}
     },
     results = {
