@@ -1,3 +1,4 @@
+require("prototypes.fluids.pressured-hydrogen")
 --BUILDINDS--
 
 RECIPE("oil-sand-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})

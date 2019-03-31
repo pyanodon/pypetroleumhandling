@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "transport-belt-2",
-    category = "reformer",
+    category = "crafting",
     enabled = false,
     energy_required = 2,
     ingredients = {

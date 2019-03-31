@@ -311,3 +311,21 @@ RECIPE {
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
 }:add_unlock("tholin-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "processed-light-oil-to-benzene",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "benzene", amount = 250},
+    },
+    --main_product = "styrene",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("light-oil-mk02")
