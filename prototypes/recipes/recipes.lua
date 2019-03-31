@@ -667,7 +667,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "processed-light-oil-to-petroleum-gas",
+    name = "processed-light-oil-to-light-oil",
     category = "reformer",
     enabled = false,
     energy_required = 4,

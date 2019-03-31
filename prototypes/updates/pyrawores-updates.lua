@@ -92,8 +92,9 @@ RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "salt", amount = 10})
 RECIPE("btx-to-ethylene"):replace_ingredient("nexelit-plate", "lead-plate")
 RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel-plate", amount = 1})
-
-
+RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 
 
 ----EXCLUSIVE RECIPES----
