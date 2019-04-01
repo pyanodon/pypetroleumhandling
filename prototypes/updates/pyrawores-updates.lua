@@ -36,6 +36,14 @@ RECIPE("tholin-plant-mk01"):add_ingredient({type = "item", name = "glass", amoun
 RECIPE("tholin-plant-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("tholin-plant-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("lor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "nichrome", amount = 10})
+RECIPE("lor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 100})
+RECIPE("lor-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("lor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("coalbed-mk01"):add_ingredient({type = "item", name = "glass", amount = 50}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("coalbed-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
+RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 50})
+RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
 
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
