@@ -64,6 +64,9 @@ require("prototypes.buildings.tholin-plant-mk02")
 require("prototypes.buildings.tholin-plant-mk03")
 require("prototypes.buildings.tholin-plant-mk04")
 require("prototypes.buildings.lor-mk01")
+require("prototypes.buildings.lor-mk02")
+require("prototypes.buildings.lor-mk03")
+require("prototypes.buildings.lor-mk04")
 --))
 
 --(( RECIPES ))--

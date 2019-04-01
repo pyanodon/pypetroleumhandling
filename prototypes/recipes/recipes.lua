@@ -563,7 +563,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "heavy-oil", amount = 200},
+        {type = "fluid", name = "heavy-oil", amount = 250},
         {type = "fluid", name = "water", amount = 2000},
         {type = "fluid", name = "hot-air", amount = 150},
         {type = "item", name = "nexelit-plate", amount = 1},

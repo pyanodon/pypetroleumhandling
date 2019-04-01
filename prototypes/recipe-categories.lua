@@ -59,4 +59,8 @@ data:extend {
         type = "recipe-category",
         name = "lor"
     },
+    {
+        type = "recipe-category",
+        name = "coalbed"
+    },
 }
