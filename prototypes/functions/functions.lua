@@ -231,7 +231,7 @@ local altrec = 0
 	for r,recipe in pairs(afrecipes) do
 		afrcount=afrcount+1
 		--add ingredient
-		log(serpent.block(recipe))
+		--log(serpent.block(recipe))
 		if recipe.normal == nil and recipe.expensive == nil then 
 			if recipe.ingredients[1] ~= nil then
 				if recipe.ingredients[1].name == nil then

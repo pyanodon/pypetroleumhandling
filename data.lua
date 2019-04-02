@@ -96,6 +96,9 @@ require("prototypes.fluids.hot-reaction-gas")
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
 
+--((nat-from-oil))--
+require("prototypes.functions.Natural-gas-from-oil-well")
+
 --(( Shortcut keys ))--
 local recipeselect=
 	{
