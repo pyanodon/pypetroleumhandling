@@ -1,5 +1,5 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-local GIR = require("functions/functions")
+local GIR = require("prototypes/functions/functions")
 
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
