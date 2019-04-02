@@ -1,4 +1,7 @@
+require("prototypes.technologies.coalbed")
 require("prototypes.buildings.pumpjack-hightech")
+require("prototypes.buildings.coalbed-mk01")
+
 ----BUILDINDS----
 
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "diamagnetic-material", amount = 20}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 15})
@@ -19,6 +22,10 @@ RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "biopolymer", amou
 RECIPE("pumpjack-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "quantum-dots", amount = 5})
 RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 50}):add_ingredient({type = "item", name = "biopolymer", amount = 35}):add_ingredient({type = "item", name = "aerogel", amount = 15})
 RECIPE("tholin-plant-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
+RECIPE("lor-mk03"):add_ingredient({type = "item", name = "heavy-fermion", amount = 20}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20}):add_ingredient({type = "item", name = "graphene-roll", amount = 15})
+RECIPE("lor-mk04"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 10})
+RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 40}):add_ingredient({type = "item", name = "carbon-nanotube", amount = 30}):add_ingredient({type = "item", name = "graphene-roll", amount = 10})
+RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "carbon-aerogel", amount = 10}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 10})
 
 
 RECIPE("cadaveric-arum"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
@@ -311,3 +318,43 @@ RECIPE {
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
 }:add_unlock("tholin-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "processed-light-oil-to-benzene",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "benzene", amount = 250},
+    },
+    --main_product = "styrene",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("light-oil-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "extract-methane-from-coalbed",
+    category = "coalbed",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+        {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
+        {type = "item", name = "drill-head", amount = 2},
+        {type = "item", name = "filtration-media", amount = 3},
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 300},
+        {type = "fluid", name = "water", amount = 2500},
+    },
+    main_product = "methane",
+    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("coalbed-mk01"):replace_ingredient("steam", "pressured-water")

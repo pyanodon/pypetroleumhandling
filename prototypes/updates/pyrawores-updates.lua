@@ -1,3 +1,4 @@
+require("prototypes.fluids.pressured-hydrogen")
 --BUILDINDS--
 
 RECIPE("oil-sand-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
@@ -35,6 +36,14 @@ RECIPE("tholin-plant-mk01"):add_ingredient({type = "item", name = "glass", amoun
 RECIPE("tholin-plant-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("tholin-plant-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("lor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "nichrome", amount = 10})
+RECIPE("lor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 100})
+RECIPE("lor-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("lor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
+RECIPE("coalbed-mk01"):add_ingredient({type = "item", name = "glass", amount = 50}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("coalbed-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
+RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 50})
+RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
 
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -91,8 +100,9 @@ RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "salt", amount = 10})
 RECIPE("btx-to-ethylene"):replace_ingredient("nexelit-plate", "lead-plate")
 RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel-plate", amount = 1})
-
-
+RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 
 
 ----EXCLUSIVE RECIPES----

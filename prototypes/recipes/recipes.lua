@@ -563,7 +563,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "heavy-oil", amount = 200},
+        {type = "fluid", name = "heavy-oil", amount = 250},
         {type = "fluid", name = "water", amount = 2000},
         {type = "fluid", name = "hot-air", amount = 150},
         {type = "item", name = "nexelit-plate", amount = 1},
@@ -624,3 +624,61 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "btx-to-styrene",
+    category = "cracker",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "btx", amount = 200},
+        {type = "fluid", name = "methanol", amount = 120},
+        {type = "fluid", name = "steam", amount = 350, temperature = 165},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "styrene", amount = 100},
+    },
+    main_product = "styrene",
+    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("rubber")
+
+RECIPE {
+    type = "recipe",
+    name = "processed-light-oil-to-olefins",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "olefin", amount = 300},
+    },
+    --main_product = "styrene",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("light-oil-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "processed-light-oil-to-light-oil",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "light-oil", amount = 300},
+    },
+    --main_product = "styrene",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("light-oil-mk02")
