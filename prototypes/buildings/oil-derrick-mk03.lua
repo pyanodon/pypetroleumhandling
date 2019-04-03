@@ -10,7 +10,7 @@ RECIPE {
         {"steel-plate", 100},
         {"processing-unit", 15},
         {"small-parts-03", 25},
-        {"niobium-pipe", 20},
+        {"pipe", 20},
     },
     results = {
         {"oil-derrick-mk03", 1}

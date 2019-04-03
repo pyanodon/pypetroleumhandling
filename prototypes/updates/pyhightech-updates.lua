@@ -1,6 +1,9 @@
 require("prototypes.technologies.coalbed")
 require("prototypes.buildings.pumpjack-hightech")
 require("prototypes.buildings.coalbed-mk01")
+require("prototypes.buildings.coalbed-mk02")
+require("prototypes.buildings.coalbed-mk03")
+require("prototypes.buildings.coalbed-mk04")
 
 ----BUILDINDS----
 
@@ -358,3 +361,26 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("coalbed-mk01"):replace_ingredient("steam", "pressured-water")
+
+RECIPE {
+    type = "recipe",
+    name = "extract-methane-from-coalbed-2",
+    category = "coalbed",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+        {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
+        {type = "fluid", name = "carbon-dioxide", amount = 500},
+        {type = "item", name = "drill-head", amount = 1},
+        {type = "item", name = "filtration-media", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 500},
+        {type = "fluid", name = "water", amount = 2500},
+    },
+    main_product = "methane",
+    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("coalbed-mk02"):replace_ingredient("steam", "pressured-water")

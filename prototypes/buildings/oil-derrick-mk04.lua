@@ -8,7 +8,7 @@ RECIPE {
         {"distilator-mk02", 1},
         {"nbfe-alloy", 50},
         {"low-density-structure", 30},
-        {"niobium-pipe", 20},
+        {"pipe", 20},
     },
     results = {
         {"oil-derrick-mk04", 1}

@@ -9,6 +9,7 @@ require('prototypes/items/items')
 
 --(( RESOURCES ))--
 require("prototypes.ores.oil-sand")
+require("prototypes.ores.tar-patch")
 require("prototypes.ores.oil-mk01")
 require("prototypes.ores.oil-mk02")
 require("prototypes.ores.oil-mk03")
@@ -67,6 +68,8 @@ require("prototypes.buildings.lor-mk01")
 require("prototypes.buildings.lor-mk02")
 require("prototypes.buildings.lor-mk03")
 require("prototypes.buildings.lor-mk04")
+require("prototypes.buildings.tar-extractor-mk01")
+
 --))
 
 --(( RECIPES ))--

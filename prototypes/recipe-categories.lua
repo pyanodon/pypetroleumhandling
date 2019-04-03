@@ -13,6 +13,10 @@ data:extend {
     },
     {
         type = "resource-category",
+        name = "tar-patch"
+    },
+    {
+        type = "resource-category",
         name = "oil-mk03"
     },
     {
