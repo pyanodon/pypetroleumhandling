@@ -67,4 +67,8 @@ data:extend {
         type = "recipe-category",
         name = "coalbed"
     },
+    {
+        type = "recipe-category",
+        name = "gas-refinery"
+    },
 }

@@ -62,7 +62,7 @@ ENTITY {
                 priority = "extra-high",
                 line_length = 10,
                 frame_count = 50,
-                animation_speed = 0.3,
+                animation_speed = 0.8,
                 shift = util.by_pixel(48, -20)
             },
             {
@@ -72,7 +72,7 @@ ENTITY {
                 priority = "very-low",
                 line_length = 10,
                 frame_count = 50,
-                animation_speed = 0.3,
+                animation_speed = 0.8,
                 shift = util.by_pixel(-48, -20)
             },
             {
@@ -81,7 +81,7 @@ ENTITY {
                 height = 165,
                 line_length = 8,
                 frame_count = 50,
-                animation_speed = 0.3,
+                animation_speed = 0.8,
                 draw_as_shadow = true,
                 shift = util.by_pixel(11, 15)
             },

@@ -1,40 +1,38 @@
 RECIPE {
     type = "recipe",
-    name = "tar-extractor-mk01",
+    name = "tar-extractor-mk02",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"distilator", 1},
-        {"automated-factory-mk01", 1},
-        {"steel-plate", 50},
-        {"electronic-circuit", 5},
-        {"small-parts-01", 20},
-        {"pipe", 20},
+        {"tar-extractor-mk01", 1},
+        {"advanced-circuit", 5},
+        {"small-parts-02", 15},
+        {"niobium-plate", 10},
     },
     results = {
-        {"tar-extractor-mk01", 1}
+        {"tar-extractor-mk02", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk02")
 
 ITEM {
     type = "item",
-    name = "tar-extractor-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/tar-extractor-mk01.png",
+    name = "tar-extractor-mk02",
+    icon = "__pypetroleumhandling__/graphics/icons/tar-extractor-mk02.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-mk02",
     order = "a",
-    place_result = "tar-extractor-mk01",
+    place_result = "tar-extractor-mk02",
     stack_size = 10
 }
 
 ENTITY {
     type = "mining-drill",
-    name = "tar-extractor-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/tar-extractor-mk01.png",
+    name = "tar-extractor-mk02",
+    icon = "__pypetroleumhandling__/graphics/icons/tar-extractor-mk02.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "tar-extractor-mk01"},
+    minable = {mining_time = 1, result = "tar-extractor-mk02"},
     fast_replaceable_group = "tar-extractor",
     max_health = 700,
     resource_categories = {"tar-patch"},
@@ -46,7 +44,7 @@ ENTITY {
         module_slots = 1
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    mining_speed = 1,
+    mining_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
@@ -65,7 +63,7 @@ ENTITY {
         }
       }
     },
-    energy_usage = "400kW",
+    energy_usage = "600kW",
     mining_speed = 1,
     resource_searching_radius = 0.49,
     vector_to_place_result = {-2, -4.75},
@@ -78,30 +76,30 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-a.png",
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk02/mk02-a.png",
                 width = 128,
                 height = 329,
                 line_length = 16,
                 frame_count = 96,
-                animation_speed = 0.2,
+                animation_speed = 0.15,
                 shift = util.by_pixel(-80, -20)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-b.png",
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk02/mk02-b.png",
                 width = 128,
                 height = 329,
                 line_length = 16,
                 frame_count = 96,
-                animation_speed = 0.2,
+                animation_speed = 0.15,
                 shift = util.by_pixel(48, -20)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-c.png",
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk02/mk02-c.png",
                 width = 41,
                 height = 329,
                 line_length = 16,
                 frame_count = 96,
-                animation_speed = 0.2,
+                animation_speed = 0.15,
                 shift = util.by_pixel(132, -20)
             },
     },
