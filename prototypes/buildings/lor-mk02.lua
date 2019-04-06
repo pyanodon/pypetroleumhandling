@@ -8,7 +8,7 @@ RECIPE {
         {"steel-plate", 50},
         {"advanced-circuit", 12},
         {"small-parts-02", 30},
-        {"niobium-pipe", 30},
+        {"pipe", 30},
     },
     results = {
         {"lor-mk02", 1}
