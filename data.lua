@@ -107,7 +107,7 @@ local recipeselect=
 	{
 	type = "custom-input",
 	name = "recipe-selector",
-	key_sequence = "SHIFT + R",
+	key_sequence = "SHIFT + G",
 	consuming = "none"
 	}
 	
