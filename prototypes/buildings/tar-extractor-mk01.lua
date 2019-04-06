@@ -35,7 +35,7 @@ ENTITY {
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "tar-extractor-mk01"},
-    fast_replaceable_group = "tar-extractor-mk01",
+    fast_replaceable_group = "tar-extractor",
     max_health = 700,
     resource_categories = {"tar-patch"},
     corpse = "big-remnants",
