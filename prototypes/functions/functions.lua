@@ -104,13 +104,13 @@ local eingredients
 						end
 					else
 						--for j,v in pairs(ing) do
-						log("check this still works")
-						log(serpent.block(ing))
+						--log("check this still works")
+						--log(serpent.block(ing))
 							if ing[1] == old then
 							local A = table.deepcopy(ing[2])
 							data.raw.recipe[recipe.name].expensive.ingredients[i] = {new, A}
 							end
-						log(serpent.block(recipe))
+						--log(serpent.block(recipe))
 						--end
 					end
 				end
