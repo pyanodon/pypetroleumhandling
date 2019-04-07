@@ -1,5 +1,5 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-local GIR = require("functions/functions")
+local GIR = require("prototypes/functions/functions")
 
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
@@ -121,12 +121,15 @@ require("prototypes.fluids.pure-natural-gas")
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
 
+--((nat-from-oil))--
+require("prototypes.functions.Natural-gas-from-oil-well")
+
 --(( Shortcut keys ))--
 local recipeselect=
 	{
 	type = "custom-input",
 	name = "recipe-selector",
-	key_sequence = "SHIFT + R",
+	key_sequence = "SHIFT + G",
 	consuming = "none"
 	}
 	
