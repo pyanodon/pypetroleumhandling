@@ -23,6 +23,7 @@ ENTITY {
     corpse = "small-remnants",
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+	selectable_in_game = false,
     result_inventory_size = 1,
     crafting_speed = 20,
 	crafting_categories = {"converter-valve"},

@@ -1,9 +1,18 @@
+script.on_init(function()
+
+global.hasbuiltoilderrick = false
+
+end)
+
 script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
 	--change to get direction and enity collision box for entity size
 	local E = event.created_entity
 	local direction = E.direction
 	local cbox
 	if E.name == "oil-derrick-mk01" or E.name == "oil-derrick-mk02" or E.name == "oil-derrick-mk03" or E.name == "oil-derrick-mk04" then
+		if global.hasbuiltoilderrick == false then
+			game.print("press Shift + G for alt resource output from oil derrick")
+		end
 		if E.name == "oil-derrick-mk01" then
 			cbox = 2
 		elseif E.name == "oil-derrick-mk02" then
@@ -79,6 +88,9 @@ script.on_event("recipe-selector", function(event)
 	local selected = player.selected
 		--Oil derrick mk01
 		if selected and selected.name == "oil-derrick-mk01" then
+			if global.hasbuiltoilderrick == false then
+				global.hasbuiltoilderrick = true
+			end
 			local spos = selected.position
 			--log(serpent.block(spos))
 			local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-3,spos.y-3},{spos.x+3,spos.y+3}},name="py-converter-valve"}
@@ -96,6 +108,9 @@ script.on_event("recipe-selector", function(event)
 		end
 		--Oil derrick mk02
 		if selected and selected.name == "oil-derrick-mk02" then
+			if global.hasbuiltoilderrick == false then
+				global.hasbuiltoilderrick = true
+			end
 			local spos = selected.position
 			--log(serpent.block(spos))
 			local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-4,spos.y-4},{spos.x+4,spos.y+4}},name="py-converter-valve"}
@@ -113,6 +128,9 @@ script.on_event("recipe-selector", function(event)
 		end
 		--Oil derrick mk03 off center
 		if selected and selected.name == "oil-derrick-mk03" then
+			if global.hasbuiltoilderrick == false then
+				global.hasbuiltoilderrick = true
+			end
 			local spos = selected.position
 			--log(serpent.block(spos))
 			local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-5,spos.y-5},{spos.x+5,spos.y+5}},name="py-converter-valve"}
@@ -130,6 +148,9 @@ script.on_event("recipe-selector", function(event)
 		end
 		--Oil derrick mk04
 		if selected and selected.name == "oil-derrick-mk04" then
+			if global.hasbuiltoilderrick == false then
+				global.hasbuiltoilderrick = true
+			end
 			local spos = selected.position
 			--log(serpent.block(spos))
 			local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-6,spos.y-6},{spos.x+6,spos.y+6}},name="py-converter-valve"}
@@ -264,7 +285,6 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 		end
 	elseif event.entity.name == "oil-derrick-mk02" then
 		local spos = event.entity.position
-		log(serpent.block(direction))
 		local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-3.5,spos.y-3.5},{spos.x+3.5,spos.y+3.5}},name="py-converter-valve"}
 		for _, v in pairs(valve) do
 			v.destroy()
