@@ -132,5 +132,5 @@ local recipeselect=
 	key_sequence = "SHIFT + G",
 	consuming = "none"
 	}
-	
+
 data:extend{recipeselect}

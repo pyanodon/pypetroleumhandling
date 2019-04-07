@@ -42,14 +42,14 @@ ENTITY {
     {
       {
         production_type = "input",
-        pipe_covers = pipecoverspictures(),
+        pipe_covers = DATA.Pipes.covers(false, true, true, true),
         base_area = 10,
         base_level = -1,
         pipe_connections = {{ type="input", position = {0, -1} }}
       },
       {
         production_type = "output",
-        pipe_covers = pipecoverspictures(),
+        pipe_covers = DATA.Pipes.covers(false, true, true, true),
         base_level = 1,
         pipe_connections = {{ position = {0, 1} }}
       },

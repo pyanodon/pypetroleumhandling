@@ -44,7 +44,6 @@ ENTITY {
         module_slots = 1
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    mining_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
@@ -54,7 +53,7 @@ ENTITY {
     {
       base_area = 1,
       base_level = 1,
-      pipe_covers = pipecoverspictures(),
+      pipe_covers = DATA.Pipes.covers(false, true, true, true),
       pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
       pipe_connections =
       {
@@ -64,7 +63,7 @@ ENTITY {
       }
     },
     energy_usage = "600kW",
-    mining_speed = 1,
+    mining_speed = 2,
     resource_searching_radius = 0.49,
     vector_to_place_result = {-2, -4.75},
     radius_visualisation_picture = {

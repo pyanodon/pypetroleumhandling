@@ -24,7 +24,7 @@ local eingredients
 					--log("hit count")
 					end
 				else
-					for j, v in pairs(ing) do
+					--for j, v in pairs(ing) do
 					--TODO:fix duplicated ingredients on some items
 						if ing[1] == old then
 						--log("pasted check for if ingredients = old item")
@@ -39,15 +39,15 @@ local eingredients
 						--log(serpent.block(data.raw.recipe[recipe.name].ingredients))
 						--log("hit count")
 						end
-					end
+					--end
 				end
 			end
 			--TODO:need to check for ingredients that dont have name declared
 		elseif recipe.normal or recipe.expensive then
-		--log(serpent.block(recipe))
+		log(serpent.block(recipe))
 			if recipe.normal ~= nil then
 			--log("is check good")
-				ningredients = recipe.normal.ingredients 
+				ningredients = recipe.normal.ingredients
 			end
 			if recipe.expensive ~= nil then
 				eingredients = recipe.expensive.ingredients
@@ -78,12 +78,12 @@ local eingredients
 							--log(serpent.block(data.raw.recipe[recipe.name]))
 						end
 					else
-						for j,v in pairs(ing) do
+						--for j,v in pairs(ing) do
 							if ing[1] == old then
 							local A = table.deepcopy(ing[2])
 							data.raw.recipe[recipe.name].normal.ingredients[i] = {new, A}
 							end
-						end
+						--end
 					end
 				end
 			end
@@ -103,12 +103,15 @@ local eingredients
 							--log("hit count")
 						end
 					else
-						for j,v in pairs(ing) do
+						--for j,v in pairs(ing) do
+						log("check this still works")
+						log(serpent.block(ing))
 							if ing[1] == old then
 							local A = table.deepcopy(ing[2])
-							data.raw.recipe[recipe.name].normal.ingredients[i] = {new, A}
+							data.raw.recipe[recipe.name].expensive.ingredients[i] = {new, A}
 							end
-						end
+						log(serpent.block(recipe))
+						--end
 					end
 				end
 			end
@@ -182,7 +185,7 @@ end
 				end
 			end
 		end
-	end		
+	end
 end
 
 function overrides.global_item_replacer(old, new, blackrecipe)
@@ -192,16 +195,14 @@ if type(blackrecipe) ~= "table" and blackrecipe ~= nil then
 end
 local brecipeset = {}
 	if blackrecipe ~= nil then
-		for a, brecipe in pairs(blackrecipe) do
+		for _, brecipe in pairs(blackrecipe) do
 			brecipeset[brecipe] = true
 		end
 	end
 	--log(serpent.block(brecipeset))
 	for recipe in pairs(recipes) do
 		--for b, brecipe in pairs(blackrecipe) do
-			if brecipeset[recipe] then
-			--log(recipe)
-			else
+			if not brecipeset[recipe] then
 				--log(serpent.block(recipe))
 				--log(serpent.block(recipe.name))
 				--log(serpent.block(brecipeset))
@@ -219,7 +220,7 @@ local recipes = table.deepcopy(data.raw.recipe)
 local afrecipes = {}
 local afrcount = 0
 local altrec = 0
-	for r, recipe in pairs(recipes) do
+	for _, recipe in pairs(recipes) do
 		if recipe.category == "advanced-foundry" then
 			table.insert(afrecipes,recipe)
 		end
@@ -228,11 +229,11 @@ local altrec = 0
 		end
 	end
 --cycle thru afrecipes to make changes
-	for r,recipe in pairs(afrecipes) do
+	for _,recipe in pairs(afrecipes) do
 		afrcount=afrcount+1
 		--add ingredient
 		--log(serpent.block(recipe))
-		if recipe.normal == nil and recipe.expensive == nil then 
+		if recipe.normal == nil and recipe.expensive == nil then
 			if recipe.ingredients[1] ~= nil then
 				if recipe.ingredients[1].name == nil then
 					local ing = recipe.ingredients

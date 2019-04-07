@@ -53,7 +53,6 @@ ENTITY {
     },
     energy_usage = "500kW",
     ingredient_count = 10,
-    
     fluid_boxes = {
         --1
         {
