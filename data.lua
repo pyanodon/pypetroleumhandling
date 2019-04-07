@@ -22,6 +22,7 @@ require("prototypes.technologies.oil-machines")
 require("prototypes.technologies.tholins")
 require("prototypes.technologies.light-oil")
 require("prototypes.technologies.petroleum-gas")
+require("prototypes.technologies.coalbed")
 
 
 --(( BUILDINGS ))--
@@ -69,6 +70,17 @@ require("prototypes.buildings.lor-mk02")
 require("prototypes.buildings.lor-mk03")
 require("prototypes.buildings.lor-mk04")
 require("prototypes.buildings.tar-extractor-mk01")
+require("prototypes.buildings.tar-extractor-mk02")
+require("prototypes.buildings.tar-extractor-mk03")
+require("prototypes.buildings.tar-extractor-mk04")
+require("prototypes.buildings.coalbed-mk01")
+require("prototypes.buildings.coalbed-mk02")
+require("prototypes.buildings.coalbed-mk03")
+require("prototypes.buildings.coalbed-mk04")
+require("prototypes.buildings.gas-refinery-mk01")
+require("prototypes.buildings.gas-refinery-mk02")
+require("prototypes.buildings.gas-refinery-mk03")
+require("prototypes.buildings.gas-refinery-mk04")
 
 --))
 
@@ -78,6 +90,7 @@ require("prototypes.recipes.improved-recipes")
 require("prototypes.recipes.oil-sand-recipes")
 require("prototypes.recipes.pumpjack-recipes")
 require("prototypes.recipes.tholin-recipes")
+require("prototypes.recipes.coalbed-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
@@ -94,6 +107,15 @@ require("prototypes.fluids.btx")
 require("prototypes.fluids.tholins")
 require("prototypes.fluids.processed-light-oil")
 require("prototypes.fluids.hot-reaction-gas")
+require("prototypes.fluids.coalbed-gas")
+require("prototypes.fluids.ethylene-glycol")
+require("prototypes.fluids.chloroethanol")
+require("prototypes.fluids.ethylene-chlorohydrin")
+require("prototypes.fluids.condensates")
+require("prototypes.fluids.raw-gas")
+require("prototypes.fluids.refined-natural-gas")
+require("prototypes.fluids.purified-natural-gas")
+require("prototypes.fluids.pure-natural-gas")
 
 
 --(( OTHERS ))--

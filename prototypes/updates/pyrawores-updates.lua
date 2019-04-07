@@ -44,6 +44,14 @@ RECIPE("coalbed-mk01"):add_ingredient({type = "item", name = "glass", amount = 5
 RECIPE("coalbed-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 50})
 RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
+RECIPE("tar-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "chromium", amount = 5})
+RECIPE("tar-extractor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
+RECIPE("tar-extractor-mk03"):add_ingredient({type = "item", name = "titanium-plate", amount = 20}):add_ingredient({type = "item", name = "stainless-steel", amount = 15})
+RECIPE("tar-extractor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
+RECIPE("gas-refinery-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
+RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -86,11 +94,13 @@ RECIPE("wet-scrubber-mk03"):add_ingredient({type = "item", name = "small-parts-0
 
 RECIPE("oil-sand-slurry"):change_category("hydroclassifier")
 RECIPE("bitumen"):change_category("flotation")
+RECIPE("chloroethanol"):change_category("wet-scrubber")
+RECIPE("ethylene-glycol"):change_category("scrubber")
 RECIPE("py-tank-10000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
 RECIPE("bitumen-to-oil"):add_ingredient({type = "fluid", name = "hydrogen", amount = 150})
 RECIPE("bitumen-to-oil2"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
 RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
-RECIPE("tar-to-scrude"):replace_ingredient("chromium", "duralumin")
+RECIPE("tar-to-scrude"):replace_ingredient("chromium", "ticl4")
 RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate")
 RECIPE("small-parts-02"):add_ingredient({type = "item", name = "aluminium-plate", amount = 1}):add_ingredient({type = "item", name = "glass", amount = 1}):add_ingredient({type = "item", name = "titanium-plate", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 1}):replace_ingredient("steel-plate", "stainless-steel")
 RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate", amount = 2}):add_ingredient({type = "item", name = "glass", amount = 2}):add_ingredient({type = "item", name = "titanium-plate", amount = 3}):add_ingredient({type = "item", name = "tin-plate", amount = 3}):replace_ingredient("steel-plate", "super-steel")
@@ -103,6 +113,7 @@ RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel
 RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+RECIPE("ethylene-chlorohydrin"):replace_ingredient("copper-plate", "silver-plate"):replace_ingredient("carbon-dioxide", "chlorine")
 
 
 ----EXCLUSIVE RECIPES----
@@ -383,3 +394,22 @@ RECIPE {
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
 }:add_unlock("tholin-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "coalbed-gas-to-hydrogen",
+    category = "gas-refinery",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "coalbed-gas", amount = 200},
+        {type = "fluid", name = "hot-air", amount = 500},
+        {type = "item", name = "active-carbon", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "hydrogen", amount = 300},
+    },
+    --main_product = "coalbed-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk01")

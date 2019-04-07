@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandling__/graphics/technology/gas-processing-mk01.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk01"},
+    prerequisites = {"coalbed-mk01"},
     effects = {},
     unit = {
         count = 200,

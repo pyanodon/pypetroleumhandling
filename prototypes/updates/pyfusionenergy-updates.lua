@@ -32,7 +32,6 @@ RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts
 RECIPE("gas-separator"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("grease-table"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("grease-table"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("jig"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("nmf"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("secondary-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -130,3 +129,40 @@ RECIPE {
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "e"
 }:add_unlock("tholin-mk04")
+
+RECIPE {
+    type = "recipe",
+    name = "methane-to-methanol2",
+    category = "methanol",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "natural-gas", amount = 100},
+        {type = "fluid", name = "hot-air", amount = 100},
+        {type = "item", name = "molybdenum-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methanol", amount = 200},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("methanol-processing-2")
+
+RECIPE {
+    type = "recipe",
+    name = "methane-to-methanol3",
+    category = "methanol",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "natural-gas", amount = 100},
+        {type = "fluid", name = "hot-air", amount = 100},
+        {type = "item", name = "molybdenum-plate", amount = 1},
+        {type = "item", name = "vanadium-oxide", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methanol", amount = 400},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("methanol-processing-2")
