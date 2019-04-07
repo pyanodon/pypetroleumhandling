@@ -71,4 +71,8 @@ data:extend {
         type = "recipe-category",
         name = "gas-refinery"
     },
+	{
+        type = "recipe-category",
+        name = "converter-valve"
+    },
 }
