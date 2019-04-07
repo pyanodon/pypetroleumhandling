@@ -1,25 +1,3 @@
-local OilDerricks =
-	{
-	"oil-derrick-mk01",
-	"oil-derrick-mk02",
-	"oil-derrick-mk03",
-	"oil-derrick-mk04"
-	}
-	
-local hidrecipe =
-	{
-	"oil-to-oil",
-	"oil-to-gas"
-	}
-
-local Derricks = {}
-
-script.on_init(function(event)
-	for name in pairs(OilDerricks) do
-		Derricks[name] = true
-	end
-end)
-
 script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
 	--change to get direction and enity collision box for entity size
 	local E = event.created_entity
@@ -172,8 +150,7 @@ end)
 script.on_event(defines.events.on_player_rotated_entity, function(event)
 	if event.entity.name == "oil-derrick-mk01" then
 		local direction = event.entity.direction
-		local epos = event.entity.position
-		log(serpent.block(direction))
+		--log(serpent.block(direction))
 		local player = game.players[event.player_index]
 		local selected = player.selected
 		if selected and selected.name == "oil-derrick-mk01" then
@@ -199,8 +176,7 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 		end
 	elseif event.entity.name == "oil-derrick-mk02" then
 		local direction = event.entity.direction
-		local epos = event.entity.position
-		log(serpent.block(direction))
+		--log(serpent.block(direction))
 		local player = game.players[event.player_index]
 		local selected = player.selected
 		if selected and selected.name == "oil-derrick-mk02" then
@@ -226,8 +202,7 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 		end
 	elseif event.entity.name == "oil-derrick-mk03" then
 		local direction = event.entity.direction
-		local epos = event.entity.position
-		log(serpent.block(direction))
+		--log(serpent.block(direction))
 		local player = game.players[event.player_index]
 		local selected = player.selected
 		if selected and selected.name == "oil-derrick-mk03" then
@@ -253,8 +228,7 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 		end
 	elseif event.entity.name == "oil-derrick-mk04" then
 		local direction = event.entity.direction
-		local epos = event.entity.position
-		log(serpent.block(direction))
+		--log(serpent.block(direction))
 		local player = game.players[event.player_index]
 		local selected = player.selected
 		if selected and selected.name == "oil-derrick-mk04" then
@@ -283,14 +257,12 @@ end)
 
 script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_mined_entity}, function(event)
 	if event.entity.name == "oil-derrick-mk01" then
-		local direction = event.entity.direction
 		local spos = event.entity.position
 		local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-2.5,spos.y-2.5},{spos.x+2.5,spos.y+2.5}},name="py-converter-valve"}
 		for _, v in pairs(valve) do
 			v.destroy()
 		end
 	elseif event.entity.name == "oil-derrick-mk02" then
-		local direction = event.entity.direction
 		local spos = event.entity.position
 		log(serpent.block(direction))
 		local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-3.5,spos.y-3.5},{spos.x+3.5,spos.y+3.5}},name="py-converter-valve"}
@@ -298,14 +270,12 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 			v.destroy()
 		end
 	elseif event.entity.name == "oil-derrick-mk03" then
-		local direction = event.entity.direction
 		local spos = event.entity.position
 		local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-4.5,spos.y-4.5},{spos.x+4.5,spos.y+4.5}},name="py-converter-valve"}
 		for _, v in pairs(valve) do
 			v.destroy()
 		end
 	elseif event.entity.name == "oil-derrick-mk04" then
-		local direction = event.entity.direction
 		local spos = event.entity.position
 		local valve = game.surfaces["nauvis"].find_entities_filtered{area={{spos.x-5.5,spos.y-5.5},{spos.x+5.5,spos.y+5.5}},name="py-converter-valve"}
 		for _, v in pairs(valve) do
