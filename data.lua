@@ -14,6 +14,7 @@ require("prototypes.ores.oil-mk01")
 require("prototypes.ores.oil-mk02")
 require("prototypes.ores.oil-mk03")
 require("prototypes.ores.oil-mk04")
+require("prototypes.ores.sulfur-patch")
 --))
 
 --(( Technology ))--
@@ -81,6 +82,8 @@ require("prototypes.buildings.gas-refinery-mk01")
 require("prototypes.buildings.gas-refinery-mk02")
 require("prototypes.buildings.gas-refinery-mk03")
 require("prototypes.buildings.gas-refinery-mk04")
+require("prototypes.buildings.sulfur-mine")
+require("prototypes.buildings.guar-gum-plantation")
 
 --))
 
@@ -116,7 +119,7 @@ require("prototypes.fluids.raw-gas")
 require("prototypes.fluids.refined-natural-gas")
 require("prototypes.fluids.purified-natural-gas")
 require("prototypes.fluids.pure-natural-gas")
-
+require("prototypes.fluids.residual-gas")
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})

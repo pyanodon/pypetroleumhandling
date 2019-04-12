@@ -720,3 +720,215 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk03")
+
+if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
+    RECIPE {
+        type = "recipe",
+        name = "pure-natural-gas-to-methane",
+        category = "gas-refinery",
+        enabled = false,
+        energy_required = 10,
+        ingredients = {
+            {type = "fluid", name = "pure-natural-gas", amount = 100},
+            {type = "fluid", name = "liquid-nitrogen", amount = 50},
+        },
+        results = {
+            {type = "fluid", name = "methane", amount = 500},
+            {type = "fluid", name = "nitrogen", amount = 500},
+            {type = "fluid", name = "residual-gas", amount = 100},
+        },
+        main_product = "methane",
+        subgroup = "py-hightech-fluids",
+        order = "a"
+    }:add_unlock("petroleum-gas-mk03")
+    else if mods["pyhightech"] then
+        RECIPE {
+            type = "recipe",
+            name = "pure-natural-gas-to-methane-2",
+            category = "gas-refinery",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {type = "fluid", name = "pure-natural-gas", amount = 100},
+                {type = "fluid", name = "water", amount = 500},
+            },
+            results = {
+                {type = "fluid", name = "methane", amount = 500},
+                {type = "fluid", name = "steam", amount = 500, temperature = 60},
+                {type = "fluid", name = "residual-gas", amount = 100},
+            },
+            main_product = "methane",
+            subgroup = "py-hightech-fluids",
+            order = "a"
+        }:add_unlock("petroleum-gas-mk03")
+    else
+        RECIPE {
+            type = "recipe",
+            name = "pure-natural-gas-to-petgas",
+            category = "gas-refinery",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {type = "fluid", name = "pure-natural-gas", amount = 100},
+                {type = "fluid", name = "water", amount = 500},
+            },
+            results = {
+                {type = "fluid", name = "petroleum-gas", amount = 500},
+                {type = "fluid", name = "steam", amount = 500, temperature = 60},
+                {type = "fluid", name = "residual-gas", amount = 100},
+            },
+            main_product = "petroleum-gas",
+            subgroup = "py-petroleum-handling-fluids",
+            order = "a"
+        }:add_unlock("petroleum-gas-mk03")
+    end
+end
+
+RECIPE {
+    type = "recipe",
+    name = "residual-gas-to-gasoline",
+    category = "distilator",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "residual-gas", amount = 100},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "gasoline", amount = 200},
+    },
+    main_product = "gasoline",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "residual-gas-to-syngas",
+    category = "distilator",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "residual-gas", amount = 100},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "syngas", amount = 300},
+    },
+    main_product = "syngas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "residual-gas-to-olefins",
+    category = "distilator",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "residual-gas", amount = 100},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "olefin", amount = 250},
+    },
+    main_product = "olefin",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-01",
+    category = "guar",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 200},
+        {type = "item", name = "sand", amount = 8},
+        {type = "item", name = "soil", amount = 8},
+    },
+    results = {
+        {type = "item", name = "guar", amount = 5},
+    },
+    main_product = "guar",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-02",
+    category = "guar",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 200},
+        {type = "item", name = "ash", amount = 10},
+        {type = "item", name = "small-lamp", amount = 1},
+        {type = "item", name = "soil", amount = 8},
+    },
+    results = {
+        {type = "item", name = "guar", amount = 5},
+    },
+    main_product = "guar",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-03",
+    category = "guar",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 200},
+        {type = "fluid", name = "carbon-dioxide", amount = 200},
+        {type = "item", name = "sand", amount = 8},
+        {type = "item", name = "small-lamp", amount = 1},
+        {type = "item", name = "soil", amount = 8},
+    },
+    results = {
+        {type = "item", name = "guar", amount = 5},
+    },
+    main_product = "guar",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-separation",
+    category = "solid-separator",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "item", name = "guar", amount = 10},
+        },
+    results = {
+        {type = "item", name = "guar-seeds", amount = 50},
+        {type = "item", name = "organics", amount = 20},
+    },
+    main_product = "guar-seeds",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-gum",
+    category = "ball-mill",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "item", name = "guar-seeds", amount = 200},
+        },
+    results = {
+        {type = "item", name = "guar-gum", amount = 1},
+    },
+    main_product = "guar-gum",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk01"):change_category("pulp")

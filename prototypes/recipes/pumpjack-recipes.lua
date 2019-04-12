@@ -6,6 +6,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
+        {type = "fluid", name = "syngas", amount = 20},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 20},
@@ -79,6 +80,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
+        {type = "fluid", name = "syngas", amount = 20},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 20},

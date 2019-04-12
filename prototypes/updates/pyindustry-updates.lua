@@ -1,4 +1,7 @@
 RECIPE("reformer-mk02"):add_ingredient({type = "item", name = "py-tank-5000", amount = 2})
+RECIPE("py-construction-robot-01"):add_ingredient({type = "item", name = "belt", amount = 3})
+RECIPE("py-logistic-robot-01"):add_ingredient({type = "item", name = "belt", amount = 3})
+
 
 
 RECIPE {
