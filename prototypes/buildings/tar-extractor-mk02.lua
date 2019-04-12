@@ -109,7 +109,4 @@ ENTITY {
         idle_sound = {filename = "__pypetroleumhandling__/sounds/tar-extractor.ogg", volume = 0.75},
         apparent_volume = 2.5
     },
-    circuit_wire_connection_points = circuit_connector_definitions["pumpjack"].points,
-    circuit_connector_sprites = circuit_connector_definitions["pumpjack"].sprites,
-    circuit_wire_max_distance = default_circuit_wire_max_distance
 }
