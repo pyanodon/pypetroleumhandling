@@ -119,3 +119,36 @@ ITEM {
     order = "a",
     stack_size = 500
 }
+
+ITEM {
+    type = "item",
+    name = "guar",
+    icon = "__pypetroleumhandling__/graphics/icons/guar.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "guar-seeds",
+    icon = "__pypetroleumhandling__/graphics/icons/guar-seeds.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "guar-gum",
+    icon = "__pypetroleumhandling__/graphics/icons/guar-gum.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}

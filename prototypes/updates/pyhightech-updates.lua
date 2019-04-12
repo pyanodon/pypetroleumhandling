@@ -383,3 +383,63 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("coalbed-mk02"):replace_ingredient("steam", "pressured-water")
+
+RECIPE {
+    type = "recipe",
+    name = "residual-gas-to-propene",
+    category = "distilator",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "residual-gas", amount = 100},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "propene", amount = 200},
+    },
+    main_product = "propene",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-04",
+    category = "guar",
+    enabled = false,
+    energy_required = 18,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 200},
+        {type = "fluid", name = "carbon-dioxide", amount = 200},
+        {type = "item", name = "sand", amount = 8},
+        {type = "item", name = "small-lamp", amount = 1},
+        {type = "item", name = "clay", amount = 8},
+    },
+    results = {
+        {type = "item", name = "guar", amount = 8},
+    },
+    main_product = "guar",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "guar-05",
+    category = "guar",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 200},
+        {type = "fluid", name = "carbon-dioxide", amount = 200},
+        {type = "item", name = "py-fertilizer", amount = 2},
+        {type = "item", name = "small-lamp", amount = 1},
+        {type = "item", name = "soil", amount = 8},
+    },
+    results = {
+        {type = "item", name = "guar", amount = 10},
+    },
+    main_product = "guar",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk02")

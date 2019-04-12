@@ -17,6 +17,10 @@ data:extend {
     },
     {
         type = "resource-category",
+        name = "sulfur-patch"
+    },
+    {
+        type = "resource-category",
         name = "oil-mk03"
     },
     {
@@ -70,6 +74,10 @@ data:extend {
     {
         type = "recipe-category",
         name = "gas-refinery"
+    },
+    {
+        type = "recipe-category",
+        name = "guar"
     },
 	{
         type = "recipe-category",
