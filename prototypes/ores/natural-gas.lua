@@ -1,3 +1,5 @@
+local resource_autoplace = require("__base__/prototypes/entity/demo-resource-autoplace")
+
 ENTITY {
     type = "resource",
     name = "natural-gas",
