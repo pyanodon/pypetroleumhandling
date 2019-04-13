@@ -44,7 +44,7 @@ local eingredients
 			end
 			--TODO:need to check for ingredients that dont have name declared
 		elseif recipe.normal or recipe.expensive then
-		log(serpent.block(recipe))
+		--log(serpent.block(recipe))
 			if recipe.normal ~= nil then
 			--log("is check good")
 				ningredients = recipe.normal.ingredients
@@ -304,13 +304,27 @@ local altrec = 0
 				end
 			end
 		end
-		--log(serpent.block(recipe))
+		--find tech unlock of og recipe
+		local unlock
+		for _,t in pairs(data.raw.technology) do
+		--log(serpent.block(t))
+			if t.effects ~= nil then
+				for _,u in pairs(t.effects) do
+					if u.recipe == recipe.name then
+						unlock = t.name
+						log(unlock)
+					end
+				end
+			end
+		end
+		log(serpent.block(recipe))
+		local hname = "hotair-" .. recipe.name
 		if recipe.results then
 			RECIPE {
 			type = "recipe",
-			name = "hotair-" .. recipe.name,
+			name = hname,
 			category = "hot-air-advanced-foundry",
-			enabled = true,
+			enabled = false,
 			energy_required = recipe.energy_required,
 			ingredients = recipe.ingredients,
 			results = recipe.results,
@@ -318,23 +332,29 @@ local altrec = 0
 			icons = recipe.icons,
 			icon_size = 32,
 			main_product = recipe.main_product or nil
-			}:add_unlock("oil-machines-mk01")
-		altrec=altrec+1
-		--table.insert(data.raw.technology["oil-machines-mk01"]
+			}--:add_unlock(unlock)
+			altrec=altrec+1
+			if recipe.enabled == false then
+				if unlock ~= nil then
+					table.insert(data.raw.technology[unlock].effects,{type="unlock-recipe",recipe=hname})
+				end
+			elseif recipe.enabled == true then
+				data.raw.recipe[hname].enabled = true
+			end
 		end
 		if recipe.normal or recipe.expensive then
 			RECIPE {
 				type = "recipe",
-				name = "hotair-" .. recipe.name,
+				name = hname,
 				category = "hot-air-advanced-foundry",
 				normal = {
-					enabled = true,
+					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.normal.ingredients,
 					results = recipe.normal.results,
 					},
 				expensive = {
-					enabled = true,
+					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.expensive.ingredients,
 					results = recipe.expensive.results,
@@ -343,8 +363,20 @@ local altrec = 0
 				icons = recipe.icons,
 				icon_size = 32,
 				main_product = recipe.main_product or nil
-				}:add_unlock("oil-machines-mk01")
-		altrec=altrec+1
+				}--:add_unlock(unlock)
+			altrec=altrec+1
+			if recipe.normal.enabled == false or recipe.expensive.enabled == false then
+				if unlock ~= nil then
+					table.insert(data.raw.technology[unlock].effects,{type="unlock-recipe",recipe=hname})
+				end
+			elseif recipe.normal.enabled == true or recipe.expensive.enabled == true then
+				if recipe.normal.enabled == true then
+					data.raw.recipe[hname].normal.enabled = true
+				end
+				if recipe.expensive.enabled == true then
+					data.raw.recipe[hname].expensive.enabled = true
+				end
+			end
 		end
 	end
 --log(serpent.block(afrecipes))

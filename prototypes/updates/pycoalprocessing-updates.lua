@@ -15,7 +15,7 @@ table.insert(data.raw["assembling-machine"]["advanced-foundry-mk01"].crafting_ca
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk02"].crafting_categories,"hot-air-advanced-foundry")
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk03"].crafting_categories,"hot-air-advanced-foundry")
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk04"].crafting_categories,"hot-air-advanced-foundry")
-log(serpent.block(data.raw["assembling-machine"]["advanced-foundry-mk01"]))
+--log(serpent.block(data.raw["assembling-machine"]["advanced-foundry-mk01"]))
 
 --parts2
 
