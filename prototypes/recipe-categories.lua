@@ -79,6 +79,10 @@ data:extend {
         type = "recipe-category",
         name = "guar"
     },
+    {
+        type = "recipe-category",
+        name = "fracking"
+    },
 	{
         type = "recipe-category",
         name = "converter-valve"

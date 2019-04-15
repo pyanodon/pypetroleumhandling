@@ -923,7 +923,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "item", name = "guar-seeds", amount = 200},
+        {type = "item", name = "guar-seeds", amount = 150},
         },
     results = {
         {type = "item", name = "guar-gum", amount = 1},

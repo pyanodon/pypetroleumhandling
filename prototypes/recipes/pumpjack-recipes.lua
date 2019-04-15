@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
-        {type = "fluid", name = "syngas", amount = 20},
+        {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 20},
@@ -25,6 +25,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
+        {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 45},
@@ -43,6 +44,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 3},
         {type = "item", name = "drill-head", amount = 2},
+        {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 70},
@@ -63,6 +65,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-03", amount = 3},
         {type = "item", name = "drill-head", amount = 3},
+        {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 130},
@@ -80,7 +83,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
-        {type = "fluid", name = "syngas", amount = 20},
+        {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 20},
@@ -101,6 +104,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
+        {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 45},
@@ -121,6 +125,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 3},
         {type = "item", name = "drill-head", amount = 2},
+        {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 70},
@@ -141,6 +146,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-03", amount = 3},
         {type = "item", name = "drill-head", amount = 3},
+        {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 130},

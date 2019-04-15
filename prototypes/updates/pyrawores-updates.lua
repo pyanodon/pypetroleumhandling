@@ -52,7 +52,7 @@ RECIPE("gas-refinery-mk01"):add_ingredient({type = "item", name = "glass", amoun
 RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
-
+RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amount = 100})
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -114,6 +114,10 @@ RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingre
 RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("ethylene-chlorohydrin"):replace_ingredient("copper-plate", "silver-plate"):replace_ingredient("carbon-dioxide", "chlorine")
+RECIPE("drilling-fluid-1"):add_ingredient({type = "item", name = "ore-titanium", amount = 5})
+RECIPE("drilling-fluid-2"):replace_ingredient("water", "hydrogen-chloride")
+RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "salt", amount = 20})
+
 
 
 ----EXCLUSIVE RECIPES----
