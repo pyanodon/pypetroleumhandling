@@ -24,6 +24,7 @@ require("prototypes.technologies.tholins")
 require("prototypes.technologies.light-oil")
 require("prototypes.technologies.petroleum-gas")
 require("prototypes.technologies.coalbed")
+require("prototypes.technologies.fracking")
 
 
 --(( BUILDINGS ))--
@@ -84,6 +85,7 @@ require("prototypes.buildings.gas-refinery-mk03")
 require("prototypes.buildings.gas-refinery-mk04")
 require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
+require("prototypes.buildings.fracking-rig")
 
 --))
 
@@ -94,6 +96,7 @@ require("prototypes.recipes.oil-sand-recipes")
 require("prototypes.recipes.pumpjack-recipes")
 require("prototypes.recipes.tholin-recipes")
 require("prototypes.recipes.coalbed-recipes")
+require("prototypes.recipes.fracking-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
@@ -120,6 +123,9 @@ require("prototypes.fluids.refined-natural-gas")
 require("prototypes.fluids.purified-natural-gas")
 require("prototypes.fluids.pure-natural-gas")
 require("prototypes.fluids.residual-gas")
+require("prototypes.fluids.drilling-fluid-1")
+require("prototypes.fluids.drilling-fluid-2")
+require("prototypes.fluids.drilling-fluid-3")
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})

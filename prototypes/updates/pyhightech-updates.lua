@@ -25,7 +25,7 @@ RECIPE("lor-mk03"):add_ingredient({type = "item", name = "heavy-fermion", amount
 RECIPE("lor-mk04"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 10})
 RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 40}):add_ingredient({type = "item", name = "carbon-nanotube", amount = 30}):add_ingredient({type = "item", name = "graphene-roll", amount = 10})
 RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "carbon-aerogel", amount = 10}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 10})
-
+RECIPE("fracking-rig"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 20})
 
 RECIPE("cadaveric-arum"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
 RECIPE("electronics-factory"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
@@ -46,6 +46,7 @@ RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("ar
 RECIPE("ethylene-glycol"):replace_ingredient("pure-sand", "colloidal-silica")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
 RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
+RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 5})
 
 
 ----EXCLUSIVE RECIPES----
