@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "tholin-plant-mk03",
-    energy_required = 10,
+    energy_required = 2,
     enabled = false,
     ingredients = {
         {"tholin-plant-mk02", 1},

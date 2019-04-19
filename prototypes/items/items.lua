@@ -152,3 +152,14 @@ ITEM {
     order = "a",
     stack_size = 500
 }
+
+ITEM {
+    type = "item",
+    name = "soot",
+    icon = "__pypetroleumhandling__/graphics/icons/soot.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "fracking-rig",
-    energy_required = 10,
+    energy_required = 2,
     enabled = false,
     ingredients = {
         {"stone-brick", 200},

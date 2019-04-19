@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "gas-refinery-mk01",
-    energy_required = 10,
+    energy_required = 2,
     enabled = false,
     ingredients = {
         {"fts-reactor", 1},
@@ -14,7 +14,7 @@ RECIPE {
     results = {
         {"gas-refinery-mk01", 1}
     }
-}:add_unlock("petroleum-gas-mk01")
+}:add_unlock("oil-machines-mk01")
 
 ITEM {
     type = "item",

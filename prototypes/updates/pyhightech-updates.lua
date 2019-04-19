@@ -444,3 +444,53 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "naphtha-2-tall-oil",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "naphtha", amount = 150},
+    },
+    results = {
+        {type = "fluid", name = "tall-oil", amount = 100},
+    },
+    main_product = "tall-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-cumene",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "item", name = "ticl4", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "cumene", amount = 200},
+    },
+    main_product = "cumene",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-benzene",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "item", name = "sncr-alloy", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "benzene", amount = 150},
+    },
+    main_product = "benzene",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk03")
