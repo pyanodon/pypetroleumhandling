@@ -93,10 +93,32 @@ RECIPE {
         {type = "fluid", name = "fuel-oil", amount = 100}
     },
     results = {
-        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 670},
+        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 800},
         {type = "fluid", name = "steam", amount = 500, temperature = 60}
     },
     icon = "__pypetroleumhandling__/graphics/icons/combustion-fuel-oil.png",
+    icon_size = 32,
+    --main_product = "combustion-mixture1",
+    subgroup = "py-combustion",
+    order = "k"
+}:add_unlock("energy-1")
+
+RECIPE {
+    type = "recipe",
+    name = "aromatics-combustion",
+    category = "combustion",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "coke", amount = 4},
+        {type = "fluid", name = "aromatics", amount = 100}
+    },
+    results = {
+        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 670},
+        {type = "fluid", name = "steam", amount = 500, temperature = 60}
+    },
+    icon = "__pypetroleumhandling__/graphics/icons/combustion-aromatics.png",
     icon_size = 32,
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",

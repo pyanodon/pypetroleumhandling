@@ -357,7 +357,7 @@ RECIPE {
         {type = "fluid", name = "tar", amount = 300},
     },
     results = {
-        {type = "fluid", name = "heavy-oil", amount = 200},
+        {type = "fluid", name = "heavy-oil", amount = 100},
         {type = "item", name = "coke", amount = 20},
     },
     main_product = "heavy-oil",
@@ -443,7 +443,7 @@ RECIPE {
         {type = "item", name = "iron-plate", amount = 2},
     },
     results = {
-        {type = "fluid", name = "aromatics", amount = 300},
+        {type = "fluid", name = "aromatics", amount = 150},
     },
     main_product = "aromatics",
     icon = "__pycoalprocessing__/graphics/icons/aromatics.png",
@@ -505,7 +505,7 @@ RECIPE {
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
-        {type = "fluid", name = "aromatics", amount = 400},
+        {type = "fluid", name = "aromatics", amount = 200},
     },
     main_product = "aromatics",
     icon = "__pycoalprocessing__/graphics/icons/aromatics.png",
@@ -661,11 +661,11 @@ RECIPE {
         {type = "fluid", name = "styrene", amount = 100},
     },
     main_product = "styrene",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandling__/graphics/icons/styrene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber")
+}:add_unlock("oil-machines-mk02")
 
 RECIPE {
     type = "recipe",
@@ -932,3 +932,463 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk01"):change_category("pulp")
+
+RECIPE {
+    type = "recipe",
+    name = "aromatics-2-diesel",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "aromatics", amount = 500},
+        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "diesel", amount = 300},
+    },
+    main_product = "diesel",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "aromatics-2-petgas",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "aromatics", amount = 400},
+        {type = "fluid", name = "naphtha", amount = 120},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "petroleum-gas", amount = 300},
+    },
+    main_product = "petroleum-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+
+
+
+-- >>>>>COKE BIG CHAIN<<<<< --
+
+
+
+
+RECIPE {
+    type = "recipe",
+    name = "oil-breakdown",
+    category = "distilator",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "crude-oil", amount = 400},
+    },
+    results = {
+        {type = "fluid", name = "residual-oil", amount = 100},
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "fluid", name = "medium-distillate", amount = 100},
+        {type = "fluid", name = "high-distillate", amount = 100},
+    },
+    main_product = "residual-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "tar-breakdown",
+    category = "distilator",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "tar", amount = 650},
+    },
+    results = {
+        {type = "fluid", name = "residual-oil", amount = 100},
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "fluid", name = "medium-distillate", amount = 100},
+        {type = "fluid", name = "high-distillate", amount = 100},
+    },
+    main_product = "residual-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+  -- HIGH DISTILLATE --
+
+  RECIPE {
+    type = "recipe",
+    name = "high-distillate-condensing",
+    category = "compressor",
+    energy_required = 5,
+    ingredients = {
+        {type = "fluid", name = "high-distillate", amount = 100},
+        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "gasoline", amount = 5}
+    },
+    results = {
+        {type = "fluid", name = "condensed-distillate", amount = 100},
+        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+    },
+    main_product = "condensed-distillate",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "high-distillate-separation-saline",
+    category = "gas-refinery",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "condensed-distillate", amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "water-saline", amount = 200},
+    },
+    main_product = "water-saline",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "high-distillate-separation-aromatics",
+    category = "gas-refinery",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "condensed-distillate", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "aromatics", amount = 300},
+    },
+    main_product = "aromatics",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk02"):replace_ingredient("nexelit-plate", "ticl4")
+
+RECIPE {
+    type = "recipe",
+    name = "high-distillate-separation-syngas",
+    category = "gas-refinery",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "condensed-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "syngas", amount = 200},
+    },
+    main_product = "syngas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "high-distillate-separation-refsyngas",
+    category = "gas-refinery",
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "condensed-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 3},
+    },
+    results = {
+        {type = "fluid", name = "refsyngas", amount = 200},
+    },
+    main_product = "refsyngas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "high-distillate-separation-petgas",
+    category = "gas-refinery",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "condensed-distillate", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "petroleum-gas", amount = 200},
+    },
+    main_product = "petroleum-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+
+  -- MEDIUM DISTILLATE --
+
+  RECIPE {
+    type = "recipe",
+    name = "medium-distillate-to-stripped-distillate",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "medium-distillate", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+    },
+    main_product = "stripped-distillate",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-light-oil",
+    category = "compressor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "gasoline", amount = 5}
+    },
+    results = {
+        {type = "fluid", name = "light-oil", amount = 300},
+        {type = "fluid", name = "residual-oil", amount = 50},
+        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+    },
+    main_product = "light-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-gasoline",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "gasoline", amount = 200},
+    },
+    main_product = "gasoline",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-methanol",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methanol", amount = 150},
+    },
+    main_product = "methanol",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-olefin",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "olefin", amount = 200},
+    },
+    main_product = "olefin",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk03"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "stripped-distillate-to-fuel-oil",
+    category = "lor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "stripped-distillate", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "fuel-oil", amount = 250},
+    },
+    main_product = "fuel-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+
+  -- LOW DISTILLATE --
+
+  RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-heavy-oil",
+    category = "compressor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "gasoline", amount = 5}
+    },
+    results = {
+        {type = "fluid", name = "heavy-oil", amount = 200},
+        {type = "fluid", name = "residual-oil", amount = 50},
+        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+    },
+    main_product = "heavy-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-coal-gas",
+    category = "hor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "coal-gas", amount = 200},
+    },
+    main_product = "coal-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-btx",
+    category = "hor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "btx", amount = 100},
+    },
+    main_product = "btx",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-btx",
+    category = "hor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "btx", amount = 100},
+    },
+    main_product = "btx",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-lubricant",
+    category = "hor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "lubricant", amount = 150},
+    },
+    main_product = "lubricant",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+
+  -- RESIDUAL OIL --
+
+  RECIPE {
+    type = "recipe",
+    name = "residual-mixture",
+    category = "mixer",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "residual-oil", amount = 200},
+        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "item", name = "ash", amount = 10}
+    },
+    results = {
+        {type = "fluid", name = "residual-mixture", amount = 100},
+    },
+    main_product = "residual-mixture",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "hot-residual-mixture",
+    category = "hpf",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "residual-mixture", amount = 100},
+        {type = "item", name = "coke", amount = 10}
+    },
+    results = {
+        {type = "fluid", name = "hot-residual-mixture", amount = 100},
+    },
+    main_product = "hot-residual-mixture",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk02")
+
+if mods["pyrawores"] then
+    RECIPE {
+        type = "recipe",
+        name = "hot-residual-mixture-to-coke",
+        category = "upgrader",
+        energy_required = 6,
+        ingredients = {
+            {type = "fluid", name = "hot-residual-mixture", amount = 150},
+            {type = "fluid", name = "water", amount = 300},
+            {type = "fluid", name = "steam", amount = 300, temperature = 165},
+        },
+        results = {
+            {type = "item", name = "coke", amount = 60},
+            {type = "fluid", name = "coke-oven-gas", amount = 50},
+        },
+        main_product = "coke",
+        subgroup = "py-petroleum-handling-fluids",
+        order = "a"
+    }:add_unlock("coke-mk02")
+else
+    RECIPE {
+        type = "recipe",
+        name = "hot-residual-mixture-to-coke-2",
+        category = "upgrader",
+        energy_required = 6,
+        ingredients = {
+            {type = "fluid", name = "hot-residual-mixture", amount = 150},
+            {type = "fluid", name = "water", amount = 300},
+            {type = "fluid", name = "steam", amount = 300, temperature = 165},
+        },
+        results = {
+            {type = "item", name = "coke", amount = 60},
+        },
+        main_product = "coke",
+        subgroup = "py-petroleum-handling-fluids",
+        order = "a"
+    }:add_unlock("oil-machines-mk02")
+end

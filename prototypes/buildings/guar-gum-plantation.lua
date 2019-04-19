@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "guar-gum-plantation",
-    energy_required = 10,
+    energy_required = 2,
     enabled = false,
     ingredients = {
         {"pipe", 20},

@@ -166,3 +166,21 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("methanol-processing-2")
+
+RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-grease",
+    category = "hor",
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "fluid", name = "lubricant", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "grease", amount = 100},
+    },
+    main_product = "grease",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("oil-machines-mk03"):replace_ingredient("chromium", "sncr-alloy")

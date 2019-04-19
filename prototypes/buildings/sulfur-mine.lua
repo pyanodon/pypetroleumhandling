@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "sulfur-mine",
-    energy_required = 10,
+    energy_required = 2,
     enabled = false,
     ingredients = {
         {"electric-mining-drill", 5},

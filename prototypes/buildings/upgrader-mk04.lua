@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "upgrader-mk04",
-    energy_required = 10,
+    energy_required = 2,
     enabled = false,
     ingredients = {
         {"upgrader-mk03", 1},
