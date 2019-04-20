@@ -40,7 +40,6 @@ if mods["pyhightech"] and mods["pyrawores"] then
             subgroup = "py-petroleum-handling-fluids",
             order = "h"
         }:add_unlock("oil-machines-mk02")
-        
     else
         RECIPE {
             type = "recipe",
@@ -61,7 +60,6 @@ if mods["pyhightech"] and mods["pyrawores"] then
             subgroup = "py-petroleum-handling-fluids",
             order = "h"
         }:add_unlock("oil-machines-mk02")
-        
     end
 end
 
