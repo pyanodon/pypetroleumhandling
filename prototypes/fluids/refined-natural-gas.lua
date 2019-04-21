@@ -15,7 +15,7 @@ RECIPE {
     main_product = "refined-natural-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk01")
+}:add_unlock("petroleum-gas-mk02")
 
 FLUID {
     type = "fluid",

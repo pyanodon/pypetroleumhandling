@@ -19,6 +19,7 @@ RECIPE {
     type = "recipe",
     name = "hot-reaction-gas",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "pressured-hydrogen", amount = 50},
@@ -33,12 +34,13 @@ RECIPE {
     main_product = "hot-reaction-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk01")
+}:add_unlock("light-oil-mk02")
 else
     RECIPE {
         type = "recipe",
         name = "hot-reaction-gas",
         category = "lor",
+        enabled = false,
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "water", amount = 600},
@@ -52,5 +54,5 @@ else
         main_product = "hot-reaction-gas",
         subgroup = "py-petroleum-handling-fluids",
         order = "a"
-    }:add_unlock("light-oil-mk01")
+    }:add_unlock("light-oil-mk02")
 end

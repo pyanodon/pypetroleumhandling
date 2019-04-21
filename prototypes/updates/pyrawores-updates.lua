@@ -283,7 +283,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-1")
+}:add_unlock("oil-machines-mk01")
 
 RECIPE {
     type = "recipe",
@@ -376,7 +376,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "nitrogen", amount = 50},
+        {type = "fluid", name = "nitrogen", amount = 20},
     },
     icon = "__pyrawores__/graphics/icons/nitrogen.png",
     icon_size = 32,
@@ -394,7 +394,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "hydrogen", amount = 60},
+        {type = "fluid", name = "hydrogen", amount = 40},
     },
     icon = "__pyrawores__/graphics/icons/hydrogen.png",
     icon_size = 32,
@@ -588,6 +588,7 @@ RECIPE {
     type = "recipe",
     name = "aromatics-2-diesel2",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 500},
@@ -606,6 +607,7 @@ RECIPE {
     type = "recipe",
     name = "aromatics-2-petgas2",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 400},
@@ -624,6 +626,7 @@ RECIPE {
     type = "recipe",
     name = "high-distillate-separation-hydrogen",
     category = "gas-refinery",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
@@ -641,6 +644,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-xylenol",
     category = "hor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -658,6 +662,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-kerosene",
     category = "hor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -697,6 +702,7 @@ RECIPE {
     type = "recipe",
     name = "oil-breakdown-2",
     category = "distilator",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 400},
@@ -717,6 +723,7 @@ RECIPE {
     type = "recipe",
     name = "tar-breakdown-2",
     category = "distilator",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "tar", amount = 650},
@@ -737,6 +744,7 @@ RECIPE {
     type = "recipe",
     name = "quench-ovengas",
     category = "quenching-tower",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "water", amount = 100},
@@ -756,6 +764,7 @@ RECIPE {
     type = "recipe",
     name = "scrubber-outletgas2",
     category = "wet-scrubber",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "water", amount = 100},
@@ -775,6 +784,7 @@ RECIPE {
     type = "recipe",
     name = "scrubber-outletgas4",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "water", amount = 100},

@@ -31,7 +31,7 @@ if mods["pyrawores"] then
         main_product = "processed-light-oil",
         subgroup = "py-petroleum-handling-fluids",
         order = "a"
-    }:add_unlock("light-oil-mk01")
+    }:add_unlock("light-oil-mk02")
 else
     RECIPE {
         type = "recipe",
@@ -48,6 +48,6 @@ else
         main_product = "processed-light-oil",
         subgroup = "py-petroleum-handling-fluids",
         order = "a"
-    }:add_unlock("light-oil-mk01")
+    }:add_unlock("light-oil-mk02")
 end
 

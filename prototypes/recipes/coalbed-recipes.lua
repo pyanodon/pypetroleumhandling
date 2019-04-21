@@ -1,5 +1,24 @@
 RECIPE {
     type = "recipe",
+    name = "minor-extract-gas-from-coalbed-3",
+    category = "coalbed",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+        {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
+        {type = "fluid", name = "hot-air", amount = 500},
+    },
+    results = {
+        {type = "fluid", name = "coalbed-gas", amount = 150},
+        {type = "fluid", name = "water", amount = 2500},
+    },
+    main_product = "coalbed-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("coalbed-mk01"):replace_ingredient("hot-air", "oxygen"):replace_ingredient("steam", "pressured-water")
+
+RECIPE {
+    type = "recipe",
     name = "extract-gas-from-coalbed-3",
     category = "coalbed",
     enabled = false,
@@ -16,7 +35,7 @@ RECIPE {
     main_product = "coalbed-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("coalbed-mk01"):replace_ingredient("hot-air", "oxygen"):replace_ingredient("steam", "pressured-water")
+}:add_unlock("coalbed-mk02"):replace_ingredient("hot-air", "oxygen"):replace_ingredient("steam", "pressured-water")
 
 RECIPE {
     type = "recipe",
@@ -81,7 +100,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "coalbed-gas-to-co2",
+    name = "coalbed-gas-to-acidgas",
     category = "gas-refinery",
     enabled = false,
     energy_required = 4,
@@ -120,3 +139,44 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("petroleum-gas-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "refined-natural-gas-to-refsyngas",
+    category = "gas-refinery",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+        {type = "fluid", name = "refined-natural-gas", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "refsyngas", amount = 50},
+        {type = "fluid", name = "flue-gas", amount = 500},
+    },
+    main_product = "refsyngas",
+    icon = "__pycoalprocessing__/graphics/icons/refsyngas.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "natural-gas-to-syngas",
+    category = "gas-refinery",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+        {type = "fluid", name = "natural-gas", amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "syngas", amount = 50},
+        {type = "fluid", name = "flue-gas", amount = 200},
+    },
+    main_product = "syngas",
+    icon = "__pycoalprocessing__/graphics/icons/syngas.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk01")

@@ -361,7 +361,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("coalbed-mk01"):replace_ingredient("steam", "pressured-water")
+}:add_unlock("coalbed-mk02"):replace_ingredient("steam", "pressured-water")
 
 RECIPE {
     type = "recipe",
