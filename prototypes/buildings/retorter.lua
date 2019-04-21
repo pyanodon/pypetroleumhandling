@@ -194,7 +194,7 @@ ENTITY {
                 --run_mode = "forward-then-backward",
                 animation_speed = 0.5
             }
-        },  
+        },
     },
     fluid_boxes = {
         --1
