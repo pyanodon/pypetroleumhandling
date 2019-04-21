@@ -312,12 +312,12 @@ local altrec = 0
 				for _,u in pairs(t.effects) do
 					if u.recipe == recipe.name then
 						unlock = t.name
-						log(unlock)
+						--log(unlock)
 					end
 				end
 			end
 		end
-		log(serpent.block(recipe))
+		--log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
 		if recipe.results then
 			RECIPE {
