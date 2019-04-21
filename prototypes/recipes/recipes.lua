@@ -1370,7 +1370,7 @@ if mods["pyrawores"] then
             {type = "fluid", name = "coke-oven-gas", amount = 50},
         },
         main_product = "coke",
-        subgroup = "py-petroleum-handling-fluids",
+        subgroup = "py-petroleum-handling-recipes",
         order = "a"
     }:add_unlock("coke-mk02")
 else
@@ -1388,7 +1388,115 @@ else
             {type = "item", name = "coke", amount = 60},
         },
         main_product = "coke",
-        subgroup = "py-petroleum-handling-fluids",
+        subgroup = "py-petroleum-handling-recipes",
         order = "a"
     }:add_unlock("oil-machines-mk02")
 end
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-1",
+    category = "kerogen",
+    energy_required = 15,
+    ingredients = {
+        {type = "fluid", name = "hot-air", amount = 1000},
+        {type = "item", name = "coke", amount = 10},
+        {type = "item", name = "drill-head", amount = 3},
+    },
+    results = {
+        {type = "item", name = "kerogen", amount = 50},
+    },
+    main_product = "kerogen",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("kerogen")
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-2",
+    category = "kerogen",
+    energy_required = 15,
+    ingredients = {
+        {type = "fluid", name = "hot-air", amount = 1000},
+        {type = "fluid", name = "steam", amount = 1000},
+        {type = "item", name = "coke", amount = 10},
+        {type = "item", name = "pipe", amount = 15},
+    },
+    results = {
+        {type = "item", name = "kerogen", amount = 100},
+    },
+    main_product = "kerogen",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("kerogen"):replace_ingredient("pipe", "niobium-pipe")
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-extraction",
+    category = "hpf",
+    energy_required = 10,
+    ingredients = {
+        {type = "item", name = "kerogen", amount = 100},
+        {type = "item", name = "fuelrod-mk01", amount = 3},
+    },
+    results = {
+        {type = "fluid", name = "scrude", amount = 100},
+    },
+    main_product = "scrude",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("kerogen")
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-extraction-2",
+    category = "distilator",
+    energy_required = 10,
+    ingredients = {
+        {type = "item", name = "kerogen", amount = 100},
+        {type = "fluid", name = "water", amount = 3000},
+        {type = "fluid", name = "hot-air", amount = 1000},
+    },
+    results = {
+        {type = "fluid", name = "gasoline", amount = 200},
+    },
+    main_product = "gasoline",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("kerogen")
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-extraction-3",
+    category = "distilator",
+    energy_required = 10,
+    ingredients = {
+        {type = "item", name = "kerogen", amount = 100},
+        {type = "fluid", name = "water", amount = 3000},
+        {type = "fluid", name = "hot-air", amount = 1000},
+    },
+    results = {
+        {type = "fluid", name = "crude-oil", amount = 250},
+    },
+    main_product = "crude-oil",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("kerogen")
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-separation",
+    category = "gas-separator",
+    energy_required = 5,
+    ingredients = {
+        {type = "item", name = "kerogen", amount = 100},
+        {type = "fluid", name = "hot-air", amount = 300},
+    },
+    results = {
+        {type = "fluid", name = "natural-gas", amount = 150},
+        {type = "fluid", name = "crude-oil", amount = 50},
+    },
+    main_product = "natural-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("kerogen")

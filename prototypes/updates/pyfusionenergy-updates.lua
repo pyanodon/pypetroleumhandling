@@ -23,6 +23,7 @@ RECIPE("lor-mk04"):add_ingredient({type = "item", name = "super-alloy", amount =
 RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 5}):add_ingredient({type = "item", name = "nbti-alloy", amount = 20})
 RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "boron-carbide", amount = 30}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "wall-shield", amount = 5}):add_ingredient({type = "item", name = "science-coating", amount = 2}):add_ingredient({type = "item", name = "control-unit", amount = 5})
+RECIPE("retorter"):add_ingredient({type = "item", name = "control-unit", amount = 10}):add_ingredient({type = "item", name = "super-alloy", amount = 20})
 
 RECIPE("automated-screener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("bio-reactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -184,3 +185,22 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("oil-machines-mk03"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "kerogen-3",
+    category = "kerogen",
+    energy_required = 15,
+    ingredients = {
+        {type = "fluid", name = "hot-air", amount = 1000},
+        {type = "fluid", name = "vacuum", amount = 500},
+        {type = "item", name = "coke", amount = 10},
+        {type = "item", name = "super-alloy", amount = 20},
+    },
+    results = {
+        {type = "item", name = "kerogen", amount = 100},
+    },
+    main_product = "kerogen",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("kerogen")

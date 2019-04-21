@@ -25,6 +25,7 @@ require("prototypes.technologies.light-oil")
 require("prototypes.technologies.petroleum-gas")
 require("prototypes.technologies.coalbed")
 require("prototypes.technologies.fracking")
+require("prototypes.technologies.kerogen")
 
 
 --(( BUILDINGS ))--
@@ -86,6 +87,7 @@ require("prototypes.buildings.gas-refinery-mk04")
 require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
+require("prototypes.buildings.retorter")
 
 --))
 

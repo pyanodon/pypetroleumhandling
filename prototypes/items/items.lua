@@ -163,3 +163,14 @@ ITEM {
     order = "a",
     stack_size = 500
 }
+
+ITEM {
+    type = "item",
+    name = "kerogen",
+    icon = "__pypetroleumhandling__/graphics/icons/kerogen.png",
+	icon_size = 32,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "a",
+    stack_size = 500
+}
