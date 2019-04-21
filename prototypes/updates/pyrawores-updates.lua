@@ -53,6 +53,7 @@ RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", a
 RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amount = 100})
+RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -118,6 +119,7 @@ RECIPE("drilling-fluid-1"):add_ingredient({type = "item", name = "ore-titanium",
 RECIPE("drilling-fluid-2"):replace_ingredient("water", "hydrogen-chloride")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "salt", amount = 20})
 RECIPE("bitumen-gasification"):add_ingredient({type = "fluid", name = "oxygen", amount = 50})
+RECIPE("kerogen-2"):replace_ingredient("niobium-pipe", "super-steel")
 
 
 

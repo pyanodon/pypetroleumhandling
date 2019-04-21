@@ -26,6 +26,7 @@ RECIPE("lor-mk04"):add_ingredient({type = "item", name = "superconductor-servome
 RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 40}):add_ingredient({type = "item", name = "carbon-nanotube", amount = 30}):add_ingredient({type = "item", name = "graphene-roll", amount = 10})
 RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "carbon-aerogel", amount = 10}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 10})
 RECIPE("fracking-rig"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 20})
+RECIPE("retorter"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "heavy-fermion", amount = 20}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20}):add_ingredient({type = "item", name = "graphene-roll", amount = 15})
 
 RECIPE("cadaveric-arum"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
 RECIPE("electronics-factory"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
