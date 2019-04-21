@@ -8,7 +8,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "carbon-dioxide", amount = 50},
+        {type = "fluid", name = "carbon-dioxide", amount = 30},
     },
     icon = "__pycoalprocessing__/graphics/icons/carbon-dioxide.png",
     icon_size = 32,

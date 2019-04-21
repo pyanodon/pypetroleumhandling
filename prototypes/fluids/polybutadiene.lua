@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "polybutadiene",
-    category = "fts-reactor",
+    category = "cracker",
     enabled = false,
     energy_required = 2,
     ingredients = {

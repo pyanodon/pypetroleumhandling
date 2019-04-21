@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"fts-reactor", 1},
+        {"washer", 1},
         {"steel-plate", 30},
         {"pipe", 30},
         {"tar-processing-unit", 1},

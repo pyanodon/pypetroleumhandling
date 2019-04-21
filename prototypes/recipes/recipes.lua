@@ -48,7 +48,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
         {type = "item", name = "steel-plate", amount = 1},
-        {type = "item", name = "belt", amount = 1},
+        {type = "item", name = "belt", amount = 2},
         {type = "item", name = "bolts", amount = 10},
     },
     results = {
@@ -59,7 +59,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk02")
 
 RECIPE {
     type = "recipe",
@@ -73,7 +73,8 @@ RECIPE {
         {type = "item", name = "steel-plate", amount = 1}, --supersteel
         {type = "item", name = "plastic-bar", amount = 4},
         {type = "item", name = "iron-stick", amount = 3},
-        {type = "item", name = "rubber", amount = 1},
+        {type = "item", name = "rubber", amount = 2},
+        {type = "item", name = "belt", amount = 2},
         {type = "fluid", name = "lubricant", amount = 15},
     },
     results = {
@@ -84,7 +85,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("oil-machines-mk03")
 
 RECIPE {
     type = "recipe",
@@ -386,7 +387,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber")
+}:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",
@@ -471,7 +472,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber")
+}:add_unlock("oil-machines-mk02")
 
 RECIPE {
     type = "recipe",
@@ -937,6 +938,7 @@ RECIPE {
     type = "recipe",
     name = "aromatics-2-diesel",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 500},
@@ -955,6 +957,7 @@ RECIPE {
     type = "recipe",
     name = "aromatics-2-petgas",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 400},
@@ -981,6 +984,7 @@ RECIPE {
     type = "recipe",
     name = "oil-breakdown",
     category = "distilator",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 400},
@@ -1000,6 +1004,7 @@ RECIPE {
     type = "recipe",
     name = "tar-breakdown",
     category = "distilator",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "tar", amount = 650},
@@ -1021,6 +1026,7 @@ RECIPE {
     type = "recipe",
     name = "high-distillate-condensing",
     category = "compressor",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "high-distillate", amount = 100},
@@ -1034,12 +1040,13 @@ RECIPE {
     main_product = "condensed-distillate",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("petroleum-gas-mk02")
 
 RECIPE {
     type = "recipe",
     name = "high-distillate-separation-saline",
     category = "gas-refinery",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
@@ -1050,12 +1057,13 @@ RECIPE {
     main_product = "water-saline",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk01")
+}:add_unlock("petroleum-gas-mk02")
 
 RECIPE {
     type = "recipe",
     name = "high-distillate-separation-aromatics",
     category = "gas-refinery",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
@@ -1073,6 +1081,7 @@ RECIPE {
     type = "recipe",
     name = "high-distillate-separation-syngas",
     category = "gas-refinery",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
@@ -1090,6 +1099,7 @@ RECIPE {
     type = "recipe",
     name = "high-distillate-separation-refsyngas",
     category = "gas-refinery",
+    enabled = false,
     energy_required = 6,
     ingredients = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
@@ -1107,6 +1117,7 @@ RECIPE {
     type = "recipe",
     name = "high-distillate-separation-petgas",
     category = "gas-refinery",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
@@ -1126,6 +1137,7 @@ RECIPE {
     type = "recipe",
     name = "medium-distillate-to-stripped-distillate",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "medium-distillate", amount = 100},
@@ -1143,6 +1155,7 @@ RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-light-oil",
     category = "compressor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -1163,6 +1176,7 @@ RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-gasoline",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -1180,6 +1194,7 @@ RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-methanol",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -1197,6 +1212,7 @@ RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-olefin",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -1214,6 +1230,7 @@ RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-fuel-oil",
     category = "lor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -1233,6 +1250,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-heavy-oil",
     category = "compressor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -1253,6 +1271,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-coal-gas",
     category = "hor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -1270,6 +1289,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-btx",
     category = "hor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -1287,6 +1307,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-btx",
     category = "hor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -1304,6 +1325,7 @@ RECIPE {
     type = "recipe",
     name = "low-distillate-to-lubricant",
     category = "hor",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
@@ -1323,6 +1345,7 @@ RECIPE {
     type = "recipe",
     name = "residual-mixture",
     category = "mixer",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "residual-oil", amount = 200},
@@ -1341,6 +1364,7 @@ RECIPE {
     type = "recipe",
     name = "hot-residual-mixture",
     category = "hpf",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "residual-mixture", amount = 100},
@@ -1359,6 +1383,7 @@ if mods["pyrawores"] then
         type = "recipe",
         name = "hot-residual-mixture-to-coke",
         category = "upgrader",
+        enabled = false,
         energy_required = 6,
         ingredients = {
             {type = "fluid", name = "hot-residual-mixture", amount = 150},
@@ -1378,6 +1403,7 @@ else
         type = "recipe",
         name = "hot-residual-mixture-to-coke-2",
         category = "upgrader",
+        enabled = false,
         energy_required = 6,
         ingredients = {
             {type = "fluid", name = "hot-residual-mixture", amount = 150},
@@ -1396,6 +1422,7 @@ end
 RECIPE {
     type = "recipe",
     name = "kerogen-1",
+    enabled = false,
     category = "kerogen",
     energy_required = 15,
     ingredients = {
@@ -1415,6 +1442,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-2",
     category = "kerogen",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "hot-air", amount = 1000},
@@ -1434,6 +1462,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-extraction",
     category = "hpf",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "kerogen", amount = 100},
@@ -1451,6 +1480,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-extraction-2",
     category = "distilator",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "kerogen", amount = 100},
@@ -1469,6 +1499,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-extraction-3",
     category = "distilator",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "kerogen", amount = 100},
@@ -1487,6 +1518,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-separation",
     category = "gas-separator",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "kerogen", amount = 100},

@@ -15,7 +15,27 @@ RECIPE {
     main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("rubber")
+
+RECIPE {
+    type = "recipe",
+    name = "engine-unit-2",
+    category = "crafting",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+        {type = "item", name = "steel-plate", amount = 1},
+        {type = "item", name = "pipe", amount = 3},
+        {type = "item", name = "small-parts-01", amount = 3},
+        {type = "item", name = "belt", amount = 4},
+    },
+    results = {
+        {type = "item", name = "engine-unit", amount = 2},
+    },
+    main_product = "engine-unit",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("rubber"):replace_ingredient("steel-plate", "aluminium-plate")
 
 RECIPE {
     type = "recipe",

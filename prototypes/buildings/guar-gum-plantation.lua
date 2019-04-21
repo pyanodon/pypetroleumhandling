@@ -6,7 +6,7 @@ RECIPE {
     ingredients = {
         {"pipe", 20},
         {"botanical-nursery", 1},
-        {"advanced-circuit", 10},
+        {"electronic-circuit", 10},
         {"small-parts-01", 30},
     },
     results = {

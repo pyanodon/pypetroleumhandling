@@ -21,7 +21,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandling__/graphics/technology/coalbed-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"coalbed-mk01","oil-machines-mk03"},
+    prerequisites = {"coalbed-mk01","oil-machines-mk02"},
     effects = {},
     unit = {
         count = 100,
