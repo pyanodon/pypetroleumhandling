@@ -706,7 +706,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 400},
-        {type = "fluid", name = "coke-oven-gas", amount = 50},
+        {type = "fluid", name = "coke-oven-gas", amount = 70},
     },
     results = {
         {type = "fluid", name = "residual-oil", amount = 150},
@@ -727,7 +727,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "tar", amount = 650},
-        {type = "fluid", name = "coke-oven-gas", amount = 50},
+        {type = "fluid", name = "coke-oven-gas", amount = 70},
     },
     results = {
         {type = "fluid", name = "residual-oil", amount = 150},
