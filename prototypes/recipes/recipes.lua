@@ -1391,7 +1391,7 @@ if mods["pyrawores"] then
             {type = "fluid", name = "steam", amount = 300, temperature = 165},
         },
         results = {
-            {type = "item", name = "coke", amount = 60},
+            {type = "item", name = "coke", amount = 40},
             {type = "fluid", name = "coke-oven-gas", amount = 50},
         },
         main_product = "coke",
@@ -1411,7 +1411,7 @@ else
             {type = "fluid", name = "steam", amount = 300, temperature = 165},
         },
         results = {
-            {type = "item", name = "coke", amount = 60},
+            {type = "item", name = "coke", amount = 40},
         },
         main_product = "coke",
         subgroup = "py-petroleum-handling-recipes",

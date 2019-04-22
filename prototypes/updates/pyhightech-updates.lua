@@ -285,7 +285,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
-}:add_unlock("tholin-mk03")
+}:add_unlock("tholin-mk02")
 
 RECIPE {
     type = "recipe",
