@@ -107,7 +107,7 @@ RECIPE {
         {type = "item", name = "carbon-black", amount = 3},
     },
     results = {
-        {type = "item", name = "rubber", amount = 20},
+        {type = "item", name = "rubber", amount = 40},
     },
     main_product = "rubber",
     icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
