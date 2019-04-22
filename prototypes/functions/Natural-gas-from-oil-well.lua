@@ -158,7 +158,7 @@ data.raw["mining-drill"]["oil-derrick-mk02"].collision_box = {{-2.4, -2.4}, {2.4
 data.raw["mining-drill"]["oil-derrick-mk02"].output_fluid_box.pipe_connections[1].positions = { {0, -3}, {3, 0}, {0, 3}, {-3, 0} }
 --mk03
 data.raw["mining-drill"]["oil-derrick-mk03"].collision_box = {{-3.4, -3.4}, {3.4, 3.4}}
-data.raw["mining-drill"]["oil-derrick-mk03"].output_fluid_box.pipe_connections[1].positions = { {0, -4}, {4, 0}, {0, 4}, {-4, 0} }
+data.raw["mining-drill"]["oil-derrick-mk03"].output_fluid_box.pipe_connections[1].positions = { {-1, -4}, {4, -1}, {1, 4}, {-4, 1} }
 --mk04
 data.raw["mining-drill"]["oil-derrick-mk04"].collision_box = {{-4.4, -4.4}, {4.4, 4.4}}
 data.raw["mining-drill"]["oil-derrick-mk04"].output_fluid_box.pipe_connections[1].positions = { {0, -5}, {5, 0}, {0, 5}, {-5, 0} }

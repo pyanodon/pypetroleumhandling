@@ -232,7 +232,7 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 			--log("trying to rotate entity")
 			for  _, v in pairs(valve) do
 				if direction == 2 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+4,y=spos.y_1},direction=defines.direction.west}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+4,y=spos.y-1},direction=defines.direction.west}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 4 then
 					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+1,y=spos.y+4},direction=defines.direction.north}
