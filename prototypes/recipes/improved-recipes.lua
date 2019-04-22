@@ -71,4 +71,4 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("methanol-processing-1"):add_ingredient({type = "item", name = "titanium-alloy", amount = 2})
+}:add_unlock("methanol-processing-1"):add_ingredient({type = "item", name = "ticl4", amount = 2})
