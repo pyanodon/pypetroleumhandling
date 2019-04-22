@@ -39,7 +39,7 @@ ENTITY {
       }
     },
     collision_box = {{ -3.4, -3.4}, {3.4, 3.4}},
-    selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
+    selection_box = {{ -3.4, -3.4}, {3.4, 3.4}},
     -- autoplace = oil_old_autoplace,
     autoplace = resource_autoplace.resource_autoplace_settings{
       name = "oil-mk02",
