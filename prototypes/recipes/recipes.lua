@@ -1532,3 +1532,88 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("kerogen")
+
+if mods["pyrawores"] then
+    RECIPE {
+        type = "recipe",
+        name = "lubricant-breakdown-olefin",
+        category = "cracker",
+        enabled = false,
+        energy_required = 4,
+        ingredients = {
+            {type = "fluid", name = "lubricant", amount = 300},
+            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            --propene
+        },
+        results = {
+            {type = "fluid", name = "olefin", amount = 150},
+            {type = "fluid", name = "bitumen", amount = 50},
+            {type = "item", name = "soot", amount = 4},
+        },
+        main_product = "olefin",
+        subgroup = "py-petroleum-handling-scrude-recipes",
+        order = "a"
+    }:add_unlock("light-oil-mk02")
+else
+    RECIPE {
+        type = "recipe",
+        name = "lubricant-breakdown-olefin-2",
+        category = "cracker",
+        enabled = false,
+        energy_required = 4,
+        ingredients = {
+            {type = "fluid", name = "lubricant", amount = 300},
+            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            --propene
+        },
+        results = {
+            {type = "fluid", name = "olefin", amount = 150},
+            {type = "fluid", name = "bitumen", amount = 50},
+        },
+        main_product = "olefin",
+        subgroup = "py-petroleum-handling-scrude-recipes",
+        order = "a"
+    }:add_unlock("light-oil-mk02")
+end
+
+
+
+if mods["pyrawores"] then
+    RECIPE {
+        type = "recipe",
+        name = "lubricant-breakdown-bitumen",
+        category = "hor",
+        enabled = false,
+        energy_required = 4,
+        ingredients = {
+            {type = "fluid", name = "lubricant", amount = 300},
+            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            {type = "item", name = "ticl4", amount = 1},
+        },
+        results = {
+            {type = "fluid", name = "bitumen", amount = 100},
+            {type = "item", name = "soot", amount = 4},
+        },
+        main_product = "bitumen",
+        subgroup = "py-petroleum-handling-scrude-recipes",
+        order = "a"
+    }:add_unlock("oil-machines-mk02")
+else
+    RECIPE {
+        type = "recipe",
+        name = "lubricant-breakdown-bitumen",
+        category = "hor",
+        enabled = false,
+        energy_required = 4,
+        ingredients = {
+            {type = "fluid", name = "lubricant", amount = 300},
+            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+        },
+        results = {
+            {type = "fluid", name = "bitumen", amount = 100},
+        },
+        main_product = "bitumen",
+        subgroup = "py-petroleum-handling-scrude-recipes",
+        order = "a"
+    }:add_unlock("oil-machines-mk02")
+end
