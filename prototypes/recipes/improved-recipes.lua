@@ -62,12 +62,12 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "fluid", name = "natural-gas", amount = 100},
+        {type = "fluid", name = "natural-gas", amount = 400},
         {type = "fluid", name = "hot-air", amount = 100},
         {type = "item", name = "copper-plate", amount = 2},
     },
     results = {
-        {type = "fluid", name = "methanol", amount = 100},
+        {type = "fluid", name = "methanol", amount = 300},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"

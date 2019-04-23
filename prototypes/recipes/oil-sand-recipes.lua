@@ -48,7 +48,7 @@ RECIPE {
         {type = "item", name = "chromium", amount = 2},
     },
     results = {
-        {type = "fluid", name = "crude-oil", amount = 150},
+        {type = "fluid", name = "crude-oil", amount = 200},
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",

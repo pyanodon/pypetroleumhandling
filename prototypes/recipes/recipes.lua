@@ -522,9 +522,9 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "btx", amount = 150},
+        {type = "fluid", name = "naphtha", amount = 150},
         {type = "fluid", name = "steam", amount = 800, temperature = 165},
-        {type = "item", name = "chromium", amount = 2},
+        {type = "item", name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "syngas", amount = 400},
@@ -675,11 +675,11 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "fluid", name = "processed-light-oil", amount = 300},
         {type = "item", name = "nichrome", amount = 1},
     },
     results = {
-        {type = "fluid", name = "olefin", amount = 300},
+        {type = "fluid", name = "olefin", amount = 400},
     },
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
@@ -693,11 +693,11 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "fluid", name = "processed-light-oil", amount = 300},
         {type = "item", name = "nichrome", amount = 1},
     },
     results = {
-        {type = "fluid", name = "light-oil", amount = 300},
+        {type = "fluid", name = "light-oil", amount = 400},
     },
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",

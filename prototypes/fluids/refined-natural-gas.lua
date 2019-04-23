@@ -5,12 +5,12 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "fluid", name = "raw-gas", amount = 100},
+        {type = "fluid", name = "raw-gas", amount = 400},
         {type = "item", name = "biofilm", amount = 1},
     },
     results = {
-        {type = "fluid", name = "refined-natural-gas", amount = 100},
-        {type = "fluid", name = "acidgas", amount = 100},
+        {type = "fluid", name = "refined-natural-gas", amount = 400},
+        {type = "fluid", name = "acidgas", amount = 400},
     },
     main_product = "refined-natural-gas",
     subgroup = "py-petroleum-handling-fluids",

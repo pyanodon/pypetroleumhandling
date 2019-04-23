@@ -21,12 +21,12 @@ if mods["pyrawores"] then
         category = "gas-separator",
         energy_required = 4,
         ingredients = {
-            {type = "fluid", name = "hot-reaction-gas", amount = 100},
+            {type = "fluid", name = "hot-reaction-gas", amount = 150},
             {type = "item", name = "nickel-plate", amount = 3},
         },
         results = {
-            {type = "fluid", name = "processed-light-oil", amount = 100},
-            {type = "fluid", name = "hydrogen", amount = 500}
+            {type = "fluid", name = "processed-light-oil", amount = 150},
+            {type = "fluid", name = "hydrogen", amount = 750}
         },
         main_product = "processed-light-oil",
         subgroup = "py-petroleum-handling-fluids",
