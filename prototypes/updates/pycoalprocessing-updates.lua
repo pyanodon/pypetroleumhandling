@@ -193,6 +193,28 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "lubricant-combustion",
+    category = "combustion",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "coke", amount = 4},
+        {type = "fluid", name = "lubricant", amount = 100}
+    },
+    results = {
+        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 520},
+        {type = "fluid", name = "steam", amount = 500, temperature = 60}
+    },
+    icon = "__pypetroleumhandling__/graphics/icons/combustion-lubricant.png",
+    icon_size = 32,
+    --main_product = "combustion-mixture1",
+    subgroup = "py-combustion",
+    order = "k"
+}:add_unlock("energy-2")
+
+RECIPE {
+    type = "recipe",
     name = "extract-olefin-scrude",
     category = "desulfurization",
     enabled = false,
