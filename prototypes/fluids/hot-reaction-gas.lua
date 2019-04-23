@@ -25,7 +25,7 @@ RECIPE {
         {type = "fluid", name = "pressured-hydrogen", amount = 50},
         {type = "fluid", name = "water", amount = 600},
         {type = "fluid", name = "naphtha", amount = 150},
-        {type = "item", name = "nexelit-plate", amount = 3},
+        {type = "item", name = "nexelit-plate", amount = 2},
     },
     results = {
         {type = "fluid", name = "hot-reaction-gas", amount = 100},

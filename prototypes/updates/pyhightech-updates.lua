@@ -64,7 +64,7 @@ RECIPE {
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
-        {type = "fluid", name = "methane", amount = 70},
+        {type = "fluid", name = "methane", amount = 80},
     },
     main_product = "methane",
     icon = "__pyhightech__/graphics/icons/methane.png",
@@ -165,12 +165,12 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "btx", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "btx", amount = 200},
+        {type = "fluid", name = "steam", amount = 450, temperature = 165},
         {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
     },
     results = {
-        {type = "fluid", name = "methane", amount = 150},
+        {type = "fluid", name = "methane", amount = 300},
     },
     main_product = "methane",
     icon = "__pyhightech__/graphics/icons/methane.png",
@@ -330,11 +330,11 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "processed-light-oil", amount = 200},
+        {type = "fluid", name = "processed-light-oil", amount = 250},
         {type = "item", name = "nichrome", amount = 1},
     },
     results = {
-        {type = "fluid", name = "benzene", amount = 250},
+        {type = "fluid", name = "benzene", amount = 375},
     },
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
@@ -350,7 +350,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
         {type = "item", name = "drill-head", amount = 2},
-        {type = "item", name = "filtration-media", amount = 3},
+        {type = "item", name = "filtration-media", amount = 1},
     },
     results = {
         {type = "fluid", name = "methane", amount = 300},
