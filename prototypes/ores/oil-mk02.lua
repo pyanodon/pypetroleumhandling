@@ -18,7 +18,7 @@ ENTITY {
     order="a-b-a",
     infinite = true,
     highlight = true,
-    minimum = 60000,
+    minimum = 150000,
     normal = 300000,
     infinite_depletion_amount = 10,
     resource_patch_search_radius = 12,
