@@ -9,7 +9,7 @@ RECIPE {
         {type = "item", name = "stone-brick", amount = 10},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 300},
+        {type = "fluid", name = "hot-air", amount = 400},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandling__/graphics/icons/hot-air.png",
