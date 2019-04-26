@@ -46,10 +46,8 @@ RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('oil-sands')
 RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("hot-air"):add_ingredient({type = "fluid", name = "pressured-air", amount = 100})
 RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
-RECIPE("scrude-to-methane"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
-RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
 RECIPE("small-parts-03"):replace_ingredient("lubricant", "grease")
 
 

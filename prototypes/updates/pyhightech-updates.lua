@@ -495,3 +495,11 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("light-oil-mk03")
+
+
+if mods["pyfusion"] then
+
+	RECIPE("scrude-to-methane"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+	RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
+	
+end
