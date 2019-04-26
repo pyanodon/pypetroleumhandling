@@ -48,7 +48,7 @@ ENTITY {
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions_per_second_per_watt = 10 / 80000,
+        emissions_per_minute = 20,
     },
     output_fluid_box =
     {
