@@ -24,7 +24,7 @@ DATA {
     minimum = 100,
     normal = 200,
     maximum = 300,
-    map_grid = true,
+    map_grid = false,
     minable = {
         hardness = 1.0,
         -- mining_particle = "sulfur-patch-particle",
