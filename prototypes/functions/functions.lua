@@ -279,8 +279,14 @@ local altrec = 0
 					recipe.results = {}
 					table.insert(recipe.results,{type = "item", name = res[1][1], amount = (res[1][2] + 2)})
 				elseif recipe.results[1].name then
-					local resnum = recipe.results[1].amount + 2
-					recipe.results[1].amount = resnum
+					--log(serpent.block(recipe.results))
+					if recipe.results[1].amount ~= nil then
+						local resnum = recipe.results[1].amount + 2
+						recipe.results[1].amount = resnum
+					elseif recipe.results[1].amount_max ~= nil then
+						local resnum = recipe.results[1].amount_max + 2
+						recipe.results[1].amount_max = resnum
+					end
 				end
 			end
 		end
