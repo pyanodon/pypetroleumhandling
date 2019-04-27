@@ -239,18 +239,34 @@ local altrec = 0
 					local ing = recipe.ingredients
 					recipe.ingredients = {}
 					table.insert(recipe.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
-					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					if data.raw.item["solid-hot-air"] ~= nil then
+						table.insert(recipe.ingredients,{type="item",name="solid-hot-air",amount=50})
+					else
+						table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					end
 				elseif recipe.ingredients[1].name then
-					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					if data.raw.item["solid-hot-air"] ~= nil then
+						table.insert(recipe.ingredients,{type="item",name="solid-hot-air",amount=50})
+					else
+						table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					end
 				end
 			elseif recipe.ingredients[2] ~= nil then
 				if recipe.ingredients[2].name == nil then
 					local ing = recipe.ingredients
 					recipe.ingredients = {}
 					table.insert(recipe.ingredients, {type = "item", name = ing[2][1], amount = ing[2][2]})
-					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					if data.raw.item["solid-hot-air"] ~= nil then
+						table.insert(recipe.ingredients,{type="item",name="solid-hot-air",amount=50})
+					else
+						table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					end
 				elseif recipe.ingredients[2].name then
-					table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					if data.raw.item["solid-hot-air"] ~= nil then
+						table.insert(recipe.ingredients,{type="item",name="solid-hot-air",amount=50})
+					else
+						table.insert(recipe.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+					end
 				end
 			end
 			if type(recipe.result) == "string" then
@@ -270,13 +286,24 @@ local altrec = 0
 		end
 		if recipe.normal or recipe.expensive then
 			if recipe.normal then
-				if recipe.normal.ingredients[1].name == nil then
-					local ing = recipe.normal.ingredients
-					recipe.normal.ingredients = {}
-					table.insert(recipe.normal.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
-					table.insert(recipe.normal.ingredients,{type = "fluid", name = "hot-air", amount = 50})
-				else
-					table.insert(recipe.normal.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+			--log(serpent.block(recipe.normal))
+				if recipe.normal.ingredients[1] ~= nil then
+					if recipe.normal.ingredients[1].name == nil then
+						local ing = recipe.normal.ingredients
+						recipe.normal.ingredients = {}
+						table.insert(recipe.normal.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
+						if data.raw.item["solid-hot-air"] ~= nil then
+							table.insert(recipe.normal.ingredients,{type="item",name="solid-hot-air",amount=50})
+						else
+							table.insert(recipe.normal.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+						end
+					else
+						if data.raw.item["solid-hot-air"] ~= nil then
+							table.insert(recipe.normal.ingredients,{type="item",name="solid-hot-air",amount=50})
+						else
+							table.insert(recipe.normal.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+						end
+					end
 				end
 				if type(recipe.normal.result) == "string" then
 					local res = recipe.normal.result
@@ -285,15 +312,29 @@ local altrec = 0
 					recipe.normal.results={}
 					table.insert(recipe.normal.results,rtab)
 				end
+				if recipe.normal.results ~= nil then
+					local resamount = recipe.normal.results[1].amount
+					recipe.normal.results[1].amount = resamount + 2
+				end
 			end
 			if recipe.expensive then
-				if recipe.expensive.ingredients[1].name == nil then
-					local ing = recipe.expensive.ingredients
-					recipe.expensive.ingredients = {}
-					table.insert(recipe.expensive.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
-					table.insert(recipe.expensive.ingredients,{type = "fluid", name = "hot-air", amount = 50})
-				else
-					table.insert(recipe.expensive.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+				if recipe.expensive.ingredients[1] ~= nil then
+					if recipe.expensive.ingredients[1].name == nil then
+						local ing = recipe.expensive.ingredients
+						recipe.expensive.ingredients = {}
+						table.insert(recipe.expensive.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
+						if data.raw.item["solid-hot-air"] ~= nil then
+							table.insert(recipe.expensive.ingredients,{type="item",name="solid-hot-air",amount=50})
+						else
+							table.insert(recipe.expensive.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+						end
+					else
+						if data.raw.item["solid-hot-air"] ~= nil then
+							table.insert(recipe.expensive.ingredients,{type="item",name="solid-hot-air",amount=50})
+						else
+							table.insert(recipe.expensive.ingredients,{type = "fluid", name = "hot-air", amount = 50})
+						end
+					end
 				end
 				if type(recipe.expensive.result) == "string" then
 					local res = recipe.expensive.result
@@ -301,6 +342,12 @@ local altrec = 0
 					local rtab = {type = "item", name = res, amount = 3}
 					recipe.expensive.results={}
 					table.insert(recipe.expensive.results,rtab)
+					--log(serpent.block(rtab))
+					--log(serpent.block(recipe.expensive.results))
+				end
+				if recipe.expensive.results ~= nil then
+					local resamount = recipe.expensive.results[1].amount
+					recipe.expensive.results[1].amount = resamount + 2
 				end
 			end
 		end
@@ -348,12 +395,14 @@ local altrec = 0
 				name = hname,
 				category = "hot-air-advanced-foundry",
 				normal = {
+					category = "hot-air-advanced-foundry",
 					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.normal.ingredients,
 					results = recipe.normal.results,
 					},
 				expensive = {
+					category = "hot-air-advanced-foundry",
 					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.expensive.ingredients,
@@ -378,6 +427,7 @@ local altrec = 0
 				end
 			end
 		end
+		--log(serpent.block(data.raw.recipe[hname]))
 	end
 --log(serpent.block(afrecipes))
 --log(afrcount)
