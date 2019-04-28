@@ -1,4 +1,12 @@
 --------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: ??????
+ - Balanced small parts
+ - Balanced natural gas and oil pumpjack recipes
+ - Improved functions
+ - Fixed deadlock in filters and rectisol
+ - Added a bunch of alternative recipes for inserters
+--------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: ??????
  - Hot air balance
