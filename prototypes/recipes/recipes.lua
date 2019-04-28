@@ -52,7 +52,7 @@ RECIPE {
         {type = "item", name = "bolts", amount = 10},
     },
     results = {
-        {type = "item", name = "small-parts-02", amount = 1},
+        {type = "item", name = "small-parts-02", amount = 2},
     },
     main_product = "small-parts-02",
     icon = "__pypetroleumhandling__/graphics/icons/small-parts-02.png",
@@ -78,7 +78,7 @@ RECIPE {
         {type = "fluid", name = "lubricant", amount = 15},
     },
     results = {
-        {type = "item", name = "small-parts-03", amount = 1},
+        {type = "item", name = "small-parts-03", amount = 3},
     },
     main_product = "small-parts-03",
     icon = "__pypetroleumhandling__/graphics/icons/small-parts-03.png",

@@ -37,5 +37,7 @@ RECIPE("express-underground-belt"):remove_ingredient("small-parts-01"):add_ingre
 RECIPE("express-splitter"):remove_ingredient("small-parts-01"):add_ingredient({type = "item", name = "small-parts-03", amount = 6})
 RECIPE("red-wire"):add_ingredient({type = "item", name = "rubber", amount = 1})
 RECIPE("green-wire"):add_ingredient({type = "item", name = "rubber", amount = 1})
+RECIPE("carbon-filter"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
+RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
 
 RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')
