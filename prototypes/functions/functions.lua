@@ -250,9 +250,6 @@ local altrec = 0
 		if not hab[recipe.name] then
 		afrcount=afrcount+1
 		--add ingredient
-		if recipe.name == "iron-plate" then
-		--log(serpent.block(recipe))
-		end
 		if recipe.normal == nil and recipe.expensive == nil then
 			if recipe.ingredients[1] ~= nil then
 				if recipe.ingredients[1].name == nil then
