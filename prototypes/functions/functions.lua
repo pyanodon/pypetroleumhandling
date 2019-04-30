@@ -222,7 +222,9 @@ function overrides.HAB(blist)
 	end
 	if blist ~= nil then
 		for _, bl in pairs(blist) do
-			hab[bl] = true
+			if data.raw.recipe[bl] ~= nil then
+				hab[bl] = true
+			end
 		end
 	end
 end
