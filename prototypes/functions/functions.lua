@@ -213,26 +213,46 @@ local brecipeset = {}
 	end
 end
 
+local hab = {}
+
+--blacklist for hot air recipes script to avoid
+function overrides.HAB(blist)
+	if type(blist) ~= "table" and blist ~= nil then
+		blist = {blist}
+	end
+	if blist ~= nil then
+		for _, bl in pairs(blist) do
+			hab[bl] = true
+		end
+	end
+end
+
 --add 50 hot-air ingredient, output +2
 function overrides.hotairrecipes()
 --gather recipes for the advanced-foundry
 local recipes = table.deepcopy(data.raw.recipe)
 local afrecipes = {}
+local afrecipesnames = {}
 local afrcount = 0
 local altrec = 0
 	for _, recipe in pairs(recipes) do
 		if recipe.category == "advanced-foundry" then
 			table.insert(afrecipes,recipe)
+			table.insert(afrecipesnames,recipe.name)
 		end
 		if recipe.category == "smelting" then
 			table.insert(afrecipes,recipe)
+			table.insert(afrecipesnames,recipe.name)
 		end
 	end
 --cycle thru afrecipes to make changes
 	for _,recipe in pairs(afrecipes) do
+		if not hab[recipe.name] then
 		afrcount=afrcount+1
 		--add ingredient
+		if recipe.name == "iron-plate" then
 		--log(serpent.block(recipe))
+		end
 		if recipe.normal == nil and recipe.expensive == nil then
 			if recipe.ingredients[1] ~= nil then
 				if recipe.ingredients[1].name == nil then
@@ -393,6 +413,11 @@ local altrec = 0
 				end
 			elseif recipe.enabled == true then
 				data.raw.recipe[hname].enabled = true
+			elseif recipe.enabled == nil then
+				--log(recipe.name)
+				--log(serpent.block(recipe))
+				data.raw.recipe[hname].enabled = true
+				--log(serpent.block(data.raw.recipe[hname]))
 			end
 		end
 		if recipe.normal or recipe.expensive then
@@ -435,9 +460,20 @@ local altrec = 0
 		end
 		--log(serpent.block(data.raw.recipe[hname]))
 	end
---log(serpent.block(afrecipes))
+end
+--log(serpent.block(afrecipesnames))
 --log(afrcount)
 --log(altrec)
+--[[
+for _, r in pairs(data.raw.recipe) do
+	if r.name == "iron-plate" then
+	log(serpent.block(r))
+	end
+	if r.category == "hot-air-advanced-foundry" then
+	log(serpent.block(r))
+	end
+end
+]]--
 end
 
 return overrides
