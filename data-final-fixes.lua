@@ -41,7 +41,7 @@ local hablist =
 --"lead-plate-2",
 --"silver-plate-1",
 --"silver-plate-2",
---"molten-nexelit-01",
+"molten-nexelit-01",
 --"molten-nexelit-02",
 --"molten-nexelit-03",
 --"molten-nexelit-04",
