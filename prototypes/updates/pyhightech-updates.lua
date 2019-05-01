@@ -47,7 +47,7 @@ RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("ar
 RECIPE("ethylene-glycol"):replace_ingredient("pure-sand", "colloidal-silica")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
 RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
-RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 5})
+RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
 
 
 ----EXCLUSIVE RECIPES----
