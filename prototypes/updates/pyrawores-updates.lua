@@ -17,7 +17,7 @@ RECIPE("reformer-mk01"):add_ingredient({type = "item", name = "lead-plate", amou
 RECIPE("reformer-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("reformer-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 20})
-RECIPE("cracker-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "nichrome", amount = 10})
+RECIPE("cracker-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "titanium-plate", amount = 10})
 RECIPE("cracker-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("cracker-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
