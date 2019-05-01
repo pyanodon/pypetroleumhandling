@@ -10,7 +10,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
             {type = "fluid", name = "ethylene-glycol", amount = 50},
             {type = "fluid", name = "boric-acid", amount = 100},
             {type = "item", name = "guar-gum", amount = 1},
-            {type = "item", name = "collagen", amount = 5}
+            {type = "item", name = "collagen", amount = 2}
         },
         results = {
             {type = "fluid", name = "drilling-fluid-2", amount = 100},
@@ -31,7 +31,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
                 {type = "fluid", name = "ethylene-glycol", amount = 50},
                 {type = "fluid", name = "boric-acid", amount = 100},
                 {type = "item", name = "guar-gum", amount = 1},
-                {type = "item", name = "collagen", amount = 5}
+                {type = "item", name = "collagen", amount = 2}
             },
             results = {
                 {type = "fluid", name = "drilling-fluid-2", amount = 100},

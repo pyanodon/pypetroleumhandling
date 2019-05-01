@@ -1,4 +1,10 @@
 --------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: ??????
+ - Balanced more hot-air recipes.
+ - Balanced drill fluids.
+ - Fixed locale for combustion mixtures
+--------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: ??????
  - Balanced some hot-air recipes in cross mods.

@@ -21,7 +21,7 @@ RECIPE {
     name = "oil-02",
     category = "pumpjack",
     enabled = false,
-    energy_required = 8,
+    energy_required = 9,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
@@ -40,7 +40,7 @@ RECIPE {
     name = "oil-03",
     category = "pumpjack",
     enabled = false,
-    energy_required = 4,
+    energy_required = 6,
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 3},
         {type = "item", name = "drill-head", amount = 2},
@@ -61,7 +61,7 @@ RECIPE {
     name = "oil-04",
     category = "pumpjack",
     enabled = false,
-    energy_required = 4,
+    energy_required = 8,
     ingredients = {
         {type = "item", name = "small-parts-03", amount = 3},
         {type = "item", name = "drill-head", amount = 3},
@@ -100,7 +100,7 @@ RECIPE {
     name = "natural-gas-02",
     category = "pumpjack",
     enabled = false,
-    energy_required = 8,
+    energy_required = 9,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
@@ -121,7 +121,7 @@ RECIPE {
     name = "natural-gas-03",
     category = "pumpjack",
     enabled = false,
-    energy_required = 4,
+    energy_required = 6,
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 3},
         {type = "item", name = "drill-head", amount = 2},
@@ -142,7 +142,7 @@ RECIPE {
     name = "natural-gas-04",
     category = "pumpjack",
     enabled = false,
-    energy_required = 4,
+    energy_required = 8,
     ingredients = {
         {type = "item", name = "small-parts-03", amount = 3},
         {type = "item", name = "drill-head", amount = 3},

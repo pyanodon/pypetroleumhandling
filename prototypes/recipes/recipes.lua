@@ -5,7 +5,7 @@ RECIPE {
     enabled = true,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 1},
+        {type = "item", name = "iron-stick", amount = 2},
     },
     results = {
         {type = "item", name = "bolts", amount = 2},
@@ -541,7 +541,7 @@ RECIPE {
     name = "crude-oil-to-heavy-oil",
     category = "cracker",
     enabled = false,
-    energy_required = 8,
+    energy_required = 3,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 100},
         {type = "fluid", name = "steam", amount = 200, temperature = 165},
@@ -561,7 +561,7 @@ RECIPE {
     name = "crude-oil-to-heavy-oil-2",
     category = "cracker",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 100},
         {type = "fluid", name = "steam", amount = 200, temperature = 165},
