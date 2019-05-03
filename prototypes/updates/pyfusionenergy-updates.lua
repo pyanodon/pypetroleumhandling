@@ -36,7 +36,7 @@ RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-0
 RECIPE("jig"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("nmf"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("secondary-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("thickener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("thickener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("electric-engine-unit", "engine-unit")
 RECIPE("xyhiphoe-pool"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 
 
