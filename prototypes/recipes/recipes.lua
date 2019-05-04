@@ -3,7 +3,7 @@ RECIPE {
     name = "bolts",
     category = "crafting",
     enabled = true,
-    energy_required = 1,
+    energy_required = 0.5,
     ingredients = {
         {type = "item", name = "iron-stick", amount = 2},
     },
@@ -22,7 +22,7 @@ RECIPE {
     name = "small-parts-01",
     category = "crafting",
     enabled = true,
-    energy_required = 1,
+    energy_required = 0.5,
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
         {type = "item", name = "copper-plate", amount = 1},
@@ -1617,3 +1617,21 @@ else
         order = "a"
     }:add_unlock("oil-machines-mk02")
 end
+
+RECIPE {
+    type = "recipe",
+    name = "hot-stone-brick",
+    category = "smelting",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "item", name = "stone-brick", amount = 10},
+    },
+    results = {
+        {type = "item", name = "hot-stone-brick", amount = 10},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a2",
+    icon = "__pypetroleumhandling__/graphics/icons/hot-stone-brick-recipe.png",
+    icon_size = 32,
+}:add_unlock("coal-processing-1")
