@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "pressured-air", amount = 100},
-        {type = "fluid", name = "organic-solvent", amount = 100},
+        {type = "fluid", name = "organic-solvent", amount = 75},
         {type = "fluid", name = "bitumen-froth", amount = 100},
     },
     results = {

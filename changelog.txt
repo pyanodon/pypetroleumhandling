@@ -1,4 +1,12 @@
 --------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: ??????
+  - Rebalanced Bitumen.
+  - Fixed 9000k tank connecion.
+  - Added new kevlar recipe.
+  - Balanced tholins-to-deutherium and acetylene.
+  - Advanced small parts new needs nylon, have increase output.
+--------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: ??????
   - New optional recipe for hot-air.

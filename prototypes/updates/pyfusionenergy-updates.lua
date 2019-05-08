@@ -102,7 +102,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 400},
     },
     results = {
-        {type = "fluid", name = "deuterium", amount = 10},
+        {type = "fluid", name = "deuterium", amount = 15},
     },
     icon = "__pyfusionenergy__/graphics/icons/deuterium.png",
     icon_size = 32,
