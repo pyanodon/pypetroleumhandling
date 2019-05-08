@@ -43,7 +43,7 @@ ENTITY {
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {position = {1.0, -4.0}},
-            {position = {-1.5, -4.0}},
+            {position = {-1.0, -4.0}},
             {position = {4.0, 1.0}},
             {position = {4.0, -1.0}},
             {position = {1.0, 4.0}},

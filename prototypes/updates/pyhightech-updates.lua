@@ -48,6 +48,7 @@ RECIPE("ethylene-glycol"):replace_ingredient("pure-sand", "colloidal-silica")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
 RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
+RECIPE("small-parts-02"):add_ingredient({type = "item", name = "nylon", amount = 1})
 
 
 ----EXCLUSIVE RECIPES----

@@ -52,7 +52,7 @@ RECIPE {
         {type = "item", name = "bolts", amount = 10},
     },
     results = {
-        {type = "item", name = "small-parts-02", amount = 2},
+        {type = "item", name = "small-parts-02", amount = 3},
     },
     main_product = "small-parts-02",
     icon = "__pypetroleumhandling__/graphics/icons/small-parts-02.png",
@@ -1635,3 +1635,21 @@ RECIPE {
     icon = "__pypetroleumhandling__/graphics/icons/hot-stone-brick-recipe.png",
     icon_size = 32,
 }:add_unlock("coal-processing-1")
+
+RECIPE {
+    type = "recipe",
+    name = "kevlar-2",
+    category = "upgrader",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "item", name = "ppd", amount = 50},
+        {type = "fluid", name = "tpa", amount = 100},
+        {type = "fluid", name = "sulfuric-acid", amount = 100},
+        {type = "fluid", name = "industrial-solvent", amount = 50}
+    },
+    results = {
+        {type = "item", name = "kevlar", amount = 5}
+    },
+    main_product = "kevlar"
+}:add_unlock("fine-electronics"):replace_ingredient("industrial-solvent", "dms")

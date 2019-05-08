@@ -44,7 +44,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "acetylene", amount = 30},
+        {type = "fluid", name = "acetylene", amount = 35},
     },
     icon = "__pycoalprocessing__/graphics/icons/acetylene.png",
     icon_size = 32,
