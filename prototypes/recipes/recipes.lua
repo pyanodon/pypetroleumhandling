@@ -1645,7 +1645,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "ppd", amount = 50},
         {type = "fluid", name = "tpa", amount = 100},
-        {type = "fluid", name = "sulfuric-acid", amount = 100},
+        {type = "fluid", name = "sulfuric-acid", amount = 50},
         {type = "fluid", name = "industrial-solvent", amount = 50}
     },
     results = {
