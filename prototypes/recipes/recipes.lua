@@ -1652,4 +1652,4 @@ RECIPE {
         {type = "item", name = "kevlar", amount = 5}
     },
     main_product = "kevlar"
-}:add_unlock("fine-electronics"):replace_ingredient("industrial-solvent", "dms")
+}:add_unlock("fine-electronics"):replace_ingredient("sulfuric-acid", "dms")
