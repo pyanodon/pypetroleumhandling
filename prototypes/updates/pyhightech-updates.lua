@@ -520,7 +520,7 @@ if mods["pyfusionenergy"] then
         subgroup = "py-petroleum-handling-recipes",
         order = "a"
     }:add_unlock("methanol-processing-2")
-    
+
     RECIPE {
         type = "recipe",
         name = "methane-to-methanol8",
