@@ -498,9 +498,82 @@ RECIPE {
 }:add_unlock("light-oil-mk03")
 
 
-if mods["pyfusion"] then
+if mods["pyfusionenergy"] then
 
 	RECIPE("scrude-to-methane"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 	RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
 
+    RECIPE {
+        type = "recipe",
+        name = "methane-to-methanol7",
+        category = "methanol",
+        enabled = false,
+        energy_required = 6,
+        ingredients = {
+            {type = "fluid", name = "methane", amount = 100},
+            {type = "fluid", name = "hot-air", amount = 100},
+            {type = "item", name = "molybdenum-plate", amount = 1},
+        },
+        results = {
+            {type = "fluid", name = "methanol", amount = 200},
+        },
+        subgroup = "py-petroleum-handling-recipes",
+        order = "a"
+    }:add_unlock("methanol-processing-2")
+    
+    RECIPE {
+        type = "recipe",
+        name = "methane-to-methanol8",
+        category = "methanol",
+        enabled = false,
+        energy_required = 6,
+        ingredients = {
+            {type = "fluid", name = "methane", amount = 100},
+            {type = "fluid", name = "hot-air", amount = 100},
+            {type = "item", name = "molybdenum-plate", amount = 1},
+            {type = "item", name = "vanadium-oxide", amount = 1},
+        },
+        results = {
+            {type = "fluid", name = "methanol", amount = 400},
+        },
+        subgroup = "py-petroleum-handling-recipes",
+        order = "a"
+    }:add_unlock("methanol-processing-2")
+
 end
+
+RECIPE {
+    type = "recipe",
+    name = "methane-to-methanol5",
+    category = "methanol",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "methane", amount = 100},
+        {type = "fluid", name = "hot-air", amount = 100},
+        {type = "item", name = "nichrome", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methanol", amount = 150},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("methanol-processing-1"):replace_ingredient("nichrome", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "methane-to-methanol6",
+    category = "methanol",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "methane", amount = 400},
+        {type = "fluid", name = "hot-air", amount = 100},
+        {type = "item", name = "copper-plate", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "methanol", amount = 300},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("methanol-processing-1"):add_ingredient({type = "item", name = "ticl4", amount = 2})
