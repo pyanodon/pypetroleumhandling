@@ -41,5 +41,5 @@ RECIPE("red-wire"):add_ingredient({type = "item", name = "rubber", amount = 1})
 RECIPE("green-wire"):add_ingredient({type = "item", name = "rubber", amount = 1})
 RECIPE("carbon-filter"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
 RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
-
+RECIPE("small-parts-03"):replace_ingredient("glass", "glass-fiber"):replace_ingredient("tin-plate", "aerogel")
 RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')

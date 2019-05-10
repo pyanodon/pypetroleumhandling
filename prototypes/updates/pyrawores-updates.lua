@@ -104,7 +104,7 @@ RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ing
 RECIPE("tar-to-scrude"):replace_ingredient("chromium", "ticl4")
 RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate")
 RECIPE("small-parts-02"):add_ingredient({type = "item", name = "duralumin", amount = 1}):add_ingredient({type = "item", name = "glass", amount = 1}):add_ingredient({type = "item", name = "titanium-plate", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 1}):replace_ingredient("steel-plate", "stainless-steel")
-RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate", amount = 2}):add_ingredient({type = "item", name = "glass", amount = 2}):add_ingredient({type = "item", name = "titanium-plate", amount = 3}):add_ingredient({type = "item", name = "tin-plate", amount = 3}):replace_ingredient("steel-plate", "super-steel")
+RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate", amount = 2}):add_ingredient({type = "item", name = "glass", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 3}):replace_ingredient("steel-plate", "super-steel")
 RECIPE("polybutadiene"):replace_ingredient("copper-plate", "titanium-plate")
 RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4")
 RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
