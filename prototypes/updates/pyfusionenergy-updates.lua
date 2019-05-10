@@ -1,3 +1,7 @@
+--TECHNOLOGY--
+
+RECIPE('vacuum'):remove_unlock('diamond-mining'):set_enabled(true)
+
 --BUILDINDS--
 
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "agitator", amount = 1})
