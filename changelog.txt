@@ -1,4 +1,10 @@
 --------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: ??????
+  - Duralumin now on advanced small parts.
+  - Fixed bug in vacuum while pyHT disabled.
+  - Fixed locale for combustion aromatics.
+--------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: ??????
   - Rebalanced Bitumen.
