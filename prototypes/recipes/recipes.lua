@@ -50,6 +50,7 @@ RECIPE {
         {type = "item", name = "steel-plate", amount = 1},
         {type = "item", name = "belt", amount = 2},
         {type = "item", name = "bolts", amount = 10},
+        {type = "item", name = "iron-stick", amount = 3},
     },
     results = {
         {type = "item", name = "small-parts-02", amount = 3},
@@ -68,13 +69,12 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "nexelit-plate", amount = 1},
         {type = "item", name = "small-parts-02", amount = 1},
         {type = "item", name = "steel-plate", amount = 1}, --supersteel
         {type = "item", name = "plastic-bar", amount = 4},
-        {type = "item", name = "iron-stick", amount = 3},
         {type = "item", name = "rubber", amount = 2},
         {type = "item", name = "belt", amount = 2},
+        {type = "item", name = "nenbit-matrix", amount = 2},
         {type = "fluid", name = "lubricant", amount = 15},
     },
     results = {
