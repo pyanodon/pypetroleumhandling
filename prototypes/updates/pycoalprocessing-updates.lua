@@ -233,3 +233,31 @@ RECIPE {
     subgroup = "py-syngas",
     order = "a"
 }:add_unlock("scrude")
+
+RECIPE {
+    type = "recipe",
+    name = "copper-plate-2",
+    category = "smelting",
+    enabled = true,
+    energy_required = 40,
+    ingredients = {
+        {type = "item", name = "copper-ore", amount = 32},
+    },
+    results = {
+        {type = "item", name = "copper-plate", amount = 4},
+    },
+}
+
+RECIPE {
+    type = "recipe",
+    name = "iron-plate-2",
+    category = "smelting",
+    enabled = true,
+    energy_required = 40,
+    ingredients = {
+        {type = "item", name = "iron-ore", amount = 32},
+    },
+    results = {
+        {type = "item", name = "iron-plate", amount = 4},
+    },
+}

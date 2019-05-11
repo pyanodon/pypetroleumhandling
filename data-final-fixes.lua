@@ -6,11 +6,13 @@ local GIR = require("prototypes/functions/functions")
 --anything left active in list will be ingored when adding hot air to advanced furnace recipes
 local hablist =
 {
---"copper-plate",
---"iron-plate",
+"copper-plate",
+"iron-plate",
 "stone-brick",
 "steel-plate",
 "hot-stone-brick",
+--"copper-plate-2",
+--"iron-plate-2",
 --"iron-oxide",
 --"crushed-iron",
 --"crushed-copper",
