@@ -63,8 +63,19 @@ ENTITY {
                 line_length = 6,
                 frame_count = 30,
                 run_mode= "forward-then-backward",
-                animation_speed = 0.3,
+                animation_speed = 0.35,
                 shift = util.by_pixel(-37, -64)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/tholin-atm-mk01/base-mk01-mask.png",
+                width = 300,
+                height = 352,
+                line_length = 6,
+                frame_count = 30,
+                run_mode= "forward-then-backward",
+                animation_speed = 0.35,
+                shift = util.by_pixel(-37, -64),
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pypetroleumhandling__/graphics/entity/tholin-atm-mk01/baloon-mk01.png",
@@ -73,8 +84,19 @@ ENTITY {
                 line_length = 6,
                 frame_count = 30,
                 run_mode= "forward-then-backward",
-                animation_speed = 0.3,
+                animation_speed = 0.35,
                 shift = util.by_pixel(-173, -360)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/tholin-atm-mk01/baloon-mk01-mask.png",
+                width = 320,
+                height = 384,
+                line_length = 6,
+                frame_count = 30,
+                run_mode= "forward-then-backward",
+                animation_speed = 0.35,
+                shift = util.by_pixel(-173, -360),
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pypetroleumhandling__/graphics/entity/tholin-atm-mk01/helice-mk01.png",
@@ -84,6 +106,16 @@ ENTITY {
                 frame_count = 60,
                 animation_speed = 0.3,
                 shift = util.by_pixel(21, -208)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/tholin-atm-mk01/helice-mk01-mask.png",
+                width = 96,
+                height = 64,
+                line_length = 6,
+                frame_count = 60,
+                animation_speed = 0.35,
+                shift = util.by_pixel(21, -208),
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
         }
     },

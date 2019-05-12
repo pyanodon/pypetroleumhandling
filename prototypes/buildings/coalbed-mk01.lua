@@ -64,6 +64,16 @@ ENTITY {
                 animation_speed = 0.5,
                 shift = util.by_pixel(-64, -32)
             },
+			{
+				filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/left-mask.png",
+				width = 96,
+				height = 298,
+				line_length = 21,
+				frame_count = 124,
+				animation_speed = 0.5,
+				shift = util.by_pixel(-64, -32),
+				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+			},
             {
                 filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/mid-mk01.png",
                 width = 96,
@@ -72,6 +82,16 @@ ENTITY {
                 frame_count = 124,
                 animation_speed = 0.5,
                 shift = util.by_pixel(32, -32)
+            },
+			{
+                filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/mid-mask.png",
+                width = 96,
+                height = 298,
+                line_length = 21,
+                frame_count = 124,
+                animation_speed = 0.5,
+                shift = util.by_pixel(32, -32),
+				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/right-mk01.png",

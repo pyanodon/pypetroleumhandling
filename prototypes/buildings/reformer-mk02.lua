@@ -120,7 +120,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i1.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i1.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
@@ -129,7 +129,17 @@ ENTITY {
                 shift = util.by_pixel(-176, -176)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i2.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i1-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(-176, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i2.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
@@ -138,7 +148,17 @@ ENTITY {
                 shift = util.by_pixel(-112, -176)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i3.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i2-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(-112, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i3.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
@@ -147,7 +167,17 @@ ENTITY {
                 shift = util.by_pixel(-48, -176)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i4.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i3-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(-48, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i4.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
@@ -156,7 +186,17 @@ ENTITY {
                 shift = util.by_pixel(16, -176)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i5.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i4-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(16, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i5.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
@@ -165,7 +205,17 @@ ENTITY {
                 shift = util.by_pixel(80, -176)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i6.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i5-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(80, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i6.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
@@ -174,13 +224,33 @@ ENTITY {
                 shift = util.by_pixel(144, -176)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk02/i7.png",
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i6-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(144, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i7.png",
                 width = 64,
                 height = 769,
                 frame_count = 50,
                 line_length = 25,
                 animation_speed = 0.3,
                 shift = util.by_pixel(208, -176)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i7-mask.png",
+                width = 64,
+                height = 769,
+                frame_count = 50,
+                line_length = 25,
+                animation_speed = 0.3,
+                shift = util.by_pixel(208, -176),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pypetroleumhandling__/graphics/entity/reformer-mk01/i8.png",

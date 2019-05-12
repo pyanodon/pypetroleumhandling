@@ -57,11 +57,19 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/lor-mk03/off.png",
+                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/off.png",
                 width = 296,
                 height = 369,
                 frame_count = 1,
                 shift = util.by_pixel(4, -40)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/off-mask.png",
+                width = 296,
+                height = 369,
+                frame_count = 1,
+                shift = util.by_pixel(4, -40),
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },
         }
     },
@@ -72,13 +80,29 @@ ENTITY {
             south_position = util.by_pixel(0, -128.5),
             east_position = util.by_pixel(0, -128.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/lor-mk03/on.png",
+                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/on.png",
                 --priority = "low",
                 frame_count = 80,
                 line_length = 10,
                 width = 160,
                 height = 192,
                 animation_speed = 0.3
+            }
+        },
+        {
+            north_position = util.by_pixel(0, -128.5),
+            west_position = util.by_pixel(0, -128.5),
+            south_position = util.by_pixel(0, -128.5),
+            east_position = util.by_pixel(0, -128.5),
+            animation = {
+                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/on-mask.png",
+                --priority = "low",
+                frame_count = 80,
+                line_length = 10,
+                width = 160,
+                height = 192,
+                animation_speed = 0.3,
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             }
         },
     },
@@ -133,8 +157,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/lor.ogg", volume = 1.1},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/lor.ogg", volume = 0.8},
+        sound = {filename = "__pypetroleumhandling__/sounds/lor.ogg", volume = 1.3},
+        idle_sound = {filename = "__pypetroleumhandling__/sounds/lor.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

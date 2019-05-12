@@ -54,11 +54,19 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk04/off-mk04.png",
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
                 width = 448,
                 height = 551,
                 frame_count = 1,
                 shift = util.by_pixel(16, -62)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
+                width = 448,
+                height = 551,
+                frame_count = 1,
+                shift = util.by_pixel(16, -62),
+                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             },
         }
     },
@@ -69,7 +77,7 @@ ENTITY {
             south_position = util.by_pixel(0, 62.5),
             east_position = util.by_pixel(0, 62.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk04/bot.png",
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
@@ -79,18 +87,50 @@ ENTITY {
             }
         },
         {
+            north_position = util.by_pixel(0, 62.5),
+            west_position = util.by_pixel(0, 62.5),
+            south_position = util.by_pixel(0, 62.5),
+            east_position = util.by_pixel(0, 62.5),
+            animation = {
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
+                --priority = "low",
+                frame_count = 50,
+                line_length = 8,
+                width = 224,
+                height = 224,
+                animation_speed = 0.1,
+                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+            }
+        },
+        {
             north_position = util.by_pixel(0, -177.5),
             west_position = util.by_pixel(0, -177.5),
             south_position = util.by_pixel(0, -177.5),
             east_position = util.by_pixel(0, -177.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk04/top.png",
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/top.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
                 width = 224,
                 height = 256,
                 animation_speed = 0.1
+            }
+        },
+        {
+            north_position = util.by_pixel(0, -177.5),
+            west_position = util.by_pixel(0, -177.5),
+            south_position = util.by_pixel(0, -177.5),
+            east_position = util.by_pixel(0, -177.5),
+            animation = {
+                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
+                --priority = "low",
+                frame_count = 50,
+                line_length = 8,
+                width = 224,
+                height = 256,
+                animation_speed = 0.1,
+                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             }
         },
     },

@@ -75,7 +75,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk02/mk02-a.png",
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-a.png",
                 width = 128,
                 height = 329,
                 line_length = 16,
@@ -84,7 +84,17 @@ ENTITY {
                 shift = util.by_pixel(-80, -20)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk02/mk02-b.png",
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-a-mask.png",
+                width = 128,
+                height = 329,
+                line_length = 16,
+                frame_count = 96,
+                animation_speed = 0.15,
+                shift = util.by_pixel(-80, -20),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-b.png",
                 width = 128,
                 height = 329,
                 line_length = 16,
@@ -93,13 +103,33 @@ ENTITY {
                 shift = util.by_pixel(48, -20)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk02/mk02-c.png",
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-b-mask.png",
+                width = 128,
+                height = 329,
+                line_length = 16,
+                frame_count = 96,
+                animation_speed = 0.15,
+                shift = util.by_pixel(48, -20),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-c.png",
                 width = 41,
                 height = 329,
                 line_length = 16,
                 frame_count = 96,
                 animation_speed = 0.15,
                 shift = util.by_pixel(132, -20)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/tar-extractor-mk01/mk01-c-mask.png",
+                width = 41,
+                height = 329,
+                line_length = 16,
+                frame_count = 96,
+                animation_speed = 0.15,
+                shift = util.by_pixel(132, -20),
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             },
     },
 },
