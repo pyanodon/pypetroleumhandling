@@ -56,7 +56,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk03/left-mk03.png",
+                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/left-mk01.png",
                 width = 128,
                 height = 234,
                 line_length = 16,
@@ -65,13 +65,33 @@ ENTITY {
                 shift = util.by_pixel(-48, -3)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk03/right-mk03.png",
+                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/left-mask.png",
+                width = 128,
+                height = 234,
+                line_length = 16,
+                frame_count = 100,
+                animation_speed = 0.2,
+                shift = util.by_pixel(-48, -3),
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/right-mk01.png",
                 width = 128,
                 height = 234,
                 line_length = 16,
                 frame_count = 100,
                 animation_speed = 0.2,
                 shift = util.by_pixel(80, -3)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/right-mask.png",
+                width = 128,
+                height = 234,
+                line_length = 16,
+                frame_count = 100,
+                animation_speed = 0.2,
+                shift = util.by_pixel(80, -3),
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },
         }
     },

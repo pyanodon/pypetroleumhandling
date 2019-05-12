@@ -66,6 +66,16 @@ ENTITY {
                 shift = util.by_pixel(-48, -64)
             },
             {
+                filename = "__pypetroleumhandling__/graphics/entity/upgrader-mk01/left-mk01-mask.png",
+                width = 128,
+                height = 352,
+                line_length = 16,
+                frame_count = 80,
+                animation_speed = 0.5,
+                shift = util.by_pixel(-48, -64),
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+            },
+            {
                 filename = "__pypetroleumhandling__/graphics/entity/upgrader-mk01/right-mk01.png",
                 width = 128,
                 height = 352,
@@ -73,6 +83,16 @@ ENTITY {
                 frame_count = 80,
                 animation_speed = 0.5,
                 shift = util.by_pixel(80, -64)
+            },
+            {
+                filename = "__pypetroleumhandling__/graphics/entity/upgrader-mk01/right-mk01-mask.png",
+                width = 128,
+                height = 352,
+                line_length = 16,
+                frame_count = 80,
+                animation_speed = 0.5,
+                shift = util.by_pixel(80, -64),
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
         }
     },
