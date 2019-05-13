@@ -3,6 +3,7 @@ Version: 1.1.3
 Date: ??????
   Balances:
     - fixed hot-air in initial recipes.
+    - fixed hot-air bug in nichrome-2.
 --------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: ??????

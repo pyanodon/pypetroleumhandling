@@ -11,6 +11,7 @@ local hablist =
 "stone-brick",
 "steel-plate",
 "hot-stone-brick",
+"nichrome-2",
 --"copper-plate-2",
 --"iron-plate-2",
 --"iron-oxide",
