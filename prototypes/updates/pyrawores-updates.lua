@@ -386,6 +386,24 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "tholin-to-chlorine",
+    category = "tholin-plant",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+        {type = "fluid", name = "tholins", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "chlorine", amount = 20},
+    },
+    icon = "__pyrawores__/graphics/icons/chlorine.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-tholin-recipes",
+    order = "b"
+}:add_unlock("tholin-mk02")
+
+RECIPE {
+    type = "recipe",
     name = "tholin-to-hydrogen",
     category = "tholin-plant",
     enabled = false,
