@@ -61,7 +61,7 @@ ENTITY {
       base_area = 1,
       height = 2,
       base_level = -1,
-      pipe_covers = pipecoverspictures(),
+      pipe_covers = DATA.Pipes.covers(false, true, true, true),
       pipe_connections =
       {
         {type = "input-output", position = {-2, 0.5}},
@@ -75,7 +75,7 @@ ENTITY {
       base_area = 1,
       height = 2,
       base_level = 1,
-      pipe_covers = pipecoverspictures(),
+      pipe_covers = DATA.Pipes.covers(false, true, true, true),
       pipe_connections =
       {
         {type = "output", position = {0, -1.5}}
@@ -97,8 +97,8 @@ ENTITY {
 		{
 			{type = "input", position = {0, 1.5}}
 		},
-		pipe_covers = pipecoverspictures(),
-		pipe_picture = assembler2pipepictures(),
+		pipe_covers = DATA.Pipes.covers(false, true, true, true),
+		pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
 		production_type = "input",
 		},
 	effectivity = 0.5,
