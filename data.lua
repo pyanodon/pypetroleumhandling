@@ -89,6 +89,8 @@ require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
 
+--oil-boiler
+require("prototypes.buildings.oil-boiler-mk01")
 --))
 
 --(( RECIPES ))--
@@ -139,6 +141,64 @@ require("prototypes.fluids.stripped-distillate")
 require("prototypes.fluids.condensed-distillate")
 require("prototypes.fluids.residual-mixture")
 require("prototypes.fluids.hot-residual-mixture")
+
+--pyph fluids
+data.raw.fluid["bitumen"].fuel_value = "1MJ"
+data.raw.fluid["scrude"].fuel_value = "1MJ"
+data.raw.fluid["fuel-oil"].fuel_value = "1MJ"
+data.raw.fluid["natural-gas"].fuel_value = "1MJ"
+data.raw.fluid["naphtha"].fuel_value = "1MJ"
+data.raw.fluid["btx"].fuel_value = "1MJ"
+data.raw.fluid["processed-light-oil"].fuel_value = "1MJ"
+data.raw.fluid["coalbed-gas"].fuel_value = "1MJ"
+data.raw.fluid["condensates"].fuel_value = "1MJ"
+data.raw.fluid["raw-gas"].fuel_value = "1MJ"
+data.raw.fluid["refined-natural-gas"].fuel_value = "1MJ"
+data.raw.fluid["purified-natural-gas"].fuel_value = "1MJ"
+data.raw.fluid["pure-natural-gas"].fuel_value = "1MJ"
+data.raw.fluid["residual-gas"].fuel_value = "1MJ"
+data.raw.fluid["dirty-syngas"].fuel_value = "1MJ"
+data.raw.fluid["purified-syngas"].fuel_value = "1MJ"
+data.raw.fluid["hot-syngas"].fuel_value = "1MJ"
+data.raw.fluid["residual-oil"].fuel_value = "1MJ"
+data.raw.fluid["low-distillate"].fuel_value = "1MJ"
+data.raw.fluid["medium-distillate"].fuel_value = "1MJ"
+data.raw.fluid["high-distillate"].fuel_value = "1MJ"
+data.raw.fluid["stripped-distillate"].fuel_value = "1MJ"
+data.raw.fluid["condensed-distillate"].fuel_value = "1MJ"
+data.raw.fluid["residual-mixture"].fuel_value = "1MJ"
+data.raw.fluid["hot-residual-mixture"].fuel_value = "1MJ"
+--base game fluids
+data.raw.fluid["crude-oil"].fuel_value = "1MJ"
+data.raw.fluid["heavy-oil"].fuel_value = "1MJ"
+data.raw.fluid["light-oil"].fuel_value = "1MJ"
+data.raw.fluid["petroleum-gas"].fuel_value = "1MJ"
+--pycp fluids
+--fuel consumtion should secounds = fuel value / energy consumption
+data.raw.fluid["coal-gas"].fuel_value = "0.4MJ" -- needs to use 4/s per boiler
+data.raw.fluid["syngas"].fuel_value = "0.1MJ"
+data.raw.fluid["refsyngas"].fuel_value = "0.5MJ"
+data.raw.fluid["diesel"].fuel_value = "1MJ"
+data.raw.fluid["gasoline"].fuel_value = "1MJ"
+data.raw.fluid["methanol"].fuel_value = "1MJ"
+data.raw.fluid["tar"].fuel_value = "1MJ"
+--pyfus fluids
+
+--pyht fluids
+data.raw.fluid["benzene"].fuel_value = "1MJ"
+data.raw.fluid["ethylene"].fuel_value = "1MJ"
+data.raw.fluid["methane"].fuel_value = "1MJ"
+data.raw.fluid["propene"].fuel_value = "1MJ"
+data.raw.fluid["tall-oil"].fuel_value = "1MJ"
+--pyro fluids
+data.raw.fluid["coke-oven-gas"].fuel_value = "1MJ"
+data.raw.fluid["kerosene"].fuel_value = "1MJ"
+data.raw.fluid["outlet-gas-01"].fuel_value = "1MJ"
+data.raw.fluid["outlet-gas-02"].fuel_value = "1MJ"
+data.raw.fluid["outlet-gas-03"].fuel_value = "1MJ"
+data.raw.fluid["outlet-gas-04"].fuel_value = "1MJ"
+
+
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
