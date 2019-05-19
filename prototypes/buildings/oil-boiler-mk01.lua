@@ -13,15 +13,15 @@ RECIPE {
     results = {
         {"oil-boiler-mk01", 1}
     }
-}:add_unlock("oil-machines")
+}:add_unlock("oil-machines-mk01")
 
 ITEM {
     type = "item",
     name = "oil-boiler-mk01",
-    icon = "__base__/graphics/icons/boiler.png",
+    icon = "__pypetroleumhandling__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-extras",
     order = "b",
     place_result = "oil-boiler-mk01",
     stack_size = 10
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "boiler",
     name = "oil-boiler-mk01",
-    icon = "__base__/graphics/icons/boiler.png",
+    icon = "__pypetroleumhandling__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.2, result = "oil-boiler-mk01"},
@@ -53,9 +53,9 @@ ENTITY {
         percent = 30
       }
     },
-    collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
-    selection_box = {{-1.5, -1}, {1.5, 1}},
-    target_temperature = 100,
+    collision_box = {{-2.29, -2.29}, {2.29, 2.29}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    target_temperature = 165,
     fluid_box =
     {
       base_area = 1,
@@ -64,8 +64,8 @@ ENTITY {
       pipe_covers = DATA.Pipes.covers(false, true, true, true),
       pipe_connections =
       {
-        {type = "input-output", position = {-2, 0.5}},
-        {type = "input-output", position = {2, 0.5}}
+        {type = "input-output", position = {-3.0, 0.0}},
+        {type = "input-output", position = {3.0, 0.0}}
       },
       production_type = "input-output",
       filter = "water"
@@ -78,7 +78,7 @@ ENTITY {
       pipe_covers = DATA.Pipes.covers(false, true, true, true),
       pipe_connections =
       {
-        {type = "output", position = {0, -1.5}}
+        {type = "output", position = {0, -3.0}}
       },
       production_type = "output",
       filter = "steam"
@@ -95,7 +95,7 @@ ENTITY {
 		base_level = -1,
 		pipe_connections =
 		{
-			{type = "input", position = {0, 1.5}}
+			{type = "input", position = {0, 3.0}}
 		},
 		pipe_covers = DATA.Pipes.covers(false, true, true, true),
 		pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
@@ -108,14 +108,14 @@ ENTITY {
       smoke =
       {
         {
-          name = "smoke",
-          north_position = util.by_pixel(-38, -47.5),
-          south_position = util.by_pixel(38.5, -32),
-          east_position = util.by_pixel(20, -70),
-          west_position = util.by_pixel(-19, -8.5),
-          frequency = 15,
-          starting_vertical_speed = 0.0,
-          starting_frame_deviation = 60
+          name = "turbine-smoke",
+          north_position = util.by_pixel(0, -160),
+          south_position = util.by_pixel(0, -160),
+          east_position = util.by_pixel(0, -160),
+          west_position = util.by_pixel(0, -160),
+          frequency = 10,
+          starting_vertical_speed = 0.04,
+          starting_frame_deviation = 50
         }
       }
     },
@@ -136,39 +136,12 @@ ENTITY {
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
-            width = 131,
-            height = 108,
-            shift = util.by_pixel(-0.5, 4),
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-N-idle.png",
-              priority = "extra-high",
-              width = 269,
-              height = 221,
-              shift = util.by_pixel(-1.25, 5.25),
-              scale = 0.5
-            }
+            width = 196,
+            height = 320,
+            shift = util.by_pixel(18, -80),
           },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
-            priority = "extra-high",
-            width = 137,
-            height = 82,
-            shift = util.by_pixel(20.5, 9),
-            draw_as_shadow = true,
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-N-shadow.png",
-              priority = "extra-high",
-              width = 274,
-              height = 164,
-              scale = 0.5,
-              shift = util.by_pixel(20.5, 9),
-              draw_as_shadow = true
-            }
-          }
         }
       },
       east =
@@ -176,39 +149,12 @@ ENTITY {
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
+            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
-            width = 105,
-            height = 147,
-            shift = util.by_pixel(-3.5, -0.5),
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-E-idle.png",
-              priority = "extra-high",
-              width = 216,
-              height = 301,
-              shift = util.by_pixel(-3, 1.25),
-              scale = 0.5
-            }
+            width = 196,
+            height = 320,
+            shift = util.by_pixel(18, -80),
           },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-E-shadow.png",
-            priority = "extra-high",
-            width = 92,
-            height = 97,
-            shift = util.by_pixel(30, 9.5),
-            draw_as_shadow = true,
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-E-shadow.png",
-              priority = "extra-high",
-              width = 184,
-              height = 194,
-              scale = 0.5,
-              shift = util.by_pixel(30, 9.5),
-              draw_as_shadow = true
-            }
-          }
         }
       },
       south =
@@ -216,39 +162,12 @@ ENTITY {
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
+            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
-            width = 128,
-            height = 95,
-            shift = util.by_pixel(3, 12.5),
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-S-idle.png",
-              priority = "extra-high",
-              width = 260,
-              height = 192,
-              shift = util.by_pixel(4, 13),
-              scale = 0.5
-            }
+            width = 196,
+            height = 320,
+            shift = util.by_pixel(18, -80),
           },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-S-shadow.png",
-            priority = "extra-high",
-            width = 156,
-            height = 66,
-            shift = util.by_pixel(30, 16),
-            draw_as_shadow = true,
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-S-shadow.png",
-              priority = "extra-high",
-              width = 311,
-              height = 131,
-              scale = 0.5,
-              shift = util.by_pixel(29.75, 15.75),
-              draw_as_shadow = true
-            }
-          }
         }
       },
       west =
@@ -256,248 +175,110 @@ ENTITY {
         layers =
         {
           {
-            filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
+            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
-            width = 96,
-            height = 132,
-            shift = util.by_pixel(1, 5),
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-W-idle.png",
-              priority = "extra-high",
-              width = 196,
-              height = 273,
-              shift = util.by_pixel(1.5, 7.75),
-              scale = 0.5
-            }
+            width = 196,
+            height = 320,
+            shift = util.by_pixel(18, -80),
           },
-          {
-            filename = "__base__/graphics/entity/boiler/boiler-W-shadow.png",
-            priority = "extra-high",
-            width = 103,
-            height = 109,
-            shift = util.by_pixel(19.5, 6.5),
-            draw_as_shadow = true,
-            hr_version =
-        {
-              filename = "__base__/graphics/entity/boiler/hr-boiler-W-shadow.png",
-              priority = "extra-high",
-              width = 206,
-              height = 218,
-              scale = 0.5,
-              shift = util.by_pixel(19.5, 6.5),
-              draw_as_shadow = true
-            }
-          }
         }
-      }
+      },
     },
 
-    patch =
-    {
-      east =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-E-patch.png",
-        priority = "extra-high",
-        width = 3,
-        height = 17,
-        shift = util.by_pixel(33.5, -13.5),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-E-patch.png",
-          width = 6,
-          height = 36,
-          shift = util.by_pixel(33.5, -13.5),
-          scale = 0.5
-        }
-      }
-    },
-
-    fire_flicker_enabled = true,
+    fire_flicker_enabled = false,
     fire =
     {
       north =
       {
-        filename = "__base__/graphics/entity/boiler/boiler-N-fire.png",
+        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 12,
-        height = 13,
-        animation_speed = 0.5,
-        shift = util.by_pixel(0, -8.5),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-N-fire.png",
-          priority = "extra-high",
-          frame_count = 64,
-          line_length = 8,
-          width = 26,
-          height = 26,
-          animation_speed = 0.5,
-          shift = util.by_pixel(0, -8.5),
-          scale = 0.5
-        }
+        frame_count = 80,
+        line_length = 10,
+        width = 96,
+        height = 128,
+        animation_speed = 0.4,
+        shift = util.by_pixel(-1, -176),
       },
       east =
       {
-        filename = "__base__/graphics/entity/boiler/boiler-E-fire.png",
+        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 14,
-        height = 14,
-        animation_speed = 0.5,
-        shift = util.by_pixel(-10, -22),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-E-fire.png",
-          priority = "extra-high",
-          frame_count = 64,
-          line_length = 8,
-          width = 28,
-          height = 28,
-          animation_speed = 0.5,
-          shift = util.by_pixel(-9.5, -22),
-          scale = 0.5
-        }
+        frame_count = 80,
+        line_length = 10,
+        width = 96,
+        height = 128,
+        animation_speed = 0.4,
+        shift = util.by_pixel(-1, -176),
       },
       south =
       {
-        filename = "__base__/graphics/entity/boiler/boiler-S-fire.png",
+        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 12,
-        height = 9,
-        animation_speed = 0.5,
-        shift = util.by_pixel(-1, -26.5),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-S-fire.png",
-          priority = "extra-high",
-          frame_count = 64,
-          line_length = 8,
-          width = 26,
-          height = 16,
-          animation_speed = 0.5,
-          shift = util.by_pixel(-1, -26.5),
-          scale = 0.5
-        }
+        frame_count = 80,
+        line_length = 10,
+        width = 96,
+        height = 128,
+        animation_speed = 0.4,
+        shift = util.by_pixel(-1, -176),
       },
       west =
       {
-        filename = "__base__/graphics/entity/boiler/boiler-W-fire.png",
+        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
-        frame_count = 64,
-        line_length = 8,
-        width = 14,
-        height = 14,
-        animation_speed = 0.5,
-        shift = util.by_pixel(13, -23),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-W-fire.png",
-          priority = "extra-high",
-          frame_count = 64,
-          line_length = 8,
-          width = 30,
-          height = 29,
-          animation_speed = 0.5,
-          shift = util.by_pixel(13, -23.25),
-          scale = 0.5
-        }
-      }
+        frame_count = 80,
+        line_length = 10,
+        width = 96,
+        height = 128,
+        animation_speed = 0.4,
+        shift = util.by_pixel(-1, -176),
+      },
     },
 
-    fire_glow_flicker_enabled = true,
+fire_glow_flicker_enabled = false,
 
-    fire_glow =
-    {
-      north =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-N-light.png",
-        priority = "extra-high",
-        frame_count = 1,
-        width = 100,
-        height = 87,
-        shift = util.by_pixel(-1, -6.5),
-        blend_mode = "additive",
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-N-light.png",
-          priority = "extra-high",
-          frame_count = 1,
-          width = 200,
-          height = 173,
-          shift = util.by_pixel(-1, -6.75),
-          blend_mode = "additive",
-          scale = 0.5
-        }
-      },
-      east =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-E-light.png",
-        priority = "extra-high",
-        frame_count = 1,
-        width = 70,
-        height = 122,
-        shift = util.by_pixel(0, -13),
-        blend_mode = "additive",
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-E-light.png",
-          priority = "extra-high",
-          frame_count = 1,
-          width = 139,
-          height = 244,
-          shift = util.by_pixel(0.25, -13),
-          blend_mode = "additive",
-          scale = 0.5
-        }
-      },
-      south =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-S-light.png",
-        priority = "extra-high",
-        frame_count = 1,
-        width = 100,
-        height = 81,
-        shift = util.by_pixel(1, 5.5),
-        blend_mode = "additive",
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-S-light.png",
-          priority = "extra-high",
-          frame_count = 1,
-          width = 200,
-          height = 162,
-          shift = util.by_pixel(1, 5.5),
-          blend_mode = "additive",
-          scale = 0.5
-        }
-      },
-      west =
-      {
-        filename = "__base__/graphics/entity/boiler/boiler-W-light.png",
-        priority = "extra-high",
-        frame_count = 1,
-        width = 68,
-        height = 109,
-        shift = util.by_pixel(2, -6.5),
-        blend_mode = "additive",
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/boiler/hr-boiler-W-light.png",
-          priority = "extra-high",
-          frame_count = 1,
-          width = 136,
-          height = 217,
-          shift = util.by_pixel(2, -6.25),
-          blend_mode = "additive",
-          scale = 0.5
-        }
-      }
-    },
+fire_glow =
+{
+  north =
+  {
+    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    priority = "extra-high",
+    frame_count = 1,
+    width = 64,
+    height = 64,
+    shift = util.by_pixel(-1, -6.5),
+    --blend_mode = "additive",
+  },
+  east =
+  {
+    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    priority = "extra-high",
+    frame_count = 1,
+    width = 64,
+    height = 64,
+    shift = util.by_pixel(-1, -6.5),
+    --blend_mode = "additive",
+  },
+  south =
+  {
+    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    priority = "extra-high",
+    frame_count = 1,
+    width = 64,
+    height = 64,
+    shift = util.by_pixel(-1, -6.5),
+    --blend_mode = "additive",
+  },
+  west =
+  {
+    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    priority = "extra-high",
+    frame_count = 1,
+    width = 64,
+    height = 64,
+    shift = util.by_pixel(-1, -6.5),
+    --blend_mode = "additive",
+  },
+},
+
     burning_cooldown = 20
   }
