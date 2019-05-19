@@ -394,7 +394,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "chlorine", amount = 20},
+        {type = "fluid", name = "chlorine", amount = 30},
     },
     icon = "__pyrawores__/graphics/icons/chlorine.png",
     icon_size = 32,
