@@ -1,90 +1,86 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+  Fixes:
+    - modify changelog to get it to display correctly
+---------------------------------------------------------------------------------------------------
 Version: 1.1.6
-Date: ??????
   Balances:
     - Small balances.
     - Added an Oil Burner.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.5
-Date: ??????
   Balances:
     -Fixed acrolein.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.4
-Date: ??????
   Balances:
     -Test.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
-Date: ??????
   Balances:
     - fixed hot-air in initial recipes.
     - fixed hot-air bug in nichrome-2.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
-Date: ??????
   Balances:
     - massive data saving.
---------------------------------------------------------------------------------------------------
-Version: 1.1.1
-Date: ??????
-  - Rebalanced Bitumen.
-  - Fixed 9000k tank connecion.
-  - Added new kevlar recipe.
-  - Balanced tholins-to-deutherium and acetylene.
-  - Advanced small parts new needs nylon, have increase output.
---------------------------------------------------------------------------------------------------
-Version: 1.1.0
-Date: ??????
-  - New optional recipe for hot-air.
---------------------------------------------------------------------------------------------------
-Version: 1.0.9
-Date: ??????
-  - Fixed deadlock in pyFE Mo setup
---------------------------------------------------------------------------------------------------
-Version: 1.0.8
-Date: ??????
-  - Fixed deadlock in science -2
---------------------------------------------------------------------------------------------------
-Version: 1.0.7
-Date: ??????
- - Balanced more hot-air recipes.
- - Balanced drill fluids.
- - Fixed locale for combustion mixtures
---------------------------------------------------------------------------------------------------
-Version: 1.0.6
-Date: ??????
- - Balanced some hot-air recipes in cross mods.
- - Fixed new tanks to their right capacity.
---------------------------------------------------------------------------------------------------
-Version: 1.0.5
-Date: ??????
- - oops
---------------------------------------------------------------------------------------------------
-Version: 1.0.4
-Date: ??????
- - Balanced small parts
- - Balanced natural gas and oil pumpjack recipes
- - Improved functions
- - Fixed deadlock in filters and rectisol
- - Added a bunch of alternative recipes for inserters
---------------------------------------------------------------------------------------------------
-Version: 1.0.3
-Date: ??????
- - Hot air balance
---------------------------------------------------------------------------------------------------
-Version: 1.0.2
-Date: ??????
- - Hot air balance
- - internal stuff
---------------------------------------------------------------------------------------------------
-Version: 1.0.1
-Date: ??????
- - Balanced lots of stuff.
---------------------------------------------------------------------------------------------------
-Version: 1.0.0
-Date: ??????
- - Initial release
-
 ---------------------------------------------------------------------------------------------------
-
+Version: 1.1.1
+  Fixes:
+    - Rebalanced Bitumen.
+    - Fixed 9000k tank connecion.
+    - Added new kevlar recipe.
+    - Balanced tholins-to-deutherium and acetylene.
+    - Advanced small parts new needs nylon, have increase output.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+  Fixes:
+    - New optional recipe for hot-air.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+  Fixes:
+    - Fixed deadlock in pyFE Mo setup
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+  Fixes:
+    - Fixed deadlock in science -2
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+  Fixes:
+   - Balanced more hot-air recipes.
+   - Balanced drill fluids.
+   - Fixed locale for combustion mixtures
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+  Fixes:
+   - Balanced some hot-air recipes in cross mods.
+   - Fixed new tanks to their right capacity.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+  Fixes:
+   - oops
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+  Fixes:
+   - Balanced small parts
+   - Balanced natural gas and oil pumpjack recipes
+   - Improved functions
+   - Fixed deadlock in filters and rectisol
+ - Added a bunch of alternative recipes for inserters
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+  Fixes:
+    - Hot air balance
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+  Fixes:
+    - Hot air balance
+    - internal stuff
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Fixes:
+    - Balanced lots of stuff.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+  Fixes:
+    - Initial release
