@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.7
   Fixes:
-    - modify changelog to get it to display correctly
+    - modify changelog to get it to display correctly.
+    - Balanced Chlorine.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.6
   Balances:
