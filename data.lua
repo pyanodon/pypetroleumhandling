@@ -184,12 +184,16 @@ data.raw.fluid["methanol"].fuel_value = "1MJ"
 data.raw.fluid["tar"].fuel_value = "1MJ"
 --pyfus fluids
 
+if mods["pyhightech"] then
 --pyht fluids
 data.raw.fluid["benzene"].fuel_value = "1MJ"
 data.raw.fluid["ethylene"].fuel_value = "1MJ"
 data.raw.fluid["methane"].fuel_value = "1MJ"
 data.raw.fluid["propene"].fuel_value = "1MJ"
 data.raw.fluid["tall-oil"].fuel_value = "1MJ"
+end
+
+if mods["pyrawores"] then
 --pyro fluids
 data.raw.fluid["coke-oven-gas"].fuel_value = "1MJ"
 data.raw.fluid["kerosene"].fuel_value = "1MJ"
@@ -197,7 +201,7 @@ data.raw.fluid["outlet-gas-01"].fuel_value = "1MJ"
 data.raw.fluid["outlet-gas-02"].fuel_value = "1MJ"
 data.raw.fluid["outlet-gas-03"].fuel_value = "1MJ"
 data.raw.fluid["outlet-gas-04"].fuel_value = "1MJ"
-
+end
 
 
 --(( OTHERS ))--
