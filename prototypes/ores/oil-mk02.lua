@@ -67,6 +67,6 @@ ENTITY {
         variation_count = 1
       }
     },
-    map_color = {r=0.3, g=0.3, b=0.3},
+    map_color = {r=0.1, g=0.1, b=0.1},
     map_grid = false
   }
