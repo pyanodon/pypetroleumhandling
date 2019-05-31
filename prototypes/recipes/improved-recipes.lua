@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "engine-unit-2",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = false,
     energy_required = 5,
     ingredients = {
