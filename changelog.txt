@@ -1,6 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+  Balances:
+    - Fixed Engines
+---------------------------------------------------------------------------------------------------
 Version: 1.1.7
-  Fixes:
+  Balances:
     - modify changelog to get it to display correctly.
     - Balanced Chlorine.
 ---------------------------------------------------------------------------------------------------
@@ -27,7 +31,7 @@ Version: 1.1.2
     - massive data saving.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
-  Fixes:
+  Balances:
     - Rebalanced Bitumen.
     - Fixed 9000k tank connecion.
     - Added new kevlar recipe.
@@ -35,34 +39,34 @@ Version: 1.1.1
     - Advanced small parts new needs nylon, have increase output.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
-  Fixes:
+  Balances:
     - New optional recipe for hot-air.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
-  Fixes:
+  Balances:
     - Fixed deadlock in pyFE Mo setup
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.8
-  Fixes:
+  Balances:
     - Fixed deadlock in science -2
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.7
-  Fixes:
+  Balances:
    - Balanced more hot-air recipes.
    - Balanced drill fluids.
    - Fixed locale for combustion mixtures
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.6
-  Fixes:
+  Balances:
    - Balanced some hot-air recipes in cross mods.
    - Fixed new tanks to their right capacity.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
-  Fixes:
+  Balances:
    - oops
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
-  Fixes:
+  Balances:
    - Balanced small parts
    - Balanced natural gas and oil pumpjack recipes
    - Improved functions
@@ -70,18 +74,18 @@ Version: 1.0.4
  - Added a bunch of alternative recipes for inserters
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
-  Fixes:
+  Balances:
     - Hot air balance
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
-  Fixes:
+  Balances:
     - Hot air balance
     - internal stuff
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
-  Fixes:
+  Balances:
     - Balanced lots of stuff.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-  Fixes:
+  Balances:
     - Initial release
