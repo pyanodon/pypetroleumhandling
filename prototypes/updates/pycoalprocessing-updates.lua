@@ -115,7 +115,7 @@ RECIPE {
         {type = "fluid", name = "aromatics", amount = 100}
     },
     results = {
-        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 670},
+        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 520},
         {type = "fluid", name = "steam", amount = 500, temperature = 60}
     },
     icon = "__pypetroleumhandling__/graphics/icons/combustion-aromatics.png",
