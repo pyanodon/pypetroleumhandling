@@ -1,5 +1,3 @@
-local resource_autoplace = require("__base__/prototypes/entity/demo-resource-autoplace")
-
 DATA {
     type = "autoplace-control",
     category = "resource",
@@ -51,7 +49,6 @@ ENTITY {
       random_spot_size_maximum = 1, -- don't randomize spot size
       additional_richness = 600000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
       has_starting_area_placement = false,
-      resource_index = resource_autoplace.get_next_resource_index(),
       regular_rq_factor_multiplier = 1
     },
     stage_counts = {0},
