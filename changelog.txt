@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+  Changes:
+	  - Increased SnCr alloy to 2.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.2
   Changes:
     - fixed broken reference to old autoplace file in base game due to 0.17.51 update.
