@@ -136,7 +136,7 @@ RECIPE {
         {type = "item", name = "tin-plate", amount = 4},
     },
     results = {
-        {type = "item", name = "sncr-alloy", amount = 1},
+        {type = "item", name = "sncr-alloy", amount = 2},
     },
     main_product = "sncr-alloy",
     icon = "__pypetroleumhandling__/graphics/icons/sncr-alloy.png",
