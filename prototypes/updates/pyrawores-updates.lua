@@ -147,6 +147,27 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "sbcr-alloy-2",
+    category = "casting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "molten-tin", amount = 100},
+        {type = "fluid", name = "molten-chromium", amount = 60},
+        {type = "item", name = "sand-casting", amount = 4},
+    },
+    results = {
+        {type = "item", name = "sncr-alloy", amount = 12}
+    },
+    main_product= "sncr-alloy",
+    icon = "__pypetroleumhandling__/graphics/icons/sncr-alloy.png",
+    icon_size = 32,
+    subgroup = "py-rawores-recipes",
+    order = "j"
+}:add_unlock("titanium-mk03")
+
+RECIPE {
+    type = "recipe",
     name = "bitumen-to-nickel",
     category = "upgrader",
     enabled = false,
