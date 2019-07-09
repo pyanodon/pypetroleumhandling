@@ -164,7 +164,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "j"
-}:add_unlock("titanium-mk03")
+}:add_unlock("tin-mk03")
 
 RECIPE {
     type = "recipe",
