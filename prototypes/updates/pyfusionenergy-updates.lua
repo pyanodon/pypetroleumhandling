@@ -182,10 +182,14 @@ RECIPE {
     results = {
         {type = "fluid", name = "grease", amount = 100},
     },
+	--result = "iron-plate",
+	--result_count = 100,
     main_product = "grease",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk03"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("oil-machines-mk03"):replace_ingredient("chromium", "sncr-alloy"):replace("grease", "coal-gas")
+
+log(serpent.block(data.raw.recipe["low-distillate-to-grease"]))
 
 RECIPE {
     type = "recipe",
