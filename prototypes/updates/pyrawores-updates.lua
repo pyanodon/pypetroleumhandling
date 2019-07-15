@@ -130,7 +130,7 @@ RECIPE {
     name = "sncr-alloy",
     category = "advanced-foundry",
     enabled = false,
-    energy_required = 1.5,
+    energy_required = 3,
     ingredients = {
         {type = "item", name = "chromium", amount = 3},
         {type = "item", name = "tin-plate", amount = 4},
