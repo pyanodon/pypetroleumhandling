@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.5
+  Changes:
+	  - Fixed tin chromium alloy misplace.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.4
   Changes:
 	  - Added recipe to craft Tin-Cromium alloy from molten metals.
