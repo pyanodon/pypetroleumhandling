@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "bitumen-froth",
-    category = "pan", --pyfe pan
+    category = "pan",
     enabled = false,
     energy_required = 3,
     ingredients = {

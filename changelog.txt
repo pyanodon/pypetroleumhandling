@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.7
+  Changes:
+	  - Increased oil production from pumpjacks.
+    - Unlocked Bitumen with centrifugal pan.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.6
   Changes:
 	  - Migration
