@@ -75,7 +75,7 @@ RECIPE("soil-extractormk03"):add_ingredient({type = "item", name = "small-parts-
 RECIPE("solid-separator-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("tar-processing-unit-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("washer-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
-RECIPE("wpu-mk02"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
+RECIPE("wpu-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 
 
 
