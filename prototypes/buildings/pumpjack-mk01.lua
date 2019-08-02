@@ -43,13 +43,13 @@ ENTITY {
     module_specification = {
         module_slots = 1
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {"speed"},
     crafting_categories = {"pumpjack"},
     crafting_speed = 1,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions_per_minute = 50,
+        emissions_per_minute = 2,
     },
     energy_usage = "250kW",
     ingredient_count = 10,
