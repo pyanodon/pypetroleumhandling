@@ -45,13 +45,13 @@ ENTITY {
     module_specification = {
         module_slots = 3
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {"speed"},
     crafting_categories = {"pumpjack"},
     crafting_speed = 2.5,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions_per_minute = 50,
+        emissions_per_minute = 2,
     },
     energy_usage = "600kW",
     ingredient_count = 10,
@@ -63,6 +63,14 @@ ENTITY {
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {2.0, 4.0}}}
+        },
+        {
+            production_type = "input",
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {0, -0.96}, nil, nil),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-2.0, -4.0}}}
         },
         off_when_no_fluid_recipe = false
     },

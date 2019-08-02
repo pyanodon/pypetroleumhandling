@@ -42,15 +42,15 @@ ENTITY {
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
     module_specification = {
-        module_slots = 1
+        module_slots = 4
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {"speed"},
     crafting_categories = {"pumpjack"},
     crafting_speed = 4,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions_per_minute = 50,
+        emissions_per_minute = 3,
     },
     energy_usage = "750kW",
     ingredient_count = 10,
