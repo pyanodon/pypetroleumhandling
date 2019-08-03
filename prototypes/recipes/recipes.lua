@@ -48,6 +48,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
         {type = "item", name = "steel-plate", amount = 1},
+        {type = "item", name = "nexelit-plate", amount = 1},
         {type = "item", name = "belt", amount = 2},
         {type = "item", name = "bolts", amount = 10},
         {type = "item", name = "iron-stick", amount = 3},
