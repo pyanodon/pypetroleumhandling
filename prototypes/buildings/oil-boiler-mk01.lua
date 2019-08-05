@@ -101,7 +101,7 @@ ENTITY {
 		pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
 		production_type = "input",
 		},
-	effectivity = 0.5,
+	effectivity = 1,
 	burns_fluid = true,
 	scale_fluid_usage = true,
 	--fluid_usage_per_tick = 2,
