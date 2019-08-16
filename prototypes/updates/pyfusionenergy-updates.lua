@@ -52,7 +52,7 @@ RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", a
 RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("small-parts-03"):replace_ingredient("lubricant", "grease")
-
+RECIPE("mining-molybdenum"):replace_ingredient("coal-gas", "gasoline"):replace_ingredient("lubricant", "drilling-fluid-3")
 
 ----EXCLUSIVE RECIPES----
 

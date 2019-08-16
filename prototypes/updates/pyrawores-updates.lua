@@ -120,7 +120,15 @@ RECIPE("drilling-fluid-2"):replace_ingredient("water", "hydrogen-chloride")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "salt", amount = 20})
 RECIPE("bitumen-gasification"):add_ingredient({type = "fluid", name = "oxygen", amount = 50})
 RECIPE("kerogen-2"):replace_ingredient("niobium-pipe", "super-steel")
-
+RECIPE("mining-aluminium"):replace_ingredient("lubricant", "drilling-fluid-2")
+RECIPE("mining-chromium"):replace_ingredient("coal-gas", "syngas"):replace_ingredient("lubricant", "drilling-fluid-2")
+RECIPE("mining-copper"):replace_ingredient("lubricant", "drilling-fluid-1")
+RECIPE("mining-iron"):replace_ingredient("lubricant", "drilling-fluid-1")
+RECIPE("mining-lead"):replace_ingredient("coal-gas", "acetylene"):replace_ingredient("lubricant", "drilling-fluid-2")
+RECIPE("mining-nickel"):replace_ingredient("coal-gas", "syngas"):replace_ingredient("lubricant", "drilling-fluid-2")
+RECIPE("mining-tin"):replace_ingredient("lubricant", "drilling-fluid-1")
+RECIPE("mining-titanium"):replace_ingredient("coal-gas", "acetylene"):replace_ingredient("lubricant", "drilling-fluid-2")
+RECIPE("mining-zinc"):replace_ingredient("coal-gas", "syngas"):replace_ingredient("lubricant", "drilling-fluid-2")
 
 
 ----EXCLUSIVE RECIPES----
