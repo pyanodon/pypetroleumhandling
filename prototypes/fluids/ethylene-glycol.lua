@@ -5,13 +5,13 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "slacked-lime", amount = 150},
+        {type = "fluid", name = "slacked-lime", amount = 20},
         {type = "fluid", name = "chloroethanol", amount = 100},
         {type = "fluid", name = "water", amount = 100},
-        {type = "item", name = "pure-sand", amount = 10}
+        {type = "item", name = "pure-sand", amount = 5}
     },
     results = {
-        {type = "fluid", name = "ethylene-glycol", amount = 100},
+        {type = "fluid", name = "ethylene-glycol", amount = 150},
     },
     main_product = "ethylene-glycol",
     subgroup = "py-petroleum-handling-fluids",

@@ -13,7 +13,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
             {type = "item", name = "collagen", amount = 2}
         },
         results = {
-            {type = "fluid", name = "drilling-fluid-2", amount = 100},
+            {type = "fluid", name = "drilling-fluid-2", amount = 200},
         },
         main_product = "drilling-fluid-2",
         subgroup = "py-petroleum-handling-fluids",
@@ -34,7 +34,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
                 {type = "item", name = "collagen", amount = 2}
             },
             results = {
-                {type = "fluid", name = "drilling-fluid-2", amount = 100},
+                {type = "fluid", name = "drilling-fluid-2", amount = 200},
             },
             main_product = "drilling-fluid-2",
             subgroup = "py-petroleum-handling-fluids",
@@ -54,7 +54,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
                 {type = "item", name = "guar-gum", amount = 1}
             },
             results = {
-                {type = "fluid", name = "drilling-fluid-2", amount = 100},
+                {type = "fluid", name = "drilling-fluid-2", amount = 200},
             },
             main_product = "drilling-fluid-2",
             subgroup = "py-petroleum-handling-fluids",
