@@ -44,7 +44,6 @@ RECIPE("logistic-robot-ht"):add_ingredient({type = "item", name = "small-parts-0
 
 RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50})
 RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):change_category("fbreactor")
-RECIPE("ethylene-glycol"):replace_ingredient("pure-sand", "colloidal-silica")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
 RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
