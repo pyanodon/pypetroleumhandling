@@ -115,7 +115,7 @@ RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingre
 RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("ethylene-chlorohydrin"):replace_ingredient("copper-plate", "silver-plate"):replace_ingredient("carbon-dioxide", "chlorine")
-RECIPE("drilling-fluid-1"):add_ingredient({type = "item", name = "ore-copper", amount = 4})
+RECIPE("drilling-fluid-1"):add_ingredient({type = "item", name = "copper-ore", amount = 5})
 RECIPE("drilling-fluid-2"):replace_ingredient("water", "hydrogen-chloride")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "salt", amount = 20})
 RECIPE("bitumen-gasification"):add_ingredient({type = "fluid", name = "oxygen", amount = 50})
