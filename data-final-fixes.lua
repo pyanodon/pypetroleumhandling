@@ -15,7 +15,7 @@ local hablist =
 "nichrome-2",
 --"copper-plate-2",
 --"iron-plate-2",
---"iron-oxide",
+"iron-oxide",
 --"crushed-iron",
 --"crushed-copper",
 "super-alloy",
