@@ -95,10 +95,10 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "rubber", amount = 1},
+        {type = "item", name = "rubber", amount = 2},
     },
     results = {
-        {type = "item", name = "belt", amount = 2},
+        {type = "item", name = "belt", amount = 1},
     },
     main_product = "belt",
     icon = "__pypetroleumhandling__/graphics/icons/belt.png",

@@ -112,7 +112,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "z"
-}:add_unlock("lubricant")
+}:add_unlock("lubricant"):replace_ingredient("steel-plate", "duralumin")
 
 RECIPE {
     type = "recipe",
