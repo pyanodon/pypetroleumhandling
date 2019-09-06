@@ -35,7 +35,7 @@ RECIPE {
     main_product = "engine-unit",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber"):replace_ingredient("steel-plate", "aluminium-plate")
+}:add_unlock("rubber"):replace_ingredient("steel-plate", "duralumin")
 
 RECIPE {
     type = "recipe",
