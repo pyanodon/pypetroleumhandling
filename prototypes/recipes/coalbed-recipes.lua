@@ -7,6 +7,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
         {type = "fluid", name = "hot-air", amount = 500},
+        {type = "item", name = "drill-head", amount = 1},
     },
     results = {
         {type = "fluid", name = "coalbed-gas", amount = 150},
@@ -107,6 +108,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "coalbed-gas", amount = 200},
         {type = "fluid", name = "hot-air", amount = 500},
+        {type = "item", name = "drill-head", amount = 1},
     },
     results = {
         {type = "fluid", name = "acidgas", amount = 300},
