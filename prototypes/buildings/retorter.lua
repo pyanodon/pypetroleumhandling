@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/retorter.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "retorter"},
+    minable = {mining_time = 0.5, result = "retorter"},
     fast_replaceable_group = "retorter",
     max_health = 100,
     corpse = "big-remnants",

@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/tar-extractor-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "tar-extractor-mk01"},
+    minable = {mining_time = 0.5, result = "tar-extractor-mk01"},
     fast_replaceable_group = "tar-extractor",
     max_health = 700,
     resource_categories = {"tar-patch"},

@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/oil-sand-extractor-mk02.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "oil-sand-extractor-mk02"},
+    minable = {mining_time = 0.5, result = "oil-sand-extractor-mk02"},
     fast_replaceable_group = "oil-sand-extractor",
     max_health = 700,
     resource_categories = {"oil-sand"},

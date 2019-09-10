@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "oil-derrick-mk01"},
+    minable = {mining_time = 0.5, result = "oil-derrick-mk01"},
     fast_replaceable_group = "oil-derrick-mk01",
     max_health = 700,
     resource_categories = {"oil-mk01"},

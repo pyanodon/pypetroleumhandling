@@ -26,7 +26,7 @@ ENTITY {
     tree_removal_max_distance = 32 * 32,
     minable =
     {
-      mining_time = 1,
+      mining_time = 0.5,
       results =
       {
         {
