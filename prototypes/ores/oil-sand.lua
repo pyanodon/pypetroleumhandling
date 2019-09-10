@@ -23,7 +23,7 @@ ENTITY {
     minable = {
         hardness = 1,
         -- mining_particle = "oil-sand-ore-particle",
-        mining_time = 0.5,
+        mining_time = 1,
         results = {
             {"oil-sand", 1}
         },
