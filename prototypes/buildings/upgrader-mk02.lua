@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/upgrader-mk02.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "upgrader-mk02"},
+    minable = {mining_time = 0.5, result = "upgrader-mk02"},
     fast_replaceable_group = "upgrader",
     max_health = 100,
     corpse = "medium-remnants",

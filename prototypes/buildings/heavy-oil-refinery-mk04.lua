@@ -31,7 +31,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/hor-mk04.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "heavy-oil-refinery-mk04"},
+    minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk04"},
     fast_replaceable_group = "heavy-oil-refinery",
     max_health = 100,
     corpse = "medium-remnants",

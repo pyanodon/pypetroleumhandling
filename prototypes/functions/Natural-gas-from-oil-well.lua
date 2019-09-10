@@ -17,7 +17,7 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/check-valve.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "py-converter-valve"},
+    minable = {mining_time = 0.5, result = "py-converter-valve"},
     max_health = 100,
     fast_replaceable_group = "pipe",
     corpse = "small-remnants",

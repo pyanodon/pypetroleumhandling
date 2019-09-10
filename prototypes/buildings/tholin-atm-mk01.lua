@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/tholin-atm-mk01.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "tholin-atm-mk01"},
+    minable = {mining_time = 0.5, result = "tholin-atm-mk01"},
     fast_replaceable_group = "tholin-atm",
     max_health = 100,
     corpse = "medium-remnants",

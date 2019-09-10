@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk03.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "pumpjack-mk03"},
+    minable = {mining_time = 0.5, result = "pumpjack-mk03"},
     fast_replaceable_group = "pumpjack-mk03",
     max_health = 100,
     corpse = "medium-remnants",

@@ -32,7 +32,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/sulfur-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "sulfur-mine"},
+    minable = {mining_time = 0.5, result = "sulfur-mine"},
     fast_replaceable_group = "sulfur-mine",
     max_health = 600,
     resource_categories = {"sulfur-patch"},

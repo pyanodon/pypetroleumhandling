@@ -32,7 +32,7 @@ ENTITY {
     icon = "__pypetroleumhandling__/graphics/icons/guar-gum-plantation.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "guar-gum-plantation"},
+    minable = {mining_time = 0.5, result = "guar-gum-plantation"},
     fast_replaceable_group = "guar-gum-plantation",
     max_health = 100,
     corpse = "medium-remnants",
