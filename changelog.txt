@@ -2,6 +2,7 @@
 Version: 1.3.5
   Changes:
     - Ground borer fixes.
+    - Added german locale.
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.4
   Changes:
