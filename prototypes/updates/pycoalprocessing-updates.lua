@@ -78,8 +78,8 @@ RECIPE("washer-mk03"):add_ingredient({type = "item", name = "small-parts-03", am
 RECIPE("wpu-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 
 RECIPE("mining-nexelit"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100})
-RECIPE("mining-borax"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
-RECIPE("mining-niobium"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-3", amount = 150})
+RECIPE("mining-borax"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
+RECIPE("mining-niobium"):replace_ingredient("coal-gas", "refsyngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-3", amount = 150})
 
 ----EXCLUSIVE RECIPES----
 
