@@ -84,3 +84,15 @@ local hablist =
 GIR.HAB(hablist)
 --add hot air
 GIR.hotairrecipes()
+
+if settings.startup['fine-oil'].value then
+
+--data.raw.resource['natural-gas'].infinite = false
+data.raw.resource['oil-mk01'].infinite = false
+data.raw.resource['oil-mk02'].infinite = false
+data.raw.resource['oil-mk03'].infinite = false
+data.raw.resource['oil-mk04'].infinite = false
+data.raw.resource['tar-patch'].infinite = false
+data.raw.resource['crude-oil'].infinite = false
+
+end
