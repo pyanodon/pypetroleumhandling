@@ -89,7 +89,7 @@ require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
 
-if not mods['omnimatter_fluid'] then 
+if not mods['omnimatter_fluid'] then
 --oil-boiler
 require("prototypes.buildings.oil-boiler-mk01")
 end
