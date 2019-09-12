@@ -127,7 +127,7 @@ RECIPE("mining-iron"):remove_ingredient("lubricant"):add_ingredient({type = "flu
 RECIPE("mining-lead"):replace_ingredient("coal-gas", "acetylene"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
 RECIPE("mining-nickel"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 150})
 RECIPE("mining-tin"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 150}):replace_ingredient("coal-gas", "steam")
-RECIPE("mining-titanium"):replace_ingredient("coal-gas", "acetylene"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100})
+RECIPE("mining-titanium"):replace_ingredient("coal-gas", "acetylene"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
 RECIPE("mining-zinc"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 150})
 
 
