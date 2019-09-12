@@ -2,6 +2,7 @@
 Version: 1.3.8
   Changes:
     - Fixed titanium ground borer recipe.
+    - Added a setting to make oil and tar patches finite.
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.7
   Changes:
