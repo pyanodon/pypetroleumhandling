@@ -108,7 +108,6 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "coalbed-gas", amount = 200},
         {type = "fluid", name = "hot-air", amount = 500},
-        {type = "item", name = "drill-head", amount = 1},
     },
     results = {
         {type = "fluid", name = "acidgas", amount = 300},

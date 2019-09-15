@@ -220,7 +220,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "tar", amount = 300},
+        {type = "fluid", name = "tar", amount = 500},
         {type = "fluid", name = "hydrogen", amount = 100},
     },
     results = {
