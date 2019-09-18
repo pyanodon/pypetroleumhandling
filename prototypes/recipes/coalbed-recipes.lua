@@ -27,7 +27,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
         {type = "fluid", name = "hot-air", amount = 500},
-        {type = "item", name = "filtration-media", amount = 1},
+        {type = "item", name = "filtration-media", amount = 2},
     },
     results = {
         {type = "fluid", name = "coalbed-gas", amount = 250},
@@ -48,7 +48,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
         {type = "fluid", name = "hot-air", amount = 500},
         {type = "item", name = "drill-head", amount = 1},
-        {type = "item", name = "filtration-media", amount = 1},
+        {type = "item", name = "filtration-media", amount = 2},
     },
     results = {
         {type = "fluid", name = "coalbed-gas", amount = 500},
