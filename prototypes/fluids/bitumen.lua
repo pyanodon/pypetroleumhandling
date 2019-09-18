@@ -3,14 +3,14 @@ RECIPE {
     name = "bitumen",
     category = "mixer", --pyro flotation
     enabled = false,
-    energy_required = 2,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "pressured-air", amount = 100},
         {type = "fluid", name = "naphtha", amount = 70},
         {type = "fluid", name = "bitumen-froth", amount = 100},
     },
     results = {
-        {type = "fluid", name = "bitumen", amount = 100},
+        {type = "fluid", name = "bitumen", amount = 250},
         {type = "fluid", name = "dirty-water", amount = 50},
     },
     main_product = "bitumen",

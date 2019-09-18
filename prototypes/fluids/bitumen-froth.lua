@@ -3,7 +3,7 @@ RECIPE {
     name = "bitumen-froth",
     category = "pan",
     enabled = false,
-    energy_required = 3,
+    energy_required = 10,
     ingredients = {
         {type = "fluid", name = "pressured-air", amount = 200},
         {type = "fluid", name = "oil-sand-slurry", amount = 100},
