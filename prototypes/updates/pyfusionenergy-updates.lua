@@ -4,7 +4,7 @@ RECIPE('vacuum'):remove_unlock('diamond-mining'):set_enabled(true)
 
 --BUILDINDS--
 
-RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "agitator", amount = 1})
+RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "agitator-mk01", amount = 1})
 RECIPE("oil-sand-extractor-mk04"):add_ingredient({type = "item", name = "nenbit-matrix", amount = 10}):add_ingredient({type = "item", name = "wall-shield", amount = 2}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 20}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})
 RECIPE("heavy-oil-refinery-mk04"):add_ingredient({type = "item", name = "nbti-alloy", amount = 30}):add_ingredient({type = "item", name = "wall-shield", amount = 5}):add_ingredient({type = "item", name = "science-coating", amount = 2}):add_ingredient({type = "item", name = "control-unit", amount = 5})
@@ -29,19 +29,19 @@ RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "super-alloy", amou
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "wall-shield", amount = 5}):add_ingredient({type = "item", name = "science-coating", amount = 2}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("retorter"):add_ingredient({type = "item", name = "control-unit", amount = 10}):add_ingredient({type = "item", name = "super-alloy", amount = 20})
 
-RECIPE("automated-screener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("automated-screener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("bio-reactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("centrifugal-pan"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("advanced-circuit", "electronic-circuit")
+RECIPE("centrifugal-pan-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("advanced-circuit", "electronic-circuit")
 RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-03", amount = 50})
-RECIPE("gas-separator"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("grease-table"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("grease-table-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("jig"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("nmf"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("secondary-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("thickener"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("electric-engine-unit", "engine-unit")
-RECIPE("xyhiphoe-pool"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("jig-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("nmf-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("secondary-crusher-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("thickener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("electric-engine-unit", "engine-unit")
+RECIPE("xyhiphoe-pool-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 
 
 ----RECIPES----
