@@ -43,6 +43,21 @@ RECIPE("secondary-crusher-mk01"):add_ingredient({type = "item", name = "small-pa
 RECIPE("thickener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("electric-engine-unit", "engine-unit")
 RECIPE("xyhiphoe-pool-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 
+--pyfusion mk02
+
+RECIPE('vacuum-pump-mk02'):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
+RECIPE('agitator-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('thickener-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('hydrocyclone-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('mixer-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('automated-screener-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('secondary-crusher-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('centrifugal-pan-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('jig-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('grease-table-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('compressor-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('gas-separator-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('nmf-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 
 ----RECIPES----
 
