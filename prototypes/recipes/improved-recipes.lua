@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 2},
+        {type = "item", name = "iron-plate", amount = 5},
         {type = "item", name = "small-parts-01", amount = 3},
         {type = "item", name = "belt", amount = 5},
     },

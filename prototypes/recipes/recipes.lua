@@ -755,7 +755,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
                 {type = "fluid", name = "water", amount = 500},
             },
             results = {
-                {type = "fluid", name = "methane", amount = 500},
+                {type = "fluid", name = "methane", amount = 300},
                 {type = "fluid", name = "steam", amount = 500, temperature = 60},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
@@ -775,7 +775,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
                 {type = "fluid", name = "water", amount = 500},
             },
             results = {
-                {type = "fluid", name = "petroleum-gas", amount = 500},
+                {type = "fluid", name = "petroleum-gas", amount = 300},
                 {type = "fluid", name = "steam", amount = 500, temperature = 60},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
@@ -1654,3 +1654,20 @@ RECIPE {
     },
     main_product = "kevlar"
 }:add_unlock("fine-electronics"):replace_ingredient("sulfuric-acid", "dms")
+
+RECIPE {
+    type = "recipe",
+    name = "natural-gas-to-petgas",
+    category = "carbonfilter",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+        {type = "fluid", name = "natural-gas", amount = 400},
+        {type = "item", name = "sncr-alloy", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 400},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk03")
