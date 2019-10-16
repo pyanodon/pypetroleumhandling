@@ -198,6 +198,7 @@ if mods["pyrawores"] then
 --pyro fluids
 data.raw.fluid["coke-oven-gas"].fuel_value = "1MJ"
 data.raw.fluid["kerosene"].fuel_value = "1.5MJ"
+data.raw.fluid["hydrogen"].fuel_value = "0.4MJ"
 data.raw.fluid["outlet-gas-01"].fuel_value = "0.5MJ"
 data.raw.fluid["outlet-gas-02"].fuel_value = "0.5MJ"
 data.raw.fluid["outlet-gas-03"].fuel_value = "0.5MJ"

@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.5
+  Changes:
+    - Buff in pumpjacks
+    - Added Natural gas to Methane in pyHT
+    - Added hydrogen to oil burner
+---------------------------------------------------------------------------------------------------
 Version: 1.4.4
   Changes:
     - More adaptations

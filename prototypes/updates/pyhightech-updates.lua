@@ -576,3 +576,20 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("methanol-processing-1"):add_ingredient({type = "item", name = "ticl4", amount = 2})
+
+RECIPE {
+    type = "recipe",
+    name = "natural-gas-to-methane",
+    category = "carbonfilter",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+        {type = "fluid", name = "natural-gas", amount = 400},
+        {type = "item", name = "sncr-alloy", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "methane", amount = 400},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk03")
