@@ -1666,7 +1666,7 @@ RECIPE {
         {type = "item", name = "sncr-alloy", amount = 1},
     },
     results = {
-        {type = "fluid", name = "methane", amount = 400},
+        {type = "fluid", name = "petroleum-gas", amount = 400},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
