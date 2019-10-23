@@ -42,8 +42,8 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "small-parts-02", amount = 3},
-        {type = "item", name = "drill-head", amount = 2},
+        {type = "item", name = "small-parts-02", amount = 2},
+        {type = "item", name = "drill-head", amount = 1},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -54,8 +54,6 @@ RECIPE {
     order = "a"
 }:add_unlock("oil-machines-mk03")
 
-
-
 RECIPE {
     type = "recipe",
     name = "oil-04",
@@ -63,8 +61,8 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-03", amount = 3},
-        {type = "item", name = "drill-head", amount = 3},
+        {type = "item", name = "small-parts-03", amount = 2},
+        {type = "item", name = "drill-head", amount = 1},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -123,8 +121,8 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "small-parts-02", amount = 3},
-        {type = "item", name = "drill-head", amount = 2},
+        {type = "item", name = "small-parts-02", amount = 2},
+        {type = "item", name = "drill-head", amount = 1},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -144,8 +142,8 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-03", amount = 3},
-        {type = "item", name = "drill-head", amount = 3},
+        {type = "item", name = "small-parts-03", amount = 2},
+        {type = "item", name = "drill-head", amount = 2},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -157,3 +155,21 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk04")
+
+RECIPE {
+    type = "recipe",
+    name = "water-saline-pumpjack",
+    category = "pumpjack",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+        {type = "item", name = "small-parts-01", amount = 2},
+        {type = "fluid", name = "drilling-fluid-1", amount = 50},
+    },
+    results = {
+        {type = "fluid", name = "water-saline", amount = 200},
+    },
+    --main_product = "transport-belt",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("oil-machines-mk02")

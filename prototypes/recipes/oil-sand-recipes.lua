@@ -28,7 +28,7 @@ RECIPE {
         {type = "fluid", name = "bitumen", amount = 100},
     },
     results = {
-        {type = "fluid", name = "crude-oil", amount = 100},
+        {type = "fluid", name = "crude-oil", amount = 150},
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
@@ -67,7 +67,7 @@ RECIPE {
         {type = "fluid", name = "bitumen", amount = 100},
     },
     results = {
-        {type = "fluid", name = "tar", amount = 100},
+        {type = "fluid", name = "tar", amount = 200},
     },
     main_product = "tar",
     icon = "__pycoalprocessing__/graphics/icons/tar.png",

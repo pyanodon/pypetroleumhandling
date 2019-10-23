@@ -24,58 +24,58 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
 		end
 		if event.created_entity.name == "oil-derrick-mk01" then
 			if direction == 2 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y},direction=defines.direction.west}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y},direction=defines.direction.west,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 4 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y+cbox},direction=defines.direction.north}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y+cbox},direction=defines.direction.north,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 6 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y},direction=defines.direction.east}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y},direction=defines.direction.east,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 0 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y-cbox},direction=defines.direction.south}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y-cbox},direction=defines.direction.south,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			end
 		elseif event.created_entity.name == "oil-derrick-mk02" then
 			if direction == 2 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y},direction=defines.direction.west}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y},direction=defines.direction.west,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 4 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y+cbox},direction=defines.direction.north}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y+cbox},direction=defines.direction.north,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 6 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y},direction=defines.direction.east}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y},direction=defines.direction.east,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 0 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y-cbox},direction=defines.direction.south}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y-cbox},direction=defines.direction.south,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			end
 		elseif event.created_entity.name == "oil-derrick-mk03" then
 			if direction == 2 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y-1},direction=defines.direction.west}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y-1},direction=defines.direction.west,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 4 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+1,E.position.y+cbox},direction=defines.direction.north}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+1,E.position.y+cbox},direction=defines.direction.north,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 6 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y+1},direction=defines.direction.east}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y+1},direction=defines.direction.east,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 0 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-1,E.position.y-cbox},direction=defines.direction.south}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-1,E.position.y-cbox},direction=defines.direction.south,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			end
 		elseif event.created_entity.name == "oil-derrick-mk04" then
 			if direction == 2 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y},direction=defines.direction.west}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x+cbox,E.position.y},direction=defines.direction.west,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 4 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y+cbox},direction=defines.direction.north}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y+cbox},direction=defines.direction.north,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 6 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y},direction=defines.direction.east}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x-cbox,E.position.y},direction=defines.direction.east,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			elseif direction == 0 then
-				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y-cbox},direction=defines.direction.south}
+				local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={E.position.x,E.position.y-cbox},direction=defines.direction.south,force=E.force}
 				CV.set_recipe("oil-to-oil")
 			end
 		end
@@ -180,16 +180,16 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 			--log("trying to rotate entity")
 			for  _, v in pairs(valve) do
 				if direction == 2 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+2,y=spos.y},direction=defines.direction.west}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+2,y=spos.y},direction=defines.direction.west,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 4 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y+2},direction=defines.direction.north}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y+2},direction=defines.direction.north,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 6 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-2,y=spos.y},direction=defines.direction.east}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-2,y=spos.y},direction=defines.direction.east,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 0 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y-2},direction=defines.direction.south}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y-2},direction=defines.direction.south,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				end
 				v.destroy()
@@ -206,16 +206,16 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 			--log("trying to rotate entity")
 			for  _, v in pairs(valve) do
 				if direction == 2 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+3,y=spos.y},direction=defines.direction.west}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+3,y=spos.y},direction=defines.direction.west,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 4 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y+3},direction=defines.direction.north}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y+3},direction=defines.direction.north,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 6 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-3,y=spos.y},direction=defines.direction.east}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-3,y=spos.y},direction=defines.direction.east,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 0 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y-3},direction=defines.direction.south}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y-3},direction=defines.direction.south,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				end
 				v.destroy()
@@ -232,16 +232,16 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 			--log("trying to rotate entity")
 			for  _, v in pairs(valve) do
 				if direction == 2 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+4,y=spos.y-1},direction=defines.direction.west}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+4,y=spos.y-1},direction=defines.direction.west,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 4 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+1,y=spos.y+4},direction=defines.direction.north}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+1,y=spos.y+4},direction=defines.direction.north,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 6 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-4,y=spos.y+1},direction=defines.direction.east}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-4,y=spos.y+1},direction=defines.direction.east,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 0 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-1,y=spos.y-4},direction=defines.direction.south}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-1,y=spos.y-4},direction=defines.direction.south,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				end
 				v.destroy()
@@ -258,16 +258,16 @@ script.on_event(defines.events.on_player_rotated_entity, function(event)
 			--log("trying to rotate entity")
 			for  _, v in pairs(valve) do
 				if direction == 2 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+5,y=spos.y},direction=defines.direction.west}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x+5,y=spos.y},direction=defines.direction.west,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 4 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y+5},direction=defines.direction.north}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y+5},direction=defines.direction.north,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 6 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-5,y=spos.y},direction=defines.direction.east}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x-5,y=spos.y},direction=defines.direction.east,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				elseif direction == 0 then
-					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y-5},direction=defines.direction.south}
+					local CV = game.surfaces["nauvis"].create_entity{name="py-converter-valve",position={x=spos.x,y=spos.y-5},direction=defines.direction.south,force=event.entity.force}
 					CV.set_recipe(v.get_recipe())
 				end
 				v.destroy()
