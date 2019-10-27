@@ -13,7 +13,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "drilling-fluid-1", amount = 300},
-        {type = "fluid", name = "water-saline", amount = 4000},
+        {type = "fluid", name = "water-saline", amount = 6000},
     },
     main_product = "water-saline",
     subgroup = "py-petroleum-handling-fluids",
@@ -35,7 +35,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "drilling-fluid-2", amount = 300},
-        {type = "fluid", name = "crude-oil", amount = 3500},
+        {type = "fluid", name = "crude-oil", amount = 3800},
     },
     main_product = "crude-oil",
     subgroup = "py-petroleum-handling-fluids",
@@ -57,7 +57,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "drilling-fluid-3", amount = 300},
-        {type = "fluid", name = "natural-gas", amount = 4000},
+        {type = "fluid", name = "natural-gas", amount = 4500},
     },
     main_product = "natural-gas",
     subgroup = "py-petroleum-handling-fluids",
