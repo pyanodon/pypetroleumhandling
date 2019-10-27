@@ -36,7 +36,7 @@ ITEM {
     type = "item",
     name = "small-parts-01",
     icon = "__pypetroleumhandling__/graphics/icons/small-parts-01.png",
-    icon_size = 64,
+    icon_size = 32,
     icon_mipmaps = 10,
     pictures =
     {
@@ -61,7 +61,7 @@ ITEM {
     type = "item",
     name = "small-parts-02",
     icon = "__pypetroleumhandling__/graphics/icons/small-parts-02.png",
-    icon_size = 64,
+    icon_size = 32,
     icon_mipmaps = 9,
     pictures =
     {
@@ -85,7 +85,7 @@ ITEM {
     type = "item",
     name = "small-parts-03",
     icon = "__pypetroleumhandling__/graphics/icons/small-parts-03.png",
-    icon_size = 64,
+    icon_size = 32,
     icon_mipmaps = 9,
     pictures =
     {
