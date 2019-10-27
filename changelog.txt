@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+  Changes:
+    - Cosmetic changes for small-parts
+    - Buff in some recipes
+---------------------------------------------------------------------------------------------------
 Version: 1.4.9
   Changes:
     - Cosmetic changes for small-parts
