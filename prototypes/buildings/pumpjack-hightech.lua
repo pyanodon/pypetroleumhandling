@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"steam-engine", 5},
-        {"fbreactor", 1},
+        {"fbreactor-mk01", 1},
         {"advanced-circuit", 20},
         {"nbfe-alloy", 30},
         {"concrete", 50},
