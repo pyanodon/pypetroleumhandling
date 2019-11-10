@@ -657,7 +657,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "aromatics", amount = 400},
+        {type = "fluid", name = "aromatics", amount = 100},
         {type = "fluid", name = "hydrogen", amount = 120},
         {type = "item", name = "chromium", amount = 1},
     },
