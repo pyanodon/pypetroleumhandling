@@ -190,8 +190,8 @@ RECIPE {
     main_product = "ore-nickel",
     icon = "__pyrawores__/graphics/icons/ore-nickel.png",
     icon_size = 32,
-    subgroup = "py-rawores-ores",
-    order = "a"
+    subgroup = "py-rawores-nickel",
+    order = "zaa"
 }:add_unlock("oil-sands"):replace_ingredient("hydrogen", "propene")
 
 RECIPE {
@@ -229,8 +229,8 @@ RECIPE {
     main_product = "ore-nickel",
     icon = "__pyrawores__/graphics/icons/ore-nickel.png",
     icon_size = 32,
-    subgroup = "py-rawores-ores",
-    order = "a"
+    subgroup = "py-rawores-nickel",
+    order = "zaa"
 }:add_unlock("oil-machines-mk01")
 
 RECIPE {
