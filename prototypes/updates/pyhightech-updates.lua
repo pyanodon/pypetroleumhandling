@@ -91,7 +91,7 @@ RECIPE {
     icon = "__pyhightech__/graphics/icons/ammonia.png",
     icon_size = 32,
     subgroup = "py-hightech-fluids",
-    order = "a"
+    order = "a1"
 }:add_unlock("scrude")
 
 RECIPE {
