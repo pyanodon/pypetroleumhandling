@@ -28,13 +28,13 @@ RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "carbon-aerogel", a
 RECIPE("fracking-rig"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 20})
 RECIPE("retorter"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "heavy-fermion", amount = 20}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20}):add_ingredient({type = "item", name = "graphene-roll", amount = 15})
 
-RECIPE("cadaveric-arum"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
-RECIPE("electronics-factory"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
-RECIPE("fbreactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
+RECIPE("cadaveric-arum-mk01"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
+RECIPE("electronics-factory-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
+RECIPE("fbreactor-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
 RECIPE("kicalk-plantation"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
-RECIPE("nano-assembler"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
-RECIPE("particle-accelerator"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
-RECIPE("pulp-mill"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
+RECIPE("nano-assembler-mk01"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
+RECIPE("particle-accelerator-mk01"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
+RECIPE("pulp-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
 
 RECIPE("construction-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("logistic-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
@@ -91,7 +91,7 @@ RECIPE {
     icon = "__pyhightech__/graphics/icons/ammonia.png",
     icon_size = 32,
     subgroup = "py-hightech-fluids",
-    order = "a"
+    order = "a1"
 }:add_unlock("scrude")
 
 RECIPE {

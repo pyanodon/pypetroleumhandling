@@ -403,7 +403,9 @@ local altrec = 0
 			icon = recipe.icon,
 			icons = recipe.icons,
 			icon_size = 32,
-			main_product = recipe.main_product or nil
+			main_product = recipe.main_product or nil,
+			subgroup = recipe.subgroup,
+			order = recipe.order and (recipe.order .. "a") or nil
 			}--:add_unlock(unlock)
 			altrec=altrec+1
 			if recipe.enabled == false then
