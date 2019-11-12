@@ -302,10 +302,10 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "chlorine", amount = 40},
         {type = "item", name = "coal-dust", amount = 10},
-        {type = "item", name = "titanium-plate", amount = 4},
+        {type = "item", name = "titanium-plate", amount = 3},
     },
     results = {
-        {type = "item", name = "ticl4", amount = 1},
+        {type = "item", name = "ticl4", amount = 2},
     },
     main_product = "ticl4",
     icon = "__pypetroleumhandling__/graphics/icons//ticl4.png",
