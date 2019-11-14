@@ -190,8 +190,8 @@ RECIPE {
     main_product = "ore-nickel",
     icon = "__pyrawores__/graphics/icons/ore-nickel.png",
     icon_size = 32,
-    subgroup = "py-rawores-ores",
-    order = "a"
+    subgroup = "py-rawores-nickel",
+    order = "zaa"
 }:add_unlock("oil-sands"):replace_ingredient("hydrogen", "propene")
 
 RECIPE {
@@ -229,8 +229,8 @@ RECIPE {
     main_product = "ore-nickel",
     icon = "__pyrawores__/graphics/icons/ore-nickel.png",
     icon_size = 32,
-    subgroup = "py-rawores-ores",
-    order = "a"
+    subgroup = "py-rawores-nickel",
+    order = "zaa"
 }:add_unlock("oil-machines-mk01")
 
 RECIPE {
@@ -302,10 +302,10 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "chlorine", amount = 40},
         {type = "item", name = "coal-dust", amount = 10},
-        {type = "item", name = "titanium-plate", amount = 4},
+        {type = "item", name = "titanium-plate", amount = 3},
     },
     results = {
-        {type = "item", name = "ticl4", amount = 1},
+        {type = "item", name = "ticl4", amount = 2},
     },
     main_product = "ticl4",
     icon = "__pypetroleumhandling__/graphics/icons//ticl4.png",
