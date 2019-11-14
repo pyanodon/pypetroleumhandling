@@ -32,7 +32,7 @@ RECIPE("retorter"):add_ingredient({type = "item", name = "control-unit", amount 
 RECIPE("automated-screener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("bio-reactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("centrifugal-pan-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10}):replace_ingredient("advanced-circuit", "electronic-circuit")
-RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
+RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
 RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-03", amount = 50})
 RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("grease-table-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
