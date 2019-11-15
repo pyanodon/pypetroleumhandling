@@ -730,9 +730,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "xylenol", amount = 100}
+        {type = "fluid", name = "xylenol", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 600},
