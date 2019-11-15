@@ -90,9 +90,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "fuel-oil", amount = 100}
+        {type = "fluid", name = "fuel-oil", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 800},
@@ -112,9 +112,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "aromatics", amount = 100}
+        {type = "fluid", name = "aromatics", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 520},
@@ -134,9 +134,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "scrude", amount = 100}
+        {type = "fluid", name = "scrude", amount = 100},
+        {type = "fluid", name = "water", amount = 500},
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 500},
@@ -156,9 +156,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "crude-oil", amount = 100}
+        {type = "fluid", name = "crude-oil", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 100, temperature = 500},
@@ -178,9 +178,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "naphtha", amount = 100}
+        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 100, temperature = 600},
@@ -200,9 +200,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "lubricant", amount = 100}
+        {type = "fluid", name = "lubricant", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 520},
