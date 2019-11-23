@@ -491,6 +491,50 @@ RECIPE {
 
 -- SOOT SEPARATION --
 
+if mods['pyrawores'] and settings.startup['processing-mod'].value then
+
+RECIPE {
+    type = "recipe",
+    name = "soot-to-iron",
+    category = "solid-separator",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "item", name = "soot", amount = 10}
+    },
+    results = {
+        {type = "item", name = "ore-iron", amount = 10},
+        {type = "item", name = "ash", amount = 1, probability = 0.3}
+    },
+    main_product = "ore-iron",
+    icon = "__pypetroleumhandling__/graphics/icons/class-s-iron.png",
+    icon_size = 32,
+    subgroup = "py-items-class",
+    order = "b"
+}:add_unlock("oil-sands")
+
+RECIPE {
+    type = "recipe",
+    name = "soot-to-copper",
+    category = "solid-separator",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "item", name = "soot", amount = 10}
+    },
+    results = {
+        {type = "item", name = "ore-copper", amount = 8},
+        {type = "item", name = "ash", amount = 1, probability = 0.3}
+    },
+    main_product = "ore-copper",
+    icon = "__pypetroleumhandling__/graphics/icons/class-s-copper.png",
+    icon_size = 32,
+    subgroup = "py-items-class",
+    order = "b"
+}:add_unlock("oil-sands")
+
+else
+
 RECIPE {
     type = "recipe",
     name = "soot-to-iron",
@@ -530,6 +574,8 @@ RECIPE {
     subgroup = "py-items-class",
     order = "b"
 }:add_unlock("oil-sands")
+
+end
 
 RECIPE {
     type = "recipe",

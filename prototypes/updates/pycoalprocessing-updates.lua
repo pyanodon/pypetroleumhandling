@@ -236,6 +236,8 @@ RECIPE {
     order = "a"
 }:add_unlock("scrude")
 
+if mods['pyrawores'] and not settings.startup['processing-mod'].value then
+
 RECIPE {
     type = "recipe",
     name = "copper-plate-2",
@@ -263,3 +265,5 @@ RECIPE {
         {type = "item", name = "iron-plate", amount = 4},
     },
 }
+
+end
