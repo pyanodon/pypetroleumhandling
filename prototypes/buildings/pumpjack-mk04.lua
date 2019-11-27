@@ -82,7 +82,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(-160, -23)
             },
             {
@@ -91,7 +91,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(-128, -23)
             },
             {
@@ -100,7 +100,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(-96, -23)
             },
             {
@@ -109,7 +109,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(-64, -23)
             },
             {
@@ -118,7 +118,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(-32, -23)
             },
             {
@@ -127,7 +127,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(0, -23)
             },
             {
@@ -136,7 +136,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(32, -23)
             },
             {
@@ -145,7 +145,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(64, -23)
             },
             {
@@ -154,7 +154,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(96, -23)
             },
             {
@@ -163,7 +163,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(128, -23)
             },
             {
@@ -172,7 +172,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(160, -23)
             },
             {
@@ -181,7 +181,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(192, -23)
             },
             {
@@ -190,7 +190,7 @@ ENTITY {
                 height = 403,
                 line_length = 50,
                 frame_count = 150,
-                animation_speed = 0.15,
+                animation_speed = 0.4,
                 shift = util.by_pixel(216, -23)
             },
         }
