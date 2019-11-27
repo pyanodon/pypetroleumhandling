@@ -173,3 +173,20 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "water-free",
+    category = "pumpjack",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+
+    },
+    results = {
+        {type = "fluid", name = "water", amount = 600},
+    },
+    --main_product = "transport-belt",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "w"
+}:add_unlock("oil-machines-mk01")

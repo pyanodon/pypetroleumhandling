@@ -10,6 +10,10 @@ end
 
 if mods["pycoalprocessing"] then
     require("prototypes/updates/pycoalprocessing-updates")
+	if not mods['pyrawores'] then
+		TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack')
+		TECHNOLOGY('oil-machines-mk01'):remove_prereq('crusher')
+	end
 end
 
 if mods["pyrawores"] then
