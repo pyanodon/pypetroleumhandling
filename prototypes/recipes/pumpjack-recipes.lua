@@ -184,7 +184,7 @@ RECIPE {
 
     },
     results = {
-        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "water", amount = 300},
     },
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
