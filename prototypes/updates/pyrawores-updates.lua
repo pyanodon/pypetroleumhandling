@@ -50,7 +50,7 @@ RECIPE("tar-extractor-mk03"):add_ingredient({type = "item", name = "titanium-pla
 RECIPE("tar-extractor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
 RECIPE("gas-refinery-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
 RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
-RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "super-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amount = 100})
 RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
