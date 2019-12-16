@@ -236,7 +236,7 @@ RECIPE {
     order = "a"
 }:add_unlock("scrude")
 
-if mods['pyrawores'] and not settings.startup['processing-mod'].value then
+if mods['pyrawores'] then
 
 RECIPE {
     type = "recipe",
