@@ -345,7 +345,7 @@ RECIPE {
         {type = "fluid", name = "hydrogen", amount = 100},
     },
     results = {
-        {type = "fluid", name = "petroleum-gas", amount = 100},
+        {type = "fluid", name = "petroleum-gas", amount = 80},
     },
     main_product = "petroleum-gas",
     icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
@@ -658,7 +658,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 100},
-        {type = "fluid", name = "hydrogen", amount = 120},
+        {type = "fluid", name = "hydrogen", amount = 300},
         {type = "item", name = "chromium", amount = 1},
     },
     results = {
@@ -667,7 +667,7 @@ RECIPE {
     main_product = "petroleum-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk02")
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
