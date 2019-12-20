@@ -220,7 +220,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 1000},
     },
     results = {
-        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "fluid", name = "naphtha", amount = 150},
         {type = "fluid", name = "dirty-water", amount = 100},
     },
     main_product = "naphtha",
@@ -424,7 +424,7 @@ RECIPE {
         {type = "item", name = "wood", amount = 12},
     },
     results = {
-        {type = "fluid", name = "naphtha", amount = 20},
+        {type = "fluid", name = "naphtha", amount = 25},
         {type = "fluid", name = "flue-gas", amount = 100},
     },
     main_product = "naphtha",
@@ -445,7 +445,7 @@ RECIPE {
         {type = "item", name = "iron-plate", amount = 2},
     },
     results = {
-        {type = "fluid", name = "aromatics", amount = 150},
+        {type = "fluid", name = "aromatics", amount = 160},
     },
     main_product = "aromatics",
     icon = "__pycoalprocessing__/graphics/icons/aromatics.png",
@@ -947,7 +947,7 @@ RECIPE {
         {type = "item", name = "chromium", amount = 1},
     },
     results = {
-        {type = "fluid", name = "diesel", amount = 300},
+        {type = "fluid", name = "diesel", amount = 350},
     },
     main_product = "diesel",
     subgroup = "py-petroleum-handling-fluids",
@@ -966,7 +966,7 @@ RECIPE {
         {type = "item", name = "chromium", amount = 1},
     },
     results = {
-        {type = "fluid", name = "petroleum-gas", amount = 300},
+        {type = "fluid", name = "petroleum-gas", amount = 400},
     },
     main_product = "petroleum-gas",
     subgroup = "py-petroleum-handling-fluids",
