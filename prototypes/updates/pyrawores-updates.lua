@@ -50,7 +50,7 @@ RECIPE("tar-extractor-mk03"):add_ingredient({type = "item", name = "titanium-pla
 RECIPE("tar-extractor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
 RECIPE("gas-refinery-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
 RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
-RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "super-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amount = 100})
 RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
@@ -345,7 +345,7 @@ RECIPE {
         {type = "fluid", name = "hydrogen", amount = 100},
     },
     results = {
-        {type = "fluid", name = "petroleum-gas", amount = 100},
+        {type = "fluid", name = "petroleum-gas", amount = 80},
     },
     main_product = "petroleum-gas",
     icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
@@ -491,50 +491,6 @@ RECIPE {
 
 -- SOOT SEPARATION --
 
-if mods['pyrawores'] and settings.startup['processing-mod'].value then
-
-RECIPE {
-    type = "recipe",
-    name = "soot-to-iron",
-    category = "solid-separator",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "item", name = "soot", amount = 10}
-    },
-    results = {
-        {type = "item", name = "ore-iron", amount = 10},
-        {type = "item", name = "ash", amount = 1, probability = 0.3}
-    },
-    main_product = "ore-iron",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-iron.png",
-    icon_size = 32,
-    subgroup = "py-items-class",
-    order = "b"
-}:add_unlock("oil-sands")
-
-RECIPE {
-    type = "recipe",
-    name = "soot-to-copper",
-    category = "solid-separator",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "item", name = "soot", amount = 10}
-    },
-    results = {
-        {type = "item", name = "ore-copper", amount = 8},
-        {type = "item", name = "ash", amount = 1, probability = 0.3}
-    },
-    main_product = "ore-copper",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-copper.png",
-    icon_size = 32,
-    subgroup = "py-items-class",
-    order = "b"
-}:add_unlock("oil-sands")
-
-else
-
 RECIPE {
     type = "recipe",
     name = "soot-to-iron",
@@ -574,8 +530,6 @@ RECIPE {
     subgroup = "py-items-class",
     order = "b"
 }:add_unlock("oil-sands")
-
-end
 
 RECIPE {
     type = "recipe",
@@ -704,7 +658,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 100},
-        {type = "fluid", name = "hydrogen", amount = 120},
+        {type = "fluid", name = "hydrogen", amount = 300},
         {type = "item", name = "chromium", amount = 1},
     },
     results = {
@@ -713,7 +667,7 @@ RECIPE {
     main_product = "petroleum-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk02")
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",

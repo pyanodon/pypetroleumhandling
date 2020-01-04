@@ -183,7 +183,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 500}
     },
     results = {
-        {type = "fluid", name = "combustion-mixture1", amount = 100, temperature = 600},
+        {type = "fluid", name = "combustion-mixture1", amount = 100, temperature = 650},
         {type = "fluid", name = "steam", amount = 500, temperature = 60}
     },
     icon = "__pypetroleumhandling__/graphics/icons/combustion-naphtha.png",
@@ -236,7 +236,7 @@ RECIPE {
     order = "a"
 }:add_unlock("scrude")
 
-if mods['pyrawores'] and not settings.startup['processing-mod'].value then
+if mods['pyrawores'] then
 
 RECIPE {
     type = "recipe",

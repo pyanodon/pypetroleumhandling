@@ -27,6 +27,8 @@ RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "biopolymer", amoun
 RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "carbon-aerogel", amount = 10}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 10})
 RECIPE("fracking-rig"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 20})
 RECIPE("retorter"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "heavy-fermion", amount = 20}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20}):add_ingredient({type = "item", name = "graphene-roll", amount = 15})
+RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 50}):add_ingredient({type = "item", name = "biopolymer", amount = 35}):add_ingredient({type = "item", name = "aerogel", amount = 15})
+RECIPE("gas-refinery-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
 
 RECIPE("cadaveric-arum-mk01"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
 RECIPE("electronics-factory-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
