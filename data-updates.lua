@@ -26,7 +26,6 @@ end
 
 --ADAPTATIONS
 
-
 --RECIPES UPDATES
 
 RECIPE("lab-instrument"):add_ingredient({type = "item", name = "small-parts-01", amount = 5}):add_ingredient({type = "item", name = "rubber", amount = 10})
