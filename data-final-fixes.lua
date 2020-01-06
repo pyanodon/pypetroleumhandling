@@ -1,5 +1,7 @@
 local GIR = require('prototypes/functions/functions')
 
+GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
+
 --RECIPES UPDATES
 --hot air blacklist
 -- comment out/delete recipes that are ok for hot air increase
