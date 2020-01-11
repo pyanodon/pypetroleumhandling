@@ -16,7 +16,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-tank-10000",
-    icon = "__pypetroleumhandling__/graphics/icons/py-tank-10000.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/py-tank-10000.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-storage-tanks",
@@ -28,7 +28,7 @@ ITEM {
 ENTITY {
     type = "storage-tank",
     name = "py-tank-10000",
-    icon = "__pypetroleumhandling__/graphics/icons/py-tank-10000.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/py-tank-10000.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 3, result = "py-tank-10000"},
@@ -55,7 +55,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pypetroleumhandling__/graphics/entity/py-tank-10000/py-tank-10000.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-tank-10000/py-tank-10000.png",
                 priority = "extra-high",
                 frames = 1,
                 width = 272,

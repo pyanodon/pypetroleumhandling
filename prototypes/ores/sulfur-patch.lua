@@ -15,7 +15,7 @@ DATA {
     type = "resource",
     name = "sulfur-patch",
     category = "sulfur-patch",
-    icon = "__pypetroleumhandling__/graphics/icons/ores/sulfur-patch.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/ores/sulfur-patch.png",
 	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
@@ -57,7 +57,7 @@ DATA {
     stage_counts = {0},
     stages = {
         sheet = {
-            filename = "__pypetroleumhandling__/graphics/entity/ores/sulfur-patch/patch.png",
+            filename = "__pypetroleumhandlinggraphics__/graphics/entity/ores/sulfur-patch/patch.png",
             priority = "extra-high",
             width = 224,
             height = 224,

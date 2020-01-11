@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "lor-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/lor-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/lor-mk03.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk03",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "lor-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/lor-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/lor-mk03.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "lor-mk03"},
@@ -58,14 +58,14 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/off.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/lor-mk01/off.png",
                 width = 296,
                 height = 369,
                 frame_count = 1,
                 shift = util.by_pixel(4, -40)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/off-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/lor-mk01/off-mask.png",
                 width = 296,
                 height = 369,
                 frame_count = 1,
@@ -81,7 +81,7 @@ ENTITY {
             south_position = util.by_pixel(0, -128.5),
             east_position = util.by_pixel(0, -128.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/on.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/lor-mk01/on.png",
                 --priority = "low",
                 frame_count = 80,
                 line_length = 10,
@@ -96,7 +96,7 @@ ENTITY {
             south_position = util.by_pixel(0, -128.5),
             east_position = util.by_pixel(0, -128.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/lor-mk01/on-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/lor-mk01/on-mask.png",
                 --priority = "low",
                 frame_count = 80,
                 line_length = 10,
@@ -158,8 +158,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/lor.ogg", volume = 1.3},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/lor.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/lor.ogg", volume = 1.3},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/lor.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

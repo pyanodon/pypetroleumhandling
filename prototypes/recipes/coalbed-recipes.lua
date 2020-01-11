@@ -93,7 +93,7 @@ RECIPE {
         {type = "fluid", name = "carbon-dioxide", amount = 300},
     },
     --main_product = "carbon-dioxide",
-    icon = "__pycoalprocessing__/graphics/icons/carbon-dioxide.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/carbon-dioxide.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
@@ -114,7 +114,7 @@ RECIPE {
         {type = "fluid", name = "flue-gas", amount = 900},
     },
     main_product = "acidgas",
-    icon = "__pycoalprocessing__/graphics/icons/acidgas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/acidgas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
@@ -135,7 +135,7 @@ RECIPE {
         {type = "fluid", name = "refsyngas", amount = 300},
     },
     main_product = "refsyngas",
-    icon = "__pycoalprocessing__/graphics/icons/refsyngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/refsyngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
@@ -156,7 +156,7 @@ RECIPE {
         {type = "fluid", name = "flue-gas", amount = 500},
     },
     main_product = "refsyngas",
-    icon = "__pycoalprocessing__/graphics/icons/refsyngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/refsyngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
@@ -176,7 +176,7 @@ RECIPE {
         {type = "fluid", name = "flue-gas", amount = 200},
     },
     main_product = "syngas",
-    icon = "__pycoalprocessing__/graphics/icons/syngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"

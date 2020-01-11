@@ -14,7 +14,7 @@ RECIPE {
         {type = "item", name = "stone-brick", amount = 10},
     },
     main_product = "hot-air",
-    icon = "__pypetroleumhandling__/graphics/icons/hot-air.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a2"
@@ -35,7 +35,7 @@ RECIPE {
         {type = "fluid", name = "hot-air", amount = 400},
     },
     main_product = "hot-air",
-    icon = "__pypetroleumhandling__/graphics/icons/hot-air.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a2"
@@ -44,7 +44,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "hot-air",
-    icon = "__pypetroleumhandling__/graphics/icons/hot-air.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 1, g = 0.250, b = 0.203},

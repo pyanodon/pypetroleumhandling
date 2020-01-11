@@ -16,7 +16,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "heavy-oil-refinery-mk04",
-    icon = "__pypetroleumhandling__/graphics/icons/hor-mk04.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk04.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk04",
@@ -28,7 +28,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "heavy-oil-refinery-mk04",
-    icon = "__pypetroleumhandling__/graphics/icons/hor-mk04.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk04.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk04"},
@@ -55,14 +55,14 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
                 width = 448,
                 height = 551,
                 frame_count = 1,
                 shift = util.by_pixel(16, -62)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
                 width = 448,
                 height = 551,
                 frame_count = 1,
@@ -78,7 +78,7 @@ ENTITY {
             south_position = util.by_pixel(0, 62.5),
             east_position = util.by_pixel(0, 62.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
@@ -93,7 +93,7 @@ ENTITY {
             south_position = util.by_pixel(0, 62.5),
             east_position = util.by_pixel(0, 62.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
@@ -109,7 +109,7 @@ ENTITY {
             south_position = util.by_pixel(0, -177.5),
             east_position = util.by_pixel(0, -177.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/top.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
@@ -124,7 +124,7 @@ ENTITY {
             south_position = util.by_pixel(0, -177.5),
             east_position = util.by_pixel(0, -177.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
                 --priority = "low",
                 frame_count = 50,
                 line_length = 8,
@@ -171,8 +171,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/hor.ogg", volume = 1.7},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/hor.ogg", volume = 1.3},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.3},
         apparent_volume = 2.5
     }
 }

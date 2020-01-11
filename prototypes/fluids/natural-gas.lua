@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "natural-gas",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.564, g = 1, b = 0.0},

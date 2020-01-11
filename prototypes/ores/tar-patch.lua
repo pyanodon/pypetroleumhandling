@@ -11,7 +11,7 @@ DATA {
 ENTITY {
     type = "resource",
     name = "tar-patch",
-    icon = "__pypetroleumhandling__/graphics/icons/ores/tar-patch.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/ores/tar-patch.png",
     icon_size = 32,
     flags = {"placeable-neutral"},
     category = "tar-patch",
@@ -58,7 +58,7 @@ ENTITY {
     {
       sheet =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/ores/tar-base/tar-solo.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/ores/tar-base/tar-solo.png",
         priority = "extra-high",
         width = 297,
         height = 297,

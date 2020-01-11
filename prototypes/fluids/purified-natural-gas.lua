@@ -20,7 +20,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "purified-natural-gas",
-    icon = "__pypetroleumhandling__/graphics/icons/purified-natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/purified-natural-gas.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.756, g = 0.992, b = 0.0},

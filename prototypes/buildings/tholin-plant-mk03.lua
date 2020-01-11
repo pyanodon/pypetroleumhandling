@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "tholin-plant-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/tholin-plant-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholin-plant-mk03.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk03",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "tholin-plant-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/tholin-plant-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholin-plant-mk03.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "tholin-plant-mk03"},
@@ -58,14 +58,14 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off.png",
                 width = 224,
                 height = 347,
                 frame_count = 1,
                 shift = util.by_pixel(0, -60)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off-mask.png",
                 width = 224,
                 height = 347,
                 frame_count = 1,
@@ -81,7 +81,7 @@ ENTITY {
             south_position = util.by_pixel(-64, -60),
             east_position = util.by_pixel(-64, -60),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a.png",
                 frame_count = 100,
                 line_length = 20,
                 width = 96,
@@ -95,7 +95,7 @@ ENTITY {
             south_position = util.by_pixel(-64, -60),
             east_position = util.by_pixel(-64, -60),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a-mask.png",
                 frame_count = 100,
                 line_length = 20,
                 width = 96,
@@ -110,7 +110,7 @@ ENTITY {
             south_position = util.by_pixel(32, -60),
             east_position = util.by_pixel(32, -60),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b.png",
                 frame_count = 100,
                 line_length = 20,
                 width = 96,
@@ -124,7 +124,7 @@ ENTITY {
             south_position = util.by_pixel(32, -60),
             east_position = util.by_pixel(32, -60),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b-mask.png",
                 frame_count = 100,
                 line_length = 20,
                 width = 96,
@@ -139,7 +139,7 @@ ENTITY {
             south_position = util.by_pixel(96, -60),
             east_position = util.by_pixel(96, -60),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c.png",
                 frame_count = 100,
                 line_length = 20,
                 width = 32,
@@ -153,7 +153,7 @@ ENTITY {
             south_position = util.by_pixel(96, -60),
             east_position = util.by_pixel(96, -60),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c-mask.png",
                 frame_count = 100,
                 line_length = 20,
                 width = 32,
@@ -198,11 +198,11 @@ ENTITY {
         off_when_no_fluid_recipe = false
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-    open_sound = {filename = "__pypetroleumhandling__/sounds/open.ogg", volume = 0.55},
-    close_sound = {filename = "__pypetroleumhandling__/sounds/close.ogg", volume = 0.7},
+    open_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/open.ogg", volume = 0.55},
+    close_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/close.ogg", volume = 0.7},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/tholin-plant.ogg", volume = 1.2},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/tholin-plant.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/tholin-plant.ogg", volume = 1.2},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/tholin-plant.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

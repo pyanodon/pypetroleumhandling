@@ -64,7 +64,7 @@ ENTITY {
     {
       north =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
         priority = "extra-high",
         frame_count = 1,
         width = 64,
@@ -73,7 +73,7 @@ ENTITY {
       },
 	  east =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
         priority = "extra-high",
 		x = 0,
         frame_count = 1,
@@ -83,7 +83,7 @@ ENTITY {
       },
 	  south =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
         priority = "extra-high",
 		x = 0,
         frame_count = 1,
@@ -93,7 +93,7 @@ ENTITY {
       },
 	  west =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
         priority = "extra-high",
 		x = 0,
         frame_count = 1,

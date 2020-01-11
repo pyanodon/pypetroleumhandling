@@ -21,7 +21,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "bitumen",
-    icon = "__pypetroleumhandling__/graphics/icons/bitumen.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/bitumen.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.01, g = 0.01, b = 0.01},

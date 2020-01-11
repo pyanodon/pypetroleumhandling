@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "oil-machines-mk01",
-    icon = "__pypetroleumhandling__/graphics/technology/oil-machines-01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"coal-processing-1","crusher","separation"},
@@ -18,7 +18,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "oil-machines-mk02",
-    icon = "__pypetroleumhandling__/graphics/technology/oil-machines-02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-02.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk01"},
@@ -36,7 +36,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "oil-machines-mk03",
-    icon = "__pypetroleumhandling__/graphics/technology/oil-machines-03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-03.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk02","coalbed-mk02"},
@@ -55,7 +55,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "oil-machines-mk04",
-    icon = "__pypetroleumhandling__/graphics/technology/oil-machines-04.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-04.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk03"},

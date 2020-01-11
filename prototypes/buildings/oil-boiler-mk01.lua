@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-boiler-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-burner-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "boiler",
     name = "oil-boiler-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-burner-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.2, result = "oil-boiler-mk01"},
@@ -136,7 +136,7 @@ ENTITY {
         layers =
         {
           {
-            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
+            filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
             width = 196,
             height = 320,
@@ -149,7 +149,7 @@ ENTITY {
         layers =
         {
           {
-            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
+            filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
             width = 196,
             height = 320,
@@ -162,7 +162,7 @@ ENTITY {
         layers =
         {
           {
-            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
+            filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
             width = 196,
             height = 320,
@@ -175,7 +175,7 @@ ENTITY {
         layers =
         {
           {
-            filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/off.png",
+            filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/off.png",
             priority = "extra-high",
             width = 196,
             height = 320,
@@ -190,7 +190,7 @@ ENTITY {
     {
       north =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
         frame_count = 80,
         line_length = 10,
@@ -201,7 +201,7 @@ ENTITY {
       },
       east =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
         frame_count = 80,
         line_length = 10,
@@ -212,7 +212,7 @@ ENTITY {
       },
       south =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
         frame_count = 80,
         line_length = 10,
@@ -223,7 +223,7 @@ ENTITY {
       },
       west =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/oil-burner-mk01/anim.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
         priority = "extra-high",
         frame_count = 80,
         line_length = 10,
@@ -240,7 +240,7 @@ fire_glow =
 {
   north =
   {
-    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
     priority = "extra-high",
     frame_count = 1,
     width = 64,
@@ -250,7 +250,7 @@ fire_glow =
   },
   east =
   {
-    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
     priority = "extra-high",
     frame_count = 1,
     width = 64,
@@ -260,7 +260,7 @@ fire_glow =
   },
   south =
   {
-    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
     priority = "extra-high",
     frame_count = 1,
     width = 64,
@@ -270,7 +270,7 @@ fire_glow =
   },
   west =
   {
-    filename = "__pypetroleumhandling__/graphics/entity/py-converter-valve.png",
+    filename = "__pypetroleumhandlinggraphics__/graphics/entity/py-converter-valve.png",
     priority = "extra-high",
     frame_count = 1,
     width = 64,

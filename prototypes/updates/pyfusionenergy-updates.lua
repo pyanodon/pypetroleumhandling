@@ -85,7 +85,7 @@ RECIPE {
         {type = "item", name = "vanadium-oxide", amount = 1},
     },
     main_product = "vanadium-oxide",
-    icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/vanadium-oxide.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
     order = "a"
@@ -105,7 +105,7 @@ RECIPE {
         {type = "item", name = "vanadium-oxide", amount = 1},
     },
     main_product = "vanadium-oxide",
-    icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/vanadium-oxide.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
     order = "a"
@@ -123,7 +123,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "deuterium", amount = 15},
     },
-    icon = "__pyfusionenergy__/graphics/icons/deuterium.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/deuterium.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "e"
@@ -141,7 +141,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "helium3", amount = 5},
     },
-    icon = "__pyfusionenergy__/graphics/icons/helium3.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/helium3.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "e"

@@ -12,7 +12,7 @@ RECIPE {
         {type = "item", name = "stone", amount = 1, probability = 0.5}
     },
     main_product = "crushed-oil-sand",
-    icon = "__pypetroleumhandling__/graphics/icons/crusher-oil-sand.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/crusher-oil-sand.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
@@ -70,7 +70,7 @@ RECIPE {
         {type = "fluid", name = "tar", amount = 200},
     },
     main_product = "tar",
-    icon = "__pycoalprocessing__/graphics/icons/tar.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/tar.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
@@ -131,7 +131,7 @@ RECIPE {
         {type = "fluid", name = "dirty-syngas", amount = 50},
     },
     main_product = "dirty-syngas",
-    icon = "__pypetroleumhandling__/graphics/icons/dirty-syngas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/dirty-syngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
@@ -155,7 +155,7 @@ if mods["pyrawores"] then
             {type = "item", name = "soot", amount = 8},
         },
         main_product = "purified-syngas",
-        icon = "__pypetroleumhandling__/graphics/icons/purified-syngas.png",
+        icon = "__pypetroleumhandlinggraphics__/graphics/icons/purified-syngas.png",
         icon_size = 32,
         subgroup = "py-petroleum-handling-oil-sand-recipes",
         order = "a"
@@ -178,7 +178,7 @@ if mods["pyrawores"] then
                 {type = "item", name = "ash", amount = 8},
             },
             main_product = "hot-syngas",
-            icon = "__pypetroleumhandling__/graphics/icons/hot-syngas.png",
+            icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-syngas.png",
             icon_size = 32,
             subgroup = "py-petroleum-handling-oil-sand-recipes",
             order = "a"

@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "cracker-mk02",
-    icon = "__pypetroleumhandling__/graphics/icons/cracker-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/cracker-mk02.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk02",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "cracker-mk02",
-    icon = "__pypetroleumhandling__/graphics/icons/cracker-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/cracker-mk02.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "cracker-mk02"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/left-mk01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/left-mk01.png",
                 width = 128,
                 height = 234,
                 line_length = 16,
@@ -66,7 +66,7 @@ ENTITY {
                 shift = util.by_pixel(-48, -3)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/left-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/left-mask.png",
                 width = 128,
                 height = 234,
                 line_length = 16,
@@ -76,7 +76,7 @@ ENTITY {
                 tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/right-mk01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/right-mk01.png",
                 width = 128,
                 height = 234,
                 line_length = 16,
@@ -85,7 +85,7 @@ ENTITY {
                 shift = util.by_pixel(80, -3)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/right-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/right-mask.png",
                 width = 128,
                 height = 234,
                 line_length = 16,
@@ -103,7 +103,7 @@ ENTITY {
             south_position = util.by_pixel(16, -64),
             east_position = util.by_pixel(16, -64),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/cracker-mk01/poof.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/poof.png",
                 --priority = "low",
                 frame_count = 100,
                 line_length = 10,
@@ -164,8 +164,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/cracker.ogg", volume = 1.5},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/cracker.ogg", volume = 1.0},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/cracker.ogg", volume = 1.5},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/cracker.ogg", volume = 1.0},
         apparent_volume = 2.5
     }
 }
