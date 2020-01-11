@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "rhe",
-    icon = "__pypetroleumhandling__/graphics/icons/rhe.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/rhe.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "rhe",
-    icon = "__pypetroleumhandling__/graphics/icons/rhe.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/rhe.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "rhe"},
@@ -58,7 +58,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/rhe/off.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/rhe/off.png",
                 width = 169,
                 height = 209,
                 line_length = 1,
@@ -75,7 +75,7 @@ ENTITY {
             south_position = util.by_pixel(-1.5, -95),
             east_position = util.by_pixel(-1.5, -95),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/rhe/on.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/rhe/on.png",
                 --priority = "low",
                 frame_count = 100,
                 line_length = 10,
@@ -106,8 +106,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/rhe.ogg", volume = 0.9},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/rhe.ogg", volume = 0.7},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/rhe.ogg", volume = 0.9},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/rhe.ogg", volume = 0.7},
         apparent_volume = 2.5
     }
 }

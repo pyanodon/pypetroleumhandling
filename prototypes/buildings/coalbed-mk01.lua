@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "coalbed-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/coalbed-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk01",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "coalbed-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/coalbed-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "coalbed-mk01"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/left-mk01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/left-mk01.png",
                 width = 96,
                 height = 298,
                 line_length = 21,
@@ -66,7 +66,7 @@ ENTITY {
                 shift = util.by_pixel(-64, -32)
             },
 			{
-				filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/left-mask.png",
+				filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/left-mask.png",
 				width = 96,
 				height = 298,
 				line_length = 21,
@@ -76,7 +76,7 @@ ENTITY {
 				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
 			},
             {
-                filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/mid-mk01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/mid-mk01.png",
                 width = 96,
                 height = 298,
                 line_length = 21,
@@ -85,7 +85,7 @@ ENTITY {
                 shift = util.by_pixel(32, -32)
             },
 			{
-                filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/mid-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/mid-mask.png",
                 width = 96,
                 height = 298,
                 line_length = 21,
@@ -95,7 +95,7 @@ ENTITY {
 				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/coalbed-mk01/right-mk01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/right-mk01.png",
                 width = 64,
                 height = 298,
                 line_length = 21,
@@ -141,8 +141,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/coalbed.ogg", volume = 1.3},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/coalbed.ogg", volume = 0.8},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/coalbed.ogg", volume = 1.3},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/coalbed.ogg", volume = 0.8},
         apparent_volume = 2.5
     }
 }

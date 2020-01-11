@@ -11,7 +11,7 @@ DATA {
 ENTITY {
     type = "resource",
     name = "oil-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-mk03.png",
     icon_size = 32,
     flags = {"placeable-neutral"},
     category = "oil-mk03",
@@ -58,7 +58,7 @@ ENTITY {
     {
       sheet =
       {
-        filename = "__pypetroleumhandling__/graphics/entity/ores/oil-mk03/patch.png",
+        filename = "__pypetroleumhandlinggraphics__/graphics/entity/ores/oil-mk03/patch.png",
         priority = "extra-high",
         width = 320,
         height = 253,

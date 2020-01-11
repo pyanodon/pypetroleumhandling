@@ -20,7 +20,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "fracking-rig",
-    icon = "__pypetroleumhandling__/graphics/icons/fracking-rig.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/fracking-rig.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
@@ -32,7 +32,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "fracking-rig",
-    icon = "__pypetroleumhandling__/graphics/icons/fracking-rig.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/fracking-rig.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fracking-rig"},
@@ -59,7 +59,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/1.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/1.png",
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -68,7 +68,7 @@ ENTITY {
                 shift = util.by_pixel(0, 160)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/2.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/2.png",
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -77,7 +77,7 @@ ENTITY {
                 shift = util.by_pixel(0, 64)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/3.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/3.png",
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -86,7 +86,7 @@ ENTITY {
                 shift = util.by_pixel(0, -32)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/4.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/4.png",
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -95,7 +95,7 @@ ENTITY {
                 shift = util.by_pixel(0, -128)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/5.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/5.png",
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -104,7 +104,7 @@ ENTITY {
                 shift = util.by_pixel(0, -224)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/6.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/6.png",
                 width = 415,
                 height = 32,
                 line_length = 4,
@@ -113,7 +113,7 @@ ENTITY {
                 shift = util.by_pixel(0, -288)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/sh1.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh1.png",
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -123,7 +123,7 @@ ENTITY {
                 shift = util.by_pixel(16, 144)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/sh2.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh2.png",
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -133,7 +133,7 @@ ENTITY {
                 shift = util.by_pixel(16, 48)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/sh3.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh3.png",
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -143,7 +143,7 @@ ENTITY {
                 shift = util.by_pixel(16, -16)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/sh4.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh4.png",
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -153,7 +153,7 @@ ENTITY {
                 shift = util.by_pixel(16, -112)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/fracking-rig/sh5.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh5.png",
                 width = 448,
                 height = 32,
                 line_length = 4,
@@ -215,8 +215,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/fracking-rig.ogg", volume = 1.2},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/fracking-rig.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/fracking-rig.ogg", volume = 1.2},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/fracking-rig.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

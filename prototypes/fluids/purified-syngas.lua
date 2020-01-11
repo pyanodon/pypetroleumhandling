@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "purified-syngas",
-    icon = "__pypetroleumhandling__/graphics/icons/purified-syngas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/purified-syngas.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.7, g = 0.464, b = 0.129},

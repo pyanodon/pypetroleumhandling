@@ -10,7 +10,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 10},
     },
     main_product = "tholins",
-    icon = "__pypetroleumhandling__/graphics/icons/tholins.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholins.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "a"
@@ -19,7 +19,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "tholins",
-    icon = "__pypetroleumhandling__/graphics/icons/tholins.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholins.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.6, g = 0.223, b = 0.125},

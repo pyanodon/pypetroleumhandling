@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "kerogen",
-    icon = "__pypetroleumhandling__/graphics/technology/kerogen.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/kerogen.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk03","tholin-mk03"},

@@ -20,7 +20,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-derrick-mk02",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk02.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk02",
@@ -32,7 +32,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "oil-derrick-mk02",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk02.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "oil-derrick-mk02"},
@@ -78,7 +78,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk02/base.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk02/base.png",
                 width = 224,
                 height = 427,
                 line_length = 9,
@@ -87,7 +87,7 @@ ENTITY {
                 shift = util.by_pixel(0, -103)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk02/shadow.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk02/shadow.png",
                 width = 313,
                 height = 192,
                 line_length = 5,
@@ -100,8 +100,8 @@ ENTITY {
 },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick.ogg", volume = 1.0},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick.ogg", volume = 0.6},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 1.0},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 0.6},
         apparent_volume = 2.5
     },
 }

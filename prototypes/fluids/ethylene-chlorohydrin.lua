@@ -20,7 +20,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "ethylene-chlorohydrin",
-    icon = "__pypetroleumhandling__/graphics/icons/ethylene-chlorohydrin.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/ethylene-chlorohydrin.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 1, g = 1, b = 1},

@@ -20,7 +20,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-derrick-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk03.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk03",
@@ -32,7 +32,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "oil-derrick-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk03.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "oil-derrick-mk03"},
@@ -78,7 +78,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk03/bottom.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/bottom.png",
                 width = 288,
                 height = 288,
                 line_length = 7,
@@ -87,7 +87,7 @@ ENTITY {
                 shift = util.by_pixel(0, 0)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk03/top.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/top.png",
                 width = 288,
                 height = 288,
                 line_length = 7,
@@ -96,7 +96,7 @@ ENTITY {
                 shift = util.by_pixel(0, -288)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk03/sh-left.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/sh-left.png",
                 width = 160,
                 height = 288,
                 line_length = 7,
@@ -106,7 +106,7 @@ ENTITY {
                 shift = util.by_pixel(-64, 0)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk03/sh-right.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/sh-right.png",
                 width = 192,
                 height = 288,
                 line_length = 7,
@@ -119,8 +119,8 @@ ENTITY {
 },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick-2.ogg", volume = 1.9},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick-2.ogg", volume = 1.5},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick-2.ogg", volume = 1.9},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick-2.ogg", volume = 1.5},
         apparent_volume = 2.5
     },
 }

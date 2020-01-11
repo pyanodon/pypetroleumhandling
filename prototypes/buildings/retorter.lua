@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "retorter",
-    icon = "__pypetroleumhandling__/graphics/icons/retorter.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/retorter.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "retorter",
-    icon = "__pypetroleumhandling__/graphics/icons/retorter.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/retorter.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "retorter"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/base.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/base.png",
                 width = 487,
                 height = 491,
                 --line_length = 4,
@@ -74,7 +74,7 @@ ENTITY {
             south_position = util.by_pixel(-197, -271),
             east_position = util.by_pixel(-197, -271),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/cap-01.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-01.png",
                 --priority = "low",
                 frame_count = 80,
                 line_length = 20,
@@ -90,7 +90,7 @@ ENTITY {
             south_position = util.by_pixel(174, -182),
             east_position = util.by_pixel(174, -182),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/cap-02.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-02.png",
                 --priority = "low",
                 frame_count = 60,
                 line_length = 20,
@@ -106,7 +106,7 @@ ENTITY {
             south_position = util.by_pixel(47, -111),
             east_position = util.by_pixel(47, -111),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/cap-03.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-03.png",
                 --priority = "low",
                 frame_count = 70,
                 line_length = 10,
@@ -122,7 +122,7 @@ ENTITY {
             south_position = util.by_pixel(181.5, -1),
             east_position = util.by_pixel(181.5, -1),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/cap-04.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-04.png",
                 --priority = "low",
                 frame_count = 90,
                 line_length = 10,
@@ -138,7 +138,7 @@ ENTITY {
             south_position = util.by_pixel(185, 161.5),
             east_position = util.by_pixel(185, 161.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/cap-05.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-05.png",
                 --priority = "low",
                 frame_count = 80,
                 line_length = 10,
@@ -154,7 +154,7 @@ ENTITY {
             south_position = util.by_pixel(110.5, 102.5),
             east_position = util.by_pixel(110.5, 102.5),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/vent.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/vent.png",
                 --priority = "low",
                 frame_count = 40,
                 line_length = 10,
@@ -170,7 +170,7 @@ ENTITY {
             south_position = util.by_pixel(-36, -232),
             east_position = util.by_pixel(-36, -232),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/vent.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/vent.png",
                 --priority = "low",
                 frame_count = 40,
                 line_length = 10,
@@ -186,7 +186,7 @@ ENTITY {
             south_position = util.by_pixel(-145.5, 103),
             east_position = util.by_pixel(-145.5, 103),
             animation = {
-                filename = "__pypetroleumhandling__/graphics/entity/retorter/rotate.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/rotate.png",
                 --priority = "low",
                 frame_count = 80,
                 line_length = 10,
@@ -233,8 +233,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/retorter.ogg", volume = 1.4},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/retorter.ogg", volume = 1.3},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 1.4},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 1.3},
         apparent_volume = 2.5
     }
 }

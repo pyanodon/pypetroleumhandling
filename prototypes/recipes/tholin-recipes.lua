@@ -10,7 +10,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "carbon-dioxide", amount = 30},
     },
-    icon = "__pycoalprocessing__/graphics/icons/carbon-dioxide.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/carbon-dioxide.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -28,7 +28,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "syngas", amount = 40},
     },
-    icon = "__pycoalprocessing__/graphics/icons/syngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -46,7 +46,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "acetylene", amount = 35},
     },
-    icon = "__pycoalprocessing__/graphics/icons/acetylene.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/acetylene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -64,7 +64,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "acidgas", amount = 30},
     },
-    icon = "__pycoalprocessing__/graphics/icons/acidgas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/acidgas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -82,7 +82,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "methanol", amount = 25},
     },
-    icon = "__pycoalprocessing__/graphics/icons/methanol.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/methanol.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
@@ -100,7 +100,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "refsyngas", amount = 25},
     },
-    icon = "__pycoalprocessing__/graphics/icons/refsyngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/refsyngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
@@ -118,7 +118,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "glycerol", amount = 20},
     },
-    icon = "__pycoalprocessing__/graphics/icons/glycerol.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/glycerol.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "e"
@@ -136,7 +136,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "olefin", amount = 20},
     },
-    icon = "__pycoalprocessing__/graphics/icons/olefin.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/olefin.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "e"

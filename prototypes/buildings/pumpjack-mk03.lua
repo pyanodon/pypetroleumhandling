@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "pumpjack-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk03.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk03",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "pumpjack-mk03",
-    icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk03.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "pumpjack-mk03"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk03/a1.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a1.png",
                 width = 96,
                 height = 394,
                 line_length = 20,
@@ -66,7 +66,7 @@ ENTITY {
                 shift = util.by_pixel(-96, -50)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk03/a2.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a2.png",
                 width = 96,
                 height = 394,
                 line_length = 20,
@@ -75,7 +75,7 @@ ENTITY {
                 shift = util.by_pixel(0, -50)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk03/a3.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a3.png",
                 width = 96,
                 height = 394,
                 line_length = 20,
@@ -84,7 +84,7 @@ ENTITY {
                 shift = util.by_pixel(96, -50)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk03/a4.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a4.png",
                 width = 32,
                 height = 394,
                 line_length = 20,
@@ -116,8 +116,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk02.ogg", volume = 1.2},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk02.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk02.ogg", volume = 1.2},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk02.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

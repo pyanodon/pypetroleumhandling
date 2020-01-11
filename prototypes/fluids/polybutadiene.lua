@@ -14,7 +14,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 1000, temperature = 60},
     },
     main_product = "polybutadiene",
-    icon = "__pypetroleumhandling__/graphics/icons/polybutadiene.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/polybutadiene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -23,7 +23,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "polybutadiene",
-    icon = "__pypetroleumhandling__/graphics/icons/polybutadiene.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/polybutadiene.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.0, g = 0.0, b = 0.00},

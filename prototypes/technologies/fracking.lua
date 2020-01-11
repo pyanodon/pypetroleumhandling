@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "fracking",
-    icon = "__pypetroleumhandling__/graphics/technology/fracking.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/fracking.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"coalbed-mk02","oil-machines-mk04","petroleum-gas-mk03"},

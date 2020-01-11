@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "processed-light-oil",
-    icon = "__pypetroleumhandling__/graphics/icons/processed-light-oil.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/processed-light-oil.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.160, g = 0.125, b = 0.180},

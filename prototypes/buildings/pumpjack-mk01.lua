@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "pumpjack-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk01",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "pumpjack-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk01.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "pumpjack-mk01"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk01/right.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/right.png",
                 width = 96,
                 height = 214,
                 priority = "extra-high",
@@ -67,7 +67,7 @@ ENTITY {
                 shift = util.by_pixel(48, -20)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk01/left.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/left.png",
                 width = 96,
                 height = 214,
                 priority = "very-low",
@@ -77,7 +77,7 @@ ENTITY {
                 shift = util.by_pixel(-48, -20)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
                 width = 217,
                 height = 165,
                 line_length = 8,
@@ -110,8 +110,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk01.ogg", volume = 1.2},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk01.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 1.2},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }
