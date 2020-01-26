@@ -21,7 +21,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "ethylene-glycol",
-    icon = "__pypetroleumhandling__/graphics/icons/ethylene-glycol.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/ethylene-glycol.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.290, g = 0.611, b = 0.721},

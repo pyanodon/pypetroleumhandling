@@ -20,7 +20,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "drilling-fluid-1",
-    icon = "__pypetroleumhandling__/graphics/icons/drilling-fluid-1.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.0, g = 0.772, b = 0.556},

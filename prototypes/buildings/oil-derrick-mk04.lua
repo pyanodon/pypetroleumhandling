@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-derrick-mk04",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk04.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk04.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk04",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "oil-derrick-mk04",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk04.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk04.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "oil-derrick-mk04"},
@@ -79,7 +79,7 @@ ENTITY {
       sheets =
       {
         {
-          filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk04/off.png",
+          filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk04/off.png",
           priority = "extra-high",
           width = 384,
           height = 437,
@@ -92,7 +92,7 @@ ENTITY {
         north = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk04/fluid.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk04/fluid.png",
                 width = 224,
                 height = 192,
                 line_length = 9,
@@ -105,8 +105,8 @@ ENTITY {
 },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick-2.ogg", volume = 1.9},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick-2.ogg", volume = 1.5},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick-2.ogg", volume = 1.9},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick-2.ogg", volume = 1.5},
         apparent_volume = 2.5
     },
 }

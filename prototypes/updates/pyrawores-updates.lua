@@ -147,7 +147,7 @@ RECIPE {
         {type = "item", name = "sncr-alloy", amount = 2},
     },
     main_product = "sncr-alloy",
-    icon = "__pypetroleumhandling__/graphics/icons/sncr-alloy.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/sncr-alloy.png",
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "a"
@@ -168,7 +168,7 @@ RECIPE {
         {type = "item", name = "sncr-alloy", amount = 12}
     },
     main_product= "sncr-alloy",
-    icon = "__pypetroleumhandling__/graphics/icons/sncr-alloy.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/sncr-alloy.png",
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "j"
@@ -188,7 +188,7 @@ RECIPE {
         {type = "item", name = "ore-nickel", amount = 10},
     },
     main_product = "ore-nickel",
-    icon = "__pyrawores__/graphics/icons/ore-nickel.png",
+    icon = "__pyraworesgraphics__/graphics/icons/ore-nickel.png",
     icon_size = 32,
     subgroup = "py-rawores-nickel",
     order = "zaa"
@@ -207,7 +207,7 @@ RECIPE {
         {type = "fluid", name = "nitrogen", amount = 200},
     },
     main_product = "nitrogen",
-    icon = "__pyrawores__/graphics/icons/nitrogen.png",
+    icon = "__pyraworesgraphics__/graphics/icons/nitrogen.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
@@ -227,7 +227,7 @@ RECIPE {
         {type = "item", name = "ore-nickel", amount = 10},
     },
     main_product = "ore-nickel",
-    icon = "__pyrawores__/graphics/icons/ore-nickel.png",
+    icon = "__pyraworesgraphics__/graphics/icons/ore-nickel.png",
     icon_size = 32,
     subgroup = "py-rawores-nickel",
     order = "zaa"
@@ -247,7 +247,7 @@ RECIPE {
         {type = "fluid", name = "hydrogen", amount = 400},
     },
     main_product = "hydrogen",
-    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -268,7 +268,7 @@ RECIPE {
         {type = "item", name = "sulfur", amount = 1},
     },
     main_product = "nitrogen",
-    icon = "__pyrawores__/graphics/icons/nitrogen.png",
+    icon = "__pyraworesgraphics__/graphics/icons/nitrogen.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -287,7 +287,7 @@ RECIPE {
         {type = "fluid", name = "kerosene", amount = 40},
     },
     main_product = "kerosene",
-    icon = "__pyrawores__/graphics/icons/kerosene.png",
+    icon = "__pyraworesgraphics__/graphics/icons/kerosene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -308,7 +308,7 @@ RECIPE {
         {type = "item", name = "ticl4", amount = 2},
     },
     main_product = "ticl4",
-    icon = "__pypetroleumhandling__/graphics/icons//ticl4.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons//ticl4.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -368,7 +368,7 @@ RECIPE {
         {type = "fluid", name = "hydrogen", amount = 300},
     },
     main_product = "hydrogen",
-    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -389,7 +389,7 @@ RECIPE {
         {type = "fluid", name = "xylenol", amount = 100},
     },
     main_product = "xylenol",
-    icon = "__pyrawores__/graphics/icons/xylenol.png",
+    icon = "__pyraworesgraphics__/graphics/icons/xylenol.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -407,7 +407,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "nitrogen", amount = 20},
     },
-    icon = "__pyrawores__/graphics/icons/nitrogen.png",
+    icon = "__pyraworesgraphics__/graphics/icons/nitrogen.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
@@ -425,7 +425,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "chlorine", amount = 30},
     },
-    icon = "__pyrawores__/graphics/icons/chlorine.png",
+    icon = "__pyraworesgraphics__/graphics/icons/chlorine.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
@@ -443,7 +443,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "hydrogen", amount = 40},
     },
-    icon = "__pyrawores__/graphics/icons/hydrogen.png",
+    icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
@@ -483,7 +483,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 2},
     },
     main_product = "hot-syngas",
-    icon = "__pypetroleumhandling__/graphics/icons/hot-syngas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-syngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
@@ -505,7 +505,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "iron-ore",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-iron.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-iron.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -525,7 +525,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "copper-ore",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-copper.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-copper.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -545,7 +545,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "ore-aluminium",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-aluminium.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-aluminium.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -565,7 +565,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "ore-zinc",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-zinc.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-zinc.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -585,7 +585,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "ore-lead",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-lead.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-lead.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -605,7 +605,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "silver-plate",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-silver.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-silver.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -625,7 +625,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     main_product = "gold-plate",
-    icon = "__pypetroleumhandling__/graphics/icons/class-s-gold.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-gold.png",
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b"
@@ -738,7 +738,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 600},
         {type = "fluid", name = "steam", amount = 500, temperature = 60}
     },
-    icon = "__pypetroleumhandling__/graphics/icons/combustion-xylenol.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/combustion-xylenol.png",
     icon_size = 32,
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",

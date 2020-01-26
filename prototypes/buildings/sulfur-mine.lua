@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "sulfur-mine",
-    icon = "__pypetroleumhandling__/graphics/icons/sulfur-mine.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/sulfur-mine.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "sulfur-mine",
-    icon = "__pypetroleumhandling__/graphics/icons/sulfur-mine.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/sulfur-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "sulfur-mine"},
@@ -80,7 +80,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/sulfur-mine/sulfur-mine.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/sulfur-mine/sulfur-mine.png",
                 width = 249,
                 height = 257,
                 line_length = 8,
@@ -93,8 +93,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/sulfur-mine.ogg", volume = 1.0},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/sulfur-mine.ogg", volume = 0.7},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/sulfur-mine.ogg", volume = 1.0},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/sulfur-mine.ogg", volume = 0.7},
         apparent_volume = 2.5
     }
 }

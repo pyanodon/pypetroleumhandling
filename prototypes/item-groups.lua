@@ -4,7 +4,7 @@ data:extend {
         name = "py-petroleum-handling",
         order = "v",
         inventory_order = "v",
-        icon = "__pypetroleumhandling__/graphics/technology/item-group.png",
+        icon = "__pypetroleumhandlinggraphics__/graphics/technology/item-group.png",
         icon_size = 64
     },
     {

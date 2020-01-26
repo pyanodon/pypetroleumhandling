@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "coalbed-mk01",
-    icon = "__pypetroleumhandling__/graphics/technology/coalbed-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/coalbed-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk01"},
@@ -18,7 +18,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "coalbed-mk02",
-    icon = "__pypetroleumhandling__/graphics/technology/coalbed-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/coalbed-mk02.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"coalbed-mk01","oil-machines-mk02"},

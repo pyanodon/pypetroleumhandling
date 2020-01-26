@@ -11,7 +11,7 @@ RECIPE {
         {type = "item", name = "bolts", amount = 2},
     },
     main_product = "bolts",
-    icon = "__pypetroleumhandling__/graphics/icons/bolts.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/bolts.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -33,7 +33,7 @@ RECIPE {
         {type = "item", name = "small-parts-01", amount = 2},
     },
     main_product = "small-parts-01",
-    icon = "__pypetroleumhandling__/graphics/icons/small-parts-01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-01.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -57,7 +57,7 @@ RECIPE {
         {type = "item", name = "small-parts-02", amount = 3},
     },
     main_product = "small-parts-02",
-    icon = "__pypetroleumhandling__/graphics/icons/small-parts-02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-02.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -82,7 +82,7 @@ RECIPE {
         {type = "item", name = "small-parts-03", amount = 3},
     },
     main_product = "small-parts-03",
-    icon = "__pypetroleumhandling__/graphics/icons/small-parts-03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-03.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -101,7 +101,7 @@ RECIPE {
         {type = "item", name = "belt", amount = 1},
     },
     main_product = "belt",
-    icon = "__pypetroleumhandling__/graphics/icons/belt.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/belt.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -140,7 +140,7 @@ RECIPE {
         {type = "fluid", name = "scrude", amount = 100},
     },
     main_product = "scrude",
-    icon = "__pypetroleumhandling__/graphics/icons/scrude.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -160,7 +160,7 @@ RECIPE {
         {type = "fluid", name = "natural-gas", amount = 100},
     },
     main_product = "natural-gas",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -224,7 +224,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 100},
     },
     main_product = "naphtha",
-    icon = "__pypetroleumhandling__/graphics/icons/naphtha.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -243,7 +243,7 @@ RECIPE {
         {type = "fluid", name = "naphtha", amount = 70},
     },
     main_product = "naphtha",
-    icon = "__pypetroleumhandling__/graphics/icons/naphtha.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -263,7 +263,7 @@ RECIPE {
         {type = "fluid", name = "gasoline", amount = 70},
     },
     main_product = "gasoline",
-    icon = "__pycoalprocessing__/graphics/icons/gasoline.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -303,7 +303,7 @@ RECIPE {
         {type = "item", name = "carbon-black", amount = 1},
     },
     main_product = "carbon-black",
-    icon = "__pypetroleumhandling__/graphics/icons/carbon-black.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/carbon-black.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -323,7 +323,7 @@ RECIPE {
         {type = "item", name = "carbon-black", amount = 2},
     },
     main_product = "carbon-black",
-    icon = "__pypetroleumhandling__/graphics/icons/carbon-black.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/carbon-black.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -343,7 +343,7 @@ RECIPE {
         {type = "item", name = "rubber", amount = 1},
     },
     main_product = "rubber",
-    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/rubber.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -384,7 +384,7 @@ RECIPE {
         {type = "item", name = "rubber", amount = 2},
     },
     main_product = "rubber",
-    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/rubber.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -407,7 +407,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 1000, temperature = 60},
     },
     main_product = "naphtha",
-    icon = "__pypetroleumhandling__/graphics/icons/naphtha.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -428,7 +428,7 @@ RECIPE {
         {type = "fluid", name = "flue-gas", amount = 100},
     },
     main_product = "naphtha",
-    icon = "__pypetroleumhandling__/graphics/icons/naphtha.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -448,7 +448,7 @@ RECIPE {
         {type = "fluid", name = "aromatics", amount = 160},
     },
     main_product = "aromatics",
-    icon = "__pycoalprocessing__/graphics/icons/aromatics.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/aromatics.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -469,7 +469,7 @@ RECIPE {
         {type = "item", name = "rubber", amount = 10},
     },
     main_product = "rubber",
-    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/rubber.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -489,7 +489,7 @@ RECIPE {
         {type = "fluid", name = "btx", amount = 100},
     },
     main_product = "naphtha",
-    icon = "__pypetroleumhandling__/graphics/icons/naphtha.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -510,7 +510,7 @@ RECIPE {
         {type = "fluid", name = "aromatics", amount = 200},
     },
     main_product = "aromatics",
-    icon = "__pycoalprocessing__/graphics/icons/aromatics.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/aromatics.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -531,7 +531,7 @@ RECIPE {
         {type = "fluid", name = "syngas", amount = 400},
     },
     main_product = "syngas",
-    icon = "__pycoalprocessing__/graphics/icons/syngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -595,7 +595,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 2000, temperature = 165},
     },
     main_product = "natural-gas",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -618,7 +618,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 2000, temperature = 165},
     },
     main_product = "gasoline",
-    icon = "__pycoalprocessing__/graphics/icons/gasoline.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -641,7 +641,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 2000, temperature = 165},
     },
     main_product = "syngas",
-    icon = "__pycoalprocessing__/graphics/icons/syngas.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -663,7 +663,7 @@ RECIPE {
         {type = "fluid", name = "styrene", amount = 100},
     },
     main_product = "styrene",
-    icon = "__pypetroleumhandling__/graphics/icons/styrene.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/styrene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -1633,7 +1633,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a2",
-    icon = "__pypetroleumhandling__/graphics/icons/hot-stone-brick-recipe.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     icon_size = 32,
 }:add_unlock("coal-processing-1")
 

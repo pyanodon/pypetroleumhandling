@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "coalbed-gas",
-    icon = "__pypetroleumhandling__/graphics/icons/coalbed-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-gas.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.431, g = 0.188, b = 0.156},

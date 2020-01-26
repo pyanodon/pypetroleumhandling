@@ -69,7 +69,7 @@ RECIPE {
         {type = "fluid", name = "methane", amount = 80},
     },
     main_product = "methane",
-    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon = "__pyhightechgraphics__/graphics/icons/methane.png",
     icon_size = 32,
     subgroup = "py-hightech-fluids",
     order = "a"
@@ -90,7 +90,7 @@ RECIPE {
         {type = "item", name = "sulfur", amount = 1},
     },
     main_product = "ammonia",
-    icon = "__pyhightech__/graphics/icons/ammonia.png",
+    icon = "__pyhightechgraphics__/graphics/icons/ammonia.png",
     icon_size = 32,
     subgroup = "py-hightech-fluids",
     order = "a1"
@@ -112,7 +112,7 @@ RECIPE {
         {type = "item", name = "rubber", amount = 40},
     },
     main_product = "rubber",
-    icon = "__pypetroleumhandling__/graphics/icons/rubber.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/rubber.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -133,7 +133,7 @@ RECIPE {
         {type = "fluid", name = "benzene", amount = 200},
     },
     main_product = "benzene",
-    icon = "__pyhightech__/graphics/icons/benzene.png",
+    icon = "__pyhightechgraphics__/graphics/icons/benzene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -154,7 +154,7 @@ RECIPE {
         {type = "fluid", name = "ethylene", amount = 100},
     },
     main_product = "ethylene",
-    icon = "__pyhightech__/graphics/icons/ethylene.png",
+    icon = "__pyhightechgraphics__/graphics/icons/ethylene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -175,7 +175,7 @@ RECIPE {
         {type = "fluid", name = "methane", amount = 300},
     },
     main_product = "methane",
-    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon = "__pyhightechgraphics__/graphics/icons/methane.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -193,7 +193,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "cyanic-acid", amount = 40},
     },
-    icon = "__pyhightech__/graphics/icons/cyanic-acid.png",
+    icon = "__pyhightechgraphics__/graphics/icons/cyanic-acid.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -211,7 +211,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "ethylene", amount = 40},
     },
-    icon = "__pyhightech__/graphics/icons/ethylene.png",
+    icon = "__pyhightechgraphics__/graphics/icons/ethylene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -229,7 +229,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "benzene", amount = 40},
     },
-    icon = "__pyhightech__/graphics/icons/benzene.png",
+    icon = "__pyhightechgraphics__/graphics/icons/benzene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -247,7 +247,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "ammonia", amount = 40},
     },
-    icon = "__pyhightech__/graphics/icons/ammonia.png",
+    icon = "__pyhightechgraphics__/graphics/icons/ammonia.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -265,7 +265,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "methane", amount = 30},
     },
-    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon = "__pyhightechgraphics__/graphics/icons/methane.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "c"
@@ -283,7 +283,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "acetone", amount = 25},
     },
-    icon = "__pyhightech__/graphics/icons/acetone.png",
+    icon = "__pyhightechgraphics__/graphics/icons/acetone.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
@@ -301,7 +301,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "methanal", amount = 25},
     },
-    icon = "__pyhightech__/graphics/icons/methanal.png",
+    icon = "__pyhightechgraphics__/graphics/icons/methanal.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
@@ -319,7 +319,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "propene", amount = 20},
     },
-    icon = "__pyhightech__/graphics/icons/propene.png",
+    icon = "__pyhightechgraphics__/graphics/icons/propene.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
@@ -359,7 +359,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 2500},
     },
     main_product = "methane",
-    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon = "__pyhightechgraphics__/graphics/icons/methane.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
@@ -382,7 +382,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 2500},
     },
     main_product = "methane",
-    icon = "__pyhightech__/graphics/icons/methane.png",
+    icon = "__pyhightechgraphics__/graphics/icons/methane.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-fluids",
     order = "a"

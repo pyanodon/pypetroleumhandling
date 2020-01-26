@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "pumpjack-mk02",
-    icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk02.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk02",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "pumpjack-mk02",
-    icon = "__pypetroleumhandling__/graphics/icons/pumpjack-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk02.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "pumpjack-mk02"},
@@ -58,7 +58,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk02/left.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk02/left.png",
                 width = 128,
                 height = 288,
                 line_length = 16,
@@ -67,7 +67,7 @@ ENTITY {
                 shift = util.by_pixel(-51, -32)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/pumpjack-mk02/right.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk02/right.png",
                 width = 128,
                 height = 288,
                 line_length = 16,
@@ -99,8 +99,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk01.ogg", volume = 1.2},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/pumpjack-mk01.ogg", volume = 0.9},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 1.2},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.9},
         apparent_volume = 2.5
     }
 }

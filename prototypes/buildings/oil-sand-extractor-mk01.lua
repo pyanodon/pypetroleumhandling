@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-sand-extractor-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-sand-extractor-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-sand-extractor-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk01",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "oil-sand-extractor-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-sand-extractor-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-sand-extractor-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "oil-sand-extractor-mk01"},
@@ -63,7 +63,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-a.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-a.png",
                 width = 128,
                 height = 371,
                 line_length = 16,
@@ -72,7 +72,7 @@ ENTITY {
                 shift = util.by_pixel(-112, 0),
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-a-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-a-mask.png",
                 width = 128,
                 height = 371,
                 line_length = 16,
@@ -82,7 +82,7 @@ ENTITY {
                 tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-b.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-b.png",
                 width = 128,
                 height = 371,
                 line_length = 16,
@@ -91,7 +91,7 @@ ENTITY {
                 shift = util.by_pixel(16, 0),
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-b-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-b-mask.png",
                 width = 128,
                 height = 371,
                 line_length = 16,
@@ -101,7 +101,7 @@ ENTITY {
                 tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-c.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-c.png",
                 width = 96,
                 height = 371,
                 line_length = 16,
@@ -110,7 +110,7 @@ ENTITY {
                 shift = util.by_pixel(128, 0),
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-c-mask.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-c-mask.png",
                 width = 96,
                 height = 371,
                 line_length = 16,
@@ -120,7 +120,7 @@ ENTITY {
                 tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/sh-a.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/sh-a.png",
                 width = 128,
                 height = 352,
                 line_length = 16,
@@ -130,7 +130,7 @@ ENTITY {
                 shift = util.by_pixel(-112, 0),
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/sh-b.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/sh-b.png",
                 width = 128,
                 height = 352,
                 line_length = 16,
@@ -140,7 +140,7 @@ ENTITY {
                 shift = util.by_pixel(16, 0),
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-sand-extractor-mk01/sh-c.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/sh-c.png",
                 width = 128,
                 height = 352,
                 line_length = 16,
@@ -153,8 +153,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/oil-sand-extractor.ogg", volume = 1.0},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/oil-sand-extractor.ogg", volume = 0.6},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg", volume = 1.0},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg", volume = 0.6},
         apparent_volume = 2.5
     }
 }

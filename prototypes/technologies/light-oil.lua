@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "light-oil-mk01",
-    icon = "__pypetroleumhandling__/graphics/technology/light-oil-processing-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk01"},
@@ -18,7 +18,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "light-oil-mk02",
-    icon = "__pypetroleumhandling__/graphics/technology/light-oil-processing-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"light-oil-mk01"},
@@ -36,7 +36,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "light-oil-mk03",
-    icon = "__pypetroleumhandling__/graphics/technology/light-oil-processing-mk03.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk03.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"light-oil-mk02"},

@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "pressured-hydrogen",
-    icon = "__pypetroleumhandling__/graphics/icons/pressured-hydrogen.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pressured-hydrogen.png",
     icon_size = 32,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.160, g = 0.125, b = 0.180},
@@ -31,6 +31,6 @@ RECIPE {
     main_product = "pressured-hydrogen",
     subgroup = "py-petroleum-handling-fluids",
     order = "a",
-    icon = "__pypetroleumhandling__/graphics/icons/compress-hydrogen.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/compress-hydrogen.png",
     icon_size = 32,
 }:add_unlock("light-oil-mk01"):change_category("compressor")

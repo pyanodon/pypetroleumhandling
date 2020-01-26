@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "guar-gum-plantation",
-    icon = "__pypetroleumhandling__/graphics/icons/guar-gum-plantation.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "guar-gum-plantation",
-    icon = "__pypetroleumhandling__/graphics/icons/guar-gum-plantation.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "guar-gum-plantation"},
@@ -56,7 +56,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/guar-gum-plantation/left.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/left.png",
                 width = 128,
                 height = 238,
                 line_length = 16,
@@ -65,7 +65,7 @@ ENTITY {
                 shift = util.by_pixel(-48, -6)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/guar-gum-plantation/right.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/right.png",
                 width = 96,
                 height = 238,
                 line_length = 16,
@@ -74,7 +74,7 @@ ENTITY {
                 shift = util.by_pixel(64, -6)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/guar-gum-plantation/sh-left.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-left.png",
                 width = 128,
                 height = 221,
                 line_length = 16,
@@ -84,7 +84,7 @@ ENTITY {
                 shift = util.by_pixel(-48, 4)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/guar-gum-plantation/sh-right.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-right.png",
                 width = 105,
                 height = 221,
                 line_length = 16,
@@ -132,8 +132,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/guar-gum.ogg", volume = 1.4},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/guar-gum.ogg", volume = 1.0},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg", volume = 1.4},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg", volume = 1.0},
         apparent_volume = 2.5
     }
 }

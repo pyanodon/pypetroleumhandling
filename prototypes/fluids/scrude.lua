@@ -12,7 +12,7 @@ RECIPE {
         {type = "fluid", name = "scrude", amount = 100},
     },
     main_product = "scrude",
-    icon = "__pypetroleumhandling__/graphics/icons/scrude.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
@@ -21,7 +21,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "scrude",
-    icon = "__pypetroleumhandling__/graphics/icons/scrude.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
     icon_size = 32,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.01, g = 0.01, b = 0.01},

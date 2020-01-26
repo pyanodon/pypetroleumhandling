@@ -87,7 +87,7 @@ RECIPE {
         {type = "fluid", name = "natural-gas", amount = 40},
     },
     --main_product = "transport-belt",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -108,7 +108,7 @@ RECIPE {
         {type = "fluid", name = "natural-gas", amount = 140},
     },
     --main_product = "transport-belt",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -129,7 +129,7 @@ RECIPE {
         {type = "fluid", name = "natural-gas", amount = 740},
     },
     --main_product = "transport-belt",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
@@ -150,7 +150,7 @@ RECIPE {
         {type = "fluid", name = "natural-gas", amount = 1600},
     },
     --main_product = "transport-belt",
-    icon = "__pypetroleumhandling__/graphics/icons/natural-gas.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"

@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-derrick-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk01",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "oil-derrick-mk01",
-    icon = "__pypetroleumhandling__/graphics/icons/oil-derrick-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "oil-derrick-mk01"},
@@ -76,7 +76,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk01/base.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/base.png",
                 width = 169,
                 height = 179,
                 line_length = 10,
@@ -85,7 +85,7 @@ ENTITY {
                 shift = util.by_pixel(5, -10)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk01/piston.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/piston.png",
                 width = 32,
                 height = 64,
                 line_length = 25,
@@ -94,7 +94,7 @@ ENTITY {
                 shift = util.by_pixel(0, -4)
             },
             {
-                filename = "__pypetroleumhandling__/graphics/entity/oil-derrick-mk01/gush.png",
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/gush.png",
                 frame_count = 100,
                 line_length = 25,
                 width = 32,
@@ -106,8 +106,8 @@ ENTITY {
 },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick.ogg", volume = 1.0},
-        idle_sound = {filename = "__pypetroleumhandling__/sounds/oil-derrick.ogg", volume = 0.6},
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 1.0},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 0.6},
         apparent_volume = 2.5
     },
 }
