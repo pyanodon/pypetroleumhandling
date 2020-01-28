@@ -32,7 +32,7 @@ RECIPE {
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")
@@ -52,7 +52,7 @@ RECIPE {
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")
@@ -91,7 +91,7 @@ RECIPE {
     },
     main_product = "sulfur",
     icon = "__base__/graphics/icons/sulfur.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
 }:add_unlock("oil-sands")
@@ -112,7 +112,7 @@ RECIPE {
     },
     main_product = "heavy-oil",
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-sands")
