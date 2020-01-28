@@ -37,7 +37,7 @@ ITEM {
     name = "small-parts-01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-01.png",
     icon_size = 32,
-    icon_mipmaps = 10,
+    icon_mipmaps = 0,
     pictures =
     {
       { size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p4.png", scale = 0.25, mipmap_count = 1 },
@@ -62,7 +62,7 @@ ITEM {
     name = "small-parts-02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-02.png",
     icon_size = 32,
-    icon_mipmaps = 9,
+    icon_mipmaps = 0,
     pictures =
     {
       { size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p10.png", scale = 0.25, mipmap_count = 1 },
@@ -86,7 +86,7 @@ ITEM {
     name = "small-parts-03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-03.png",
     icon_size = 32,
-    icon_mipmaps = 9,
+    icon_mipmaps = 0,
     pictures =
     {
       { size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p1.png", scale = 0.25, mipmap_count = 1 },
