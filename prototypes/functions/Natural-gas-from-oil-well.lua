@@ -124,7 +124,7 @@ RECIPE {
     },
     main_product = "natural-gas",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     --subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }
@@ -144,7 +144,7 @@ RECIPE {
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     --subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }
