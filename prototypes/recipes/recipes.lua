@@ -121,7 +121,7 @@ RECIPE {
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk01")
@@ -182,7 +182,7 @@ RECIPE {
     },
     main_product = "light-oil",
     icon = "__base__/graphics/icons/fluid/light-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
@@ -204,7 +204,7 @@ RECIPE {
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
@@ -284,7 +284,7 @@ RECIPE {
     },
     main_product = "sulfur",
     icon = "__base__/graphics/icons/sulfur.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
@@ -364,7 +364,7 @@ RECIPE {
     },
     main_product = "heavy-oil",
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk02"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
@@ -552,7 +552,7 @@ RECIPE {
     },
     main_product = "heavy-oil",
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-processing")
@@ -573,7 +573,7 @@ RECIPE {
     },
     main_product = "heavy-oil",
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-processing")

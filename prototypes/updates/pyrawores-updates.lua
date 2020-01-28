@@ -329,7 +329,7 @@ RECIPE {
     },
     main_product = "plastic-bar",
     icon = "__base__/graphics/icons/plastic-bar.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("plastics"):replace_ingredient("naphtha", "propene"):change_category("fbreactor")
@@ -349,7 +349,7 @@ RECIPE {
     },
     main_product = "petroleum-gas",
     icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("fuel-production")
