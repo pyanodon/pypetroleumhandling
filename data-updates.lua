@@ -64,7 +64,7 @@ local recipes_to_keep = {}
 
 log(serpent.block(remove_old_oil_stuff))
 
-for r, recipe in pairs(data.raw.technology['oil-processing'].effects) do
+for _, recipe in pairs(data.raw.technology['oil-processing'].effects) do
 	--log('hit')
 	if recipe.type == 'unlock-recipe' then
 		--log('hit')
@@ -79,7 +79,7 @@ end
 data.raw.technology['oil-processing'].effects = recipes_to_keep
 recipes_to_keep = {}
 
-for r, recipe in pairs(data.raw.technology['advanced-oil-processing'].effects) do
+for _, recipe in pairs(data.raw.technology['advanced-oil-processing'].effects) do
 	--log('hit')
 	if recipe.type == 'unlock-recipe' then
 		--log('hit')
@@ -94,7 +94,7 @@ end
 data.raw.technology['advanced-oil-processing'].effects = recipes_to_keep
 recipes_to_keep = {}
 
-for r, recipe in pairs(data.raw.technology['coal-liquefaction'].effects) do
+for _, recipe in pairs(data.raw.technology['coal-liquefaction'].effects) do
 	--log('hit')
 	if recipe.type == 'unlock-recipe' then
 		--log('hit')
