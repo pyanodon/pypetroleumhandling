@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.2
+  Changes:
+	- Removed vanilla oil processing recipes and entities (oil refinery, pumpjack, basic oil processing, advanced oil processing, heavy and light oil cracking, coal liquefaction)
+---------------------------------------------------------------------------------------------------
 Version: 1.6.1
   Changes:
 	- Adaptation graphics
