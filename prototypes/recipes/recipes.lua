@@ -72,7 +72,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 1},
         {type = "item", name = "steel-plate", amount = 1}, --supersteel
-        {type = "item", name = "plastic-bar", amount = 4},
+        {type = "item", name = "plastic-bar", amount = 5},
         {type = "item", name = "rubber", amount = 2},
         {type = "item", name = "belt", amount = 2},
         {type = "item", name = "nenbit-matrix", amount = 2},
