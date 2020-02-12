@@ -1,43 +1,43 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.4
   Changes:
-	- Balanced Tin-Chromium Molten recipe
+    - Balanced Tin-Chromium Molten recipe
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.3
   Changes:
-	- Increased plastic consuption
+    - Increased plastic consuption
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.2
   Changes:
-	- Removed vanilla oil processing recipes and entities (oil refinery, pumpjack, basic oil processing, advanced oil processing, heavy and light oil cracking, coal liquefaction)
+    - Removed vanilla oil processing recipes and entities (oil refinery, pumpjack, basic oil processing, advanced oil processing, heavy and light oil cracking, coal liquefaction)
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.1
   Changes:
-	- Adaptation graphics
+    - Adaptation graphics
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.0
   Changes:
-	- Migration to 0.18
+    - Migration to 0.18
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.9
   Changes:
-	- Fixed sprite animation
+    - Fixed sprite animation
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.8
   Changes:
-	- Fixed sprite animation
+    - Fixed sprite animation
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.7
   Changes:
-	- Added water recipe
+    - Added water recipe
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.6
   Changes:
-	- adjustments for pyro changes
+    - adjustments for pyro changes
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.5
   Changes:
-	- fixed deadlock in sci 2 due to rubber
+    - fixed deadlock in sci 2 due to rubber
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.4
   Changes:
@@ -137,46 +137,46 @@ Version: 1.3.2
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.1
   Changes:
-	  - Balanced several oil burner´s fluids.
+    - Balanced several oil burner´s fluids.
     - Now ground-borer recipes uses the base ore fluid as input.
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.0
   Changes:
-	  - Oil burner now 100% efficient. Thanks japanse raccon.
+    - Oil burner now 100% efficient. Thanks japanse raccon.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.9
   Changes:
-	  - Nexelit now requiered for small-parts 2.
+    - Nexelit now requiered for small-parts 2.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.8
   Changes:
-	  - Fixed big bug in Hightech pumpjacks.
+    - Fixed big bug in Hightech pumpjacks.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.7
   Changes:
-	  - Increased oil production from pumpjacks.
+    - Increased oil production from pumpjacks.
     - Unlocked Bitumen with centrifugal pan.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.6
   Changes:
-	  - Migration
+    - Migration
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
   Changes:
-	  - Fixed tin chromium alloy misplace.
+    - Fixed tin chromium alloy misplace.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
   Changes:
-	  - Added recipe to craft Tin-Cromium alloy from molten metals.
+    - Added recipe to craft Tin-Cromium alloy from molten metals.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.3
   Changes:
-	  - Increased SnCr alloy to 2.
+    - Increased SnCr alloy to 2.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
   Changes:
     - fixed broken reference to old autoplace file in base game due to 0.17.51 update.
-	- Updated resources to use current autoplace system.
+    - Updated resources to use current autoplace system.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
   Balances:
@@ -207,11 +207,11 @@ Version: 1.1.6
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.5
   Balances:
-    -Fixed acrolein.
+    - Fixed acrolein.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.4
   Balances:
-    -Test.
+    - Test.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
   Balances:
@@ -244,26 +244,26 @@ Version: 1.0.8
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.7
   Balances:
-   - Balanced more hot-air recipes.
-   - Balanced drill fluids.
-   - Fixed locale for combustion mixtures
+    - Balanced more hot-air recipes.
+    - Balanced drill fluids.
+    - Fixed locale for combustion mixtures
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.6
   Balances:
-   - Balanced some hot-air recipes in cross mods.
-   - Fixed new tanks to their right capacity.
+    - Balanced some hot-air recipes in cross mods.
+    - Fixed new tanks to their right capacity.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
   Balances:
-   - oops
+    - oops
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
   Balances:
-   - Balanced small parts
-   - Balanced natural gas and oil pumpjack recipes
-   - Improved functions
-   - Fixed deadlock in filters and rectisol
- - Added a bunch of alternative recipes for inserters
+    - Balanced small parts
+    - Balanced natural gas and oil pumpjack recipes
+    - Improved functions
+    - Fixed deadlock in filters and rectisol
+    - Added a bunch of alternative recipes for inserters
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
   Balances:
