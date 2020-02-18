@@ -160,8 +160,8 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "molten-tin", amount = 100},
-        {type = "fluid", name = "molten-chromium", amount = 60},
+        {type = "fluid", name = "molten-tin", amount = 40},
+        {type = "fluid", name = "molten-chromium", amount = 50},
         {type = "item", name = "sand-casting", amount = 4},
     },
     results = {
