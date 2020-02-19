@@ -305,7 +305,7 @@ RECIPE {
         {type = "item", name = "titanium-plate", amount = 3},
     },
     results = {
-        {type = "item", name = "ticl4", amount = 2},
+        {type = "item", name = "ticl4", amount = 4},
     },
     main_product = "ticl4",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons//ticl4.png",
