@@ -79,7 +79,8 @@ local hablist = {
     --"zinc-plate-4",
     --"nexelit-plate",
     --"steel-plate2",
-    'sncr-alloy'
+    'sncr-alloy',
+    'flask-3'
 }
 
 GIR.HAB(hablist)
