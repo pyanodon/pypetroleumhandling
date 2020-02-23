@@ -308,7 +308,7 @@ RECIPE {
         {type = "item", name = "ticl4", amount = 4},
     },
     main_product = "ticl4",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons//ticl4.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/ticl4.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
