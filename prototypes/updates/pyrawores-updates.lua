@@ -726,7 +726,6 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "xylenol-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.xylenol"}, 600},
     category = "combustion",
     enabled = false,
     energy_required = 3,

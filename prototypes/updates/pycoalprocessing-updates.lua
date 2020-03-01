@@ -86,7 +86,6 @@ RECIPE("mining-niobium"):replace_ingredient("coal-gas", "refsyngas"):remove_ingr
 RECIPE {
     type = "recipe",
     name = "fuel-oil-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.fuel-oil"}, 800},
     category = "combustion",
     enabled = false,
     energy_required = 3,
@@ -109,7 +108,6 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.aromatics"}, 520},
     category = "combustion",
     enabled = false,
     energy_required = 3,
@@ -132,7 +130,6 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.scrude"}, 500},
     category = "combustion",
     enabled = false,
     energy_required = 3,
@@ -155,7 +152,6 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "crude-oil-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.crude-oil"}, 500},
     category = "combustion",
     enabled = false,
     energy_required = 3,
@@ -178,7 +174,6 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphtha-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.naphtha"}, 650},
     category = "combustion",
     enabled = false,
     energy_required = 3,
@@ -201,7 +196,6 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "lubricant-combustion",
-    localised_name = {"recipe-name.combustion-mixture", {"fluid-name.lubricant"}, 520},
     category = "combustion",
     enabled = false,
     energy_required = 3,
