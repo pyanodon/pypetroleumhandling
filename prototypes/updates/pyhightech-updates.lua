@@ -50,6 +50,7 @@ RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
 RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
 RECIPE("small-parts-02"):add_ingredient({type = "item", name = "nylon", amount = 1})
+RECIPE("ht-pipes"):add_ingredient({type = "item", name = "rubber", amount = 2})
 
 
 ----EXCLUSIVE RECIPES----

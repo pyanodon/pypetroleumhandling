@@ -1392,7 +1392,7 @@ if mods["pyrawores"] then
             {type = "fluid", name = "steam", amount = 300, temperature = 165},
         },
         results = {
-            {type = "item", name = "coke", amount = 30},
+            {type = "item", name = "coke", amount = 40},
             {type = "fluid", name = "coke-oven-gas", amount = 60},
         },
         main_product = "coke",
