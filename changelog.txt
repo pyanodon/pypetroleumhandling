@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.9
+Date: 2020-03-14
+  Changes:
+    - When detected, multi-purpose pipes requieres rubber.
+    - Locale updates.
+    - Buffed coke from oil recipes.
+    - Increased tholin extractors energy consuption.
+    - Increased the polution absorption of guar plantations.
+    - Buffed saline production by pumpjacks.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.8
 Date: 2020-03-08
   Changes:
