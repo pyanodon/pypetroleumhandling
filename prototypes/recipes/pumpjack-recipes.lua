@@ -167,7 +167,7 @@ RECIPE {
         {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
-        {type = "fluid", name = "water-saline", amount = 200},
+        {type = "fluid", name = "water-saline", amount = 500},
     },
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
