@@ -1644,7 +1644,7 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "ppd", amount = 50},
+        {type = "item", name = "ppd", amount = 5},
         {type = "fluid", name = "tpa", amount = 100},
         {type = "fluid", name = "sulfuric-acid", amount = 50},
         {type = "fluid", name = "industrial-solvent", amount = 50}
