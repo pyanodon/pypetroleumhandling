@@ -87,7 +87,7 @@ RECIPE {
         {type = "item", name = "nichrome", amount = 1}, --mo plate
     },
     results = {
-        {type = "fluid", name = "ammonia", amount = 100},
+        {type = "fluid", name = "ammonia", amount = 150},
         {type = "item", name = "sulfur", amount = 1},
     },
     main_product = "ammonia",
