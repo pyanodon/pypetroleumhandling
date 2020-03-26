@@ -381,7 +381,7 @@ RECIPE {
         {type = "item", name = "carbon-black", amount = 2},
     },
     results = {
-        {type = "item", name = "rubber", amount = 2},
+        {type = "item", name = "rubber", amount = 4},
     },
     main_product = "rubber",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/rubber.png",
@@ -1644,7 +1644,7 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "ppd", amount = 50},
+        {type = "item", name = "ppd", amount = 5},
         {type = "fluid", name = "tpa", amount = 100},
         {type = "fluid", name = "sulfuric-acid", amount = 50},
         {type = "fluid", name = "industrial-solvent", amount = 50}
