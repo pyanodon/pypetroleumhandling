@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.0
+Date: 2020-03-26
+  Changes:
+    - Fixed PPD recipe.
+    - Improved ammonia from synthetic crude.
+    - Nerfed oil burning.
+    - Buffed rubber recipe.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.9
 Date: 2020-03-14
   Changes:
