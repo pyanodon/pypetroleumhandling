@@ -170,7 +170,7 @@ data.raw.fluid["condensed-distillate"].fuel_value = "0.5MJ"
 data.raw.fluid["residual-mixture"].fuel_value = "0.1MJ"
 data.raw.fluid["hot-residual-mixture"].fuel_value = "0.1MJ"
 --base game fluids
-data.raw.fluid["crude-oil"].fuel_value = "0.825KJ"
+data.raw.fluid["crude-oil"].fuel_value = "825KJ"
 data.raw.fluid["heavy-oil"].fuel_value = "0.8MJ"
 data.raw.fluid["light-oil"].fuel_value = "0.9MJ"
 data.raw.fluid["petroleum-gas"].fuel_value = "1MJ"
