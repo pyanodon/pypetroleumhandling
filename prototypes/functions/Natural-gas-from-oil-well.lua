@@ -114,7 +114,7 @@ RECIPE {
     name = "oil-to-gas",
     category = "converter-valve",
     enabled = false,
-	hidden = true,
+	  hidden = true,
     energy_required = .1,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 10},
@@ -134,7 +134,7 @@ RECIPE {
     name = "oil-to-oil",
     category = "converter-valve",
     enabled = false,
-	hidden = true,
+	  hidden = true,
     energy_required = .1,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 10},

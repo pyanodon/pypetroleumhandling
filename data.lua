@@ -169,6 +169,8 @@ data.raw.fluid["stripped-distillate"].fuel_value = "0.4MJ"
 data.raw.fluid["condensed-distillate"].fuel_value = "0.5MJ"
 data.raw.fluid["residual-mixture"].fuel_value = "0.1MJ"
 data.raw.fluid["hot-residual-mixture"].fuel_value = "0.1MJ"
+--moved fuel_value for each mod into the correct mod. leaving these here incase pyph needs different values then the others due to oil boiler
+--[[
 --base game fluids
 data.raw.fluid["crude-oil"].fuel_value = "82.5KJ"
 data.raw.fluid["heavy-oil"].fuel_value = "0.8MJ"
@@ -204,7 +206,7 @@ data.raw.fluid["outlet-gas-02"].fuel_value = "0.5MJ"
 data.raw.fluid["outlet-gas-03"].fuel_value = "0.5MJ"
 data.raw.fluid["outlet-gas-04"].fuel_value = "0.5MJ"
 end
-
+]]--
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
