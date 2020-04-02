@@ -52,6 +52,7 @@ RECIPE('hydrocyclone-mk02'):add_ingredient({type = "item", name = "small-parts-0
 RECIPE('mixer-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE('automated-screener-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE('secondary-crusher-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE('plankton-farm-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE('centrifugal-pan-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE('jig-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE('grease-table-mk02'):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
