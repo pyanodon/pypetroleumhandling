@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "pumpjack-hightech",
-    energy_required = 2,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"steam-engine", 5},
@@ -21,7 +21,7 @@ ITEM {
     type = "item",
     name = "pumpjack-hightech",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-hightech.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-hightech-buildings",
     order = "f",
@@ -33,7 +33,7 @@ ENTITY {
     type = "assembling-machine",
     name = "pumpjack-hightech",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-hightech.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "pumpjack-hightech"},
     fast_replaceable_group = "pumpjack-hightech",
