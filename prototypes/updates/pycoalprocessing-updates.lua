@@ -111,6 +111,27 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "natural-gas-combustion",
+    category = "combustion",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "item", name = "coke", amount = 4},
+        {type = "fluid", name = "natural-gas", amount = 100},
+        {type = "fluid", name = "water", amount = 500}
+    },
+    results = {
+        {type = "fluid", name = "combustion-mixture1", amount = 100, temperature = 600},
+        {type = "fluid", name = "steam", amount = 500, temperature = 60}
+    },
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/combustion-natural-gas.png",
+    icon_size = 32,
+    subgroup = "py-combustion",
+    order = "k"
+}:add_unlock("energy-1")
+
+RECIPE {
+    type = "recipe",
     name = "aromatics-combustion",
     category = "combustion",
     enabled = false,
