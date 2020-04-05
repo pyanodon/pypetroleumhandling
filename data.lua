@@ -146,8 +146,8 @@ require("prototypes.fluids.hot-residual-mixture")
 --pyph fluids
 data.raw.fluid["bitumen"].fuel_value = "1MJ"
 data.raw.fluid["scrude"].fuel_value = "1MJ"
-data.raw.fluid["fuel-oil"].fuel_value = "1.5MJ"
-data.raw.fluid["natural-gas"].fuel_value = "1MJ"
+data.raw.fluid["fuel-oil"].fuel_value = "0.8MJ"
+data.raw.fluid["natural-gas"].fuel_value = "90KJ"
 data.raw.fluid["naphtha"].fuel_value = "0.6MJ"
 data.raw.fluid["btx"].fuel_value = "1MJ"
 data.raw.fluid["processed-light-oil"].fuel_value = "1MJ"
