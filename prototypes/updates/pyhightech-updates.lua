@@ -67,7 +67,7 @@ RECIPE {
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
-        {type = "fluid", name = "methane", amount = 80},
+        {type = "fluid", name = "methane", amount = 120},
     },
     main_product = "methane",
     icon = "__pyhightechgraphics__/graphics/icons/methane.png",
@@ -87,7 +87,7 @@ RECIPE {
         {type = "item", name = "nichrome", amount = 1}, --mo plate
     },
     results = {
-        {type = "fluid", name = "ammonia", amount = 150},
+        {type = "fluid", name = "ammonia", amount = 250},
         {type = "item", name = "sulfur", amount = 1},
     },
     main_product = "ammonia",

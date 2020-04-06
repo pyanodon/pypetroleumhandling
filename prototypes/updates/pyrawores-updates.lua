@@ -241,10 +241,10 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 100}, --add vacuum
-        {type = "item", name = "sncr-alloy", amount = 2},
+        {type = "item", name = "sncr-alloy", amount = 1},
     },
     results = {
-        {type = "fluid", name = "hydrogen", amount = 400},
+        {type = "fluid", name = "hydrogen", amount = 800},
     },
     main_product = "hydrogen",
     icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",

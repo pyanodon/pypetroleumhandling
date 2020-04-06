@@ -159,12 +159,12 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "item", name = "coke", amount = 4},
+        {type = "item", name = "coke", amount = 3},
         {type = "fluid", name = "scrude", amount = 100},
         {type = "fluid", name = "water", amount = 500},
     },
     results = {
-        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 500},
+        {type = "fluid", name = "combustion-mixture1", amount = 200, temperature = 600},
         {type = "fluid", name = "steam", amount = 500, temperature = 60}
     },
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/combustion-scrude.png",
