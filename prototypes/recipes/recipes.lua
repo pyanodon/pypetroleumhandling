@@ -1467,7 +1467,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "item", name = "kerogen", amount = 100},
-        {type = "item", name = "fuelrod-mk01", amount = 3},
+        {type = "item", name = "fuelrod-mk01", amount = 1},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 100},
