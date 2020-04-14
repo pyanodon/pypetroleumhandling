@@ -8,7 +8,7 @@ RECIPE("distilator"):add_ingredient({type = "item", name = "small-parts-01", amo
 RECIPE("gasifier"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("jaw-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01")
-RECIPE("ralesia-plantation"):replace_ingredient("pipe", "small-parts-01")
+RECIPE("ralesia-plantation-mk01"):replace_ingredient("pipe", "small-parts-01")
 RECIPE("rectisol"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("washer"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk01"].crafting_categories,"hot-air-advanced-foundry")
