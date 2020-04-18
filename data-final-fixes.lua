@@ -1,6 +1,6 @@
 local GIR = require('prototypes/functions/functions')
 
-GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
+GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
 --RECIPES UPDATES
 --hot air blacklist
