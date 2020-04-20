@@ -880,7 +880,7 @@ RECIPE {
         {type = "item", name = "rubber", amount = 1},
     },
     results = {
-        {type = "item", name = "small-parts-01", amount = 25}
+        {type = "item", name = "small-parts-01", amount = 35}
     },
     main_product= "small-parts-01",
     subgroup = "py-rawores-iron",
