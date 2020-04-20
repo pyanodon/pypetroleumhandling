@@ -849,7 +849,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "casting-small-parts",
+    name = "casting-bolts",
     category = "casting",
     enabled = false,
     energy_required = 1,
