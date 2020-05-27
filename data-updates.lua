@@ -115,3 +115,64 @@ for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
       preset.basic_settings.autoplace_controls['crude-oil'] = nil
     end
 end
+
+
+--Remove space science from satellite
+data.raw.item.satellite.rocket_launch_product =
+    {
+        type = 'item',
+        name = 'tholins-barrel',
+        amount = 500
+    }
+
+RECIPE {
+    type = 'recipe',
+    name = 'satellite',
+    energy_required = 5,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"low-density-structure", 30},
+      {"solar-panel", 25},
+      {"accumulator-mk01", 1},
+      {"advanced-circuit", 25},
+	  {"rocket-fuel", 10},
+	  {'proto-tholins-barrel', 500},
+	  {'empty-barrel', 1000}
+    },
+	results =
+		{
+			{type = 'item', name = "satellite", amount = 3}
+		},
+    requester_paste_multiplier = 1
+  }:add_unlock('tholin-mk01')
+
+data.raw.technology['rocket-control-unit'].prerequisites =
+	{
+		'advanced-electronics'
+	}
+
+data.raw.technology['rocket-control-unit'].unit.ingredients =
+	{
+		{"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+	}
+
+
+data.raw.technology['rocket-silo'].prerequisites =
+	{
+	  'advanced-electronics',
+	  "rocket-fuel",
+	  "rocket-control-unit"
+	}
+
+data.raw.technology['rocket-silo'].unit.ingredients =
+	{
+		{"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+	}
+
+data.raw['rocket-silo']['rocket-silo'].rocket_result_inventory_size = 50

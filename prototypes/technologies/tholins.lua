@@ -4,12 +4,14 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/tholin-01.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"coal-processing-1","crusher"},
+    prerequisites = {'rocket-silo'},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
-            {"automation-science-pack", 1},
+            {'automation-science-pack', 1},
+            {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1}
         },
         time = 45
     }
@@ -26,8 +28,10 @@ TECHNOLOGY {
     unit = {
         count = 200,
         ingredients = {
-            {"automation-science-pack", 1},
+            {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1},
+            {'utility-science-pack', 1}
         },
         time = 45
     }
@@ -46,7 +50,9 @@ TECHNOLOGY {
         ingredients = {
             {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1}
+            {'chemical-science-pack', 1},
+            {'utility-science-pack', 1},
+
         },
         time = 45
     }
@@ -66,7 +72,8 @@ TECHNOLOGY {
             {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
             {'chemical-science-pack', 1},
-            {'utility-science-pack', 1}
+            {'utility-science-pack', 1},
+            {'production-science-pack', 1}
         },
         time = 45
     }
