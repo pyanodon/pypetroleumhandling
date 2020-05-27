@@ -41,7 +41,7 @@ ENTITY {
     collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     match_animation_speed_to_activity = false,
-    fixed_recipe = "tholins",
+    fixed_recipe = "proto-tholins",
     module_specification = {
         module_slots = 1
     },
