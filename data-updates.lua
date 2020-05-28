@@ -121,8 +121,8 @@ end
 data.raw.item.satellite.rocket_launch_product =
     {
         type = 'item',
-        name = 'tholins-barrel',
-        amount = 500
+        name = 'filled-tholins-vessel',
+        amount = 100
     }
 
 RECIPE {
@@ -138,8 +138,7 @@ RECIPE {
       {"accumulator-mk01", 1},
       {"advanced-circuit", 25},
 	  {"rocket-fuel", 10},
-	  {'proto-tholins-barrel', 500},
-	  {'empty-barrel', 1000}
+	  {'filled-proto-tholins-vessel', 100},
     },
 	results =
 		{

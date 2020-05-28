@@ -1671,3 +1671,50 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "empty-proto-tholins-vessel",
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+        {type = "item", name = "low-density-structure", amount = 1},
+    },
+    results = {
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 5},
+    },
+
+}:add_unlock("tholin-mk01"):add_ingredient({type = "fluid", name = "vacuum", amount = 70}):add_ingredient({type = "item", name = "glass", amount = 4})
+
+RECIPE {
+    type = "recipe",
+    name = "fill-proto-tholins-vessel",
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 1},
+        {type = "fluid", name = "proto-tholins", amount = 100},
+    },
+    results = {
+        {type = "item", name = "filled-proto-tholins-vessel", amount = 5},
+    },
+
+}:add_unlock("tholin-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "empty-tholins-vessel",
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+        {type = "item", name = "filled-tholins-vessel", amount = 1},
+    },
+    results = {
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 5},
+        {type = "fluid", name = "tholins", amount = 100},
+    },
+    main_product = "tholins",
+}:add_unlock("tholin-mk01")
