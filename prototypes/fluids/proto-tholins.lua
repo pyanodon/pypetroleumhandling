@@ -1,3 +1,5 @@
+if mods['pyhightech'] then
+
 RECIPE {
     type = "recipe",
     name = "proto-tholins",
@@ -31,3 +33,5 @@ FLUID {
     subgroup = "py-petroleum-handling-fluids",
     order = "c"
 }
+
+end
