@@ -10,7 +10,7 @@ RECIPE {
         {type = "fluid", name = "proto-tholins", amount = 50},
     },
     main_product = "proto-tholins",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholins.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/proto-tholins.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "a"
