@@ -13,7 +13,7 @@ RECIPE {
     },
     main_product = "proto-tholins",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/proto-tholins.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "a"
 }:add_unlock("tholin-mk01")

@@ -683,7 +683,7 @@ RECIPE {
         {type = "fluid", name = "proto-tholins", amount = 100},
     },
     results = {
-        {type = "item", name = "filled-proto-tholins-vessel", amount = 5},
+        {type = "item", name = "filled-proto-tholins-vessel", amount = 1},
     },
 
 }:add_unlock("tholin-mk01")
@@ -698,7 +698,7 @@ RECIPE {
         {type = "item", name = "filled-tholins-vessel", amount = 1},
     },
     results = {
-        {type = "item", name = "empty-proto-tholins-vessel", amount = 5},
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 1},
         {type = "fluid", name = "tholins", amount = 100},
     },
     main_product = "tholins",
