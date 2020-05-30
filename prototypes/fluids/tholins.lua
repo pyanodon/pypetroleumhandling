@@ -1,4 +1,4 @@
-if not mods['pyhightech'] then
+--if not mods['pyhightech'] then
 RECIPE {
     type = "recipe",
     name = "tholins",
@@ -17,7 +17,7 @@ RECIPE {
     order = "a"
 }:add_unlock("tholin-mk01")
 
-end
+--end
 
 FLUID {
     type = "fluid",
