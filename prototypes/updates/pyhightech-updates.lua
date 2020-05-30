@@ -597,6 +597,7 @@ RECIPE {
     order = "a"
 }:add_unlock("oil-machines-mk03")
 
+--[[
 --Remove space science from satellite
 data.raw.item.satellite.rocket_launch_product =
     {
@@ -703,3 +704,4 @@ RECIPE {
     },
     main_product = "tholins",
 }:add_unlock("tholin-mk01")
+]]--

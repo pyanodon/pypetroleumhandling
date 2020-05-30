@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/kerogen.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk03","tholin-mk01"},
+    prerequisites = {"oil-machines-mk03","tholin-mk03"},
     effects = {},
     unit = {
         count = 300,
