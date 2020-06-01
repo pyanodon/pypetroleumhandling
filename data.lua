@@ -16,6 +16,7 @@ require("prototypes.ores.oil-mk03")
 require("prototypes.ores.oil-mk04")
 require("prototypes.ores.sulfur-patch")
 --))
+require("prototypes.ores.natural-gas")
 
 --(( Technology ))--
 require("prototypes.technologies.technologies")
@@ -213,7 +214,7 @@ end
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
 
 --((nat-from-oil))--
-require("prototypes.functions.Natural-gas-from-oil-well")
+--require("prototypes.functions.Natural-gas-from-oil-well")
 
 --(( Shortcut keys ))--
 local recipeselect=
