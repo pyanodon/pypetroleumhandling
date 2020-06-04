@@ -34,7 +34,7 @@ end)
 script.on_event("recipe-selector", function(event)
 log("working")
 log(global.oil_to_gas)
-	local player = game.players[event.player_index]
+	--local player = game.players[event.player_index]
 	if global.oil_to_gas == false then
 		log('hit')
 		global.oil_to_gas = true
