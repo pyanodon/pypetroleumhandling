@@ -31,7 +31,7 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
 	end
 end)
 
-script.on_event("recipe-selector", function(event)
+script.on_event("recipe-selector", function()
 log("working")
 log(global.oil_to_gas)
 	--local player = game.players[event.player_index]
