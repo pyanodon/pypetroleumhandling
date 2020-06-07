@@ -632,13 +632,13 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "rocket-control-unit",
-    energy_required = 30,
+    energy_required = 15,
     enabled = false,
-    category = "crafting",
+    category = "electronic",
     ingredients =
     {
       {"advanced-circuit", 1},
-      {"electronic-circuit", 4},
+      {"electronic-circuit", 2},
       {"speed-module", 1}
     },
     result= "rocket-control-unit"
@@ -647,7 +647,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-density-structure",
-    category = "crafting",
+    category = "advanced-crafting",
     energy_required = 20,
     enabled = false,
     ingredients =
@@ -664,9 +664,9 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "rocket-fuel",
-    energy_required = 30,
+    energy_required = 20,
     enabled = false,
-    category = "crafting-with-fluid",
+    category = "hor",
     ingredients =
     {
       {type="fluid", name="oxygen", amount=75},
@@ -787,7 +787,7 @@ RECIPE {
     main_product = "tholins",
 }:add_unlock("tholin-mk01")
 
-TECHNOLOGY('kerogen'):remove_prereq('tholin-mk03'):add_prereq('tholin-mk01')
+TECHNOLOGY('kerogen'):remove_prereq('tholin-mk03')
 
 TECHNOLOGY('tholin-mk01'):remove_prereq('coal-processing-1'):remove_prereq('crusher'):add_prereq('rocket-silo'):add_pack('logistic-science-pack'):add_pack('chemical-science-pack')
 
