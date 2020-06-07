@@ -597,13 +597,13 @@ RECIPE {
     order = "a"
 }:add_unlock("oil-machines-mk03")
 
---[[
+
 --Remove space science from satellite
 data.raw.item.satellite.rocket_launch_product =
     {
         type = 'item',
         name = 'filled-tholins-vessel',
-        amount = 100
+        amount = 500
     }
 
 RECIPE {
@@ -619,7 +619,7 @@ RECIPE {
       {"accumulator-mk01", 1},
       {"advanced-circuit", 25},
 	  {"rocket-fuel", 10},
-	  {'filled-proto-tholins-vessel', 100},
+	  {'filled-proto-tholins-vessel', 500},
     },
 	results =
 		{
@@ -628,9 +628,91 @@ RECIPE {
     requester_paste_multiplier = 1
   }:add_unlock('tholin-mk01')
 
+--Rocket Parts
+RECIPE {
+    type = "recipe",
+    name = "rocket-control-unit",
+    energy_required = 30,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"advanced-circuit", 1},
+      {"electronic-circuit", 4},
+      {"speed-module", 1}
+    },
+    result= "rocket-control-unit"
+  }
+
+RECIPE {
+    type = "recipe",
+    name = "low-density-structure",
+    category = "crafting",
+    energy_required = 20,
+    enabled = false,
+    ingredients =
+      {
+        {"aluminium-plate", 2},
+        {"fiberglass", 5},
+        {"plastic-bar", 10},
+        {"aerogel", 10}
+      },
+    result = "low-density-structure",
+    result_count = 5
+  }
+
+RECIPE {
+    type = "recipe",
+    name = "rocket-fuel",
+    energy_required = 30,
+    enabled = false,
+    category = "crafting-with-fluid",
+    ingredients =
+    {
+      {type="fluid", name="oxygen", amount=75},
+      {type="fluid", name="kerosene", amount=50}
+    },
+    result = "rocket-fuel",
+    result_count = 5
+  }
+
+RECIPE {
+    type = 'recipe',
+    name = "rocket-part",
+    energy_required = 3,
+    enabled = false,
+    hidden = true,
+    category = "rocket-building",
+    ingredients =
+    {
+      {"rocket-control-unit", 4},
+      {"low-density-structure", 10},
+      {"rocket-fuel", 10}
+    },
+    result= "rocket-part"
+  }
+
+RECIPE {
+    type = "recipe",
+    name = "rocket-silo",
+    enabled = false,
+    ingredients =
+    {
+      {"steel-plate", 500},
+      {"titanium-plate", 500},
+      {"concrete", 1000},
+      {"niobium-pipe", 50},
+      {"advanced-circuit", 100},
+      {"electric-engine-unit", 100}
+    },
+    energy_required = 30,
+    result = "rocket-silo",
+    requester_paste_multiplier = 1
+  }
+
 data.raw.technology['rocket-control-unit'].prerequisites =
 	{
-		'advanced-electronics'
+		'basic-electronics'
 	}
 
 data.raw.technology['rocket-control-unit'].unit.ingredients =
@@ -643,9 +725,9 @@ data.raw.technology['rocket-control-unit'].unit.ingredients =
 
 data.raw.technology['rocket-silo'].prerequisites =
 	{
-	  'advanced-electronics',
 	  "rocket-fuel",
-	  "rocket-control-unit"
+      "rocket-control-unit",
+      "low-density-structure"
 	}
 
 data.raw.technology['rocket-silo'].unit.ingredients =
@@ -655,7 +737,7 @@ data.raw.technology['rocket-silo'].unit.ingredients =
         {"chemical-science-pack", 1},
 	}
 
-data.raw['rocket-silo']['rocket-silo'].rocket_result_inventory_size = 50
+data.raw['rocket-silo']['rocket-silo'].rocket_result_inventory_size = 5
 
 
 RECIPE {
@@ -704,4 +786,13 @@ RECIPE {
     },
     main_product = "tholins",
 }:add_unlock("tholin-mk01")
-]]--
+
+TECHNOLOGY('kerogen'):remove_prereq('tholin-mk03'):add_prereq('tholin-mk01')
+
+TECHNOLOGY('tholin-mk01'):remove_prereq('coal-processing-1'):remove_prereq('crusher'):add_prereq('rocket-silo'):add_pack('logistic-science-pack'):add_pack('chemical-science-pack')
+
+TECHNOLOGY('tholin-mk02'):add_pack('chemical-science-pack'):add_pack('utility-science-pack')
+
+TECHNOLOGY('tholin-mk03'):add_pack('utility-science-pack')
+
+TECHNOLOGY('tholin-mk04'):add_pack('production-science-pack')
