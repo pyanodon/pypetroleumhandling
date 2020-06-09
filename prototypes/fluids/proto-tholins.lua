@@ -1,4 +1,4 @@
-if mods['pyhightech'] then
+--if mods['pyhightech'] then
 
 RECIPE {
     type = "recipe",
@@ -34,4 +34,4 @@ FLUID {
     order = "c"
 }
 
-end
+--end

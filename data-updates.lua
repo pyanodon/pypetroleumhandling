@@ -24,6 +24,8 @@ if mods["pyindustry"] then
     require("prototypes/updates/pyindustry-updates")
 end
 
+require('prototypes/updates/tholin-overhaul')
+
 --ADAPTATIONS
 
 --RECIPES UPDATES

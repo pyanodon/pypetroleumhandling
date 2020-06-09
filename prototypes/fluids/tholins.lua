@@ -1,4 +1,5 @@
 --if not mods['pyhightech'] then
+--[[
 RECIPE {
     type = "recipe",
     name = "tholins",
@@ -16,7 +17,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "a"
 }:add_unlock("tholin-mk01")
-
+]]--
 --end
 
 FLUID {
