@@ -20,9 +20,9 @@ nat_gas4.name = 'natural-gas-4'
 nat_gas4.minable.results[1].name = 'natural-gas'
 nat_gas4.autoplace = {}
 
-log(serpent.block(data.raw.resource['natural-gas-1']))
+--log(serpent.block(data.raw.resource['natural-gas-1']))
 data.raw.resource['natural-gas-1'] = nat_gas1
 data.raw.resource['natural-gas-2'] = nat_gas2
 data.raw.resource['natural-gas-3'] = nat_gas3
 data.raw.resource['natural-gas-4'] = nat_gas4
-log(serpent.block(data.raw.resource['natural-gas-1']))
+--log(serpent.block(data.raw.resource['natural-gas-1']))

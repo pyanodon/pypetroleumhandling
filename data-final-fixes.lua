@@ -6,6 +6,7 @@ GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","
 --hot air blacklist
 -- comment out/delete recipes that are ok for hot air increase
 --anything left active in list will be ingored when adding hot air to advanced furnace recipes
+--[[
 local hablist = {
     'copper-plate',
     'iron-plate',
@@ -81,6 +82,13 @@ local hablist = {
     --"steel-plate2",
     'sncr-alloy',
     'flask-3'
+}
+]]--
+local hablist = {
+    'chromium-rejects',
+    'chromium-01',
+    'copper-plate-4',
+    'empty-comb-2'
 }
 
 GIR.HAB(hablist)
