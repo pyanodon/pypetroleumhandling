@@ -12,7 +12,7 @@ RECIPE {
         {type = "item", name = "chromium", amount = 3},
     },
     results = {
-        {type = "fluid", name = "drilling-fluid-3", amount = 200},
+        {type = "fluid", name = "drilling-fluid-3", amount = 300},
     },
     main_product = "drilling-fluid-3",
     subgroup = "py-petroleum-handling-fluids",

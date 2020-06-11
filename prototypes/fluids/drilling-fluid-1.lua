@@ -10,7 +10,7 @@ RECIPE {
         {type = "item", name = "guar-gum", amount = 1}
     },
     results = {
-        {type = "fluid", name = "drilling-fluid-1", amount = 100},
+        {type = "fluid", name = "drilling-fluid-1", amount = 200},
     },
     main_product = "drilling-fluid-1",
     subgroup = "py-petroleum-handling-fluids",
