@@ -92,8 +92,14 @@ local hablist = {
 }
 
 GIR.HAB(hablist)
+
+local extra_hot_air_recipes =
+    {
+        'niobium-plate',
+        'molybdenum-plate',
+    }
 --add hot air
-GIR.hotairrecipes()
+GIR.hotairrecipes(extra_hot_air_recipes)
 
 if settings.startup['fine-oil'].value then
     --data.raw.resource['natural-gas'].infinite = false

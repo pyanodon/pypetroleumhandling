@@ -54,13 +54,12 @@ RECIPE {
     ingredients =
       {
         {"aluminium-plate", 2},
-        {"fiberglass", 5},
         {"plastic-bar", 10},
         {"aerogel", 10}
       },
     result = "low-density-structure",
     result_count = 5
-  }
+  }:add_ingredient("fiberglass", 5)
 
 RECIPE {
     type = "recipe",
