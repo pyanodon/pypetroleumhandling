@@ -229,9 +229,9 @@ function overrides.HAB(blist)
 	end
 end
 
---add 50 hot-air ingredient, output +2
-function overrides.hotairrecipes()
---gather recipes for the advanced-foundry
+--add 50 hot-air ingredient, output +25%
+function overrides.hotairrecipes(extra_recipes)
+--gather recipes for the casting unit
 local recipes = table.deepcopy(data.raw.recipe)
 local afrecipes = {}
 local afrecipesnames = {}
@@ -251,6 +251,18 @@ local altrec = 0
 		if recipe.category == "casting" then
 			table.insert(afrecipes,recipe)
 			table.insert(afrecipesnames,recipe.name)
+		end
+	end
+	log('hit')
+	if next(extra_recipes) ~= nil then
+		log('hit')
+		for _, recipe in pairs(extra_recipes) do
+			log('hit')
+			if data.raw.recipe[recipe] ~= nil then
+				log('hit')
+				table.insert(afrecipes, table.deepcopy(data.raw.recipe[recipe]))
+				table.insert(afrecipesnames,recipe.name)
+			end
 		end
 	end
 --cycle thru afrecipes to make changes
@@ -421,12 +433,16 @@ local altrec = 0
 			if icon_size == nil then
 				icon_size = data.raw.item[result].icon_size
 			end
+		local category
+			if recipe.category ~= nil then
+				category = recipe.category
+			end 
 		if recipe.results then
 			RECIPE {
 			type = "recipe",
 			name = hname,
 			--category = "hot-air-advanced-foundry",
-			category = 'casting',
+			category = category,
 			enabled = false,
 			energy_required = recipe.energy_required,
 			ingredients = recipe.ingredients,
@@ -463,7 +479,7 @@ local altrec = 0
 				category = "hot-air-advanced-foundry",
 				normal = {
 					--category = "hot-air-advanced-foundry",
-					category = 'casting',
+					category = category,
 					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.normal.ingredients,
@@ -471,7 +487,7 @@ local altrec = 0
 					},
 				expensive = {
 					--category = "hot-air-advanced-foundry",
-					category = 'casting',
+					category = category,
 					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.expensive.ingredients,
@@ -500,7 +516,7 @@ local altrec = 0
 				end
 			end
 		end
-		--log(serpent.block(data.raw.recipe[hname]))
+		log(serpent.block(data.raw.recipe[hname]))
 	end
 end
 --log(serpent.block(afrecipesnames))
