@@ -8,7 +8,7 @@ RECIPE("distilator"):add_ingredient({type = "item", name = "small-parts-01", amo
 RECIPE("gasifier"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("jaw-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01")
-RECIPE("ralesia-plantation"):replace_ingredient("pipe", "small-parts-01")
+RECIPE("ralesia-plantation-mk01"):replace_ingredient("pipe", "small-parts-01")
 RECIPE("rectisol"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("washer"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk01"].crafting_categories,"hot-air-advanced-foundry")
@@ -159,12 +159,12 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "item", name = "coke", amount = 4},
+        {type = "item", name = "coke", amount = 3},
         {type = "fluid", name = "scrude", amount = 100},
         {type = "fluid", name = "water", amount = 500},
     },
     results = {
-        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 500},
+        {type = "fluid", name = "combustion-mixture1", amount = 200, temperature = 600},
         {type = "fluid", name = "steam", amount = 500, temperature = 60}
     },
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/combustion-scrude.png",

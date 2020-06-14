@@ -1,4 +1,34 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.0
+Date: 2020-06-14
+  Changes:
+    - Work in progress in the oil-natural gas system on oil derricks.
+    - Added new tholins techs and research.
+    - Rebalaned tech-tree to rocket and parts.
+    - Hot air complete remake.
+    - Drilling fluid buff.
+    - Added Mo and Nb hot-air recipes.
+---------------------------------------------------------------------------------------------------
+Version: 1.7.9
+Date: 2020-05-30
+  Changes:
+    - Temporarily removing tholins changes while its balance is adjusted. IT WILL BE BACK
+---------------------------------------------------------------------------------------------------
+Version: 1.7.8
+Date: 2020-05-28
+  Changes:
+    - Changed tholins production when pyhightech is active
+---------------------------------------------------------------------------------------------------
+Version: 1.7.7
+Date: 2020-04-23
+  Changes:
+    - Added casting recipes for some basic intermediate items
+---------------------------------------------------------------------------------------------------
+Version: 1.7.6
+Date: 2020-04-13
+  Changes:
+    - fixed issues to renaming ralesia and fawogae in pycoal
+---------------------------------------------------------------------------------------------------
 Version: 1.7.5
 Date: 2020-04-04
   Changes:

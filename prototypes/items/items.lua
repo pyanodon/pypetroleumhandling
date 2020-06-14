@@ -225,3 +225,53 @@ ITEM {
     order = "a",
     stack_size = 500
 }
+
+ITEM {
+    type = "item",
+    name = "empty-proto-tholins-vessel",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/empty-proto-tholins-vessel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "th",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "filled-proto-tholins-vessel",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/filled-proto-tholins-vessel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "th",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "filled-tholins-vessel",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/filled-tholins-vessel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "th",
+    stack_size = 500
+}
+
+ITEM {
+    type = "item",
+    name = "capsule",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/space-pod.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "ti",
+    stack_size = 500,
+    rocket_launch_product =
+    {
+        type = 'item',
+        name = 'filled-tholins-vessel',
+        amount = 500
+    }
+}

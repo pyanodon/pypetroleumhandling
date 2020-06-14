@@ -241,10 +241,10 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 100}, --add vacuum
-        {type = "item", name = "sncr-alloy", amount = 2},
+        {type = "item", name = "sncr-alloy", amount = 1},
     },
     results = {
-        {type = "fluid", name = "hydrogen", amount = 400},
+        {type = "fluid", name = "hydrogen", amount = 800},
     },
     main_product = "hydrogen",
     icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",
@@ -846,3 +846,43 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("coke-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "casting-bolts",
+    category = "casting",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+        {type = "fluid", name = "molten-iron", amount = 25},
+        {type = "item", name = "borax", amount = 3},
+        {type = "item", name = "sand-casting", amount = 1},
+    },
+    results = {
+        {type = "item", name = "bolts", amount = 25}
+    },
+    main_product= "bolts",
+    subgroup = "py-rawores-iron",
+    order = "azc"
+  }:add_unlock("iron-mk02")
+
+RECIPE {
+    type = "recipe",
+    name = "casting-small-parts",
+    category = "casting",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+        {type = "fluid", name = "molten-iron", amount = 50},
+        {type = "fluid", name = "molten-copper", amount = 20},
+        {type = "item", name = "borax", amount = 3},
+        {type = "item", name = "sand-casting", amount = 1},
+        {type = "item", name = "rubber", amount = 1},
+    },
+    results = {
+        {type = "item", name = "small-parts-01", amount = 35}
+    },
+    main_product= "small-parts-01",
+    subgroup = "py-rawores-iron",
+    order = "azd"
+  }:add_unlock("iron-mk03")

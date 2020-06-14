@@ -229,15 +229,16 @@ function overrides.HAB(blist)
 	end
 end
 
---add 50 hot-air ingredient, output +2
-function overrides.hotairrecipes()
---gather recipes for the advanced-foundry
+--add 50 hot-air ingredient, output +25%
+function overrides.hotairrecipes(extra_recipes)
+--gather recipes for the casting unit
 local recipes = table.deepcopy(data.raw.recipe)
 local afrecipes = {}
 local afrecipesnames = {}
 local afrcount = 0
 local altrec = 0
 	for _, recipe in pairs(recipes) do
+		--[[
 		if recipe.category == "advanced-foundry" then
 			table.insert(afrecipes,recipe)
 			table.insert(afrecipesnames,recipe.name)
@@ -246,12 +247,30 @@ local altrec = 0
 			table.insert(afrecipes,recipe)
 			table.insert(afrecipesnames,recipe.name)
 		end
+		]]--
+		if recipe.category == "casting" then
+			table.insert(afrecipes,recipe)
+			table.insert(afrecipesnames,recipe.name)
+		end
+	end
+	--log('hit')
+	if next(extra_recipes) ~= nil then
+		--log('hit')
+		for _, recipe in pairs(extra_recipes) do
+			--log('hit')
+			if data.raw.recipe[recipe] ~= nil then
+				--log('hit')
+				table.insert(afrecipes, table.deepcopy(data.raw.recipe[recipe]))
+				table.insert(afrecipesnames,recipe.name)
+			end
+		end
 	end
 --cycle thru afrecipes to make changes
 	for _,recipe in pairs(afrecipes) do
 		if not hab[recipe.name] then
 		afrcount=afrcount+1
 		--add ingredient
+		local result
 		if recipe.normal == nil and recipe.expensive == nil then
 			if recipe.ingredients[1] ~= nil then
 				if recipe.ingredients[1].name == nil then
@@ -290,20 +309,23 @@ local altrec = 0
 			end
 			if type(recipe.result) == "string" then
 				local res = recipe.result
+				result = res
 				recipe.result=nil
 				recipe.results={{type="item",name=res,amount=3}}
 			elseif recipe.results then
 				if recipe.results[1].name == nil then
 					local res = recipe.results
+					result = res[1][1]
 					recipe.results = {}
 					table.insert(recipe.results,{type = "item", name = res[1][1], amount = (res[1][2] + 2)})
 				elseif recipe.results[1].name then
 					--log(serpent.block(recipe.results))
+					result = recipe.results[1].name
 					if recipe.results[1].amount ~= nil then
-						local resnum = recipe.results[1].amount + 2
+						local resnum = recipe.results[1].amount + math.ceil(recipe.results[1].amount * 0.25)
 						recipe.results[1].amount = resnum
 					elseif recipe.results[1].amount_max ~= nil then
-						local resnum = recipe.results[1].amount_max + 2
+						local resnum = recipe.results[1].amount_max + math.ceil(recipe.results[1].amount_max * 0.25)
 						recipe.results[1].amount_max = resnum
 					end
 				end
@@ -332,14 +354,16 @@ local altrec = 0
 				end
 				if type(recipe.normal.result) == "string" then
 					local res = recipe.normal.result
+					result = res
 					recipe.normal.result = nil
 					local rtab = {type = "item", name = res, amount = 3}
 					recipe.normal.results={}
 					table.insert(recipe.normal.results,rtab)
 				end
 				if recipe.normal.results ~= nil then
+					result = recipe.normal.results[1].name
 					local resamount = recipe.normal.results[1].amount
-					recipe.normal.results[1].amount = resamount + 2
+					recipe.normal.results[1].amount = resamount + math.ceil(resamount * 0.25)
 				end
 			end
 			if recipe.expensive then
@@ -363,6 +387,7 @@ local altrec = 0
 				end
 				if type(recipe.expensive.result) == "string" then
 					local res = recipe.expensive.result
+					result = res
 					recipe.expensive.result = nil
 					local rtab = {type = "item", name = res, amount = 3}
 					recipe.expensive.results={}
@@ -372,7 +397,8 @@ local altrec = 0
 				end
 				if recipe.expensive.results ~= nil then
 					local resamount = recipe.expensive.results[1].amount
-					recipe.expensive.results[1].amount = resamount + 2
+					result = recipe.expensive.results[1].name
+					recipe.expensive.results[1].amount = resamount + math.ceil(resamount * 0.25)
 				end
 			end
 		end
@@ -391,21 +417,46 @@ local altrec = 0
 		end
 		--log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
+		local icon
+		local icon_size
+			if recipe.icon ~= nil then
+				icon = recipe.icon
+				if recipe.icon_size ~= nil and recipe.icon_size == 32 then
+					icon_size = 32
+				else
+					icon_size = 64
+				end
+			end
+			if icon == nil then
+				icon = data.raw.item[result].icon
+			end
+			if icon_size == nil then
+				icon_size = data.raw.item[result].icon_size
+			end
+		local category
+			if recipe.category ~= nil then
+				category = recipe.category
+			end
 		if recipe.results then
 			RECIPE {
 			type = "recipe",
 			name = hname,
-			category = "hot-air-advanced-foundry",
+			--category = "hot-air-advanced-foundry",
+			category = category,
 			enabled = false,
 			energy_required = recipe.energy_required,
 			ingredients = recipe.ingredients,
 			results = recipe.results,
-			icon = recipe.icon,
-			icons = recipe.icons,
-			icon_size = 32,
+			--icon = recipe.icon,
+			icons =
+				{
+					{icon = icon, icon_size = icon_size},
+					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+				},
+			--icon_size = 32,
 			main_product = recipe.main_product or nil,
 			subgroup = recipe.subgroup,
-			order = recipe.order and (recipe.order .. "a") or nil
+			order = recipe.order and (recipe.order .. "-a") or nil
 			}--:add_unlock(unlock)
 			altrec=altrec+1
 			if recipe.enabled == false then
@@ -427,22 +478,28 @@ local altrec = 0
 				name = hname,
 				category = "hot-air-advanced-foundry",
 				normal = {
-					category = "hot-air-advanced-foundry",
+					--category = "hot-air-advanced-foundry",
+					category = category,
 					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.normal.ingredients,
 					results = recipe.normal.results,
 					},
 				expensive = {
-					category = "hot-air-advanced-foundry",
+					--category = "hot-air-advanced-foundry",
+					category = category,
 					enabled = false,
 					energy_required = recipe.expensive.energy_required,
 					ingredients = recipe.expensive.ingredients,
 					results = recipe.expensive.results,
 					},
-				icon = recipe.icon,
-				icons = recipe.icons,
-				icon_size = 32,
+				--icon = recipe.icon,
+				icons =
+				{
+					{icon = icon, icon_size = icon_size},
+					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+				},
+			--icon_size = 32,
 				main_product = recipe.main_product or nil
 				}--:add_unlock(unlock)
 			altrec=altrec+1

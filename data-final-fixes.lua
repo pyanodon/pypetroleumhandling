@@ -1,11 +1,12 @@
 local GIR = require('prototypes/functions/functions')
 
-GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
+GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
 --RECIPES UPDATES
 --hot air blacklist
 -- comment out/delete recipes that are ok for hot air increase
 --anything left active in list will be ingored when adding hot air to advanced furnace recipes
+--[[
 local hablist = {
     'copper-plate',
     'iron-plate',
@@ -82,10 +83,23 @@ local hablist = {
     'sncr-alloy',
     'flask-3'
 }
+]]--
+local hablist = {
+    'chromium-rejects',
+    'chromium-01',
+    'copper-plate-4',
+    'empty-comb-2'
+}
 
 GIR.HAB(hablist)
+
+local extra_hot_air_recipes =
+    {
+        'niobium-plate',
+        'molybdenum-plate',
+    }
 --add hot air
-GIR.hotairrecipes()
+GIR.hotairrecipes(extra_hot_air_recipes)
 
 if settings.startup['fine-oil'].value then
     --data.raw.resource['natural-gas'].infinite = false

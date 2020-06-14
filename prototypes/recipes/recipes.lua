@@ -3,7 +3,7 @@ RECIPE {
     name = "bolts",
     category = "crafting",
     enabled = true,
-    energy_required = 0.5,
+    energy_required = 0.2,
     ingredients = {
         {type = "item", name = "iron-stick", amount = 2},
     },
@@ -22,7 +22,7 @@ RECIPE {
     name = "small-parts-01",
     category = "crafting",
     enabled = true,
-    energy_required = 0.5,
+    energy_required = 0.2,
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
         {type = "item", name = "copper-plate", amount = 1},
@@ -1467,7 +1467,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "item", name = "kerogen", amount = 100},
-        {type = "item", name = "fuelrod-mk01", amount = 3},
+        {type = "item", name = "fuelrod-mk01", amount = 1},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 100},
