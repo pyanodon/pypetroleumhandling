@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.0
+Date: 2020-06-14
+  Changes:
+    - Work in progress in the oil-natural gas system on oil derricks.
+    - Added new tholins techs and research.
+    - Rebalaned tech-tree to rocket and parts.
+    - Hot air complete remake.
+    - Drilling fluid buff.
+    - Added Mo and Nb hot-air recipes.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.9
 Date: 2020-05-30
   Changes:
