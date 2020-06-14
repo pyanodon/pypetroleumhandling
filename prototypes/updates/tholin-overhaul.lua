@@ -1,15 +1,17 @@
 
 --Remove space science from satellite
+--[[
 data.raw.item.satellite.rocket_launch_product =
     {
         type = 'item',
         name = 'filled-tholins-vessel',
         amount = 500
     }
+]]--
 
 RECIPE {
     type = 'recipe',
-    name = 'satellite',
+    name = 'tholin-capsule',
     energy_required = 5,
     enabled = false,
     category = "crafting",
@@ -19,14 +21,15 @@ RECIPE {
       {"solar-panel", 25},
       {"accumulator-mk01", 1},
       {"advanced-circuit", 25},
-	  {"rocket-fuel", 10},
-	  {'filled-proto-tholins-vessel', 500},
+	    {"rocket-fuel", 10},
+	    {'filled-proto-tholins-vessel', 500},
     },
 	results =
 		{
-			{type = 'item', name = "satellite", amount = 3}
+			{type = 'item', name = "capsule", amount = 3}
 		},
-    requester_paste_multiplier = 1
+    requester_paste_multiplier = 1,
+    main_product = 'capsule'
   }:add_unlock('tholin-mk01')
 
 --Rocket Parts
@@ -35,7 +38,7 @@ RECIPE {
     name = "rocket-control-unit",
     energy_required = 15,
     enabled = false,
-    category = "electronic",
+    category = "crafting",
     ingredients =
     {
       {"advanced-circuit", 1},
@@ -43,7 +46,7 @@ RECIPE {
       {"speed-module", 1}
     },
     result= "rocket-control-unit"
-  }
+  }:change_category('electronic')
 
 RECIPE {
     type = "recipe",
@@ -55,11 +58,11 @@ RECIPE {
       {
         {"aluminium-plate", 2},
         {"plastic-bar", 10},
-        {"aerogel", 10}
+        {"copper-plate", 10}
       },
     result = "low-density-structure",
     result_count = 5
-  }:add_ingredient("fiberglass", 5)
+  }:add_ingredient("fiberglass", 5):replace_ingredient('copper-plate','aerogel')
 
 RECIPE {
     type = "recipe",
@@ -109,11 +112,17 @@ RECIPE {
     result = "rocket-silo",
     requester_paste_multiplier = 1
   }
-
-data.raw.technology['rocket-control-unit'].prerequisites =
-	{
-		'basic-electronics'
-	}
+if mods['pyhightech'] then
+  data.raw.technology['rocket-control-unit'].prerequisites =
+    {
+      'basic-electronics'
+    }
+else
+    data.raw.technology['rocket-control-unit'].prerequisites =
+    {
+      'electronics'
+    }
+end
 
 data.raw.technology['rocket-control-unit'].unit.ingredients =
 	{
