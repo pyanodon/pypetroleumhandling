@@ -436,7 +436,7 @@ local altrec = 0
 		local category
 			if recipe.category ~= nil then
 				category = recipe.category
-			end 
+			end
 		if recipe.results then
 			RECIPE {
 			type = "recipe",
