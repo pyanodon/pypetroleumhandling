@@ -26,7 +26,7 @@ RECIPE {
     },
 	results =
 		{
-			{type = 'item', name = "capsule", amount = 3}
+			{type = 'item', name = "capsule", amount = 1}
 		},
     requester_paste_multiplier = 1,
     main_product = 'capsule'
