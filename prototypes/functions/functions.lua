@@ -253,13 +253,13 @@ local altrec = 0
 			table.insert(afrecipesnames,recipe.name)
 		end
 	end
-	log('hit')
+	--log('hit')
 	if next(extra_recipes) ~= nil then
-		log('hit')
+		--log('hit')
 		for _, recipe in pairs(extra_recipes) do
-			log('hit')
+			--log('hit')
 			if data.raw.recipe[recipe] ~= nil then
-				log('hit')
+				--log('hit')
 				table.insert(afrecipes, table.deepcopy(data.raw.recipe[recipe]))
 				table.insert(afrecipesnames,recipe.name)
 			end
@@ -516,7 +516,7 @@ local altrec = 0
 				end
 			end
 		end
-		log(serpent.block(data.raw.recipe[hname]))
+		--log(serpent.block(data.raw.recipe[hname]))
 	end
 end
 --log(serpent.block(afrecipesnames))
