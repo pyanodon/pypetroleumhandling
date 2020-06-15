@@ -211,7 +211,7 @@ end
 ]]--
 
 --(( OTHERS ))--
-GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01"})
+GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
 --((nat-from-oil))--
 --require("prototypes.functions.Natural-gas-from-oil-well")

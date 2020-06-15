@@ -16,57 +16,72 @@ script.on_configuration_changed(function()
 
 end)
 
-script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
-	local E = event.created_entity
+local function oil_gas_select(entity, global_bypass)
+	local E = entity
 	if string.match(E.name, 'oil%-derrick') ~= nil then
-		if global.oil_to_gas == true then
+		if global.oil_to_gas == true or global_bypass == true then
 			local mk = string.match(E.name, '%d+')
 			log(mk)
 			local oil = game.surfaces['nauvis'].find_entity('oil-mk' .. mk, E.position)
+			local gas = game.surfaces['nauvis'].find_entity('natural-gas-' .. string.match(string.match(E.name, '%d+'), '[^0]'), E.position)
 			if oil ~= nil then
 				game.surfaces['nauvis'].create_entity{name = 'natural-gas-' .. string.match(string.match(E.name, '%d+'), '[^0]'), amount = oil.amount, position = oil.position}
 				oil.destroy()
+			elseif gas ~= nil then
+				game.surfaces['nauvis'].create_entity{name = 'oil-mk' .. mk, amount = gas.amount, position = gas.position}
+				gas.destroy()
 			end
 		end
 	end
+end
+
+script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
+	local E = event.created_entity
+	oil_gas_select(E)
 end)
 
-script.on_event("recipe-selector", function()
-log("working")
-log(global.oil_to_gas)
-	--local player = game.players[event.player_index]
-	if global.oil_to_gas == false then
-		log('hit')
-		global.oil_to_gas = true
-	else
-		log('hit')
-		global.oil_to_gas = false
+script.on_event("recipe-selector", function(event)
+--log("working")
+--log(global.oil_to_gas)
+	local player = game.players[event.player_index]
+	local selected = player.selected
+	if selected == nil or string.match(selected.name, 'oil%-derrick') == nil then
+		if global.oil_to_gas == false then
+			--log('hit')
+			global.oil_to_gas = true
+		else
+			--log('hit')
+			global.oil_to_gas = false
+		end
+	elseif selected and string.match(selected.name, 'oil%-derrick') ~= nil then
+		local gas = true
+		oil_gas_select(selected, gas)
 	end
 end)
 
 script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_mined_entity}, function(event)
-	log('hit')
+	--log('hit')
 	if string.match(event.entity.name , "oil%-derrick") then
-		log('hit')
+		--log('hit')
 		local oil = game.surfaces['nauvis'].find_entities( { {event.entity.position.x-1,event.entity.position.y-1} , {event.entity.position.x+1,event.entity.position.y+1} } )
-		log('hit')
-		log(serpent.block(oil))
+		--log('hit')
+		--log(serpent.block(oil))
 			for _, ent in pairs(oil) do
-				log('hit')
+				--log('hit')
 				if ent.name == "natural-gas-1" then
-					log('hit')
+					--log('hit')
 					game.surfaces['nauvis'].create_entity{name = 'oil-mk01', amount = ent.amount, position = ent.position}
 					ent.destroy()
 				elseif ent.name == "natural-gas-2" then
-					log('hit')
+					--log('hit')
 					game.surfaces['nauvis'].create_entity{name = 'oil-mk02', amount = ent.amount, position = ent.position}
 					ent.destroy()
 				elseif ent.name == "natural-gas-3" then
-					log('hit')
+					--log('hit')
 					game.surfaces['nauvis'].create_entity{name = 'oil-mk03', amount = ent.amount, position = ent.position}
 					ent.destroy()
 				elseif ent.name == "natural-gas-4" then
-					log('hit')
+					--log('hit')
 					game.surfaces['nauvis'].create_entity{name = 'oil-mk04', amount = ent.amount, position = ent.position}
 					ent.destroy()
 				end
