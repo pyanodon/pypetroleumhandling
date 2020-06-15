@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.2
+Date: 2020-06-15
+  Changes:
+    - Fixed shift-g not working on single buildings.
+	- Fixed molten iron gear getting replaced by small-parts
+---------------------------------------------------------------------------------------------------
 Version: 1.8.1
 Date: 2020-06-14
   Changes:
