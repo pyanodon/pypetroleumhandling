@@ -849,6 +849,25 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "redhot-coke",
+    category = "bof",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "item", name = "coal", amount = 20},
+        {type = "fluid", name = "steam", amount = 200} --pyfe vaccumm
+    },
+    results = {
+        {type = "item", name = "redhot-coke", amount = 5},
+        {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 1000}
+    },
+    main_product = "redhot-coke",
+    subgroup = "py-rawores-coke",
+}:add_unlock("coke-mk02")
+
+
+RECIPE {
+    type = "recipe",
     name = "casting-bolts",
     category = "casting",
     enabled = false,
