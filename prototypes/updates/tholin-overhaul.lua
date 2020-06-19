@@ -88,8 +88,8 @@ RECIPE {
     category = "rocket-building",
     ingredients =
     {
-      {"rocket-control-unit", 4},
-      {"low-density-structure", 10},
+      {"rocket-control-unit", 1},
+      {"low-density-structure", 4},
       {"rocket-fuel", 10}
     },
     result= "rocket-part"
