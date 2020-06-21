@@ -61,7 +61,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "hot-air-1",
+    name = "warm-air-1",
     category = "rhe",
     --hidden = true,
     enabled = false,
@@ -83,7 +83,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "hot-air-2",
+    name = "warmer-air-2",
     category = "rhe",
     --hidden = true,
     enabled = false,
