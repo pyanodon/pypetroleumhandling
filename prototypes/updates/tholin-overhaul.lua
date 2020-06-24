@@ -17,8 +17,8 @@ RECIPE {
     category = "crafting",
     ingredients =
     {
-      {"low-density-structure", 30},
-      {"solar-panel", 25},
+      {"low-density-structure", 20},
+      {"solar-panel", 5},
       {"accumulator-mk01", 1},
       {"advanced-circuit", 25},
 	    {"rocket-fuel", 10},
