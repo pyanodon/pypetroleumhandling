@@ -145,6 +145,9 @@ require("prototypes.fluids.condensed-distillate")
 require("prototypes.fluids.residual-mixture")
 require("prototypes.fluids.hot-residual-mixture")
 
+--(( TILES ))--
+require("prototypes.tiles.space-plate")
+
 --pyph fluids
 data.raw.fluid["bitumen"].fuel_value = "1MJ"
 data.raw.fluid["scrude"].fuel_value = "1MJ"
