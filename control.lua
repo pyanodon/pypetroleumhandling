@@ -88,3 +88,51 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 			end
 	end
 end)
+
+script.on_event(defines.events.on_rocket_launched, function()
+
+	local map_settings =
+	{
+		autoplace_settings =
+			{
+				["decorative"]={
+				treat_missing_as_default=false,
+				settings = {}
+				},
+				["entity"]={
+				treat_missing_as_default=false,
+				settings = {}
+				},
+				["tile"]={
+				treat_missing_as_default=false,
+				settings = {}
+				},
+			},
+		default_enable_all_autoplace_controls = false,
+		cliff_settings =
+			{
+				
+			}
+	}
+
+	game.create_surface('test', map_settings)
+
+	  local tiles = {}
+
+	  for i = 1, 1024 do
+		local x = -16
+		local y = -16
+		local tile = {name = 'space-plate', position = {x, y}}
+		table.insert(tiles, tile)
+		x = x + 1
+		if x == 17 then
+			y = y + 1
+			x = -16
+		end
+	end
+
+	game.surfaces['test'].set_tiles(tiles)
+
+	game.players[1].teleport({0,0}, 'test')
+
+end)
