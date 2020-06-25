@@ -2,6 +2,7 @@ script.on_init(function()
 
 global.hasbuiltoilderrick = false
 global.oil_to_gas = false
+global.first_chunk = 1
 
 end)
 
@@ -89,7 +90,7 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 	end
 end)
 
-script.on_event(defines.events.on_rocket_launched, function()
+script.on_event(defines.events.on_rocket_launch_ordered, function()
 
 	local map_settings =
 	{
@@ -105,7 +106,9 @@ script.on_event(defines.events.on_rocket_launched, function()
 				},
 				["tile"]={
 				treat_missing_as_default=false,
-				settings = {}
+				settings = {
+					['space-plate'] = {}
+				}
 				},
 			},
 		default_enable_all_autoplace_controls = false,
@@ -116,23 +119,49 @@ script.on_event(defines.events.on_rocket_launched, function()
 	}
 
 	game.create_surface('test', map_settings)
+	game.surfaces['test'].request_to_generate_chunks({0,0},1)
+end)
 
-	  local tiles = {}
-
-	  for i = 1, 1024 do
-		local x = -16
-		local y = -16
+script.on_event(defines.events.on_rocket_launched, function()
+	local tiles = {}
+	local x = -3
+	local y = -3
+	for i = 1,36 do
 		local tile = {name = 'space-plate', position = {x, y}}
 		table.insert(tiles, tile)
 		x = x + 1
-		if x == 17 then
+		if x == 3 then
+			x = -3
 			y = y + 1
-			x = -16
 		end
 	end
-
+	--log(serpent.block(tiles))
 	game.surfaces['test'].set_tiles(tiles)
 
-	game.players[1].teleport({0,0}, 'test')
+	--game.players[1].teleport({0,0}, 'test')
 
+end)
+
+script.on_event(defines.events.on_chunk_generated, function(event)
+	--log('should only see this once per chunk gen call')
+	--log('hit all other chunks')
+	if game.surfaces['test'] ~= nil then
+		local entities = game.surfaces['test'].find_entities(event.area)
+		local old_tiles = game.surfaces['test'].find_tiles_filtered{area = event.area}
+		local tiles = {}
+		for e, ent in pairs(entities) do
+			--log('hit')
+			--log(ent.name)
+			--log(ent.type)
+			if ent.type == 'cliff' then
+				ent.destroy()
+			end
+		end
+		for t, til in pairs(old_tiles) do
+			log(til.position)
+			local tile = {name = 'space', position = til.position}
+			table.insert(tiles, tile)
+		end
+		game.surfaces['test'].set_tiles(tiles)
+	end
 end)

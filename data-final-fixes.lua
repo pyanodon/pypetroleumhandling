@@ -28,7 +28,15 @@ local extra_hot_air_recipes =
         'glass-core',
         'glass',
         'glass-fiber',
-        'lens'
+        'lens',
+
+        --non molten plates
+        'gold-plate',
+        'ndfeb-alloy',
+        're-tin',
+        'crco-alloy',
+        'super-alloy',
+        
     }
 --add hot air
 GIR.hotairrecipes(extra_hot_air_recipes)

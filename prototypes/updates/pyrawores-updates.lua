@@ -859,7 +859,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "redhot-coke", amount = 5},
-        {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 1000}
+        {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 500}
     },
     main_product = "redhot-coke",
     subgroup = "py-rawores-coke",
