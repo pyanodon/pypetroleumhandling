@@ -2,7 +2,8 @@ script.on_init(function()
 
 global.hasbuiltoilderrick = false
 global.oil_to_gas = false
-global.first_chunk = 1
+global.first_chunk = false
+
 
 end)
 
@@ -118,27 +119,32 @@ script.on_event(defines.events.on_rocket_launch_ordered, function()
 			}
 	}
 
-	game.create_surface('test', map_settings)
-	game.surfaces['test'].request_to_generate_chunks({0,0},1)
+	if game.surfaces['test'] == nil then
+		game.create_surface('test', map_settings)
+		game.surfaces['test'].request_to_generate_chunks({0,0},1)
+	end
 end)
 
 script.on_event(defines.events.on_rocket_launched, function()
-	local tiles = {}
-	local x = -3
-	local y = -3
-	for i = 1,36 do
-		local tile = {name = 'space-plate', position = {x, y}}
-		table.insert(tiles, tile)
-		x = x + 1
-		if x == 3 then
-			x = -3
-			y = y + 1
+	if global.first_chunk == false then
+		local tiles = {}
+		local x = -3
+		local y = -3
+		for i = 1,36 do
+			local tile = {name = 'space-plate', position = {x, y}}
+			table.insert(tiles, tile)
+			x = x + 1
+			if x == 3 then
+				x = -3
+				y = y + 1
+			end
 		end
-	end
-	--log(serpent.block(tiles))
-	game.surfaces['test'].set_tiles(tiles)
+		--log(serpent.block(tiles))
+		game.surfaces['test'].set_tiles(tiles)
 
-	--game.players[1].teleport({0,0}, 'test')
+		--game.players[1].teleport({0,0}, 'test')
+		global.first_chunk = true
+	end
 
 end)
 
