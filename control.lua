@@ -142,7 +142,7 @@ script.on_event(defines.events.on_rocket_launched, function()
 		--log(serpent.block(tiles))
 		game.surfaces['test'].set_tiles(tiles)
 
-		--game.players[1].teleport({0,0}, 'test')
+		game.players[1].teleport({0,0}, 'test')
 		global.first_chunk = true
 	end
 
