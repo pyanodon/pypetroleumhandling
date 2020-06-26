@@ -146,7 +146,8 @@ require("prototypes.fluids.residual-mixture")
 require("prototypes.fluids.hot-residual-mixture")
 
 --(( TILES ))--
-require("prototypes.tiles.space-plate")
+--require("prototypes.tiles.space-plate")
+require("prototypes.tiles.space-plate-test")
 require("prototypes.tiles.space")
 
 --pyph fluids

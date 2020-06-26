@@ -221,3 +221,14 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("kerogen")
+
+
+--moving fusion to space
+
+data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','layer-11'}
+
+--data.raw['assembling-machine']['py-heat-exchanger'].collision_mask = {'ground-tile','water-tile','layer-11'}
+
+data.raw['assembling-machine']['fusion-reactor-mk01'].collision_mask = {'ground-tile','water-tile','layer-11'}
+
+data.raw['assembling-machine']['fusion-reactor-mk02'].collision_mask = {'ground-tile','water-tile','layer-11'}
