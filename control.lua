@@ -125,7 +125,7 @@ script.on_event(defines.events.on_rocket_launch_ordered, function()
 	end
 end)
 
-script.on_event(defines.events.on_rocket_launched, function()
+script.on_event(defines.events.on_rocket_launched, function(event)
 	if global.first_chunk == false then
 		local tiles = {}
 		local x = -3
@@ -142,8 +142,16 @@ script.on_event(defines.events.on_rocket_launched, function()
 		--log(serpent.block(tiles))
 		game.surfaces['test'].set_tiles(tiles)
 
-		game.players[1].teleport({0,0}, 'test')
+		--game.players[1].teleport({0,0}, 'test')
 		global.first_chunk = true
+	end
+
+	if event.player_index ~= nil then
+		if game.players[event.player_index].surface.name == 'nauvis' then
+			game.players[event.player_index].teleport({0,0}, 'test')
+		elseif game.players[event.player_index].surface.name == 'test' then
+			game.players[event.player_index].teleport({0,0}, 'nauvis')
+		end
 	end
 
 end)
@@ -170,4 +178,18 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 		end
 		game.surfaces['test'].set_tiles(tiles)
 	end
+end)
+
+script.on_event(defines.events.on_tick, function(event)
+
+	local entity = game.surfaces['nauvis'].find_entities_filtered{name = 'antenna'}
+	local antenna = {}
+	for _,ent in pairs(entity) do
+		if ent.name == 'antenna' then
+			antenna = ent
+		end
+	end
+
+	log(serpent.block(antenna.get_merged_signals()))
+
 end)
