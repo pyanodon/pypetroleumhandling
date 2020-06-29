@@ -232,3 +232,18 @@ data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','l
 data.raw['assembling-machine']['fusion-reactor-mk01'].collision_mask = {'ground-tile','water-tile','layer-11'}
 
 data.raw['assembling-machine']['fusion-reactor-mk02'].collision_mask = {'ground-tile','water-tile','layer-11'}
+
+--moving fusion items to space assembler
+
+RECIPE('blanket'):set_category("space-crafting")
+
+RECIPE('blanket-chassi'):set_category("space-crafting")
+
+RECIPE('divertor'):set_category("space-crafting")
+
+RECIPE('sc-unit'):set_category("space-crafting")
+
+RECIPE('wall-shield'):set_category("space-crafting")
+
+RECIPE('reinforced-wall-shield'):set_category("space-crafting")
+
