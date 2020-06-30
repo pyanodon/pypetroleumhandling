@@ -96,3 +96,64 @@ ENTITY{
     --circuit_connector_sprites = circuit_connector_definitions["lamp"].sprites,
     circuit_wire_max_distance = 10
   }
+
+  ENTITY{
+    type = "constant-combinator",
+    name = "antenna-constant-combinator",
+  }
+
+local ac = table.deepcopy(data.raw['constant-combinator']['constant-combinator'])
+  ac.name = 'antenna-constant-combinator'
+  data.raw['constant-combinator']["antenna-constant-combinator"] = ac
+
+  log(serpent.block(data.raw['constant-combinator']["antenna-constant-combinator"]))
+    --[[
+    icon = "__base__/graphics/icons/constant-combinator.png",
+    icon_size = 64, icon_mipmaps = 4,
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.1, result = "constant-combinator"},
+    max_health = 120,
+    corpse = "constant-combinator-remnants",
+    dying_explosion = "constant-combinator-explosion",
+    collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    --damaged_trigger_effect = hit_effects.entity(),
+
+    item_slot_count = 18,
+
+    --vehicle_impact_sound = sounds.generic_impact,
+    --open_sound = sounds.machine_open,
+    --close_sound = sounds.machine_close,
+
+    activity_led_light =
+    {
+      intensity = 0.8,
+      size = 1,
+      color = {r = 1.0, g = 1.0, b = 1.0}
+    },
+
+    activity_led_light_offsets =
+    {
+      {0.296875, -0.40625},
+      {0.25, -0.03125},
+      {-0.296875, -0.078125},
+      {-0.21875, -0.46875}
+    },
+
+    circuit_wire_connection_point = 
+      {
+        wire =
+          {
+            red = {-0.25, -0.25},
+            green = {0.25, -0.25}
+          },
+        shadow =
+          {
+              red = {-0.25, -2},
+              green = {0.25, -2}
+          },
+      },
+    
+    circuit_wire_max_distance = 9
+  }
+  ]]--

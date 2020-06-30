@@ -4,7 +4,11 @@ global.hasbuiltoilderrick = false
 global.oil_to_gas = false
 global.first_chunk = false
 
-
+global.antenna =
+	{
+		nauvis_antenna = {},
+		space_antenna = {}
+	}
 end)
 
 script.on_configuration_changed(function()
@@ -14,6 +18,14 @@ script.on_configuration_changed(function()
 	end
 	if global.oil_to_gas == nil then
 		global.oil_to_gas = false
+	end
+
+	if global.antenna == nil then
+		global.antenna =
+			{
+				nauvis_antenna = {},
+				space_antenna = {}
+			}
 	end
 
 end)
@@ -39,7 +51,23 @@ end
 
 script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
 	local E = event.created_entity
-	oil_gas_select(E)
+	if string.match(E.name, 'oil%-derrick') ~= nil then
+		oil_gas_select(E)
+	elseif E.name == 'antenna' and E.surface.name == 'nauvis' then
+		local cc = game.surfaces[E.surface.name].create_entity{name = 'antenna-constant-combinator', position = {E.position.x + 0.5, E.position.y}, force = E.force}
+		global.antenna.nauvis_antenna[E.unit_number] =
+			{
+				antenna = E,
+				combinator = cc
+			}
+	elseif E.name == 'antenna' and E.surface.name == 'test' then
+		local cc = game.surfaces[E.surface.name].create_entity{name = 'antenna-constant-combinator', position = {E.position.x + 0.5, E.position.y}, force = E.force}
+		global.antenna.space_antenna[E.unit_number] =
+			{
+				antenna = E,
+				combinator = cc
+			}
+	end
 end)
 
 script.on_event("recipe-selector", function(event)
@@ -182,14 +210,41 @@ end)
 
 script.on_event(defines.events.on_tick, function(event)
 
-	local entity = game.surfaces['nauvis'].find_entities_filtered{name = 'antenna'}
+	local nau_ant = global.antenna.nauvis_antenna
+	local spa_ant = global.antenna.space_antenna
+	local nau_signals = {}
+	local spa_signals = {}
+
+	for a, ant in pairs(nau_ant) do
+		table.insert(nau_signals, ant.antenna.get_merged_signals())
+	end
+	for a, ant in pairs(spa_ant) do
+		table.insert(spa_signals, ant.antenna.get_merged_signals())
+	end
+
+	log(serpent.block(nau_signals))
+
+	for a, ant in pairs(nau_ant) do
+		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
+		if circuit ~= nil then
+			--circuit.set_signal(1, {name = "signal-K", type = "virtual"})
+			ant.combinator.set_signal(1, {name = "signal-K", type = "virtual"})
+		end
+	end
+	for a, ant in pairs(spa_ant) do
+		--table.insert(spa_signals, ant.antenna.get_merged_signals())
+	end
+
+end)
+
+
+--[[
+local entity = game.surfaces['nauvis'].find_entities_filtered{name = 'antenna'}
 	local antenna = {}
 	for _,ent in pairs(entity) do
 		if ent.name == 'antenna' then
 			antenna = ent
+			log(serpent.block(antenna.get_merged_signals()))
 		end
 	end
-
-	log(serpent.block(antenna.get_merged_signals()))
-
-end)
+]]--
