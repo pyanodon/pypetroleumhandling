@@ -209,42 +209,53 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 end)
 
 script.on_event(defines.events.on_tick, function(event)
-
 	local nau_ant = global.antenna.nauvis_antenna
 	local spa_ant = global.antenna.space_antenna
 	local nau_signals = {}
 	local spa_signals = {}
-
 	for a, ant in pairs(nau_ant) do
-		table.insert(nau_signals, ant.antenna.get_merged_signals())
+		if ant.antenna.get_merged_signals() ~= nil then
+			local signal = ant.antenna.get_merged_signals()
+			for s, sing in pairs(signal) do
+				table.insert(nau_signals, sing)
+			end
+		end
 	end
 	for a, ant in pairs(spa_ant) do
-		table.insert(spa_signals, ant.antenna.get_merged_signals())
+		if ant.antenna.get_merged_signals() ~= nil then
+			local signal = ant.antenna.get_merged_signals()
+			for s, sing in pairs(signal) do
+				table.insert(spa_signals, sing)
+			end
+		end
 	end
-
-	log(serpent.block(nau_signals))
-
+	--log(serpent.block(nau_signals))
 	for a, ant in pairs(nau_ant) do
 		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
 		if circuit ~= nil then
-			--circuit.set_signal(1, {name = "signal-K", type = "virtual"})
-			ant.combinator.set_signal(1, {name = "signal-K", type = "virtual"})
+			local index = 1
+			for s, sig in pairs(spa_signals) do	
+				ant.combinator.get_control_behavior().set_signal
+					(
+						index,
+						sig
+					)
+				index = index + 1
+			end
 		end
 	end
 	for a, ant in pairs(spa_ant) do
-		--table.insert(spa_signals, ant.antenna.get_merged_signals())
-	end
-
-end)
-
-
---[[
-local entity = game.surfaces['nauvis'].find_entities_filtered{name = 'antenna'}
-	local antenna = {}
-	for _,ent in pairs(entity) do
-		if ent.name == 'antenna' then
-			antenna = ent
-			log(serpent.block(antenna.get_merged_signals()))
+		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
+		if circuit ~= nil then
+			local index = 1
+			for s, sig in pairs(nau_signals) do	
+				ant.combinator.get_control_behavior().set_signal
+					(
+						index,
+						sig
+					)
+				index = index + 1
+			end
 		end
 	end
-]]--
+end)
