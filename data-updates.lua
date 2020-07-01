@@ -51,6 +51,8 @@ RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')
 
 --Base Updates
 
+data.raw['rocket-silo']['rocket-silo'].rocket_parts_required = 15
+
 local remove_old_oil_stuff =
 	{
 	['pumpjack'] = true,
