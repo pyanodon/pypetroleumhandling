@@ -1,12 +1,3 @@
-local pipes = {
-    north = {
-        filename = "__pycoalprocessinggraphics__/graphics/entity/automated-factory/top-conection.png",
-        priority = "extra-high",
-        width = 244,
-        height = 280
-    }
-}
-
 RECIPE {
     type = "recipe",
     name = "space-factory-mk01",
@@ -27,10 +18,10 @@ RECIPE {
 ITEM {
     type = "item",
     name = "space-factory-mk01",
-    icon = "__pycoalprocessinggraphics__/graphics/icons/automated-factory-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/space-factory-mk01.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-cp-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-mk01",
     order = "c",
     place_result = "space-factory-mk01",
     stack_size = 10
@@ -39,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "space-factory-mk01",
-    icon = "__pycoalprocessinggraphics__/graphics/icons/automated-factory-mk01.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/space-factory-mk01.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "space-factory-mk01"},
@@ -47,8 +38,8 @@ ENTITY {
     max_health = 800,
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
-    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    collision_box = {{-3.7, -3.7}, {3.7, 3.7}},
+    selection_box = {{-4.0, -4.0}, {4.0, 4.0}},
     collision_mask = {'ground-tile','water-tile','layer-11'},
     match_animation_speed_to_activity = false,
     module_specification = {
@@ -56,7 +47,7 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"space-crafting"},
-    crafting_speed = 1.5,
+    crafting_speed = 1.0,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
@@ -67,51 +58,90 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pycoalprocessinggraphics__/graphics/entity/automated-factory/mk01-left.png",
-                width = 128,
-                height = 280,
-                line_length = 16,
-                frame_count = 101,
-                shift = {-1.5, -0.68},
-                animation_speed = 0.5
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/space-factory/left.png",
+                width = 96,
+                height = 256,
+                line_length = 20,
+                frame_count = 100,
+                shift = util.by_pixel(-80, 0),
+                animation_speed = 0.36,
             },
             {
-                filename = "__pycoalprocessinggraphics__/graphics/entity/automated-factory/mk01-right.png",
-                width = 116,
-                height = 280,
-                line_length = 16,
-                frame_count = 101,
-                shift = {2.31, -0.68},
-                animation_speed = 0.5
-            }
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/space-factory/left-mask.png",
+                width = 96,
+                height = 256,
+                line_length = 20,
+                frame_count = 100,
+                shift = util.by_pixel(-80, 0),
+                animation_speed = 0.36,
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/space-factory/mid.png",
+                width = 96,
+                height = 256,
+                line_length = 20,
+                frame_count = 100,
+                shift = util.by_pixel(16, 0),
+                animation_speed = 0.36,
+            },
+            {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/space-factory/mid-mask.png",
+                width = 96,
+                height = 256,
+                line_length = 20,
+                frame_count = 100,
+                shift = util.by_pixel(16, 0),
+                animation_speed = 0.36,
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+            },
+            {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/space-factory/right.png",
+                width = 96,
+                height = 256,
+                line_length = 20,
+                frame_count = 100,
+                shift = util.by_pixel(112, 0),
+                animation_speed = 0.36,
+            },
+            {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/space-factory/right-mask.png",
+                width = 96,
+                height = 256,
+                line_length = 20,
+                frame_count = 100,
+                shift = util.by_pixel(112, 0),
+                animation_speed = 0.36,
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+            },
         }
     },
     fluid_boxes = {
         --1
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", {0.3, 3.06}, {-0.00, -0.93}, {0.55, 0.15}, {-0.5, 0.15}, pipes),
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", {0.3, 3.06}, {-0.00, -0.93}, {0.55, 0.15}, {-0.5, 0.15}),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {0.0, 4.0}}}
+            pipe_connections = {{type = "input", position = {0.5, 4.5}}}
         },
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", {0.3, 3.06}, {-0.00, -0.93}, {0.55, 0.15}, {-0.5, 0.15}, pipes),
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", {0.3, 3.06}, {-0.00, -0.93}, {0.55, 0.15}, {-0.5, 0.15}),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {0.0, -4.0}}}
+            pipe_connections = {{type = "input", position = {0.5, -4.5}}}
         },
         {
             production_type = "output",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", {0.3, 3.06}, {-0.00, -0.93}, {0.55, 0.15}, {-0.5, 0.15}, pipes),
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", {0.3, 3.06}, {-0.00, -0.93}, {0.55, 0.15}, {-0.5, 0.15}),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {2.0, 4.0}}}
+            pipe_connections = {{type = "output", position = {-1.5, 4.5}}}
         },
-        off_when_no_fluid_recipe = true
+        off_when_no_fluid_recipe = false
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
