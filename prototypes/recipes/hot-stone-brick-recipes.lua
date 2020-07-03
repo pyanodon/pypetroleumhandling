@@ -4,7 +4,7 @@
 
 RECIPE {
     type = "recipe",
-    name = "warm-stone-brick",
+    name = "warm-stone-brick-1",
     category = "rhe",
     enabled = false,
     energy_required = 8,
@@ -20,11 +20,11 @@ RECIPE {
     order = "a2",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     icon_size = 32,
-}:add_unlock("coke-mk02")
+}:add_unlock("coke-mk01")
 
 RECIPE {
     type = "recipe",
-    name = "warmer-stone-brick",
+    name = "warmer-stone-brick-1",
     category = "rhe",
     enabled = false,
     energy_required = 5,
@@ -45,7 +45,7 @@ RECIPE {
 --outlet gas 04
 RECIPE {
     type = "recipe",
-    name = "warm-stone-brick",
+    name = "warm-stone-brick-2",
     category = "rhe",
     enabled = false,
     energy_required = 3,
@@ -65,7 +65,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "warmer-stone-brick",
+    name = "warmer-stone-brick-2",
     category = "rhe",
     enabled = false,
     energy_required = 3,
@@ -123,7 +123,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a2"
-}:add_unlock("coke-mk03")
+}:add_unlock("coke-mk01")
 
 RECIPE {
     type = "recipe",
@@ -145,7 +145,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a2"
-}:add_unlock("coke-mk03")
+}:add_unlock("coke-mk02")
 
 RECIPE {
     type = "recipe",

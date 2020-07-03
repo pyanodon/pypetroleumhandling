@@ -40,7 +40,7 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-3.7, -3.7}, {3.7, 3.7}},
     selection_box = {{-4.0, -4.0}, {4.0, 4.0}},
-    collision_mask = {'ground-tile','water-tile','layer-11'},
+    collision_mask = {'ground-tile','water-tile','layer-11', 'player-layer', 'item-layer'},
     match_animation_speed_to_activity = false,
     module_specification = {
         module_slots = 1
