@@ -37,6 +37,9 @@ local extra_hot_air_recipes =
         'crco-alloy',
         'super-alloy',
         
+        --pyal petri dishes
+        'empty-petri-dish'
+
     }
 --add hot air
 GIR.hotairrecipes(extra_hot_air_recipes)
