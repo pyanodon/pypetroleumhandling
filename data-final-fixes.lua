@@ -23,7 +23,6 @@ local extra_hot_air_recipes =
         'flask',
         'flask-2',
         'flask-3',
-        'empty-petri-dish',
         'glass-core',
         'molten-glass',
         'glass-fiber',
