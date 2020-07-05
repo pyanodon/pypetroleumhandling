@@ -500,7 +500,8 @@ local altrec = 0
 					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
 				},
 			--icon_size = 32,
-				main_product = recipe.main_product or nil
+				main_product = recipe.main_product or nil,
+				subgroup = recipe.subgroup
 				}--:add_unlock(unlock)
 			altrec=altrec+1
 			if recipe.normal.enabled == false or recipe.expensive.enabled == false then
