@@ -141,10 +141,7 @@ script.on_event(defines.events.on_rocket_launch_ordered, function()
 				},
 			},
 		default_enable_all_autoplace_controls = false,
-		cliff_settings =
-			{
-				
-			}
+		cliff_settings = {}
 	}
 
 	if game.surfaces['test'] == nil then
@@ -191,7 +188,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 		local entities = game.surfaces['test'].find_entities(event.area)
 		local old_tiles = game.surfaces['test'].find_tiles_filtered{area = event.area}
 		local tiles = {}
-		for e, ent in pairs(entities) do
+		for _, ent in pairs(entities) do
 			--log('hit')
 			--log(ent.name)
 			--log(ent.type)
@@ -199,7 +196,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 				ent.destroy()
 			end
 		end
-		for t, til in pairs(old_tiles) do
+		for _, til in pairs(old_tiles) do
 			log(til.position)
 			local tile = {name = 'space', position = til.position}
 			table.insert(tiles, tile)
@@ -208,33 +205,33 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 	end
 end)
 
-script.on_event(defines.events.on_tick, function(event)
+script.on_event(defines.events.on_tick, function()
 	local nau_ant = global.antenna.nauvis_antenna
 	local spa_ant = global.antenna.space_antenna
 	local nau_signals = {}
 	local spa_signals = {}
-	for a, ant in pairs(nau_ant) do
+	for _, ant in pairs(nau_ant) do
 		if ant.antenna.get_merged_signals() ~= nil then
 			local signal = ant.antenna.get_merged_signals()
-			for s, sing in pairs(signal) do
+			for _, sing in pairs(signal) do
 				table.insert(nau_signals, sing)
 			end
 		end
 	end
-	for a, ant in pairs(spa_ant) do
+	for _, ant in pairs(spa_ant) do
 		if ant.antenna.get_merged_signals() ~= nil then
 			local signal = ant.antenna.get_merged_signals()
-			for s, sing in pairs(signal) do
+			for _, sing in pairs(signal) do
 				table.insert(spa_signals, sing)
 			end
 		end
 	end
 	--log(serpent.block(nau_signals))
-	for a, ant in pairs(nau_ant) do
+	for _, ant in pairs(nau_ant) do
 		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
 		if circuit ~= nil then
 			local index = 1
-			for s, sig in pairs(spa_signals) do	
+			for _, sig in pairs(spa_signals) do
 				ant.combinator.get_control_behavior().set_signal
 					(
 						index,
@@ -244,11 +241,11 @@ script.on_event(defines.events.on_tick, function(event)
 			end
 		end
 	end
-	for a, ant in pairs(spa_ant) do
+	for _, ant in pairs(spa_ant) do
 		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
 		if circuit ~= nil then
 			local index = 1
-			for s, sig in pairs(nau_signals) do	
+			for _, sig in pairs(nau_signals) do
 				ant.combinator.get_control_behavior().set_signal
 					(
 						index,

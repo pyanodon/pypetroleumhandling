@@ -183,16 +183,16 @@ ENTITY {
       }
     },
 
-    transitions = concrete_transitions,
-    transitions_between_transitions = concrete_transitions_between_transitions,
+    --transitions = concrete_transitions,
+    --transitions_between_transitions = concrete_transitions_between_transitions,
 
-    walking_sound = refined_concrete_sounds,
-    build_sound = concrete_tile_build_sounds,
+    --walking_sound = refined_concrete_sounds,
+    --build_sound = concrete_tile_build_sounds,
 
     map_color={r=49, g=48, b=45},
     scorch_mark_color = {r = 0.373, g = 0.307, b = 0.243, a = 1.000},
     pollution_absorption_per_second = 0,
-    vehicle_friction_modifier = concrete_vehicle_speed_modifier,
+    --vehicle_friction_modifier = concrete_vehicle_speed_modifier,
 
     --trigger_effect = tile_trigger_effects.concrete_trigger_effect(),
   }
