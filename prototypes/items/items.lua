@@ -292,12 +292,10 @@ ITEM {
     subgroup = "py-petroleum-handling-items",
     order = "ti",
     stack_size = 1,
-    --[[
     rocket_launch_product =
     {
         type = 'item',
         name = 'filled-tholins-vessel',
         amount = 500
     }
-    ]]--
 }

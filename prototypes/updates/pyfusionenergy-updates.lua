@@ -222,7 +222,7 @@ RECIPE {
     order = "a"
 }:add_unlock("kerogen")
 
-
+--[[
 --moving fusion to space
 
 data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','layer-11'}
@@ -247,3 +247,4 @@ RECIPE('wall-shield'):set_category("space-crafting")
 
 RECIPE('reinforced-wall-shield'):set_category("space-crafting")
 
+]]--
