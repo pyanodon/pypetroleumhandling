@@ -76,6 +76,12 @@ data:extend {
     group = "py-petroleum-handling",
     order = "i-a"
 },
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-hot-air",
+    group = "py-petroleum-handling",
+    order = "j-a"
+},
 ------------ITEMS----------
 {
     type = "item-subgroup",

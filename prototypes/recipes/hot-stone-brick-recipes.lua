@@ -1,7 +1,6 @@
 
 --coke oven gas
 
-
 RECIPE {
     type = "recipe",
     name = "warm-stone-brick-1",
@@ -16,10 +15,11 @@ RECIPE {
         {type = "item", name = "warm-stone-brick", amount = 5},
         {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 100},
     },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
-    icon_size = 32,
+    main_product = "warm-stone-brick",
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "b1",
+    --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
+    --icon_size = 32,
 }:add_unlock("coke-mk01")
 
 RECIPE {
@@ -36,10 +36,11 @@ RECIPE {
         {type = "item", name = "warmer-stone-brick", amount = 5},
         {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 250},
     },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
-    icon_size = 32,
+    main_product = "warmer-stone-brick",
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "b2",
+    --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
+    --icon_size = 32,
 }:add_unlock("coke-mk02")
 
 --outlet gas 04
@@ -57,10 +58,11 @@ RECIPE {
         {type = "item", name = "warm-stone-brick", amount = 20},
         {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 250},
     },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
-    icon_size = 32,
+    main_product = "warm-stone-brick",
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "c1",
+    --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
+    --icon_size = 32,
 }:add_unlock("coke-mk03")
 
 RECIPE {
@@ -77,10 +79,11 @@ RECIPE {
         {type = "item", name = "warmer-stone-brick", amount = 20},
         {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 500},
     },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
-    icon_size = 32,
+    main_product = "warmer-stone-brick",
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "c2",
+    --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
+    --icon_size = 32,
 }:add_unlock("coke-mk03")
 
 RECIPE {
@@ -97,8 +100,8 @@ RECIPE {
         {type = "item", name = "hot-stone-brick", amount = 20},
         {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 750},
     },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2",
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "c3",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     icon_size = 32,
 }:add_unlock("coke-mk03")
@@ -115,13 +118,13 @@ RECIPE {
         {type = "fluid", name = "pressured-air", amount = 150},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 200},
+        {type = "fluid", name = "hot-air", amount = 150},
         {type = "item", name = "stone-brick", amount = 20},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 32,
-    subgroup = "py-petroleum-handling-recipes",
+    subgroup = "py-petroleum-handling-hot-air",
     order = "a2"
 }:add_unlock("coke-mk01")
 
@@ -137,14 +140,14 @@ RECIPE {
         {type = "fluid", name = "pressured-air", amount = 150},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 600},
+        {type = "fluid", name = "hot-air", amount = 300},
         {type = "item", name = "stone-brick", amount = 20},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 32,
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2"
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "a3"
 }:add_unlock("coke-mk02")
 
 RECIPE {
@@ -159,12 +162,12 @@ RECIPE {
         {type = "fluid", name = "pressured-air", amount = 150},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 1000},
+        {type = "fluid", name = "hot-air", amount = 500},
         {type = "item", name = "stone-brick", amount = 20},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 32,
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2"
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "a4"
 }:add_unlock("coke-mk03")
