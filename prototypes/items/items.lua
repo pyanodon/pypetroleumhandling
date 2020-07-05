@@ -218,8 +218,9 @@ ITEM {
 ITEM {
     type = "item",
     name = "warm-stone-brick",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick.png",
-	icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/warm-stone-brick.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
@@ -229,8 +230,9 @@ ITEM {
 ITEM {
     type = "item",
     name = "warmer-stone-brick",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick.png",
-	icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/warmer-stone-brick.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
