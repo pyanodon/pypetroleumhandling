@@ -150,8 +150,8 @@ require("prototypes.fluids.hot-residual-mixture")
 
 --(( TILES ))--
 --require("prototypes.tiles.space-plate")
-require("prototypes.tiles.space-plate-test")
-require("prototypes.tiles.space")
+--require("prototypes.tiles.space-plate-test")
+--require("prototypes.tiles.space")
 
 --pyph fluids
 data.raw.fluid["bitumen"].fuel_value = "1MJ"
