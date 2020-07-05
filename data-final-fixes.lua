@@ -19,27 +19,23 @@ local extra_hot_air_recipes =
     {
         'niobium-plate',
         'molybdenum-plate',
-
         --glass hot air recipes
         'flask',
         'flask-2',
         'flask-3',
         'empty-petri-dish',
         'glass-core',
-        'glass',
+        'molten-glass',
         'glass-fiber',
         'lens',
-
         --non molten plates
         'gold-plate',
         'ndfeb-alloy',
         're-tin',
         'crco-alloy',
         'super-alloy',
-        
         --pyal petri dishes
         'empty-petri-dish'
-
     }
 --add hot air
 GIR.hotairrecipes(extra_hot_air_recipes)

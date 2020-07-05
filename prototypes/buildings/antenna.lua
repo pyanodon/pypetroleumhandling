@@ -80,7 +80,7 @@ ENTITY{
           scale = 0.5,
           shift = util.by_pixel(16, -60),
         },
-    circuit_wire_connection_point = 
+    circuit_wire_connection_point =
       {
         wire =
           {
