@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.3
+Date: 2020-07-05
+  Changes:
+    - Rebalanced hot air to be more involved process related to the modification to hot air bonuses given to recipes.
+    - Added several recipes not found in casting unit to have hot air bonus.  niobium plate, molybdenum plate, flask, empty petri dish, glass core, molten glass, glass fiber, lens, gold plate, NdFeB alloy, Tin-rare-earth alloy, Cobalt-chromium alloy, super alloy.
+---------------------------------------------------------------------------------------------------
 Version: 1.8.2
 Date: 2020-06-15
   Changes:
