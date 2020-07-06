@@ -107,4 +107,4 @@ ac.name = 'antenna-constant-combinator'
 data.raw['constant-combinator']["antenna-constant-combinator"] = ac
 data.raw['constant-combinator']["antenna-constant-combinator"].item_slot_count = 200
 
-log(serpent.block(data.raw['constant-combinator']["antenna-constant-combinator"]))
+--log(serpent.block(data.raw['constant-combinator']["antenna-constant-combinator"]))
