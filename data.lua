@@ -89,8 +89,8 @@ require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
---require("prototypes.buildings.space-factory-mk01")
---require("prototypes.buildings.antenna")
+require("prototypes.buildings.space-factory-mk01")
+require("prototypes.buildings.antenna")
 
 if not mods['omnimatter_fluid'] then
 --oil-boiler
@@ -105,7 +105,6 @@ require("prototypes.recipes.pumpjack-recipes")
 require("prototypes.recipes.tholin-recipes")
 require("prototypes.recipes.coalbed-recipes")
 require("prototypes.recipes.fracking-recipes")
-require("prototypes.recipes.hot-stone-brick-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
@@ -150,8 +149,8 @@ require("prototypes.fluids.hot-residual-mixture")
 
 --(( TILES ))--
 --require("prototypes.tiles.space-plate")
---require("prototypes.tiles.space-plate-test")
---require("prototypes.tiles.space")
+require("prototypes.tiles.space-plate-test")
+require("prototypes.tiles.space")
 
 --pyph fluids
 data.raw.fluid["bitumen"].fuel_value = "1MJ"
