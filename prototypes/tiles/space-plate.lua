@@ -1,4 +1,4 @@
---[[
+
 RECIPE {
     type = "recipe",
     name = "space-plate",
@@ -25,7 +25,6 @@ ITEM {
     stack_size = 500,
     place_as_tile = {result = "space-plate", condition_size = 2, condition = {"water-tile"}}
 }
-]]--
 
 ENTITY {
     type = "tile",

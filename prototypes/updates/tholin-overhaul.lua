@@ -56,13 +56,13 @@ RECIPE {
     enabled = false,
     ingredients =
       {
-        {"aluminium-plate", 2},
+        {"iron-plate", 2},
         {"plastic-bar", 10},
         {"copper-plate", 10}
       },
     result = "low-density-structure",
     result_count = 5
-  }:add_ingredient("fiberglass", 5):replace_ingredient('copper-plate','aerogel')
+  }:add_ingredient("fiberglass", 5):replace_ingredient('copper-plate','aerogel'):replace_ingredient('iron-plate', 'aluminium-plate')
 
 RECIPE {
     type = "recipe",
@@ -72,12 +72,12 @@ RECIPE {
     category = "hor",
     ingredients =
     {
-      {type="fluid", name="oxygen", amount=75},
-      {type="fluid", name="kerosene", amount=50}
+      {type="fluid", name="olefin", amount=75},
+      {type="fluid", name="gasoline", amount=50}
     },
     result = "rocket-fuel",
     result_count = 5
-  }
+  }:replace_ingredient('gasoline','kerosene'):replace_ingredient('olefin','oxygen')
 
 RECIPE {
     type = 'recipe',
@@ -96,22 +96,22 @@ RECIPE {
   }
 
 RECIPE {
-    type = "recipe",
-    name = "rocket-silo",
-    enabled = false,
-    ingredients =
-    {
-      {"steel-plate", 500},
-      {"titanium-plate", 500},
-      {"concrete", 1000},
-      {"niobium-pipe", 50},
-      {"advanced-circuit", 100},
-      {"electric-engine-unit", 100}
-    },
-    energy_required = 30,
-    result = "rocket-silo",
-    requester_paste_multiplier = 1
-  }
+      type = "recipe",
+      name = "rocket-silo",
+      enabled = false,
+      ingredients =
+      {
+        {"steel-plate", 500},
+        --{"titanium-plate", 500},
+        {"concrete", 1000},
+        {"niobium-pipe", 50},
+        {"advanced-circuit", 100},
+        {"electric-engine-unit", 100}
+      },
+      energy_required = 30,
+      result = "rocket-silo",
+      requester_paste_multiplier = 1
+      }:add_ingredient({type = "item", name = "titanium-plate", amount = 500})
 if mods['pyhightech'] then
   data.raw.technology['rocket-control-unit'].prerequisites =
     {
