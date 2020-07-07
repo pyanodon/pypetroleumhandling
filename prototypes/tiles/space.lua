@@ -1,4 +1,4 @@
-
+--[[
 RECIPE {
     type = "recipe",
     name = "space",
@@ -13,7 +13,7 @@ RECIPE {
     },
     requester_paste_multiplier = 4
 }:add_unlock("aluminium-mk02", "coal-processing-2"):replace_ingredient("iron-stick", "solder"):replace_ingredient("copper-plate", "aluminium-plate")
-
+]]--
 ITEM {
     type = "item",
     name = "space",

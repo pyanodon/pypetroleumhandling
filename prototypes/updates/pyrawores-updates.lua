@@ -906,3 +906,75 @@ RECIPE {
     subgroup = "py-rawores-iron",
     order = "azd"
   }:add_unlock("iron-mk03")
+
+--adding coke oven gas to some molten metals in bof and others
+
+-- molten iron
+table.insert(data.raw.recipe['molten-iron-05'].results, {type = "fluid", name = "coke-oven-gas", amount = 15, temperature = 250})
+
+table.insert(data.raw.recipe['molten-iron-06'].results, {type = "fluid", name = "coke-oven-gas", amount = 40, temperature = 350})
+
+table.insert(data.raw.recipe['molten-iron-03'].results, {type = "fluid", name = "coke-oven-gas", amount = 60, temperature = 400})
+
+table.insert(data.raw.recipe['molten-iron-02'].results, {type = "fluid", name = "coke-oven-gas", amount = 80, temperature = 500})
+
+table.insert(data.raw.recipe['molten-iron-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 500})
+
+--molten copper
+
+table.insert(data.raw.recipe['molten-copper-04'].results, {type = "fluid", name = "coke-oven-gas", amount = 20, temperature = 250})
+
+table.insert(data.raw.recipe['molten-copper-03'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
+
+table.insert(data.raw.recipe['molten-copper-02'].results, {type = "fluid", name = "coke-oven-gas", amount = 70, temperature = 250})
+
+table.insert(data.raw.recipe['molten-copper-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 90, temperature = 250})
+
+--nickel
+table.insert(data.raw.recipe['molten-nickel-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+table.insert(data.raw.recipe['molten-nickel-00'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
+
+table.insert(data.raw.recipe['molten-nickel-02'].results, {type = "fluid", name = "coke-oven-gas", amount = 75, temperature = 250})
+
+table.insert(data.raw.recipe['molten-nickel-02-2'].results, {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 250})
+
+table.insert(data.raw.recipe['molten-nickel-03'].results, {type = "fluid", name = "coke-oven-gas", amount = 125, temperature = 250})
+
+table.insert(data.raw.recipe['molten-nickel-04'].results, {type = "fluid", name = "coke-oven-gas", amount = 150, temperature = 250})
+
+table.insert(data.raw.recipe['molten-nickel-05'].results, {type = "fluid", name = "coke-oven-gas", amount = 175, temperature = 250})
+
+--silver
+
+table.insert(data.raw.recipe['molten-silver-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+table.insert(data.raw.recipe['molten-silver-02'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
+
+table.insert(data.raw.recipe['molten-silver-03'].results, {type = "fluid", name = "coke-oven-gas", amount = 75, temperature = 250})
+
+table.insert(data.raw.recipe['molten-silver-04'].results, {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 250})
+
+--steel
+
+table.insert(data.raw.recipe['molten-steel'].results, {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 250})
+
+--solder
+
+table.insert(data.raw.recipe['solder-1'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+table.insert(data.raw.recipe['solder-2'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
+
+table.insert(data.raw.recipe['solder-3'].results, {type = "fluid", name = "coke-oven-gas", amount = 75, temperature = 250})
+
+table.insert(data.raw.recipe['molten-solder-0'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+table.insert(data.raw.recipe['molten-solder-1'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+table.insert(data.raw.recipe['molten-solder-2'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+table.insert(data.raw.recipe['molten-solder-3'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+
+--gold plate
+
+table.insert(data.raw.recipe['gold-plate'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
