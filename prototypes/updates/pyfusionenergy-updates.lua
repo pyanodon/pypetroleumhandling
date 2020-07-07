@@ -223,7 +223,7 @@ RECIPE {
 }:add_unlock("kerogen")
 
 --moving fusion to space
-
+--[[
 data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','layer-11'}
 
 --data.raw['assembling-machine']['py-heat-exchanger'].collision_mask = {'ground-tile','water-tile','layer-11'}
@@ -263,3 +263,4 @@ for e, ent in pairs(data.raw['assembling-machine']) do
         ent.collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", 'layer-12'}
     end
 end
+]]--
