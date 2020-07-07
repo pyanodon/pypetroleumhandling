@@ -906,8 +906,3 @@ RECIPE {
     subgroup = "py-rawores-iron",
     order = "azd"
   }:add_unlock("iron-mk03")
-
-
-  --add a small amount of coke oven gas to all none coke recipes in the bof
-
-  
