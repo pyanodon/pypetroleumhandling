@@ -908,7 +908,7 @@ RECIPE {
   }:add_unlock("iron-mk03")
 
 --adding coke oven gas to some molten metals in bof and others
-
+--[[
 -- molten iron
 table.insert(data.raw.recipe['molten-iron-05'].results, {type = "fluid", name = "coke-oven-gas", amount = 15, temperature = 250})
 
@@ -922,13 +922,13 @@ table.insert(data.raw.recipe['molten-iron-01'].results, {type = "fluid", name = 
 
 --molten copper
 
-table.insert(data.raw.recipe['molten-copper-04'].results, {type = "fluid", name = "coke-oven-gas", amount = 20, temperature = 250})
+table.insert(data.raw.recipe['molten-copper-04'].results, {type = "fluid", name = "coke-oven-gas", amount = 40, temperature = 250})
 
-table.insert(data.raw.recipe['molten-copper-03'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
+table.insert(data.raw.recipe['molten-copper-03'].results, {type = "fluid", name = "coke-oven-gas", amount = 70, temperature = 250})
 
-table.insert(data.raw.recipe['molten-copper-02'].results, {type = "fluid", name = "coke-oven-gas", amount = 70, temperature = 250})
+table.insert(data.raw.recipe['molten-copper-02'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
 
-table.insert(data.raw.recipe['molten-copper-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 90, temperature = 250})
+table.insert(data.raw.recipe['molten-copper-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 60, temperature = 250})
 
 --nickel
 table.insert(data.raw.recipe['molten-nickel-01'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
@@ -969,12 +969,13 @@ table.insert(data.raw.recipe['solder-3'].results, {type = "fluid", name = "coke-
 
 table.insert(data.raw.recipe['molten-solder-0'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
 
-table.insert(data.raw.recipe['molten-solder-1'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+table.insert(data.raw.recipe['molten-solder-1'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
 
-table.insert(data.raw.recipe['molten-solder-2'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+table.insert(data.raw.recipe['molten-solder-2'].results, {type = "fluid", name = "coke-oven-gas", amount = 75, temperature = 250})
 
-table.insert(data.raw.recipe['molten-solder-3'].results, {type = "fluid", name = "coke-oven-gas", amount = 25, temperature = 250})
+table.insert(data.raw.recipe['molten-solder-3'].results, {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 250})
 
 --gold plate
 
 table.insert(data.raw.recipe['gold-plate'].results, {type = "fluid", name = "coke-oven-gas", amount = 50, temperature = 250})
+]]--
