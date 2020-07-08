@@ -182,7 +182,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "coke-oven-gas", amount = 100, maximum_temperature = 100},
-        {type = "fluid", name = "combustion-mixture", amount = 100, maximum_temperature = 750}
+        {type = "fluid", name = "combustion-mixture", amount = 100, minimum_temperature = 500}
     },
     results = {
         {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500},
@@ -202,7 +202,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 250},
-        {type = "fluid", name = "combustion-mixture", amount = 100, maximum_temperature = 990}
+        {type = "fluid", name = "combustion-mixture", amount = 100, minimum_temperature = 750}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750},
@@ -222,7 +222,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 500},
-        {type = "fluid", name = "combustion-mixture", amount = 100, maximum_temperature = 1000}
+        {type = "fluid", name = "combustion-mixture", amount = 100, minimum_temperature = 1000}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000},
