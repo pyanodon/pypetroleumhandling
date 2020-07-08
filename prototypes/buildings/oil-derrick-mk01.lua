@@ -52,7 +52,7 @@ ENTITY {
     },
     output_fluid_box =
     {
-      base_area = 5,
+      base_area = 1,
       base_level = 1,
       --height = 10,
       pipe_covers = DATA.Pipes.covers(false, true, true, true),
@@ -65,7 +65,7 @@ ENTITY {
       }
     },
     energy_usage = "90kW",
-    mining_speed = 1,
+    mining_speed = 0.5,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, -2.65},
     radius_visualisation_picture = {

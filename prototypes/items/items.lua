@@ -252,7 +252,7 @@ ITEM {
 
 ITEM {
     type = "item",
-    name = "empty-proto-tholins-vessel",
+    name = "empty-tholins-vessel",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/empty-proto-tholins-vessel.png",
 	icon_size = 64,
     flags = {},
@@ -260,7 +260,7 @@ ITEM {
     order = "th",
     stack_size = 500
 }
-
+--[[
 ITEM {
     type = "item",
     name = "filled-proto-tholins-vessel",
@@ -271,7 +271,7 @@ ITEM {
     order = "th",
     stack_size = 500
 }
-
+]]--
 ITEM {
     type = "item",
     name = "filled-tholins-vessel",

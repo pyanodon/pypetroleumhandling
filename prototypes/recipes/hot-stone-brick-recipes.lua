@@ -171,3 +171,65 @@ RECIPE {
     subgroup = "py-petroleum-handling-hot-air",
     order = "a4"
 }:add_unlock("coke-mk03")
+
+--reheating hot air gasses with combustion mixture
+
+RECIPE {
+    type = "recipe",
+    name = "reheat-coke-gas",
+    category = "heat-exchanger",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "coke-oven-gas", amount = 100, maximum_temperature = 100},
+        {type = "fluid", name = "combustion-mixture", amount = 100, maximum_temperature = 750}
+    },
+    results = {
+        {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500},
+    },
+    main_product= "coke-oven-gas",
+    --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
+	--icon_size = 32,
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "c1"
+}
+
+RECIPE {
+    type = "recipe",
+    name = "reheat-outlet-gas-1",
+    category = "heat-exchanger",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 250},
+        {type = "fluid", name = "combustion-mixture", amount = 100, maximum_temperature = 990}
+    },
+    results = {
+        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750},
+    },
+    main_product= "coke-oven-gas",
+    --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
+	--icon_size = 32,
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "c2"
+}
+
+RECIPE {
+    type = "recipe",
+    name = "reheat-outlet-gas-2",
+    category = "heat-exchanger",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 500},
+        {type = "fluid", name = "combustion-mixture", amount = 100, maximum_temperature = 1000}
+    },
+    results = {
+        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000},
+    },
+    main_product= "coke-oven-gas",
+    --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
+	--icon_size = 32,
+    subgroup = "py-petroleum-handling-hot-air",
+    order = "c3"
+}
