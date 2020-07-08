@@ -100,6 +100,7 @@ RECIPE {
         {type = "item", name = "hot-stone-brick", amount = 20},
         {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 750},
     },
+    main_product = "hot-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
     order = "c3",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
@@ -182,7 +183,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "coke-oven-gas", amount = 100, maximum_temperature = 100},
-        {type = "fluid", name = "combustion-mixture", amount = 100, minimum_temperature = 500}
+        {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 500}
     },
     results = {
         {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500},
@@ -192,7 +193,7 @@ RECIPE {
 	--icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c1"
-}
+}:add_unlock("coke-mk02")
 
 RECIPE {
     type = "recipe",
@@ -202,17 +203,17 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 250},
-        {type = "fluid", name = "combustion-mixture", amount = 100, minimum_temperature = 750}
+        {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 750}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750},
     },
-    main_product= "coke-oven-gas",
+    main_product= "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
 	--icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c2"
-}
+}:add_unlock("coke-mk03")
 
 RECIPE {
     type = "recipe",
@@ -222,14 +223,14 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 500},
-        {type = "fluid", name = "combustion-mixture", amount = 100, minimum_temperature = 1000}
+        {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 1000}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000},
     },
-    main_product= "coke-oven-gas",
+    main_product= "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
 	--icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c3"
-}
+}:add_unlock("coke-mk03")
