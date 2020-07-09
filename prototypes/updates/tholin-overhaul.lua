@@ -22,7 +22,7 @@ RECIPE {
       {"accumulator-mk01", 1},
       {"advanced-circuit", 25},
 	    {"rocket-fuel", 10},
-	    {'empty-tholins-vessel', 500},
+	    {'filled-proto-tholins-vessel', 500},
     },
 	results =
 		{
@@ -159,7 +159,7 @@ RECIPE {
         {type = "item", name = "low-density-structure", amount = 1},
     },
     results = {
-        {type = "item", name = "empty-tholins-vessel", amount = 5},
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 5},
     },
 
 }:add_unlock("tholin-mk01"):add_ingredient({type = "fluid", name = "vacuum", amount = 70}):add_ingredient({type = "item", name = "glass", amount = 4})
@@ -171,11 +171,11 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "empty-tholins-vessel", amount = 1},
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 1},
         {type = "fluid", name = "tholins", amount = 100},
     },
     results = {
-        {type = "item", name = "filled-tholins-vessel", amount = 1},
+        {type = "item", name = "filled-proto-tholins-vessel", amount = 1},
     },
 
 }:add_unlock("tholin-mk01")
@@ -187,10 +187,10 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "filled-tholins-vessel", amount = 1},
+        {type = "item", name = "filled-proto-tholins-vessel", amount = 1},
     },
     results = {
-        {type = "item", name = "empty-tholins-vessel", amount = 1},
+        {type = "item", name = "empty-proto-tholins-vessel", amount = 1},
         {type = "fluid", name = "tholins", amount = 100},
     },
     main_product = "tholins",
