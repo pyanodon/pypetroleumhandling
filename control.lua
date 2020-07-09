@@ -118,7 +118,7 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 			end
 	end
 end)
-
+--[[
 script.on_event(defines.events.on_rocket_launch_ordered, function()
 
 	local map_settings =
@@ -256,3 +256,4 @@ script.on_event(defines.events.on_tick, function()
 		end
 	end
 end)
+]]--
