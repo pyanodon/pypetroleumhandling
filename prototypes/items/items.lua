@@ -252,7 +252,7 @@ ITEM {
 
 ITEM {
     type = "item",
-    name = "empty-tholins-vessel",
+    name = "empty-proto-tholins-vessel",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/empty-proto-tholins-vessel.png",
 	icon_size = 64,
     flags = {},
