@@ -297,7 +297,7 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "tar", amount = 50},
-        {type = "fluid", name = "hot-air", amount = 100},
+        {type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
         {type = "item", name = "carbon-black", amount = 1},
@@ -317,7 +317,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 50},
-        {type = "fluid", name = "hot-air", amount = 100},
+        {type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
         {type = "item", name = "carbon-black", amount = 2},
