@@ -180,10 +180,10 @@ RECIPE {
     name = "reheat-coke-gas",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 10,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "coke-oven-gas", amount = 100, maximum_temperature = 100},
-        {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 500}
+        {type = "fluid", name = "combustion-mixture1", amount = 50, minimum_temperature = 500}
     },
     results = {
         {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500},
@@ -200,10 +200,10 @@ RECIPE {
     name = "reheat-outlet-gas-1",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 10,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 250},
-        {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 750}
+        {type = "fluid", name = "combustion-mixture1", amount = 75, minimum_temperature = 750}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750},
@@ -220,7 +220,7 @@ RECIPE {
     name = "reheat-outlet-gas-2",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 10,
+    energy_required = 4,
     ingredients = {
         {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 500},
         {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 1000}
