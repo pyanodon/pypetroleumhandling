@@ -89,13 +89,13 @@ Date: ????
 Version: 1.7.2
 Date: 2020-04-01
   Changes:
-      - fuel value adjustements
+    - fuel value adjustements.
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.1
 Date: 2020-03-31
   Changes:
-      - Added levels for glassworks.
-      - Fixed oil burning.
+    - Added levels for glassworks.
+    - Fixed oil burning.
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.0
 Date: 2020-03-26
