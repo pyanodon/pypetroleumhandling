@@ -2,7 +2,7 @@
 Version: 1.8.9
 Date: 2020-07-29
   Changes:
-    - Added coke oven gas to coal to coke in hpf for warm stone bricks.
+    - Added coke oven gas to coal to coke in HPF for warm stone bricks.
     - Fixed error with hot air increase on some glass products.
 ---------------------------------------------------------------------------------------------------
 Version: 1.8.8
@@ -75,7 +75,7 @@ Date: 2020-04-23
 Version: 1.7.6
 Date: 2020-04-13
   Changes:
-    - fixed issues to renaming ralesia and fawogae in pycoal
+    - Fixed issues to renaming ralesia and fawogae in pycoal
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.5
 Date: 2020-04-04
@@ -90,12 +90,12 @@ Date: 2020-04-02
 Version: 1.7.3
 Date: ????
   Changes:
-    - icon fix.
+    - Icon fix.
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2020-04-01
   Changes:
-    - fuel value adjustements.
+    - Fuel value adjustements.
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.1
 Date: 2020-03-31
@@ -124,7 +124,7 @@ Date: 2020-03-14
 Version: 1.6.8
 Date: 2020-03-08
   Changes:
-    - balances on tholins
+    - Balances on tholins
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.7
 Date: 2020-02-19
@@ -173,11 +173,11 @@ Version: 1.5.7
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.6
   Changes:
-    - adjustments for pyro changes
+    - Adjustments for pyro changes
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.5
   Changes:
-    - fixed deadlock in sci 2 due to rubber
+    - Fixed deadlock in sci 2 due to rubber
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.4
   Changes:
@@ -185,7 +185,7 @@ Version: 1.5.4
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.3
   Changes:
-    - pumpjack fix.
+    - Pumpjack fix.
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.2
   Changes:
@@ -210,11 +210,11 @@ Version: 1.4.8
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.7
   Changes:
-    - fixed bug in pumpjacks and biter begone mod
+    - Fixed bug in pumpjacks and biter begone mod
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.6
   Changes:
-    - fixed error with Natural gas to Methane when pyHT isnt active
+    - Fixed error with Natural gas to Methane when pyHT isnt active
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.5
   Changes:
@@ -315,7 +315,7 @@ Version: 1.2.3
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
   Changes:
-    - fixed broken reference to old autoplace file in base game due to 0.17.51 update.
+    - Fixed broken reference to old autoplace file in base game due to 0.17.51 update.
     - Updated resources to use current autoplace system.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
@@ -355,12 +355,12 @@ Version: 1.1.4
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
   Balances:
-    - fixed hot-air in initial recipes.
-    - fixed hot-air bug in nichrome-2.
+    - Fixed hot-air in initial recipes.
+    - Fixed hot-air bug in nichrome-2.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
   Balances:
-    - massive data saving.
+    - Massive data saving.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
   Balances:
@@ -412,7 +412,7 @@ Version: 1.0.3
 Version: 1.0.2
   Balances:
     - Hot air balance
-    - internal stuff
+    - Internal stuff
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
   Balances:
