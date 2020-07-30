@@ -22,6 +22,12 @@ RECIPE {
     --icon_size = 32,
 }:add_unlock("coke-mk01")
 
+data.raw.recipe['coke-coal'].results =
+    {
+        {type = "item", name = "coke", amount = 4},
+        {type = "fluid", name = "coke-oven-gas", amount = 20, temperature = 250}
+    }
+
 RECIPE {
     type = "recipe",
     name = "warmer-stone-brick-1",

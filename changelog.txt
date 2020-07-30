@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.9
+Date: 2020-07-29
+  Changes:
+    - Added coke oven gas to coal to coke in hpf for warm stone bricks.
+    - Fixed error with hot air increase on some glass products.
+---------------------------------------------------------------------------------------------------
 Version: 1.8.8
 Date: 2020-07-17
   Changes:
