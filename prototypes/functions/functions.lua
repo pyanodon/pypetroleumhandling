@@ -307,7 +307,7 @@ local altrec = 0
 					end
 				end
 			end
-			if type(recipe.result) == "string" then
+			if type(recipe.result) == "string" and (recipe.count == nil or recipe.count == 1) then
 				local res = recipe.result
 				result = res
 				recipe.result=nil
@@ -317,7 +317,7 @@ local altrec = 0
 					local res = recipe.results
 					result = res[1][1]
 					recipe.results = {}
-					table.insert(recipe.results,{type = "item", name = res[1][1], amount = math.ceil(res[1][2] * 0.25)})
+					table.insert(recipe.results,{type = "item", name = res[1][1], amount = res[1][2] + math.ceil(res[1][2] * 0.25)})
 				elseif recipe.results[1].name then
 					--log(serpent.block(recipe.results))
 					result = recipe.results[1].name
