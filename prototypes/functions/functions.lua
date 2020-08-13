@@ -418,20 +418,38 @@ local altrec = 0
 		--log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
 		local icon
+		local icons
 		local icon_size
-			if recipe.icon ~= nil then
+			--icon size finder
+			if recipe.icon_size ~=nil then
+				icon_size = icon_size
+			else --set default to 32
+				icon_size = 32
+			end --may change later if found internal to icons
+			--icon finder
+			if recipe.icon ~= nil then --found an icon
 				icon = recipe.icon
-				if recipe.icon_size ~= nil and recipe.icon_size == 32 then
-					icon_size = 32
-				else
-					icon_size = 64
+			end
+			if icon == nil then --(i.e. not found above)
+				--find it from result icon
+				icon = data.raw.item[result].icon
+				--confirm icon_size
+				if data.raw.item[result] and data.raw.item[result].icon_size ~= nil then
+					icon_size = data.raw.item[result].icon_size
 				end
 			end
-			if icon == nil then
-				icon = data.raw.item[result].icon
-			end
-			if icon_size == nil then
-				icon_size = data.raw.item[result].icon_size
+			if recipe.icons then --if its already an icons
+				icons = table.insert(recipe.icons,{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}})
+				--double check icon_size is internal
+				if recipe.icons and recipe.icons[1].icon_size == nil then
+					recipe.icons[1].icon_size = icon_size
+				end
+			else
+				icons =
+				{
+					{icon = icon, icon_size = icon_size},
+					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+				}
 			end
 		local category
 			if recipe.category ~= nil then
@@ -447,13 +465,8 @@ local altrec = 0
 			energy_required = recipe.energy_required,
 			ingredients = recipe.ingredients,
 			results = recipe.results,
-			--icon = recipe.icon,
-			icons =
-				{
-					{icon = icon, icon_size = icon_size},
-					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-				},
-			--icon_size = 32,
+			icons = icons,
+			icon_size = 32, --temp fix for any icon not working (duralumin-2 as an example)
 			main_product = recipe.main_product or nil,
 			subgroup = recipe.subgroup,
 			order = recipe.order and (recipe.order .. "-a") or nil
@@ -493,13 +506,8 @@ local altrec = 0
 					ingredients = recipe.expensive.ingredients,
 					results = recipe.expensive.results,
 					},
-				--icon = recipe.icon,
-				icons =
-				{
-					{icon = icon, icon_size = icon_size},
-					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-				},
-			--icon_size = 32,
+				icons = icons,
+				icon_size = 32, --temp fix for any icon not working (duralumin-2 as an example)
 				main_product = recipe.main_product or nil,
 				subgroup = recipe.subgroup
 				}--:add_unlock(unlock)
