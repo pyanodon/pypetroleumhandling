@@ -415,7 +415,7 @@ local altrec = 0
 				end
 			end
 		end
-		log(serpent.block(recipe))
+		--log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
 		local icon
 		local icons = {}
@@ -439,7 +439,7 @@ local altrec = 0
 				end
 			end
       if recipe.icons then --if its already an icons
-        log(serpent.block(recipe.icons))
+        --log(serpent.block(recipe.icons))
         icons = recipe.icons
         icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
 			else
