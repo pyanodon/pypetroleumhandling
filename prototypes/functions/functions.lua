@@ -415,10 +415,10 @@ local altrec = 0
 				end
 			end
 		end
-		--log(serpent.block(recipe))
+		log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
 		local icon
-		local icons
+		local icons = {}
 		local icon_size
 			--icon size finder
 			if recipe.icon_size ~=nil then
@@ -438,19 +438,23 @@ local altrec = 0
 					icon_size = data.raw.item[result].icon_size
 				end
 			end
-			if recipe.icons then --if its already an icons
-				icons = table.insert(recipe.icons,{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}})
-				--double check icon_size is internal
-				if recipe.icons and recipe.icons[1].icon_size == nil then
-					recipe.icons[1].icon_size = icon_size
-				end
+      if recipe.icons then --if its already an icons
+        log(serpent.block(recipe.icons))
+        icons = recipe.icons
+        icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
 			else
 				icons =
 				{
 					{icon = icon, icon_size = icon_size},
 					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
 				}
-			end
+      end
+      --ensure icon sizes are installed in each icon level (would be easier to add it to the whole thing, but meh)
+      for _,i in pairs(icons) do
+        if not i.icon_size then
+          i.icon_size =icon_size or 32
+        end
+      end
 		local category
 			if recipe.category ~= nil then
 				category = recipe.category
@@ -466,7 +470,7 @@ local altrec = 0
 			ingredients = recipe.ingredients,
 			results = recipe.results,
 			icons = icons,
-			icon_size = 32, --temp fix for any icon not working (duralumin-2 as an example)
+			--icon_size = 32,
 			main_product = recipe.main_product or nil,
 			subgroup = recipe.subgroup,
 			order = recipe.order and (recipe.order .. "-a") or nil
@@ -507,7 +511,7 @@ local altrec = 0
 					results = recipe.expensive.results,
 					},
 				icons = icons,
-				icon_size = 32, --temp fix for any icon not working (duralumin-2 as an example)
+				--icon_size = 32,
 				main_product = recipe.main_product or nil,
 				subgroup = recipe.subgroup
 				}--:add_unlock(unlock)
