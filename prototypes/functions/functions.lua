@@ -439,20 +439,29 @@ local altrec = 0
 				end
 			end
       if recipe.icons then --if its already an icons
-        --log(serpent.block(recipe.icons))
         icons = recipe.icons
         icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-			else
-				icons =
-				{
-					{icon = icon, icon_size = icon_size},
-					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-				}
+      elseif data.raw.item[result] and data.raw.item[result].icons then
+        icons = data.raw.item[result].icons
+        icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+      else --no icons table, use icon found above  
+        if icon == nil then
+          icon = '__base__/graphics/icons/blueprint.png'
+        end --fallback
+          icons =
+          {
+            {icon = icon, icon_size = icon_size},
+            {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+          }
       end
       --ensure icon sizes are installed in each icon level (would be easier to add it to the whole thing, but meh)
       for _,i in pairs(icons) do
         if not i.icon_size then
-          i.icon_size =icon_size or 32
+          if i==1 then --allow first one to inherit, set all others to 32
+            i.icon_size = icon_size or 32
+          else
+            i.icon_size = 32
+          end
         end
       end
 		local category
