@@ -148,6 +148,8 @@ data.raw.technology['rocket-silo'].unit.ingredients =
 
 data.raw['rocket-silo']['rocket-silo'].rocket_result_inventory_size = 5
 
+data.raw['rocket-silo-rocket']['rocket-silo-rocket'].inventory_size = 5
+
 
 RECIPE {
     type = "recipe",
