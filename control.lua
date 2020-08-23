@@ -9,6 +9,8 @@ global.antenna =
 		nauvis_antenna = {},
 		space_antenna = {}
 	}
+
+global.rockets = {}
 end)
 
 script.on_configuration_changed(function()
@@ -26,6 +28,10 @@ script.on_configuration_changed(function()
 				nauvis_antenna = {},
 				space_antenna = {}
 			}
+	end
+
+	if global.rockets == nil then
+		global.rockets = {}
 	end
 
 end)
@@ -118,7 +124,7 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 			end
 	end
 end)
---[[
+
 script.on_event(defines.events.on_rocket_launch_ordered, function()
 
 	local map_settings =
@@ -151,31 +157,57 @@ script.on_event(defines.events.on_rocket_launch_ordered, function()
 end)
 
 script.on_event(defines.events.on_rocket_launched, function(event)
-	if global.first_chunk == false then
-		local tiles = {}
-		local x = -3
-		local y = -3
-		for i = 1,36 do
-			local tile = {name = 'space-plate', position = {x, y}}
-			table.insert(tiles, tile)
-			x = x + 1
-			if x == 3 then
-				x = -3
-				y = y + 1
+	if event.rocket_silo.name ~= "mega-farm" then
+		if global.first_chunk == false then
+			local tiles = {}
+			local x = -3
+			local y = -3
+			for i = 1,36 do
+				local tile = {name = 'space-plate', position = {x, y}}
+				table.insert(tiles, tile)
+				x = x + 1
+				if x == 3 then
+					x = -3
+					y = y + 1
+				end
+			end
+			--log(serpent.block(tiles))
+			game.surfaces['test'].set_tiles(tiles)
+
+			--game.players[1].teleport({0,0}, 'test')
+			global.first_chunk = true
+		end
+
+		if event.player_index ~= nil then
+			if game.players[event.player_index].surface.name == 'nauvis' then
+				game.players[event.player_index].teleport({0,0}, 'test')
+			elseif game.players[event.player_index].surface.name == 'test' then
+				game.players[event.player_index].teleport({0,0}, 'nauvis')
 			end
 		end
-		--log(serpent.block(tiles))
-		game.surfaces['test'].set_tiles(tiles)
 
-		--game.players[1].teleport({0,0}, 'test')
-		global.first_chunk = true
-	end
+		--log(serpent.block(game.entity_prototypes['space-pod']))
 
-	if event.player_index ~= nil then
-		if game.players[event.player_index].surface.name == 'nauvis' then
-			game.players[event.player_index].teleport({0,0}, 'test')
-		elseif game.players[event.player_index].surface.name == 'test' then
-			game.players[event.player_index].teleport({0,0}, 'nauvis')
+		local rocket_inv = event.rocket.get_inventory(defines.inventory.rocket).get_contents()
+
+		local items = {}
+
+		if next(rocket_inv) ~= nil then
+			log(serpent.block(rocket_inv))
+			local rocket = rocket_inv
+			
+			--table.insert(global.rockets, rocket)
+			--log(serpent.block(global.rocket))
+			if event.rocket.surface.name == 'nauvis' then
+				local pod = game.surfaces['test'].create_entity{
+					name = 'space-pod',
+					position = {0,-4},
+					force = event.rocket.force
+				}
+				for i, item in pairs(rocket_inv) do
+					pod.get_inventory(defines.inventory.chest).insert({name = i, count = item})
+				end
+			end
 		end
 	end
 
@@ -197,7 +229,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 			end
 		end
 		for _, til in pairs(old_tiles) do
-			log(til.position)
+			--log(til.position)
 			local tile = {name = 'space', position = til.position}
 			table.insert(tiles, tile)
 		end
@@ -256,4 +288,4 @@ script.on_event(defines.events.on_tick, function()
 		end
 	end
 end)
-]]--
+

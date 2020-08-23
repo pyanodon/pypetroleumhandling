@@ -89,8 +89,9 @@ require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
---require("prototypes.buildings.space-factory-mk01")
---require("prototypes.buildings.antenna")
+require("prototypes.buildings.space-factory-mk01")
+require("prototypes.buildings.antenna")
+require("prototypes.buildings.pod")
 
 if not mods['omnimatter_fluid'] then
 --oil-boiler
