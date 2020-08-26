@@ -97,7 +97,7 @@ ENTITY{
     circuit_wire_max_distance = 10
   }
 
-  ENTITY{
+ENTITY{
     type = "constant-combinator",
     name = "antenna-constant-combinator",
   }
@@ -108,3 +108,13 @@ data.raw['constant-combinator']["antenna-constant-combinator"] = ac
 data.raw['constant-combinator']["antenna-constant-combinator"].item_slot_count = 200
 
 --log(serpent.block(data.raw['constant-combinator']["antenna-constant-combinator"]))
+
+ENTITY{
+  type = "constant-combinator",
+  name = "rocket-silo-constant-combinator",
+}
+
+local rsc = table.deepcopy(data.raw['constant-combinator']['constant-combinator'])
+rsc.name = "rocket-silo-constant-combinator"
+data.raw['constant-combinator']["rocket-silo-constant-combinator"] = rsc
+data.raw['constant-combinator']["rocket-silo-constant-combinator"].item_slot_count = 10
