@@ -418,21 +418,52 @@ local altrec = 0
 		--log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
 		local icon
+		local icons = {}
 		local icon_size
-			if recipe.icon ~= nil then
+			--icon size finder
+			if recipe.icon_size ~=nil then
+				icon_size = icon_size
+			else --set default to 32
+				icon_size = 32
+			end --may change later if found internal to icons
+			--icon finder
+			if recipe.icon ~= nil then --found an icon
 				icon = recipe.icon
-				if recipe.icon_size ~= nil and recipe.icon_size == 32 then
-					icon_size = 32
-				else
-					icon_size = 64
+			end
+			if icon == nil then --(i.e. not found above)
+				--find it from result icon
+				icon = data.raw.item[result].icon
+				--confirm icon_size
+				if data.raw.item[result] and data.raw.item[result].icon_size ~= nil then
+					icon_size = data.raw.item[result].icon_size
 				end
 			end
-			if icon == nil then
-				icon = data.raw.item[result].icon
-			end
-			if icon_size == nil then
-				icon_size = data.raw.item[result].icon_size
-			end
+      if recipe.icons then --if its already an icons
+        icons = recipe.icons
+        icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+      elseif data.raw.item[result] and data.raw.item[result].icons then
+        icons = data.raw.item[result].icons
+        icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+      else --no icons table, use icon found above  
+        if icon == nil then
+          icon = '__base__/graphics/icons/blueprint.png'
+        end --fallback
+          icons =
+          {
+            {icon = icon, icon_size = icon_size},
+            {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+          }
+      end
+      --ensure icon sizes are installed in each icon level (would be easier to add it to the whole thing, but meh)
+      for _,i in pairs(icons) do
+        if not i.icon_size then
+          if i==1 then --allow first one to inherit, set all others to 32
+            i.icon_size = icon_size or 32
+          else
+            i.icon_size = 32
+          end
+        end
+      end
 		local category
 			if recipe.category ~= nil then
 				category = recipe.category
@@ -447,12 +478,7 @@ local altrec = 0
 			energy_required = recipe.energy_required,
 			ingredients = recipe.ingredients,
 			results = recipe.results,
-			--icon = recipe.icon,
-			icons =
-				{
-					{icon = icon, icon_size = icon_size},
-					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-				},
+			icons = icons,
 			--icon_size = 32,
 			main_product = recipe.main_product or nil,
 			subgroup = recipe.subgroup,
@@ -493,13 +519,8 @@ local altrec = 0
 					ingredients = recipe.expensive.ingredients,
 					results = recipe.expensive.results,
 					},
-				--icon = recipe.icon,
-				icons =
-				{
-					{icon = icon, icon_size = icon_size},
-					{icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-				},
-			--icon_size = 32,
+				icons = icons,
+				--icon_size = 32,
 				main_product = recipe.main_product or nil,
 				subgroup = recipe.subgroup
 				}--:add_unlock(unlock)
