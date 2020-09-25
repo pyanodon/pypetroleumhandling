@@ -110,7 +110,7 @@ RECIPE {
         {type = "fluid", name = "hot-air", amount = 500},
     },
     results = {
-        {type = "fluid", name = "acidgas", amount = 300},
+        {type = "fluid", name = "acidgas", amount = 150},
         {type = "fluid", name = "flue-gas", amount = 900},
     },
     main_product = "acidgas",

@@ -62,7 +62,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "acidgas", amount = 30},
+        {type = "fluid", name = "acidgas", amount = 40},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/acidgas.png",
     icon_size = 32,
