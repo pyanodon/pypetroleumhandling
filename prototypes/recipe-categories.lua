@@ -28,6 +28,10 @@ data:extend {
         name = "oil-mk04"
     },
     {
+        type = "resource-category",
+        name = "bitumen-seep"
+    },
+    {
         type = "recipe-category",
         name = "hor"
     },

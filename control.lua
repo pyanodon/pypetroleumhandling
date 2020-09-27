@@ -3,7 +3,7 @@ script.on_init(function()
 global.hasbuiltoilderrick = false
 global.oil_to_gas = false
 global.first_chunk = false
-
+--[[
 global.antenna =
 	{
 		nauvis_antenna = {},
@@ -11,6 +11,8 @@ global.antenna =
 	}
 
 global.rockets = {}
+global.rocket_silo_con_combinator = {}
+]]--
 end)
 
 script.on_configuration_changed(function()
@@ -22,6 +24,7 @@ script.on_configuration_changed(function()
 		global.oil_to_gas = false
 	end
 
+--[[
 	if global.antenna == nil then
 		global.antenna =
 			{
@@ -33,6 +36,7 @@ script.on_configuration_changed(function()
 	if global.rockets == nil then
 		global.rockets = {}
 	end
+]]--
 
 end)
 
@@ -59,6 +63,7 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
 	local E = event.created_entity
 	if string.match(E.name, 'oil%-derrick') ~= nil then
 		oil_gas_select(E)
+	--[[
 	elseif E.name == 'antenna' and E.surface.name == 'nauvis' then
 		local cc = game.surfaces[E.surface.name].create_entity{name = 'antenna-constant-combinator', position = {E.position.x + 0.5, E.position.y}, force = E.force}
 		global.antenna.nauvis_antenna[E.unit_number] =
@@ -73,6 +78,14 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
 				antenna = E,
 				combinator = cc
 			}
+	elseif E.name == 'rocket-silo' then
+		local rscc = game.surfaces[E.surface.name].create_entity{name = 'rocket-silo-constant-combinator', position = {E.position.x + 3, E.position.y + 3}, force = E.force}
+		global.rocket_silo_con_combinator[rscc.unit_number] =
+			{
+				con_com = rscc,
+				silo = E
+			}
+	]]--
 	end
 end)
 
@@ -125,6 +138,7 @@ script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_
 	end
 end)
 
+--[[
 script.on_event(defines.events.on_rocket_launch_ordered, function()
 
 	local map_settings =
@@ -199,13 +213,21 @@ script.on_event(defines.events.on_rocket_launched, function(event)
 			--table.insert(global.rockets, rocket)
 			--log(serpent.block(global.rocket))
 			if event.rocket.surface.name == 'nauvis' then
-				local pod = game.surfaces['test'].create_entity{
-					name = 'space-pod',
+				local pad = game.surfaces['test'].create_entity{
+					name = 'landing-pad',
 					position = {0,-4},
 					force = event.rocket.force
 				}
+				local pod_check = game.surfaces['test'].find_entities_filtered{position = {0,-4}, radius = 4, name = 'space-pod'}
+				if next(pod_check) == nil then
+					local pod = game.surfaces['test'].create_entity{
+						name = 'space-pod',
+						position = {0,-4},
+						force = event.rocket.force
+					}
+				end
 				for i, item in pairs(rocket_inv) do
-					pod.get_inventory(defines.inventory.chest).insert({name = i, count = item})
+					pad.get_inventory(defines.inventory.chest).insert({name = i, count = item})
 				end
 			end
 		end
@@ -278,6 +300,7 @@ script.on_event(defines.events.on_tick, function()
 		if circuit ~= nil then
 			local index = 1
 			for _, sig in pairs(nau_signals) do
+				log(serpent.block(sig))
 				ant.combinator.get_control_behavior().set_signal
 					(
 						index,
@@ -287,5 +310,30 @@ script.on_event(defines.events.on_tick, function()
 			end
 		end
 	end
+	for _, rscc in pairs(global.rocket_silo_con_combinator) do
+		local circuit = rscc.con_com.get_circuit_network(defines.wire_type.red)
+		if circuit ~= nil and rscc.silo.get_inventory(defines.inventory.rocket_silo_rocket) ~= nil then
+			local index = 1
+			local rocket_inv = rscc.silo.get_inventory(defines.inventory.rocket_silo_rocket).get_contents()
+			for i,item in pairs(rocket_inv) do
+				log(serpent.block(i))
+				log(serpent.block(item))
+				log(index)
+				rscc.con_com.get_control_behavior().set_signal
+					(
+						index,
+						{
+							signal =
+							{
+								type = 'item',
+								name = i
+							},
+							count = item
+						}
+					)
+				index = index + 1
+			end
+		end
+	end
 end)
-
+]]--

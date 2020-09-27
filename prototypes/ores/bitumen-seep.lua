@@ -1,21 +1,20 @@
 local resource_autoplace = require("resource-autoplace");
---[[
+
 DATA {
     type = "autoplace-control",
     category = "resource",
-    name = "oil-mk01",
+    name = "bitumen-seep",
     richness = true,
     order = "c"
 }
-]]--
 
 ENTITY {
     type = "resource",
-    name = "oil-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-mk01.png",
-    icon_size = 32,
+    name = "bitumen-seep",
+    icon = "__base__/graphics/icons/crude-oil-resource.png",
+    icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral"},
-    category = "oil-mk01",
+    category = "bitumen-seep",
     order="a-b-a",
     infinite = false,
     highlight = true,
@@ -31,19 +30,18 @@ ENTITY {
         {
           type = "fluid",
           name = "crude-oil",
-          amount_min = 10,
-          amount_max = 10,
+          amount_min = 1,
+          amount_max = 1,
           probability = 1
         }
       }
     },
     collision_box = {{ -2.4, -2.4}, {2.4, 2.4}},
     selection_box = {{ -2.4, -2.4}, {2.4, 2.4}},
-    --[[
     autoplace = resource_autoplace.resource_autoplace_settings{
-      name = "oil-mk01",
+      name = "bitumen-seep",
       order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
-      base_density = 8.2,
+      base_density = 3,
       base_spots_per_km2 = 1.8,
       random_probability = 1/48,
       random_spot_size_minimum = 1,
@@ -52,20 +50,31 @@ ENTITY {
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1
     },
-    ]]--
     stage_counts = {0},
     stages =
     {
       sheet =
       {
-        filename = "__pypetroleumhandlinggraphics__/graphics/entity/ores/oil-mk01/patch.png",
+        filename = "__base__/graphics/entity/crude-oil/crude-oil.png",
         priority = "extra-high",
-        width = 160,
-        height = 160,
-        frame_count = 1,
-        variation_count = 1
+        width = 74,
+        height = 60,
+        frame_count = 4,
+        variation_count = 1,
+        shift = util.by_pixel(0, -2),
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/crude-oil/hr-crude-oil.png",
+          priority = "extra-high",
+          width = 148,
+          height = 120,
+          frame_count = 4,
+          variation_count = 1,
+          shift = util.by_pixel(0, -2),
+          scale = 0.5,
+        }
       }
     },
-    map_color = {r=0.1, g=0.1, b=0.1},
+    map_color = {0.78, 0.2, 0.77},
     map_grid = false
   }

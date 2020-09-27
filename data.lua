@@ -17,6 +17,7 @@ require("prototypes.ores.oil-mk04")
 require("prototypes.ores.sulfur-patch")
 --))
 require("prototypes.ores.natural-gas")
+require("prototypes.ores.bitumen-seep")
 
 --(( Technology ))--
 require("prototypes.technologies.technologies")
@@ -57,6 +58,10 @@ require("prototypes.buildings.oil-derrick-mk01")
 require("prototypes.buildings.oil-derrick-mk02")
 require("prototypes.buildings.oil-derrick-mk03")
 require("prototypes.buildings.oil-derrick-mk04")
+require("prototypes.buildings.bitumen-seep-mk01")
+--require("prototypes.buildings.bitumen-seep-mk02")
+--require("prototypes.buildings.bitumen-seep-mk03")
+--require("prototypes.buildings.bitumen-seep-mk04")
 require("prototypes.buildings.tholin-atm-mk01")
 require("prototypes.buildings.tholin-atm-mk02")
 require("prototypes.buildings.tholin-atm-mk03")
@@ -89,9 +94,14 @@ require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
+
+--((space buildings))--
+--[[
 require("prototypes.buildings.space-factory-mk01")
 require("prototypes.buildings.antenna")
 require("prototypes.buildings.pod")
+require("prototypes.buildings.landing-pad")
+]]--
 
 if not mods['omnimatter_fluid'] then
 --oil-boiler
@@ -133,6 +143,7 @@ require("prototypes.fluids.refined-natural-gas")
 require("prototypes.fluids.purified-natural-gas")
 require("prototypes.fluids.pure-natural-gas")
 require("prototypes.fluids.residual-gas")
+require("prototypes.fluids.drilling-fluid-0")
 require("prototypes.fluids.drilling-fluid-1")
 require("prototypes.fluids.drilling-fluid-2")
 require("prototypes.fluids.drilling-fluid-3")
@@ -220,9 +231,6 @@ end
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
-
---((nat-from-oil))--
---require("prototypes.functions.Natural-gas-from-oil-well")
 
 --(( Shortcut keys ))--
 local recipeselect=

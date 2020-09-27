@@ -1,8 +1,9 @@
+--[[
 RECIPE {
     type = "recipe",
     name = "oil-derrick-mk01",
     energy_required = 15,
-    enabled = false,
+    enabled = true,
     ingredients = {
         {"steam-engine", 1},
         {"iron-plate", 30},
@@ -14,29 +15,30 @@ RECIPE {
         {"oil-derrick-mk01", 1}
     }
 }:add_unlock("oil-machines-mk01")
+]] --
 
 ITEM {
     type = "item",
-    name = "oil-derrick-mk01",
+    name = "bitumen-seep-mk01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk01",
     order = "a",
-    place_result = "oil-derrick-mk01",
+    place_result = "bitumen-seep-mk01",
     stack_size = 10
 }
 
 ENTITY {
     type = "mining-drill",
-    name = "oil-derrick-mk01",
+    name = "bitumen-seep-mk01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "oil-derrick-mk01"},
+    minable = {mining_time = 0.5, result = "bitumen-seep-mk01"},
     fast_replaceable_group = "oil-derrick-mk01",
     max_health = 700,
-    resource_categories = {"oil-mk01"},
+    resource_categories = {"bitumen-seep"},
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
@@ -46,25 +48,24 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = 20,
+        type = "burner",
+        fuel_inventory_size = 1,
+        burnt_inventory_size = 1,
+        fuel_category = 'drilling-fluid',
     },
-    output_fluid_box =
-    {
-      base_area = 1,
-      base_level = 1,
-      --height = 10,
-      pipe_covers = DATA.Pipes.covers(false, true, true, true),
-      pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-      pipe_connections =
-      {
-        {
-          positions = { {0, -3}, {3, 0}, {0, 3}, {-3, 0} }
+    energy_usage = "100kW",
+    output_fluid_box = {
+        base_area = 1,
+        base_level = 1,
+        --height = 10,
+        pipe_covers = DATA.Pipes.covers(false, true, true, true),
+        pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+        pipe_connections = {
+            {
+                positions = {{0, -3}, {3, 0}, {0, 3}, {-3, 0}}
+            }
         }
-      }
     },
-    energy_usage = "90kW",
     mining_speed = 0.5,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, -2.65},
@@ -73,7 +74,7 @@ ENTITY {
         width = 12,
         height = 12
     },
-    monitor_visualization_tint = {r=78, g=173, b=255},
+    monitor_visualization_tint = {r = 78, g = 173, b = 255},
     animations = {
         layers = {
             {
@@ -102,13 +103,17 @@ ENTITY {
                 height = 96,
                 animation_speed = 0.3,
                 shift = util.by_pixel(0, -97)
-            },
+            }
+        }
     },
-},
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 1.0},
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 0.6},
         apparent_volume = 2.5
-    },
+    }
 }
+
+RECIPE("oil-derrick-mk01"):replace_result("oil-derrick-mk01", "bitumen-seep-mk01")
+
+data.raw["mining-drill"]["oil-derrick-mk01"].minable.result = "bitumen-seep-mk01"

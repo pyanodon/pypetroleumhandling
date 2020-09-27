@@ -1,5 +1,5 @@
 local resource_autoplace = require("resource-autoplace");
-
+--[[
 DATA {
     type = "autoplace-control",
     category = "resource",
@@ -7,7 +7,7 @@ DATA {
     richness = true,
     order = "c"
 }
-
+]]--
 ENTITY {
     type = "resource",
     name = "tar-patch",
@@ -16,10 +16,8 @@ ENTITY {
     flags = {"placeable-neutral"},
     category = "tar-patch",
     order="a-b-a",
-    infinite = true,
+    infinite = false,
     highlight = true,
-    minimum = 150000,
-    normal = 300000,
     infinite_depletion_amount = 4,
     resource_patch_search_radius = 12,
     tree_removal_probability = 0.7,
@@ -40,7 +38,7 @@ ENTITY {
     },
     collision_box = {{ -4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{ -4.4, -4.4}, {4.4, 4.4}},
-    -- autoplace = oil_old_autoplace,
+    --[[
     autoplace = resource_autoplace.resource_autoplace_settings{
       name = "tar-patch",
       order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
@@ -53,6 +51,7 @@ ENTITY {
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1
     },
+    ]]--
     stage_counts = {0},
     stages =
     {
