@@ -45,7 +45,7 @@ local function oil_gas_select(entity, global_bypass)
 	if string.match(E.name, 'oil%-derrick') ~= nil then
 		if global.oil_to_gas == true or global_bypass == true then
 			local mk = string.match(E.name, '%d+')
-			log(mk)
+			--log(mk)
 			local oil = game.surfaces['nauvis'].find_entity('oil-mk' .. mk, E.position)
 			local gas = game.surfaces['nauvis'].find_entity('natural-gas-' .. string.match(string.match(E.name, '%d+'), '[^0]'), E.position)
 			if oil ~= nil then
@@ -61,8 +61,19 @@ end
 
 script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
 	local E = event.created_entity
+	--log(E.name)
 	if string.match(E.name, 'oil%-derrick') ~= nil then
 		oil_gas_select(E)
+	elseif string.match(E.name, 'bitumen%-seep') ~= nil then
+		--log('hit')
+		local resource = game.surfaces[E.surface.name].find_entities_filtered{area = {{E.position.x-1,E.position.y-1}, {E.position.x+1,E.position.y+1}}, type = 'resource'}
+		for r, re in pairs(resource) do
+			--log(E.name)
+			if string.match(re.name, 'oil') then
+				game.surfaces[E.surface.name].create_entity{ name = 'oil-derrick-mk' .. string.match(E.name, '%d+'), force = E.force, position = E.position}
+				E.destroy()
+			end
+		end
 	--[[
 	elseif E.name == 'antenna' and E.surface.name == 'nauvis' then
 		local cc = game.surfaces[E.surface.name].create_entity{name = 'antenna-constant-combinator', position = {E.position.x + 0.5, E.position.y}, force = E.force}
@@ -337,3 +348,47 @@ script.on_event(defines.events.on_tick, function()
 	end
 end)
 ]]--
+
+script.on_event(defines.events.on_chunk_generated, function(event)
+	
+	local bitumen = game.surfaces[event.surface.name].find_entities_filtered{name = 'bitumen-seep', area = event.area}
+	--local amount = math.random(250,1000)
+	--test amount
+	local amount = math.random(10,100)
+	for b, bit in pairs(bitumen) do
+		bit.amount = amount
+	end
+
+end)
+
+script.on_event(defines.events.on_resource_depleted, function(event)
+	local E = event.entity
+	if E.name == 'bitumen-seep' then
+		local spawn_chance = 5
+		local drill = {}
+		local current_derrick = game.surfaces[E.surface.name].find_entities_filtered{area = {{E.position.x-1,E.position.y-1}, {E.position.x+1,E.position.y+1}}, type = 'mining-drill'}
+		for d, dri in pairs(current_derrick) do
+			drill = dri
+		end
+
+		local drill_fluid = drill.get_fuel_inventory().get_contents()
+		--log(serpent.block(drill_fluid))
+		if drill_fluid['drilling-fluid-0-block'] ~= nil then
+			spawn_chance = spawn_chance + 10
+		elseif drill_fluid['drilling-fluid-1-block'] ~= nil then
+			spawn_chance = spawn_chance + 30
+		elseif drill_fluid['drilling-fluid-2-block'] ~= nil then
+			spawn_chance = spawn_chance + 60
+		elseif drill_fluid['drilling-fluid-3-block'] ~= nil then
+			spawn_chance = spawn_chance + 90
+		end
+		if math.random(1,100) < spawn_chance then
+			local new_oil_amount = math.random(1250000,5000000)
+			new_oil_amount = new_oil_amount * string.match(string.match(drill.name, '%d+'), '[^0]')
+			local new_oil = game.surfaces[E.surface.name].create_entity{name = 'oil-mk' .. string.match(drill.name, '%d+'), amount = new_oil_amount, position = E.position}
+			local electric_derrick = game.surfaces[E.surface.name].create_entity{name = 'oil-derrick-mk' .. string.match(drill.name, '%d+'), position = drill.position, force = drill.force}
+			drill.destroy()
+		end
+	end
+
+end)

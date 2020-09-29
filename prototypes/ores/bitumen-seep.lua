@@ -32,11 +32,12 @@ ENTITY {
           name = "crude-oil",
           amount_min = 1,
           amount_max = 1,
-          probability = 1
+          probability = 0
         }
       }
     },
-    collision_box = {{ -2.4, -2.4}, {2.4, 2.4}},
+    --collision_box = {{ -2.4, -2.4}, {2.4, 2.4}},
+    collision_box = {{ -5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{ -2.4, -2.4}, {2.4, 2.4}},
     autoplace = resource_autoplace.resource_autoplace_settings{
       name = "bitumen-seep",
@@ -46,7 +47,7 @@ ENTITY {
       random_probability = 1/48,
       random_spot_size_minimum = 1,
       random_spot_size_maximum = 1, -- don't randomize spot size
-      additional_richness = 220000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
+      --additional_richness = 5000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
       has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1
     },

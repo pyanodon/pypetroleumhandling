@@ -63,6 +63,23 @@ if mods["pyhightech"] and mods["pyrawores"] then
     end
 end
 
+RECIPE {
+    type = "recipe",
+    name = "drilling-fluid-2-block",
+    category = "mixer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "drilling-fluid-2", amount = 50},
+    },
+    results = {
+        {type = "item", name = "drilling-fluid-2-block", amount = 1},
+    },
+    main_product = "drilling-fluid-2-block",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "h"
+}:add_unlock("oil-machines-mk01")
+
 FLUID {
     type = "fluid",
     name = "drilling-fluid-2",

@@ -1,9 +1,9 @@
---[[
+
 RECIPE {
     type = "recipe",
     name = "oil-derrick-mk01",
     energy_required = 15,
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"steam-engine", 1},
         {"iron-plate", 30},
@@ -12,10 +12,9 @@ RECIPE {
         {"pipe", 10},
     },
     results = {
-        {"oil-derrick-mk01", 1}
+        {"bitumen-seep-mk01", 1}
     }
 }:add_unlock("oil-machines-mk01")
-]] --
 
 ITEM {
     type = "item",
@@ -38,7 +37,7 @@ ENTITY {
     minable = {mining_time = 0.5, result = "bitumen-seep-mk01"},
     fast_replaceable_group = "oil-derrick-mk01",
     max_health = 700,
-    resource_categories = {"bitumen-seep"},
+    resource_categories = {"bitumen-seep", 'oil-mk01'},
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
@@ -54,6 +53,7 @@ ENTITY {
         fuel_category = 'drilling-fluid',
     },
     energy_usage = "100kW",
+    --[[
     output_fluid_box = {
         base_area = 1,
         base_level = 1,
@@ -66,7 +66,8 @@ ENTITY {
             }
         }
     },
-    mining_speed = 0.5,
+    ]]--
+    mining_speed = 3,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, -2.65},
     radius_visualisation_picture = {
@@ -114,6 +115,6 @@ ENTITY {
     }
 }
 
-RECIPE("oil-derrick-mk01"):replace_result("oil-derrick-mk01", "bitumen-seep-mk01")
+--RECIPE("oil-derrick-mk01"):replace_result("oil-derrick-mk01", "bitumen-seep-mk01")
 
 data.raw["mining-drill"]["oil-derrick-mk01"].minable.result = "bitumen-seep-mk01"

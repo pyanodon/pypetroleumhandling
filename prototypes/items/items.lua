@@ -299,3 +299,55 @@ ITEM {
         amount = 500
     }
 }
+
+ITEM {
+    type = "item",
+    name = "drilling-fluid-0-block",
+    icon = "__base__/graphics/icons/solid-fuel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "ti",
+    stack_size = 50,
+    fuel_value = '1MJ',
+    fuel_category = 'drilling-fluid'
+}
+
+ITEM {
+    type = "item",
+    name = "drilling-fluid-1-block",
+    icon = "__base__/graphics/icons/solid-fuel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "ti",
+    stack_size = 50,
+    fuel_value = '1MJ',
+    fuel_category = 'drilling-fluid'
+}
+
+ITEM {
+    type = "item",
+    name = "drilling-fluid-2-block",
+    icon = "__base__/graphics/icons/solid-fuel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "ti",
+    stack_size = 50,
+    fuel_value = '1MJ',
+    fuel_category = 'drilling-fluid'
+}
+
+ITEM {
+    type = "item",
+    name = "drilling-fluid-3-block",
+    icon = "__base__/graphics/icons/solid-fuel.png",
+	icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-items",
+    order = "ti",
+    stack_size = 50,
+    fuel_value = '1MJ',
+    fuel_category = 'drilling-fluid'
+}

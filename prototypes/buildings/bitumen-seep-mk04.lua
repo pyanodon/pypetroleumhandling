@@ -1,9 +1,9 @@
---[[
+
 RECIPE {
     type = "recipe",
     name = "oil-derrick-mk04",
     energy_required = 15,
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"steam-engine", 1},
         {"iron-plate", 30},
@@ -12,10 +12,9 @@ RECIPE {
         {"pipe", 10},
     },
     results = {
-        {"oil-derrick-mk04", 1}
+        {"bitumen-seep-mk04", 1}
     }
 }:add_unlock("oil-machines-mk04")
-]] --
 
 ITEM {
     type = "item",
@@ -38,7 +37,7 @@ ENTITY {
     minable = {mining_time = 0.5, result = "bitumen-seep-mk04"},
     fast_replaceable_group = "oil-derrick-mk04",
     max_health = 700,
-    resource_categories = {"bitumen-seep"},
+    resource_categories = {"bitumen-seep", 'oil-mk04'},
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
@@ -48,26 +47,12 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     energy_source = {
-        type = "fluid",
-        usage_priority = "secondary-input",
-        emissions_per_minute = 20,
-        fluid_usage_per_tick = 30,
-        fluid_box = 
-        {
-            base_area = 1,
-            height = 2,
-            base_level = -1,
-            pipe_connections = {
-                {type = "input", positions = { {2, -6}, {6, 2}, {2, 6}, {-6, 2} }}
-            },
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            production_type = "input",
-            minimum_temperature = 5,
-            maximum_temperature = 5,
-        }
+        type = "burner",
+        fuel_inventory_size = 1,
+        burnt_inventory_size = 1,
+        fuel_category = 'drilling-fluid',
     },
-    energy_usage = "1000kW",
+    energy_usage = "100kW",
     mining_speed = 3,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, -5.9},
@@ -115,6 +100,6 @@ ENTITY {
     },
 }
 
-RECIPE("oil-derrick-mk04"):replace_result("oil-derrick-mk04", "bitumen-seep-mk04")
+--RECIPE("oil-derrick-mk04"):replace_result("oil-derrick-mk04", "bitumen-seep-mk04")
 
 data.raw["mining-drill"]['oil-derrick-mk04'].minable.result = "bitumen-seep-mk04"
