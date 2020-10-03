@@ -115,6 +115,4 @@ ENTITY {
     }
 }
 
---RECIPE("oil-derrick-mk01"):replace_result("oil-derrick-mk01", "bitumen-seep-mk01")
-
 data.raw["mining-drill"]["oil-derrick-mk01"].minable.result = "bitumen-seep-mk01"

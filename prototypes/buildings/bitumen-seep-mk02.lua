@@ -5,11 +5,13 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"steam-engine", 1},
-        {"iron-plate", 30},
-        {"electronic-circuit", 5},
-        {"small-parts-01", 10},
-        {"pipe", 10},
+        {"evaporator", 1},
+        {"distilator", 1},
+        {"bitumen-seep-mk01", 1},
+        {"steel-plate", 50},
+        {"advanced-circuit", 12},
+        {"small-parts-02", 30},
+        {"pipe", 30},
     },
     results = {
         {"bitumen-seep-mk02", 1}
@@ -92,7 +94,5 @@ ENTITY {
         apparent_volume = 2.5
     },
 }
-
---RECIPE("oil-derrick-mk02"):replace_result("oil-derrick-mk02", "bitumen-seep-mk02")
 
 data.raw["mining-drill"]['oil-derrick-mk02'].minable.result = "bitumen-seep-mk02"
