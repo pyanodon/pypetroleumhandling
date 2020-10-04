@@ -21,12 +21,9 @@ DATA {
     order = "a-b-a",
     map_color = {r = 1, g = 0.823, b = 0.0},
     highlight = true,
-    minimum = 100,
-    normal = 200,
-    maximum = 300,
     map_grid = false,
     minable = {
-        hardness = 1.0,
+        
         -- mining_particle = "sulfur-patch-particle",
         mining_time = 2,
         results = {
@@ -34,25 +31,21 @@ DATA {
         },
     },
     resource_patch_search_radius = 12,
-    tree_removal_probability = 0.7,
-    tree_removal_max_distance = 32 * 32,
     collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    autoplace = {
-        control = "sulfur-patch",
-        sharpness = 3,
-        --max_probability = 0.035,
-        richness_multiplier = 800,
-        richness_multiplier_distance_bonus = 1000,
-        richness_base = 100000,
-        coverage = 0.00003 / 60,
-        peaks = {
-            {
-                noise_layer = "sulfur-patch",
-                noise_octaves_difference = -2.85,
-                noise_persistence = 0.4
-            },
-        }
+    tree_removal_probability = 0.7,
+    tree_removal_max_distance = 32 * 32,
+    autoplace = resource_autoplace.resource_autoplace_settings {
+        name = "sulfur-patch",
+        order = "b",
+        base_density = 10,
+        base_spots_per_km2 = 1.25,
+        has_starting_area_placement = false,
+        random_spot_size_minimum = 2,
+        random_spot_size_maximum = 4,
+        regular_rq_factor_multiplier = 1,
+        starting_rq_factor_multiplier = 2,
+        candidate_spot_count = 20
     },
     stage_counts = {0},
     stages = {

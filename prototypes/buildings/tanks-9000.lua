@@ -32,7 +32,7 @@ ENTITY {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/py-tank-9000.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 3, result = "py-tank-9000"},
+    minable = {mining_time = 3, result = "py-tank-9000"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-3.4, -3.4}, {3.4, 3.4}},

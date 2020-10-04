@@ -21,7 +21,7 @@ ENTITY {
     order = "a-b-a",
     map_color = {r = 0.3, g = 0.3, b = 0.3},
     minable = {
-        hardness = 1,
+        
         -- mining_particle = "oil-sand-ore-particle",
         mining_time = 1,
         results = {

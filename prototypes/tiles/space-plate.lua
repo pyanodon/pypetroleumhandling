@@ -30,7 +30,7 @@ ENTITY {
     type = "tile",
     name = "space-plate",
     needs_correction = false,
-    minable = {hardness = 0.2, mining_time = 0.1, result = "space-plate"},
+    minable = {mining_time = 0.1, result = "space-plate"},
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 2.1,
