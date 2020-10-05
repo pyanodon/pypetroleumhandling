@@ -1671,3 +1671,26 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-machines-mk03")
+
+--hidden recipe for oil derricks
+RECIPE {
+    type = "recipe",
+    name = "drilling-fluids",
+    category = "drilling-fluid",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
+    icon_size = 32,
+    enabled = true,
+    hidden = false,
+    energy_required = 1,
+    ingredients = {
+        {type = "fluid", name = "drilling-fluid-0", amount = 100},
+        {type = "fluid", name = "drilling-fluid-1", amount = 100},
+        {type = "fluid", name = "drilling-fluid-2", amount = 100},
+        {type = "fluid", name = "drilling-fluid-3", amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "petroleum-gas", amount = 400},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}

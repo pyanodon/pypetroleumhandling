@@ -100,7 +100,7 @@ data:extend {
         name = "space-crafting"
     },
     {
-        type = "fuel-category",
+        type = "recipe-category",
         name = "drilling-fluid"
     },
 }

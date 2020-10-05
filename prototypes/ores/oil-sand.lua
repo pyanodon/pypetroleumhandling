@@ -3,7 +3,7 @@ DATA {
     category = "resource",
     name = "oil-sand",
     richness = true,
-    order = "b-e"
+    order = "p-oil"
 }
 
 DATA {

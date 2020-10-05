@@ -47,12 +47,11 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     energy_source = {
-        type = "burner",
-        fuel_inventory_size = 1,
-        burnt_inventory_size = 1,
-        fuel_category = 'drilling-fluid',
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 20,
     },
-    energy_usage = "100kW",
+    energy_usage = "90kW",
     --[[
     output_fluid_box = {
         base_area = 1,
@@ -116,3 +115,63 @@ ENTITY {
 }
 
 data.raw["mining-drill"]["oil-derrick-mk01"].minable.result = "bitumen-seep-mk01"
+
+ENTITY {
+    type = "assembling-machine",
+    name = "bitumen-seep-mk01-base",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
+	icon_size = 32,
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.5, result = "coalbed-mk01"},
+    max_health = 100,
+    corpse = "medium-remnants",
+    dying_explosion = "big-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    match_animation_speed_to_activity = false,
+    module_specification = {
+        module_slots = 0
+    },
+    allowed_effects = {},
+    crafting_categories = {"drilling-fluid"},
+    crafting_speed = 1,
+    energy_source = {
+        type = "void",
+    },
+    energy_usage = "750kW",
+    fixed_recipe = 'drilling-fluids',
+    fluid_boxes = {
+        --1
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {1,-3}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {2,-3}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = 1,
+            pipe_connections = {{type = "input", position = {-2,-3}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = 1,
+            pipe_connections = {{type = "input", position = {-1,-3}}}
+        },
+        off_when_no_fluid_recipe = false
+    },
+}

@@ -72,6 +72,9 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
 			if string.match(re.name, 'oil') then
 				game.surfaces[E.surface.name].create_entity{ name = 'oil-derrick-mk' .. string.match(E.name, '%d+'), force = E.force, position = E.position}
 				E.destroy()
+			else
+				local ass1 = game.surfaces[E.surface.name].create_entity{name = 'bitumen-seep-mk01-base', force = E.force, position = {E.position.x+4,E.position.y}}
+				ass1.set_recipe('drilling-fluids')
 			end
 		end
 	--[[
