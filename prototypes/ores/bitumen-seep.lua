@@ -29,7 +29,7 @@ ENTITY {
       {
         {
           type = "fluid",
-          name = "crude-oil",
+          name = "drilling-waste",
           amount_min = 1,
           amount_max = 1,
           probability = 0

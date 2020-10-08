@@ -122,12 +122,12 @@ ENTITY {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "coalbed-mk01"},
+    --minable = {mining_time = 0.5, result = "coalbed-mk01"},
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    selection_box = {{0,0}, {0,0}},
     match_animation_speed_to_activity = false,
     module_specification = {
         module_slots = 0
@@ -148,7 +148,7 @@ ENTITY {
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {1,-3}}}
+            pipe_connections = {{type = "input", position = {-1,3}}}
         },
         {
             production_type = "input",
@@ -156,21 +156,21 @@ ENTITY {
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {2,-3}}}
+            pipe_connections = {{type = "input", position = {-2,3}}}
         },
         {
             production_type = "input",
             pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "input", position = {-2,-3}}}
+            pipe_connections = {{type = "input", position = {1,3}}}
         },
         {
             production_type = "input",
             pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "input", position = {-1,-3}}}
+            pipe_connections = {{type = "input", position = {2,3}}}
         },
         off_when_no_fluid_recipe = false
     },

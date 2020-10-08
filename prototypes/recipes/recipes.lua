@@ -1681,7 +1681,7 @@ RECIPE {
     icon_size = 32,
     enabled = true,
     hidden = false,
-    energy_required = 1,
+    energy_required = 250,
     ingredients = {
         {type = "fluid", name = "drilling-fluid-0", amount = 100},
         {type = "fluid", name = "drilling-fluid-1", amount = 100},
@@ -1689,7 +1689,7 @@ RECIPE {
         {type = "fluid", name = "drilling-fluid-3", amount = 100},
     },
     results = {
-        {type = "fluid", name = "petroleum-gas", amount = 400},
+        {type = "item", name = "soil", amount = 1},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"

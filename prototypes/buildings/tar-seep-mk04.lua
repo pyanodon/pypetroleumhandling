@@ -47,12 +47,11 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     energy_source = {
-        type = "burner",
-        fuel_inventory_size = 1,
-        burnt_inventory_size = 1,
-        fuel_category = 'drilling-fluid',
+        type = "electric",
+        usage_priority = "secondary-input",
+        emissions_per_minute = 20,
     },
-    energy_usage = "100kW",
+    energy_usage = "1200kW",
     mining_speed = 3,
     output_fluid_box =
     {
