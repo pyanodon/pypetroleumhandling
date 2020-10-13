@@ -248,20 +248,21 @@ RECIPE('wall-shield'):set_category("space-crafting")
 
 RECIPE('reinforced-wall-shield'):set_category("space-crafting")
 
-local ignore_entities = {}
+local _ignore_entities = {}
 
 for e, ent in pairs(data.raw['assembling-machine']) do
     --log(ent.name)
-    if ent.collision_mask ~= nil then
-        for c, col in pairs(ent.collision_mask) do
-            --log(c)
-            --log(col)
-        end
-        if ent.collision_mask['layer-11'] == nil then
-            --log('hit')
-            --log(ent.name)
-        end
-    elseif ent.collision_mask == nil then
+    -- if ent.collision_mask ~= nil then
+    --     for c, col in pairs(ent.collision_mask) do
+    --         --log(c)
+    --         --log(col)
+    --     end
+    --     -- if ent.collision_mask['layer-11'] == nil then
+    --     --     --log('hit')
+    --     --     --log(ent.name)
+    --     -- end
+    -- else
+    if ent.collision_mask == nil then
         ent.collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", 'layer-12'}
     end
 end

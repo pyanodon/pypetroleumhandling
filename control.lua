@@ -223,7 +223,7 @@ script.on_event(
 
 script.on_nth_tick(
 	30,
-	function(event)
+	function()
 		--log(serpent.block(global.oil_derricks))
 		for d, drill in pairs(global.oil_derricks) do
 			--log(serpent.block(d))
@@ -346,7 +346,7 @@ script.on_event(defines.events.on_rocket_launched, function(event)
 		if next(rocket_inv) ~= nil then
 			log(serpent.block(rocket_inv))
 			local rocket = rocket_inv
-			
+
 			--table.insert(global.rockets, rocket)
 			--log(serpent.block(global.rocket))
 			if event.rocket.surface.name == 'nauvis' then
@@ -526,13 +526,11 @@ script.on_event(
 			if math.random(1, 100) < spawn_chance then
 				local new_oil_amount = math.random(1250000, 5000000)
 				new_oil_amount = new_oil_amount * string.match(string.match(drill.name, "%d+"), "[^0]")
-				local new_oil =
 					game.surfaces[E.surface.name].create_entity {
 					name = resource_name,
 					amount = new_oil_amount,
 					position = E.position
 				}
-				local electric_derrick =
 					game.surfaces[E.surface.name].create_entity {
 					name = drill_name .. "-mk" .. string.match(drill.name, "%d+"),
 					position = drill.position,

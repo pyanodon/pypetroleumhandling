@@ -1,4 +1,4 @@
-local resource_autoplace = require("resource-autoplace");
+-- local resource_autoplace = require("resource-autoplace");
 --[[
 DATA {
     type = "autoplace-control",

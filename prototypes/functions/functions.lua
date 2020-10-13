@@ -418,11 +418,11 @@ local altrec = 0
 		--log(serpent.block(recipe))
 		local hname = "hotair-" .. recipe.name
 		local icon
-		local icons = {}
+		local icons
 		local icon_size
 			--icon size finder
 			if recipe.icon_size ~=nil then
-				icon_size = icon_size
+				icon_size = recipe.icon_size
 			else --set default to 32
 				icon_size = 32
 			end --may change later if found internal to icons
@@ -444,7 +444,7 @@ local altrec = 0
       elseif data.raw.item[result] and data.raw.item[result].icons then
         icons = data.raw.item[result].icons
         icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
-      else --no icons table, use icon found above  
+      else --no icons table, use icon found above
         if icon == nil then
           icon = '__base__/graphics/icons/blueprint.png'
         end --fallback
