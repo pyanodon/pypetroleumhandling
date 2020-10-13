@@ -592,7 +592,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 250},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 165},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
     },
     main_product = "natural-gas",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
@@ -615,7 +615,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 165},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
     },
     main_product = "gasoline",
     icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
@@ -638,7 +638,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "syngas", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 165},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
     },
     main_product = "syngas",
     icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
