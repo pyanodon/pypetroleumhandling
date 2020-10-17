@@ -162,14 +162,14 @@ ENTITY {
             production_type = "input",
             pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
-            base_level = 1,
+            base_level = -1,
             pipe_connections = {{type = "input", position = {1,3}}}
         },
         {
             production_type = "input",
             pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = DATA.Pipes.covers(false, true, true, true),
-            base_level = 1,
+            base_level = -1,
             pipe_connections = {{type = "input", position = {2,3}}}
         },
         off_when_no_fluid_recipe = false
