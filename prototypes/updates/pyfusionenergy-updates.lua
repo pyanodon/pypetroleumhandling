@@ -212,10 +212,10 @@ RECIPE {
         {type = "fluid", name = "hot-air", amount = 1000},
         {type = "fluid", name = "vacuum", amount = 500},
         {type = "item", name = "coke", amount = 10},
-        {type = "item", name = "super-alloy", amount = 10},
+        {type = "item", name = "super-alloy", amount = 2},
     },
     results = {
-        {type = "item", name = "kerogen", amount = 200},
+        {type = "item", name = "kerogen", amount = 500},
     },
     main_product = "kerogen",
     subgroup = "py-petroleum-handling-recipes",

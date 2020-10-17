@@ -120,7 +120,7 @@ RECIPE("drilling-fluid-1"):add_ingredient({type = "item", name = "copper-ore", a
 RECIPE("drilling-fluid-2"):replace_ingredient("water", "hydrogen-chloride")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "salt", amount = 20})
 RECIPE("bitumen-gasification"):add_ingredient({type = "fluid", name = "oxygen", amount = 50})
-RECIPE("kerogen-2"):replace_ingredient("niobium-pipe", "super-steel")
+RECIPE("kerogen-2"):remove_ingredient("niobium-pipe"):add_ingredient({type = "item", name = "super-steel", amount = 3})
 RECIPE("mining-aluminium"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100})
 RECIPE("mining-chromium"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 150})
 --RECIPE("mining-copper"):replace_ingredient("lubricant", "drilling-fluid-1")

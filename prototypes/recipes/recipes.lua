@@ -1432,7 +1432,7 @@ RECIPE {
         {type = "item", name = "drill-head", amount = 3},
     },
     results = {
-        {type = "item", name = "kerogen", amount = 50},
+        {type = "item", name = "kerogen", amount = 70},
     },
     main_product = "kerogen",
     subgroup = "py-petroleum-handling-recipes",
@@ -1452,7 +1452,7 @@ RECIPE {
         {type = "item", name = "pipe", amount = 15},
     },
     results = {
-        {type = "item", name = "kerogen", amount = 100},
+        {type = "item", name = "kerogen", amount = 400},
     },
     main_product = "kerogen",
     subgroup = "py-petroleum-handling-recipes",
@@ -1470,7 +1470,7 @@ RECIPE {
         {type = "item", name = "fuelrod-mk01", amount = 1},
     },
     results = {
-        {type = "fluid", name = "scrude", amount = 100},
+        {type = "fluid", name = "scrude", amount = 400},
     },
     main_product = "scrude",
     subgroup = "py-petroleum-handling-fluids",
@@ -1508,7 +1508,7 @@ RECIPE {
         {type = "fluid", name = "hot-air", amount = 1000},
     },
     results = {
-        {type = "fluid", name = "crude-oil", amount = 250},
+        {type = "fluid", name = "crude-oil", amount = 450},
     },
     main_product = "crude-oil",
     subgroup = "py-petroleum-handling-fluids",
@@ -1526,7 +1526,7 @@ RECIPE {
         {type = "fluid", name = "hot-air", amount = 300},
     },
     results = {
-        {type = "fluid", name = "natural-gas", amount = 150},
+        {type = "fluid", name = "natural-gas", amount = 450},
         {type = "fluid", name = "crude-oil", amount = 50},
     },
     main_product = "natural-gas",

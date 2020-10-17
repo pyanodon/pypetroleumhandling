@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 8,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
-        {type = "fluid", name = "drilling-fluid-1", amount = 50},
+        {type = "fluid", name = "drilling-fluid-0", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 40},
@@ -25,7 +25,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
-        {type = "fluid", name = "drilling-fluid-2", amount = 50},
+        {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 140},
@@ -44,7 +44,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
-        {type = "fluid", name = "drilling-fluid-3", amount = 50},
+        {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 740},
@@ -81,7 +81,7 @@ RECIPE {
     energy_required = 8,
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
-        {type = "fluid", name = "drilling-fluid-1", amount = 50},
+        {type = "fluid", name = "drilling-fluid-0", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 40},
@@ -102,7 +102,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-01", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
-        {type = "fluid", name = "drilling-fluid-2", amount = 50},
+        {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 140},
@@ -123,7 +123,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "small-parts-02", amount = 2},
         {type = "item", name = "drill-head", amount = 1},
-        {type = "fluid", name = "drilling-fluid-3", amount = 50},
+        {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 740},

@@ -18,7 +18,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
         main_product = "drilling-fluid-2",
         subgroup = "py-petroleum-handling-fluids",
         order = "h"
-    }:add_unlock("oil-machines-mk02")
+    }:add_unlock("oil-machines-mk03")
     else if mods["pyhightech"] then
         RECIPE {
             type = "recipe",
@@ -39,7 +39,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
             main_product = "drilling-fluid-2",
             subgroup = "py-petroleum-handling-fluids",
             order = "h"
-        }:add_unlock("oil-machines-mk02")
+        }:add_unlock("oil-machines-mk03")
     else
         RECIPE {
             type = "recipe",
@@ -59,15 +59,15 @@ if mods["pyhightech"] and mods["pyrawores"] then
             main_product = "drilling-fluid-2",
             subgroup = "py-petroleum-handling-fluids",
             order = "h"
-        }:add_unlock("oil-machines-mk02")
+        }:add_unlock("oil-machines-mk03")
     end
 end
 
 FLUID {
     type = "fluid",
     name = "drilling-fluid-2",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-2.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-3.png",
+    icon_size = 64,
     default_temperature = 10, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.980, g = 0.682, b = 0.0},
     flow_color = {r = 0.980, g = 0.682, b = 0.0},

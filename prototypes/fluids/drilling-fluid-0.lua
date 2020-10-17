@@ -21,8 +21,8 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "drilling-fluid-0",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-sand-slurry.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
+    icon_size = 64,
     default_temperature = 5, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.0, g = 0.772, b = 0.556},
     flow_color = {r = 0.0, g = 0.772, b = 0.556},
