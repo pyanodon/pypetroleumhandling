@@ -140,3 +140,5 @@ ENTITY {
         apparent_volume = 2.5
     },
 }
+
+data.raw["mining-drill"]["tar-extractor-mk02"].minable.result = "tar-seep-mk02"

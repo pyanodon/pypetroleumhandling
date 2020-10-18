@@ -71,7 +71,7 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
     -- log(E.name)
     if string.match(E.name, 'oil%-derrick') ~= nil then
         oil_gas_select(E)
-    elseif string.match(E.name, 'bitumen%-seep') ~= nil then
+    elseif string.match(E.name, 'seep') ~= nil then
         -- log('hit')
         local resource = game.surfaces[E.surface.name].find_entities_filtered {
             area = {{E.position.x - 1, E.position.y - 1}, {E.position.x + 1, E.position.y + 1}},
@@ -86,9 +86,22 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
                     position = E.position
                 }
                 E.destroy()
+            elseif string.match(re.name, 'tar') then
+                game.surfaces[E.surface.name].create_entity{
+                    name = 'tar-extractor-mk' .. string.match(E.name, '%d+'),
+                    force = E.force,
+                    position = E.position
+                }
+                E.destroy()
             else
+                local base = ''
+                if string.match(E.name, 'bitumen') then
+                    base = E.name .. '-base'
+                elseif string.match(E.name, 'tar') then
+                    base = 'tar-seep-mk01-base'
+                end
                 local ass1 = game.surfaces[E.surface.name].create_entity {
-                    name = 'bitumen-seep-mk' .. string.match(E.name, '%d+') .. '-base',
+                    name = base,
                     force = E.force,
                     position = E.position
                 }
