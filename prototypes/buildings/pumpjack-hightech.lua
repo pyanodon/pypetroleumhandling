@@ -83,7 +83,7 @@ ENTITY {
                 height = 275,
                 line_length = 8,
                 frame_count = 50,
-                animation_speed = 0.2,
+                animation_speed = 0.3,
                 shift = util.by_pixel(14, -25)
             }
         }
