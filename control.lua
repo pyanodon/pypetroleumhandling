@@ -461,7 +461,7 @@ script.on_event(defines.events.on_chunk_generated, function(event)
     local bitumen = game.surfaces[event.surface.name].find_entities_filtered {name = 'bitumen-seep', area = event.area}
     -- local amount = math.random(250,1000)
     -- test amount
-    local amount = math.random(10, 100)
+    local amount = math.random(1000, 2500)
     for b, bit in pairs(bitumen) do bit.amount = amount end
 end)
 
