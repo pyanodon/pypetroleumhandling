@@ -2,6 +2,7 @@
 Version: 1.9.2
 Date: ????
   Changes:
+    - Fixed the heat exchanger and fusion reactors.
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.1
 Date: 2020-11-08
