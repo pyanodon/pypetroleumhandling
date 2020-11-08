@@ -2,6 +2,10 @@
 Version: 1.9.4
 Date: ????
   Changes:
+    - Added new oil system. Read in-game wiki or locale descriptions to know how to use.
+    - Removed tar from stone recipe while pyph is active.
+    - Buffed pumpjack production recipes.
+    - Rebalanced drilling fluids. Added new drilling fluid (0)
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.3
 Date: 2020-11-08
