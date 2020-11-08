@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.4
-Date: ????
+Date: 2020-11-08
   Changes:
     - Added new oil system. Read in-game wiki or locale descriptions to know how to use.
     - Removed tar from stone recipe while pyph is active.
