@@ -19,6 +19,8 @@ table.insert(data.raw["assembling-machine"]["advanced-foundry-mk04"].crafting_ca
 end
 --log(serpent.block(data.raw["assembling-machine"]["advanced-foundry-mk01"]))
 
+RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
+
 --parts2
 
 RECIPE("cooling-tower-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
