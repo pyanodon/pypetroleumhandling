@@ -174,7 +174,7 @@ RECIPE {
     energy_required = 1,
     ingredients = {
         {type = "item", name = "empty-proto-tholins-vessel", amount = 1},
-        {type = "fluid", name = "tholins", amount = 100},
+        {type = "fluid", name = "proto-tholins", amount = 100},
     },
     results = {
         {type = "item", name = "filled-proto-tholins-vessel", amount = 1},
@@ -189,7 +189,7 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "filled-proto-tholins-vessel", amount = 1},
+        {type = "item", name = "filled-tholins-vessel", amount = 1},
     },
     results = {
         {type = "item", name = "empty-proto-tholins-vessel", amount = 1},
