@@ -67,7 +67,7 @@ ENTITY {
       }
     },
     energy_usage = "500kW",
-    mining_speed = 2,
+    mining_speed = 3,
     resource_searching_radius = 0.49,
     vector_to_place_result = {-1, -4.85},
     radius_visualisation_picture = {

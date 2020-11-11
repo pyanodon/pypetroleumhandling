@@ -30,9 +30,7 @@ ENTITY {
         {
           type = "fluid",
           name = "crude-oil",
-          amount_min = 10,
-          amount_max = 10,
-          probability = 1
+          amount = 100,
         }
       }
     },
