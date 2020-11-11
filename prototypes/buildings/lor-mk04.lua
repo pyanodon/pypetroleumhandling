@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"lor-mk03", 1},
-        {"distilator-mk02", 1},
+        {"distilator", 1},
         {"nbfe-alloy", 50},
         {"low-density-structure", 30},
         {"small-parts-03", 25},
@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"lor-mk04", 1}
     }
-}:add_unlock("oil-machines-mk04")
+}:add_unlock("oil-machines-mk04"):replace_ingredient("distilator", "distilator-mk02")
 
 ITEM {
     type = "item",

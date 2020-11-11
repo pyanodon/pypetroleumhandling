@@ -71,7 +71,7 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
     -- log(E.name)
     if string.match(E.name, 'oil%-derrick') ~= nil then
         oil_gas_select(E)
-    elseif string.match(E.name, 'seep') ~= nil then
+    elseif string.match(E.name, 'seep') ~= nil and E.type == 'mining-drill' then
         -- log('hit')
         local resource = game.surfaces[E.surface.name].find_entities_filtered {
             area = {{E.position.x - 1, E.position.y - 1}, {E.position.x + 1, E.position.y + 1}},

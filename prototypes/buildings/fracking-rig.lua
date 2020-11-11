@@ -9,13 +9,13 @@ RECIPE {
         {"concrete", 100},
         {"processing-unit", 50},
         {"small-parts-03", 200},
-        {"distilator-mk03", 4},
+        {"distilator", 4},
         {"reformer-mk03", 4},
     },
     results = {
         {"fracking-rig", 1}
     }
-}:add_unlock("fracking")
+}:add_unlock("fracking"):replace_ingredient("distilator", "distilator-mk03")
 
 ITEM {
     type = "item",

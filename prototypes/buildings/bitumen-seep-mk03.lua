@@ -6,7 +6,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"bitumen-seep-mk02", 1},
-        {"distilator-mk02", 1},
+        {"distilator", 1},
         {"automated-factory-mk01", 1},
         {"steel-plate", 100},
         {"processing-unit", 15},
@@ -16,7 +16,7 @@ RECIPE {
     results = {
         {"bitumen-seep-mk03", 1}
     }
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("oil-machines-mk03"):replace_ingredient("distilator", "distilator-mk02")
 
 ITEM {
     type = "item",
