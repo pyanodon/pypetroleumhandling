@@ -2,6 +2,9 @@
 Version: 1.9.5
 Date: ????
   Changes:
+    - Fixed tholins containers not having the correct fluids set.
+    - adjusted oil derrick and tar extractor speeds being way to low.
+    - Fixed errors with pypetroleumhandling expecting buildings that are only enabled when pyrawores is active.
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.4
 Date: 2020-11-08
