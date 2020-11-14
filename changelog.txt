@@ -2,6 +2,7 @@
 Version: 1.9.6
 Date: ????
   Changes:
+    - Added some pymods fluids to the flamethrower turret.
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.5
 Date: 2020-11-11
