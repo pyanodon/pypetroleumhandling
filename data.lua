@@ -237,11 +237,11 @@ end
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'syngas', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'refsyngas', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'methanol', damage_modifier = 1.2})
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'diesel', damage_modifier = 1.2})
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'gasoline', damage_modifier = 1.2})
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'combustion-mixture', damage_modifier = 1.2})
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'diesel', damage_modifier = 2})
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'gasoline', damage_modifier = 2})
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'combustion-mixture1', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'oleochemicals', damage_modifier = 1.2})
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'Olefin', damage_modifier = 1.2})
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'olefin', damage_modifier = 2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'btx', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'scrude', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'natural-gas', damage_modifier = 1.2})
@@ -260,7 +260,7 @@ end
 
 --pyro
 if mods['pyrawores'] then
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'kerosene', damage_modifier = 1.2})
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'kerosene', damage_modifier = 2})
 end
 
 --(( OTHERS ))--
