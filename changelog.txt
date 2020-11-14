@@ -2,6 +2,7 @@
 Version: 1.9.7
 Date: ????
   Changes:
+    - Fixed spelling error for ethanol in flamethrower fluids. ethonal -> ethanol
 ---------------------------------------------------------------------------------------------------
 Version: 1.9.6
 Date: 2020-11-14

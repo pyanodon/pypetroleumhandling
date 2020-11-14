@@ -255,7 +255,7 @@ end
 
 --pyal
 if mods['pyalienlife'] then
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'ethonal', damage_modifier = 1.2})
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'ethanol', damage_modifier = 1.2})
 end
 
 --pyro
