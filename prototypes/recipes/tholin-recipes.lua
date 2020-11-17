@@ -8,7 +8,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "carbon-dioxide", amount = 30},
+        {type = "fluid", name = "carbon-dioxide", amount = 40},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/carbon-dioxide.png",
     icon_size = 32,
@@ -26,7 +26,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "syngas", amount = 40},
+        {type = "fluid", name = "syngas", amount = 45},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
     icon_size = 32,
@@ -44,7 +44,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "acetylene", amount = 35},
+        {type = "fluid", name = "acetylene", amount = 45},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/acetylene.png",
     icon_size = 32,
@@ -80,7 +80,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "methanol", amount = 25},
+        {type = "fluid", name = "methanol", amount = 35},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/methanol.png",
     icon_size = 32,
@@ -98,7 +98,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "refsyngas", amount = 25},
+        {type = "fluid", name = "refsyngas", amount = 35},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/refsyngas.png",
     icon_size = 32,
@@ -134,7 +134,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "olefin", amount = 20},
+        {type = "fluid", name = "olefin", amount = 30},
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/olefin.png",
     icon_size = 32,
