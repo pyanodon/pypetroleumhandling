@@ -896,8 +896,8 @@ RECIPE {
         {type = "fluid", name = "molten-iron", amount = 50},
         {type = "fluid", name = "molten-copper", amount = 20},
         {type = "item", name = "borax", amount = 3},
-        {type = "item", name = "sand-casting", amount = 1},
         {type = "item", name = "rubber", amount = 1},
+        {type = "item", name = "sand-casting", amount = 1},
     },
     results = {
         {type = "item", name = "small-parts-01", amount = 35}
