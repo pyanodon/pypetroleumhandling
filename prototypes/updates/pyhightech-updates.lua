@@ -54,7 +54,7 @@ RECIPE("ht-pipes"):add_ingredient({type = "item", name = "rubber", amount = 2})
 RECIPE("ht-locomotive"):add_ingredient({type = "item", name = "small-parts-02", amount = 80})
 RECIPE("ht-generic-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("ht-generic-fluid-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
-
+RECIPE("drilling-fluid-0"):add_ingredient({type = "item", name = "clay", amount = 5})
 
 ----EXCLUSIVE RECIPES----
 
