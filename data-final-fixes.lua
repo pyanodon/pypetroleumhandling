@@ -36,8 +36,24 @@ local extra_hot_air_recipes =
         --pyal petri dishes
         'empty-petri-dish'
     }
+
+--log(serpent.block(data.raw.recipe['flask']))
 --add hot air
 GIR.hotairrecipes(extra_hot_air_recipes)
+
+--log(serpent.block(data.raw.recipe['hotair-flask']))
+--[[
+for r, recipe in pairs(data.raw.recipe) do
+    if recipe.category == 'glassworks' then
+        for i, ing in pairs(recipe.ingredients) do
+            if ing.name == 'hot-air' then
+                table.insert(ing, fluidbox_index)
+                ing.fluidbox_index = 3
+            end
+        end
+    end
+end
+]]--
 
 if settings.startup['fine-oil'].value then
     --data.raw.resource['natural-gas'].infinite = false

@@ -906,3 +906,9 @@ RECIPE {
     subgroup = "py-rawores-iron",
     order = "azd"
   }:add_unlock("iron-mk03")
+
+RECIPE('casting-niobium-pipe'):add_ingredient({type = "item", name = "rubber", amount = 2})
+
+RECIPE('casting-niobium-pipe-underground'):add_ingredient({type = "item", name = "rubber", amount = 2})
+
+RECIPE('caasting-engine-unit'):add_ingredient({type = "item", name = "belt", amount = 5})

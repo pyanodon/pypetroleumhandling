@@ -226,13 +226,13 @@ RECIPE {
 --[[
 TECHNOLOGY('fusion-mk01'):remove_pack('production-science-pack'):add_prereq('rocket-silo')
 
-data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','layer-11'}
+data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','layer-14'}
 
-data.raw['assembling-machine']['py-heat-exchanger'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-11'}
+data.raw['assembling-machine']['py-heat-exchanger'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-14'}
 
-data.raw['assembling-machine']['fusion-reactor-mk01'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-11'}
+data.raw['assembling-machine']['fusion-reactor-mk01'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-14'}
 
-data.raw['assembling-machine']['fusion-reactor-mk02'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-11'}
+data.raw['assembling-machine']['fusion-reactor-mk02'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-14'}
 
 --moving fusion items to space assembler
 
@@ -257,13 +257,13 @@ for e, ent in pairs(data.raw['assembling-machine']) do
     --         --log(c)
     --         --log(col)
     --     end
-    --     -- if ent.collision_mask['layer-11'] == nil then
+    --     -- if ent.collision_mask['layer-14'] == nil then
     --     --     --log('hit')
     --     --     --log(ent.name)
     --     -- end
     -- else
     if ent.collision_mask == nil then
-        ent.collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", 'layer-12'}
+        ent.collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", 'layer-15'}
     end
 end
 ]]--

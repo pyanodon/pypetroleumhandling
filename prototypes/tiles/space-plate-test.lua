@@ -33,7 +33,7 @@ ENTITY {
     needs_correction = false,
     minable = {mining_time = 0.1, result = "space-plate"},
     mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg",volume = 0.8},
-    collision_mask = {'layer-12'}, --{"ground-tile"},
+    collision_mask = {'layer-14'}, --{"ground-tile"},
     walking_speed_modifier = 1.5,
     layer = 64,
     transition_overlay_layer_offset = 2, -- need to render border overlay on top of hazard-concrete

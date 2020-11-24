@@ -37,7 +37,7 @@ ENTITY {
         "resource-layer",
         "item-layer",
         "doodad-layer",
-        'layer-11'
+        'layer-14'
       },
     walking_speed_modifier = 0.5,
     decorative_removal_probability = 1,
