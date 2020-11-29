@@ -82,7 +82,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.2
+                animation_speed = 0.5,
             }
         },
         {
@@ -96,7 +96,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.2,
+                animation_speed = 0.5,
                 tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             }
         },
@@ -111,7 +111,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.2
+                aanimation_speed = 0.5,
             }
         },
         {
@@ -125,7 +125,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.2,
+                animation_speed = 0.5,
                 tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             }
         },
@@ -140,7 +140,7 @@ ENTITY {
                 line_length = 20,
                 width = 32,
                 height = 347,
-                animation_speed = 0.2
+                animation_speed = 0.5,
             }
         },
         {
@@ -154,7 +154,7 @@ ENTITY {
                 line_length = 20,
                 width = 32,
                 height = 347,
-                animation_speed = 0.2,
+                animation_speed = 0.5,
                 tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             }
         },

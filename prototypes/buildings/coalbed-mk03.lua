@@ -61,7 +61,7 @@ ENTITY {
                 height = 298,
                 line_length = 21,
                 frame_count = 124,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 shift = util.by_pixel(-64, -32)
             },
 			{
@@ -70,7 +70,7 @@ ENTITY {
 				height = 298,
 				line_length = 21,
 				frame_count = 124,
-				animation_speed = 0.3,
+				animation_speed = 0.5,
 				shift = util.by_pixel(-64, -32),
 				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
 			},
@@ -80,7 +80,7 @@ ENTITY {
                 height = 298,
                 line_length = 21,
                 frame_count = 124,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 shift = util.by_pixel(32, -32)
             },
 			{
@@ -89,7 +89,7 @@ ENTITY {
                 height = 298,
                 line_length = 21,
                 frame_count = 124,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 shift = util.by_pixel(32, -32),
 				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },
@@ -99,7 +99,7 @@ ENTITY {
                 height = 298,
                 line_length = 21,
                 frame_count = 124,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 shift = util.by_pixel(112, -32)
             },
         }

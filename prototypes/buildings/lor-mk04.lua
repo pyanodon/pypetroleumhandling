@@ -85,7 +85,7 @@ ENTITY {
                 line_length = 10,
                 width = 160,
                 height = 192,
-                animation_speed = 0.2
+                animation_speed = 0.5,
             }
         },
         {
@@ -100,7 +100,7 @@ ENTITY {
                 line_length = 10,
                 width = 160,
                 height = 192,
-                animation_speed = 0.2,
+                animation_speed = 0.5,
                 tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             }
         },

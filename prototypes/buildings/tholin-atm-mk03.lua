@@ -65,7 +65,7 @@ ENTITY {
                 line_length = 6,
                 frame_count = 30,
                 run_mode= "forward-then-backward",
-                animation_speed = 0.2,
+                animation_speed = 0.35,
                 shift = util.by_pixel(-37, -64)
             },
             {
@@ -75,7 +75,7 @@ ENTITY {
                 line_length = 6,
                 frame_count = 30,
                 run_mode= "forward-then-backward",
-                animation_speed = 0.2,
+                animation_speed = 0.35,
                 shift = util.by_pixel(-37, -64),
                 tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },
@@ -86,7 +86,7 @@ ENTITY {
                 line_length = 6,
                 frame_count = 30,
                 run_mode= "forward-then-backward",
-                animation_speed = 0.2,
+                animation_speed = 0.35,
                 shift = util.by_pixel(-173, -360)
             },
             {
@@ -96,7 +96,7 @@ ENTITY {
                 line_length = 6,
                 frame_count = 30,
                 run_mode= "forward-then-backward",
-                animation_speed = 0.2,
+                animation_speed = 0.35,
                 shift = util.by_pixel(-173, -360),
                 tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },
@@ -106,7 +106,7 @@ ENTITY {
                 height = 64,
                 line_length = 6,
                 frame_count = 60,
-                animation_speed = 0.2,
+                animation_speed = 0.35,
                 shift = util.by_pixel(21, -208)
             },
             {
@@ -115,7 +115,7 @@ ENTITY {
                 height = 64,
                 line_length = 6,
                 frame_count = 60,
-                animation_speed = 0.2,
+                animation_speed = 0.35,
                 shift = util.by_pixel(21, -208),
                 tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },

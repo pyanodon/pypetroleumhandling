@@ -85,7 +85,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.3
+                animation_speed = 0.5,
             }
         },
         {
@@ -99,7 +99,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             }
         },
@@ -114,7 +114,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.3
+                animation_speed = 0.5,
             }
         },
         {
@@ -128,7 +128,7 @@ ENTITY {
                 line_length = 20,
                 width = 96,
                 height = 347,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             }
         },
@@ -143,7 +143,7 @@ ENTITY {
                 line_length = 20,
                 width = 32,
                 height = 347,
-                animation_speed = 0.3
+                animation_speed = 0.5,
             }
         },
         {
@@ -157,7 +157,7 @@ ENTITY {
                 line_length = 20,
                 width = 32,
                 height = 347,
-                animation_speed = 0.3,
+                animation_speed = 0.5,
                 tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             }
         },
