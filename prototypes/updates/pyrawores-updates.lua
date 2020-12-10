@@ -140,7 +140,7 @@ RECIPE('drilling-fluid-3'):add_ingredient({type = 'item', name = 'starch', amoun
 RECIPE {
     type = "recipe",
     name = "sncr-alloy",
-    category = "advanced-foundry",
+    category = "py-rawores-smelter",
     enabled = false,
     energy_required = 3,
     ingredients = {
