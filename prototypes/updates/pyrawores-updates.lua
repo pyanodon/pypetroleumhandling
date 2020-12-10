@@ -160,7 +160,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "sbcr-alloy-2",
-    category = "casting",
+    category = "py-rawores-smelter",
     enabled = false,
     energy_required = 4,
     ingredients = {
