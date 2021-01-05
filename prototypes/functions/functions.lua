@@ -547,10 +547,10 @@ end
 --[[
 for _, r in pairs(data.raw.recipe) do
 	if r.name == "iron-plate" then
-	log(serpent.block(r))
+	--log(serpent.block(r))
 	end
 	if r.category == "hot-air-advanced-foundry" then
-	log(serpent.block(r))
+	--log(serpent.block(r))
 	end
 end
 ]]--

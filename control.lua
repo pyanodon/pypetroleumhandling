@@ -327,7 +327,7 @@ script.on_event(defines.events.on_rocket_launched, function(event)
 		local items = {}
 
 		if next(rocket_inv) ~= nil then
-			log(serpent.block(rocket_inv))
+			--log(serpent.block(rocket_inv))
 			local rocket = rocket_inv
 
 			--table.insert(global.rockets, rocket)
@@ -420,7 +420,7 @@ script.on_event(defines.events.on_tick, function()
 		if circuit ~= nil then
 			local index = 1
 			for _, sig in pairs(nau_signals) do
-				log(serpent.block(sig))
+				--log(serpent.block(sig))
 				ant.combinator.get_control_behavior().set_signal
 					(
 						index,
@@ -436,9 +436,9 @@ script.on_event(defines.events.on_tick, function()
 			local index = 1
 			local rocket_inv = rscc.silo.get_inventory(defines.inventory.rocket_silo_rocket).get_contents()
 			for i,item in pairs(rocket_inv) do
-				log(serpent.block(i))
-				log(serpent.block(item))
-				log(index)
+				--log(serpent.block(i))
+				--log(serpent.block(item))
+				--log(index)
 				rscc.con_com.get_control_behavior().set_signal
 					(
 						index,
