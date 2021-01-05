@@ -214,9 +214,9 @@ script.on_nth_tick(30, function()
         -- log(serpent.block(d))
         -- log(serpent.block(drill))
         local dfluid = drill.base.get_fluid_contents()
-        log(serpent.block(dfluid))
+        --log(serpent.block(dfluid))
         if next(dfluid) ~= nil then
-            log('hit')
+            --log('hit')
             if dfluid['drilling-fluid-' .. 3] ~= nil then
                 if dfluid['drilling-fluid-' .. 3] >= 50 then
                     global.oil_derricks[d].drilling_fluid = 'drilling-fluid-3'
@@ -491,10 +491,10 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         local drill_num = string.match(drill.name, '%d+')
         local fluid_num = string.match(drill_fluid, '%d+') + 1
         local new_oil_amount = 10000 * ran * drill_num * fluid_num
-        log(ran)
-        log(drill_num)
-        log(fluid_num)
-        log(new_oil_amount)
+        --log(ran)
+        --log(drill_num)
+        --log(fluid_num)
+        --log(new_oil_amount)
         -- new_oil_amount = new_oil_amount * string.match(string.match(drill.name, "%d+"), "[^0]")
         game.surfaces[E.surface.name].create_entity {
             name = resource_name,
