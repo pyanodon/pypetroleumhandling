@@ -40,6 +40,8 @@ RECIPE("pulp-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01",
 
 RECIPE("construction-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("logistic-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
+RECIPE('benzene-aromatics'):change_category('cracker')
+
 
 
 ----RECIPES----
