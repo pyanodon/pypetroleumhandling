@@ -2,6 +2,7 @@
 Version: 2.0.4
 Date: ????
   Changes:
+    - Adjustments to bitumen to tar down to 1:1. boosted bitumen to dirty syngas up to 1:1
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 2021-01-05
