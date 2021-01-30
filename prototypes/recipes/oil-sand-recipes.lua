@@ -67,7 +67,7 @@ RECIPE {
         {type = "fluid", name = "bitumen", amount = 100},
     },
     results = {
-        {type = "fluid", name = "tar", amount = 200},
+        {type = "fluid", name = "tar", amount = 100},
     },
     main_product = "tar",
     icon = "__pycoalprocessinggraphics__/graphics/icons/tar.png",
@@ -128,7 +128,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 300, temperature = 165},
     },
     results = {
-        {type = "fluid", name = "dirty-syngas", amount = 50},
+        {type = "fluid", name = "dirty-syngas", amount = 100},
     },
     main_product = "dirty-syngas",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/dirty-syngas.png",
