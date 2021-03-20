@@ -15,7 +15,6 @@ require("prototypes.ores.oil-mk02")
 require("prototypes.ores.oil-mk03")
 require("prototypes.ores.oil-mk04")
 require("prototypes.ores.sulfur-patch")
---))
 require("prototypes.ores.natural-gas")
 require("prototypes.ores.bitumen-seep")
 
@@ -54,14 +53,6 @@ require("prototypes.buildings.reformer-mk02")
 require("prototypes.buildings.reformer-mk03")
 require("prototypes.buildings.reformer-mk04")
 require("prototypes.buildings.rhe")
-require("prototypes.buildings.oil-derrick-mk01")
-require("prototypes.buildings.oil-derrick-mk02")
-require("prototypes.buildings.oil-derrick-mk03")
-require("prototypes.buildings.oil-derrick-mk04")
-require("prototypes.buildings.bitumen-seep-mk01")
-require("prototypes.buildings.bitumen-seep-mk02")
-require("prototypes.buildings.bitumen-seep-mk03")
-require("prototypes.buildings.bitumen-seep-mk04")
 require("prototypes.buildings.tholin-atm-mk01")
 require("prototypes.buildings.tholin-atm-mk02")
 require("prototypes.buildings.tholin-atm-mk03")
@@ -78,14 +69,6 @@ require("prototypes.buildings.lor-mk01")
 require("prototypes.buildings.lor-mk02")
 require("prototypes.buildings.lor-mk03")
 require("prototypes.buildings.lor-mk04")
-require("prototypes.buildings.tar-extractor-mk01")
-require("prototypes.buildings.tar-extractor-mk02")
-require("prototypes.buildings.tar-extractor-mk03")
-require("prototypes.buildings.tar-extractor-mk04")
-require("prototypes.buildings.tar-seep-mk01")
-require("prototypes.buildings.tar-seep-mk02")
-require("prototypes.buildings.tar-seep-mk03")
-require("prototypes.buildings.tar-seep-mk04")
 require("prototypes.buildings.coalbed-mk01")
 require("prototypes.buildings.coalbed-mk02")
 require("prototypes.buildings.coalbed-mk03")
@@ -98,6 +81,25 @@ require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
+--seeps and extractors
+require("prototypes.buildings.oil-derrick-mk01")
+require("prototypes.buildings.oil-derrick-mk02")
+require("prototypes.buildings.oil-derrick-mk03")
+require("prototypes.buildings.oil-derrick-mk04")
+require("prototypes.buildings.bitumen-seep-mk01")
+require("prototypes.buildings.bitumen-seep-mk02")
+require("prototypes.buildings.bitumen-seep-mk03")
+require("prototypes.buildings.bitumen-seep-mk04")
+require("prototypes.buildings.tar-extractor-mk01")
+require("prototypes.buildings.tar-extractor-mk02")
+require("prototypes.buildings.tar-extractor-mk03")
+require("prototypes.buildings.tar-extractor-mk04")
+require("prototypes.buildings.tar-seep-mk01")
+require("prototypes.buildings.tar-seep-mk02")
+require("prototypes.buildings.tar-seep-mk03")
+require("prototypes.buildings.tar-seep-mk04")
+require("prototypes.buildings.natural-gas-extractor-mk01")
+require("prototypes.buildings.natural-gas-seep-mk01")
 
 --((space buildings))--
 --[[
@@ -265,14 +267,3 @@ end
 
 --(( OTHERS ))--
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
-
---(( Shortcut keys ))--
-local recipeselect=
-	{
-	type = "custom-input",
-	name = "recipe-selector",
-	key_sequence = "SHIFT + G",
-	consuming = "none"
-	}
-
-data:extend{recipeselect}

@@ -54,25 +54,3 @@ for r, recipe in pairs(data.raw.recipe) do
     end
 end
 ]]--
-
-if settings.startup['fine-oil'].value then
-    --data.raw.resource['natural-gas'].infinite = false
-    if data.raw.resource['oil-mk01'] then
-        data.raw.resource['oil-mk01'].infinite = false
-    end
-    if data.raw.resource['oil-mk02'] then
-        data.raw.resource['oil-mk02'].infinite = false
-    end
-    if data.raw.resource['oil-mk03'] then
-        data.raw.resource['oil-mk03'].infinite = false
-    end
-    if data.raw.resource['oil-mk04'] then
-        data.raw.resource['oil-mk04'].infinite = false
-    end
-    if data.raw.resource['tar-patch'] then
-        data.raw.resource['tar-patch'].infinite = false
-    end
-    if data.raw.resource['crude-oil'] then
-        data.raw.resource['crude-oil'].infinite = false
-    end
-end

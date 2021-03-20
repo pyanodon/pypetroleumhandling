@@ -32,6 +32,10 @@ data:extend {
         name = "bitumen-seep"
     },
     {
+        type = "resource-category",
+        name = "natural-gas"
+    },
+    {
         type = "recipe-category",
         name = "hor"
     },

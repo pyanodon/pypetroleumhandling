@@ -114,8 +114,6 @@ ENTITY {
     }
 }
 
-data.raw["mining-drill"]["oil-derrick-mk01"].minable.result = "bitumen-seep-mk01"
-
 ENTITY {
     type = "assembling-machine",
     name = "bitumen-seep-mk01-base",

@@ -1,3 +1,4 @@
+--[[
 RECIPE {
     type = "recipe",
     name = "oil-derrick-mk02",
@@ -28,6 +29,7 @@ ITEM {
     place_result = "oil-derrick-mk02",
     stack_size = 10
 }
+]]--
 
 ENTITY {
     type = "mining-drill",
@@ -35,7 +37,7 @@ ENTITY {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk02.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "oil-derrick-mk02"},
+    minable = {mining_time = 0.5, result = "bitumen-seep-mk02"},
     fast_replaceable_group = "oil-derrick-mk02",
     max_health = 700,
     resource_categories = {"oil-mk02"},

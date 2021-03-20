@@ -1,6 +1,4 @@
 script.on_init(function()
-    global.hasbuiltoilderrick = false
-    global.oil_to_gas = false
     global.first_chunk = false
     --
     --[[
@@ -17,10 +15,6 @@ global.rocket_silo_con_combinator = {}
 end)
 
 script.on_configuration_changed(function()
-    if global.hasbuiltoilderrick == nil then global.hasbuiltoilderrick = false end
-    if global.oil_to_gas == nil then global.oil_to_gas = false end
-    --
-
     --[[
 	if global.antenna == nil then
 		global.antenna =
@@ -37,41 +31,10 @@ script.on_configuration_changed(function()
     if global.oil_derricks == nil then global.oil_derricks = {} end
 end)
 
-local function oil_gas_select(entity, global_bypass)
-    local E = entity
-    if string.match(E.name, 'oil%-derrick') ~= nil then
-        if global.oil_to_gas == true or global_bypass == true then
-            local mk = string.match(E.name, '%d+')
-            -- log(mk)
-            local oil = game.surfaces['nauvis'].find_entity('oil-mk' .. mk, E.position)
-            local gas = game.surfaces['nauvis'].find_entity('natural-gas-' ..
-                                                                string.match(string.match(E.name, '%d+'), '[^0]'),
-                E.position)
-            if oil ~= nil then
-                game.surfaces['nauvis'].create_entity {
-                    name = 'natural-gas-' .. string.match(string.match(E.name, '%d+'), '[^0]'),
-                    amount = oil.amount,
-                    position = oil.position
-                }
-                oil.destroy()
-            elseif gas ~= nil then
-                game.surfaces['nauvis'].create_entity {
-                    name = 'oil-mk' .. mk,
-                    amount = gas.amount,
-                    position = gas.position
-                }
-                gas.destroy()
-            end
-        end
-    end
-end
-
 script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
     local E = event.created_entity
     -- log(E.name)
-    if string.match(E.name, 'oil%-derrick') ~= nil then
-        oil_gas_select(E)
-    elseif string.match(E.name, 'seep') ~= nil and E.type == 'mining-drill' then
+    if string.match(E.name, 'seep') ~= nil and E.type == 'mining-drill' then
         -- log('hit')
         local resource = game.surfaces[E.surface.name].find_entities_filtered {
             area = {{E.position.x - 1, E.position.y - 1}, {E.position.x + 1, E.position.y + 1}},
@@ -93,12 +56,21 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
                     position = E.position
                 }
                 E.destroy()
+            elseif string.match(re.name, 'natural%-gas') then
+                game.surfaces[E.surface.name].create_entity{
+                    name = 'natural-gas-extractor-mk01',
+                    force = E.force,
+                    position = E.position
+                }
+                E.destroy()
             else
                 local base = ''
                 if string.match(E.name, 'bitumen') then
                     base = E.name .. '-base'
                 elseif string.match(E.name, 'tar') then
                     base = 'tar-seep-mk01-base'
+                elseif string.match(E.name, 'natural%-gas') then
+                    base = 'natural-gas-seep-mk01-base'
                 end
                 local ass1 = game.surfaces[E.surface.name].create_entity {
                     name = base,
@@ -137,57 +109,10 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
     end
 end)
 
-script.on_event('recipe-selector', function(event)
-    -- log("working")
-    -- log(global.oil_to_gas)
-    local player = game.players[event.player_index]
-    local selected = player.selected
-    if selected == nil or string.match(selected.name, 'oil%-derrick') == nil then
-        if global.oil_to_gas == false then
-            -- log('hit')
-            global.oil_to_gas = true
-        else
-            -- log('hit')
-            global.oil_to_gas = false
-        end
-    elseif selected and string.match(selected.name, 'oil%-derrick') ~= nil then
-        local gas = true
-        oil_gas_select(selected, gas)
-    end
-end)
-
 script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_mined_entity}, function(event)
     local E = event.entity
     -- log('hit')
-    if string.match(event.entity.name, 'oil%-derrick') then
-        -- log('hit')
-        local oil = game.surfaces['nauvis'].find_entities({
-            {event.entity.position.x - 1, event.entity.position.y - 1},
-            {event.entity.position.x + 1, event.entity.position.y + 1}
-        })
-        -- log('hit')
-        -- log(serpent.block(oil))
-        for _, ent in pairs(oil) do
-            -- log('hit')
-            if ent.name == 'natural-gas-1' then
-                -- log('hit')
-                game.surfaces['nauvis'].create_entity {name = 'oil-mk01', amount = ent.amount, position = ent.position}
-                ent.destroy()
-            elseif ent.name == 'natural-gas-2' then
-                -- log('hit')
-                game.surfaces['nauvis'].create_entity {name = 'oil-mk02', amount = ent.amount, position = ent.position}
-                ent.destroy()
-            elseif ent.name == 'natural-gas-3' then
-                -- log('hit')
-                game.surfaces['nauvis'].create_entity {name = 'oil-mk03', amount = ent.amount, position = ent.position}
-                ent.destroy()
-            elseif ent.name == 'natural-gas-4' then
-                -- log('hit')
-                game.surfaces['nauvis'].create_entity {name = 'oil-mk04', amount = ent.amount, position = ent.position}
-                ent.destroy()
-            end
-        end
-    elseif string.match(E.name, 'seep') ~= nil then
+    if string.match(E.name, 'seep') ~= nil then
         local entity = game.surfaces[E.surface.name].find_entities_filtered {
             position = E.position,
             type = 'assembling-machine'
@@ -483,6 +408,9 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         elseif string.match(drill.name, 'tar') ~= nil then
             drill_name = 'tar-extractor'
             resource_name = 'tar-patch'
+        elseif string.match(drill.name, 'natural%-gas') then
+            drill_name = 'natural-gas-extractor'
+            resource_name = 'natural-gas-mk01'
         end
 
         local drill_fluid = global.oil_derricks[drill.unit_number].drilling_fluid
