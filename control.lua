@@ -390,6 +390,13 @@ script.on_event(defines.events.on_chunk_generated, function(event)
     for b, bit in pairs(bitumen) do bit.amount = amount end
 end)
 
+local function get_bitumen_richness(entity)
+    -- for now, only vanilla settings are taken into account
+    local surface = game.surfaces[entity.surface.name]
+    local bitumen_config = surface.map_gen_settings.autoplace_controls['bitumen-seep']
+    return bitumen_config.richness
+end
+
 script.on_event(defines.events.on_resource_depleted, function(event)
     local E = event.entity
     if E.name == 'bitumen-seep' then
@@ -418,10 +425,12 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         local ran = math.random(1, 4)
         local drill_num = string.match(drill.name, '%d+')
         local fluid_num = string.match(drill_fluid, '%d+') + 1
-        local new_oil_amount = 10000 * ran * drill_num * fluid_num
+        local fluid_richness = get_bitumen_richness(E)
+        local new_oil_amount = 10000 * ran * drill_num * fluid_num * fluid_richness
         --log(ran)
         --log(drill_num)
         --log(fluid_num)
+        --log(fluid_richness)
         --log(new_oil_amount)
         -- new_oil_amount = new_oil_amount * string.match(string.match(drill.name, "%d+"), "[^0]")
         game.surfaces[E.surface.name].create_entity {
