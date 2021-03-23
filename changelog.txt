@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
-Date: ????
+Date: 2021-03-23
   Changes:
     - Removed unused setting for finite oil.
     - Removed shortcut for switching oil derrick to output natural gas.
