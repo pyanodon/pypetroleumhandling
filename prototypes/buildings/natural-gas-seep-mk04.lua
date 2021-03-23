@@ -1,67 +1,50 @@
---[[
-  RECIPE {
+RECIPE {
     type = "recipe",
-    name = "natural-gas-extractor-mk01",
+    name = "natural-gas-seep-mk04",
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"engine-unit", 10},
-    },
+      {'bitumen-seep-mk03', 1}, {'distilator', 1}, {'nbfe-alloy', 50}, {'low-density-structure', 30}, {'pipe', 20}
+  },
     results = {
-        {"natural-gas-extractor-mk01", 1}
+        {"natural-gas-seep-mk04", 1}
     }
-}:add_unlock("oil-machines-mk01")
-]]--
+}:add_unlock("oil-machines-mk04"):replace_ingredient('distilator', 'distilator-mk04'
+)
 
 ITEM {
     type = "item",
-    name = "natural-gas-extractor-mk01",
+    name = "natural-gas-seep-mk04",
     icon = "__base__/graphics/icons/pumpjack.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-mk04",
     order = "a",
-    place_result = "pumpjack",
+    place_result = "natural-gas-seep-mk04",
     stack_size = 10
 }
 
 ENTITY {
     type = "mining-drill",
-    name = "natural-gas-extractor-mk01",
+    name = "natural-gas-seep-mk04",
     icon = "__base__/graphics/icons/pumpjack.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "natural-gas-seep-mk01"},
-    resource_categories = {"natural-gas"},
+    minable = {mining_time = 0.5, result = "natural-gas-seep-mk04"},
+    resource_categories = {"bitumen-seep", "natural-gas"},
     max_health = 200,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     collision_box = {{ -1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
-    drawing_box = {{-1.6, -2.5}, {1.5, 1.6}},
     energy_source =
     {
       type = "electric",
       emissions_per_second_per_watt = 10 / 90000,
       usage_priority = "secondary-input"
     },
-    output_fluid_box =
-    {
-      base_area = 1,
-      base_level = 1,
-      pipe_covers = DATA.Pipes.covers(false, true, true, true),
-      pipe_connections =
-      {
-        {
-          positions = { {1, -2}, {2, -1}, {-1, 2}, {-2, 1} }
-        }
-      }
-    },
     energy_usage = "90kW",
-    mining_speed = 1,
+    mining_speed = 3,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, 0},
     module_specification =
@@ -95,7 +78,7 @@ ENTITY {
             height = 273,
             shift = util.by_pixel(-2.25, -4.75),
             scale = 0.5,
-            tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+            tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
           },
           {
             filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-base-shadow.png",
@@ -134,7 +117,7 @@ ENTITY {
               height = 202,
               frame_count = 40,
               shift = util.by_pixel(-4, -24),
-              tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+              tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
           },
           {
             priority = "high",
@@ -159,3 +142,63 @@ ENTITY {
     },
     fast_replaceable_group = "pumpjack",
   }
+
+
+ENTITY {
+    type = "assembling-machine",
+    name = "natural-gas-seep-mk04-base",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk04.png",
+	icon_size = 32,
+    flags = {"placeable-neutral", "player-creation"},
+    max_health = 100,
+    corpse = "medium-remnants",
+    dying_explosion = "big-explosion",
+    collision_box = {{ -1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{0,0}, {0,0}},
+    match_animation_speed_to_activity = false,
+    module_specification = {
+        module_slots = 0
+    },
+    allowed_effects = {},
+    crafting_categories = {"drilling-fluid"},
+    crafting_speed = 1,
+    energy_source = {
+        type = "void",
+    },
+    energy_usage = "750kW",
+    fixed_recipe = 'drilling-fluids',
+    fluid_boxes = {
+        --1
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-1, 2}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-1, -2}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {1, -2}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {1, 2}}}
+        },
+        off_when_no_fluid_recipe = false
+    },
+}

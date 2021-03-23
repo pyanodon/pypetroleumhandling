@@ -16,7 +16,7 @@ RECIPE {
     results = {
         {"bitumen-seep-mk03", 1}
     }
-}:add_unlock("oil-machines-mk03"):replace_ingredient("distilator", "distilator-mk02")
+}:add_unlock("oil-machines-mk03"):replace_ingredient("distilator", "distilator-mk03")
 
 ITEM {
     type = "item",

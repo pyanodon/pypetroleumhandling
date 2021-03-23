@@ -2,6 +2,12 @@
 Version: 2.0.6
 Date: ????
   Changes:
+    - Removed unused setting for finite oil.
+    - Removed shortcut for switching oil derrick to output natural gas.
+    - Converted natural gas over to use the same system as tar extractor and oil derrick. has it's own mining drill now.
+    - Added natural gas pumpjacks mk1-4.
+    - Removed duplicate tar extractor recipes.
+    - Removed bitumen seep richness from the new game menu. changing richness would break the system and lock you out of oil for an unnecessarily long time.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 2021-01-30

@@ -439,3 +439,20 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         drill.destroy()
     end
 end)
+
+script.on_event(defines.events.on_entity_died, function(event)
+	local E = event.entity
+    -- log('hit')
+    if string.match(E.name, 'seep') ~= nil then
+        local entity = game.surfaces[E.surface.name].find_entities_filtered {
+            position = E.position,
+            type = 'assembling-machine'
+        }
+        for e, ent in pairs(entity) do
+			ent.destroy()
+		end
+		if E.valid == true then
+			global.oil_derricks[E.unit_number] = nil
+		end
+    end
+end)

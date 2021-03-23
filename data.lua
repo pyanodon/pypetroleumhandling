@@ -99,7 +99,13 @@ require("prototypes.buildings.tar-seep-mk02")
 require("prototypes.buildings.tar-seep-mk03")
 require("prototypes.buildings.tar-seep-mk04")
 require("prototypes.buildings.natural-gas-extractor-mk01")
+require("prototypes.buildings.natural-gas-extractor-mk02")
+require("prototypes.buildings.natural-gas-extractor-mk03")
+require("prototypes.buildings.natural-gas-extractor-mk04")
 require("prototypes.buildings.natural-gas-seep-mk01")
+require("prototypes.buildings.natural-gas-seep-mk02")
+require("prototypes.buildings.natural-gas-seep-mk03")
+require("prototypes.buildings.natural-gas-seep-mk04")
 
 --((space buildings))--
 --[[

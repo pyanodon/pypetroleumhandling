@@ -4,7 +4,7 @@ DATA {
     type = "autoplace-control",
     category = "resource",
     name = "bitumen-seep",
-    richness = true,
+    richness = false,
     order = "c"
 }
 

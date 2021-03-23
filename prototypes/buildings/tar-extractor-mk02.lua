@@ -1,3 +1,4 @@
+--[[
 RECIPE {
     type = "recipe",
     name = "tar-extractor-mk02",
@@ -13,6 +14,7 @@ RECIPE {
         {"tar-extractor-mk02", 1}
     }
 }:add_unlock("oil-machines-mk02")
+]]--
 
 ITEM {
     type = "item",

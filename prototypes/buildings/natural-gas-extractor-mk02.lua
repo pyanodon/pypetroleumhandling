@@ -1,7 +1,7 @@
 --[[
   RECIPE {
     type = "recipe",
-    name = "natural-gas-extractor-mk01",
+    name = "natural-gas-extractor-mk02",
     energy_required = 15,
     enabled = false,
     ingredients = {
@@ -11,18 +11,18 @@
         {"engine-unit", 10},
     },
     results = {
-        {"natural-gas-extractor-mk01", 1}
+        {"natural-gas-extractor-mk02", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk02")
 ]]--
 
 ITEM {
     type = "item",
-    name = "natural-gas-extractor-mk01",
+    name = "natural-gas-extractor-mk02",
     icon = "__base__/graphics/icons/pumpjack.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
+    subgroup = "py-petroleum-handling-buildings-mk02",
     order = "a",
     place_result = "pumpjack",
     stack_size = 10
@@ -30,11 +30,11 @@ ITEM {
 
 ENTITY {
     type = "mining-drill",
-    name = "natural-gas-extractor-mk01",
+    name = "natural-gas-extractor-mk02",
     icon = "__base__/graphics/icons/pumpjack.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "natural-gas-seep-mk01"},
+    minable = {mining_time = 0.5, result = "natural-gas-seep-mk02"},
     resource_categories = {"natural-gas"},
     max_health = 200,
     corpse = "big-remnants",
@@ -60,8 +60,8 @@ ENTITY {
         }
       }
     },
-    energy_usage = "90kW",
-    mining_speed = 1,
+    energy_usage = "200kW",
+    mining_speed = 2,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, 0},
     module_specification =
@@ -95,7 +95,7 @@ ENTITY {
             height = 273,
             shift = util.by_pixel(-2.25, -4.75),
             scale = 0.5,
-            tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+            tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
           },
           {
             filename = "__base__/graphics/entity/pumpjack/hr-pumpjack-base-shadow.png",
@@ -134,7 +134,7 @@ ENTITY {
               height = 202,
               frame_count = 40,
               shift = util.by_pixel(-4, -24),
-              tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+              tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
           },
           {
             priority = "high",
