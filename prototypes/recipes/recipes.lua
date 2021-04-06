@@ -926,9 +926,10 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "item", name = "guar-seeds", amount = 150},
+        {type = "item", name = "plastic-bar", amount = 1},
         },
     results = {
-        {type = "item", name = "guar-gum", amount = 2},
+        {type = "item", name = "guar-gum", amount = 3},
     },
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
