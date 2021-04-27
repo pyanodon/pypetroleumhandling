@@ -47,6 +47,7 @@ RECIPE('benzene-aromatics'):change_category('cracker')
 ----RECIPES----
 
 RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50})
+RECIPE("rubber-03"):add_ingredient({type = "item", name = "phenol", amount = 4})
 RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):change_category("fbreactor")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
 RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
