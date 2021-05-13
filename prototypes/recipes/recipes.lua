@@ -1694,4 +1694,4 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}
