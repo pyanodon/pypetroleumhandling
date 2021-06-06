@@ -119,3 +119,9 @@ for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
       preset.basic_settings.autoplace_controls['crude-oil'] = nil
     end
 end
+
+if data.data_crawler then
+	data.script_enabled = {
+	  {type = "entity", name = "tar-patch"}
+	}
+end
