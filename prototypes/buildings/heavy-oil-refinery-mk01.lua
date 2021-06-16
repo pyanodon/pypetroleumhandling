@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"advanced-foundry-mk01", 1},
+        {"steel-furnace", 2},
         {"steel-plate", 40},
         {"small-parts-01", 10},
         {"iron-plate", 100},
