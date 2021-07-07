@@ -17,7 +17,7 @@ require('prototypes/updates/tholin-overhaul')
 --ADAPTATIONS
 
 TECHNOLOGY('logistic-science-pack'):add_prereq('rubber')
-TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack')
+TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack'):remove_prereq('logistic-science-pack')
 
 --RECIPES UPDATES
 
