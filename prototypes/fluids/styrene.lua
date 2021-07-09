@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "syngas", amount = 100}, --benzene
-        {type = "fluid", name = "aromatics", amount = 50}, --ethylene
+        {type = "fluid", name = "aromatics", amount = 100}, --ethylene
         {type = "fluid", name = "steam", amount = 100},
         {type = "item", name = "iron-oxide", amount = 2},
     },
