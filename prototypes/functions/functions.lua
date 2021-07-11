@@ -432,7 +432,7 @@ local altrec = 0
 			end
 			if icon == nil then --(i.e. not found above)
 				--find it from result icon
-				icon = data.raw.item[result].icon
+				icon = table.deepcopy(data.raw.item[result].icon)
 				--confirm icon_size
 				if data.raw.item[result] and data.raw.item[result].icon_size ~= nil then
 					icon_size = data.raw.item[result].icon_size
@@ -442,7 +442,7 @@ local altrec = 0
         icons = recipe.icons
         icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
       elseif data.raw.item[result] and data.raw.item[result].icons then
-        icons = data.raw.item[result].icons
+        icons = table.deepcopy(data.raw.item[result].icons)
         icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
       else --no icons table, use icon found above
         if icon == nil then
