@@ -10,7 +10,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "raw-gas", amount = 100},
         {type = "fluid", name = "btx", amount = 30},
-        {type = "fluid", name = "dirty-water", amount = 50},
+        {type = "fluid", name = "dirty-water-heavy", amount = 50},
     },
     main_product = "raw-gas",
     subgroup = "py-petroleum-handling-fluids",

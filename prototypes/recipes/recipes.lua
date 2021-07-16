@@ -178,7 +178,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "light-oil", amount = 100},
-        {type = "fluid", name = "dirty-water", amount = 100},
+        {type = "fluid", name = "dirty-water-heavy", amount = 100},
     },
     main_product = "light-oil",
     icon = "__base__/graphics/icons/fluid/light-oil.png",
@@ -221,7 +221,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "naphtha", amount = 150},
-        {type = "fluid", name = "dirty-water", amount = 100},
+        {type = "fluid", name = "dirty-water-heavy", amount = 100},
     },
     main_product = "naphtha",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
@@ -403,7 +403,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "naphtha", amount = 100},
-        {type = "fluid", name = "dirty-water", amount = 100},
+        {type = "fluid", name = "dirty-water-heavy", amount = 100},
         {type = "fluid", name = "steam", amount = 1000, temperature = 60},
     },
     main_product = "naphtha",

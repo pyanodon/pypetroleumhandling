@@ -4,6 +4,8 @@ RECIPE('vacuum'):remove_unlock('diamond-mining'):set_enabled(true)
 
 --BUILDINDS--
 
+RECIPE('pressured-air'):remove_unlock('helium-processing'):add_unlock('rubber')
+
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "agitator-mk01", amount = 1})
 RECIPE("oil-sand-extractor-mk04"):add_ingredient({type = "item", name = "nenbit-matrix", amount = 10}):add_ingredient({type = "item", name = "wall-shield", amount = 2}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "super-alloy", amount = 20}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})

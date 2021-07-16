@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-01.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"coal-processing-1","crusher","separation"},
+    prerequisites = {"separation", "advanced-material-processing"},
     effects = {},
     unit = {
         count = 200,

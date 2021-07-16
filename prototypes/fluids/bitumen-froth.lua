@@ -11,7 +11,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "bitumen-froth", amount = 100},
-        {type = "fluid", name = "dirty-water", amount = 100},
+        {type = "fluid", name = "dirty-water-heavy", amount = 100},
     },
     main_product = "bitumen-froth",
     subgroup = "py-petroleum-handling-scrude-recipes",

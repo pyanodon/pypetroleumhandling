@@ -14,7 +14,7 @@
     "stdlib >= 1.4.0",
     "(?) pyrawores >= 1.2.6",
     "(?) rso-mod",
-    "pypetroleumhandlinggraphics >= 1.0.0"
+    "~ pypetroleumhandlinggraphics >= 1.0.0"
   ],
   "package": {
     "ignore": [],

@@ -1,32 +1,23 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
-if mods["pyfusionenergy"] then
-    require("prototypes/updates/pyfusionenergy-updates")
+require("prototypes/updates/pycoalprocessing-updates")
+require("prototypes/updates/pyfusionenergy-updates")
+require("prototypes/updates/pyindustry-updates")
+
+if mods["pyrawores"] then
+    require("prototypes/updates/pyrawores-updates")
 end
 
 if mods["pyhightech"] then
     require("prototypes/updates/pyhightech-updates")
 end
 
-if mods["pycoalprocessing"] then
-    require("prototypes/updates/pycoalprocessing-updates")
-	if not mods['pyrawores'] then
-		TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack')
-		TECHNOLOGY('oil-machines-mk01'):remove_prereq('crusher')
-	end
-end
-
-if mods["pyrawores"] then
-    require("prototypes/updates/pyrawores-updates")
-end
-
-if mods["pyindustry"] then
-    require("prototypes/updates/pyindustry-updates")
-end
-
 require('prototypes/updates/tholin-overhaul')
 
 --ADAPTATIONS
+
+TECHNOLOGY('logistic-science-pack'):add_prereq('rubber')
+TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack'):remove_prereq('logistic-science-pack')
 
 --RECIPES UPDATES
 
@@ -119,3 +110,16 @@ for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
       preset.basic_settings.autoplace_controls['crude-oil'] = nil
     end
 end
+
+if data.data_crawler then
+	if mods['pyhightech'] then
+	  data.script_enabled = {
+		{type = "entity", name = "crash-site-assembling-machine-1-repaired"},
+		{type = "entity", name = "tar-patch"}
+	  }
+	else
+	  data.script_enabled = {
+		{type = "entity", name = "tar-patch"}
+	  }
+	end
+  end
