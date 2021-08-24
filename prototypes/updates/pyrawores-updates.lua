@@ -637,6 +637,25 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "aromatics-2-diesel",
+    category = "lor",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "aromatics", amount = 500},
+        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "diesel", amount = 350},
+    },
+    main_product = "diesel",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
     name = "aromatics-2-diesel2",
     category = "lor",
     enabled = false,
