@@ -30,6 +30,7 @@ RECIPE("coalbed-mk03"):add_ingredient({type = "item", name = "super-alloy", amou
 RECIPE("coalbed-mk04"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "boron-carbide", amount = 30}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "wall-shield", amount = 5}):add_ingredient({type = "item", name = "science-coating", amount = 2}):add_ingredient({type = "item", name = "control-unit", amount = 5})
 RECIPE("retorter"):add_ingredient({type = "item", name = "control-unit", amount = 10}):add_ingredient({type = "item", name = "super-alloy", amount = 20})
+RECIPE("chemical-plant-mk03"):add_ingredient({type = "item", name = "nenbit-matrix", amount = 10}):add_ingredient({type = "item", name = "nbti-alloy", amount = 20})
 
 RECIPE("automated-screener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("bio-reactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})

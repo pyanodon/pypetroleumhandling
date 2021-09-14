@@ -52,6 +52,7 @@ RECIPE("tar-processing-unit-mk02"):add_ingredient({type = "item", name = "small-
 RECIPE("washer-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
 RECIPE("wpu-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
 RECIPE("gasturbinemk02"):replace_ingredient("iron-gear-wheel", "small-parts-02")
+RECIPE("chemical-plant-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
 
 --parts3
 
@@ -84,6 +85,7 @@ RECIPE("solid-separator-mk03"):add_ingredient({type = "item", name = "small-part
 RECIPE("tar-processing-unit-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("washer-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("wpu-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
+RECIPE("chemical-plant-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 
 RECIPE("mining-nexelit"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100})
 RECIPE("mining-borax"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
