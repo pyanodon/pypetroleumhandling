@@ -58,6 +58,7 @@ RECIPE("ht-locomotive"):add_ingredient({type = "item", name = "small-parts-02", 
 RECIPE("ht-generic-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("ht-generic-fluid-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("drilling-fluid-0"):add_ingredient({type = "item", name = "clay", amount = 5})
+RECIPE("ethylene-chlorohydrin"):add_ingredient({type = "fluid", name = "ethylene", amount = 50})
 
 ----EXCLUSIVE RECIPES----
 
