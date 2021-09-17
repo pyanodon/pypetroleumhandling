@@ -91,6 +91,9 @@ RECIPE("leaching-station-mk03"):add_ingredient({type = "item", name = "small-par
 RECIPE("scrubber-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("wet-scrubber-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 
+RECIPE("chemical-plant-mk02"):remove_unlock('machines-mk02'):add_unlock('oil-machines-mk02')
+RECIPE("chemical-plant-mk03"):remove_unlock('machines-mk03'):add_unlock('oil-machines-mk03')
+RECIPE("chemical-plant-mk04"):remove_unlock('machines-mk04'):add_unlock('oil-machines-mk04')
 
 --RECIPES--
 
