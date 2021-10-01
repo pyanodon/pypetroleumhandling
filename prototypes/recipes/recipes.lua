@@ -404,7 +404,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "naphtha", amount = 100},
         {type = "fluid", name = "dirty-water-heavy", amount = 100},
-        {type = "fluid", name = "steam", amount = 1000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 1000, temperature = 150},
     },
     main_product = "naphtha",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
@@ -592,7 +592,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 250},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
     },
     main_product = "natural-gas",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
@@ -615,7 +615,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
     },
     main_product = "gasoline",
     icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
@@ -638,7 +638,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "syngas", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
     },
     main_product = "syngas",
     icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
@@ -756,7 +756,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             },
             results = {
                 {type = "fluid", name = "methane", amount = 300},
-                {type = "fluid", name = "steam", amount = 500, temperature = 60},
+                {type = "fluid", name = "steam", amount = 500, temperature = 150},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
             main_product = "methane",
@@ -776,7 +776,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             },
             results = {
                 {type = "fluid", name = "petroleum-gas", amount = 300},
-                {type = "fluid", name = "steam", amount = 500, temperature = 60},
+                {type = "fluid", name = "steam", amount = 500, temperature = 150},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
             main_product = "petroleum-gas",
@@ -1018,7 +1018,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "condensed-distillate", amount = 100},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "condensed-distillate",
     subgroup = "py-petroleum-handling-fluids",
@@ -1148,7 +1148,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "light-oil", amount = 300},
         {type = "fluid", name = "residual-oil", amount = 50},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "light-oil",
     subgroup = "py-petroleum-handling-fluids",
@@ -1243,7 +1243,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "heavy-oil", amount = 200},
         {type = "fluid", name = "residual-oil", amount = 50},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "heavy-oil",
     subgroup = "py-petroleum-handling-fluids",

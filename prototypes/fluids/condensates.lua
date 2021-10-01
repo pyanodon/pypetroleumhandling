@@ -11,7 +11,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "condensates", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 60},
+        {type = "fluid", name = "steam", amount = 200, temperature = 150},
         {type = "fluid", name = "naphtha", amount = 50},
     },
     main_product = "condensates",

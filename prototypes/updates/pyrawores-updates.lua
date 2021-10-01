@@ -762,7 +762,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 600},
-        {type = "fluid", name = "steam", amount = 500, temperature = 60}
+        {type = "fluid", name = "steam", amount = 500, temperature = 150}
     },
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/combustion-xylenol.png",
     icon_size = 32,

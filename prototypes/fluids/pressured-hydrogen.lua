@@ -26,7 +26,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-hydrogen", amount = 50},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "pressured-hydrogen",
     subgroup = "py-petroleum-handling-fluids",

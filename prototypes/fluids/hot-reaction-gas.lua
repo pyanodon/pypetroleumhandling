@@ -29,7 +29,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "hot-reaction-gas", amount = 100},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "hot-reaction-gas",
     subgroup = "py-petroleum-handling-fluids",
@@ -49,7 +49,7 @@ else
         },
         results = {
             {type = "fluid", name = "hot-reaction-gas", amount = 100},
-            {type = "fluid", name = "steam", amount = 600, temperature = 60}
+            {type = "fluid", name = "steam", amount = 600, temperature = 150}
         },
         main_product = "hot-reaction-gas",
         subgroup = "py-petroleum-handling-fluids",
