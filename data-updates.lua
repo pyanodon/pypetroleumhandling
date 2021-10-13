@@ -39,6 +39,7 @@ RECIPE("carbon-filter"):remove_ingredient("assembling-machine-2"):add_ingredient
 RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
 RECIPE("small-parts-03"):replace_ingredient("glass", "glass-fiber"):replace_ingredient("tin-plate", "aerogel")
 RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')
+RECIPE("utility-science-pack"):add_ingredient({type = "item", name = "small-parts-03", amount = 20})
 
 --Base Updates
 
