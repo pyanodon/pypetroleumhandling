@@ -203,50 +203,11 @@ data.raw.fluid["stripped-distillate"].fuel_value = "0.4MJ"
 data.raw.fluid["condensed-distillate"].fuel_value = "0.5MJ"
 data.raw.fluid["residual-mixture"].fuel_value = "0.1MJ"
 data.raw.fluid["hot-residual-mixture"].fuel_value = "0.1MJ"
---moved fuel_value for each mod into the correct mod. leaving these here incase pyph needs different values then the others due to oil boiler
---[[
---base game fluids
-data.raw.fluid["crude-oil"].fuel_value = "82.5KJ"
-data.raw.fluid["heavy-oil"].fuel_value = "0.8MJ"
-data.raw.fluid["light-oil"].fuel_value = "0.9MJ"
-data.raw.fluid["petroleum-gas"].fuel_value = "1MJ"
---pycp fluids
---fuel consumtion should secounds = fuel value / energy consumption
-data.raw.fluid["coal-gas"].fuel_value = "0.2MJ" -- needs to use 4/s per boiler
-data.raw.fluid["syngas"].fuel_value = "0.4MJ"
-data.raw.fluid["refsyngas"].fuel_value = "0.5MJ"
-data.raw.fluid["diesel"].fuel_value = "1.5MJ"
-data.raw.fluid["gasoline"].fuel_value = "1MJ"
-data.raw.fluid["methanol"].fuel_value = "1MJ"
-data.raw.fluid["tar"].fuel_value = "0.2MJ"
---pyfus fluids
 
-if mods["pyhightech"] then
---pyht fluids
-data.raw.fluid["benzene"].fuel_value = "1MJ"
-data.raw.fluid["ethylene"].fuel_value = "1MJ"
-data.raw.fluid["methane"].fuel_value = "0.8MJ"
-data.raw.fluid["propene"].fuel_value = "1MJ"
-data.raw.fluid["tall-oil"].fuel_value = "1MJ"
-end
-
-if mods["pyrawores"] then
---pyro fluids
-data.raw.fluid["coke-oven-gas"].fuel_value = "1MJ"
-data.raw.fluid["kerosene"].fuel_value = "1.5MJ"
-data.raw.fluid["hydrogen"].fuel_value = "20KJ"
-data.raw.fluid["outlet-gas-01"].fuel_value = "0.5MJ"
-data.raw.fluid["outlet-gas-02"].fuel_value = "0.5MJ"
-data.raw.fluid["outlet-gas-03"].fuel_value = "0.5MJ"
-data.raw.fluid["outlet-gas-04"].fuel_value = "0.5MJ"
-end
-]]--
 
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'syngas', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'refsyngas', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'methanol', damage_modifier = 1.2})
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'diesel', damage_modifier = 2})
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'gasoline', damage_modifier = 2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'combustion-mixture1', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'oleochemicals', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'olefin', damage_modifier = 2})
@@ -264,11 +225,6 @@ end
 --pyal
 if mods['pyalienlife'] then
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'ethanol', damage_modifier = 1.2})
-end
-
---pyro
-if mods['pyrawores'] then
-table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'kerosene', damage_modifier = 2})
 end
 
 --(( OTHERS ))--
