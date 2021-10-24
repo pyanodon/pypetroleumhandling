@@ -79,6 +79,7 @@ require("prototypes.buildings.gas-refinery-mk03")
 require("prototypes.buildings.gas-refinery-mk04")
 require("prototypes.buildings.sulfur-mine")
 require("prototypes.buildings.guar-gum-plantation")
+require("prototypes.buildings.guar-gum-plantation-mk02")
 require("prototypes.buildings.fracking-rig")
 require("prototypes.buildings.retorter")
 --seeps and extractors

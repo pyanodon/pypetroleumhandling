@@ -1,40 +1,40 @@
 RECIPE {
     type = "recipe",
-    name = "guar-gum-plantation",
+    name = "guar-gum-plantation-mk02",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"pipe", 20},
-        {"steel-plate", 20},
-        {"botanical-nursery", 1},
-        {"electronic-circuit", 10},
-        {"small-parts-01", 30},
+        {"guar-gum-plantation", 1},
+        {"steel-plate", 50},
+        {"niobium-pipe", 20},
+        {"engine-unit", 3},
+        {"small-parts-02", 50},
     },
     results = {
-        {"guar-gum-plantation", 1}
+        {"guar-gum-plantation-mk02", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk02")
 
 ITEM {
     type = "item",
-    name = "guar-gum-plantation",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation-mk01.png",
+    name = "guar-gum-plantation-mk02",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation-mk02.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
     order = "b",
-    place_result = "guar-gum-plantation",
+    place_result = "guar-gum-plantation-mk02",
     stack_size = 10
 }
 
 ENTITY {
     type = "assembling-machine",
-    name = "guar-gum-plantation",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation-mk01.png",
+    name = "guar-gum-plantation-mk02",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation-mk02.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "guar-gum-plantation"},
-    fast_replaceable_group = "guar-gum-plantation",
+    minable = {mining_time = 0.5, result = "guar-gum-plantation-mk02"},
+    fast_replaceable_group = "guar-gum-plantation-mk02",
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
@@ -42,17 +42,17 @@ ENTITY {
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     match_animation_speed_to_activity = false,
     module_specification = {
-        module_slots = 1
+        module_slots = 2
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"guar"},
-    crafting_speed = 1,
+    crafting_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions_per_minute = -35,
     },
-    energy_usage = "400kW",
+    energy_usage = "600kW",
     animation = {
         layers = {
             {
@@ -72,7 +72,7 @@ ENTITY {
                 frame_count = 100,
                 animation_speed = 0.3,
                 shift = util.by_pixel(-48, -6),
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/right.png",
@@ -91,7 +91,7 @@ ENTITY {
                 frame_count = 100,
                 animation_speed = 0.3,
                 shift = util.by_pixel(64, -6),
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-left.png",
