@@ -30,6 +30,9 @@ RECIPE("retorter"):replace_ingredient("control-unit", "intelligent-unit"):add_in
 RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 50}):add_ingredient({type = "item", name = "biopolymer", amount = 35}):add_ingredient({type = "item", name = "aerogel", amount = 15})
 RECIPE("gas-refinery-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
 RECIPE("lab-instrument"):add_ingredient({type = "item", name = "plastic-bar", amount = 3})
+RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 30}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 15})
+RECIPE("guar-gum-plantation-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 10}):add_ingredient({type = "item", name = "quantum-dots", amount = 10})
+
 
 RECIPE("cadaveric-arum-mk01"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
 RECIPE("electronics-factory-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 15})
