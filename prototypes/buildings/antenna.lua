@@ -32,7 +32,7 @@ ENTITY{
     type = "lamp",
     name = "antenna",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/control-tower.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "antenna"},
     max_health = 100,

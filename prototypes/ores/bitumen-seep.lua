@@ -12,7 +12,7 @@ ENTITY {
     type = "resource",
     name = "bitumen-seep",
     icon = "__base__/graphics/icons/crude-oil-resource.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
     flags = {"placeable-neutral"},
     category = "bitumen-seep",
     order="a-b-a",
