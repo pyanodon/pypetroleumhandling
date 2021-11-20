@@ -1,3 +1,4 @@
+local resource_autoplace = require("resource-autoplace")
 DATA {
     type = "autoplace-control",
     category = "resource",
@@ -21,7 +22,6 @@ ENTITY {
     order = "a-b-a",
     map_color = {r = 0.3, g = 0.3, b = 0.3},
     minable = {
-
         -- mining_particle = "oil-sand-ore-particle",
         mining_time = 1,
         results = {
@@ -31,20 +31,15 @@ ENTITY {
     starting_area = true,
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    autoplace = {
-        control = "oil-sand",
-        sharpness = 15/16,
-        richness_multiplier = 1500,
-        richness_multiplier_distance_bonus = 20,
-        richness_base = 10,
-        coverage = 0.0003,
-        peaks = {
-            {
-                noise_layer = "oil-sand",
-                noise_octaves_difference = -0.85,
-                noise_persistence = 0.4
-            }
-        }
+    autoplace = resource_autoplace.resource_autoplace_settings {
+        name = "oil-sand",
+        order = "b",
+        base_density = 2.5,
+        regular_rq_factor_multiplier = 1.75,
+        base_spots_per_km2 = 1.5,
+        random_spot_size_minimum = 4,
+        random_spot_size_maximum = 8,
+        has_starting_area_placement = false
     },
     stage_counts = {2000, 1600, 1400, 1200, 800, 400, 200, 10},
     stages = {
