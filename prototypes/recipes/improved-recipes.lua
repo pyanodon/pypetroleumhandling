@@ -63,13 +63,13 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "steel-plate", amount = 1},
-        {type = "item", name = "pipe", amount = 3},
-        {type = "item", name = "small-parts-01", amount = 3},
+        {type = "item", name = "steel-plate", amount = 5},
+        {type = "item", name = "pipe", amount = 10},
+        {type = "item", name = "small-parts-01", amount = 50},
         {type = "item", name = "belt", amount = 4},
     },
     results = {
-        {type = "item", name = "engine-unit", amount = 2},
+        {type = "item", name = "engine-unit", amount = 3},
     },
     main_product = "engine-unit",
     subgroup = "py-petroleum-handling-recipes",

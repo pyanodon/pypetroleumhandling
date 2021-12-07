@@ -24,7 +24,7 @@ TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack'):
 RECIPE("lab-instrument"):add_ingredient({type = "item", name = "small-parts-01", amount = 5}):add_ingredient({type = "item", name = "rubber", amount = 10})
 RECIPE("chemical-science-pack"):add_ingredient({type = "item", name = "rubber", amount = 10})
 RECIPE("electric-engine-unit"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
-RECIPE("engine-unit"):remove_ingredient("small-parts-01"):add_ingredient({type = "item", name = "small-parts-01", amount = 4}):set_fields {energy_required = 15}
+RECIPE("engine-unit"):remove_ingredient("small-parts-01"):add_ingredient({type = "item", name = "small-parts-01", amount = 40}):set_fields {energy_required = 15}
 --RECIPE("assembling-machine-2"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("assembling-machine-3"):add_ingredient({type = "item", name = "small-parts-02", amount = 15})
 RECIPE("fast-transport-belt"):remove_ingredient("small-parts-01"):add_ingredient({type = "item", name = "small-parts-02", amount = 2})
