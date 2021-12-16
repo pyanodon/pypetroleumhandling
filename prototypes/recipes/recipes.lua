@@ -1661,7 +1661,7 @@ RECIPE {
     category = "drilling-fluid",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
     icon_size = 64,
-    enabled = true,
+    enabled = false,
     hide_from_player_crafting = true,
     energy_required = 250,
     ingredients = {
@@ -1675,4 +1675,4 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}
+}:add_unlock("oil-machines-mk01")
