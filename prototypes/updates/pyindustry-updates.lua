@@ -4,6 +4,7 @@ RECIPE("py-logistic-robot-01"):add_ingredient({type = "item", name = "belt", amo
 RECIPE("mk02-locomotive"):add_ingredient({type = "item", name = "rubber", amount = 40})
 RECIPE("mk02-wagon"):add_ingredient({type = "item", name = "rubber", amount = 40})
 RECIPE("mk02-fluid-wagon"):add_ingredient({type = "item", name = "rubber", amount = 40})
+RECIPE("py-roboport-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 20})
 
 RECIPE {
     type = "recipe",
