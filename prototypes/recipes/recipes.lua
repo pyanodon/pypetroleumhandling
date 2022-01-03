@@ -449,7 +449,7 @@ RECIPE {
     },
     main_product = "aromatics",
     icon = "__pycoalprocessinggraphics__/graphics/icons/aromatics.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
@@ -511,7 +511,7 @@ RECIPE {
     },
     main_product = "aromatics",
     icon = "__pycoalprocessinggraphics__/graphics/icons/aromatics.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("oil-processing")
