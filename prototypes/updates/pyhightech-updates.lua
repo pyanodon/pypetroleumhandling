@@ -203,7 +203,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "cyanic-acid", amount = 40},
+        {type = "fluid", name = "cyanic-acid", amount = 80},
     },
     icon = "__pyhightechgraphics__/graphics/icons/cyanic-acid.png",
     icon_size = 32,
@@ -221,7 +221,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "ethylene", amount = 40},
+        {type = "fluid", name = "ethylene", amount = 90},
     },
     icon = "__pyhightechgraphics__/graphics/icons/ethylene.png",
     icon_size = 32,
@@ -239,7 +239,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "benzene", amount = 40},
+        {type = "fluid", name = "benzene", amount = 80},
     },
     icon = "__pyhightechgraphics__/graphics/icons/benzene.png",
     icon_size = 32,
@@ -257,7 +257,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "ammonia", amount = 40},
+        {type = "fluid", name = "ammonia", amount = 80},
     },
     icon = "__pyhightechgraphics__/graphics/icons/ammonia.png",
     icon_size = 32,
@@ -275,7 +275,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "methane", amount = 30},
+        {type = "fluid", name = "methane", amount = 60},
     },
     icon = "__pyhightechgraphics__/graphics/icons/methane.png",
     icon_size = 32,
@@ -293,7 +293,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "acetone", amount = 25},
+        {type = "fluid", name = "acetone", amount = 60},
     },
     icon = "__pyhightechgraphics__/graphics/icons/acetone.png",
     icon_size = 32,
@@ -311,7 +311,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "methanal", amount = 25},
+        {type = "fluid", name = "methanal", amount = 60},
     },
     icon = "__pyhightechgraphics__/graphics/icons/methanal.png",
     icon_size = 32,
@@ -329,7 +329,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "propene", amount = 20},
+        {type = "fluid", name = "propene", amount = 80},
     },
     icon = "__pyhightechgraphics__/graphics/icons/propene.png",
     icon_size = 32,

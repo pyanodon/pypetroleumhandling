@@ -412,7 +412,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "nitrogen", amount = 20},
+        {type = "fluid", name = "nitrogen", amount = 100},
     },
     icon = "__pyraworesgraphics__/graphics/icons/nitrogen.png",
     icon_size = 32,
@@ -430,7 +430,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "chlorine", amount = 30},
+        {type = "fluid", name = "chlorine", amount = 80},
     },
     icon = "__pyraworesgraphics__/graphics/icons/chlorine.png",
     icon_size = 32,
@@ -448,7 +448,7 @@ RECIPE {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "hydrogen", amount = 40},
+        {type = "fluid", name = "hydrogen", amount = 150},
     },
     icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",
     icon_size = 32,
