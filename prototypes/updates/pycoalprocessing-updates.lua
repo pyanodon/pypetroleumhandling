@@ -21,6 +21,35 @@ end
 
 RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
 
+--update tar quenching
+RECIPE {
+    type = "recipe",
+    name = "tar-quenching",
+    category = "quenching-tower",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+        {type = "fluid", name = "tar", amount = 500},
+        {type = "fluid", name = "water", amount = 500}
+    },
+    results = {
+        {type = "fluid", name = "dirty-water-heavy", amount = 500},
+        {type = "fluid", name = "flue-gas", amount = 150},
+        {type = "fluid", name = "water-saline", amount = 250},
+        {type = "item", name = "soot", amount = 2}
+    },
+    icons = {
+        {icon = "__pycoalprocessinggraphics__/graphics/icons/dirty-water.png", icon_size = 32}
+    },
+    icon_size = 32,
+    subgroup = "py-quenching-ores",
+    order = "tailings-a"
+}:add_unlock("fluid-separation")
+
+RECIPE("tailings-copper-iron"):remove_unlock('fluid-separation'):set_fields{hidden = true}
+
+RECIPE("tailings-borax-niobium"):remove_unlock('fluid-separation'):set_fields{hidden = true}
+
 --parts2
 
 RECIPE("cooling-tower-mk02"):add_ingredient({type = "item", name = "small-parts-02", amount = 10})
