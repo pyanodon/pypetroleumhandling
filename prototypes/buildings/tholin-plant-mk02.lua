@@ -9,6 +9,7 @@ RECIPE {
         {"nexelit-plate", 10},
         {"concrete", 40},
         {"plastic-bar", 10},
+        {"engine-unit", 5},
         {"advanced-circuit", 10},
         {"small-parts-02", 30},
     },

@@ -7,6 +7,7 @@ RECIPE {
         {"washer", 1},
         {"steel-plate", 30},
         {"pipe", 30},
+        {"steam-engine", 5},
         {"tar-processing-unit", 1},
         {"electronic-circuit", 10},
         {"small-parts-01", 10},

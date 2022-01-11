@@ -8,8 +8,8 @@ RECIPE {
         {"small-parts-03", 20},
         {"plastic-bar", 100},
         {"processing-unit", 15},
+        {"electric-engine-unit", 10},
         {"concrete", 50},
-        {"engine-unit", 10},
     },
     results = {
         {"tar-seep-mk03", 1}

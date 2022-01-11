@@ -7,6 +7,7 @@ RECIPE {
         {"gas-refinery-mk01", 1},
         {"steel-plate", 30},
         {"advanced-circuit", 20},
+        {"engine-unit", 8},
         {"small-parts-02", 30},
     },
     results = {

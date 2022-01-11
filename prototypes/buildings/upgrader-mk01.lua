@@ -7,7 +7,6 @@ RECIPE {
         {"automated-factory-mk01", 1},
         {"steel-plate", 30},
         {"pipe", 30},
-        {"engine-unit", 4},
         {"electronic-circuit", 30},
         {"small-parts-01", 10},
     },

@@ -8,7 +8,7 @@ RECIPE {
         {"steel-plate", 40},
         {"small-parts-01", 10},
         {"iron-plate", 100},
-        {"steam-engine", 4},
+        {"steam-engine", 10},
         {"electronic-circuit", 30},
     },
     results = {

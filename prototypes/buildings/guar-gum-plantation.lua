@@ -7,6 +7,7 @@ RECIPE {
         {"pipe", 20},
         {"steel-plate", 20},
         {"botanical-nursery", 1},
+        {"steam-engine", 2},
         {"electronic-circuit", 10},
         {"small-parts-01", 30},
     },

@@ -8,6 +8,7 @@ RECIPE {
         {"small-parts-03", 20},
         {"niobium-plate", 10},
         {"processing-unit", 15},
+        {"electric-engine-unit", 20},
         {"concrete", 40},
         {"engine-unit", 10},
     },

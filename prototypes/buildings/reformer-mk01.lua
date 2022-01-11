@@ -7,6 +7,7 @@ RECIPE {
         {"distilator", 1},
         {"steel-plate", 40},
         {"iron-plate", 100},
+        {"steam-engine", 10},
         {"electronic-circuit", 30},
         {"small-parts-01", 10},
     },

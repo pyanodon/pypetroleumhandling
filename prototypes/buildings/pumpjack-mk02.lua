@@ -6,7 +6,6 @@ RECIPE {
     ingredients = {
         {"pumpjack-mk01", 1},
         {"steel-plate", 40},
-        {"electric-mining-drill", 1},
         {"advanced-circuit", 5},
         {"small-parts-02", 30},
         {"engine-unit", 5},

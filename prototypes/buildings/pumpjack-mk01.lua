@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"steel-plate", 1},
+        {"steam-engine", 1},
         {"iron-plate", 50},
         {"burner-mining-drill", 1},
         {"electronic-circuit", 2},

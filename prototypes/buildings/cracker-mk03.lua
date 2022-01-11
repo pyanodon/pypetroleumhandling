@@ -7,7 +7,7 @@ RECIPE {
         {"cracker-mk02", 1},
         {"processing-unit", 20},
         {"concrete", 20},
-        {"engine-unit", 10},
+        {"electric-engine-unit", 10},
         {"small-parts-03", 30},
     },
     results = {

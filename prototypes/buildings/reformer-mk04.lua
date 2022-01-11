@@ -7,7 +7,6 @@ RECIPE {
         {"reformer-mk03", 1},
         {"low-density-structure", 25},
         {"nbfe-alloy", 10},
-        {"electric-engine-unit", 5},
     },
     results = {
         {"reformer-mk04", 1}

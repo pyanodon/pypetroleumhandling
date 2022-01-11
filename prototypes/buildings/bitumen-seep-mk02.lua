@@ -8,6 +8,7 @@ RECIPE {
         {"evaporator", 1},
         {"distilator", 1},
         {"bitumen-seep-mk01", 1},
+        {"engine-unit", 5},
         {"steel-plate", 50},
         {"advanced-circuit", 12},
         {"small-parts-02", 30},

@@ -8,6 +8,7 @@ RECIPE {
         {"steel-plate", 100},
         {"plastic-bar", 100},
         {"processing-unit", 15},
+        {"electric-engine-unit", 8},
         {"small-parts-03", 30},
     },
     results = {

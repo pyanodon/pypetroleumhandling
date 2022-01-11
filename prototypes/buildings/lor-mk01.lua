@@ -7,7 +7,7 @@ RECIPE {
         {"carbon-filter", 1},
         {"steel-plate", 30},
         {"pipe", 30},
-        {"engine-unit", 6},
+        {"steam-engine", 6},
         {"electronic-circuit", 30},
         {"small-parts-01", 10},
     },

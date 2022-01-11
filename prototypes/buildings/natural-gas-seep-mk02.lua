@@ -9,6 +9,7 @@ RECIPE{
         {"bitumen-seep-mk01", 1},
         {"steel-plate", 50},
         {"advanced-circuit", 12},
+        {"engine-unit", 5},
         {"small-parts-02", 30},
         {"pipe", 30},
     },

@@ -9,7 +9,6 @@ RECIPE {
         {"concrete", 35},
         {"low-density-structure", 30},
         {"small-parts-03", 40},
-        {"electric-engine-unit", 5},
     },
     results = {
         {"pumpjack-mk04", 1}

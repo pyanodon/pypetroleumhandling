@@ -8,6 +8,7 @@ RECIPE {
         {"processing-unit", 15},
         {"small-parts-03", 30},
         {"concrete", 40},
+        {"electric-engine-unit", 20},
         {"engine-unit", 10},
     },
     results = {

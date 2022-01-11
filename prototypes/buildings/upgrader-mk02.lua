@@ -7,6 +7,7 @@ RECIPE {
         {"upgrader-mk01", 1},
         {"advanced-circuit", 10},
         {"plastic-bar", 40},
+        {"engine-unit", 10},
         {"niobium-plate", 20},
         {"small-parts-02", 20},
     },

@@ -7,8 +7,8 @@ RECIPE {
     ingredients = {
         {"bitumen-seep-mk02", 1},
         {"distilator", 1},
-        {"automated-factory-mk01", 1},
         {"steel-plate", 100},
+        {"electric-engine-unit", 10},
         {"processing-unit", 15},
         {"small-parts-03", 25},
         {"pipe", 20},

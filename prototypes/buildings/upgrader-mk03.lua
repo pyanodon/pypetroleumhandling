@@ -7,7 +7,7 @@ RECIPE {
         {"upgrader-mk02", 1},
         {"processing-unit", 15},
         {"concrete", 40},
-        {"engine-unit", 4},
+        {"electric-engine-unit", 10},
         {"small-parts-03", 30},
     },
     results = {

@@ -7,6 +7,7 @@ RECIPE {
         {"tar-seep-mk01", 1},
         {"advanced-circuit", 5},
         {"small-parts-02", 15},
+        {"engine-unit", 10},
         {"niobium-plate", 10},
     },
     results = {

@@ -9,7 +9,7 @@ RECIPE {
         {"nbfe-alloy", 10},
         {"processing-unit", 15},
         {"concrete", 50},
-        {"engine-unit", 10},
+        {"electric-engine-unit", 10},
     },
     results = {
         {"tholin-atm-mk03", 1}

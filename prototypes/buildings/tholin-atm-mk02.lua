@@ -7,6 +7,7 @@ RECIPE {
         {"tholin-atm-mk01", 1},
         {"advanced-circuit", 25},
         {"small-parts-02", 20},
+        {"engine-unit", 6},
         {"niobium-plate", 10},
     },
     results = {

@@ -7,7 +7,6 @@ RECIPE {
         {"coalbed-mk03", 1},
         {"low-density-structure", 30},
         {"small-parts-03", 30},
-        {"electric-engine-unit", 5},
         {"nbfe-alloy", 30},
     },
     results = {

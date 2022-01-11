@@ -8,6 +8,7 @@ RECIPE {
         {"advanced-circuit", 5},
         {"small-parts-02", 20},
         {"concrete", 40},
+        {"engine-unit", 12},
         {"pipe", 40},
         {"niobium-plate", 10},
     },

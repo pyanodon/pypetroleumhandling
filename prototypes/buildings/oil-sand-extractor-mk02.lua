@@ -7,6 +7,7 @@ RECIPE {
         {"oil-sand-extractor-mk01", 1},
         {"advanced-circuit", 25},
         {"concrete", 20},
+        {"engine-unit", 3},
         {"plastic-bar", 40},
         {"niobium-plate", 30},
         {"small-parts-02", 20},
