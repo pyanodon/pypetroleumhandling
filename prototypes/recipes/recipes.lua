@@ -388,7 +388,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}:add_unlock("rubber-2")
 
 RECIPE {
     type = "recipe",
@@ -1674,5 +1674,6 @@ RECIPE {
         {type = "item", name = "soil", amount = 1},
     },
     subgroup = "py-petroleum-handling-recipes",
+    ignore_for_dependencies = true,
     order = "a"
 }:add_unlock("oil-machines-mk01")

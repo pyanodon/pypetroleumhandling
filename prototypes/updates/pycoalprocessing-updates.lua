@@ -21,6 +21,10 @@ end
 
 RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
 
+if not mods['pyrawores'] then
+    RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit'):remove_unlock('advanced-electronics'):add_unlock('coal-processing-1')
+end
+
 --update tar quenching
 RECIPE {
     type = "recipe",
