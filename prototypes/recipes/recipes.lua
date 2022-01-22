@@ -61,7 +61,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("small-parts-mk02")
 
 RECIPE {
     type = "recipe",
@@ -86,7 +86,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("small-parts-mk03")
 
 RECIPE {
     type = "recipe",
@@ -124,7 +124,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")
 
 RECIPE {
     type = "recipe",
@@ -195,7 +195,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 100},
-        {type = "fluid", name = "steam", amount = 400, temperature = 165},
+        {type = "fluid", name = "steam", amount = 400},
         --propene
     },
     results = {
@@ -287,7 +287,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}:add_unlock("desulfurization")
 
 RECIPE {
     type = "recipe",
@@ -367,7 +367,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
+}:add_unlock("py-oil-processing-mk02"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
 
 RECIPE {
     type = "recipe",
@@ -473,7 +473,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -503,7 +503,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "btx", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
@@ -524,7 +524,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "naphtha", amount = 150},
-        {type = "fluid", name = "steam", amount = 800, temperature = 165},
+        {type = "fluid", name = "steam", amount = 800},
         {type = "item", name = "chromium", amount = 1},
     },
     results = {
@@ -545,7 +545,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
     },
     results = {
         {type = "fluid", name = "heavy-oil", amount = 100},
@@ -565,7 +565,7 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
@@ -599,11 +599,11 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
-    name = "heavy-oil-to-gasoline",
+    name = "heavy-oil-to-gasoline-2",
     category = "fts-reactor",
     enabled = false,
     energy_required = 4,
@@ -622,7 +622,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -645,7 +645,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -656,7 +656,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "btx", amount = 200},
         {type = "fluid", name = "methanol", amount = 120},
-        {type = "fluid", name = "steam", amount = 350, temperature = 165},
+        {type = "fluid", name = "steam", amount = 350},
         {type = "item", name = "chromium", amount = 1},
     },
     results = {
@@ -667,7 +667,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -721,7 +721,7 @@ RECIPE {
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03")
 
 if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
     RECIPE {
@@ -857,7 +857,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("guar")
 
 RECIPE {
     type = "recipe",
@@ -877,7 +877,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -898,7 +898,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -916,7 +916,7 @@ RECIPE {
     main_product = "guar-seeds",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("guar")
 
 RECIPE {
     type = "recipe",
@@ -934,7 +934,7 @@ RECIPE {
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01"):change_category("pulp")
+}:add_unlock("guar"):change_category("pulp")
 
 RECIPE {
     type = "recipe",
@@ -981,7 +981,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1001,7 +1001,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
   -- HIGH DISTILLATE --
 
@@ -1248,7 +1248,7 @@ RECIPE {
     main_product = "heavy-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1266,7 +1266,7 @@ RECIPE {
     main_product = "coal-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("py-oil-processing-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1284,7 +1284,7 @@ RECIPE {
     main_product = "btx",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("py-oil-processing-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1302,7 +1302,7 @@ RECIPE {
     main_product = "btx",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("py-oil-processing-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1320,7 +1320,7 @@ RECIPE {
     main_product = "lubricant",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+}:add_unlock("py-oil-processing-mk03"):replace_ingredient("nexelit-plate", "ticl4")
 
   -- RESIDUAL OIL --
 
@@ -1332,7 +1332,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "residual-oil", amount = 200},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
         {type = "item", name = "ash", amount = 10}
     },
     results = {
@@ -1341,7 +1341,7 @@ RECIPE {
     main_product = "residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1359,7 +1359,7 @@ RECIPE {
     main_product = "hot-residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 if mods["pyrawores"] then
     RECIPE {
@@ -1371,7 +1371,7 @@ if mods["pyrawores"] then
         ingredients = {
             {type = "fluid", name = "hot-residual-mixture", amount = 150},
             {type = "fluid", name = "water", amount = 300},
-            {type = "fluid", name = "steam", amount = 300, temperature = 165},
+            {type = "fluid", name = "steam", amount = 300},
         },
         results = {
             {type = "item", name = "coke", amount = 40},
@@ -1391,7 +1391,7 @@ else
         ingredients = {
             {type = "fluid", name = "hot-residual-mixture", amount = 150},
             {type = "fluid", name = "water", amount = 300},
-            {type = "fluid", name = "steam", amount = 300, temperature = 165},
+            {type = "fluid", name = "steam", amount = 300},
         },
         results = {
             {type = "item", name = "coke", amount = 30},
@@ -1399,7 +1399,7 @@ else
         main_product = "coke",
         subgroup = "py-petroleum-handling-recipes",
         order = "a"
-    }:add_unlock("oil-machines-mk02")
+    }:add_unlock("py-oil-processing-mk02")
 end
 
 RECIPE {
@@ -1525,7 +1525,7 @@ if mods["pyrawores"] then
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            {type = "fluid", name = "steam", amount = 400},
             --propene
         },
         results = {
@@ -1546,7 +1546,7 @@ else
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            {type = "fluid", name = "steam", amount = 400},
             --propene
         },
         results = {
@@ -1570,7 +1570,7 @@ if mods["pyrawores"] then
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            {type = "fluid", name = "steam", amount = 400},
             {type = "item", name = "ticl4", amount = 1},
         },
         results = {
@@ -1580,7 +1580,7 @@ if mods["pyrawores"] then
         main_product = "bitumen",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("oil-machines-mk02")
+    }:add_unlock("lubricant")
 else
     RECIPE {
         type = "recipe",
@@ -1590,7 +1590,7 @@ else
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400, temperature = 165},
+            {type = "fluid", name = "steam", amount = 400},
         },
         results = {
             {type = "fluid", name = "bitumen", amount = 100},
@@ -1598,26 +1598,28 @@ else
         main_product = "bitumen",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("oil-machines-mk02")
+    }:add_unlock("py-oil-processing-mk02")
 end
 
-RECIPE {
-    type = "recipe",
-    name = "hot-stone-brick",
-    category = "smelting",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-        {type = "item", name = "stone-brick", amount = 10},
-    },
-    results = {
-        {type = "item", name = "hot-stone-brick", amount = 10},
-    },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a2",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
-    icon_size = 32,
-}:add_unlock("coal-processing-1")
+if not mods['pyrawores'] then
+    RECIPE {
+        type = "recipe",
+        name = "hot-stone-brick",
+        category = "smelting",
+        enabled = false,
+        energy_required = 3,
+        ingredients = {
+            {type = "item", name = "stone-brick", amount = 10},
+        },
+        results = {
+            {type = "item", name = "hot-stone-brick", amount = 10},
+        },
+        subgroup = "py-petroleum-handling-recipes",
+        order = "a2",
+        icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
+        icon_size = 32,
+    }:add_unlock("coal-processing-1")
+end
 
 RECIPE {
     type = "recipe",
@@ -1635,7 +1637,7 @@ RECIPE {
         {type = "item", name = "kevlar", amount = 5}
     },
     main_product = "kevlar"
-}:add_unlock("fine-electronics"):replace_ingredient("sulfuric-acid", "dms")
+}:add_unlock("kevlar-2"):replace_ingredient("sulfuric-acid", "dms")
 
 RECIPE {
     type = "recipe",
@@ -1645,14 +1647,14 @@ RECIPE {
     energy_required = 12,
     ingredients = {
         {type = "fluid", name = "natural-gas", amount = 400},
-        {type = "item", name = "sncr-alloy", amount = 1},
+        {type = "item", name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "petroleum-gas", amount = 400},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03"):replace_ingredient("chromium", "sncr-alloy")
 
 --hidden recipe for oil derricks
 RECIPE {
@@ -1662,7 +1664,7 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
     icon_size = 64,
     enabled = false,
-    hide_from_player_crafting = true,
+    hidden = true,
     energy_required = 250,
     ingredients = {
         {type = "fluid", name = "drilling-fluid-0", amount = 100},

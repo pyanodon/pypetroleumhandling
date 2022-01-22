@@ -1,5 +1,6 @@
 require("prototypes.fluids.pressured-hydrogen")
 require("prototypes.recipes.hot-stone-brick-recipes")
+
 --BUILDINDS--
 
 RECIPE("oil-sand-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
@@ -8,7 +9,7 @@ RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "stainle
 RECIPE("oil-sand-extractor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 20})
 RECIPE("heavy-oil-refinery-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10})--:add_ingredient({type = "item", name = "chromium", amount = 10})
 RECIPE("heavy-oil-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
-RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})
 RECIPE("heavy-oil-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("upgrader-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "chromium", amount = 5})
 RECIPE("upgrader-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
@@ -20,25 +21,25 @@ RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "stainless-steel",
 RECIPE("reformer-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 20})
 RECIPE("cracker-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "titanium-plate", amount = 10})
 RECIPE("cracker-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
-RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("cracker-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})
 RECIPE("cracker-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("tholin-atm-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
 RECIPE("tholin-atm-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
-RECIPE("tholin-atm-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("tholin-atm-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})
 RECIPE("tholin-atm-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("oil-derrick-mk01"):add_ingredient({type = "item", name = "tin-plate", amount = 10})
 RECIPE("oil-derrick-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 30}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("oil-derrick-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 30}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("oil-derrick-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 45})
 RECIPE("pumpjack-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "titanium-plate", amount = 20})
-RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
+RECIPE("pumpjack-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40}):add_ingredient({type = "item", name = "molybdenum-plate", amount = 15})
 RECIPE("pumpjack-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("tholin-plant-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
 RECIPE("tholin-plant-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("tholin-plant-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("tholin-plant-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
-RECIPE("lor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "nichrome", amount = 10})
-RECIPE("lor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 100})
+RECIPE("lor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 10}):add_ingredient({type = "item", name = "duralumin", amount = 10})
+RECIPE("lor-mk02"):add_ingredient({type = "item", name = "nichrome", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 100})
 RECIPE("lor-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("lor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("coalbed-mk01"):add_ingredient({type = "item", name = "glass", amount = 50}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
@@ -49,12 +50,17 @@ RECIPE("tar-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate",
 RECIPE("tar-extractor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("tar-extractor-mk03"):add_ingredient({type = "item", name = "titanium-plate", amount = 20}):add_ingredient({type = "item", name = "stainless-steel", amount = 15})
 RECIPE("tar-extractor-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
-RECIPE("gas-refinery-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
+RECIPE("gas-refinery-mk01"):add_ingredient({type = "item", name = "glass", amount = 15}):add_ingredient({type = "item", name = "duralumin", amount = 5})
 RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "super-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amount = 100})
 RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
+RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "molybdenum-plate", amount = 20})
+RECIPE("compressor-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
+RECIPE('centrifugal-pan-mk01'):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
+RECIPE("evaporator"):remove_unlock('fluid-processing-machines-2'):add_unlock('fluid-processing-machines-1')
+
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -91,9 +97,9 @@ RECIPE("leaching-station-mk03"):add_ingredient({type = "item", name = "small-par
 RECIPE("scrubber-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("wet-scrubber-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 
-RECIPE("chemical-plant-mk02"):remove_unlock('machines-mk02'):add_unlock('oil-machines-mk02')
-RECIPE("chemical-plant-mk03"):remove_unlock('machines-mk03'):add_unlock('oil-machines-mk03')
-RECIPE("chemical-plant-mk04"):remove_unlock('machines-mk04'):add_unlock('oil-machines-mk04')
+RECIPE("chemical-plant-mk02"):remove_unlock('machines-mk03'):add_unlock('oil-machines-mk02')
+RECIPE("chemical-plant-mk03"):remove_unlock('machines-mk04'):add_unlock('oil-machines-mk03')
+RECIPE("chemical-plant-mk04"):remove_unlock('machines-mk05'):add_unlock('oil-machines-mk04')
 
 --RECIPES--
 
@@ -133,12 +139,22 @@ RECIPE("mining-nickel"):replace_ingredient("coal-gas", "syngas"):remove_ingredie
 RECIPE("mining-tin"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 150}):replace_ingredient("coal-gas", "steam")
 RECIPE("mining-titanium"):replace_ingredient("coal-gas", "acetylene"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
 RECIPE("mining-zinc"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 150})
+RECIPE("hydrogen-chloride"):remove_unlock("coal-processing-2"):add_unlock("filtration")
 
-RECIPE('drilling-fluid-1'):add_ingredient({type = 'item', name = 'starch', amount = 4})
+--RECIPE('drilling-fluid-1'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 RECIPE('drilling-fluid-2'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 RECIPE('drilling-fluid-3'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 
 RECIPE('tar-quenching'):remove_unlock('fluid-separation'):add_unlock('nexelit-mk01')
+
+RECIPE("methane-to-methanol2"):replace_ingredient("nexelit-plate", "molybdenum-plate")
+RECIPE("methane-to-methanol3"):replace_ingredient("nexelit-plate", "molybdenum-plate")
+
+RECIPE("bitumen-gasification"):remove_unlock("coal-processing-3"):add_unlock("oil-sands")
+RECIPE("hot-syngas-cooldown"):remove_unlock("coal-processing-3"):add_unlock("oil-sands")
+
+RECIPE("py-coal-tile"):remove_unlock("py-asphalt"):add_unlock("py-asphalt-mk02")
+
 
 ----EXCLUSIVE RECIPES----
 
@@ -160,11 +176,11 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "a"
-}:add_unlock("oil-sands")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
-    name = "sbcr-alloy-2",
+    name = "sncr-alloy-2",
     category = "py-rawores-smelter",
     enabled = false,
     energy_required = 4,
@@ -181,7 +197,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "j"
-}:add_unlock("tin-mk03")
+}:add_unlock("alloys")
 
 RECIPE {
     type = "recipe",
@@ -240,7 +256,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-nickel",
     order = "zaa"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")
 
 RECIPE {
     type = "recipe",
@@ -281,7 +297,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}:add_unlock("desulfurization")
 
 RECIPE {
     type = "recipe",
@@ -300,7 +316,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}:add_unlock("fuel-production")
 
 RECIPE {
     type = "recipe",
@@ -321,7 +337,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")
 
 RECIPE {
     type = "recipe",
@@ -341,7 +357,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("plastics"):replace_ingredient("naphtha", "propene"):change_category("fbreactor")
+}:add_unlock("plastics-mk02"):replace_ingredient("naphtha", "propene"):change_category("fbreactor")
 
 RECIPE {
     type = "recipe",
@@ -381,7 +397,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -391,7 +407,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "btx", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
@@ -731,7 +747,7 @@ RECIPE {
     main_product = "xylenol",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03")
 
 RECIPE {
     type = "recipe",
@@ -749,7 +765,7 @@ RECIPE {
     main_product = "kerosene",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -771,7 +787,7 @@ RECIPE {
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-2")
+}:add_unlock("energy-3")
 
 RECIPE {
     type = "recipe",

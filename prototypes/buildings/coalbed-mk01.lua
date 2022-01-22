@@ -7,7 +7,7 @@ RECIPE {
         {"lab", 1},
         {"iron-plate", 100},
         {"electric-mining-drill", 3},
-        {"desulfurizator-unit", 1},
+        {"chemical-plant-mk01", 1},
         {"small-parts-01", 20},
     },
     results = {

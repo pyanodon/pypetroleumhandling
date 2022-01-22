@@ -22,6 +22,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"light-oil-mk01"},
+    dependencies = {"light-oil-mk01"},
     effects = {},
     unit = {
         count = 200,
@@ -40,6 +41,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"light-oil-mk02"},
+    dependencies = {"light-oil-mk02"},
     effects = {},
     unit = {
         count = 200,

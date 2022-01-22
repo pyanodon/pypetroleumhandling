@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"carbon-filter", 1},
+        {"vacuum-pump-mk01", 1},
         {"steel-plate", 30},
         {"pipe", 30},
         {"steam-engine", 6},

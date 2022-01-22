@@ -21,16 +21,18 @@ ITEM {
     stack_size = 500
 }
 
-ITEM {
-    type = "item",
-    name = "sncr-alloy",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/sncr-alloy.png",
-	icon_size = 32,
-    flags = {},
-    subgroup = "py-petroleum-handling-items",
-    order = "a",
-    stack_size = 500
-}
+if mods['pyrawores'] then
+    ITEM {
+        type = "item",
+        name = "sncr-alloy",
+        icon = "__pypetroleumhandlinggraphics__/graphics/icons/sncr-alloy.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "py-petroleum-handling-items",
+        order = "a",
+        stack_size = 500
+    }
+end
 
 ITEM {
     type = "item",
@@ -105,16 +107,18 @@ ITEM {
     stack_size = 500
 }
 
-ITEM {
-    type = "item",
-    name = "ticl4",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/ticl4.png",
-	icon_size = 32,
-    flags = {},
-    subgroup = "py-petroleum-handling-items",
-    order = "a",
-    stack_size = 500
-}
+if mods['pyrawores'] then
+    ITEM {
+        type = "item",
+        name = "ticl4",
+        icon = "__pypetroleumhandlinggraphics__/graphics/icons/ticl4.png",
+        icon_size = 32,
+        flags = {},
+        subgroup = "py-petroleum-handling-items",
+        order = "a",
+        stack_size = 500
+    }
+end
 
 ITEM {
     type = "item",

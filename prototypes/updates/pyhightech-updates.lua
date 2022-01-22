@@ -1,5 +1,6 @@
 require("prototypes.buildings.pumpjack-hightech")
 
+TECHNOLOGY("aerogel"):remove_pack("production-science-pack")
 
 ----BUILDINDS----
 
@@ -29,7 +30,7 @@ RECIPE("fracking-rig"):replace_ingredient("control-unit", "intelligent-unit"):ad
 RECIPE("retorter"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "heavy-fermion", amount = 20}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 20}):add_ingredient({type = "item", name = "graphene-roll", amount = 15})
 RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "phosphate-glass", amount = 50}):add_ingredient({type = "item", name = "biopolymer", amount = 35}):add_ingredient({type = "item", name = "aerogel", amount = 15})
 RECIPE("gas-refinery-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 5}):add_ingredient({type = "item", name = "hyperelastic-material", amount = 4})
-RECIPE("lab-instrument"):add_ingredient({type = "item", name = "plastic-bar", amount = 3})
+--RECIPE("lab-instrument"):add_ingredient({type = "item", name = "plastic-bar", amount = 3})
 RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "biopolymer", amount = 30}):add_ingredient({type = "item", name = "carbon-aerogel", amount = 15})
 RECIPE("guar-gum-plantation-mk04"):replace_ingredient("control-unit", "intelligent-unit"):add_ingredient({type = "item", name = "superconductor-servomechanims", amount = 10}):add_ingredient({type = "item", name = "quantum-dots", amount = 10})
 
@@ -54,7 +55,7 @@ RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", 
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "phenol", amount = 4})
 RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):change_category("fbreactor")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
-RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
+--RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
 RECIPE("small-parts-02"):add_ingredient({type = "item", name = "nylon", amount = 1})
 RECIPE("ht-pipes"):add_ingredient({type = "item", name = "rubber", amount = 2})
@@ -63,6 +64,14 @@ RECIPE("ht-generic-wagon"):add_ingredient({type = "item", name = "small-parts-02
 RECIPE("ht-generic-fluid-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("drilling-fluid-0"):add_ingredient({type = "item", name = "clay", amount = 5})
 RECIPE("ethylene-chlorohydrin"):add_ingredient({type = "fluid", name = "ethylene", amount = 50})
+
+RECIPE('vacuum-pump-mk01'):remove_unlock('vacuum-tube-electronics')
+RECIPE('pressured-air'):remove_unlock('propene')
+RECIPE('pressured-water'):remove_unlock('zipir')
+RECIPE('automated-factory-mk01'):remove_unlock('basic-electronics')
+RECIPE("ethylene"):remove_unlock("plastics-mk03"):add_unlock("py-oil-processing-mk02")
+RECIPE('compressor-mk01'):remove_unlock('semiconductor-doping-mk02')
+RECIPE('agzn-alloy'):remove_unlock('biopolymer')
 
 ----EXCLUSIVE RECIPES----
 
@@ -106,7 +115,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-hightech-fluids",
     order = "a1"
-}:add_unlock("scrude")
+}:add_unlock("desulfurization")
 
 RECIPE {
     type = "recipe",
@@ -138,7 +147,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "btx", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
         {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
@@ -159,7 +168,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "btx", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 165},
+        {type = "fluid", name = "steam", amount = 200},
         {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
     },
     results = {
@@ -180,7 +189,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "btx", amount = 200},
-        {type = "fluid", name = "steam", amount = 450, temperature = 165},
+        {type = "fluid", name = "steam", amount = 450},
         {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
     },
     results = {
@@ -458,7 +467,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk03")
 
 RECIPE {
     type = "recipe",
@@ -474,7 +483,7 @@ RECIPE {
     main_product = "tall-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk01")
+}:add_unlock("light-oil-mk02")
 
 RECIPE {
     type = "recipe",
@@ -483,7 +492,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
-        {type = "item", name = "ticl4", amount = 1},
+        {type = "item", name = "nexelit-plate", amount = 1},
     },
     results = {
         {type = "fluid", name = "cumene", amount = 200},
@@ -491,7 +500,7 @@ RECIPE {
     main_product = "cumene",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03")
+}:add_unlock("light-oil-mk03"):replace_ingredient("nexelit-plate", "ticl4")
 
 RECIPE {
     type = "recipe",
@@ -500,7 +509,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
-        {type = "item", name = "sncr-alloy", amount = 1},
+        {type = "item", name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "benzene", amount = 150},
@@ -508,7 +517,7 @@ RECIPE {
     main_product = "benzene",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03")
+}:add_unlock("light-oil-mk03"):replace_ingredient("chromium", "sncr-alloy")
 
 
 if mods["pyfusionenergy"] then
@@ -599,11 +608,11 @@ RECIPE {
     energy_required = 12,
     ingredients = {
         {type = "fluid", name = "natural-gas", amount = 400},
-        {type = "item", name = "sncr-alloy", amount = 1},
+        {type = "item", name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "methane", amount = 400},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03"):replace_ingredient("chromium", "sncr-alloy")

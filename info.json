@@ -11,6 +11,7 @@
     "pyfusionenergy >= 1.1.5",
     "pyindustry >= 1.2.0",
     "(?) pyrawores >= 1.2.6",
+    "(?) pyhightech",
     "(?) rso-mod",
     "~ pypetroleumhandlinggraphics >= 1.0.0"
   ],

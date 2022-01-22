@@ -17,7 +17,7 @@ require('prototypes/updates/tholin-overhaul')
 --ADAPTATIONS
 
 TECHNOLOGY('logistic-science-pack'):add_prereq('rubber')
-TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack'):remove_prereq('logistic-science-pack')
+--TECHNOLOGY('advanced-material-processing'):remove_pack('logistic-science-pack'):remove_prereq('logistic-science-pack')
 
 --RECIPES UPDATES
 
@@ -38,7 +38,7 @@ RECIPE("green-wire"):add_ingredient({type = "item", name = "rubber", amount = 1}
 RECIPE("carbon-filter"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
 RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient({type = "item", name = "assembling-machine-1", amount = 2})
 RECIPE("small-parts-03"):replace_ingredient("glass", "glass-fiber"):replace_ingredient("tin-plate", "aerogel")
-RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')
+--RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')
 RECIPE("utility-science-pack"):add_ingredient({type = "item", name = "small-parts-03", amount = 30})
 
 --Base Updates
@@ -124,3 +124,65 @@ if data.data_crawler then
 	  }
 	end
   end
+
+
+  local GIR = require('prototypes/functions/functions')
+
+  GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
+
+  --RECIPES UPDATES
+  --hot air blacklist
+  -- comment out/delete recipes that are ok for hot air increase
+  --anything left active in list will be ingored when adding hot air to advanced furnace recipes
+  local hablist = {
+	  'chromium-rejects',
+	  'chromium-01',
+	  'copper-plate-4',
+	  'empty-comb-2'
+  }
+
+  GIR.HAB(hablist)
+
+  local extra_hot_air_recipes =
+	  {
+		  'niobium-plate',
+		  'molybdenum-plate',
+		  --glass hot air recipes
+		  'flask',
+		  'flask-2',
+		  'flask-3',
+		  'glass-core',
+		  'molten-glass',
+		  'glass-fiber',
+		  'lens',
+		  --non molten plates
+		  'gold-plate',
+		  'ndfeb-alloy',
+		  're-tin',
+		  'crco-alloy',
+		  'super-alloy',
+		  --pyal petri dishes
+		  'empty-petri-dish'
+	  }
+
+  --log(serpent.block(data.raw.recipe['flask']))
+  --add hot air
+  GIR.hotairrecipes(extra_hot_air_recipes)
+
+  --log(serpent.block(data.raw.recipe['hotair-flask']))
+  --[[
+  for r, recipe in pairs(data.raw.recipe) do
+	  if recipe.category == 'glassworks' then
+		  for i, ing in pairs(recipe.ingredients) do
+			  if ing.name == 'hot-air' then
+				  table.insert(ing, fluidbox_index)
+				  ing.fluidbox_index = 3
+			  end
+		  end
+	  end
+  end
+  ]]--
+
+--TODO
+RECIPE('hotair-flask'):set_enabled(false):add_unlock('coal-processing-1')
+RECIPE('hotair-molten-glass'):add_unlock('coal-processing-1'):set_fields{enabled = false}

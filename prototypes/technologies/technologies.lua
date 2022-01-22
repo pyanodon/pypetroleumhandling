@@ -1,3 +1,5 @@
+local table = require('__stdlib__/stdlib/utils/table')
+
 TECHNOLOGY {
     type = "technology",
     name = "oil-sands",
@@ -69,3 +71,16 @@ TECHNOLOGY {
         time = 45
     }
 }
+
+local tech = table.deep_copy(data.raw.technology['fast-inserter'])
+tech.name = 'fast-inserter-2'
+tech.dependencies = {'fast-inserter'}
+tech.effects = {}
+TECHNOLOGY(tech):add_pack('logistic-science-pack')
+
+tech = table.deep_copy(data.raw.technology['stack-inserter'])
+tech.name = 'stack-inserter-2'
+tech.dependencies = {'stack-inserter'}
+tech.effects = {}
+TECHNOLOGY(tech):add_pack('chemical-science-pack')
+

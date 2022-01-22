@@ -55,7 +55,7 @@ ENTITY {
     },
     collision_box = {{-2.29, -2.29}, {2.29, 2.29}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    target_temperature = 165,
+    target_temperature = 250,
     fluid_box =
     {
       base_area = 1,
@@ -83,7 +83,7 @@ ENTITY {
       production_type = "output",
       filter = "steam"
     },
-    energy_consumption = "1.8MW",
+    energy_consumption = "29.61MW",
     energy_source =
     {
       type = "fluid",
@@ -101,7 +101,7 @@ ENTITY {
 		pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
 		production_type = "input",
 		},
-	effectivity = 1,
+	effectivity = 2,
 	burns_fluid = true,
 	scale_fluid_usage = true,
 	--fluid_usage_per_tick = 2,

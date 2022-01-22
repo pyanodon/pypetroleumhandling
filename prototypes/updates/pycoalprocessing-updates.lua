@@ -1,4 +1,12 @@
+TECHNOLOGY('fluid-processing-machines-1'):remove_pack('logistic-science-pack')
+
 --BUILDINDS--
+
+RECIPE("chemical-plant-mk01"):remove_unlock('coal-processing-2'):add_unlock('coal-processing-1')
+RECIPE("evaporator"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
+RECIPE("agitator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
+RECIPE("gas-separator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
+
 
 RECIPE("advanced-foundry-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("ball-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -23,6 +31,7 @@ RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
 
 if not mods['pyrawores'] then
     RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit'):remove_unlock('advanced-electronics'):add_unlock('coal-processing-1')
+    RECIPE("oleo-heavy"):remove_unlock("fluid-separation"):add_unlock("mukmoux")
 end
 
 --update tar quenching
@@ -120,9 +129,10 @@ RECIPE("washer-mk03"):add_ingredient({type = "item", name = "small-parts-03", am
 RECIPE("wpu-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("chemical-plant-mk03"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 
-RECIPE("mining-nexelit"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100})
+RECIPE("mining-nexelit"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100}):remove_unlock("excavation-1"):add_unlock("excavation-2")
 RECIPE("mining-borax"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
 RECIPE("mining-niobium"):replace_ingredient("coal-gas", "refsyngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-3", amount = 150})
+RECIPE("mining-niobium"):remove_unlock("excavation-2"):add_unlock("excavation-3")
 
 ----EXCLUSIVE RECIPES----
 
@@ -189,7 +199,7 @@ RECIPE {
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-1")
+}:add_unlock("energy-2")
 
 RECIPE {
     type = "recipe",
@@ -211,7 +221,7 @@ RECIPE {
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-1")
+}:add_unlock("energy-2")
 
 RECIPE {
     type = "recipe",
@@ -255,7 +265,7 @@ RECIPE {
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-1")
+}:add_unlock("energy-2")
 
 RECIPE {
     type = "recipe",
@@ -298,4 +308,4 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-syngas",
     order = "a"
-}:add_unlock("scrude")
+}:add_unlock("desulfurization")

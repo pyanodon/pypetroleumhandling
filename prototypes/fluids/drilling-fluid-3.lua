@@ -17,7 +17,7 @@ RECIPE {
     main_product = "drilling-fluid-3",
     subgroup = "py-petroleum-handling-fluids",
     order = "h"
-}:add_unlock("oil-machines-mk04")
+}:add_unlock("drilling-fluid-mk04")
 
 FLUID {
     type = "fluid",

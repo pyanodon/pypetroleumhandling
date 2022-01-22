@@ -131,7 +131,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
-}:add_unlock("lubricant")
+}:add_unlock("fast-inserter-2")
 
 RECIPE {
     type = "recipe",
@@ -151,7 +151,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
-}:add_unlock("lubricant"):replace_ingredient("steel-plate", "duralumin")
+}:add_unlock("fast-inserter-2"):replace_ingredient("steel-plate", "duralumin")
 
 RECIPE {
     type = "recipe",
@@ -172,7 +172,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
-}:add_unlock("lubricant"):replace_ingredient("steel-plate", "titanium-plate")
+}:add_unlock("fast-inserter-2"):replace_ingredient("steel-plate", "titanium-plate")
 
 RECIPE {
     type = "recipe",
@@ -193,7 +193,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
-}:add_unlock("lubricant"):replace_ingredient("steel-plate", "titanium-plate")
+}:add_unlock("stack-inserter-2"):replace_ingredient("steel-plate", "titanium-plate")
 
 RECIPE {
     type = "recipe",
@@ -214,4 +214,4 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
-}:add_unlock("lubricant"):replace_ingredient("steel-plate", "titanium-plate")
+}:add_unlock("stack-inserter-2"):replace_ingredient("steel-plate", "titanium-plate")

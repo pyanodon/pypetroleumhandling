@@ -18,7 +18,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
         main_product = "drilling-fluid-2",
         subgroup = "py-petroleum-handling-fluids",
         order = "h"
-    }:add_unlock("oil-machines-mk03")
+    }:add_unlock("drilling-fluid-mk03")
     else if mods["pyhightech"] then
         RECIPE {
             type = "recipe",
@@ -39,7 +39,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
             main_product = "drilling-fluid-2",
             subgroup = "py-petroleum-handling-fluids",
             order = "h"
-        }:add_unlock("oil-machines-mk03")
+        }:add_unlock("drilling-fluid-mk03")
     else
         RECIPE {
             type = "recipe",
@@ -59,7 +59,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
             main_product = "drilling-fluid-2",
             subgroup = "py-petroleum-handling-fluids",
             order = "h"
-        }:add_unlock("oil-machines-mk03")
+        }:add_unlock("drilling-fluid-mk03")
     end
 end
 

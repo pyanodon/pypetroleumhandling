@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {"sulfur-mine", 1}
     }
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("sulfur-processing")
 
 ITEM {
     type = "item",
