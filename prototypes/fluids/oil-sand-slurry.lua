@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 350, temperature = 165},
+        {type = "fluid", name = "steam", amount = 350},
         {type = "fluid", name = "water", amount = 300},
         {type = "item", name = "crushed-oil-sand", amount = 2}
     },

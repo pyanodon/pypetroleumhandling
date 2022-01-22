@@ -25,16 +25,16 @@ ENTITY {
     minable =
     {
       mining_time = 1,
-      results =
-      {
-        {
-          type = "fluid",
-          name = "drilling-waste",
-          amount_min = 1,
-          amount_max = 1,
-          probability = 0
-        }
-      }
+      results = {}
+      -- {
+      --   {
+      --     type = "fluid",
+      --     name = "drilling-waste",
+      --     amount_min = 1,
+      --     amount_max = 1,
+      --     probability = 0
+      --   }
+      -- }
     },
     --collision_box = {{ -2.4, -2.4}, {2.4, 2.4}},
     collision_box = {{ -5.4, -5.4}, {5.4, 5.4}},

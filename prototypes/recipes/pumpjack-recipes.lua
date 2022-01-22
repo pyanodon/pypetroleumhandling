@@ -14,7 +14,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")
 
 RECIPE {
     type = "recipe",
@@ -33,7 +33,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -52,7 +52,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03")
 
 RECIPE {
     type = "recipe",
@@ -71,7 +71,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk04")
+}:add_unlock("py-oil-processing-mk04")
 
 RECIPE {
     type = "recipe",
@@ -89,7 +89,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")
 
 RECIPE {
     type = "recipe",
@@ -108,7 +108,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -127,7 +127,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03")
 
 RECIPE {
     type = "recipe",
@@ -146,7 +146,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk04")
+}:add_unlock("py-oil-processing-mk04")
 
 RECIPE {
     type = "recipe",
@@ -166,7 +166,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")
 
 RECIPE {
     type = "recipe",
@@ -187,7 +187,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -208,7 +208,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk03")
+}:add_unlock("py-oil-processing-mk03")
 
 RECIPE {
     type = "recipe",
@@ -229,7 +229,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk04")
+}:add_unlock("py-oil-processing-mk04")
 
 RECIPE {
     type = "recipe",
@@ -247,7 +247,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("py-oil-processing-mk02")
 
 RECIPE {
     type = "recipe",
@@ -264,4 +264,4 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "w"
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("py-oil-processing-mk01")

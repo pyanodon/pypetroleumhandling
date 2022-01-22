@@ -144,6 +144,7 @@ data.raw.technology['rocket-silo'].unit.ingredients =
 		{"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"military-science-pack", 1}
 	}
 
 data.raw['rocket-silo']['rocket-silo'].rocket_result_inventory_size = 5
@@ -200,10 +201,10 @@ RECIPE {
 
 TECHNOLOGY('kerogen'):remove_prereq('tholin-mk03')
 
-TECHNOLOGY('tholin-mk01'):remove_prereq('coal-processing-1'):remove_prereq('crusher'):add_prereq('rocket-silo'):add_pack('logistic-science-pack'):add_pack('chemical-science-pack')
+-- TECHNOLOGY('tholin-mk01'):remove_prereq('coal-processing-1'):remove_prereq('crusher'):add_prereq('rocket-silo'):add_pack('logistic-science-pack'):add_pack('chemical-science-pack')
 
-TECHNOLOGY('tholin-mk02'):add_pack('chemical-science-pack'):add_pack('utility-science-pack')
+-- TECHNOLOGY('tholin-mk02'):add_pack('chemical-science-pack'):add_pack('utility-science-pack')
 
-TECHNOLOGY('tholin-mk03'):add_pack('utility-science-pack')
+-- TECHNOLOGY('tholin-mk03'):add_pack('utility-science-pack')
 
-TECHNOLOGY('tholin-mk04'):add_pack('production-science-pack')
+-- TECHNOLOGY('tholin-mk04'):add_pack('production-science-pack')

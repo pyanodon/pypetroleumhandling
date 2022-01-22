@@ -9,7 +9,10 @@ TECHNOLOGY {
     unit = {
         count = 200,
         ingredients = {
-            {"automation-science-pack", 1},
+            {'automation-science-pack', 1},
+            {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1},
+            {'military-science-pack', 1},
         },
         time = 45
     }
@@ -22,12 +25,16 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"tholin-mk01"},
+    dependencies = {"tholin-mk01"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
-            {"automation-science-pack", 1},
+            {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1},
+            {'military-science-pack', 1},
+            {'production-science-pack', 1},
         },
         time = 45
     }
@@ -40,13 +47,17 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"tholin-mk02"},
+    dependencies = {"tholin-mk02"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1}
+            {'chemical-science-pack', 1},
+            {'military-science-pack', 1},
+            {'production-science-pack', 1},
+            {'utility-science-pack', 1},
         },
         time = 45
     }
@@ -59,6 +70,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"tholin-mk03"},
+    dependencies = {"tholin-mk03"},
     effects = {},
     unit = {
         count = 200,
@@ -66,8 +78,11 @@ TECHNOLOGY {
             {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
             {'chemical-science-pack', 1},
-            {'utility-science-pack', 1}
-        },
+            {'military-science-pack', 1},
+            {'production-science-pack', 1},
+            {'utility-science-pack', 1},
+            {'space-science-pack', 1},
+       },
         time = 45
     }
 }

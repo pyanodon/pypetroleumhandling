@@ -10,6 +10,7 @@ TECHNOLOGY {
         count = 150,
         ingredients = {
             {"automation-science-pack", 1},
+            {'logistic-science-pack', 1},
         },
         time = 45
     }
@@ -22,6 +23,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"coalbed-mk01","oil-machines-mk02"},
+    dependencies = {"coalbed-mk01"},
     effects = {},
     unit = {
         count = 100,

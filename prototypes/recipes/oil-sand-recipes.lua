@@ -125,7 +125,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "bitumen", amount = 100},
-        {type = "fluid", name = "steam", amount = 300, temperature = 165},
+        {type = "fluid", name = "steam", amount = 300},
     },
     results = {
         {type = "fluid", name = "dirty-syngas", amount = 100},
@@ -135,7 +135,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-oil-sand-recipes",
     order = "a"
-}:add_unlock("oil-sands")
+}:add_unlock("coal-processing-3")
 
 if mods["pyrawores"] then
     RECIPE {
@@ -160,46 +160,46 @@ if mods["pyrawores"] then
         subgroup = "py-petroleum-handling-oil-sand-recipes",
         order = "a"
     }:add_unlock("oil-sands")
-    else
-        RECIPE {
-            type = "recipe",
-            name = "quenching-dirty-syngas",
-            category = "quenching-tower",
-            enabled = false,
-            energy_required = 24,
-            ingredients = {
-                {type = "fluid", name = "dirty-syngas", amount = 400},
-                {type = "item", name = "filtration-media", amount = 1},
-                {type = "fluid", name = "water", amount = 1600},
-            },
-            results = {
-                {type = "fluid", name = "hot-syngas", amount = 400},
-                {type = "fluid", name = "flue-gas", amount = 4000},
-                {type = "item", name = "ash", amount = 8},
-            },
-            main_product = "hot-syngas",
-            icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-syngas.png",
-            icon_size = 32,
-            subgroup = "py-petroleum-handling-oil-sand-recipes",
-            order = "a"
-        }:add_unlock("oil-sands")
-    end
-
+else
     RECIPE {
         type = "recipe",
-        name = "hot-syngas-cooldown",
-        category = "heat-exchanger",
+        name = "quenching-dirty-syngas",
+        category = "quenching-tower",
         enabled = false,
-        energy_required = 4,
+        energy_required = 24,
         ingredients = {
-            {type = "fluid", name = "hot-syngas", amount = 100},
-            {type = "fluid", name = "water", amount = 300},
+            {type = "fluid", name = "dirty-syngas", amount = 400},
+            {type = "item", name = "filtration-media", amount = 1},
+            {type = "fluid", name = "water", amount = 1600},
         },
         results = {
-            {type = "fluid", name = "syngas", amount = 500},
-            {type = "fluid", name = "steam", amount = 300, temperature = 165},
+            {type = "fluid", name = "hot-syngas", amount = 400},
+            {type = "fluid", name = "flue-gas", amount = 4000},
+            {type = "item", name = "ash", amount = 8},
         },
-        main_product = "syngas",
+        main_product = "hot-syngas",
+        icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-syngas.png",
+        icon_size = 32,
         subgroup = "py-petroleum-handling-oil-sand-recipes",
         order = "a"
-    }:add_unlock("oil-sands")
+    }:add_unlock("coal-processing-3")
+end
+
+RECIPE {
+    type = "recipe",
+    name = "hot-syngas-cooldown",
+    category = "heat-exchanger",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "hot-syngas", amount = 100},
+        {type = "fluid", name = "water", amount = 300},
+    },
+    results = {
+        {type = "fluid", name = "syngas", amount = 500},
+        {type = "fluid", name = "steam", amount = 300, temperature = 250},
+    },
+    main_product = "syngas",
+    subgroup = "py-petroleum-handling-oil-sand-recipes",
+    order = "a"
+}:add_unlock("coal-processing-3")

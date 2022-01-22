@@ -22,12 +22,14 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk01"},
+    dependencies = {"oil-machines-mk01"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
             {'logistic-science-pack', 1},
+            {'chemical-science-pack', 1}
         },
         time = 45
     }
@@ -40,13 +42,15 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk02","coalbed-mk02"},
+    dependencies = {"oil-machines-mk02"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1}
+            {'chemical-science-pack', 1},
+            {'production-science-pack', 1}
         },
         time = 45
     }
@@ -59,6 +63,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk03"},
+    dependencies = {"oil-machines-mk03"},
     effects = {},
     unit = {
         count = 200,
@@ -66,7 +71,9 @@ TECHNOLOGY {
             {'automation-science-pack', 1},
             {'logistic-science-pack', 1},
             {'chemical-science-pack', 1},
-            {'production-science-pack', 1}
+            {'military-science-pack', 1},
+            {'production-science-pack', 1},
+            {'utility-science-pack', 1}
         },
         time = 45
     }

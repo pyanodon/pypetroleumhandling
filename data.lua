@@ -27,7 +27,10 @@ require("prototypes.technologies.petroleum-gas")
 require("prototypes.technologies.coalbed")
 require("prototypes.technologies.fracking")
 require("prototypes.technologies.kerogen")
-
+require("prototypes.technologies.guar")
+require("prototypes.technologies.small-parts")
+require("prototypes.technologies.drilling-fluid")
+require("prototypes.technologies.py-oil-processing")
 
 --(( BUILDINGS ))--
 require("prototypes.buildings.oil-sand-extractor-mk01")
@@ -163,7 +166,6 @@ require("prototypes.fluids.drilling-fluid-1")
 require("prototypes.fluids.drilling-fluid-2")
 require("prototypes.fluids.drilling-fluid-3")
 require("prototypes.fluids.dirty-syngas")
-require("prototypes.fluids.purified-syngas")
 require("prototypes.fluids.hot-syngas")
 require("prototypes.fluids.residual-oil")
 require("prototypes.fluids.low-distillate")
@@ -173,7 +175,12 @@ require("prototypes.fluids.stripped-distillate")
 require("prototypes.fluids.condensed-distillate")
 require("prototypes.fluids.residual-mixture")
 require("prototypes.fluids.hot-residual-mixture")
-require("prototypes.fluids.drilling-waste")
+--require("prototypes.fluids.drilling-waste")
+
+if mods['pyrawores'] then
+    require("prototypes.fluids.purified-syngas")
+    data.raw.fluid["purified-syngas"].fuel_value = "1MJ"
+end
 
 --(( TILES ))--
 --require("prototypes.tiles.space-plate")
@@ -196,7 +203,6 @@ data.raw.fluid["purified-natural-gas"].fuel_value = "0.4MJ"
 data.raw.fluid["pure-natural-gas"].fuel_value = "0.5MJ"
 data.raw.fluid["residual-gas"].fuel_value = "0.2MJ"
 data.raw.fluid["dirty-syngas"].fuel_value = "0.2MJ"
-data.raw.fluid["purified-syngas"].fuel_value = "1MJ"
 data.raw.fluid["hot-syngas"].fuel_value = "1MJ"
 data.raw.fluid["residual-oil"].fuel_value = "0.3MJ"
 data.raw.fluid["low-distillate"].fuel_value = "0.4MJ"
