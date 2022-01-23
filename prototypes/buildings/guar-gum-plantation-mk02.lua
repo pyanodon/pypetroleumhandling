@@ -34,7 +34,7 @@ ENTITY {
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "guar-gum-plantation-mk02"},
-    fast_replaceable_group = "guar-gum-plantation-mk02",
+    fast_replaceable_group = "guar-gum-plantation",
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",

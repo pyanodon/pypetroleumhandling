@@ -38,7 +38,7 @@ ENTITY {
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "bitumen-seep-mk02"},
-    fast_replaceable_group = "oil-derrick-mk02",
+    fast_replaceable_group = "oil-derrick",
     max_health = 700,
     resource_categories = {"bitumen-seep", 'oil-mk02'},
     corpse = "big-remnants",
