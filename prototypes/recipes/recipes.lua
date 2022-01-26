@@ -1656,6 +1656,43 @@ RECIPE {
     order = "a"
 }:add_unlock("py-oil-processing-mk03"):replace_ingredient("chromium", "sncr-alloy")
 
+RECIPE {
+    type = "recipe",
+    name = "low-distillate-to-medium-distillate",
+    category = "cracker",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "low-distillate", amount = 100},
+        {type = "fluid", name = "steam", amount = 300},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "medium-distillate", amount = 100},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+RECIPE {
+    type = "recipe",
+    name = "medium-distillate-to-high-distillate",
+    category = "cracker",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "medium-distillate", amount = 100},
+        {type = "fluid", name = "steam", amount = 300},
+        {type = "item", name = "chromium", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "high-distillate", amount = 100},
+    },
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+
+
 --hidden recipe for oil derricks
 RECIPE {
     type = "recipe",
