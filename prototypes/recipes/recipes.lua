@@ -124,7 +124,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk01")
+}:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",

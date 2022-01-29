@@ -1,8 +1,8 @@
 TECHNOLOGY {
     type = "technology",
     name = "small-parts-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-02.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/advanced-small-parts.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {},
     effects = {},
@@ -20,8 +20,8 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "small-parts-mk03",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-02.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/special-small-parts.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {},
     dependencies = {"small-parts-mk02"},
