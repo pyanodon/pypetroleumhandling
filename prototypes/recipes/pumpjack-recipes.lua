@@ -14,7 +14,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk01")
+}:add_unlock("drilling-fluid-mk01")
 
 RECIPE {
     type = "recipe",
@@ -89,7 +89,7 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk01")
+}:add_unlock("drilling-fluid-mk01")
 
 RECIPE {
     type = "recipe",
@@ -166,7 +166,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk01")
+}:add_unlock("drilling-fluid-mk01")
 
 RECIPE {
     type = "recipe",
@@ -264,4 +264,4 @@ RECIPE {
     --main_product = "transport-belt",
     subgroup = "py-petroleum-handling-recipes",
     order = "w"
-}:add_unlock("py-oil-processing-mk01")
+}:add_unlock("drilling-fluid-mk01")

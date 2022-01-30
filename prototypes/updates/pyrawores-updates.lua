@@ -256,7 +256,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-nickel",
     order = "zaa"
-}:add_unlock("py-oil-processing-mk01")
+}:add_unlock("nickel-mk02")
 
 RECIPE {
     type = "recipe",

@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
+        {type = "fluid", name = "steam", amount = 2500, minimum_temperature = 500}, --pressured-water
         {type = "fluid", name = "hot-air", amount = 500},
         {type = "item", name = "drill-head", amount = 1},
     },
@@ -25,7 +25,7 @@ RECIPE {
     enabled = false,
     energy_required = 12,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
+        {type = "fluid", name = "steam", amount = 2500, minimum_temperature = 500}, --pressured-water
         {type = "fluid", name = "hot-air", amount = 500},
         {type = "item", name = "filtration-media", amount = 2},
     },
@@ -45,7 +45,7 @@ RECIPE {
     enabled = false,
     energy_required = 12,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 2500, temperature = 500}, --pressured-water
+        {type = "fluid", name = "steam", amount = 2500, minimum_temperature = 500}, --pressured-water
         {type = "fluid", name = "hot-air", amount = 500},
         {type = "item", name = "drill-head", amount = 1},
         {type = "item", name = "filtration-media", amount = 2},
