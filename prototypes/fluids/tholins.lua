@@ -24,7 +24,7 @@ FLUID {
     type = "fluid",
     name = "tholins",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholins.png",
-    icon_size = 32,
+    icon_size = 64,
     default_temperature = 15, -- less than 15 = liquid / equal a 15 = gas
     base_color = {r = 0.6, g = 0.223, b = 0.125},
     flow_color = {r = 0.6, g = 0.223, b = 0.125},

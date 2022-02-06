@@ -341,7 +341,7 @@ RECIPE {
         {type = "fluid", name = "propene", amount = 80},
     },
     icon = "__pyhightechgraphics__/graphics/icons/propene.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "d"
 }:add_unlock("tholin-mk03")

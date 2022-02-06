@@ -334,7 +334,7 @@ RECIPE {
     },
     main_product = "ticl4",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/ticl4.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("py-oil-processing-mk01")

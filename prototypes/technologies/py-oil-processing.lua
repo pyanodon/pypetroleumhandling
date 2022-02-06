@@ -1,8 +1,8 @@
 TECHNOLOGY {
     type = "technology",
     name = "py-oil-processing-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk01.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {},
     effects = {},
@@ -18,8 +18,8 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "py-oil-processing-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk02.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {},
     dependencies = {"py-oil-processing-mk01"},
@@ -37,8 +37,8 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "py-oil-processing-mk03",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk03.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {},
     dependencies = {"py-oil-processing-mk02"},
@@ -57,8 +57,8 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "py-oil-processing-mk04",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk04.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {},
     dependencies = {"py-oil-processing-mk03"},

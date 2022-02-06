@@ -34,7 +34,7 @@ RECIPE {
     },
     main_product = "small-parts-01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-01.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }
@@ -58,7 +58,7 @@ RECIPE {
     },
     main_product = "small-parts-02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-02.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("small-parts-mk02")
@@ -83,7 +83,7 @@ RECIPE {
     },
     main_product = "small-parts-03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/small-parts-03.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("small-parts-mk03")
@@ -141,7 +141,7 @@ RECIPE {
     },
     main_product = "scrude",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")

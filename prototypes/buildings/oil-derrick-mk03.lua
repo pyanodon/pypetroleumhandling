@@ -35,7 +35,7 @@ ENTITY {
     type = "mining-drill",
     name = "oil-derrick-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk03.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "bitumen-seep-mk03"},
     fast_replaceable_group = "oil-derrick",

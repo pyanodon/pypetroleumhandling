@@ -130,7 +130,7 @@ RECIPE {
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-hot-air",
     order = "a2"
 }:add_unlock("coke-mk01")
@@ -152,7 +152,7 @@ RECIPE {
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-hot-air",
     order = "a3"
 }:add_unlock("coke-mk02")
@@ -174,7 +174,7 @@ RECIPE {
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
-    icon_size = 32,
+    icon_size = 64,
     subgroup = "py-petroleum-handling-hot-air",
     order = "a4"
 }:add_unlock("coke-mk03")
