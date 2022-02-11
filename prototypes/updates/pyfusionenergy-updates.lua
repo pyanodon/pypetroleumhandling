@@ -45,7 +45,7 @@ RECIPE("guar-gum-plantation-mk04"):add_ingredient({type = "item", name = "nenbit
 
 
 RECIPE("automated-screener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
-RECIPE("bio-reactor"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
+RECIPE("bio-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("centrifugal-pan-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("advanced-circuit", "electronic-circuit")
 RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-03", amount = 50})
