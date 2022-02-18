@@ -130,7 +130,7 @@ ENTITY {
     name = "natural-gas-seep-mk01-base",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "player-creation"},
+    flags = {"placeable-neutral"},
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",

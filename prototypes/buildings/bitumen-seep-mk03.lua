@@ -118,7 +118,7 @@ ENTITY {
     name = "bitumen-seep-mk03-base",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "player-creation"},
+    flags = {"placeable-neutral"},
     --minable = {mining_time = 0.5, result = "coalbed-mk01"},
     max_health = 100,
     corpse = "medium-remnants",
