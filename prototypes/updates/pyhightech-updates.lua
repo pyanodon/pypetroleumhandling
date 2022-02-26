@@ -2,6 +2,10 @@ require("prototypes.buildings.pumpjack-hightech")
 
 TECHNOLOGY("aerogel"):remove_pack("production-science-pack")
 
+if not mods['pyrawores'] then
+    TECHNOLOGY('collagen'):remove_pack('production-science-pack')
+end
+
 ----BUILDINDS----
 
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "diamagnetic-material", amount = 20}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 15})
@@ -69,9 +73,15 @@ RECIPE('vacuum-pump-mk01'):remove_unlock('vacuum-tube-electronics')
 RECIPE('pressured-air'):remove_unlock('propene')
 RECIPE('pressured-water'):remove_unlock('zipir')
 RECIPE('automated-factory-mk01'):remove_unlock('basic-electronics')
-RECIPE("ethylene"):remove_unlock("plastics-mk03"):add_unlock("py-oil-processing-mk02")
+RECIPE("ethylene"):add_unlock("py-oil-processing-mk02")
 RECIPE('compressor-mk01'):remove_unlock('semiconductor-doping-mk02')
 RECIPE('agzn-alloy'):remove_unlock('biopolymer')
+
+if mods['pyrawores'] then
+    RECIPE("ethylene"):remove_unlock("plastics-mk04")
+else
+    RECIPE("ethylene"):remove_unlock("plastics-mk03")
+end
 
 ----EXCLUSIVE RECIPES----
 
@@ -446,7 +456,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",
@@ -467,7 +477,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk03")
+}:add_unlock("fertilizer")
 
 RECIPE {
     type = "recipe",

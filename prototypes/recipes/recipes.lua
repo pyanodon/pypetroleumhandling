@@ -75,7 +75,7 @@ RECIPE {
         {type = "item", name = "plastic-bar", amount = 5},
         {type = "item", name = "rubber", amount = 2},
         {type = "item", name = "belt", amount = 2},
-        {type = "item", name = "nenbit-matrix", amount = 2},
+        {type = "item", name = "nenbit-matrix", amount = 1},
         {type = "fluid", name = "lubricant", amount = 15},
     },
     results = {
@@ -473,7 +473,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("rubber-3")
 
 RECIPE {
     type = "recipe",
@@ -667,7 +667,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("rubber-3")
 
 RECIPE {
     type = "recipe",
@@ -877,7 +877,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",
@@ -898,7 +898,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",

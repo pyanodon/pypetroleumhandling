@@ -72,6 +72,26 @@ TECHNOLOGY {
     }
 }
 
+TECHNOLOGY {
+    type = "technology",
+    name = "rubber-3",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {"logistic-science-pack"},
+    dependencies = {"rubber-2"},
+    effects = {},
+    unit = {
+        count = 200,
+        ingredients = {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+        },
+        time = 45
+    }
+}
+
 local tech = table.deep_copy(data.raw.technology['fast-inserter'])
 tech.name = 'fast-inserter-2'
 tech.dependencies = {'fast-inserter'}

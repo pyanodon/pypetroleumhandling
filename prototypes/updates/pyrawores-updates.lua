@@ -357,7 +357,13 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("plastics-mk02"):replace_ingredient("naphtha", "propene"):change_category("fbreactor")
+}:replace_ingredient("naphtha", "propene"):change_category("fbreactor")
+
+if mods['pyhightech'] then
+    RECIPE("plastic-bar-02"):add_unlock("plastics-mk03")
+else
+    RECIPE("plastic-bar-02"):add_unlock("plastics-mk02")
+end
 
 RECIPE {
     type = "recipe",
