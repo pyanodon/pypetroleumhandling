@@ -18,7 +18,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("rubber-3")
 
 FLUID {
     type = "fluid",
