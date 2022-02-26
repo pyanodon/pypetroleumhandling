@@ -438,12 +438,13 @@ local altrec = 0
 					icon_size = data.raw.item[result].icon_size
 				end
 			end
+			local hotair = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 64, shift = {-7.5,-7.5}, scale = 0.25}
       if recipe.icons then --if its already an icons
         icons = recipe.icons
-        icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+        icons[#icons+1] = hotair
       elseif data.raw.item[result] and data.raw.item[result].icons then
         icons = table.deepcopy(data.raw.item[result].icons)
-        icons[#icons+1] = {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+        icons[#icons+1] = hotair
       else --no icons table, use icon found above
         if icon == nil then
           icon = '__base__/graphics/icons/blueprint.png'
@@ -451,7 +452,7 @@ local altrec = 0
           icons =
           {
             {icon = icon, icon_size = icon_size},
-            {icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png", icon_size = 32, shift = {-7.5,-7.5}}
+            hotair
           }
       end
       --ensure icon sizes are installed in each icon level (would be easier to add it to the whole thing, but meh)
