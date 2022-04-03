@@ -58,7 +58,7 @@ RECIPE('benzene-aromatics'):change_category('cracker')
 RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50})
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "phenol", amount = 4})
 RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):change_category("fbreactor")
-RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene")
+RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 --RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
 RECIPE("small-parts-02"):add_ingredient({type = "item", name = "nylon", amount = 1})
@@ -67,21 +67,12 @@ RECIPE("ht-locomotive"):add_ingredient({type = "item", name = "small-parts-02", 
 RECIPE("ht-generic-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("ht-generic-fluid-wagon"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("drilling-fluid-0"):add_ingredient({type = "item", name = "clay", amount = 5})
-RECIPE("ethylene-chlorohydrin"):add_ingredient({type = "fluid", name = "ethylene", amount = 50})
+RECIPE("ethylene-chlorohydrin"):add_ingredient({type = "fluid", name = "ethylene", amount = 50}):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
+RECIPE("ethylene-glycol"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 
-RECIPE('vacuum-pump-mk01'):remove_unlock('vacuum-tube-electronics')
-RECIPE('pressured-air'):remove_unlock('propene')
-RECIPE('pressured-water'):remove_unlock('zipir')
 RECIPE('automated-factory-mk01'):remove_unlock('basic-electronics')
-RECIPE("ethylene"):add_unlock("py-oil-processing-mk02")
 RECIPE('compressor-mk01'):remove_unlock('semiconductor-doping-mk02')
 RECIPE('agzn-alloy'):remove_unlock('biopolymer')
-
-if mods['pyrawores'] then
-    RECIPE("ethylene"):remove_unlock("plastics-mk04")
-else
-    RECIPE("ethylene"):remove_unlock("plastics-mk03")
-end
 
 ----EXCLUSIVE RECIPES----
 
@@ -189,7 +180,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("oil-processing")
+}:add_unlock("ethylene")
 
 RECIPE {
     type = "recipe",
@@ -625,4 +616,4 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk03"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")

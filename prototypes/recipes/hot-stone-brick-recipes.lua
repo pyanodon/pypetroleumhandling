@@ -20,7 +20,7 @@ RECIPE {
     order = "b1",
     --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     --icon_size = 32,
-}:add_unlock("coke-mk01")
+}:add_unlock("hot-air-mk01")
 
 data.raw.recipe['coke-coal'].results =
     {
@@ -47,7 +47,7 @@ RECIPE {
     order = "b2",
     --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     --icon_size = 32,
-}:add_unlock("coke-mk02")
+}:add_unlock("hot-air-mk02")
 
 --outlet gas 04
 RECIPE {
@@ -69,7 +69,7 @@ RECIPE {
     order = "c1",
     --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     --icon_size = 32,
-}:add_unlock("coke-mk03")
+}:add_unlock("hot-air-mk03")
 
 RECIPE {
     type = "recipe",
@@ -90,7 +90,7 @@ RECIPE {
     order = "c2",
     --icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     --icon_size = 32,
-}:add_unlock("coke-mk03")
+}:add_unlock("hot-air-mk03")
 
 RECIPE {
     type = "recipe",
@@ -111,7 +111,7 @@ RECIPE {
     order = "c3",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
     icon_size = 32,
-}:add_unlock("coke-mk03")
+}:add_unlock("hot-air-mk03")
 
 RECIPE {
     type = "recipe",
@@ -133,7 +133,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-hot-air",
     order = "a2"
-}:add_unlock("coke-mk01")
+}:add_unlock("hot-air-mk01")
 
 RECIPE {
     type = "recipe",
@@ -155,7 +155,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-hot-air",
     order = "a3"
-}:add_unlock("coke-mk02")
+}:add_unlock("hot-air-mk02")
 
 RECIPE {
     type = "recipe",
@@ -177,7 +177,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-hot-air",
     order = "a4"
-}:add_unlock("coke-mk03")
+}:add_unlock("hot-air-mk03")
 
 --reheating hot air gasses with combustion mixture
 
@@ -199,7 +199,7 @@ RECIPE {
 	--icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c1"
-}:add_unlock("coke-mk02")
+}:add_unlock("hot-air-mk02")
 
 RECIPE {
     type = "recipe",
@@ -219,7 +219,7 @@ RECIPE {
 	--icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c2"
-}:add_unlock("coke-mk03")
+}:add_unlock("hot-air-mk03")
 
 RECIPE {
     type = "recipe",
@@ -239,4 +239,4 @@ RECIPE {
 	--icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c3"
-}:add_unlock("coke-mk03")
+}:add_unlock("hot-air-mk03")

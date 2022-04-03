@@ -2,11 +2,10 @@ TECHNOLOGY('fluid-processing-machines-1'):remove_pack('logistic-science-pack')
 
 --BUILDINDS--
 
-RECIPE("chemical-plant-mk01"):remove_unlock('coal-processing-2'):add_unlock('coal-processing-1')
+-- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
 RECIPE("evaporator"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE("agitator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE("gas-separator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
-
 
 RECIPE("advanced-foundry-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("ball-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -19,6 +18,7 @@ RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01")
 RECIPE("ralesia-plantation-mk01"):replace_ingredient("pipe", "small-parts-01")
 RECIPE("rectisol"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("washer"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
+RECIPE("mixer-mk01"):replace_ingredient("chemical-plant-mk01", "washer")
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk01"].crafting_categories,"hot-air-advanced-foundry")
 if mods['pyrawores'] then
 table.insert(data.raw["assembling-machine"]["advanced-foundry-mk02"].crafting_categories,"hot-air-advanced-foundry")
@@ -30,8 +30,8 @@ end
 RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
 
 if not mods['pyrawores'] then
-    RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit'):remove_unlock('advanced-electronics'):add_unlock('coal-processing-1')
-    RECIPE("oleo-heavy"):remove_unlock("fluid-separation"):add_unlock("mukmoux")
+    RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit')
+    RECIPE("oleo-heavy"):remove_unlock("fluid-separation"):add_unlock("heavy-oil-mk02")
 end
 
 --update tar quenching

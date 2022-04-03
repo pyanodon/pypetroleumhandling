@@ -59,8 +59,7 @@ RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredie
 RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "molybdenum-plate", amount = 20})
 RECIPE("compressor-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE('centrifugal-pan-mk01'):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
-RECIPE("evaporator"):remove_unlock('fluid-processing-machines-2'):add_unlock('fluid-processing-machines-1')
-
+RECIPE("oleo-heavy"):remove_unlock("mukmoux")
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -139,7 +138,6 @@ RECIPE("mining-nickel"):replace_ingredient("coal-gas", "syngas"):remove_ingredie
 RECIPE("mining-tin"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 150}):replace_ingredient("coal-gas", "steam")
 RECIPE("mining-titanium"):replace_ingredient("coal-gas", "acetylene"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-1", amount = 100})
 RECIPE("mining-zinc"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 150})
-RECIPE("hydrogen-chloride"):remove_unlock("coal-processing-2"):add_unlock("filtration")
 
 --RECIPE('drilling-fluid-1'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 RECIPE('drilling-fluid-2'):add_ingredient({type = 'item', name = 'starch', amount = 4})
@@ -176,7 +174,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("alloys-mk02")
 
 RECIPE {
     type = "recipe",
@@ -197,7 +195,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-rawores-recipes",
     order = "j"
-}:add_unlock("alloys")
+}:add_unlock("alloys-mk03")
 
 RECIPE {
     type = "recipe",
@@ -337,7 +335,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("alloys-mk02")
 
 RECIPE {
     type = "recipe",
@@ -424,7 +422,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("machines-mk03")
+}:add_unlock("additives")
 
 RECIPE {
     type = "recipe",
@@ -753,7 +751,7 @@ RECIPE {
     main_product = "xylenol",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk03")
+}:add_unlock("heavy-oil-mk02")
 
 RECIPE {
     type = "recipe",
@@ -771,7 +769,7 @@ RECIPE {
     main_product = "kerosene",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("heavy-oil-mk02")
 
 RECIPE {
     type = "recipe",
@@ -814,7 +812,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("coke-mk02")
+}:add_unlock("oil-distillation")
 
 RECIPE {
     type = "recipe",
@@ -835,7 +833,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("coke-mk02")
+}:add_unlock("oil-distillation")
 
 RECIPE {
     type = "recipe",
@@ -933,7 +931,7 @@ RECIPE {
     main_product= "bolts",
     subgroup = "py-rawores-iron",
     order = "azc"
-  }:add_unlock("iron-mk02")
+  }:add_unlock("casting-mk02"):replace_ingredient('sand-casting','mold')
 
 RECIPE {
     type = "recipe",
@@ -954,7 +952,7 @@ RECIPE {
     main_product= "small-parts-01",
     subgroup = "py-rawores-iron",
     order = "azd"
-  }:add_unlock("iron-mk03")
+  }:add_unlock("casting-mk03"):replace_ingredient('sand-casting','mold')
 
 RECIPE('casting-niobium-pipe'):add_ingredient({type = "item", name = "rubber", amount = 2})
 
