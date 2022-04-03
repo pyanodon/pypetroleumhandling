@@ -267,7 +267,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("energy-2")
+}:add_unlock("fuel-production")
 
 RECIPE {
     type = "recipe",
@@ -367,7 +367,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
+}:add_unlock("fuel-production"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
 
 RECIPE {
     type = "recipe",
@@ -599,7 +599,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -622,7 +622,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("heavy-oil-mk02")
 
 RECIPE {
     type = "recipe",
@@ -645,7 +645,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -721,7 +721,7 @@ RECIPE {
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk03")
+}:add_unlock("petroleum-gas-mk02")
 
 if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
     RECIPE {
@@ -981,7 +981,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("oil-distillation")
 
 RECIPE {
     type = "recipe",
@@ -1001,7 +1001,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("oil-distillation")
 
   -- HIGH DISTILLATE --
 
@@ -1248,7 +1248,7 @@ RECIPE {
     main_product = "heavy-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -1266,7 +1266,7 @@ RECIPE {
     main_product = "coal-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("heavy-oil-mk01"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1284,25 +1284,7 @@ RECIPE {
     main_product = "btx",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02"):replace_ingredient("chromium", "sncr-alloy")
-
-RECIPE {
-    type = "recipe",
-    name = "low-distillate-to-btx",
-    category = "hor",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "low-distillate", amount = 100},
-        {type = "item", name = "chromium", amount = 1},
-    },
-    results = {
-        {type = "fluid", name = "btx", amount = 100},
-    },
-    main_product = "btx",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}:add_unlock("py-oil-processing-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("heavy-oil-mk01"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1320,7 +1302,7 @@ RECIPE {
     main_product = "lubricant",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+}:add_unlock("heavy-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
 
   -- RESIDUAL OIL --
 
@@ -1341,7 +1323,7 @@ RECIPE {
     main_product = "residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("oil-distillation")
 
 RECIPE {
     type = "recipe",
@@ -1359,7 +1341,7 @@ RECIPE {
     main_product = "hot-residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk02")
+}:add_unlock("oil-distillation")
 
 if mods["pyrawores"] then
     RECIPE {
@@ -1380,7 +1362,7 @@ if mods["pyrawores"] then
         main_product = "coke",
         subgroup = "py-petroleum-handling-recipes",
         order = "a"
-    }:add_unlock("coke-mk02")
+    }:add_unlock("oil-distillation")
 else
     RECIPE {
         type = "recipe",
@@ -1399,7 +1381,7 @@ else
         main_product = "coke",
         subgroup = "py-petroleum-handling-recipes",
         order = "a"
-    }:add_unlock("py-oil-processing-mk02")
+    }:add_unlock("oil-distillation")
 end
 
 RECIPE {
@@ -1598,7 +1580,7 @@ else
         main_product = "bitumen",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("py-oil-processing-mk02")
+    }:add_unlock("lubricant")
 end
 
 if not mods['pyrawores'] then
@@ -1618,7 +1600,7 @@ if not mods['pyrawores'] then
         order = "a2",
         icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
         icon_size = 32,
-    }:add_unlock("coal-processing-1")
+    }:add_unlock("hot-air-mk01")
 end
 
 RECIPE {
@@ -1654,7 +1636,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("py-oil-processing-mk03"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1672,7 +1654,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("heavy-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1715,4 +1697,4 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     ignore_for_dependencies = true,
     order = "a"
-}:add_unlock("oil-machines-mk01")
+}

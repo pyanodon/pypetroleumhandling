@@ -183,6 +183,5 @@ if data.data_crawler then
   end
   ]]--
 
---TODO
-RECIPE('hotair-flask'):set_enabled(false):add_unlock('coal-processing-1')
-RECIPE('hotair-molten-glass'):add_unlock('coal-processing-1'):set_fields{enabled = false}
+RECIPE('hotair-flask'):set_enabled(false):add_unlock('hot-air-mk01')
+RECIPE('hotair-molten-glass'):add_unlock('hot-air-mk01'):set_fields{enabled = false}

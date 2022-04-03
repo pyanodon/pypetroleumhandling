@@ -1,17 +1,12 @@
 --TECHNOLOGY--
 
-RECIPE('vacuum'):remove_unlock('advanced-mining-facilities'):add_unlock('rubber')
-
 if not mods['pyrawores'] then
-    RECIPE('vacuum-pump-mk01'):remove_unlock('advanced-mining-facilities'):add_unlock('coal-processing-1')
+    TECHNOLOGY("fluid-pressurization"):remove_pack("chemical-science-pack"):remove_pack("logistic-science-pack")
     RECIPE('centrifugal-pan-mk01'):remove_unlock('diamond-mining'):add_unlock("fluid-processing-machines-1")
     RECIPE("compressor-mk01"):remove_unlock("helium-processing"):remove_unlock("liquid-petroleum-processing"):remove_unlock("advanced-oil-processing"):add_unlock("fluid-processing-machines-2")
     RECIPE("py-heat-exchanger"):remove_unlock("fusion-mk01"):add_unlock("oil-machines-mk02")
 end
 
-
-RECIPE('pressured-air'):remove_unlock('helium-processing'):add_unlock('coal-processing-1')
-RECIPE('pressured-water'):remove_unlock('xyhiphoe'):add_unlock('coal-processing-1')
 RECIPE('grease'):remove_unlock('diamond-mining'):add_unlock('small-parts-mk03')
 
 --BUILDINDS--
@@ -96,7 +91,7 @@ RECIPE("py-heat-exchanger-mk03"):add_ingredient({type = "item", name = "small-pa
 
 ----RECIPES----
 
-RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('py-oil-processing-mk03')
+RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
 RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
@@ -125,7 +120,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-fusion-items",
     order = "a"
-}:add_unlock("py-oil-processing-mk03")
+}:add_unlock("heavy-oil-mk04")
 
 RECIPE {
     type = "recipe",
@@ -145,7 +140,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-fusion-items",
     order = "a"
-}:add_unlock("py-oil-processing-mk03")
+}:add_unlock("heavy-oil-mk04")
 
 RECIPE {
     type = "recipe",
@@ -236,7 +231,7 @@ RECIPE {
     main_product = "grease",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("py-oil-processing-mk03"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("heavy-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",

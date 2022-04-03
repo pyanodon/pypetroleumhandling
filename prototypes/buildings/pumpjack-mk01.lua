@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"pumpjack-mk01", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("drilling-fluid-mk01")
 
 ITEM {
     type = "item",

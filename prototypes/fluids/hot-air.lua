@@ -1,24 +1,25 @@
-
-RECIPE {
-    type = "recipe",
-    name = "hot-air-1",
-    category = "rhe",
-    --hidden = true,
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-        {type = "item", name = "stone-brick", amount = 10},
-        {type = "fluid", name = "pressured-air", amount = 150},
-    },
-    results = {
-        {type = "fluid", name = "hot-air", amount = 100},
-    },
-    main_product = "hot-air",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
-    icon_size = 64,
-    subgroup = "py-petroleum-handling-hot-air",
-    order = "a1"
-}:add_unlock("coal-processing-1")
+if not mods['pyrawores'] then
+    RECIPE {
+        type = "recipe",
+        name = "hot-air-1",
+        category = "rhe",
+        --hidden = true,
+        enabled = false,
+        energy_required = 3,
+        ingredients = {
+            {type = "item", name = "stone-brick", amount = 10},
+            {type = "fluid", name = "pressured-air", amount = 150},
+        },
+        results = {
+            {type = "fluid", name = "hot-air", amount = 100},
+        },
+        main_product = "hot-air",
+        icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
+        icon_size = 64,
+        subgroup = "py-petroleum-handling-hot-air",
+        order = "a1"
+    }:add_unlock("hot-air-mk01")
+end
 
 FLUID {
     type = "fluid",
