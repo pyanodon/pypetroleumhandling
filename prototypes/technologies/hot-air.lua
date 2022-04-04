@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "hot-air-mk01",
-    icon = "__pycoalprocessinggraphics__/graphics/missing_icon.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/hot-air-mk01.png",
     icon_size = 128,
     order = "c-a",
     effects = {},
@@ -18,7 +18,7 @@ if mods['pyrawores'] then
     TECHNOLOGY {
         type = "technology",
         name = "hot-air-mk02",
-        icon = "__pycoalprocessinggraphics__/graphics/missing_icon.png",
+        icon = "__pypetroleumhandlinggraphics__/graphics/technology/hot-air-mk02.png",
         icon_size = 128,
         order = "c-a",
         dependencies = {"hot-air-mk01"},
@@ -36,7 +36,7 @@ if mods['pyrawores'] then
     TECHNOLOGY {
         type = "technology",
         name = "hot-air-mk03",
-        icon = "__pycoalprocessinggraphics__/graphics/missing_icon.png",
+        icon = "__pypetroleumhandlinggraphics__/graphics/technology/hot-air-mk03.png",
         icon_size = 128,
         order = "c-a",
         dependencies = {"hot-air-mk02"},

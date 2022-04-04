@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "oil-distillation",
-    icon = "__pycoalprocessinggraphics__/graphics/missing_icon.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-distillation.png",
     icon_size = 128,
     order = "c-a",
     effects = {},
