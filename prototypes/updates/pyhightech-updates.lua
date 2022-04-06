@@ -72,7 +72,11 @@ RECIPE("ethylene-glycol"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethyle
 
 RECIPE('automated-factory-mk01'):remove_unlock('basic-electronics')
 RECIPE('compressor-mk01'):remove_unlock('semiconductor-doping-mk02')
-RECIPE('agzn-alloy'):remove_unlock('biopolymer')
+
+if mods['pyrawores'] then
+    RECIPE('agzn-alloy'):remove_unlock('biopolymer')
+    RECIPE('silver-foam'):remove_unlock('biopolymer')
+end
 
 ----EXCLUSIVE RECIPES----
 
