@@ -91,7 +91,6 @@ RECIPE("py-heat-exchanger-mk03"):add_ingredient({type = "item", name = "small-pa
 
 ----RECIPES----
 
-RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
 RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
@@ -99,6 +98,11 @@ RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount
 RECIPE("small-parts-03"):replace_ingredient("lubricant", "grease")
 RECIPE("mining-molybdenum"):replace_ingredient("coal-gas", "gasoline"):replace_ingredient("lubricant", "drilling-fluid-3")
 RECIPE("mining-molybdenum"):remove_unlock("excavation-2"):add_unlock("excavation-3")
+
+if mods['pyrawores'] then
+    RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
+    RECIPE("silver-foam"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
+end
 
 ----EXCLUSIVE RECIPES----
 
