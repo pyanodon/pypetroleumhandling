@@ -31,7 +31,6 @@ require("prototypes.technologies.kerogen")
 require("prototypes.technologies.guar")
 require("prototypes.technologies.small-parts")
 require("prototypes.technologies.drilling-fluid")
-require("prototypes.technologies.py-oil-processing")
 require("prototypes.technologies.hot-air")
 require("prototypes.technologies.oil-distillation")
 
