@@ -247,7 +247,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("scrude")
+}:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
