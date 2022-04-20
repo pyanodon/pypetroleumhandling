@@ -184,4 +184,5 @@ if data.data_crawler then
   ]]--
 
 RECIPE('hotair-flask'):set_enabled(false):add_unlock('hot-air-mk01')
-RECIPE('hotair-molten-glass'):add_unlock('hot-air-mk01'):set_fields{enabled = false}
+RECIPE('hotair-molten-glass'):remove_unlock("glass"):add_unlock('hot-air-mk01')
+RECIPE("hotair-empty-petri-dish"):remove_unlock("petri-dish"):add_unlock("hot-air-mk01")
