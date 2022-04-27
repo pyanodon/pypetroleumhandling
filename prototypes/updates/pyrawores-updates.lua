@@ -59,7 +59,7 @@ RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredie
 RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "molybdenum-plate", amount = 20})
 RECIPE("compressor-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE('centrifugal-pan-mk01'):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
-RECIPE("oleo-heavy"):remove_unlock("mukmoux")
+RECIPE("oleo-heavy"):remove_unlock("mukmoux"):add_unlock("heavy-oil-mk02")
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("casting-unit-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
