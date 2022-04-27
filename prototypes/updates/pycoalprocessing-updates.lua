@@ -31,7 +31,7 @@ RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
 
 if not mods['pyrawores'] then
     RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit')
-    RECIPE("oleo-heavy"):remove_unlock("fluid-separation"):add_unlock("heavy-oil-mk02")
+    RECIPE("oleo-heavy"):remove_unlock("fluid-separation")
 end
 
 --update tar quenching

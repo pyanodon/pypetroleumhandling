@@ -70,7 +70,6 @@ RECIPE("drilling-fluid-0"):add_ingredient({type = "item", name = "clay", amount 
 RECIPE("ethylene-chlorohydrin"):add_ingredient({type = "fluid", name = "ethylene", amount = 50}):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 RECIPE("ethylene-glycol"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 
-RECIPE('automated-factory-mk01'):remove_unlock('basic-electronics')
 RECIPE('compressor-mk01'):remove_unlock('semiconductor-doping-mk02')
 
 if mods['pyrawores'] then
