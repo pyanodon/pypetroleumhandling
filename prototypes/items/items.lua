@@ -8,7 +8,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-ores",
     order = "a",
-    stack_size = 500
+    stack_size = 50
 }
 ITEM {
     type = "item",
@@ -18,7 +18,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-oil-sand-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 if mods['pyrawores'] then
@@ -30,7 +30,7 @@ if mods['pyrawores'] then
         flags = {},
         subgroup = "py-petroleum-handling-items",
         order = "a",
-        stack_size = 500
+        stack_size = 100
     }
 end
 
@@ -56,7 +56,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 200
 }
 
 ITEM {
@@ -80,7 +80,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 200
 }
 
 ITEM {
@@ -104,7 +104,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 200
 }
 
 if mods['pyrawores'] then
@@ -116,7 +116,7 @@ if mods['pyrawores'] then
         flags = {},
         subgroup = "py-petroleum-handling-items",
         order = "a",
-        stack_size = 500
+        stack_size = 100
     }
 end
 
@@ -128,7 +128,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -139,7 +139,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 200
 }
 
 ITEM {
@@ -150,7 +150,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -161,7 +161,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -172,7 +172,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -183,7 +183,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -194,7 +194,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -205,7 +205,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -216,7 +216,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -228,7 +228,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -240,7 +240,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -251,7 +251,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -262,7 +262,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "th",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -273,7 +273,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "th",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -284,7 +284,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "th",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -295,7 +295,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "ti",
-    stack_size = 1,
+    stack_size = 100,
     rocket_launch_product =
     {
         type = 'item',
