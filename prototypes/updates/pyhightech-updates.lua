@@ -1,4 +1,4 @@
-require("prototypes.buildings.pumpjack-hightech")
+-- require("prototypes.buildings.pumpjack-hightech")
 
 TECHNOLOGY("aerogel"):remove_pack("production-science-pack")
 
