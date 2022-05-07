@@ -52,9 +52,8 @@ RECIPE {
         {type = "item", name = "soot", amount = 2}
     },
     icons = {
-        {icon = "__pycoalprocessinggraphics__/graphics/icons/dirty-water.png", icon_size = 32}
+        {icon = "__pycoalprocessinggraphics__/graphics/icons/dirty-water.png", icon_size = 64}
     },
-    icon_size = 32,
     subgroup = "py-quenching-ores",
     order = "tailings-a"
 }:add_unlock("fluid-separation")
