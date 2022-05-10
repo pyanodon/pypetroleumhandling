@@ -101,7 +101,10 @@ RECIPE("mining-molybdenum"):remove_unlock("excavation-2"):add_unlock("excavation
 
 if mods['pyrawores'] then
     RECIPE("agzn-alloy"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
-    RECIPE("silver-foam"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
+
+    if not mods["pyhightech"] then
+        RECIPE("silver-foam"):remove_unlock('fusion-mk03'):add_unlock('alloys-mk04')
+    end
 end
 
 ----EXCLUSIVE RECIPES----
