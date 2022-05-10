@@ -74,7 +74,7 @@ RECIPE('compressor-mk01'):remove_unlock('semiconductor-doping-mk02')
 
 if mods['pyrawores'] then
     RECIPE('agzn-alloy'):remove_unlock('biopolymer')
-    RECIPE('silver-foam'):remove_unlock('biopolymer')
+    -- RECIPE('silver-foam'):remove_unlock('biopolymer')
 end
 
 ----EXCLUSIVE RECIPES----
