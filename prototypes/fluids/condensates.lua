@@ -17,7 +17,7 @@ RECIPE {
     main_product = "condensates",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02")
+}:add_unlock("petroleum-gas-mk01")
 
 FLUID {
     type = "fluid",
