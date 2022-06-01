@@ -12,7 +12,7 @@ nat_gas1.minable =
   {
     {
       type = "fluid",
-      name = "natural-gas",
+      name = "raw-gas",
       amount = 100,
     }
   }
@@ -30,7 +30,7 @@ nat_gas2.minable =
   {
     {
       type = "fluid",
-      name = "natural-gas",
+      name = "raw-gas",
       amount = 100,
     }
   }
@@ -48,7 +48,7 @@ nat_gas3.minable =
   {
     {
       type = "fluid",
-      name = "natural-gas",
+      name = "raw-gas",
       amount = 100,
     }
   }
@@ -66,7 +66,7 @@ nat_gas4.minable =
   {
     {
       type = "fluid",
-      name = "natural-gas",
+      name = "raw-gas",
       amount = 100,
     }
   }
