@@ -1619,7 +1619,7 @@ RECIPE {
         {type = "item", name = "kevlar", amount = 5}
     },
     main_product = "kevlar"
-}:add_unlock("kevlar-2"):replace_ingredient("sulfuric-acid", "dms")
+}:add_unlock("kevlar-mk02"):replace_ingredient("sulfuric-acid", "dms")
 
 RECIPE {
     type = "recipe",
