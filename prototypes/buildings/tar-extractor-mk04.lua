@@ -18,17 +18,17 @@ RECIPE {
 }:add_unlock("oil-machines-mk04")
 ]]--
 
-ITEM {
-    type = "item",
-    name = "tar-extractor-mk04",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-extractor-mk04.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk04",
-    order = "a",
-    place_result = "tar-extractor-mk04",
-    stack_size = 10
-}
+-- ITEM {
+--     type = "item",
+--     name = "tar-extractor-mk04",
+--     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-extractor-mk04.png",
+--     icon_size = 64,
+--     flags = {},
+--     subgroup = "py-petroleum-handling-buildings-mk04",
+--     order = "a",
+--     place_result = "tar-extractor-mk04",
+--     stack_size = 10
+-- }
 
 ENTITY {
     type = "mining-drill",
@@ -36,7 +36,7 @@ ENTITY {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-extractor-mk04.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "tar-extractor-mk04"},
+    minable = {mining_time = 0.5, result = "tar-seep-mk04"},
     fast_replaceable_group = "tar-extractor",
     max_health = 700,
     resource_categories = {"tar-patch"},

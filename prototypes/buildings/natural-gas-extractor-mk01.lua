@@ -16,17 +16,17 @@
 }:add_unlock("oil-machines-mk01")
 ]]--
 
-ITEM {
-    type = "item",
-    name = "natural-gas-extractor-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk01.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
-    order = "a",
-    place_result = "natural-gas-extractor-mk01",
-    stack_size = 10
-}
+-- ITEM {
+--     type = "item",
+--     name = "natural-gas-extractor-mk01",
+--     icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk01.png",
+--     icon_size = 64,
+--     flags = {},
+--     subgroup = "py-petroleum-handling-buildings-mk01",
+--     order = "a",
+--     place_result = "natural-gas-extractor-mk01",
+--     stack_size = 10
+-- }
 
 ENTITY {
     type = "mining-drill",
