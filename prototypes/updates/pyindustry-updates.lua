@@ -36,7 +36,7 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "soot", amount = 1}
+        {type = "item", name = "soot", amount = 2}
     },
     results = {
         {type = "item", name = "iron-ore", amount = 1, probability = 0.2},
@@ -47,7 +47,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     unlock_results = false,
-    icon = "__pycoalprocessinggraphics__/graphics/missing_icon_64.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s.png",
     icon_size = 64,
     subgroup = "py-items-class",
     order = "b"
