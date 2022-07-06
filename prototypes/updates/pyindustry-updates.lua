@@ -41,9 +41,6 @@ RECIPE {
     results = {
         {type = "item", name = "iron-ore", amount = 1, probability = 0.2},
         {type = "item", name = "copper-ore", amount = 1, probability = 0.2},
-        {type = "item", name = "ore-aluminium", amount = 1, probability = 0.1},
-        {type = "item", name = "ore-zinc", amount = 1, probability = 0.1},
-        {type = "item", name = "ore-lead", amount = 1, probability = 0.1},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
     unlock_results = false,
