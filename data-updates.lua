@@ -40,6 +40,7 @@ RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient({typ
 RECIPE("small-parts-03"):replace_ingredient("glass", "glass-fiber"):replace_ingredient("tin-plate", "aerogel")
 --RECIPE("tall-oil-combustion"):remove_unlock('energy-2'):add_unlock('energy-1')
 RECIPE("utility-science-pack"):add_ingredient({type = "item", name = "small-parts-03", amount = 30})
+RECIPE("rail"):replace_ingredient("iron-stick", {type = "item", name = "bolts", amount = 4})
 
 --Base Updates
 
