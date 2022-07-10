@@ -58,7 +58,7 @@ script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_e
                 E.destroy()
             elseif string.match(re.name, 'natural%-gas') then
                 game.surfaces[E.surface.name].create_entity{
-                    name = 'natural-gas-extractor-mk01',
+                    name = 'natural-gas-extractor-mk' .. string.match(E.name, '%d+'),
                     force = E.force,
                     position = E.position
                 }
