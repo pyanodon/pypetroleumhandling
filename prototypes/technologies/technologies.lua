@@ -6,7 +6,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-sands.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"coal-processing-1","crusher","oil-machines-mk01"},
+    prerequisites = {"oil-machines-mk01"},
     effects = {},
     unit = {
         count = 200,
@@ -42,7 +42,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"coal-processing-1", "oil-machines-mk01"},
+    prerequisites = {},
     effects = {},
     unit = {
         count = 200,
@@ -59,7 +59,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"rubber"},
     dependencies = {"rubber"},
     effects = {},
     unit = {
@@ -78,7 +78,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {},
     dependencies = {"rubber-2"},
     effects = {},
     unit = {

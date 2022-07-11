@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk01.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk01"},
+    prerequisites = {},
     effects = {},
     unit = {
         count = 200,
