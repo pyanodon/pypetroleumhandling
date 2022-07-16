@@ -25,9 +25,8 @@ RECIPE {
     energy_required = 0.2,
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
-        {type = "item", name = "copper-plate", amount = 1},
-        {type = "item", name = "bolts", amount = 2},
-        {type = "item", name = "iron-stick", amount = 1},
+        {type = "item", name = "copper-cable", amount = 3},
+        {type = "item", name = "bolts", amount = 3},
     },
     results = {
         {type = "item", name = "small-parts-01", amount = 2},
