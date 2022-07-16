@@ -239,4 +239,4 @@ table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.f
 end
 
 --(( OTHERS ))--
-GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
+-- GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})

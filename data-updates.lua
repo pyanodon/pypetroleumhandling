@@ -1,5 +1,9 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
+local GIR = require('prototypes/functions/functions')
+
+GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
+
 require("prototypes/updates/pycoalprocessing-updates")
 require("prototypes/updates/pyfusionenergy-updates")
 require("prototypes/updates/pyindustry-updates")
@@ -126,10 +130,6 @@ if data.data_crawler then
 	end
   end
 
-
-  local GIR = require('prototypes/functions/functions')
-
-  GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
   --RECIPES UPDATES
   --hot air blacklist
