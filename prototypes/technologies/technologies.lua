@@ -98,7 +98,7 @@ tech.dependencies = {'fast-inserter'}
 tech.effects = {}
 TECHNOLOGY(tech):add_pack('logistic-science-pack')
 
-TECHNOLOGY("stack-inserter"):set_fields{upgrade = false}
+TECHNOLOGY("stack-inserter"):set_fields{upgrade = false, prerequisites = {}}
 
 tech = table.deep_copy(data.raw.technology['stack-inserter'])
 tech.name = 'stack-inserter-2'
