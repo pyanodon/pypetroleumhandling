@@ -8,6 +8,7 @@ if not mods['pyrawores'] then
 end
 
 RECIPE('grease'):remove_unlock('diamond-mining'):add_unlock('small-parts-mk03')
+RECIPE("methyl-acrylate"):add_ingredient{ type = "fluid", name = "ethylene-chlorohydrin", amount = 50 }
 
 --BUILDINDS--
 
