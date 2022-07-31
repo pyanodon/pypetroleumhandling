@@ -537,6 +537,7 @@ RECIPE {
         {type = "item", name = "iron-ore", amount = 10},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "iron-ore",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-iron.png",
     icon_size = 32,
@@ -557,6 +558,7 @@ RECIPE {
         {type = "item", name = "copper-ore", amount = 8},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "copper-ore",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-copper.png",
     icon_size = 32,
@@ -577,6 +579,7 @@ RECIPE {
         {type = "item", name = "ore-aluminium", amount = 10},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "ore-aluminium",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-aluminium.png",
     icon_size = 32,
@@ -597,6 +600,7 @@ RECIPE {
         {type = "item", name = "ore-zinc", amount = 8},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "ore-zinc",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-zinc.png",
     icon_size = 32,
@@ -617,6 +621,7 @@ RECIPE {
         {type = "item", name = "ore-lead", amount = 8},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "ore-lead",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-lead.png",
     icon_size = 32,
@@ -637,6 +642,7 @@ RECIPE {
         {type = "item", name = "silver-plate", amount = 1, probability = 0.3},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "silver-plate",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-silver.png",
     icon_size = 32,
@@ -657,6 +663,7 @@ RECIPE {
         {type = "item", name = "gold-plate", amount = 1, probability = 0.5},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
+    unlock_results = false,
     main_product = "gold-plate",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-gold.png",
     icon_size = 32,
