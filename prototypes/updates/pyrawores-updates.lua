@@ -922,7 +922,7 @@ RECIPE {
     },
     main_product = "redhot-coke",
     subgroup = "py-rawores-coke",
-}:add_unlock("coke-mk02")
+}
 
 
 RECIPE {
