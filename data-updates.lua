@@ -172,7 +172,7 @@ if data.data_crawler then
   --log(serpent.block(data.raw.recipe['hotair-flask']))
   --[[
   for r, recipe in pairs(data.raw.recipe) do
-	  if recipe.category == 'glassworks' then
+	  if recipe.category == "glassworks" then
 		  for i, ing in pairs(recipe.ingredients) do
 			  if ing.name == 'hot-air' then
 				  table.insert(ing, fluidbox_index)
