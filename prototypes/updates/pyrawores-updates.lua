@@ -157,6 +157,7 @@ table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-alum
 table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-zinc", amount = 1, probability = 0.1})
 table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-lead", amount = 1, probability = 0.1})
 
+RECIPE("rail-2"):add_ingredient{type = "item", name = "bolts", amount = 4}
 
 ----EXCLUSIVE RECIPES----
 
