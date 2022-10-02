@@ -21,14 +21,14 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"light-oil-mk01"},
+    prerequisites = {},
     dependencies = {"light-oil-mk01"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            {'logistic-science-pack', 1},
+            --{'logistic-science-pack', 1},
         },
         time = 45
     }
@@ -40,15 +40,15 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk03.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"light-oil-mk02"},
+    prerequisites = {},
     dependencies = {"light-oil-mk02"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {'automation-science-pack', 1},
-            {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1}
+            --{'logistic-science-pack', 1},
+            --{'chemical-science-pack', 1}
         },
         time = 45
     }

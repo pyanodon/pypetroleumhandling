@@ -6,13 +6,13 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-sands.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk01"},
+    prerequisites = {},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            {"logistic-science-pack", 1}
+            --{"logistic-science-pack", 1}
         },
         time = 45
     }
@@ -24,13 +24,13 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/scrude.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk01"},
+    prerequisites = {},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            {"logistic-science-pack", 1}
+            --{"logistic-science-pack", 1}
         },
         time = 45
     }
@@ -66,7 +66,7 @@ TECHNOLOGY {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
+            --{"logistic-science-pack", 1},
         },
         time = 45
     }
@@ -85,8 +85,8 @@ TECHNOLOGY {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            {"logistic-science-pack", 1},
-            {"chemical-science-pack", 1},
+            --{"logistic-science-pack", 1},
+            --{"chemical-science-pack", 1},
         },
         time = 45
     }
