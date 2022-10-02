@@ -16,8 +16,7 @@ RECIPE{
     results = {
         {'natural-gas-seep-mk02', 1}
     }
-}:add_unlock('oil-machines-mk02'
-):replace_ingredient("distilator", "distilator-mk02")
+}:add_unlock('oil-machines-mk02')
 
 ITEM{
     type = "item",
