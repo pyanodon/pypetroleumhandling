@@ -1,22 +1,3 @@
-RECIPE {
-    type = "recipe",
-    name = "bitumen-to-scrude",
-    category = "hor",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-        {type = "fluid", name = "bitumen", amount = 100},
-        {type = "item", name = "chromium", amount = 2},
-    },
-    results = {
-        {type = "fluid", name = "scrude", amount = 100},
-    },
-    main_product = "scrude",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
-    icon_size = 64,
-    subgroup = "py-petroleum-handling-scrude-recipes",
-    order = "a"
-}:add_unlock("scrude")
 
 FLUID {
     type = "fluid",

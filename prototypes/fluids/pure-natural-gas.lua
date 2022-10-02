@@ -1,3 +1,4 @@
+--[[
 RECIPE {
     type = "recipe",
     name = "pure-natural-gas",
@@ -17,6 +18,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("petroleum-gas-mk02")
+]]--
 
 FLUID {
     type = "fluid",

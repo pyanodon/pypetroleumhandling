@@ -16,7 +16,7 @@ RECIPE {
     main_product = "ethylene-glycol",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):change_category("scrubber")
+}:add_unlock("petroleum-gas-mk02")
 
 FLUID {
     type = "fluid",

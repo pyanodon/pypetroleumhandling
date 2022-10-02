@@ -1,3 +1,4 @@
+--[[
 RECIPE {
     type = "recipe",
     name = "scrude-to-fuel-oil",
@@ -35,6 +36,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("energy-1")
+]]--
 
 FLUID {
     type = "fluid",
