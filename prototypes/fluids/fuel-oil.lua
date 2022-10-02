@@ -1,4 +1,4 @@
---[[
+
 RECIPE {
     type = "recipe",
     name = "scrude-to-fuel-oil",
@@ -16,7 +16,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("oil-sands")
+}--:add_unlock("oil-sands")
 
 RECIPE {
     type = "recipe",
@@ -35,8 +35,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("energy-1")
-]]--
+}--:add_unlock("energy-1")
 
 FLUID {
     type = "fluid",
