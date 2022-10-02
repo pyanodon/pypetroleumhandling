@@ -136,6 +136,16 @@ require("prototypes.recipes.pumpjack-recipes")
 require("prototypes.recipes.tholin-recipes")
 require("prototypes.recipes.coalbed-recipes")
 require("prototypes.recipes.fracking-recipes")
+--require("prototypes/recipes/kerogen-recipes")
+--require("prototypes/recipes/distillate-high-recipes")
+--require("prototypes/recipes/distillate-medium-recipes")
+--require("prototypes/recipes/distillate-low-recipes")
+--require("prototypes/recipes/residual-oil-recipes")
+--require("prototypes/recipes/atmo-distill-recipes")
+--require("prototypes/recipes/syngas-recipes")
+--require("prototypes/recipes/coal-tar-recipes")
+--require("prototypes/recipes/tar-distillation-recipes")
+--require("prototypes/recipes/guar")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")
@@ -178,10 +188,17 @@ require("prototypes.fluids.condensed-distillate")
 require("prototypes.fluids.residual-mixture")
 require("prototypes.fluids.hot-residual-mixture")
 --require("prototypes.fluids.drilling-waste")
+require("prototypes/fluids/anthracene-oil")
+require("prototypes/fluids/carbolic-oil")
+require("prototypes/fluids/naphthalene-oil")
+require("prototypes/fluids/pitch")
+require("prototypes/fluids/middle-oil")
 
 if mods['pyrawores'] then
     require("prototypes.fluids.purified-syngas")
     data.raw.fluid["purified-syngas"].fuel_value = "1MJ"
+else
+    require("prototypes/fluids/hydrogen")
 end
 
 --(( TILES ))--
