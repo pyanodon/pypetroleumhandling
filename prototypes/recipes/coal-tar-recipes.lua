@@ -2,12 +2,13 @@
 RECIPE {
     type = "recipe",
     name = "carbon-black",
-    category = "reformer",
+    --category = "reformer",
+category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "anthracene-oil", amount = 50},
-        {type = "fluid", name = "hot-air", amount = 25},
+        --{type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
         {type = "item", name = "carbon-black", amount = 1},
@@ -22,7 +23,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "carbolic-oil-creosote",
-    category = "reformer",
+    --category = "reformer",
+category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -51,14 +53,15 @@ RECIPE {
         {type = "item", name = "stone-brick", amount = 4},
     },
     main_product = "stone-brick",
-}:add_unlock('coal-processing-1')
+}:add_unlock('tar-processing')
 
 --napathalene recipes
 
 RECIPE {
     type = "recipe",
     name = "naphthalene-oil-creosote",
-    category = "reformer",
+    --category = "reformer",
+category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -74,13 +77,14 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "aromatics",
-    category = "reformer",
+    name = "aromatics-from-naphthalene",
+    --category = "reformer",
+category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "naphthalene-oil", amount = 50},
-        {type = "fluid", name = "hot-air", amount = 25},
+        --{type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
         {type = "fluid", name = "aromatics", amount = 30},
@@ -94,7 +98,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "anthraquinone-from-naphthalene",
-    category = "reformer",
+    --category = "reformer",
+category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -112,7 +117,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphthalene-solvent",
-    category = "reformer",
+    --category = "reformer",
+category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {

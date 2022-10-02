@@ -4,6 +4,7 @@ local GIR = require("__pycoalprocessing__/prototypes/functions/functions")
 
 GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
+require("prototypes/updates/base-updates")
 require("prototypes/updates/pycoalprocessing-updates")
 require("prototypes/updates/pyfusionenergy-updates")
 require("prototypes/updates/pyindustry-updates")
