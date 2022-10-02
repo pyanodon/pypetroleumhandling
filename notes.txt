@@ -1,0 +1,35 @@
+
+carbon/hydrogen ratio orders higher is better
+1. natural gas
+2. light crude oil
+4. kerogen
+5. bitumen
+6. wood
+7. lignite
+8. bitumenius coal
+9. anthersite coal
+
+
+TODO: continue sorting recipes and need to still handle all distillates
+
+
+naphtha is used for gasoline and made into isoprene which is used for natural rubber
+
+Pyrolysis residual oils are tarlike byproducts
+of the steam cracking of naphtha and gas oil to
+produce alkenes
+
+with pyht active add pitch to graphite rods
+
+
+gasoline is an aromtic hydrocarbon mix.
+the best gasoline is heavy on the alkanes
+
+naphthalene is an aromatic but makes a low grade "straight run" gasoline like naphtha. low grade == low output for the recipes
+
+
+add ammonia to syngas recipe in whichever mod adds ammonia
+check for e hydrogen sulfide, carbonyl sulfide in later mods
+otherwise use acidgas
+
+More research on acetylene as chemical feed stock
