@@ -123,7 +123,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}--:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",
@@ -143,7 +143,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -163,7 +163,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -184,7 +184,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -206,7 +206,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -227,7 +227,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -246,7 +246,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("heavy-oil-mk01")
+}--:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -266,7 +266,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("fuel-production")
+}--:add_unlock("fuel-production")
 
 RECIPE {
     type = "recipe",
@@ -286,7 +286,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("desulfurization")
+}--:add_unlock("desulfurization")
 
 RECIPE {
     type = "recipe",
@@ -306,7 +306,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber")
+}--:add_unlock("rubber")
 
 RECIPE {
     type = "recipe",
@@ -326,7 +326,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber")
+}--:add_unlock("rubber")
 
 RECIPE {
     type = "recipe",
@@ -410,7 +410,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -431,7 +431,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -451,7 +451,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -492,7 +492,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("oil-processing")
+}--:add_unlock("oil-processing")
 
 RECIPE {
     type = "recipe",
@@ -513,7 +513,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-processing")
+}--:add_unlock("oil-processing")
 
 RECIPE {
     type = "recipe",
@@ -534,7 +534,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-processing")
+}--:add_unlock("oil-processing")
 
 RECIPE {
     type = "recipe",
@@ -554,7 +554,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-processing")
+}--:add_unlock("oil-processing")
 
 RECIPE {
     type = "recipe",
@@ -575,7 +575,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("oil-processing")
+}--:add_unlock("oil-processing")
 
 RECIPE {
     type = "recipe",
@@ -598,7 +598,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("heavy-oil-mk01")
+}--:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -621,7 +621,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("heavy-oil-mk02")
+}--:add_unlock("heavy-oil-mk02")
 
 RECIPE {
     type = "recipe",
@@ -644,7 +644,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("heavy-oil-mk01")
+}--:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -666,7 +666,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("rubber-3")
+}--:add_unlock("rubber-3")
 
 RECIPE {
     type = "recipe",
@@ -684,7 +684,7 @@ RECIPE {
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("light-oil-mk03")
+}--:add_unlock("light-oil-mk03")
 
 RECIPE {
     type = "recipe",
@@ -702,7 +702,7 @@ RECIPE {
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("light-oil-mk02")
+}--:add_unlock("light-oil-mk02")
 
 RECIPE {
     type = "recipe",
@@ -720,7 +720,7 @@ RECIPE {
     --main_product = "styrene",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("petroleum-gas-mk02")
+}--:add_unlock("petroleum-gas-mk02")
 
 if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
     RECIPE {
@@ -741,7 +741,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
         main_product = "methane",
         subgroup = "py-hightech-fluids",
         order = "a"
-    }:add_unlock("petroleum-gas-mk03")
+    }--:add_unlock("petroleum-gas-mk03")
     else if mods["pyhightech"] then
         RECIPE {
             type = "recipe",
@@ -761,7 +761,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             main_product = "methane",
             subgroup = "py-hightech-fluids",
             order = "a"
-        }:add_unlock("petroleum-gas-mk03")
+        }--:add_unlock("petroleum-gas-mk03")
     else
         RECIPE {
             type = "recipe",
@@ -781,7 +781,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             main_product = "petroleum-gas",
             subgroup = "py-petroleum-handling-fluids",
             order = "a"
-        }:add_unlock("petroleum-gas-mk03")
+        }--:add_unlock("petroleum-gas-mk03")
     end
 end
 
@@ -801,7 +801,7 @@ RECIPE {
     main_product = "gasoline",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk03")
+}--:add_unlock("petroleum-gas-mk03")
 
 RECIPE {
     type = "recipe",
@@ -819,7 +819,7 @@ RECIPE {
     main_product = "syngas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk03")
+}--:add_unlock("petroleum-gas-mk03")
 
 RECIPE {
     type = "recipe",
@@ -837,7 +837,7 @@ RECIPE {
     main_product = "olefin",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk03")
+}--:add_unlock("petroleum-gas-mk03")
 
 RECIPE {
     type = "recipe",
@@ -856,7 +856,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("guar")
+}--:add_unlock("guar")
 
 RECIPE {
     type = "recipe",
@@ -876,7 +876,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}--:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",
@@ -897,7 +897,7 @@ RECIPE {
     main_product = "guar",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}--:add_unlock("coal-processing-2")
 
 RECIPE {
     type = "recipe",
@@ -915,7 +915,7 @@ RECIPE {
     main_product = "guar-seeds",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("guar")
+}--:add_unlock("guar")
 
 RECIPE {
     type = "recipe",
@@ -933,7 +933,7 @@ RECIPE {
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("guar"):change_category("pulp")
+}--:add_unlock("guar"):change_category("pulp")
 
 RECIPE {
     type = "recipe",
@@ -952,7 +952,7 @@ RECIPE {
     main_product = "petroleum-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 
 
@@ -980,7 +980,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-distillation")
+}--:add_unlock("oil-distillation")
 
 RECIPE {
     type = "recipe",
@@ -1000,7 +1000,7 @@ RECIPE {
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-distillation")
+}--:add_unlock("oil-distillation")
 
   -- HIGH DISTILLATE --
 
@@ -1039,7 +1039,7 @@ RECIPE {
     main_product = "water-saline",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02")
+}--:add_unlock("petroleum-gas-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1057,7 +1057,7 @@ RECIPE {
     main_product = "aromatics",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):replace_ingredient("nexelit-plate", "ticl4")
+}--:add_unlock("petroleum-gas-mk02"):replace_ingredient("nexelit-plate", "ticl4")
 
 RECIPE {
     type = "recipe",
@@ -1075,7 +1075,7 @@ RECIPE {
     main_product = "syngas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1093,7 +1093,7 @@ RECIPE {
     main_product = "refsyngas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1111,7 +1111,7 @@ RECIPE {
     main_product = "petroleum-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+}--:add_unlock("petroleum-gas-mk03"):replace_ingredient("nexelit-plate", "ticl4")
 
   -- MEDIUM DISTILLATE --
 
@@ -1152,7 +1152,7 @@ RECIPE {
     main_product = "light-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03")
+}--:add_unlock("light-oil-mk03")
 
 RECIPE {
     type = "recipe",
@@ -1170,7 +1170,7 @@ RECIPE {
     main_product = "gasoline",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1188,7 +1188,7 @@ RECIPE {
     main_product = "methanol",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
+}--:add_unlock("light-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
 
 RECIPE {
     type = "recipe",
@@ -1206,7 +1206,7 @@ RECIPE {
     main_product = "olefin",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("light-oil-mk03"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1224,7 +1224,7 @@ RECIPE {
     main_product = "fuel-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+}--:add_unlock("light-oil-mk03"):replace_ingredient("nexelit-plate", "ticl4")
 
   -- LOW DISTILLATE --
 
@@ -1247,7 +1247,7 @@ RECIPE {
     main_product = "heavy-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("heavy-oil-mk01")
+}--:add_unlock("heavy-oil-mk01")
 
 RECIPE {
     type = "recipe",
@@ -1265,7 +1265,7 @@ RECIPE {
     main_product = "coal-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("heavy-oil-mk01"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("heavy-oil-mk01"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1322,7 +1322,7 @@ RECIPE {
     main_product = "residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-distillation")
+}--:add_unlock("oil-distillation")
 
 RECIPE {
     type = "recipe",
@@ -1340,7 +1340,7 @@ RECIPE {
     main_product = "hot-residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-distillation")
+}--:add_unlock("oil-distillation")
 
 if mods["pyrawores"] then
     RECIPE {
@@ -1361,7 +1361,7 @@ if mods["pyrawores"] then
         main_product = "coke",
         subgroup = "py-petroleum-handling-recipes",
         order = "a"
-    }:add_unlock("oil-distillation")
+    }--:add_unlock("oil-distillation")
 else
     RECIPE {
         type = "recipe",
@@ -1380,7 +1380,7 @@ else
         main_product = "coke",
         subgroup = "py-petroleum-handling-recipes",
         order = "a"
-    }:add_unlock("oil-distillation")
+    }--:add_unlock("oil-distillation")
 end
 
 RECIPE {
@@ -1400,7 +1400,7 @@ RECIPE {
     main_product = "kerogen",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("kerogen")
+}--:add_unlock("kerogen")
 
 RECIPE {
     type = "recipe",
@@ -1420,7 +1420,7 @@ RECIPE {
     main_product = "kerogen",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("kerogen"):replace_ingredient("pipe", "niobium-pipe")
+}--:add_unlock("kerogen"):replace_ingredient("pipe", "niobium-pipe")
 
 RECIPE {
     type = "recipe",
@@ -1438,7 +1438,7 @@ RECIPE {
     main_product = "scrude",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("kerogen")
+}--:add_unlock("kerogen")
 
 RECIPE {
     type = "recipe",
@@ -1457,7 +1457,7 @@ RECIPE {
     main_product = "gasoline",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("kerogen")
+}--:add_unlock("kerogen")
 
 RECIPE {
     type = "recipe",
@@ -1476,7 +1476,7 @@ RECIPE {
     main_product = "crude-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("kerogen")
+}--:add_unlock("kerogen")
 
 RECIPE {
     type = "recipe",
@@ -1495,7 +1495,7 @@ RECIPE {
     main_product = "natural-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("kerogen")
+}--:add_unlock("kerogen")
 
 if mods["pyrawores"] then
     RECIPE {
@@ -1517,7 +1517,7 @@ if mods["pyrawores"] then
         main_product = "olefin",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("light-oil-mk02")
+    }--:add_unlock("light-oil-mk02")
 else
     RECIPE {
         type = "recipe",
@@ -1537,7 +1537,7 @@ else
         main_product = "olefin",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("light-oil-mk02")
+    }--:add_unlock("light-oil-mk02")
 end
 
 
@@ -1561,7 +1561,7 @@ if mods["pyrawores"] then
         main_product = "bitumen",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("lubricant")
+    }--:add_unlock("lubricant")
 else
     RECIPE {
         type = "recipe",
@@ -1579,7 +1579,7 @@ else
         main_product = "bitumen",
         subgroup = "py-petroleum-handling-scrude-recipes",
         order = "a"
-    }:add_unlock("lubricant")
+    }--:add_unlock("lubricant")
 end
 
 if not mods['pyrawores'] then
@@ -1599,7 +1599,7 @@ if not mods['pyrawores'] then
         order = "a2",
         icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-stone-brick-recipe.png",
         icon_size = 32,
-    }:add_unlock("hot-air-mk01")
+    }--:add_unlock("hot-air-mk01")
 end
 
 RECIPE {
@@ -1635,7 +1635,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("petroleum-gas-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1653,7 +1653,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("heavy-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("heavy-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -1671,7 +1671,7 @@ RECIPE {
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}--:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 
 --hidden recipe for oil derricks
