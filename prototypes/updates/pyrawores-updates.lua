@@ -789,6 +789,7 @@ RECIPE {
     order = "a"
 }:add_unlock("heavy-oil-mk02")
 
+--[[
 RECIPE {
     type = "recipe",
     name = "xylenol-combustion",
@@ -810,6 +811,7 @@ RECIPE {
     subgroup = "py-combustion",
     order = "k"
 }:add_unlock("energy-3")
+]]--
 
 RECIPE {
     type = "recipe",
