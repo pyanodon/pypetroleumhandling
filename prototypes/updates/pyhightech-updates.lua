@@ -354,15 +354,17 @@ RECIPE {
     order = "d"
 }:add_unlock("tholin-mk03")
 
+--[[
 RECIPE {
     type = "recipe",
     name = "processed-light-oil-to-benzene",
-    category = "reformer",
+    --category = "reformer",
+    category = "distilator",
     enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "processed-light-oil", amount = 250},
-        {type = "item", name = "nichrome", amount = 1},
+        --{type = "item", name = "nichrome", amount = 1},
     },
     results = {
         {type = "fluid", name = "benzene", amount = 375},
@@ -371,6 +373,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("light-oil-mk02")
+]]--
 
 RECIPE {
     type = "recipe",
@@ -417,6 +420,7 @@ RECIPE {
     order = "a"
 }:add_unlock("coalbed-mk02"):replace_ingredient("steam", "pressured-water")
 
+--[[
 RECIPE {
     type = "recipe",
     name = "residual-gas-to-propene",
@@ -425,7 +429,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "residual-gas", amount = 100},
-        {type = "item", name = "nichrome", amount = 1},
+        --{type = "item", name = "nichrome", amount = 1},
     },
     results = {
         {type = "fluid", name = "propene", amount = 200},
@@ -434,6 +438,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("petroleum-gas-mk03")
+]]--
 
 RECIPE {
     type = "recipe",
