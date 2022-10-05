@@ -159,11 +159,9 @@ RECIPE {
         {type = "fluid", name = "drilling-fluid-0", amount = 50},
     },
     results = {
-        {type = "fluid", name = "natural-gas", amount = 40},
+        {type = "fluid", name = "raw-gas", amount = 40},
     },
-    --main_product = "transport-belt",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
-    icon_size = 32,
+    main_product = "raw-gas",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("drilling-fluid-mk01")
@@ -180,11 +178,9 @@ RECIPE {
         {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
-        {type = "fluid", name = "natural-gas", amount = 140},
+        {type = "fluid", name = "raw-gas", amount = 140},
     },
-    --main_product = "transport-belt",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
-    icon_size = 32,
+    main_product = "raw-gas",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("drilling-fluid-mk02")
@@ -201,11 +197,9 @@ RECIPE {
         {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
-        {type = "fluid", name = "natural-gas", amount = 740},
+        {type = "fluid", name = "raw-gas", amount = 740},
     },
-    --main_product = "transport-belt",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
-    icon_size = 32,
+    main_product = "raw-gas",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("drilling-fluid-mk03")
@@ -222,11 +216,9 @@ RECIPE {
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
-        {type = "fluid", name = "natural-gas", amount = 1600},
+        {type = "fluid", name = "raw-gas", amount = 1600},
     },
-    --main_product = "transport-belt",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
-    icon_size = 32,
+    main_product = "raw-gas",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("drilling-fluid-mk04")

@@ -9,11 +9,11 @@ RECIPE {
         {type = "fluid", name = "gasoline", amount = 50},
     },
     results = {
-        {type = "fluid", name = "refined-natural-gas", amount = 200},
+        {type = "fluid", name = "natural-gas", amount = 100},
         {type = "fluid", name = "condensates", amount = 100},
         {type = "fluid", name = "naphtha", amount = 50},
     },
-    main_product = "refined-natural-gas",
+    main_product = "natural-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("light-oil-mk01")
@@ -86,5 +86,5 @@ RECIPE {
     main_product = "residual-mixture",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("oil-sands")
 --total:475 fluid

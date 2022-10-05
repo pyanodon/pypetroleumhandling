@@ -1200,3 +1200,24 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("methanol-processing-1"):add_ingredient({type = "item", name = "ticl4", amount = 2})
+
+RECIPE {
+    type = "recipe",
+    name = "condensates",
+    category = "compressor",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "natural-gas", amount = 150},
+        {type = "fluid", name = "water", amount = 200},
+        {type = "fluid", name = "gasoline", amount = 10},
+    },
+    results = {
+        {type = "fluid", name = "condensates", amount = 100},
+        {type = "fluid", name = "steam", amount = 200, temperature = 150},
+        {type = "fluid", name = "naphtha", amount = 50},
+    },
+    main_product = "condensates",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("petroleum-gas-mk01")

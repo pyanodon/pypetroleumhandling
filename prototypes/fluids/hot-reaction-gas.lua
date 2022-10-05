@@ -14,6 +14,7 @@ FLUID {
     order = "c"
 }
 
+--[[
 if mods["pyrawores"] then
 RECIPE {
     type = "recipe",
@@ -56,3 +57,4 @@ else
         order = "a"
     }:add_unlock("light-oil-mk02")
 end
+]]--

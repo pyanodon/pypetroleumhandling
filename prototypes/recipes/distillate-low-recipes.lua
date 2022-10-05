@@ -58,24 +58,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "low-distillate-to-btx",
-    category = "hor",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "low-distillate", amount = 100},
-        {type = "item", name = "chromium", amount = 1},
-    },
-    results = {
-        {type = "fluid", name = "btx", amount = 100},
-    },
-    main_product = "btx",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
-
-RECIPE {
-    type = "recipe",
     name = "low-distillate-to-lubricant",
     category = "hor",
     enabled = false,

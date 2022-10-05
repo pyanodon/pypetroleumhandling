@@ -1,21 +1,3 @@
-RECIPE {
-    type = "recipe",
-    name = "raw-gas",
-    category = "gas-refinery",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "condensates", amount = 100},
-    },
-    results = {
-        {type = "fluid", name = "raw-gas", amount = 100},
-        {type = "fluid", name = "btx", amount = 30},
-        {type = "fluid", name = "dirty-water-heavy", amount = 50},
-    },
-    main_product = "raw-gas",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}--:add_unlock("petroleum-gas-mk01")
 
 FLUID {
     type = "fluid",
