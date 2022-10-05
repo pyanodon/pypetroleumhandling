@@ -18,7 +18,7 @@
     main_product = "heavy-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02")
+}:add_unlock("low-distil-temp")
 
 RECIPE {
     type = "recipe",
@@ -36,7 +36,7 @@ RECIPE {
     main_product = "coal-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("low-distil-temp"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
@@ -54,7 +54,7 @@ RECIPE {
     main_product = "btx",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-machines-mk02"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("low-distil-temp"):replace_ingredient("chromium", "sncr-alloy")
 
 RECIPE {
     type = "recipe",
