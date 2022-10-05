@@ -513,7 +513,7 @@ RECIPE {
     main_product = "cumene",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03"):replace_ingredient("nexelit-plate", "ticl4")
+}:add_unlock("light-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
 
 RECIPE {
     type = "recipe",
@@ -530,7 +530,7 @@ RECIPE {
     main_product = "benzene",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("light-oil-mk03"):replace_ingredient("chromium", "sncr-alloy")
+}:add_unlock("light-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 
 if mods["pyfusionenergy"] then
