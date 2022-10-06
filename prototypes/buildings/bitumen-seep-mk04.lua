@@ -40,7 +40,7 @@ ENTITY{
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
     module_specification = {module_slots = 1},
-    allowed_effects = {'consumption', 'speed', 'productivity', 'pollution'},
+    allowed_effects = {"consumption", "speed", "productivity"},
     energy_source = {type = 'electric', usage_priority = 'secondary-input', emissions_per_minute = 20},
     energy_usage = '1000kW',
     mining_speed = 3,
