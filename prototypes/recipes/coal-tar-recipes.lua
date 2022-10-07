@@ -93,7 +93,7 @@ category = "distilator",
     main_product = "aromatics",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-2")
+}:add_unlock("light-oil-mk01")
 
 RECIPE {
     type = "recipe",

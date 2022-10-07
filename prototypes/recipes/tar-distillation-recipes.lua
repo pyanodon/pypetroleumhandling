@@ -19,7 +19,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("tar-processing-mk01")
+}:add_unlock("tar-processing")
 
 RECIPE {
     type = "recipe",
@@ -41,7 +41,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("tar-processing-mk01")
+}:add_unlock("tar-processing")
 
 RECIPE {
     type = "recipe",
@@ -65,4 +65,4 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("tar-processing-mk01")
+}:add_unlock("tar-processing")

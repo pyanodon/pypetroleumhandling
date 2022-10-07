@@ -29,6 +29,8 @@ RECIPE("aromatics-to-rubber"):remove_unlock("advanced-oil-processing"):set_field
 
 RECIPE("oleochemicals-crude-oil"):remove_unlock("advanced-oil-processing"):set_fields{hidden = true}
 
+RECIPE("creosote-to-aromatics"):remove_unlock('creosote'):set_fields{hidden = true}
+
 --BUILDINDS--
 
 -- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
