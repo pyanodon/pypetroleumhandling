@@ -22,6 +22,27 @@ category = "distilator",
 
 RECIPE {
     type = "recipe",
+    name = "anthraquinone-from-anthracene",
+    --category = "reformer",
+category = "distilator",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+        {type = "fluid", name = "anthracene-oil", amount = 50},
+        --{type = "fluid", name = "sulfuric-acid", amount = 50},
+        {type = "item", name = "chromite-sand", amount = 5},
+    },
+    results = {
+        {type = "fluid", name = "anthraquinone", amount = 10},
+        {type = "fluid", name = "steam", amount = 50, temperature = 105},
+    },
+    main_product = "anthraquinone",
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("sulfur-processing")
+
+RECIPE {
+    type = "recipe",
     name = "carbolic-oil-creosote",
     --category = "reformer",
 category = "distilator",

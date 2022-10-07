@@ -7,6 +7,13 @@ if not mods['pyrawores'] then
     RECIPE("py-heat-exchanger"):remove_unlock("fusion-mk01"):add_unlock("oil-machines-mk02")
 end
 
+TECHNOLOGY("xyhiphoe"):remove_pack("chemical-science-pack")
+TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
+
+RECIPE("filtration-media"):remove_unlock("filtration-mk02"):add_unlock("filtration")
+
+RECIPE("xyhiphoe-hydrocyclone"):remove_unlock("xyhiphoe"):add_unlock("advanced-mining-facilities")
+
 RECIPE('grease'):remove_unlock('diamond-mining'):add_unlock('small-parts-mk03')
 RECIPE("methyl-acrylate"):add_ingredient{ type = "fluid", name = "ethylene-chlorohydrin", amount = 50 }
 

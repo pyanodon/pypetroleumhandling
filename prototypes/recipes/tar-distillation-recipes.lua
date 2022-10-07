@@ -15,7 +15,7 @@ RECIPE {
         {type = "fluid", name = "pitch", amount = 47},
     },
     main_product = "pitch",
-    icon = "__base__/graphics/icons/fluid/crude-oil.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-refining.png",
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
