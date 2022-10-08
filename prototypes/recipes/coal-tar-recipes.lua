@@ -3,7 +3,7 @@ RECIPE {
     type = "recipe",
     name = "carbon-black",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -24,12 +24,12 @@ RECIPE {
     type = "recipe",
     name = "anthraquinone-from-anthracene",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "anthracene-oil", amount = 50},
-        --{type = "fluid", name = "sulfuric-acid", amount = 50},
+        {type = "fluid", name = "sulfuric-acid", amount = 50},
         {type = "item", name = "chromite-sand", amount = 5},
     },
     results = {
@@ -39,13 +39,13 @@ category = "distilator",
     main_product = "anthraquinone",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("sulfur-processing")
+}:add_unlock("coal-processing-3")
 
 RECIPE {
     type = "recipe",
     name = "carbolic-oil-creosote",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -82,7 +82,7 @@ RECIPE {
     type = "recipe",
     name = "naphthalene-oil-creosote",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -100,7 +100,7 @@ RECIPE {
     type = "recipe",
     name = "aromatics-from-naphthalene",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -120,7 +120,7 @@ RECIPE {
     type = "recipe",
     name = "anthraquinone-from-naphthalene",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -133,13 +133,13 @@ category = "distilator",
     main_product = "anthraquinone",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("coal-processing-3")
+}:add_unlock("sulfur-processing")
 
 RECIPE {
     type = "recipe",
     name = "naphthalene-solvent",
     --category = "reformer",
-category = "distilator",
+    category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {

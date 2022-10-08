@@ -34,6 +34,7 @@ require("prototypes.technologies.drilling-fluid")
 require("prototypes.technologies.hot-air")
 require("prototypes.technologies.oil-distillation")
 require("prototypes/technologies/tar-processing")
+require("prototypes/technologies/vanadium-processing")
 
 --(( BUILDINGS ))--
 require("prototypes.buildings.oil-sand-extractor-mk01")

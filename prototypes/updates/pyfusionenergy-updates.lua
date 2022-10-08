@@ -1,5 +1,7 @@
 --TECHNOLOGY--
 
+
+
 if not mods['pyrawores'] then
     TECHNOLOGY("fluid-pressurization"):remove_pack("chemical-science-pack"):remove_pack("logistic-science-pack")
     RECIPE('centrifugal-pan-mk01'):remove_unlock('diamond-mining'):add_unlock("fluid-processing-machines-1")
@@ -8,7 +10,7 @@ if not mods['pyrawores'] then
 end
 
 TECHNOLOGY("xyhiphoe"):remove_pack("chemical-science-pack")
-TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
+--TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
 
 RECIPE("filtration-media"):remove_unlock("filtration-mk02"):add_unlock("filtration")
 
@@ -17,7 +19,37 @@ RECIPE("xyhiphoe-hydrocyclone"):remove_unlock("xyhiphoe"):add_unlock("advanced-m
 RECIPE('grease'):remove_unlock('diamond-mining'):add_unlock('small-parts-mk03')
 RECIPE("methyl-acrylate"):add_ingredient{ type = "fluid", name = "ethylene-chlorohydrin", amount = 50 }
 
+--vanadium tweaks
+
+RECIPE("vpulp4"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("vpulp5"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("vpulp-precip"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("pressured-vpulp"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("vanadates"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("vanadium-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("vanadium-concentrate"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("organic-vanadate"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("cobalt-solvent"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("solvent-separation"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("acid-strip-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("pregnant-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("sodium-chlorate"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+RECIPE("vanadium-oxide"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+
+RECIPE("vanabins"):replace_ingredient("sulfuric-acid", "acidgas")
+
+--RECIPE("soda-ash"):remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
+
+table.insert(data.raw.recipe.vpulp3.results, {type = "item", name = "vanadium-oxide", amount = 1, probability = 0.2})
+
+RECIPE("vpulp5"):set_fields{results = {
+    {type = "fluid", name = "vpulp5", amount = 100}
+    }
+}
+
 --BUILDINDS--
+
+--RECIPE("hydrocyclone-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
 
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "nenbit-matrix", amount = 10}):add_ingredient({type = "item", name = "agitator-mk01", amount = 1})
 RECIPE("oil-sand-extractor-mk04"):add_ingredient({type = "item", name = "super-alloy", amount = 10}):add_ingredient({type = "item", name = "wall-shield", amount = 2}):add_ingredient({type = "item", name = "science-coating", amount = 1}):add_ingredient({type = "item", name = "control-unit", amount = 5})
@@ -58,7 +90,7 @@ RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-0
 RECIPE("jig-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("nmf-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("secondary-crusher-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
-RECIPE("thickener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("electric-engine-unit", "engine-unit")
+RECIPE("thickener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("electric-engine-unit", "engine-unit")--:remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
 RECIPE("xyhiphoe-pool-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 
 --pyfusion mk02

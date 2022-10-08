@@ -31,6 +31,8 @@ RECIPE("oleochemicals-crude-oil"):remove_unlock("advanced-oil-processing"):set_f
 
 RECIPE("creosote-to-aromatics"):remove_unlock('creosote'):set_fields{hidden = true}
 
+RECIPE("anthraquinone"):remove_unlock("sulfur-processing"):set_fields{hidden = true}
+
 --BUILDINDS--
 
 -- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
