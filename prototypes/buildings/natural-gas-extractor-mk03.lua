@@ -68,6 +68,7 @@ ENTITY {
     {
       module_slots = 2
     },
+    allowed_effects = {"consumption", "speed", "productivity"},
     radius_visualisation_picture =
     {
       filename = "__base__/graphics/entity/pumpjack/pumpjack-radius-visualization.png",

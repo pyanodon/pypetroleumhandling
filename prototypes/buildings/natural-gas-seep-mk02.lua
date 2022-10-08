@@ -49,6 +49,7 @@ ENTITY{
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, 0},
     module_specification = {module_slots = 2},
+    allowed_effects = {"consumption", "speed", "productivity"},
     radius_visualisation_picture = {
         filename = '__base__/graphics/entity/pumpjack/pumpjack-radius-visualization.png',
         width = 12,

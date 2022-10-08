@@ -1,8 +1,8 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
-local GIR = require("__pycoalprocessing__/prototypes/functions/functions")
+local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
 
-GIR.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
+FUN.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
 require("prototypes/updates/base-updates")
 require("prototypes/updates/pycoalprocessing-updates")
@@ -142,7 +142,7 @@ if data.data_crawler then
 	  'empty-comb-2'
   }
 
-  GIR.HAB(hablist)
+  FUN.HAB(hablist)
 
   local extra_hot_air_recipes =
 	  {
@@ -168,7 +168,7 @@ if data.data_crawler then
 
   --log(serpent.block(data.raw.recipe['flask']))
   --add hot air
-  GIR.hotairrecipes(extra_hot_air_recipes)
+  FUN.hotairrecipes(extra_hot_air_recipes)
 
   --log(serpent.block(data.raw.recipe['hotair-flask']))
   --[[
@@ -187,3 +187,12 @@ if data.data_crawler then
 RECIPE('hotair-flask'):set_enabled(false):add_unlock('hot-air-mk01')
 RECIPE('hotair-molten-glass'):remove_unlock("glass"):add_unlock('hot-air-mk01')
 RECIPE("hotair-empty-petri-dish"):remove_unlock("petri-dish"):add_unlock("hot-air-mk01")
+
+--gather recipes for module changes
+local recipes_list = {
+    "small-parts-02",
+    "small-parts-03",
+}
+
+--adding to module limitation list
+FUN.productivity(recipes_list)
