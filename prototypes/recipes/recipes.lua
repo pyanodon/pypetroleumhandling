@@ -230,24 +230,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "low-distillate-to-lubricant",
-    category = "hor",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "low-distillate", amount = 100},
-        {type = "item", name = "nexelit-plate", amount = 1},
-    },
-    results = {
-        {type = "fluid", name = "lubricant", amount = 150},
-    },
-    main_product = "lubricant",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}:add_unlock("heavy-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
-
-RECIPE {
-    type = "recipe",
     name = "kevlar-2",
     category = "upgrader",
     enabled = false,
