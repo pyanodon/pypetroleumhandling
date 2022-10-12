@@ -188,28 +188,6 @@ RECIPE {
     order = "a"
 }:add_unlock("rubber-3")
 
-  -- HIGH DISTILLATE --
-
-  RECIPE {
-    type = "recipe",
-    name = "high-distillate-condensing",
-    category = "compressor",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-        {type = "fluid", name = "high-distillate", amount = 100},
-        {type = "fluid", name = "water", amount = 600},
-        {type = "fluid", name = "gasoline", amount = 5}
-    },
-    results = {
-        {type = "fluid", name = "condensed-distillate", amount = 100},
-        {type = "fluid", name = "steam", amount = 600, temperature = 150}
-    },
-    main_product = "condensed-distillate",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}:add_unlock("petroleum-gas-mk02")
-
   -- MEDIUM DISTILLATE --
 
   RECIPE {
