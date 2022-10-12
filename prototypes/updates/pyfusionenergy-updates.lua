@@ -1,6 +1,8 @@
 --TECHNOLOGY--
 
-TECHNOLOGY("vanadium-processing")--:remove_pack("chemical-science-pack")
+if mods["pyrawores"] or mods["pyhightech"] then
+TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
+end
 
 if not mods['pyrawores'] then
     TECHNOLOGY("fluid-pressurization"):remove_pack("chemical-science-pack"):remove_pack("logistic-science-pack")
