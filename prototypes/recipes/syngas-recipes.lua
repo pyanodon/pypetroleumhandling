@@ -7,7 +7,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "naphtha", amount = 150},
-        {type = "fluid", name = "steam", amount = 800, temperature = 165},
+        {type = "fluid", name = "steam", amount = 800},
         {type = "item", name = "chromium", amount = 1},
     },
     results = {

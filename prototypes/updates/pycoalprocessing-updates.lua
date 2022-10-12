@@ -33,6 +33,9 @@ RECIPE("creosote-to-aromatics"):remove_unlock('creosote'):set_fields{hidden = tr
 
 RECIPE("anthraquinone"):remove_unlock("sulfur-processing"):set_fields{hidden = true}
 
+--TECHNOLOGIES--
+TECHNOLOGY("excavation-1"):add_pack("chemical-science-pack")
+
 --BUILDINDS--
 
 -- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
