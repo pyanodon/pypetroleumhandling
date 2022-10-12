@@ -59,7 +59,7 @@ RECIPE("desulfurizator-unit"):add_ingredient({type = "item", name = "small-parts
 RECIPE("distilator"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("gasifier"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("jaw-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01"):remove_unlock("fluid-seperation"):add_unlock("nexelit")
+RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01"):remove_unlock("fluid-separation"):add_unlock("nexelit")
 RECIPE("ralesia-plantation-mk01"):replace_ingredient("pipe", "small-parts-01")
 RECIPE("rectisol"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("washer"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
