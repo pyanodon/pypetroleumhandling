@@ -1,6 +1,6 @@
 --TECHNOLOGY--
 
-TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
+TECHNOLOGY("vanadium-processing")--:remove_pack("chemical-science-pack")
 
 if not mods['pyrawores'] then
     TECHNOLOGY("fluid-pressurization"):remove_pack("chemical-science-pack"):remove_pack("logistic-science-pack")
