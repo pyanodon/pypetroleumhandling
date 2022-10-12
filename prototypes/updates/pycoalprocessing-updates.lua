@@ -36,6 +36,9 @@ RECIPE("anthraquinone"):remove_unlock("sulfur-processing"):set_fields{hidden = t
 --TECHNOLOGIES--
 TECHNOLOGY("excavation-1"):add_pack("chemical-science-pack")
 
+if not (mods["pyrawores"] or mods["pyhightech"]) then
+    TECHNOLOGY("sulfur-processing"):add_pack("chemical-science-pack")
+end
 --BUILDINDS--
 
 -- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
