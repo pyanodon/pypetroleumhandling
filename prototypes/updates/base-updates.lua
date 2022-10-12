@@ -8,7 +8,7 @@ data.raw.resource["stone"].minable.results = {
 if not mods["pyrawores"] then
     TECHNOLOGY("explosives"):add_pack("chemical-science-pack")
     TECHNOLOGY("cliff-explosives"):add_pack("chemical-science-pack")
-    TECHNOLOGY("landmine"):add_pack("chemical-science-pack")
+    TECHNOLOGY("land-mine"):add_pack("chemical-science-pack")
     TECHNOLOGY("rocketry"):add_pack("chemical-science-pack")
 end
 
