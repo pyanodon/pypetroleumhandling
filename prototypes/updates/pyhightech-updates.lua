@@ -10,6 +10,7 @@ if not mods['pyrawores'] then
     TECHNOLOGY('collagen'):remove_pack('production-science-pack')
 end
 
+TECHNOLOGY("light-oil-mk01"):add_pack("logistic-science-pack")
 ----BUILDINDS----
 
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "diamagnetic-material", amount = 20}):add_ingredient({type = "item", name = "harmonic-absorber", amount = 15})
