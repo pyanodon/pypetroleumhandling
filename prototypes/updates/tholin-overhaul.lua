@@ -117,11 +117,6 @@ if mods['pyhightech'] then
     {
       'basic-electronics'
     }
-else
-    data.raw.technology['rocket-control-unit'].prerequisites =
-    {
-      'electronics'
-    }
 end
 
 data.raw.technology['rocket-control-unit'].unit.ingredients =

@@ -155,3 +155,24 @@ RECIPE {
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("organic-solvent")
+
+RECIPE {
+    type = "recipe",
+    name = "light-oil-aromatics",
+    --category = "reformer",
+    category = "distilator",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+        {type = "fluid", name = "light-oil", amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "aromatics", amount = 50},
+        {type = "fluid", name = "gasoline", amount = 25},
+    },
+    main_product = "aromatics",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/carbon-black.png",
+    icon_size = 32,
+    subgroup = "py-petroleum-handling-recipes",
+    order = "a"
+}:add_unlock("tar-processing")

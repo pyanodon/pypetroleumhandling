@@ -1,6 +1,9 @@
 require("prototypes.fluids.pressured-hydrogen")
 require("prototypes.recipes.hot-stone-brick-recipes")
 
+--TECHNOLOGY--
+TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
+
 --BUILDINDS--
 
 RECIPE("oil-sand-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
@@ -55,7 +58,7 @@ RECIPE("gas-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", a
 RECIPE("gas-refinery-mk03"):add_ingredient({type = "item", name = "super-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("gas-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
 RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amount = 100})
-RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
+--RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
 RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "molybdenum-plate", amount = 20})
 RECIPE("compressor-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE('centrifugal-pan-mk01'):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')

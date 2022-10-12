@@ -7,8 +7,8 @@ RECIPE {
         {"stone-brick", 200},
         {"pipe", 500},
         {"steel-plate", 300},
-        {"processing-unit", 50},
-        {"small-parts-03", 200},
+        --{"processing-unit", 50},
+        --{"small-parts-03", 200},
     },
     results = {
         {"retorter", 1}

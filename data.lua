@@ -234,6 +234,9 @@ data.raw.fluid["condensed-distillate"].fuel_value = "0.5MJ"
 data.raw.fluid["residual-mixture"].fuel_value = "0.1MJ"
 data.raw.fluid["hot-residual-mixture"].fuel_value = "0.1MJ"
 
+if not mods["pyrawores"] then
+data.raw.fluid["hydrogen"].fuel_value = "20KJ"
+end
 
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'syngas', damage_modifier = 1.2})
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'refsyngas', damage_modifier = 1.2})

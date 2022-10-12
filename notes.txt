@@ -35,7 +35,7 @@ otherwise use acidgas
 More research on acetylene as chemical feed stock
 
 todo:
-get vanadium moved down into logistic science
+
 
 DONE:
 middle oil: seperated into light, carbolic, and naphthalene oils
