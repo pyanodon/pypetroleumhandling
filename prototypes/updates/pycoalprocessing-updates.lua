@@ -38,6 +38,12 @@ TECHNOLOGY("excavation-1"):add_pack("chemical-science-pack")
 
 if not (mods["pyrawores"] or mods["pyhightech"]) then
     TECHNOLOGY("sulfur-processing"):add_pack("chemical-science-pack")
+    TECHNOLOGY("battery"):add_pack("chemical-science-pack")
+    TECHNOLOGY("battery-equipment"):add_pack("chemical-science-pack")
+    TECHNOLOGY("battery-mk2-equipment"):add_pack("production-science-pack")
+    TECHNOLOGY("electric-energy-accumulators-1"):add_pack("chemical-science-pack")
+    TECHNOLOGY("accumulator-mk01"):add_pack("production-science-pack")
+    TECHNOLOGY("accumulator-mk02"):add_pack("utility-science-pack")
 end
 --BUILDINDS--
 

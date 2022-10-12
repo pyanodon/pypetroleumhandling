@@ -7,6 +7,11 @@ data.raw.resource["stone"].minable.results = {
 
 if not mods["pyrawores"] then
     TECHNOLOGY("explosives"):add_pack("chemical-science-pack")
+    TECHNOLOGY("cliff-explosives"):add_pack("chemical-science-pack")
+    TECHNOLOGY("landmines"):add_pack("chemical-science-pack")
+    TECHNOLOGY("rocketry"):add_pack("chemical-science-pack")
 end
 
 TECHNOLOGY("excavation-2"):add_pack("production-science-pack")
+
+TECHNOLOGY("excavation-3"):add_pack("military-science-pack"):add_pack("utility-science-pack"):add_pack("space-science-pack")
