@@ -17,7 +17,7 @@
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("res-mix-distil-temp")
+}:add_unlock("petroleum-gas-mk01")
 
 --residual oil to cracking or hydrotreating to process into lighter hydrocarbons
 

@@ -164,7 +164,7 @@ RECIPE {
     main_product = "raw-gas",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("nat-gas-01-temp")
+}:add_unlock("petroleum-gas-mk01")
 
 RECIPE {
     type = "recipe",

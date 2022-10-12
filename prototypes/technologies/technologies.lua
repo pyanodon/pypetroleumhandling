@@ -12,7 +12,7 @@ TECHNOLOGY {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            --{"logistic-science-pack", 1}
+            {"logistic-science-pack", 1}
         },
         time = 45
     }
@@ -66,7 +66,7 @@ TECHNOLOGY {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            --{"logistic-science-pack", 1},
+            {"logistic-science-pack", 1},
         },
         time = 45
     }
@@ -105,93 +105,3 @@ tech.name = 'stack-inserter-2'
 tech.dependencies = {'stack-inserter'}
 tech.effects = {}
 TECHNOLOGY(tech):add_pack('chemical-science-pack')
-
-TECHNOLOGY {
-    type = "technology",
-    name = "oil-refining-temp",
-    icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
-    icon_size = 128,
-    order = "c-a",
-    prerequisites = {},
-    dependencies = {},
-    effects = {},
-    unit = {
-        count = 200,
-        ingredients = {
-            {"automation-science-pack", 1},
-        },
-        time = 45
-    }
-}
-
-TECHNOLOGY {
-    type = "technology",
-    name = "low-distil-temp",
-    icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
-    icon_size = 128,
-    order = "c-a",
-    prerequisites = {},
-    dependencies = {},
-    effects = {},
-    unit = {
-        count = 200,
-        ingredients = {
-            {"automation-science-pack", 1},
-        },
-        time = 45
-    }
-}
-
-TECHNOLOGY {
-    type = "technology",
-    name = "res-mix-distil-temp",
-    icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
-    icon_size = 128,
-    order = "c-a",
-    prerequisites = {},
-    dependencies = {},
-    effects = {},
-    unit = {
-        count = 200,
-        ingredients = {
-            {"automation-science-pack", 1},
-        },
-        time = 45
-    }
-}
-
-TECHNOLOGY {
-    type = "technology",
-    name = "nat-gas-01-temp",
-    icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
-    icon_size = 128,
-    order = "c-a",
-    prerequisites = {},
-    dependencies = {},
-    effects = {},
-    unit = {
-        count = 200,
-        ingredients = {
-            {"automation-science-pack", 1},
-        },
-        time = 45
-    }
-}
-
-TECHNOLOGY {
-    type = "technology",
-    name = "nat-gas-refining-temp",
-    icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
-    icon_size = 128,
-    order = "c-a",
-    prerequisites = {},
-    dependencies = {},
-    effects = {},
-    unit = {
-        count = 200,
-        ingredients = {
-            {"automation-science-pack", 1},
-        },
-        time = 45
-    }
-}

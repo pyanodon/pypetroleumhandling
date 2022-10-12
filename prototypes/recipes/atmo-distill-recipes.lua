@@ -16,7 +16,7 @@ RECIPE {
     main_product = "natural-gas",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("nat-gas-refining-temp")
+}:add_unlock("petroleum-gas-mk01")
 
 RECIPE {
     type = "recipe",
@@ -63,7 +63,7 @@ RECIPE {
     main_product = "medium-distillate",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("oil-refining-temp")
+}:add_unlock("petroleum-gas-mk01")
 --total:550 fluid
 
 RECIPE {
