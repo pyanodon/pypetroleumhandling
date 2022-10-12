@@ -1,6 +1,6 @@
 --TECHNOLOGY--
 
-
+TECHNOLOGY("vanadium-processing"):remove_pack("chemical-science-pack")
 
 if not mods['pyrawores'] then
     TECHNOLOGY("fluid-pressurization"):remove_pack("chemical-science-pack"):remove_pack("logistic-science-pack")
@@ -10,6 +10,8 @@ if not mods['pyrawores'] then
 end
 
 TECHNOLOGY("xyhiphoe"):remove_pack("chemical-science-pack")
+
+RECIPE("xyhiphoe-pool-mk01"):replace_ingredient("advanced-circuit", "electronic-circuit")
 
 RECIPE("filtration-media"):remove_unlock("filtration-mk02"):add_unlock("filtration")
 
