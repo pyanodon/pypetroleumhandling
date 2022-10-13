@@ -3,6 +3,7 @@ require("prototypes.recipes.hot-stone-brick-recipes")
 
 --TECHNOLOGY--
 
+TECHNOLOGY("oil-distillation"):add_pack("logistic-science-pack")
 
 --BUILDINDS--
 
@@ -107,7 +108,7 @@ RECIPE("natural-gas-seep"):replace_ingredient('distilator', 'distilator-mk02')
 RECIPE("natural-gas-seep-mk04"):replace_ingredient('distilator', 'distilator-mk04')
 RECIPE("bitumen-seep-mk04"):replace_ingredient('distilator', 'distilator-mk04')
 
-RECIPE("quenching-tower"):remove_unlock("nexelit"):add_unlock("nexelit-mk01")
+RECIPE("quenching-tower"):remove_unlock("machines-mk01"):add_unlock("nexelit-mk01")
 
 --RECIPES--
 
