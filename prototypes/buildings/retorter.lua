@@ -77,6 +77,7 @@ ENTITY {
                 --priority = "low",
                 frame_count = 80,
                 line_length = 20,
+                draw_as_glow = true,
                 width = 81,
                 height = 150,
                 run_mode = "forward-then-backward",
@@ -94,6 +95,7 @@ ENTITY {
                 frame_count = 60,
                 line_length = 20,
                 width = 81,
+                draw_as_glow = true,
                 height = 150,
                 run_mode = "forward-then-backward",
                 animation_speed = 0.5
@@ -110,6 +112,7 @@ ENTITY {
                 frame_count = 70,
                 line_length = 10,
                 width = 81,
+                draw_as_glow = true,
                 height = 150,
                 run_mode = "forward-then-backward",
                 animation_speed = 0.5
@@ -126,6 +129,7 @@ ENTITY {
                 frame_count = 90,
                 line_length = 10,
                 width = 81,
+                draw_as_glow = true,
                 height = 150,
                 run_mode = "forward-then-backward",
                 animation_speed = 0.5
@@ -141,6 +145,7 @@ ENTITY {
                 --priority = "low",
                 frame_count = 80,
                 line_length = 10,
+                draw_as_glow = true,
                 width = 81,
                 height = 150,
                 run_mode = "forward-then-backward",
@@ -233,7 +238,7 @@ ENTITY {
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 1.4},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 0.3},
-        apparent_volume = 2.5
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 0.05},
+        audible_distance_modifier = 0.22,
     }
 }

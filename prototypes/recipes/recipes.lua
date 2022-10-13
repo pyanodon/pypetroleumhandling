@@ -251,3 +251,28 @@ RECIPE {
     ignore_for_dependencies = true,
     order = "a"
 }
+
+--ground boring kerogen
+
+RECIPE {
+    type = "recipe",
+    name = "mining-kerogen",
+    category = "ground-borer",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "fluid", name = "lubricant", amount = 100},
+        {type = "fluid", name = "drilling-fluid-1", amount = 100},
+        {type = "item", name = "drill-head", amount = 1}
+    },
+    results = {
+        {type = "item", name = "kerogen", amount = 20}
+    },
+    main_product = "kerogen",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-kerogen.png",
+    icon_size = 64,
+    subgroup = "py-drilling",
+    order = "c"
+}:add_unlock("excavation-2")
+
+--shale oil to crude?
