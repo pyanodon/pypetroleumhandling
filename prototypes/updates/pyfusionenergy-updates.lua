@@ -36,7 +36,9 @@ RECIPE("cobalt-solvent"):remove_unlock("vanadium-processing"):add_unlock("vanadi
 RECIPE("solvent-separation"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 RECIPE("acid-strip-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 RECIPE("pregnant-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+if not mods["pyrawores"] then
 RECIPE("sodium-chlorate"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+end
 RECIPE("vanadium-oxide"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 
 RECIPE("vanabins"):replace_ingredient("sulfuric-acid", "acidgas")
