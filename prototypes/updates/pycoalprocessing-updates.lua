@@ -179,7 +179,7 @@ RECIPE("mining-niobium"):replace_ingredient("coal-gas", "refsyngas"):remove_ingr
 RECIPE("mining-niobium"):remove_unlock("excavation-2"):add_unlock("excavation-3")
 
 ----EXCLUSIVE RECIPES----
---[[
+
 RECIPE {
     type = "recipe",
     name = "fuel-oil-combustion",
@@ -332,7 +332,7 @@ RECIPE {
     subgroup = "py-combustion",
     order = "k"
 }:add_unlock("energy-2")
-]]--
+
 
 RECIPE {
     type = "recipe",
