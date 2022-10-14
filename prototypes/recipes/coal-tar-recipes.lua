@@ -171,8 +171,6 @@ RECIPE {
         {type = "fluid", name = "gasoline", amount = 25},
     },
     main_product = "aromatics",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/carbon-black.png",
-    icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
 }:add_unlock("tar-processing")

@@ -37,8 +37,6 @@ RECIPE {
         {type = "fluid", name = "naphthalene-oil", amount = 100},
     },
     main_product = "naphthalene-oil",
-    icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("tar-processing")
@@ -61,8 +59,6 @@ RECIPE {
         {type = "item", name = "coke", amount = 60},
     },
     main_product = "coke",
-    icon = "__base__/graphics/icons/fluid/crude-oil.png",
-    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("tar-processing")
