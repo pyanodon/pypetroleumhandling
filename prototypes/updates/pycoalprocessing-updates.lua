@@ -200,7 +200,7 @@ RECIPE {
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-1")
+}:add_unlock("energy-2")
 
 RECIPE {
     type = "recipe",
@@ -221,7 +221,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-1")
+}:add_unlock("energy-2")
 
 RECIPE {
     type = "recipe",
@@ -287,7 +287,7 @@ RECIPE {
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "k"
-}:add_unlock("energy-1")
+}:add_unlock("energy-2")
 
 RECIPE {
     type = "recipe",
