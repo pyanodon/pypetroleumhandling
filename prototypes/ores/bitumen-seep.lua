@@ -47,7 +47,7 @@ ENTITY {
         -- This is the user's map setting for the frequency of this ore
         local frequency_multiplier = noise.var("control-setting:bitumen-seep:frequency:multiplier")
         -- 1 in 32 chunks (each chunk is 64x64 tiles)
-        local desired_frequency = 1 / (64 * 64^2)
+        local desired_frequency = 1 / (32 * 64^2)
         -- Our final chance, likely a very, very small decimal
         return desired_frequency * frequency_multiplier
       end),
