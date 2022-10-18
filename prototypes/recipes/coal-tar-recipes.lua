@@ -7,11 +7,11 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "anthracene-oil", amount = 50},
+        {type = "fluid", name = "anthracene-oil", amount = 200},
         --{type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
-        {type = "item", name = "carbon-black", amount = 1},
+        {type = "item", name = "carbon-black", amount = 4},
     },
     main_product = "carbon-black",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/carbon-black.png",
@@ -49,7 +49,7 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "carbolic-oil", amount = 100},
+        {type = "fluid", name = "carbolic-oil", amount = 50},
     },
     results = {
         {type = "fluid", name = "creosote", amount = 50},
@@ -86,7 +86,7 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "naphthalene-oil", amount = 100},
+        {type = "fluid", name = "naphthalene-oil", amount = 50},
     },
     results = {
         {type = "fluid", name = "creosote", amount = 30},

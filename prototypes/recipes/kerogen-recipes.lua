@@ -6,7 +6,7 @@ RECIPE {
     category = "kerogen",
     energy_required = 15,
     ingredients = {
-        {type = "fluid", name = "hydrogen", amount = 1000},
+        {type = "fluid", name = "steam", amount = 1000},
         {type = "item", name = "kerogen", amount = 25},
     },
     results = {
