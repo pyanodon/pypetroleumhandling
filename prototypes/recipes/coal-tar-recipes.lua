@@ -150,7 +150,7 @@ RECIPE {
         {type = "fluid", name = "organic-solvent", amount = 30},
     },
     main_product = "organic-solvent",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/carbon-black.png",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/organic-solvent.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
