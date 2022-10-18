@@ -1,4 +1,4 @@
-local resource_autoplace = require("resource-autoplace");
+local noise = require("noise")
 
 DATA {
     type = "autoplace-control",
@@ -39,17 +39,30 @@ ENTITY {
     --collision_box = {{ -2.4, -2.4}, {2.4, 2.4}},
     collision_box = {{ -5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{ -2.4, -2.4}, {2.4, 2.4}},
-    autoplace = resource_autoplace.resource_autoplace_settings{
+    autoplace = {
       name = "bitumen-seep",
-      order = "c", -- Other resources are "b"; oil won't get placed if something else is already there.
-      base_density = 3,
-      base_spots_per_km2 = 1.8,
-      random_probability = 1/48,
-      random_spot_size_minimum = 1,
-      random_spot_size_maximum = 1, -- don't randomize spot size
-      --additional_richness = 5000, -- this increases the total everywhere, so base_density needs to be decreased to compensate
-      has_starting_area_placement = true,
-      regular_rq_factor_multiplier = 1
+      order = "c-bitumen-seep", -- Other resources are "b"; oil won't get placed if something else is already there.
+      -- We return the chance of spawning on any given tile here
+      probability_expression = noise.define_noise_function( function(x, y, tile, map)
+        -- This is the user's map setting for the frequency of this ore
+        local frequency_multiplier = noise.var("control-setting:bitumen-seep:frequency:multiplier")
+        -- 1 in 32 chunks (each chunk is 64x64 tiles)
+        local desired_frequency = 1 / (64 * 64^2)
+        -- Our final chance, likely a very, very small decimal
+        return desired_frequency * frequency_multiplier
+      end),
+      -- We return the richness here, which is just the quantity the resource tile yields
+      richness_expression = noise.define_noise_function( function(x, y, tile, map)
+          -- This is the user's map setting for richness of this ore
+          -- We ignore size here because we're always a single tile resource
+          local richness_multiplier = noise.var("control-setting:bitumen-seep:richness:multiplier")
+          -- This is the distance from the starting position, which is how vanilla scales ore yield
+          local distance_value = noise.var("distance")
+          -- This is our multiplier for the above, determining the yield gains over distance
+          local scalar = 2^16
+          -- Add it all together or what is likely a pretty big number
+          return distance_value * scalar * richness_multiplier
+      end)
     },
     stage_counts = {0},
     stages =
