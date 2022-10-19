@@ -7,6 +7,8 @@ TECHNOLOGY("oil-distillation"):add_pack("logistic-science-pack")
 
 --BUILDINDS--
 
+RECIPE("olefin-plant"):remove_unlock("fuel-production")
+
 RECIPE("oil-sand-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
 RECIPE("oil-sand-extractor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
@@ -289,7 +291,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+}--:add_unlock("scrude"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
 
 RECIPE {
     type = "recipe",
@@ -329,7 +331,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("fuel-production")
+}:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -416,7 +418,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",

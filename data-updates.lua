@@ -53,7 +53,7 @@ data.raw['rocket-silo']['rocket-silo'].rocket_parts_required = 15
 local remove_old_oil_stuff =
 	{
 	['pumpjack'] = true,
-	['oil-refinery'] = true,
+	["oil-refinery"] = true,
 	['basic-oil-processing'] = true,
 	['advanced-oil-processing'] = true,
 	['heavy-oil-cracking'] = true,

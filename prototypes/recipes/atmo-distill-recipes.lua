@@ -21,12 +21,35 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-refining",
+    category = "oil-processing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "scrude", amount = 300},
+        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
+    },
+    results = {
+        {type = "fluid", name = "condensates", amount = 250},
+        {type = "fluid", name = "light-oil", amount = 150},
+        {type = "fluid", name = "heavy-oil", amount = 100},
+    },
+    main_product = "condensates",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
+    icon_size = 64,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("scrude")
+
+--[[
+RECIPE {
+    type = "recipe",
+    name = "scrude-refining",
     category = "distilator",
     enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 300},
-        {type = "fluid", name = "steam", amount = 400, temperature = 250},
+        {type = "fluid", name = "steam", amount = 400, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "condensates", amount = 150},
@@ -36,12 +59,13 @@ RECIPE {
         {type = "fluid", name = "residual-mixture", amount = 50},
     },
     main_product = "high-distillate",
-    icon = "__base__/graphics/icons/fluid/crude-oil.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
 --total:500 fluid
+]]--
 
 RECIPE {
     type = "recipe",
@@ -51,7 +75,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 300},
-        {type = "fluid", name = "steam", amount = 400, temperature = 250},
+        {type = "fluid", name = "steam", amount = 400, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "condensates", amount = 125},
@@ -74,7 +98,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "bitumen", amount = 300},
-        {type = "fluid", name = "steam", amount = 400, temperature = 250},
+        {type = "fluid", name = "steam", amount = 400, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "condensates", amount = 25},

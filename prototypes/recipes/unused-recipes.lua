@@ -103,27 +103,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "scrude-to-naphtha",
-    category = "cracker",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "scrude", amount = 100},
-        {type = "fluid", name = "water", amount = 1000},
-    },
-    results = {
-        {type = "fluid", name = "naphtha", amount = 150},
-        {type = "fluid", name = "dirty-water-heavy", amount = 100},
-    },
-    main_product = "naphtha",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
-    icon_size = 32,
-    subgroup = "py-petroleum-handling-scrude-recipes",
-    order = "a"
-}:add_unlock("scrude")
-
-RECIPE {
-    type = "recipe",
     name = "heavy-oil-to-naphtha",
     category = "olefin",
     enabled = false,
@@ -258,26 +237,6 @@ RECIPE {
     main_product = "naphtha",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphtha.png",
     icon_size = 32,
-    subgroup = "py-petroleum-handling-scrude-recipes",
-    order = "a"
-}:add_unlock("scrude")
-
-RECIPE {
-    type = "recipe",
-    name = "nafta-to-aromatics",
-    category = "reformer",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "naphtha", amount = 100},
-        {type = "item", name = "iron-plate", amount = 2},
-    },
-    results = {
-        {type = "fluid", name = "aromatics", amount = 160},
-    },
-    main_product = "aromatics",
-    icon = "__pycoalprocessinggraphics__/graphics/icons/aromatics.png",
-    icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
@@ -1145,3 +1104,43 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("petroleum-gas-mk01")
+
+RECIPE {
+    type = "recipe",
+    name = "bitumen-to-scrude",
+    category = "hor",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "fluid", name = "bitumen", amount = 100},
+        {type = "item", name = "chromium", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "scrude", amount = 100},
+    },
+    main_product = "scrude",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
+    icon_size = 64,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}--:add_unlock("scrude")
+
+RECIPE {
+    type = "recipe",
+    name = "nafta-to-aromatics",
+    category = "reformer",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+        {type = "fluid", name = "naphtha", amount = 100},
+        {type = "item", name = "iron-plate", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "aromatics", amount = 160},
+    },
+    main_product = "aromatics",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/aromatics.png",
+    icon_size = 64,
+    subgroup = "py-petroleum-handling-scrude-recipes",
+    order = "a"
+}:add_unlock("scrude")

@@ -164,7 +164,7 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "light-oil", amount = 100},
+        {type = "fluid", name = "light-oil", amount = 50},
     },
     results = {
         {type = "fluid", name = "aromatics", amount = 50},

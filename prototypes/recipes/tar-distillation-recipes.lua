@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "tar", amount = 100},
-        {type = "fluid", name = "steam", amount = 400, temperature = 250},
+        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "middle-oil", amount = 30},
@@ -29,7 +29,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "middle-oil", amount = 100},
-        {type = "fluid", name = "steam", amount = 400, temperature = 250},
+        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "light-oil", amount = 50},
@@ -49,7 +49,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "pitch", amount = 100},
-        {type = "fluid", name = "steam", amount = 400, minimum_temperature = 250},
+        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "hydrogen", amount = 10},

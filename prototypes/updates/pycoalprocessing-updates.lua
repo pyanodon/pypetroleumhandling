@@ -50,6 +50,7 @@ if not (mods["pyrawores"] or mods["pyhightech"]) then
 end
 --BUILDINDS--
 
+RECIPE("olefin-plant"):remove_unlock("lubricant"):add_unlock("scrude")
 -- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
 RECIPE("evaporator"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE("agitator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')

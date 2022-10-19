@@ -103,7 +103,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-hightech-fluids",
     order = "a"
-}:add_unlock("scrude")
+}--:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
