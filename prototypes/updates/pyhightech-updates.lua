@@ -2,8 +2,6 @@
 
 TECHNOLOGY("fluid-handling"):set_fields{prerequisites = {}}
 
-TECHNOLOGY("oil-processing"):remove_pack("chemical-science-pack")
-
 TECHNOLOGY("aerogel"):remove_pack("production-science-pack")
 
 if not mods['pyrawores'] then

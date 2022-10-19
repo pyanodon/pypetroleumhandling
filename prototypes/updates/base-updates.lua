@@ -17,3 +17,5 @@ TECHNOLOGY("excavation-2"):add_pack("production-science-pack")
 TECHNOLOGY("excavation-3"):add_pack("military-science-pack"):add_pack("utility-science-pack"):add_pack("space-science-pack")
 
 RECIPE("oil-refinery"):remove_unlock("plastics"):add_unlock("scrude")
+
+TECHNOLOGY("oil-processing"):remove_pack("chemical-science-pack")
