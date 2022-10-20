@@ -1,7 +1,23 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.0.7
-Date: ????
+Version: 2.1.1
+Date: 2022-10-20
   Changes:
+    - adjustements to rock spawning.
+    - fixed incorrect icon on organic solvent
+    - moved -shale oil development tech to automation science.
+    - added oil refinery to shale oil development.
+    - reduced the amount of steam used in several tar refining recipes
+    - replaced hydrogen with steam in kerogen retorting recipe.
+    - changed shale oil refining recipe to give out condensates, light oil, and heavy oil
+    - moved olefin plant to shale oil development
+    - replaced chem plant with reformer in olefin plant recipe
+    - replaced advanced circuit with electronic circuit in olefin plant.
+    - adjustemnts made to tar refining chain balance
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2022-10-14
+  Changes:
+    - Killed the dinosuars
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 2021-03-23
