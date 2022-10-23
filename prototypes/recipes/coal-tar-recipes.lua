@@ -2,8 +2,8 @@
 RECIPE {
     type = "recipe",
     name = "carbon-black",
-    --category = "reformer",
-    category = "distilator",
+    category = "reformer",
+    --category = "distilator",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -45,7 +45,7 @@ RECIPE {
     type = "recipe",
     name = "carbolic-oil-creosote",
     --category = "reformer",
-    category = "distilator",
+    category = "tar",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -82,7 +82,7 @@ RECIPE {
     type = "recipe",
     name = "naphthalene-oil-creosote",
     --category = "reformer",
-    category = "distilator",
+    category = "tar",
     enabled = false,
     energy_required = 2,
     ingredients = {
