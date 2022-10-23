@@ -34,7 +34,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "anthraquinone", amount = 10},
-        {type = "fluid", name = "steam", amount = 50, temperature = 105},
+        {type = "fluid", name = "steam", amount = 50, temperature = 150},
     },
     main_product = "anthraquinone",
     subgroup = "py-petroleum-handling-recipes",
