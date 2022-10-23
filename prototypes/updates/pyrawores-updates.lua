@@ -21,7 +21,7 @@ RECIPE("upgrader-mk01"):add_ingredient({type = "item", name = "lead-plate", amou
 RECIPE("upgrader-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("upgrader-mk03"):add_ingredient({type = "item", name = "titanium-plate", amount = 20}):add_ingredient({type = "item", name = "stainless-steel", amount = 15})
 RECIPE("upgrader-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})
-RECIPE("reformer-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+--RECIPE("reformer-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
 RECIPE("reformer-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("reformer-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
 RECIPE("reformer-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 20})

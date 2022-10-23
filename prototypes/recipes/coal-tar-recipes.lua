@@ -119,8 +119,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "anthraquinone-from-naphthalene",
-    --category = "reformer",
-    category = "distilator",
+    category = "reformer",
     enabled = false,
     energy_required = 2,
     ingredients = {

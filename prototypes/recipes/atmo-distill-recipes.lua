@@ -21,7 +21,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-refining",
-    category = "oil-processing",
+    category = "reformer",
     enabled = false,
     energy_required = 4,
     ingredients = {
