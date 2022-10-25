@@ -4,9 +4,9 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"stone-brick", 200},
-        {"pipe", 500},
-        {"steel-plate", 300},
+        {"stone-brick", 20},
+        {"pipe", 20},
+        {"steel-plate", 30},
         --{"processing-unit", 50},
         --{"small-parts-03", 200},
     },

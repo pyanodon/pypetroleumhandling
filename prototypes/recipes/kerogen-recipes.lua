@@ -4,13 +4,13 @@ RECIPE {
     name = "kerogen-extraction",
     enabled = true,
     category = "kerogen",
-    energy_required = 15,
+    energy_required = 5,
     ingredients = {
         {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
         {type = "item", name = "kerogen", amount = 25},
     },
     results = {
-        {type = "fluid", name = "scrude", amount = 100},
+        {type = "fluid", name = "scrude", amount = 250},
     },
     main_product = "scrude",
     subgroup = "py-petroleum-handling-recipes",
