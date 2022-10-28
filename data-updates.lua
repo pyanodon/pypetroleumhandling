@@ -8,6 +8,7 @@ require("prototypes/updates/base-updates")
 require("prototypes/updates/pycoalprocessing-updates")
 require("prototypes/updates/pyfusionenergy-updates")
 require("prototypes/updates/pyindustry-updates")
+require("prototypes/updates/compat-updates")
 
 if mods["pyrawores"] then
     require("prototypes/updates/pyrawores-updates")
