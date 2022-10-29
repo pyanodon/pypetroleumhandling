@@ -56,7 +56,7 @@ RECIPE {
         {type = "fluid", name = "light-oil", amount = 20},
         {type = "fluid", name = "naphthalene-oil", amount = 20},
         {type = "fluid", name = "anthracene-oil", amount = 30},
-        {type = "item", name = "coke", amount = 30},
+        {type = "item", name = "coke", amount = 10},
     },
     main_product = "coke",
     subgroup = "py-petroleum-handling-scrude-recipes",
