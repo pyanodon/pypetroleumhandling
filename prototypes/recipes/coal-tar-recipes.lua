@@ -56,7 +56,14 @@ RECIPE {
     },
     main_product = "creosote",
     subgroup = "py-petroleum-handling-recipes",
-    order = "a"
+    order = "a",
+    crafting_machine_tint =
+    {
+        primary = {r = 0.360, g = 0.250, b = 0.070},
+        secondary = {r = 0.360, g = 0.250, b = 0.070},
+        tertiary = {r = 0.360, g = 0.250, b = 0.070},
+        quaternary = {r = 0.360, g = 0.250, b = 0.070},
+    }
 }:add_unlock("creosote")
 
 
