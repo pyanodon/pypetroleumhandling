@@ -14,6 +14,13 @@ RECIPE {
         {type = "fluid", name = "anthracene-oil", amount = 75},
         {type = "fluid", name = "pitch", amount = 140},
     },
+    crafting_machine_tint =
+    {
+        primary = {r = 0, g = 0, b = 0},
+        secondary = {r = 1, g = 1, b = 1},
+        tertiary = {r = 0.360, g = 0.250, b = 0.070},
+        quaternary = {r = 0.360, g = 0.250, b = 0.070},
+    },
     main_product = "pitch",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-refining.png",
     icon_size = 64,
@@ -35,6 +42,13 @@ RECIPE {
         {type = "fluid", name = "light-oil", amount = 50},
         {type = "fluid", name = "carbolic-oil", amount = 50},
         {type = "fluid", name = "naphthalene-oil", amount = 100},
+    },
+    crafting_machine_tint =
+    {
+        primary = {r = 25, g = 50, b = 100},
+        secondary = {r = 1, g = 1, b = 1},
+        tertiary = {r = 0.360, g = 0.250, b = 0.070},
+        quaternary = {r = 0.360, g = 0.250, b = 0.070},
     },
     main_product = "naphthalene-oil",
     subgroup = "py-petroleum-handling-scrude-recipes",

@@ -7,5 +7,5 @@ FLUID {
     gas_temperature = 15,
     heat_capacity = "1KJ",
     base_color = {r = 25, g = 50, b = 100},
-    flow_color = {r = 25, g = 50, b = 125},
+    flow_color = {r = 1, g = 1, b = 1},
 }

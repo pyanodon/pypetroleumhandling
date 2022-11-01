@@ -60,10 +60,10 @@ RECIPE {
     crafting_machine_tint =
     {
         primary = {r = 0.360, g = 0.250, b = 0.070},
-        secondary = {r = 0.360, g = 0.250, b = 0.070},
+        secondary = {r = 1, g = 1, b = 1},
         tertiary = {r = 0.360, g = 0.250, b = 0.070},
         quaternary = {r = 0.360, g = 0.250, b = 0.070},
-    }
+    },
 }:add_unlock("creosote")
 
 
@@ -97,6 +97,13 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "creosote", amount = 30},
+    },
+    crafting_machine_tint =
+    {
+        primary = {r = 0, g = 0, b = 0},
+        secondary = {r = 1, g = 1, b = 1},
+        tertiary = {r = 0.360, g = 0.250, b = 0.070},
+        quaternary = {r = 0.360, g = 0.250, b = 0.070},
     },
     main_product = "creosote",
     subgroup = "py-petroleum-handling-recipes",
