@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 2022-11-03
+  Changes:
+    - Moved several recipes from the ddc to tar processing unit. tar refining, tar refining tops, carbolic oil to creosote, naphalene oil too creosote.
+    - moved anthracene oil to carbon black to reformer.
+    - corrected typo in steam tempurature of anthracene to anthraquinone from 105 to 150.
+    - removed vanilla refinery and moved shale oil to reformer.
+    - moved anthraquinone from naphthalene to reformer.
+    - removed lead plate and titanium plate from reformer.
+    - adjusted rocket silo result inventory size to 50.
+    - changed retorter cost from 200 to 20 stone brick, 500 to 20 pipe, 300 to 30 steel plates.
+    - reduced kerogen to shale oil recipe craft time to 5 from 15.
+    - increased kerogen to shale oil output to 250 from 100.
+    - added compatibiltiy for loader redux with small parts
+    - pitch cracking coke output reduced to 10 from 30.
+---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 2022-10-20
   Changes:

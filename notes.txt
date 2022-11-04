@@ -34,6 +34,18 @@ otherwise use acidgas
 
 More research on acetylene as chemical feed stock
 
+. Hightemperature tar can be fractionally distilled;
+three oil cuts are taken and a solid residue remains [33], [116]:
+1) Light oil (bp < 200 ◦C), composed primarily
+of benzene, toluene, xylenes, and styrene.
+2) Middle oil (bp < 370 ◦C), containing tar
+acids (phenols), tar bases (e.g., pyridine, anilines, and quinolines), and neutral oils (naphthalene).
+3) Heavy oil (bp < 550 ◦C), containing aromatic compounds, such as anthracene,
+phenanthrene, carbazole, and chrysene.
+4) Coal tar pitch (solid residue), consisting of a
+wide range of polycondensed aromatic compounds; it can be used as a binder for coal
+briquetting.
+
 todo:
 
 
