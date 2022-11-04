@@ -14,6 +14,7 @@ Date: 2022-11-03
     - increased kerogen to shale oil output to 250 from 100.
     - added compatibiltiy for loader redux with small parts
     - pitch cracking coke output reduced to 10 from 30.
+    - reactive residual oil recipes.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 2022-10-20
