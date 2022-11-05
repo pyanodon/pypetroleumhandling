@@ -33,7 +33,7 @@ RECIPE {
         {type = "item", name = "chromite-sand", amount = 5},
     },
     results = {
-        {type = "fluid", name = "anthraquinone", amount = 10},
+        {type = "fluid", name = "anthraquinone", amount = 100},
         {type = "fluid", name = "steam", amount = 50, temperature = 150},
     },
     main_product = "anthraquinone",
@@ -141,7 +141,7 @@ RECIPE {
         {type = "item", name = "vanadium-oxide", amount = 2},
     },
     results = {
-        {type = "fluid", name = "anthraquinone", amount = 50},
+        {type = "fluid", name = "anthraquinone", amount = 100},
     },
     main_product = "anthraquinone",
     subgroup = "py-petroleum-handling-recipes",
