@@ -51,8 +51,6 @@ end
 --BUILDINDS--
 
 RECIPE("olefin-plant"):remove_unlock("lubricant"):add_unlock("scrude"):replace_ingredient("advanced-circuit", "electronic-circuit"):replace_ingredient("chemical-plant-mk01", "reformer-mk01")
-RECIPE("agitator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
-RECIPE("gas-separator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 
 RECIPE("advanced-foundry-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("ball-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})

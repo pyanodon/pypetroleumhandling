@@ -6,7 +6,7 @@ end
 
 if not mods['pyrawores'] then
     TECHNOLOGY("fluid-pressurization"):remove_pack("chemical-science-pack"):remove_pack("logistic-science-pack")
-    RECIPE('centrifugal-pan-mk01'):remove_unlock('diamond-mining'):add_unlock("fluid-processing-machines-1")
+    RECIPE('centrifugal-pan-mk01'):remove_unlock('diamond-mining'):add_unlock("oil-sands")
     RECIPE("compressor-mk01"):remove_unlock("helium-processing"):remove_unlock("liquid-petroleum-processing"):remove_unlock("advanced-oil-processing"):add_unlock("fluid-processing-machines-2")
     RECIPE("py-heat-exchanger"):remove_unlock("fusion-mk01"):add_unlock("oil-machines-mk02")
 end
@@ -83,13 +83,13 @@ RECIPE("fracking-rig"):add_ingredient({type = "item", name = "wall-shield", amou
 RECIPE("chemical-plant-mk03"):add_ingredient({type = "item", name = "nenbit-matrix", amount = 10}):add_ingredient({type = "item", name = "nbti-alloy", amount = 20})
 RECIPE("guar-gum-plantation-mk04"):add_ingredient({type = "item", name = "nenbit-matrix", amount = 40}):add_ingredient({type = "item", name = "boron-carbide", amount = 30}):add_ingredient({type = "item", name = "science-coating", amount = 5}):add_ingredient({type = "item", name = "control-unit", amount = 3})
 
-
 RECIPE("automated-screener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("bio-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("centrifugal-pan-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("advanced-circuit", "electronic-circuit")
 RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-03", amount = 50})
-RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
+RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):remove_unlock('advanced-mining-facilities'):add_unlock("petroleum-gas-mk02")
+RECIPE("mixer-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("drilling-fluid-mk01")
 RECIPE("grease-table-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("jig-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
