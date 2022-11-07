@@ -51,8 +51,6 @@ end
 --BUILDINDS--
 
 RECIPE("olefin-plant"):remove_unlock("lubricant"):add_unlock("scrude"):replace_ingredient("advanced-circuit", "electronic-circuit"):replace_ingredient("chemical-plant-mk01", "reformer-mk01")
--- RECIPE("chemical-plant-mk01"):remove_unlock('filtration'):add_unlock('fluid-processing-machines-1')
---RECIPE("evaporator"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE("agitator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 RECIPE("gas-separator-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
 
@@ -63,7 +61,7 @@ RECIPE("desulfurizator-unit"):add_ingredient({type = "item", name = "small-parts
 RECIPE("distilator"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("gasifier"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("jaw-crusher"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
-RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01")--:remove_unlock("fluid-separation"):add_unlock("nexelit")
+RECIPE("quenching-tower"):replace_ingredient("iron-stick", "small-parts-01")
 RECIPE("ralesia-plantation-mk01"):replace_ingredient("pipe", "small-parts-01")
 RECIPE("rectisol"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("washer"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
@@ -107,9 +105,9 @@ RECIPE {
     order = "tailings-a"
 }:add_unlock("nexelit")
 
-RECIPE("tailings-copper-iron"):remove_unlock('fluid-separation'):set_fields{hidden = true}
+RECIPE("tailings-copper-iron"):remove_unlock('separation'):set_fields{hidden = true}
 
-RECIPE("tailings-borax-niobium"):remove_unlock('fluid-separation'):set_fields{hidden = true}
+RECIPE("tailings-borax-niobium"):remove_unlock('separation'):set_fields{hidden = true}
 
 --parts2
 
