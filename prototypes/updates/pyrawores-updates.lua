@@ -9,6 +9,8 @@ require("prototypes.recipes.hot-stone-brick-recipes")
 
 RECIPE("olefin-plant"):remove_unlock("fuel-production")
 
+RECIPE("thickener-mk01"):remove_unlock("molybdenum-processing"):add_unlock("vanadium-processing")
+
 RECIPE("oil-sand-extractor-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "nexelit-plate", amount = 5})
 RECIPE("oil-sand-extractor-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("oil-sand-extractor-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 20}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40})
