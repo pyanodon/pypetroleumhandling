@@ -66,7 +66,7 @@ RECIPE("fracking-rig"):add_ingredient({type = "item", name = "super-steel", amou
 --RECIPE("retorter"):replace_ingredient("steel-plate", "super-steel"):add_ingredient({type = "item", name = "glass", amount = 120}):add_ingredient({type = "item", name = "nexelit-plate", amount = 50})
 RECIPE("guar-gum-plantation-mk03"):add_ingredient({type = "item", name = "molybdenum-plate", amount = 20})
 RECIPE("compressor-mk01"):remove_unlock('fluid-processing-machines-1'):add_unlock('fluid-processing-machines-2')
---RECIPE('centrifugal-pan-mk01'):remove_unlock('machines-mk03'):add_unlock('fluid-processing-machines-2')
+RECIPE('centrifugal-pan-mk01'):remove_unlock('machines-mk03'):add_unlock('oil-sands')
 RECIPE("oleo-heavy"):remove_unlock("mukmoux"):add_unlock("heavy-oil-mk02")
 
 RECIPE("bof-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
