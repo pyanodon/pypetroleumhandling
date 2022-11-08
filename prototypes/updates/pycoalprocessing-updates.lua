@@ -50,8 +50,10 @@ if not (mods["pyrawores"] or mods["pyhightech"]) then
 end
 --BUILDINDS--
 
-RECIPE("olefin-plant"):remove_unlock("lubricant"):add_unlock("scrude"):replace_ingredient("advanced-circuit", "electronic-circuit"):replace_ingredient("chemical-plant-mk01", "reformer-mk01")
-
+RECIPE("olefin-plant"):remove_unlock("lubricant"):add_unlock("scrude"):replace_ingredient("advanced-circuit", "electronic-circuit"):replace_ingredient("chemical-plant-mk01", "reformer-mk01"):subgroup_order("py-petroleum-handling-buildings-mk01", "r")
+RECIPE("olefin-plant-mk02"):subgroup_order("py-petroleum-handling-buildings-mk02", "r")
+RECIPE("olefin-plant-mk03"):subgroup_order("py-petroleum-handling-buildings-mk03", "r")
+RECIPE("olefin-plant-mk04"):subgroup_order("py-petroleum-handling-buildings-mk04", "r")
 RECIPE("advanced-foundry-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("ball-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
 RECIPE("botanical-nursery"):add_ingredient({type = "item", name = "small-parts-01", amount = 10})
