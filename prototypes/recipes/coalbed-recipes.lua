@@ -61,6 +61,24 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
+    name = "coalbed-gas-to-coalgas",
+    category = "carbonfilter",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "coalbed-gas", amount = 400},
+        {type = "item", name = "filtration-media", amount = 1},
+    },
+    results = {
+        {type = "fluid", name = "coal-gas", amount = 400},
+    },
+    --main_product = "coalbed-gas",
+    subgroup = "py-petroleum-handling-fluids",
+    order = "a"
+}:add_unlock("coalbed-mk01")
+
+RECIPE {
+    type = "recipe",
     name = "coalbed-gas-to-syngas",
     category = "gas-refinery",
     enabled = false,
