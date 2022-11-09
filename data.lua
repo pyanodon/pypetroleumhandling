@@ -233,6 +233,11 @@ data.raw.fluid["stripped-distillate"].fuel_value = "0.4MJ"
 data.raw.fluid["condensed-distillate"].fuel_value = "0.5MJ"
 data.raw.fluid["residual-mixture"].fuel_value = "0.1MJ"
 data.raw.fluid["hot-residual-mixture"].fuel_value = "0.1MJ"
+data.raw.fluid["anthracene-oil"].fuel_value = "0.25MJ"
+data.raw.fluid["carbolic-oil"].fuel_value = "0.35MJ"
+data.raw.fluid["naphthalene-oil"].fuel_value = "0.3MJ"
+data.raw.fluid["pitch"].fuel_value = "0.1MJ"
+data.raw.fluid["middle-oil"].fuel_value = "0.2MJ"
 
 if not mods["pyrawores"] then
 data.raw.fluid["hydrogen"].fuel_value = "20KJ"
