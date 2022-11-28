@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 2022-11-28
+  Changes:
+    - doubled output of anthraquinone in several recipes.
+    - tweaks for gunpowder.
+    - added coal gas from coalbed gas.
+    - added fuel values for new tar fluids.
+---------------------------------------------------------------------------------------------------
 Version: 2.1.2
 Date: 2022-11-03
   Changes:
