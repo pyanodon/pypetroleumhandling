@@ -88,7 +88,10 @@ RECIPE("bio-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-01
 RECIPE("centrifugal-pan-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("advanced-circuit", "electronic-circuit")
 RECIPE("diamond-mine"):add_ingredient({type = "item", name = "small-parts-02", amount = 50})
 RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts-03", amount = 50})
-RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):remove_unlock('helium-processing-mk02'):add_unlock("petroleum-gas-mk02")
+RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
+if not mods["pyrawores"] then
+    RECIPE("gas-separator-mk01"):remove_unlock('helium-processing-mk02'):add_unlock("petroleum-gas-mk02")
+end
 RECIPE("mixer-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("drilling-fluid-mk01")
 RECIPE("grease-table-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
