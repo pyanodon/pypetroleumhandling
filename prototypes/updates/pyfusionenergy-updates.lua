@@ -95,7 +95,7 @@ if not mods["pyhightech"] and not mods["pyrawores"] then
     RECIPE("gas-separator-mk01"):remove_unlock('helium-processing-mk02'):add_unlock("petroleum-gas-mk02")
 elseif mods["pyhightech"] then
     RECIPE("gas-separator-mk01"):remove_unlock("helium-processing-mk02"):add_unlock("sulfur-processing")
-elseif mods["pyrawores"] then
+elseif mods["pyrawores"] and not mods["pyalienlife"] then
     RECIPE("gas-separator-mk01"):remove_unlock("coke-mk02"):add_unlock("sulfur-processing")
 end
 
