@@ -105,7 +105,7 @@ RECIPE {
     order = "tailings-a"
 }:add_unlock("nexelit")
 
-RECIPE("tailings-copper-iron"):remove_unlock('fluid-separation'):set_fields{hidden = true}
+RECIPE("tailings-copper-iron"):remove_unlock('separation'):set_fields{hidden = true}
 
 RECIPE("tailings-borax-niobium"):remove_unlock('fluid-separation'):set_fields{hidden = true}
 
