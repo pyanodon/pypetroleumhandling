@@ -155,7 +155,7 @@ RECIPE("mining-zinc"):replace_ingredient("coal-gas", "syngas"):remove_ingredient
 RECIPE('drilling-fluid-2'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 RECIPE('drilling-fluid-3'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 
-RECIPE('tar-quenching'):remove_unlock('fluid-separation'):add_unlock('nexelit-mk01')
+--RECIPE('tar-quenching'):remove_unlock('fluid-separation'):add_unlock('nexelit-mk01')
 
 RECIPE("methane-to-methanol2"):replace_ingredient("nexelit-plate", "molybdenum-plate")
 RECIPE("methane-to-methanol3"):replace_ingredient("nexelit-plate", "molybdenum-plate")
