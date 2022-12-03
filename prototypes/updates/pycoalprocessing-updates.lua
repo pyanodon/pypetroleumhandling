@@ -103,7 +103,7 @@ RECIPE {
     },
     subgroup = "py-quenching-ores",
     order = "tailings-a"
-}:add_unlock("nexelit")
+}:add_unlock("separation")
 
 RECIPE("tailings-copper-iron"):remove_unlock('separation'):set_fields{hidden = true}
 
