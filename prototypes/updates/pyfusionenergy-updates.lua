@@ -45,7 +45,10 @@ RECIPE("vanabins"):replace_ingredient("sulfuric-acid", "acidgas")
 
 --RECIPE("soda-ash"):remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
 
-table.insert(data.raw.recipe.vpulp3.results, {type = "item", name = "vanadium-oxide", amount = 1, probability = 0.2})
+RECIPE("vpulp3"):set_fields{results = {
+    {type = "fluid", name = "vpulp3", amount = 50},
+    {type = "item", name = "vanadium-oxide", amount = 2}
+}}
 
 RECIPE("vpulp5"):set_fields{results = {
     {type = "fluid", name = "vpulp5", amount = 100}
