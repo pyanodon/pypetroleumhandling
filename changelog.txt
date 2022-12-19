@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: 2022-12-19
+  Changes:
+    - fixed that copper and iron from tailings wasnt properly disabled.
+    - fixed several double unlocks in techs.
+    - increased vanadium oxide and reduced vanadium pulp 3 output from the vanadium pulp 3 recipe.
+    - increased the energy usage of cracker mk01 and fracking rig.
+---------------------------------------------------------------------------------------------------
 Version: 2.1.3
 Date: 2022-11-28
   Changes:
