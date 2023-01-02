@@ -70,6 +70,4 @@ RECIPE {
         {type = "fluid", name = "lubricant", amount = 150},
     },
     main_product = "lubricant",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
 }:add_unlock("oil-machines-mk03"):replace_ingredient("nexelit-plate", "ticl4")

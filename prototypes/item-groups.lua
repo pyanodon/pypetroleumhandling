@@ -72,15 +72,27 @@ data:extend {
 },
 {
     type = "item-subgroup",
-    name = "py-petroleum-handling-tholin-recipes",
+    name = "py-petroleum-handling-plastic-recipes",
     group = "py-petroleum-handling",
     order = "i-a"
 },
 {
     type = "item-subgroup",
-    name = "py-petroleum-handling-hot-air",
+    name = "py-petroleum-handling-lubricant-recipes",
+    group = "py-petroleum-handling",
+    order = "i-b"
+},
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-tholin-recipes",
     group = "py-petroleum-handling",
     order = "j-a"
+},
+{
+    type = "item-subgroup",
+    name = "py-petroleum-handling-hot-air",
+    group = "py-petroleum-handling",
+    order = "k-a"
 },
 ------------ITEMS----------
 {
@@ -96,3 +108,7 @@ data:extend {
     order = "e-b"
 },
 }
+
+data.raw.item['plastic-bar'].subgroup = 'py-petroleum-handling-plastic-recipes'
+data.raw.fluid['lubricant'].subgroup = 'py-petroleum-handling-lubricant-recipes'
+data.raw.recipe['lubricant'].subgroup = nil

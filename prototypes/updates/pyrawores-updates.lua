@@ -368,10 +368,6 @@ RECIPE {
         {type = "item", name = "plastic-bar", amount = 5},
     },
     main_product = "plastic-bar",
-    icon = "__base__/graphics/icons/plastic-bar.png",
-    icon_size = 64,
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a"
 }:replace_ingredient("naphtha", "propene"):change_category("fbreactor")
 
 if mods['pyhightech'] then
