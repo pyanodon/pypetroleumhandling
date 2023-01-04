@@ -116,6 +116,7 @@ require("prototypes.buildings.natural-gas-seep-mk01")
 require("prototypes.buildings.natural-gas-seep-mk02")
 require("prototypes.buildings.natural-gas-seep-mk03")
 require("prototypes.buildings.natural-gas-seep-mk04")
+require("prototypes.buildings.oil-boiler-mk01")
 
 --((space buildings))--
 --[[
@@ -124,11 +125,6 @@ require("prototypes.buildings.antenna")
 require("prototypes.buildings.pod")
 require("prototypes.buildings.landing-pad")
 ]]--
-
-if not mods['omnimatter_fluid'] then
---oil-boiler
-require("prototypes.buildings.oil-boiler-mk01")
-end
 
 --(( RECIPES ))--
 require("prototypes.recipes.recipes")
