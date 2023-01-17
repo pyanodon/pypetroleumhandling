@@ -1,458 +1,207 @@
+-- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
+-- if you need the commented code that was here, go to git revision <= 4e9cd2f4bc7916ea438986d8037d63338463438e
 script.on_init(function()
     global.first_chunk = false
-    --
-    --[[
-global.antenna =
-	{
-		nauvis_antenna = {},
-		space_antenna = {}
-	}
-
-global.rockets = {}
-global.rocket_silo_con_combinator = {}
-]]
     global.oil_derricks = {}
 end)
 
 script.on_configuration_changed(function()
-    --[[
-	if global.antenna == nil then
-		global.antenna =
-			{
-				nauvis_antenna = {},
-				space_antenna = {}
-			}
-	end
-
-	if global.rockets == nil then
-		global.rockets = {}
-	end
-]]
-    if global.oil_derricks == nil then global.oil_derricks = {} end
+    if not global.oil_derricks == nil then global.oil_derricks = {} end
 end)
 
-script.on_event({defines.events.on_built_entity, defines.events.on_robot_built_entity}, function(event)
-    local E = event.created_entity
-    -- log(E.name)
-    if string.match(E.name, 'seep') ~= nil and E.type == 'mining-drill' then
-        -- log('hit')
-        local resource = game.surfaces[E.surface.name].find_entities_filtered {
-            area = {{E.position.x - 1, E.position.y - 1}, {E.position.x + 1, E.position.y + 1}},
-            type = 'resource'
-        }
-        for r, re in pairs(resource) do
-            -- log(E.name)
-            if string.match(re.name, 'oil') then
-                game.surfaces[E.surface.name].create_entity {
-                    name = 'oil-derrick-mk' .. string.match(E.name, '%d+'),
-                    force = E.force,
-                    position = E.position
-                }
-                E.destroy()
-            elseif string.match(re.name, 'tar') then
-                game.surfaces[E.surface.name].create_entity{
-                    name = 'tar-extractor-mk' .. string.match(E.name, '%d+'),
-                    force = E.force,
-                    position = E.position
-                }
-                E.destroy()
-            elseif string.match(re.name, 'natural%-gas') then
-                game.surfaces[E.surface.name].create_entity{
-                    name = 'natural-gas-extractor-mk' .. string.match(E.name, '%d+'),
-                    force = E.force,
-                    position = E.position
-                }
-                E.destroy()
-            else
-                local base = ''
-                if string.match(E.name, 'bitumen') then
-                    base = E.name .. '-base'
-                elseif string.match(E.name, 'tar') then
-                    base = 'tar-seep-mk01-base'
-                elseif string.match(E.name, 'natural%-gas') then
-                    base = 'natural-gas-seep-mk01-base'
-                end
-                local ass1 = game.surfaces[E.surface.name].create_entity {
-                    name = base,
-                    force = E.force,
-                    position = E.position
-                }
-                ass1.set_recipe('drilling-fluids')
-                ass1.active = false
-                global.oil_derricks[E.unit_number] = {entity = E, base = ass1, drilling_fluid = ''}
-            end
-        end
-        --[[
-	elseif E.name == 'antenna' and E.surface.name == 'nauvis' then
-		local cc = game.surfaces[E.surface.name].create_entity{name = 'antenna-constant-combinator', position = {E.position.x + 0.5, E.position.y}, force = E.force}
-		global.antenna.nauvis_antenna[E.unit_number] =
-			{
-				antenna = E,
-				combinator = cc
-			}
-	elseif E.name == 'antenna' and E.surface.name == 'test' then
-		local cc = game.surfaces[E.surface.name].create_entity{name = 'antenna-constant-combinator', position = {E.position.x + 0.5, E.position.y}, force = E.force}
-		global.antenna.space_antenna[E.unit_number] =
-			{
-				antenna = E,
-				combinator = cc
-			}
-	elseif E.name == 'rocket-silo' then
-		local rscc = game.surfaces[E.surface.name].create_entity{name = 'rocket-silo-constant-combinator', position = {E.position.x + 3, E.position.y + 3}, force = E.force}
-		global.rocket_silo_con_combinator[rscc.unit_number] =
-			{
-				con_com = rscc,
-				silo = E
-			}
-	]]
-        --
-    end
-end)
+-- Correlates our derricks and what replaces them with the seep transition, along with their hidden assembler names
+local derrick_types = {}
+for i=1, 4 do
+	derrick_types['bitumen-seep-mk0' .. i] = {
+		base = 'bitumen-seep-mk0' .. i .. '-base',
+		replacement = 'oil-derrick-mk0' .. i,
+		resource = 'oil-mk0' .. i
+	}
+	derrick_types['tar-seep-mk0' .. i] = { 
+		base = 'tar-seep-mk01-base',
+		replacement = 'tar-extractor-mk0' .. i,
+		resource = 'tar-patch'
+	}
+	derrick_types['natural-gas-seep-mk0' .. i] = {
+		base = 'natural-gas-seep-mk01-base',
+		replacement = 'natural-gas-extractor-mk0' .. i,
+		resource = 'natural-gas-mk01'
+	}
+end
 
-script.on_event({defines.events.on_player_mined_entity, defines.events.on_robot_mined_entity}, function(event)
-    local E = event.entity
-    -- log('hit')
-    if string.match(E.name, 'seep') ~= nil then
-        local entity = game.surfaces[E.surface.name].find_entities_filtered {
-            position = E.position,
-            type = 'assembling-machine'
-        }
-        for e, ent in pairs(entity) do ent.destroy() end
-        global.oil_derricks[E.unit_number] = nil
-    end
-end)
+local resource_types = {
+	['oil'] = 'oil-derrick-mk0',
+	['tar'] = 'tar-extractor-mk0',
+	['natural-gas'] = 'natural-gas-extractor-mk0'
+}
 
-script.on_event(defines.events.on_player_rotated_entity, function(event)
-    local E = event.entity
-    if string.match(E.name, 'seep') ~= nil then
-        local entity = game.surfaces[E.surface.name].find_entities_filtered {
-            position = E.position,
-            type = 'assembling-machine'
-        }
-        for e, ent in pairs(entity) do ent.direction = E.direction end
-    end
-end)
-
-script.on_nth_tick(30, function()
-    -- log(serpent.block(global.oil_derricks))
-    for d, drill in pairs(global.oil_derricks) do
-        -- log(serpent.block(d))
-        -- log(serpent.block(drill))
-        local dfluid = drill.base.get_fluid_contents()
-        --log(serpent.block(dfluid))
-        if next(dfluid) ~= nil then
-            --log('hit')
-            if dfluid['drilling-fluid-' .. 3] ~= nil then
-                if dfluid['drilling-fluid-' .. 3] >= 50 then
-                    global.oil_derricks[d].drilling_fluid = 'drilling-fluid-3'
-                    drill.base.remove_fluid {name = 'drilling-fluid-3', amount = 5}
-                    drill.entity.active = true
-                elseif dfluid['drilling-fluid-' .. 3] < 50 then
-                    drill.entity.active = false
-                end
-            elseif dfluid['drilling-fluid-' .. 2] ~= nil then
-                if dfluid['drilling-fluid-' .. 2] >= 50 then
-                    global.oil_derricks[d].drilling_fluid = 'drilling-fluid-2'
-                    drill.base.remove_fluid {name = 'drilling-fluid-2', amount = 5}
-                    drill.entity.active = true
-                elseif dfluid['drilling-fluid-' .. 2] < 50 then
-                    drill.entity.active = false
-                end
-            elseif dfluid['drilling-fluid-' .. 1] ~= nil then
-                if dfluid['drilling-fluid-' .. 1] >= 50 then
-                    global.oil_derricks[d].drilling_fluid = 'drilling-fluid-1'
-                    drill.base.remove_fluid {name = 'drilling-fluid-1', amount = 5}
-                    drill.entity.active = true
-                elseif dfluid['drilling-fluid-' .. 1] < 50 then
-                    drill.entity.active = false
-                end
-            elseif dfluid['drilling-fluid-' .. 0] ~= nil then
-                if dfluid['drilling-fluid-' .. 0] >= 50 then
-                    global.oil_derricks[d].drilling_fluid = 'drilling-fluid-0'
-                    drill.base.remove_fluid {name = 'drilling-fluid-0', amount = 5}
-                    drill.entity.active = true
-                elseif dfluid['drilling-fluid-' .. 0] < 50 then
-                    drill.entity.active = false
-                end
-            end
-
-        else
-            drill.entity.active = false
-        end
-    end
-end)
---
-
---[[
-script.on_event(defines.events.on_rocket_launch_ordered, function()
-
-	local map_settings =
+local event_filter = {
 	{
-		autoplace_settings =
-			{
-				["decorative"]={
-				treat_missing_as_default=false,
-				settings = {}
-				},
-				["entity"]={
-				treat_missing_as_default=false,
-				settings = {}
-				},
-				["tile"]={
-				treat_missing_as_default=false,
-				settings = {
-					['space-plate'] = {}
-				}
-				},
-			},
-		default_enable_all_autoplace_controls = false,
-		cliff_settings = {}
+		filter = 'type',
+		type = 'mining-drill'
+	}
+}
+-- Adds each drill mk01-mk04 to the event filter as "or" statements
+for drill in pairs(derrick_types) do
+	local i = #event_filter
+	event_filter[i+1] = {
+		filter = 'name',
+		name = drill,
+		-- 1 and 2 or 3 or 4 or 5 etc
+		mode = i == 1 and 'and' or 'or'
+	}
+end
+
+local function add_seep(event)
+	local drill = event.created_entity
+	local drill_base = derrick_types[drill.name]
+
+	local patches = game.surfaces[drill.surface.name].find_entities_filtered {
+		area = {{drill.position.x - 1, drill.position.y - 1}, {drill.position.x + 1, drill.position.y + 1}},
+		type = 'resource'
 	}
 
-	if game.surfaces['test'] == nil then
-		game.create_surface('test', map_settings)
-		game.surfaces['test'].request_to_generate_chunks({0,0},1)
-	end
-end)
-
-script.on_event(defines.events.on_rocket_launched, function(event)
-	if event.rocket_silo.name ~= "mega-farm" then
-		if global.first_chunk == false then
-			local tiles = {}
-			local x = -3
-			local y = -3
-			for i = 1,36 do
-				local tile = {name = 'space-plate', position = {x, y}}
-				table.insert(tiles, tile)
-				x = x + 1
-				if x == 3 then
-					x = -3
-					y = y + 1
-				end
-			end
-			--log(serpent.block(tiles))
-			game.surfaces['test'].set_tiles(tiles)
-
-			--game.players[1].teleport({0,0}, 'test')
-			global.first_chunk = true
-		end
-
-		if event.player_index ~= nil then
-			if game.players[event.player_index].surface.name == 'nauvis' then
-				game.players[event.player_index].teleport({0,0}, 'test')
-			elseif game.players[event.player_index].surface.name == 'test' then
-				game.players[event.player_index].teleport({0,0}, 'nauvis')
-			end
-		end
-
-		--log(serpent.block(game.entity_prototypes['space-pod']))
-
-		local rocket_inv = event.rocket.get_inventory(defines.inventory.rocket).get_contents()
-
-		local items = {}
-
-		if next(rocket_inv) ~= nil then
-			--log(serpent.block(rocket_inv))
-			local rocket = rocket_inv
-
-			--table.insert(global.rockets, rocket)
-			--log(serpent.block(global.rocket))
-			if event.rocket.surface.name == 'nauvis' then
-				local pad = game.surfaces['test'].create_entity{
-					name = 'landing-pad',
-					position = {0,-4},
-					force = event.rocket.force
+	for _, patch in pairs(patches) do
+		if patch.name == 'bitumen-seep' then
+			local assembler = game.surfaces[drill.surface.name].create_entity {
+				name = drill_base.base,
+				force = drill.force,
+				position = drill.position
+			}
+			if assembler then
+				assembler.set_recipe('drilling-fluids')
+				assembler.active = false
+				global.oil_derricks[drill.unit_number] = {
+					entity = drill,
+					base = assembler,
+					drilling_fluid = ''
 				}
-				local pod_check = game.surfaces['test'].find_entities_filtered{position = {0,-4}, radius = 4, name = 'space-pod'}
-				if next(pod_check) == nil then
-					local pod = game.surfaces['test'].create_entity{
-						name = 'space-pod',
-						position = {0,-4},
-						force = event.rocket.force
-					}
+			end
+			drill.active = false
+		else
+			local resource_type = patch.name:match('(.*)(%-%w*)$')
+			game.surfaces[drill.surface.name].create_entity {
+				name = resource_types[resource_type] .. drill.name:match('%d$'),
+				force = drill.force,
+				position = drill.position
+			}
+			drill.destroy()
+		end
+	end
+end
+script.on_event(defines.events.on_built_entity, add_seep, event_filter)
+script.on_event(defines.events.on_robot_built_entity, add_seep, event_filter)
+
+-- Destroy hidden assembler when removing drill
+local function remove_seep(find_results, source)
+	for _, assembler in pairs(find_results) do
+		assembler.destroy()
+	end
+	global.oil_derricks[source.unit_number] = nil
+end
+-- Match hidden assembler rotation to drill rotation
+local function rotate_seep(find_results, source)
+	for _, assembler in pairs(find_results) do
+		assembler.direction = source.direction
+	end
+end
+
+local actions = {
+	[defines.events.on_player_mined_entity] = remove_seep,
+	[defines.events.on_robot_mined_entity] = remove_seep,
+	[defines.events.on_entity_died] = remove_seep,
+	[defines.events.on_player_rotated_entity] = rotate_seep
+}
+
+local function on_entity_modified(event)
+	local building = event.entity
+	-- on_player_rotated_entity can't be filtered :)
+    if derrick_types[building.name] then
+        local child_entity = game.surfaces[building.surface.name].find_entities_filtered {
+            position = building.position,
+            type = 'assembling-machine'
+        }
+        actions[event.name](child_entity, building)
+    end
+end
+script.on_event(defines.events.on_player_mined_entity, on_entity_modified, event_filter)
+script.on_event(defines.events.on_robot_mined_entity, on_entity_modified, event_filter)
+script.on_event(defines.events.on_entity_died, on_entity_modified, event_filter)
+script.on_event(defines.events.on_player_rotated_entity, on_entity_modified)
+
+-- Activates/deactivates derricks based on how much drilling fluid they have
+-- Selects the best available drilling fluid to use
+local fluid_threshold = 50
+local fluid_max_tier = 3
+local fluid_min_tier = 0 -- Tiers are zero-indexed here, god knows why
+
+script.on_nth_tick(31, function()
+    for drill_id, drill in pairs(global.oil_derricks) do
+		local drill_active = false
+        local drill_contents = drill.base.get_fluid_contents()
+		local drill_empty = next(drill_contents) == nil
+
+		if not drill_empty then
+			-- Check possible drilling fluids in descending order of quality
+			for current_tier = fluid_max_tier, fluid_min_tier, -1 do
+				local fluid_type = 'drilling-fluid-' .. current_tier
+				local contained_fluid = drill_contents[fluid_type]
+				if contained_fluid then
+					if contained_fluid >= fluid_threshold then
+						global.oil_derricks[drill_id].drilling_fluid = fluid_type
+						drill.base.remove_fluid({name = fluid_type, amount = 5})
+						drill_active = true
+					end
+					break
 				end
-				for i, item in pairs(rocket_inv) do
-					pad.get_inventory(defines.inventory.chest).insert({name = i, count = item})
-				end
 			end
 		end
-	end
 
+		drill.entity.active = drill_active
+    end
 end)
 
+-- Overwrites seep amounts when they are generated
 script.on_event(defines.events.on_chunk_generated, function(event)
-	--log('should only see this once per chunk gen call')
-	--log('hit all other chunks')
-	if game.surfaces['test'] ~= nil then
-		local entities = game.surfaces['test'].find_entities(event.area)
-		local old_tiles = game.surfaces['test'].find_tiles_filtered{area = event.area}
-		local tiles = {}
-		for _, ent in pairs(entities) do
-			--log('hit')
-			--log(ent.name)
-			--log(ent.type)
-			if ent.type == 'cliff' then
-				ent.destroy()
-			end
-		end
-		for _, til in pairs(old_tiles) do
-			--log(til.position)
-			local tile = {name = 'space', position = til.position}
-			table.insert(tiles, tile)
-		end
-		game.surfaces['test'].set_tiles(tiles)
+    local bitumen_patches = game.surfaces[event.surface.name].find_entities_filtered {name = 'bitumen-seep', area = event.area}
+    for _, patch in pairs(bitumen_patches) do
+		patch.amount = math.random(1000, 2500)
 	end
-end)
-
-script.on_event(defines.events.on_tick, function()
-	local nau_ant = global.antenna.nauvis_antenna
-	local spa_ant = global.antenna.space_antenna
-	local nau_signals = {}
-	local spa_signals = {}
-	for _, ant in pairs(nau_ant) do
-		if ant.antenna.get_merged_signals() ~= nil then
-			local signal = ant.antenna.get_merged_signals()
-			for _, sing in pairs(signal) do
-				table.insert(nau_signals, sing)
-			end
-		end
-	end
-	for _, ant in pairs(spa_ant) do
-		if ant.antenna.get_merged_signals() ~= nil then
-			local signal = ant.antenna.get_merged_signals()
-			for _, sing in pairs(signal) do
-				table.insert(spa_signals, sing)
-			end
-		end
-	end
-	--log(serpent.block(nau_signals))
-	for _, ant in pairs(nau_ant) do
-		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
-		if circuit ~= nil then
-			local index = 1
-			for _, sig in pairs(spa_signals) do
-				ant.combinator.get_control_behavior().set_signal
-					(
-						index,
-						sig
-					)
-				index = index + 1
-			end
-		end
-	end
-	for _, ant in pairs(spa_ant) do
-		local circuit = ant.combinator.get_circuit_network(defines.wire_type.red)
-		if circuit ~= nil then
-			local index = 1
-			for _, sig in pairs(nau_signals) do
-				--log(serpent.block(sig))
-				ant.combinator.get_control_behavior().set_signal
-					(
-						index,
-						sig
-					)
-				index = index + 1
-			end
-		end
-	end
-	for _, rscc in pairs(global.rocket_silo_con_combinator) do
-		local circuit = rscc.con_com.get_circuit_network(defines.wire_type.red)
-		if circuit ~= nil and rscc.silo.get_inventory(defines.inventory.rocket_silo_rocket) ~= nil then
-			local index = 1
-			local rocket_inv = rscc.silo.get_inventory(defines.inventory.rocket_silo_rocket).get_contents()
-			for i,item in pairs(rocket_inv) do
-				--log(serpent.block(i))
-				--log(serpent.block(item))
-				--log(index)
-				rscc.con_com.get_control_behavior().set_signal
-					(
-						index,
-						{
-							signal =
-							{
-								type = 'item',
-								name = i
-							},
-							count = item
-						}
-					)
-				index = index + 1
-			end
-		end
-	end
-end)
-]]
-script.on_event(defines.events.on_chunk_generated, function(event)
-    local bitumen = game.surfaces[event.surface.name].find_entities_filtered {name = 'bitumen-seep', area = event.area}
-    -- local amount = math.random(250,1000)
-    -- test amount
-    local amount = math.random(1000, 2500)
-    for b, bit in pairs(bitumen) do bit.amount = amount end
 end)
 
 script.on_event(defines.events.on_resource_depleted, function(event)
-    local E = event.entity
-    if E.name == 'bitumen-seep' then
-        local drill = {}
-        local current_derrick = game.surfaces[E.surface.name].find_entities_filtered {
-            area = {{E.position.x - 1, E.position.y - 1}, {E.position.x + 1, E.position.y + 1}},
-            type = 'mining-drill'
-        }
-        for d, dri in pairs(current_derrick) do drill = dri end
+    local resource = event.entity
+	if resource.name ~= 'bitumen-seep' then
+		return
+	end
 
-        local drill_name = ''
-        local resource_name = ''
-        if string.match(drill.name, 'bitumen') ~= nil then
-            drill_name = 'oil-derrick'
-            resource_name = 'oil-mk' .. string.match(drill.name, '%d+')
-        elseif string.match(drill.name, 'tar') ~= nil then
-            drill_name = 'tar-extractor'
-            resource_name = 'tar-patch'
-        elseif string.match(drill.name, 'natural%-gas') then
-            drill_name = 'natural-gas-extractor'
-            resource_name = 'natural-gas-mk01'
-        end
+	local active_drills = game.surfaces[resource.surface.name].find_entities_filtered {
+		area = {{resource.position.x - 1, resource.position.y - 1}, {resource.position.x + 1, resource.position.y + 1}},
+		type = 'mining-drill'
+	}
 
-        local drill_fluid = global.oil_derricks[drill.unit_number].drilling_fluid
-        -- log(serpent.block(drill_fluid))
-        local ran = math.random(1, 4)
-        local drill_num = string.match(drill.name, '%d+')
-        local fluid_num = string.match(drill_fluid, '%d+') + 1
-        local new_oil_amount = 10000 * ran * drill_num * fluid_num
-        --log(ran)
-        --log(drill_num)
-        --log(fluid_num)
-        --log(new_oil_amount)
-        -- new_oil_amount = new_oil_amount * string.match(string.match(drill.name, "%d+"), "[^0]")
-        game.surfaces[E.surface.name].create_entity {
-            name = resource_name,
-            amount = new_oil_amount,
-            position = E.position
-        }
-        game.surfaces[E.surface.name].create_entity {
-            name = drill_name .. '-mk' .. string.match(drill.name, '%d+'),
-            position = drill.position,
-            force = drill.force
-        }
-        global.oil_derricks[drill.unit_number].base.destroy()
-        global.oil_derricks[drill.unit_number] = nil
-        drill.destroy()
-    end
-end)
+	for _, drill in pairs(active_drills) do
+		local drill_data = derrick_types[drill.name]
+		if drill_data then
+			local drill_fluid = global.oil_derricks[drill.unit_number].drilling_fluid
+			local fluid_tier = drill_fluid:match('%d$') + 1
+			local drill_tier = drill.name:match('%d$')
+			local random_factor = math.random(1, 4)
+			local new_patch_size = 10000 * random_factor * drill_tier * fluid_tier
 
-script.on_event(defines.events.on_entity_died, function(event)
-	local E = event.entity
-    -- log('hit')
-    if string.match(E.name, 'seep') ~= nil then
-        local entity = game.surfaces[E.surface.name].find_entities_filtered {
-            position = E.position,
-            type = 'assembling-machine'
-        }
-        for e, ent in pairs(entity) do
-			ent.destroy()
+			resource.surface.create_entity {
+				name = drill_data.resource,
+				amount = new_patch_size,
+				position = resource.position
+			}
+			resource.surface.create_entity {
+				name = drill_data.replacement,
+				position = drill.position,
+				force = drill.force
+			}
+			global.oil_derricks[drill.unit_number].base.destroy()
+			global.oil_derricks[drill.unit_number] = nil
+			drill.destroy()
 		end
-		if E.valid == true then
-			global.oil_derricks[E.unit_number] = nil
-		end
-    end
+	end
 end)
