@@ -56,14 +56,14 @@ local function add_seep(event)
 	local drill = event.created_entity
 	local drill_base = derrick_types[drill.name]
 
-	local patches = game.surfaces[drill.surface.name].find_entities_filtered {
+	local patches = drill.surface.find_entities_filtered {
 		area = {{drill.position.x - 1, drill.position.y - 1}, {drill.position.x + 1, drill.position.y + 1}},
 		type = 'resource'
 	}
 
 	for _, patch in pairs(patches) do
 		if patch.name == 'bitumen-seep' then
-			local assembler = game.surfaces[drill.surface.name].create_entity {
+			local assembler = drill.surface.create_entity {
 				name = drill_base.base,
 				force = drill.force,
 				position = drill.position
@@ -80,7 +80,7 @@ local function add_seep(event)
 			drill.active = false
 		else
 			local resource_type = patch.name:match('(.*)(%-%w*)$')
-			game.surfaces[drill.surface.name].create_entity {
+			drill.surface.create_entity {
 				name = resource_types[resource_type] .. drill.name:match('%d$'),
 				force = drill.force,
 				position = drill.position
@@ -93,17 +93,13 @@ script.on_event(defines.events.on_built_entity, add_seep, event_filter)
 script.on_event(defines.events.on_robot_built_entity, add_seep, event_filter)
 
 -- Destroy hidden assembler when removing drill
-local function remove_seep(find_results, source)
-	for _, assembler in pairs(find_results) do
-		assembler.destroy()
-	end
+local function remove_seep(assembler, source)
+	assembler.destroy()
 	global.oil_derricks[source.unit_number] = nil
 end
 -- Match hidden assembler rotation to drill rotation
-local function rotate_seep(find_results, source)
-	for _, assembler in pairs(find_results) do
-		assembler.direction = source.direction
-	end
+local function rotate_seep(assembler, source)
+	assembler.direction = source.direction
 end
 
 local actions = {
@@ -117,11 +113,12 @@ local function on_entity_modified(event)
 	local building = event.entity
 	-- on_player_rotated_entity can't be filtered :)
     if derrick_types[building.name] then
-        local child_entity = game.surfaces[building.surface.name].find_entities_filtered {
+        local child_entity = building.surface.find_entities_filtered {
             position = building.position,
-            type = 'assembling-machine'
-        }
-        actions[event.name](child_entity, building)
+            type = 'assembling-machine',
+			limit = 1
+        }[1]
+		if child_entity then actions[event.name](child_entity, building) end
     end
 end
 script.on_event(defines.events.on_player_mined_entity, on_entity_modified, event_filter)
@@ -163,7 +160,7 @@ end)
 
 -- Overwrites seep amounts when they are generated
 script.on_event(defines.events.on_chunk_generated, function(event)
-    local bitumen_patches = game.surfaces[event.surface.name].find_entities_filtered {name = 'bitumen-seep', area = event.area}
+    local bitumen_patches = event.surface.find_entities_filtered {name = 'bitumen-seep', area = event.area}
     for _, patch in pairs(bitumen_patches) do
 		patch.amount = math.random(1000, 2500)
 	end
@@ -175,7 +172,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 		return
 	end
 
-	local active_drills = game.surfaces[resource.surface.name].find_entities_filtered {
+	local active_drills = resource.surface.find_entities_filtered {
 		area = {{resource.position.x - 1, resource.position.y - 1}, {resource.position.x + 1, resource.position.y + 1}},
 		type = 'mining-drill'
 	}
@@ -197,7 +194,8 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 			resource.surface.create_entity {
 				name = drill_data.replacement,
 				position = drill.position,
-				force = drill.force
+				force = drill.force,
+				direction = drill.direction
 			}
 			global.oil_derricks[drill.unit_number].base.destroy()
 			global.oil_derricks[drill.unit_number] = nil

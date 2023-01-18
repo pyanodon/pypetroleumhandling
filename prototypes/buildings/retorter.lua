@@ -30,6 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "retorter",
+    fixed_recipe = 'kerogen-extraction',
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/retorter.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
