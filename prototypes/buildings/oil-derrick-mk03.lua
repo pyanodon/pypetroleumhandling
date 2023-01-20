@@ -1,35 +1,34 @@
---[[
+
 RECIPE {
     type = "recipe",
     name = "oil-derrick-mk03",
-    energy_required = 5,
+    energy_required = 15,
     enabled = false,
     ingredients = {
-        {"oil-derrick-mk02", 1},
+        {"bitumen-seep-mk02", 1},
         {"distilator", 1},
-        {"automated-factory-mk01", 1},
         {"steel-plate", 100},
+        {"electric-engine-unit", 10},
         {"processing-unit", 15},
         {"small-parts-03", 25},
         {"pipe", 20},
     },
     results = {
-        {"oil-derrick-mk03", 1}
+        {"bitumen-seep-mk03", 1}
     }
-}:add_unlock("oil-machines-mk03"):replace_ingredient("distilator", "distilator-mk02")
+}:add_unlock("oil-machines-mk03"):replace_ingredient("distilator", "distilator-mk03")
 
 ITEM {
     type = "item",
-    name = "oil-derrick-mk03",
+    name = "bitumen-seep-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk03.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-mk03",
     order = "a",
-    place_result = "oil-derrick-mk03",
+    place_result = "bitumen-seep-mk03",
     stack_size = 10
 }
-]]--
 
 ENTITY {
     type = "mining-drill",
@@ -46,7 +45,7 @@ ENTITY {
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
     module_specification = {
-        module_slots = 1
+        module_slots = 3
     },
     allowed_effects = {"consumption", "speed", "productivity"},
     energy_source = {
@@ -126,4 +125,72 @@ ENTITY {
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick-2.ogg", volume = 0.3},
         apparent_volume = 2.5
     },
+}
+
+local seep = table.deepcopy(data.raw['mining-drill']['oil-derrick-mk03'])
+seep.name = 'bitumen-seep-mk03'
+seep.resource_categories = {'bitumen-seep', 'oil-mk03', 'oil-mk02', 'oil-mk01'}
+data:extend{seep}
+
+ENTITY {
+    type = "assembling-machine",
+    name = "bitumen-seep-mk03-base",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
+	icon_size = 32,
+    flags = {"placeable-neutral"},
+    --minable = {mining_time = 0.5, result = "coalbed-mk01"},
+    max_health = 100,
+    corpse = "medium-remnants",
+    dying_explosion = "big-explosion",
+    collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
+    selection_box = {{0,0}, {0,0}},
+    match_animation_speed_to_activity = false,
+    module_specification = {
+        module_slots = 0
+    },
+    allowed_effects = {},
+    crafting_categories = {"drilling-fluid"},
+    crafting_speed = 1,
+    energy_source = {
+        type = "void",
+    },
+    energy_usage = "1W",
+    fixed_recipe = 'drilling-fluids',
+    fluid_boxes = {
+        --1
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-2,5}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-1,5}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {1,5}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {2,5}}}
+        },
+        off_when_no_fluid_recipe = false
+    },
+    selectable_in_game = false,
+    localised_name = {'entity-name.oil-derrick-mk03'},
+    localised_description = {'entity-description.oil-derrick-mk03'}
 }

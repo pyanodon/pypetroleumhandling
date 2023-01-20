@@ -1,34 +1,31 @@
---[[
 RECIPE {
     type = "recipe",
     name = "tar-extractor-mk04",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"tar-extractor-mk03", 1},
+        {"tar-seep-mk03", 1},
         {"nbfe-alloy", 30},
         {"concrete", 35},
         {"low-density-structure", 30},
         {"small-parts-03", 40},
-        {"electric-engine-unit", 5},
     },
     results = {
-        {"tar-extractor-mk04", 1}
+        {"tar-seep-mk04", 1}
     }
 }:add_unlock("oil-machines-mk04")
-]]--
 
--- ITEM {
---     type = "item",
---     name = "tar-extractor-mk04",
---     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-extractor-mk04.png",
---     icon_size = 64,
---     flags = {},
---     subgroup = "py-petroleum-handling-buildings-mk04",
---     order = "a",
---     place_result = "tar-extractor-mk04",
---     stack_size = 10
--- }
+ITEM {
+    type = "item",
+    name = "tar-seep-mk04",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/tar-extractor-mk04.png",
+    icon_size = 64,
+    flags = {},
+    subgroup = "py-petroleum-handling-buildings-mk04",
+    order = "a",
+    place_result = "tar-seep-mk04",
+    stack_size = 10
+}
 
 ENTITY {
     type = "mining-drill",
@@ -45,7 +42,7 @@ ENTITY {
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
     module_specification = {
-        module_slots = 1
+        module_slots = 4
     },
     allowed_effects = {"consumption", "speed", "productivity"},
     energy_source = {
@@ -144,3 +141,8 @@ ENTITY {
         apparent_volume = 2.5
     },
 }
+
+local seep = table.deepcopy(data.raw['mining-drill']['tar-extractor-mk04'])
+seep.name = 'tar-seep-mk04'
+seep.resource_categories = {'bitumen-seep', 'tar-patch'}
+data:extend{seep}

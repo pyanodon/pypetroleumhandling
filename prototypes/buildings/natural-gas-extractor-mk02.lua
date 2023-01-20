@@ -1,32 +1,34 @@
---[[
-  RECIPE {
-    type = "recipe",
-    name = "natural-gas-extractor-mk02",
-    energy_required = 15,
-    enabled = false,
-    ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"engine-unit", 10},
-    },
-    results = {
-        {"natural-gas-extractor-mk02", 1}
-    }
-}:add_unlock("oil-machines-mk02")
-]]--
+RECIPE{
+  type = 'recipe',
+  name = 'natural-gas-seep-mk02',
+  energy_required = 15,
+  enabled = false,
+  ingredients = {
+      {"evaporator", 1},
+      {"distilator", 1},
+      {"natural-gas-seep-mk01", 1},
+      {"steel-plate", 50},
+      {"advanced-circuit", 12},
+      {"engine-unit", 5},
+      {"small-parts-02", 30},
+      {"pipe", 30},
+  },
+  results = {
+      {'natural-gas-seep-mk02', 1}
+  }
+}:add_unlock('oil-machines-mk02')
 
--- ITEM {
---   type = "item",
---   name = "natural-gas-extractor-mk02",
---   icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk02.png",
---   icon_size = 64,
---   flags = {},
---   subgroup = "py-petroleum-handling-buildings-mk02",
---   order = "a",
---   place_result = "natural-gas-extractor-mk02",
---   stack_size = 10
--- }
+ITEM{
+  type = "item",
+  name = "natural-gas-seep-mk02",
+  icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk02.png",
+  icon_size = 64,
+  flags = {},
+  subgroup = "py-petroleum-handling-buildings-mk02",
+  order = "a",
+  place_result = "natural-gas-seep-mk02",
+  stack_size = 10
+}
 
 ENTITY {
     type = "mining-drill",
@@ -138,3 +140,8 @@ ENTITY {
     },
     fast_replaceable_group = "natural-gas-extractor",
   }
+
+  local seep = table.deepcopy(data.raw['mining-drill']['natural-gas-extractor-mk02'])
+  seep.name = 'natural-gas-seep-mk02'
+  seep.resource_categories = {'bitumen-seep', 'natural-gas'}
+  data:extend{seep}

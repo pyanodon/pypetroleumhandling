@@ -1,32 +1,34 @@
---[[
-  RECIPE {
-    type = "recipe",
-    name = "natural-gas-extractor-mk03",
-    energy_required = 15,
-    enabled = false,
-    ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"engine-unit", 10},
-    },
-    results = {
-        {"natural-gas-extractor-mk03", 1}
-    }
-}:add_unlock("oil-machines-mk03")
-]]--
+RECIPE {
+  type = "recipe",
+  name = "natural-gas-seep-mk03",
+  energy_required = 15,
+  enabled = false,
+  ingredients = {
+    {"natural-gas-seep-mk02", 1},
+    {"distilator", 1},
+    {"automated-factory-mk01", 1},
+    {"steel-plate", 100},
+    {"processing-unit", 15},
+    {"electric-engine-unit", 5},
+    {"small-parts-03", 25},
+    {"pipe", 20},
+},
+  results = {
+      {"natural-gas-seep-mk03", 1}
+  }
+}:add_unlock("oil-machines-mk03"):replace_ingredient("distilator", "distilator-mk03")
 
--- ITEM {
---     type = "item",
---     name = "natural-gas-extractor-mk03",
---     icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk03.png",
---     icon_size = 64,
---     flags = {},
---     subgroup = "py-petroleum-handling-buildings-mk03",
---     order = "a",
---     place_result = "natural-gas-extractor-mk03",
---     stack_size = 10
--- }
+ITEM {
+  type = "item",
+  name = "natural-gas-seep-mk03",
+  icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk03.png",
+  icon_size = 64,
+  flags = {},
+  subgroup = "py-petroleum-handling-buildings-mk03",
+  order = "a",
+  place_result = "natural-gas-seep-mk03",
+  stack_size = 10
+}
 
 ENTITY {
     type = "mining-drill",
@@ -66,7 +68,7 @@ ENTITY {
     vector_to_place_result = {0, 0},
     module_specification =
     {
-      module_slots = 2
+      module_slots = 3
     },
     allowed_effects = {"consumption", "speed", "productivity"},
     radius_visualisation_picture =
@@ -138,3 +140,8 @@ ENTITY {
     },
     fast_replaceable_group = "natural-gas-extractor",
   }
+
+  local seep = table.deepcopy(data.raw['mining-drill']['natural-gas-extractor-mk03'])
+  seep.name = 'natural-gas-seep-mk03'
+  seep.resource_categories = {'bitumen-seep', 'natural-gas'}
+  data:extend{seep}

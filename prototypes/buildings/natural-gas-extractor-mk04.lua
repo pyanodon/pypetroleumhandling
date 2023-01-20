@@ -1,32 +1,31 @@
---[[
-  RECIPE {
-    type = "recipe",
-    name = "natural-gas-extractor-mk04",
-    energy_required = 15,
-    enabled = false,
-    ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"engine-unit", 10},
-    },
-    results = {
-        {"natural-gas-extractor-mk04", 1}
-    }
+RECIPE {
+  type = "recipe",
+  name = "natural-gas-seep-mk04",
+  energy_required = 15,
+  enabled = false,
+  ingredients = {
+    {'natural-gas-seep-mk03', 1},
+    {'distilator', 1},
+    {'nbfe-alloy', 50},
+    {'low-density-structure', 30},
+    {'pipe', 20}
+},
+  results = {
+      {"natural-gas-seep-mk04", 1}
+  }
 }:add_unlock("oil-machines-mk04")
-]]--
 
--- ITEM {
---     type = "item",
---     name = "natural-gas-extractor-mk04",
---     icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk04.png",
---     icon_size = 64,
---     flags = {},
---     subgroup = "py-petroleum-handling-buildings-mk04",
---     order = "a",
---     place_result = "natural-gas-extractor-mk04",
---     stack_size = 10
--- }
+ITEM {
+  type = "item",
+  name = "natural-gas-seep-mk04",
+  icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk04.png",
+  icon_size = 64,
+  flags = {},
+  subgroup = "py-petroleum-handling-buildings-mk04",
+  order = "a",
+  place_result = "natural-gas-seep-mk04",
+  stack_size = 10
+}
 
 ENTITY {
     type = "mining-drill",
@@ -66,7 +65,7 @@ ENTITY {
     vector_to_place_result = {0, 0},
     module_specification =
     {
-      module_slots = 2
+      module_slots = 4
     },
     allowed_effects = {"consumption", "speed", "productivity"},
     radius_visualisation_picture =
@@ -138,3 +137,8 @@ ENTITY {
     },
     fast_replaceable_group = "natural-gas-extractor",
   }
+
+  local seep = table.deepcopy(data.raw['mining-drill']['natural-gas-extractor-mk04'])
+  seep.name = 'natural-gas-seep-mk04'
+  seep.resource_categories = {'bitumen-seep', 'natural-gas'}
+  data:extend{seep}

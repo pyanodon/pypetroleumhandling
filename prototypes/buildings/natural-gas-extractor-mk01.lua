@@ -1,32 +1,31 @@
---[[
-  RECIPE {
-    type = "recipe",
-    name = "natural-gas-extractor-mk01",
-    energy_required = 15,
-    enabled = false,
-    ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"engine-unit", 10},
-    },
-    results = {
-        {"natural-gas-extractor-mk01", 1}
-    }
-}:add_unlock("oil-machines-mk01")
-]]--
+RECIPE {
+  type = "recipe",
+  name = "natural-gas-seep-mk01",
+  energy_required = 15,
+  enabled = false,
+  ingredients = {
+    {"steam-engine", 1},
+    {"iron-plate", 30},
+    {"electronic-circuit", 5},
+    {"small-parts-01", 10},
+    {"pipe", 10},
+  },
+  results = {
+      {"natural-gas-seep-mk01", 1}
+  }
+}:add_unlock("drilling-fluid-mk01")
 
--- ITEM {
---     type = "item",
---     name = "natural-gas-extractor-mk01",
---     icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk01.png",
---     icon_size = 64,
---     flags = {},
---     subgroup = "py-petroleum-handling-buildings-mk01",
---     order = "a",
---     place_result = "natural-gas-extractor-mk01",
---     stack_size = 10
--- }
+ITEM {
+  type = "item",
+  name = "natural-gas-seep-mk01",
+  icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk01.png",
+  icon_size = 64,
+  flags = {},
+  subgroup = "py-petroleum-handling-buildings-mk01",
+  order = "a",
+  place_result = "natural-gas-seep-mk01",
+  stack_size = 10
+}
 
 ENTITY {
     type = "mining-drill",
@@ -66,7 +65,7 @@ ENTITY {
     vector_to_place_result = {0, 0},
     module_specification =
     {
-      module_slots = 2
+      module_slots = 1
     },
     allowed_effects = {"consumption", "speed", "productivity"},
     radius_visualisation_picture =
@@ -138,3 +137,70 @@ ENTITY {
     },
     fast_replaceable_group = "natural-gas-extractor",
   }
+
+  local seep = table.deepcopy(data.raw['mining-drill']['natural-gas-extractor-mk01'])
+  seep.name = 'natural-gas-seep-mk01'
+  seep.resource_categories = {'bitumen-seep', 'natural-gas'}
+  data:extend{seep}
+
+  ENTITY {
+    type = "assembling-machine",
+    name = "natural-gas-seep-mk01-base",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
+	icon_size = 32,
+    flags = {"placeable-neutral"},
+    max_health = 100,
+    corpse = "medium-remnants",
+    dying_explosion = "big-explosion",
+    collision_box = {{ -3.2, -3.2}, {3.2, 3.2}},
+    selection_box = {{0,0}, {0,0}},
+    match_animation_speed_to_activity = false,
+    module_specification = {
+        module_slots = 0
+    },
+    allowed_effects = {},
+    crafting_categories = {"drilling-fluid"},
+    crafting_speed = 1,
+    energy_source = {
+        type = "void",
+    },
+    energy_usage = "1W",
+    fixed_recipe = 'drilling-fluids',
+    fluid_boxes = {
+        --1
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-2, 4}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {-2, -4}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {2, -4}}}
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_level = -1,
+            pipe_connections = {{type = "input", position = {2, 4}}}
+        },
+        off_when_no_fluid_recipe = false
+    },
+    selectable_in_game = false,
+    localised_name = {'entity-name.natural-gas-extractor-mk01'},
+    localised_description = {'entity-description.natural-gas-extractor-mk01'}
+}
