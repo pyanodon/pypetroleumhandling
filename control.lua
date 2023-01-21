@@ -1,3 +1,5 @@
+local update_rate = 67
+
 -- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
 -- if you need the commented code that was here, go to git revision <= 4e9cd2f4bc7916ea438986d8037d63338463438e
 script.on_init(function()
@@ -52,9 +54,27 @@ for drill in pairs(derrick_types) do
 	}
 end
 
+-- Renders some text showing how close the seep is to opening
+local function render_text(drill, time_to_live)
+	local patch = drill.patch
+	if not patch or not patch.valid then return end
+
+	rendering.draw_text{
+		time_to_live = 68,
+		target = drill.entity,
+		text = patch.amount,
+		surface = drill.entity.surface,
+		color = {1, 1, 1},
+		scale = 2,
+		alignment = 'center',
+		target_offset = {0, -1.5}
+	}
+end
+
 local function add_seep(event)
-	local drill = event.created_entity
+	local drill = event.created_entity or event.entity
 	local drill_base = derrick_types[drill.name]
+	if not drill_base then return end
 
 	local patches = drill.surface.find_entities_filtered {
 		area = {{drill.position.x - 1, drill.position.y - 1}, {drill.position.x + 1, drill.position.y + 1}},
@@ -68,16 +88,16 @@ local function add_seep(event)
 				force = drill.force,
 				position = drill.position
 			}
-			if assembler then
-				assembler.set_recipe('drilling-fluids')
-				assembler.active = false
-				global.oil_derricks[drill.unit_number] = {
-					entity = drill,
-					base = assembler,
-					drilling_fluid = ''
-				}
-			end
+			assembler.set_recipe('drilling-fluids')
+			assembler.active = false
+			global.oil_derricks[drill.unit_number] = {
+				entity = drill,
+				base = assembler,
+				drilling_fluid = '',
+				patch = patch
+			}
 			drill.active = false
+			render_text(global.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
 		else
 			local resource_type = patch.name:match('(.*)(%-%w*)$')
 			drill.surface.create_entity {
@@ -87,10 +107,13 @@ local function add_seep(event)
 			}
 			drill.destroy()
 		end
+		break
 	end
 end
 script.on_event(defines.events.on_built_entity, add_seep, event_filter)
 script.on_event(defines.events.on_robot_built_entity, add_seep, event_filter)
+script.on_event(defines.events.script_raised_revive, add_seep)
+script.on_event(defines.events.script_raised_built, add_seep)
 
 -- Destroy hidden assembler when removing drill
 local function remove_seep(assembler, source)
@@ -132,7 +155,7 @@ local fluid_threshold = 50
 local fluid_max_tier = 3
 local fluid_min_tier = 0 -- Tiers are zero-indexed here, god knows why
 
-script.on_nth_tick(31, function()
+script.on_nth_tick(update_rate, function()
     for drill_id, drill in pairs(global.oil_derricks) do
 		local drill_active = false
         local drill_contents = drill.base.get_fluid_contents()
@@ -146,7 +169,7 @@ script.on_nth_tick(31, function()
 				if contained_fluid then
 					if contained_fluid >= fluid_threshold then
 						global.oil_derricks[drill_id].drilling_fluid = fluid_type
-						drill.base.remove_fluid({name = fluid_type, amount = 5})
+						drill.base.remove_fluid({name = fluid_type, amount = 10})
 						drill_active = true
 					end
 					break
@@ -155,6 +178,8 @@ script.on_nth_tick(31, function()
 		end
 
 		drill.entity.active = drill_active
+
+		render_text(drill, update_rate + 1)
     end
 end)
 
@@ -165,6 +190,16 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 		patch.amount = math.random(1000, 2500)
 	end
 end)
+
+local function swap_module_inventory(source, destination)
+	source = source.get_module_inventory()
+	destination = destination.get_module_inventory()
+	if not source or not destination then return end
+
+	for i = 1, math.min(#source, #destination) do
+		source[i].swap_stack(destination[i])
+	end
+end
 
 script.on_event(defines.events.on_resource_depleted, function(event)
     local resource = event.entity
@@ -183,20 +218,22 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 			local drill_fluid = global.oil_derricks[drill.unit_number].drilling_fluid
 			local fluid_tier = drill_fluid:match('%d$') + 1
 			local drill_tier = drill.name:match('%d$')
-			local random_factor = math.random(1, 4)
-			local new_patch_size = 10000 * random_factor * drill_tier * fluid_tier
+			local random_factor = math.random(3, 5)
+			local new_patch_size = 40000 * random_factor * drill_tier * fluid_tier
 
 			resource.surface.create_entity {
 				name = drill_data.resource,
 				amount = new_patch_size,
 				position = resource.position
 			}
-			resource.surface.create_entity {
+			swap_module_inventory(drill, resource.surface.create_entity {
 				name = drill_data.replacement,
 				position = drill.position,
 				force = drill.force,
-				direction = drill.direction
-			}
+				direction = drill.direction,
+				player = drill.last_user
+			})
+
 			global.oil_derricks[drill.unit_number].base.destroy()
 			global.oil_derricks[drill.unit_number] = nil
 			drill.destroy()
