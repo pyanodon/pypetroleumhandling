@@ -191,16 +191,29 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 	end
 end)
 
-local function swap_module_inventory(source, destination)
-	source = source.get_module_inventory()
-	destination = destination.get_module_inventory()
-	if not source or not destination then return end
+local function swap_drill(drill, replacement)
+	local surface = drill.surface
+	local parameters = {
+		name = replacement,
+		position = drill.position,
+		force = drill.force,
+		direction = drill.direction,
+		player = drill.last_user
+	}
+	local source_module_inventory = drill.get_module_inventory()
+	local module_contents
+	if source_module_inventory then module_contents = source_module_inventory.get_contents() end
+	drill.destroy()
 
-	for i = 1, math.min(#source, #destination) do
-		source[i].swap_stack(destination[i])
+	local new_drill = surface.create_entity(parameters)
+	local destination_module_inventory = new_drill.get_module_inventory()
+	if source_module_inventory and destination_module_inventory then
+		for item, amount in pairs(module_contents) do
+			destination_module_inventory.insert{name = item, amount = amount}
+		end
 	end
 end
-
+	
 script.on_event(defines.events.on_resource_depleted, function(event)
     local resource = event.entity
 	if resource.name ~= 'bitumen-seep' then
@@ -221,22 +234,16 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 			local random_factor = math.random(3, 5)
 			local new_patch_size = 40000 * random_factor * drill_tier * fluid_tier
 
+			local base = global.oil_derricks[drill.unit_number].base
+			if base and base.valid then base.destroy() end
+			global.oil_derricks[drill.unit_number] = nil
+
 			resource.surface.create_entity {
 				name = drill_data.resource,
 				amount = new_patch_size,
 				position = resource.position
 			}
-			swap_module_inventory(drill, resource.surface.create_entity {
-				name = drill_data.replacement,
-				position = drill.position,
-				force = drill.force,
-				direction = drill.direction,
-				player = drill.last_user
-			})
-
-			global.oil_derricks[drill.unit_number].base.destroy()
-			global.oil_derricks[drill.unit_number] = nil
-			drill.destroy()
+			swap_drill(drill, drill_data.replacement)
 		end
 	end
 end)

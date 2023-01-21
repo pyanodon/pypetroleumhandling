@@ -39,7 +39,7 @@ ENTITY {
     minable = {mining_time = 0.5, result = "bitumen-seep-mk03"},
     fast_replaceable_group = "oil-derrick",
     max_health = 700,
-    resource_categories = {"oil-mk03"},
+    resource_categories = {"oil-mk03", "oil-mk02", "oil-mk01"},
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
@@ -59,7 +59,6 @@ ENTITY {
         base_level = 1,
         --height = 10,
       pipe_covers = DATA.Pipes.covers(false, true, true, true),
-      pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
       pipe_connections =
       {
         {

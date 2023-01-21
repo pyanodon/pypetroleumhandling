@@ -57,7 +57,6 @@ ENTITY {
       base_level = 1,
       --height = 10,
       pipe_covers = DATA.Pipes.covers(false, true, true, true),
-      pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
       pipe_connections =
       {
         {
