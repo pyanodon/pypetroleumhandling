@@ -4,12 +4,13 @@ Date: ?
   Changes:
     - fixed crashes with bitumen
     - retorter now has fixed_recipe = 'kerogen-extraction'
-    - bitumen seeps now have 4x richness
+    - bitumen seeps now have 64x richness
     - added more module slots to bitumen mk2 mk3 mk4
     - fixed that all bitumen mines were the same speed
     - added text to the bitumen mines saying how close they were to opening
     - allowed prod modules in mines
     - reduced rng aspect of bitumen richness. random(1, 4) -> random(3, 5)
+    - added tholins and bitumen seep to pywiki
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.4
 Date: 2022-12-19
