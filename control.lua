@@ -229,10 +229,10 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 		local drill_data = derrick_types[drill.name]
 		if drill_data then
 			local drill_fluid = global.oil_derricks[drill.unit_number].drilling_fluid
-			local fluid_tier = (drill_fluid:match('%d$') + 1) * 4
-			local drill_tier = drill.name:match('%d$') * 4
-			local random_factor = math.random(1, 4) * 4
-			local new_patch_size = 10000 * random_factor * drill_tier * fluid_tier
+			local fluid_tier = (drill_fluid:match('%d$') + 1)
+			local drill_tier = drill.name:match('%d$')
+			local random_factor = math.random(1, 4)
+			local new_patch_size = 640000 * random_factor * drill_tier * fluid_tier
 
 			local base = global.oil_derricks[drill.unit_number].base
 			if base and base.valid then base.destroy() end
