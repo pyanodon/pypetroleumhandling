@@ -196,8 +196,6 @@ end
 --require("prototypes.tiles.space-plate-test")
 --require("prototypes.tiles.space")
 
-require('prototypes/tips-and-tricks')
-
 --pyph fluids
 data.raw.fluid["bitumen"].fuel_value = "1MJ"
 data.raw.fluid["scrude"].fuel_value = "0.5MJ"

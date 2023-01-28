@@ -1,4 +1,7 @@
-Event.register(Event.core_events.init_and_config, function()
+Wiki = {}
+Wiki.events = {}
+
+Wiki.events.on_init = function()
     remote.call('pywiki', 'add_section', 'petroleumhandling')
 
     remote.call('pywiki', 'add_page', {
@@ -12,4 +15,4 @@ Event.register(Event.core_events.init_and_config, function()
         section = 'petroleumhandling',
         text_only = true
     })
-end)
+end

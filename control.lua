@@ -1,3 +1,5 @@
+require 'scripts/wiki/text-pages'
+
 local update_rate = 67
 
 -- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
@@ -5,10 +7,12 @@ local update_rate = 67
 script.on_init(function()
     global.first_chunk = false
     global.oil_derricks = {}
+	Wiki.events.on_init()
 end)
 
 script.on_configuration_changed(function()
     if not global.oil_derricks == nil then global.oil_derricks = {} end
+	Wiki.events.on_init()
 end)
 
 -- Correlates our derricks and what replaces them with the seep transition, along with their hidden assembler names
