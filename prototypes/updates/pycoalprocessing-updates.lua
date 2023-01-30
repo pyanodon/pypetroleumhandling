@@ -75,6 +75,7 @@ end
 --log(serpent.block(data.raw["assembling-machine"]["advanced-foundry-mk01"]))
 
 RECIPE("stone-distilation"):remove_unlock('coal-processing-1')
+RECIPE("tailings-classification"):remove_unlock("separation"):add_unlock("fluid-processing-machines-1")
 
 if not mods['pyrawores'] then
     RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit')
