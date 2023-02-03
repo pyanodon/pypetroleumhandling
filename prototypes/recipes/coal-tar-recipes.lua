@@ -108,7 +108,7 @@ RECIPE {
     main_product = "creosote",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("wood-processing")
+}:add_unlock("creosote")
 
 RECIPE {
     type = "recipe",
