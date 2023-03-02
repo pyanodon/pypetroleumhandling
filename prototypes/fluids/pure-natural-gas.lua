@@ -2,13 +2,13 @@
 RECIPE {
     type = "recipe",
     name = "pure-natural-gas",
-    category = "heat-exchanger",
+    category = "carbonfilter",
     enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "purified-natural-gas", amount = 100},
         {type = "fluid", name = "water", amount = 300},
-        {type = "item", name = "active-carbon", amount = 2},
+        {type = "item", name = "active-carbon", amount = 1},
     },
     results = {
         {type = "fluid", name = "pure-natural-gas", amount = 100},

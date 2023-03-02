@@ -9,7 +9,7 @@ RECIPE {
         {type = "fluid", name = "gasoline", amount = 50},
     },
     results = {
-        {type = "fluid", name = "natural-gas", amount = 100},
+        {type = "fluid", name = "natural-gas", amount = 250},
         {type = "fluid", name = "condensates", amount = 100},
         {type = "fluid", name = "naphtha", amount = 50},
     },
