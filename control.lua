@@ -174,6 +174,7 @@ script.on_nth_tick(update_rate, function()
 					if contained_fluid >= fluid_threshold then
 						global.oil_derricks[drill_id].drilling_fluid = fluid_type
 						drill.base.remove_fluid({name = fluid_type, amount = 10})
+						drill.entity.force.fluid_production_statistics.on_flow(fluid_type, -10)
 						drill_active = true
 					end
 					break
