@@ -101,6 +101,8 @@ local function add_seep(event)
 				patch = patch
 			}
 			drill.active = false
+			-- Register for destruction event to handle removal via editor etc
+			script.register_on_entity_destroyed(drill)
 			render_text(global.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
 		else
 			local resource_type = patch.name:match('(.*)(%-%w*)$')
@@ -120,9 +122,9 @@ script.on_event(defines.events.script_raised_revive, add_seep)
 script.on_event(defines.events.script_raised_built, add_seep)
 
 -- Destroy hidden assembler when removing drill
-local function remove_seep(assembler, source)
+local function remove_seep(assembler, source, source_id)
 	assembler.destroy()
-	global.oil_derricks[source.unit_number] = nil
+	global.oil_derricks[source_id or source.unit_number] = nil
 end
 -- Match hidden assembler rotation to drill rotation
 local function rotate_seep(assembler, source)
@@ -133,25 +135,35 @@ local actions = {
 	[defines.events.on_player_mined_entity] = remove_seep,
 	[defines.events.on_robot_mined_entity] = remove_seep,
 	[defines.events.on_entity_died] = remove_seep,
+	[defines.events.on_entity_destroyed] = remove_seep,
 	[defines.events.on_player_rotated_entity] = rotate_seep
 }
 
 local function on_entity_modified(event)
 	local building = event.entity
-	-- on_player_rotated_entity can't be filtered :)
-    if derrick_types[building.name] then
-        local child_entity = building.surface.find_entities_filtered {
-            position = building.position,
-            type = 'assembling-machine',
-			limit = 1
-        }[1]
-		if child_entity then actions[event.name](child_entity, building) end
-    end
+	local unit_no = event.unit_number
+	if event.entity then -- All but on_entity_destroyed
+		-- on_player_rotated_entity can't be filtered :)
+		if derrick_types[building.name] then
+			local child_entity = building.surface.find_entities_filtered {
+				position = building.position,
+				type = 'assembling-machine',
+				limit = 1
+			}[1]
+			if child_entity then actions[event.name](child_entity, building) end
+		end
+	elseif unit_no then -- on_entity_destroyed provides a unit number and no entity
+		local child_entity = (global.oil_derricks[unit_no] or {}).base
+		if child_entity and child_entity.valid then
+			actions[event.name](child_entity, nil, unit_no)
+		end
+	end
 end
 script.on_event(defines.events.on_player_mined_entity, on_entity_modified, event_filter)
 script.on_event(defines.events.on_robot_mined_entity, on_entity_modified, event_filter)
 script.on_event(defines.events.on_entity_died, on_entity_modified, event_filter)
 script.on_event(defines.events.on_player_rotated_entity, on_entity_modified)
+script.on_event(defines.events.on_entity_destroyed, on_entity_modified)
 
 -- Activates/deactivates derricks based on how much drilling fluid they have
 -- Selects the best available drilling fluid to use
@@ -165,26 +177,33 @@ script.on_nth_tick(update_rate, function()
         local drill_contents = drill.base.get_fluid_contents()
 		local drill_empty = next(drill_contents) == nil
 
-		if not drill_empty then
-			-- Check possible drilling fluids in descending order of quality
-			for current_tier = fluid_max_tier, fluid_min_tier, -1 do
-				local fluid_type = 'drilling-fluid-' .. current_tier
-				local contained_fluid = drill_contents[fluid_type]
-				if contained_fluid then
-					if contained_fluid >= fluid_threshold then
-						global.oil_derricks[drill_id].drilling_fluid = fluid_type
-						drill.base.remove_fluid({name = fluid_type, amount = 10})
-						drill.entity.force.fluid_production_statistics.on_flow(fluid_type, -10)
-						drill_active = true
+		if not drill.entity.valid then
+			log("invalid drill encountered during update cycle, id: " .. drill_id)
+			on_entity_modified({
+				name = defines.events.on_entity_destroyed,
+				unit_number = drill_id
+			})
+		else
+			if not drill_empty then
+				-- Check possible drilling fluids in descending order of quality
+				for current_tier = fluid_max_tier, fluid_min_tier, -1 do
+					local fluid_type = 'drilling-fluid-' .. current_tier
+					local contained_fluid = drill_contents[fluid_type]
+					if contained_fluid then
+						if contained_fluid >= fluid_threshold then
+							global.oil_derricks[drill_id].drilling_fluid = fluid_type
+							drill.base.remove_fluid({name = fluid_type, amount = 10})
+							drill.entity.force.fluid_production_statistics.on_flow(fluid_type, -10)
+							drill_active = true
+						end
+						break
 					end
-					break
 				end
 			end
+			drill.entity.active = drill_active
+
+			render_text(drill, update_rate + 1)
 		end
-
-		drill.entity.active = drill_active
-
-		render_text(drill, update_rate + 1)
     end
 end)
 

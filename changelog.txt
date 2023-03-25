@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: 2023-2-XX
+  Changes:
+    - Added migration to ensure existing bitumen seeps are set to sane amounts
+  Bugfixes:
+    - Fixed case where removing a seep via editor would cause a crash
+---------------------------------------------------------------------------------------------------
 Version: 2.1.5
 Date: 2023-1-31
   Changes:
