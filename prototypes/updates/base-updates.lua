@@ -1,9 +1,11 @@
 
 --add kerogen to stone patches
-data.raw.resource["stone"].minable.results = {
-    {name = "stone", amount = 1},
-    {name = "kerogen",amount = 1}
-}
+if data.raw.resource.stone then
+    data.raw.resource["stone"].minable.results = {
+        {name = "stone", amount = 1},
+        {name = "kerogen",amount = 1}
+    }
+end
 
 if not mods["pyrawores"] then
     TECHNOLOGY("explosives"):add_pack("chemical-science-pack")
