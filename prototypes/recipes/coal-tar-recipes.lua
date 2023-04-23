@@ -118,11 +118,11 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "naphthalene-oil", amount = 50},
+        {type = "fluid", name = "naphthalene-oil", amount = 75},
         --{type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
-        {type = "fluid", name = "aromatics", amount = 30},
+        {type = "fluid", name = "aromatics", amount = 40},
         {type = "item", name = "coke", amount = 3},
     },
     main_product = "aromatics",
