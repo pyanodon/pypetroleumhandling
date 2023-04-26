@@ -33,8 +33,8 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "natural-gas-extractor-mk03",
-    icon = "__base__/graphics/icons/pumpjack.png",
-    icon_size = 32,
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-extractor-mk03.png",
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "natural-gas-seep-mk03"},
     resource_categories = {"natural-gas"},
