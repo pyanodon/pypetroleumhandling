@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.9
-Date: ?
+Date: 2023-7-25
   Changes:
-    - update chinese translation. credit sdqwo 
+    - update chinese translation. credit sdqwo
+    - tweaked the aromatics from naphthalene oil recipe. increased naphthalene oil input( 50 -> 75). increased aromatics output(30 -> 40)
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.8
 Date: 2023-4-16
