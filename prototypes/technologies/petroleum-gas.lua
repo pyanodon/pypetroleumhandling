@@ -36,7 +36,7 @@ TECHNOLOGY {
     }
 }
 
-TECHNOLOGY {
+--[[TECHNOLOGY {
     type = "technology",
     name = "petroleum-gas-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/gas-processing-mk03.png",
@@ -55,4 +55,4 @@ TECHNOLOGY {
         },
         time = 45
     }
-}
+}--]]

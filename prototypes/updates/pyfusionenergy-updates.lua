@@ -365,3 +365,5 @@ for e, ent in pairs(data.raw['assembling-machine']) do
     end
 end
 ]]--
+
+RECIPE('grease-table-mk04'):add_unlock('oil-machines-mk04'):add_ingredient({'bose-einstein-superfluid', 50}):add_ingredient({type = 'item', name = 'harmonic-absorber', amount = 10}):add_ingredient({type = 'item', name = 'pi-josephson-junction', amount = 10}):add_ingredient{'intelligent-unit', 25}

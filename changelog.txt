@@ -3,6 +3,8 @@ Version: 2.1.10
 Date: ?
   Changes:
     - added desulfurizator-unit-mk04
+    - added grease table mk04
+    - deleted empty, unused techs. heavy oil mk3 & petroleum gas processing mk3
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.9
 Date: 2023-7-25

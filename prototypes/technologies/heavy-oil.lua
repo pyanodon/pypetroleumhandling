@@ -34,7 +34,7 @@ TECHNOLOGY {
     }
 }
 
-TECHNOLOGY {
+--[[TECHNOLOGY {
     type = "technology",
     name = "heavy-oil-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/heavy-oil-mk03.png",
@@ -52,4 +52,4 @@ TECHNOLOGY {
         },
         time = 50
     }
-}
+}--]]
