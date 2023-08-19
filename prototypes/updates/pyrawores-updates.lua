@@ -1,6 +1,3 @@
-require("prototypes.fluids.pressured-hydrogen")
-require("prototypes.recipes.hot-stone-brick-recipes")
-
 --TECHNOLOGY--
 
 --TECHNOLOGY("oil-distillation"):add_pack("logistic-science-pack")

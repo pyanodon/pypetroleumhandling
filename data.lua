@@ -223,8 +223,11 @@ data.raw.fluid["naphthalene-oil"].fuel_value = "0.3MJ"
 data.raw.fluid["pitch"].fuel_value = "0.1MJ"
 data.raw.fluid["middle-oil"].fuel_value = "0.2MJ"
 
-if not mods["pyrawores"] then
-data.raw.fluid["hydrogen"].fuel_value = "20KJ"
+if mods["pyrawores"] then
+    require("prototypes.fluids.pressured-hydrogen")
+    require("prototypes.recipes.hot-stone-brick-recipes")
+else
+    data.raw.fluid["hydrogen"].fuel_value = "20KJ"
 end
 
 table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'syngas', damage_modifier = 1.2})
