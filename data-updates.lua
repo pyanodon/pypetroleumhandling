@@ -193,6 +193,7 @@ RECIPE("hotair-empty-petri-dish"):remove_unlock("petri-dish"):add_unlock("hot-ai
 local recipes_list = {
     "small-parts-02",
     "small-parts-03",
+    "kevlar-2",
 }
 
 --adding to module limitation list
