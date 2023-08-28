@@ -6,6 +6,9 @@ require("prototypes/recipe-categories")
 
 require('prototypes/items/items')
 
+-- (( Circuit Connector Definitions )) --
+require('prototypes/circuit-connector-definitions')
+-- ))
 
 --(( RESOURCES ))--
 require("prototypes.ores.oil-sand")

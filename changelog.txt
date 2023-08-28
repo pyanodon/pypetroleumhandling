@@ -6,6 +6,7 @@ Date: ?
     - added grease table mk04
     - deleted empty, unused techs. heavy oil mk3 & petroleum gas processing mk3
     - fixed that kevlar mk02 did not allow productivity when kevlar mk01 allowed it.
+    - added circuit connectivity to Oil Sand Extractors (credit: JStMorgan)
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.9
 Date: 2023-7-25
