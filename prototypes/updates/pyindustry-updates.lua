@@ -19,18 +19,14 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "bitumen", amount = 100},
-        {type = "item", name = "gravel", amount = 10},
+        {type = "fluid", name = "bitumen", amount = 10},
+        {type = "fluid", name = "anthracene-oil", amount = 10},
+        {type = "item", name = "gravel", amount = 2},
     },
     results = {
-        {type = "item", name = "py-asphalt", amount = 10},
+        {type = "item", name = "py-asphalt", amount = 2},
     },
-    main_product = "py-asphalt",
-    icon = "__pyindustry__/graphics/icons/py-asphalt-icon.png",
-    icon_size = 32,
-    subgroup = "py-tiles",
-    order = "a-asphalt-b"
-}:add_unlock("oil-sands")
+}:add_unlock("py-asphalt-mk02")
 
 RECIPE {
     type = "recipe",

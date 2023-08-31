@@ -140,7 +140,8 @@ if data.data_crawler then
 	  'chromium-rejects',
 	  'chromium-01',
 	  'copper-plate-4',
-	  'empty-comb-2'
+	  'empty-comb-2',
+	  'py-steel'
   }
 
   FUN.HAB(hablist)
