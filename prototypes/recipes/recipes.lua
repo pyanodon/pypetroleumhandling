@@ -188,26 +188,6 @@ RECIPE {
     order = "a"
 }:add_unlock("rubber-3")
 
-  -- MEDIUM DISTILLATE --
-
-  RECIPE {
-    type = "recipe",
-    name = "medium-distillate-to-stripped-distillate",
-    category = "lor",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "medium-distillate", amount = 100},
-        {type = "item", name = "nexelit-plate", amount = 1},
-    },
-    results = {
-        {type = "fluid", name = "stripped-distillate", amount = 100},
-    },
-    main_product = "stripped-distillate",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}:add_unlock("light-oil-mk02"):replace_ingredient("nexelit-plate", "ticl4")
-
   -- LOW DISTILLATE --
 
 RECIPE {
