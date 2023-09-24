@@ -42,7 +42,6 @@ RECIPE {
         {type = "item", name = "copper-ore", amount = 1, probability = 0.2},
         {type = "item", name = "ash", amount = 1, probability = 0.3}
     },
-    unlock_results = false,
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s.png",
     icon_size = 64,
     subgroup = "py-items-class",
