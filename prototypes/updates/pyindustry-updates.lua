@@ -45,5 +45,6 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s.png",
     icon_size = 64,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("separation")

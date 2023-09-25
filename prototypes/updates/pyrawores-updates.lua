@@ -547,7 +547,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-iron.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -567,7 +568,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-copper.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -587,7 +589,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-aluminium.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -607,7 +610,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-zinc.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -627,7 +631,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-lead.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -647,7 +652,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-silver.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -667,7 +673,8 @@ RECIPE {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-gold.png",
     icon_size = 32,
     subgroup = "py-items-class",
-    order = "b"
+    order = "b",
+    ignore_in_pypp = true
 }:add_unlock("oil-sands")
 
 RECIPE {
