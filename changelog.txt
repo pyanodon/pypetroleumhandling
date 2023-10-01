@@ -5,6 +5,7 @@ Date: ???
     - light oil 2 no longer unlocks medium distillates to stripped distillates twice.
     - soot recipes now unlock filtering on their results, so you can filter silver plates on splitters now without workarounds or researching silver first.
     - Drilling fluid mk04 now correctly requires military tech.
+    - removed the tar to heavy oil direct recipe
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.10
 Date: 2023-9-3
