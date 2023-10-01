@@ -128,26 +128,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "tar-to-heavycoke",
-    category = "hor",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "tar", amount = 300},
-    },
-    results = {
-        {type = "fluid", name = "heavy-oil", amount = 100},
-        {type = "item", name = "coke", amount = 20},
-    },
-    main_product = "heavy-oil",
-    icon = "__base__/graphics/icons/fluid/heavy-oil.png",
-    icon_size = 64,
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a"
-}:add_unlock("fuel-production"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
-
-RECIPE {
-    type = "recipe",
     name = "rubber-02",
     category = "hor",
     enabled = false,
