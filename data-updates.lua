@@ -199,3 +199,10 @@ local recipes_list = {
 
 --adding to module limitation list
 FUN.productivity(recipes_list)
+
+if register_cache_file ~= nil then
+    register_cache_file({"pycoalprocessing","pyfusionenergy","pyindustry","pypetroleumhandling"}, "__pypetroleumhandling__/cached-configs/pycoalprocessing+pyfusionenergy+pyindustry+pypetroleumhandling")
+    register_cache_file({"pycoalprocessing","pyfusionenergy","pyindustry","pyhightech","pypetroleumhandling"}, "__pypetroleumhandling__/cached-configs/pycoalprocessing+pyfusionenergy+pyhightech+pyindustry+pypetroleumhandling")
+    register_cache_file({"pycoalprocessing","pyfusionenergy","pyindustry","pyrawores","pypetroleumhandling"}, "__pypetroleumhandling__/cached-configs/pycoalprocessing+pyfusionenergy+pyindustry+pypetroleumhandling+pyrawores")
+    register_cache_file({"pycoalprocessing","pyfusionenergy","pyindustry","pyrawores","pyhightech","pypetroleumhandling"}, "__pypetroleumhandling__/cached-configs/pycoalprocessing+pyfusionenergy+pyhightech+pyindustry+pypetroleumhandling+pyrawores")
+end
