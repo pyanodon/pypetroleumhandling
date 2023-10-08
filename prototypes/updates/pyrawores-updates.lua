@@ -812,6 +812,7 @@ RECIPE {
 }:add_unlock("energy-3")
 ]]--
 
+--[[
 RECIPE {
     type = "recipe",
     name = "oil-breakdown-2",
@@ -832,27 +833,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("oil-distillation")
-
-RECIPE {
-    type = "recipe",
-    name = "tar-breakdown-2",
-    category = "distilator",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "tar", amount = 650},
-        {type = "fluid", name = "coke-oven-gas", amount = 70},
-    },
-    results = {
-        {type = "fluid", name = "residual-oil", amount = 150},
-        {type = "fluid", name = "low-distillate", amount = 150},
-        {type = "fluid", name = "medium-distillate", amount = 150},
-        {type = "fluid", name = "high-distillate", amount = 150},
-    },
-    main_product = "residual-oil",
-    subgroup = "py-petroleum-handling-fluids",
-    order = "a"
-}:add_unlock("oil-distillation")
+]]--
 
 RECIPE {
     type = "recipe",
