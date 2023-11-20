@@ -7,6 +7,7 @@ Date: ???
     - Drilling fluid mk04 now correctly requires military tech.
     - removed the tar to heavy oil direct recipe
     - added decentralised PyPP cache file
+    - greatly increased the fluidbox size for natural gas extractors, oil derricks, and tar extractors (https://github.com/pyanodon/pybugreports/issues/323)
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.10
 Date: 2023-9-3

@@ -52,7 +52,7 @@ ENTITY {
     },
     output_fluid_box =
     {
-      base_area = 1,
+      base_area = 20,
       base_level = 1,
       pipe_covers = DATA.Pipes.covers(false, true, true, true),
       pipe_connections =
