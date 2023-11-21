@@ -1,11 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.11
-Date: ???
+Date: 2023-11-21
   Changes:
     - light oil 2 no longer unlocks medium distillates to stripped distillates twice.
     - soot recipes now unlock filtering on their results, so you can filter silver plates on splitters now without workarounds or researching silver first.
     - Drilling fluid mk04 now correctly requires military tech.
     - removed the tar to heavy oil direct recipe
+    - removed the tar with coke oven gas to oil distilites recipe
     - added decentralised PyPP cache file
     - greatly increased the fluidbox size for natural gas extractors, oil derricks, and tar extractors (https://github.com/pyanodon/pybugreports/issues/323)
 ---------------------------------------------------------------------------------------------------
@@ -138,8 +139,8 @@ Date: 2020-12-10
   Changes:
     - Moved molten tin chromium alloy to smelter.
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.0
-Date: ????
+Version: 2.0.0
+Date: 2020-11-29
   Changes:
     - Moved tin chromium alloy to smelter.
 ---------------------------------------------------------------------------------------------------
