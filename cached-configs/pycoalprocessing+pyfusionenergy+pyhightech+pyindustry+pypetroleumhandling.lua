@@ -376,3 +376,4 @@ fix_tech("drilling-fluid-mk04",{order="000036",prerequisites={"drilling-fluid-mk
 fix_tech("hot-air-mk01",{order="000004",prerequisites={"fluid-pressurization"},unit={count=40,ingredients={{amount=1,name="automation-science-pack",type="item"}},time=30}})
 fix_tech("oil-distillation",{order="000014",prerequisites={"petroleum-gas-mk01"},unit={count=200,ingredients={{amount=2,name="automation-science-pack",type="item"},{amount=1,name="logistic-science-pack",type="item"}},time=60}})
 fix_tech("vanadium-processing-2",{order="000024",prerequisites={"advanced-mining-facilities"},unit={count=900,ingredients={{amount=3,name="automation-science-pack",type="item"},{amount=2,name="logistic-science-pack",type="item"},{amount=1,name="chemical-science-pack",type="item"}},time=120}})
+fix_tech("tmp-bioreserve-super-7-tech",{order="000002",prerequisites={},unit={count=20,ingredients={{amount=1,name="automation-science-pack",type="item"}},time=30}})
