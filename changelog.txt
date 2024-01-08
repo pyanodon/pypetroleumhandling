@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.12
-Date: When it's done
+Date: 2024-1-8
   Changes:
     - Added circuit connectivity to Natural Gas Extractors, Oil Derricks and Tar Extractors (credit: JStMorgan)
+    - Added not rotatable flag to storage tanks
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.11
 Date: 2023-11-21
