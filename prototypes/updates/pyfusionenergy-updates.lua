@@ -95,7 +95,7 @@ RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts
 RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 
 if not mods["pyhightech"] then
-    if mods["pyrawores"] then
+    if mods["pyrawores"] and not mods["pyalienlife"] then
         RECIPE("gas-separator-mk01"):remove_unlock("coke-mk02"):add_unlock("sulfur-processing")
     else
         RECIPE("gas-separator-mk01"):remove_unlock('helium-processing-mk02'):add_unlock("petroleum-gas-mk02")
