@@ -37,7 +37,7 @@ RECIPE("solvent-separation"):remove_unlock("vanadium-processing"):add_unlock("va
 RECIPE("acid-strip-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 RECIPE("pregnant-solution"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 if not mods["pyrawores"] then
-RECIPE("sodium-chlorate"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
+    RECIPE("sodium-chlorate"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 end
 RECIPE("vanadium-oxide"):remove_unlock("vanadium-processing"):add_unlock("vanadium-processing-2")
 
@@ -94,12 +94,12 @@ RECIPE("fusion-reactor-mk01"):add_ingredient({type = "item", name = "small-parts
 
 RECIPE("gas-separator-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 
-if not mods["pyhightech"] and not mods["pyrawores"] then
-    RECIPE("gas-separator-mk01"):remove_unlock('helium-processing-mk02'):add_unlock("petroleum-gas-mk02")
-elseif mods["pyhightech"] then
-    RECIPE("gas-separator-mk01"):remove_unlock("helium-processing-mk02"):add_unlock("sulfur-processing")
-elseif mods["pyrawores"] and not mods["pyalienlife"] then
-    RECIPE("gas-separator-mk01"):remove_unlock("coke-mk02"):add_unlock("sulfur-processing")
+if not mods["pyhightech"] then
+    if mods["pyrawores"] then
+        RECIPE("gas-separator-mk01"):remove_unlock("coke-mk02"):add_unlock("sulfur-processing")
+    else
+        RECIPE("gas-separator-mk01"):remove_unlock('helium-processing-mk02'):add_unlock("petroleum-gas-mk02")
+    end
 end
 
 RECIPE("mixer-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("drilling-fluid-mk01")
