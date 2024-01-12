@@ -3,6 +3,7 @@ Version: 2.1.13
 Date: ?
   Changes:
     - Fixed sulfur processing tech unlocking the gas processing unit twice (https://github.com/pyanodon/pybugreports/issues/366)
+    - Added post-game (space science) tholins recipe to obtain small amounts of tritium without fusion.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.12
 Date: 2024-1-8

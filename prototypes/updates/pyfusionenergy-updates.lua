@@ -212,42 +212,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "tholin-to-deuterium",
-    category = "tholin-plant",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-        {type = "fluid", name = "tholins", amount = 400},
-    },
-    results = {
-        {type = "fluid", name = "deuterium", amount = 20},
-    },
-    icon = "__pyfusionenergygraphics__/graphics/icons/deuterium.png",
-    icon_size = 32,
-    subgroup = "py-petroleum-handling-tholin-recipes",
-    order = "e"
-}:add_unlock("tholin-mk04")
-
-RECIPE {
-    type = "recipe",
-    name = "tholin-to-helium3",
-    category = "tholin-plant",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-        {type = "fluid", name = "tholins", amount = 400},
-    },
-    results = {
-        {type = "fluid", name = "helium3", amount = 10},
-    },
-    icon = "__pyfusionenergygraphics__/graphics/icons/helium3.png",
-    icon_size = 32,
-    subgroup = "py-petroleum-handling-tholin-recipes",
-    order = "e"
-}:add_unlock("tholin-mk04")
-
-RECIPE {
-    type = "recipe",
     name = "methane-to-methanol2",
     category = "methanol",
     enabled = false,
