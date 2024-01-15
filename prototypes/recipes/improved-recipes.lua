@@ -120,27 +120,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "filter-inserter-2",
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-        {type = "item", name = "steel-plate", amount = 5},
-        {type = "item", name = "electronic-circuit", amount = 10},
-        {type = "item", name = "small-parts-02", amount = 10},
-        {type = "item", name = "belt", amount = 5},
-        {type = "item", name = "fast-inserter", amount = 5},
-        {type = "fluid", name = "lubricant", amount = 200},
-    },
-    results = {
-        {type = "item", name = "filter-inserter", amount = 15},
-    },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "r"
-}:add_unlock("fast-inserter-2"):replace_ingredient("steel-plate", "titanium-plate")
-
-RECIPE {
-    type = "recipe",
     name = "stack-inserter-2",
     category = "crafting-with-fluid",
     enabled = false,
@@ -156,27 +135,6 @@ RECIPE {
     },
     results = {
         {type = "item", name = "stack-inserter", amount = 15},
-    },
-    subgroup = "py-petroleum-handling-recipes",
-    order = "r"
-}:add_unlock("stack-inserter-2"):replace_ingredient("steel-plate", "titanium-plate")
-
-RECIPE {
-    type = "recipe",
-    name = "stack-filter-inserter-2",
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-        {type = "item", name = "steel-plate", amount = 10},
-        {type = "item", name = "advanced-circuit", amount = 15},
-        {type = "item", name = "small-parts-03", amount = 10},
-        {type = "item", name = "belt", amount = 15},
-        {type = "item", name = "stack-inserter", amount = 5},
-        {type = "fluid", name = "lubricant", amount = 200},
-    },
-    results = {
-        {type = "item", name = "stack-filter-inserter", amount = 15},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
