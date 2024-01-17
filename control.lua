@@ -94,6 +94,7 @@ local function add_seep(event)
 			}
 			assembler.set_recipe('drilling-fluids')
 			assembler.active = false
+			assembler.destructible = false
 			global.oil_derricks[drill.unit_number] = {
 				entity = drill,
 				base = assembler,
@@ -173,6 +174,14 @@ local fluid_min_tier = 0 -- Tiers are zero-indexed here, god knows why
 
 script.on_nth_tick(update_rate, function()
     for drill_id, drill in pairs(global.oil_derricks) do
+		if not drill.base.valid then
+			if drill.entity and drill.entity.valid then
+				drill.entity.destroy()
+			end
+			global.oil_derricks[drill_id] = nil
+			return
+		end
+
 		local drill_active = false
         local drill_contents = drill.base.get_fluid_contents()
 		local drill_empty = next(drill_contents) == nil
