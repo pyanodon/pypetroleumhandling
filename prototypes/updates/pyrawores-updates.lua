@@ -16,7 +16,7 @@ RECIPE("heavy-oil-refinery-mk01"):add_ingredient({type = "item", name = "lead-pl
 RECIPE("heavy-oil-refinery-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 40}):add_ingredient({type = "item", name = "titanium-plate", amount = 50})
 RECIPE("heavy-oil-refinery-mk03"):add_ingredient({type = "item", name = "stainless-steel", amount = 25}):add_ingredient({type = "item", name = "aluminium-plate", amount = 40}):add_ingredient({type = "item", name = "py-heat-exchanger", amount = 1})
 RECIPE("heavy-oil-refinery-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 25})
-RECIPE("upgrader-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "chromium", amount = 5})
+--RECIPE("upgrader-mk01"):add_ingredient({type = "item", name = "lead-plate", amount = 15}):add_ingredient({type = "item", name = "chromium", amount = 5})
 RECIPE("upgrader-mk02"):add_ingredient({type = "item", name = "duralumin", amount = 20}):add_ingredient({type = "item", name = "lead-plate", amount = 20})
 RECIPE("upgrader-mk03"):add_ingredient({type = "item", name = "titanium-plate", amount = 20}):add_ingredient({type = "item", name = "stainless-steel", amount = 15})
 RECIPE("upgrader-mk04"):add_ingredient({type = "item", name = "super-steel", amount = 30})

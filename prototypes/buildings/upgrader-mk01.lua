@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"automated-factory-mk01", 1},
+        {"reformer-mk01", 1},
         {"steel-plate", 30},
         {"pipe", 30},
         {"electronic-circuit", 30},
@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"upgrader-mk01", 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("syngas")
 
 ITEM {
     type = "item",

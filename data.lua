@@ -135,6 +135,7 @@ require("prototypes/recipes/syngas-recipes")
 require("prototypes/recipes/coal-tar-recipes")
 require("prototypes/recipes/tar-distillation-recipes")
 require("prototypes/recipes/guar")
+require("prototypes/recipes/gasoline-recipes")
 
 --(( FLUIDs ))--
 require("prototypes.fluids.oil-sand-slurry")

@@ -51,3 +51,11 @@ todo:
 
 DONE:
 middle oil: seperated into light, carbolic, and naphthalene oils
+
+
+Coke handling:
+    - add methods for converting coke and coal with water to coal slurry
+    - add coal slurry to dirty syngas recipe
+        page number 4597
+    - add methanol to gasoline recipe with aluminium and silicon catalysts
+        An aqueous solution of silica, sodium aluminate, sodium hydroxide, 
