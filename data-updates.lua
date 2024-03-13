@@ -148,8 +148,8 @@ if data.data_crawler then
 
   local extra_hot_air_recipes =
 	  {
-		  'niobium-plate',
-		  'molybdenum-plate',
+		  --'niobium-plate',
+		  --'molybdenum-plate',
 		  --glass hot air recipes
 		  'flask',
 		  'flask-2',
