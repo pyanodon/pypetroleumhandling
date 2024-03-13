@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.14
+Date: 2024-3-13
+  Changes:
+    - Fixed niobium and molybdenum plate have a hot air recipe and use productivity modules. removed hot air recipe
+---------------------------------------------------------------------------------------------------
 Version: 2.1.13
 Date: 2024-1-19
   Changes:
