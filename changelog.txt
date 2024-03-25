@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.15
+Date: 2024-3-??
+  Changes:
+    - Fixed thickener mk01 had a double recipe icons showing in tech tree
+    - Fixed some resources couldnt be disabled in map setup screen
+---------------------------------------------------------------------------------------------------
 Version: 2.1.14
 Date: 2024-3-13
   Changes:
