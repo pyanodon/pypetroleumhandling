@@ -35,6 +35,7 @@ ENTITY {
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "tar-seep-mk03"},
+    placeable_by = {item = "tar-seep-mk03", count = 1},
     fast_replaceable_group = "tar-extractor",
     max_health = 700,
     resource_categories = {"tar-patch"},

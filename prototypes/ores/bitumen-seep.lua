@@ -42,6 +42,7 @@ ENTITY {
     autoplace = {
       name = "bitumen-seep",
       order = "c-bitumen-seep", -- Other resources are "b"; oil won't get placed if something else is already there.
+      control = "bitumen-seep",
       -- We return the chance of spawning on any given tile here
       probability_expression = noise.define_noise_function( function(x, y, tile, map)
         -- This is the user's map setting for the frequency of this ore

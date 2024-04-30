@@ -37,6 +37,7 @@ ENTITY {
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "natural-gas-seep-mk03"},
+    placeable_by = {item = "natural-gas-seep-mk03", count = 1},
     resource_categories = {"natural-gas"},
     max_health = 200,
     corpse = "big-remnants",

@@ -110,7 +110,10 @@ RECIPE("py-heat-exchanger"):add_ingredient({type = "item", name = "small-parts-0
 RECIPE("jig-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("nmf-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("secondary-crusher-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
-RECIPE("thickener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("electric-engine-unit", "engine-unit"):remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
+RECIPE("thickener-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50}):replace_ingredient("electric-engine-unit", "engine-unit")
+if not mods["pyrawores"] then
+    RECIPE("thickener-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
+end
 RECIPE("xyhiphoe-pool-mk01"):add_ingredient({type = "item", name = "small-parts-01", amount = 50})
 RECIPE("agitator-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("vanadium-processing")
 
