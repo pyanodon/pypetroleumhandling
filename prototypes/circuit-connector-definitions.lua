@@ -67,6 +67,17 @@ circuit_connector_definitions["oil-sand-extractor-mkxx"] = circuit_connector_def
   }
 )
 
+circuit_connector_definitions["sulfur-mine"] = circuit_connector_definitions.create
+(
+  universal_connector_template,
+  {--Directions are up, right, down, left.
+    { variation = 2, main_offset = util.by_pixel(90, 72), shadow_offset = util.by_pixel(84, 60), show_shadow = false },
+    { variation = 2, main_offset = util.by_pixel(90, 72), shadow_offset = util.by_pixel(84, 60), show_shadow = false },
+    { variation = 2, main_offset = util.by_pixel(90, 72), shadow_offset = util.by_pixel(84, 60), show_shadow = false },
+    { variation = 2, main_offset = util.by_pixel(90, 72), shadow_offset = util.by_pixel(84, 60), show_shadow = false }
+  }
+)
+
 circuit_connector_definitions["tar-extractor-mkxx"] = circuit_connector_definitions.create
 (
   universal_connector_template,
