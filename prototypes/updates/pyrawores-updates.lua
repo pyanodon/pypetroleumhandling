@@ -111,10 +111,10 @@ RECIPE("bitumen-seep-mk04"):replace_ingredient('distilator', 'distilator-mk04')
 
 --RECIPES--
 
-RECIPE("oil-sand-slurry"):change_category("hydroclassifier")
-RECIPE("bitumen"):change_category("flotation")
-RECIPE("chloroethanol"):change_category("wet-scrubber")
-RECIPE("ethylene-glycol"):change_category("scrubber")
+RECIPE("oil-sand-slurry").category = 'hydroclassifier'
+RECIPE("bitumen").category = 'flotation'
+RECIPE("chloroethanol").category = 'wet-scrubber'
+RECIPE("ethylene-glycol").category = 'scrubber'
 RECIPE("py-tank-10000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
 RECIPE("bitumen-to-oil"):add_ingredient({type = "fluid", name = "hydrogen", amount = 150})
 RECIPE("bitumen-to-oil2"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
@@ -365,7 +365,7 @@ RECIPE {
         {type = "item", name = "plastic-bar", amount = 5},
     },
     main_product = "plastic-bar",
-}:replace_ingredient("naphtha", "propene"):change_category("fbreactor")
+}:replace_ingredient("naphtha", "propene").category = 'fbreactor'
 
 if mods['pyhightech'] then
     RECIPE("plastic-bar-02"):add_unlock("plastics-mk03")

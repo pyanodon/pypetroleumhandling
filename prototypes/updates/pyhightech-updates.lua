@@ -52,7 +52,7 @@ RECIPE("pulp-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01",
 
 RECIPE("construction-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("logistic-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
-RECIPE('benzene-aromatics'):change_category('cracker')
+RECIPE('benzene-aromatics').category = 'cracker'
 
 
 
@@ -60,7 +60,7 @@ RECIPE('benzene-aromatics'):change_category('cracker')
 
 RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50})
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "phenol", amount = 4})
-RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):change_category("fbreactor")
+RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene").category = 'fbreactor'
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 --RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})

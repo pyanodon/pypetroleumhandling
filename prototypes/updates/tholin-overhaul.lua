@@ -46,7 +46,7 @@ RECIPE {
       {"speed-module", 1}
     },
     result= "rocket-control-unit"
-  }:change_category('electronic')
+  }.category = 'electronic'
 
 RECIPE {
     type = "recipe",
