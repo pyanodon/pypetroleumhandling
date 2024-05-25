@@ -1,4 +1,4 @@
--- require("prototypes.buildings.pumpjack-hightech")
+-- require 'prototypes.buildings.pumpjack-hightech'
 
 TECHNOLOGY("fluid-handling"):set_fields{prerequisites = {}}
 

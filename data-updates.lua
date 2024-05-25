@@ -1,24 +1,20 @@
-require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-
-local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
-
 FUN.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
-require("prototypes/updates/base-updates")
-require("prototypes/updates/pycoalprocessing-updates")
-require("prototypes/updates/pyfusionenergy-updates")
-require("prototypes/updates/pyindustry-updates")
-require("prototypes/updates/compat-updates")
+require 'prototypes/updates/base-updates'
+require 'prototypes/updates/pycoalprocessing-updates'
+require 'prototypes/updates/pyfusionenergy-updates'
+require 'prototypes/updates/pyindustry-updates'
+require 'prototypes/updates/compat-updates'
 
 if mods["pyrawores"] then
-    require("prototypes/updates/pyrawores-updates")
+    require 'prototypes/updates/pyrawores-updates'
 end
 
 if mods["pyhightech"] then
-    require("prototypes/updates/pyhightech-updates")
+    require 'prototypes/updates/pyhightech-updates'
 end
 
-require('prototypes/updates/tholin-overhaul')
+require 'prototypes/updates/tholin-overhaul'
 
 --ADAPTATIONS
 
@@ -198,7 +194,7 @@ local recipes_list = {
 }
 
 --adding to module limitation list
-FUN.productivity(recipes_list)
+py.allow_productivity(recipes_list)
 
 if register_cache_file ~= nil then
     register_cache_file({"pycoalprocessing","pyfusionenergy","pyindustry","pypetroleumhandling"}, "__pypetroleumhandling__/cached-configs/pycoalprocessing+pyfusionenergy+pyindustry+pypetroleumhandling")

@@ -1,18 +1,18 @@
-local noise = require("noise")
-DATA {
+local noise = require 'noise'
+data:extend{{
     type = "autoplace-control",
     category = "resource",
     name = "sulfur-patch",
     richness = true,
     order = "r-su"
-}
+}}
 
-DATA {
+data:extend{{
     type = "noise-layer",
     name = "sulfur-patch"
-}
+}}
 
-DATA {
+data:extend{{
     type = "resource",
     name = "sulfur-patch",
     category = "sulfur-patch",
@@ -77,4 +77,4 @@ DATA {
             shift = util.by_pixel(0, 0)
         }
     }
-}
+}}
