@@ -1,4 +1,4 @@
-FUN.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
+py.global_item_replacer("iron-gear-wheel","small-parts-01",{"iron-gear-wheel","small-parts-01","casting-gear"})
 
 require 'prototypes/updates/base-updates'
 require 'prototypes/updates/pycoalprocessing-updates'
