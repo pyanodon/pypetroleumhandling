@@ -58,7 +58,7 @@ RECIPE('benzene-aromatics').category = 'cracker'
 
 ----RECIPES----
 
-RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50})
+if RECIPE['scrude-to-crude-oil'] then RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50}) end
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "phenol", amount = 4})
 RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene").category = 'fbreactor'
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
@@ -176,7 +176,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "btx", amount = 100},
         {type = "fluid", name = "steam", amount = 200},
-        {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
+        {type = "item", name = mods.pystellarexpedition and 'lead-plate' or "nexelit-plate", amount = 1}, --lead plate
     },
     results = {
         {type = "fluid", name = "ethylene", amount = 100},

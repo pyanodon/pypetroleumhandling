@@ -104,10 +104,7 @@ RECIPE("wet-scrubber-mk03"):add_ingredient({type = "item", name = "small-parts-0
 RECIPE("chemical-plant-mk02"):remove_unlock('machines-mk03'):add_unlock('oil-machines-mk02')
 RECIPE("chemical-plant-mk03"):remove_unlock('machines-mk04'):add_unlock('oil-machines-mk03')
 RECIPE("chemical-plant-mk04"):remove_unlock('machines-mk05'):add_unlock('oil-machines-mk04')
-
-RECIPE("natural-gas-seep"):replace_ingredient('distilator', 'distilator-mk02')
 RECIPE("natural-gas-seep-mk04"):replace_ingredient('distilator', 'distilator-mk04')
-RECIPE("bitumen-seep-mk04"):replace_ingredient('distilator', 'distilator-mk04')
 
 --RECIPES--
 
@@ -116,28 +113,24 @@ RECIPE("bitumen").category = 'flotation'
 RECIPE("chloroethanol").category = 'wet-scrubber'
 RECIPE("ethylene-glycol").category = 'scrubber'
 RECIPE("py-tank-10000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
-RECIPE("bitumen-to-oil"):add_ingredient({type = "fluid", name = "hydrogen", amount = 150})
-RECIPE("bitumen-to-oil2"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
-RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100})
-RECIPE("tar-to-scrude"):replace_ingredient("chromium", "ticl4")
-RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate")
+if RECIPE['bitumen-to-scrude'] then RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100}) end
+if RECIPE['tar-to-scrude'] then RECIPE("tar-to-scrude"):replace_ingredient("chromium", "ticl4") end
+if RECIPE['extract-sulfur-scrude'] then RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate") end
 RECIPE("small-parts-02"):add_ingredient({type = "item", name = "duralumin", amount = 1}):add_ingredient({type = "item", name = "glass", amount = 1}):add_ingredient({type = "item", name = "titanium-plate", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 1}):replace_ingredient("steel-plate", "stainless-steel")
 RECIPE("small-parts-03"):add_ingredient({type = "item", name = "aluminium-plate", amount = 2}):add_ingredient({type = "item", name = "glass", amount = 2}):add_ingredient({type = "item", name = "tin-plate", amount = 3}):replace_ingredient("steel-plate", "super-steel")
 RECIPE("polybutadiene"):replace_ingredient("copper-plate", "titanium-plate")
-RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4")
-RECIPE("tar-to-nafta"):replace_ingredient("chromium", "ticl4")
+if RECIPE['heavy-oil-to-gasoline'] then RECIPE("heavy-oil-to-gasoline"):replace_ingredient("nichrome", "ticl4") end
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "salt", amount = 10})
-RECIPE("btx-to-ethylene"):replace_ingredient("nexelit-plate", "lead-plate")
-RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel-plate", amount = 1})
-RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
-RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
-RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5})
+if RECIPE['heavy-oil-to-natural-gas'] then RECIPE("heavy-oil-to-natural-gas"):add_ingredient({type = "item", name = "nickel-plate", amount = 1}) end
+if RECIPE['processed-light-oil-to-olefins'] then RECIPE("processed-light-oil-to-olefins"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5}) end
+if RECIPE['processed-light-oil-to-olefins'] then RECIPE("processed-light-oil-to-light-oil"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5}) end
+if RECIPE['processed-light-oil-to-olefins'] then RECIPE("processed-light-oil-to-benzene"):remove_ingredient("nichrome"):add_ingredient({type = "item", name = "titanium-plate", amount = 5}) end
 RECIPE("ethylene-chlorohydrin"):replace_ingredient("copper-plate", "silver-plate"):replace_ingredient("carbon-dioxide", "chlorine")
 RECIPE("drilling-fluid-1"):add_ingredient({type = "item", name = "copper-ore", amount = 5})
 RECIPE("drilling-fluid-2"):replace_ingredient("water", "hydrogen-chloride")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "salt", amount = 20})
 RECIPE("bitumen-gasification"):add_ingredient({type = "fluid", name = "oxygen", amount = 50})
-RECIPE("kerogen-2"):remove_ingredient("niobium-pipe"):add_ingredient({type = "item", name = "super-steel", amount = 3})
+if RECIPE['kerogen-2'] then RECIPE("kerogen-2"):remove_ingredient("niobium-pipe"):add_ingredient({type = "item", name = "super-steel", amount = 3}) end
 RECIPE("mining-aluminium"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 100})
 RECIPE("mining-chromium"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient({type = "fluid", name = "drilling-fluid-2", amount = 150})
 --RECIPE("mining-copper"):replace_ingredient("lubricant", "drilling-fluid-1")
@@ -958,6 +951,6 @@ RECIPE('casting-niobium-pipe'):add_ingredient({type = "item", name = "rubber", a
 
 RECIPE('casting-niobium-pipe-underground'):add_ingredient({type = "item", name = "rubber", amount = 2})
 
-RECIPE('caasting-engine-unit'):add_ingredient({type = "item", name = "belt", amount = 5})
+if mods.pystellarexpedition then RECIPE('casting-engine-unit'):add_ingredient({type = "item", name = "belt", amount = 5}) end
 
 RECIPE('desulfurizator-unit-mk04'):add_unlock('oil-machines-mk04')

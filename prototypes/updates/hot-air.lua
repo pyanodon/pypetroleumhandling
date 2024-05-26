@@ -97,7 +97,7 @@ local function hotairrecipes(extra_recipes)
                 end
             end
         end
-        overrides.multiply_result_amount(recipe, result, 1.25)
+        recipe:multiply_result_amount(result, 1.25)
 
         --find tech unlock of og recipe
         local unlock
@@ -128,7 +128,7 @@ local function hotairrecipes(extra_recipes)
                 energy_required = recipe.energy_required,
                 ingredients = recipe.ingredients,
                 results = recipe.results,
-                icons = overrides.add_corner_icon_to_recipe(recipe, hotair),
+                icons = py.add_corner_icon_to_recipe(recipe, hotair),
                 --icon_size = 32,
                 main_product = recipe.main_product or nil,
                 subgroup = recipe.subgroup,
@@ -171,6 +171,6 @@ local extra_hot_air_recipes = {
 --add hot air
 hotairrecipes(extra_hot_air_recipes)
 
-RECIPE('hotair-flask'):set_enabled(false):add_unlock('hot-air-mk01')
+RECIPE('hotair-flask'):add_unlock('hot-air-mk01').enabled = false
 RECIPE('hotair-molten-glass'):remove_unlock('glass'):add_unlock('hot-air-mk01')
 RECIPE('hotair-empty-petri-dish'):remove_unlock('petri-dish'):add_unlock('hot-air-mk01')
