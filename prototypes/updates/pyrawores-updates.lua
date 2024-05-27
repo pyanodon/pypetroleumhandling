@@ -951,6 +951,4 @@ RECIPE('casting-niobium-pipe'):add_ingredient({type = "item", name = "rubber", a
 
 RECIPE('casting-niobium-pipe-underground'):add_ingredient({type = "item", name = "rubber", amount = 2})
 
-if mods.pystellarexpedition then RECIPE('casting-engine-unit'):add_ingredient({type = "item", name = "belt", amount = 5}) end
-
 RECIPE('desulfurizator-unit-mk04'):add_unlock('oil-machines-mk04')
