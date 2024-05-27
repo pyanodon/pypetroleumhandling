@@ -1,3 +1,5 @@
+require '__pypostprocessing__.lib'
+
 require 'scripts/wiki/text-pages'
 
 local update_rate = 67
@@ -280,3 +282,5 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 		end
 	end
 end)
+
+py.finalize_events()
