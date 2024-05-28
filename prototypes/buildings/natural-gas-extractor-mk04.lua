@@ -52,7 +52,7 @@ ENTITY {
     {
       base_area = 40,
       base_level = 1,
-      pipe_covers = DATA.Pipes.covers(false, true, true, true),
+      pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
       {
         {

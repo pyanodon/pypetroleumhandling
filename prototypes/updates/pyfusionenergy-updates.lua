@@ -11,7 +11,7 @@ if not mods['pyrawores'] then
     RECIPE("py-heat-exchanger"):remove_unlock("fusion-mk01"):add_unlock("oil-machines-mk02")
 end
 
-TECHNOLOGY("xyhiphoe"):remove_pack("chemical-science-pack")
+if not mods.pyalienlife then TECHNOLOGY("xyhiphoe"):remove_pack("chemical-science-pack") end
 
 RECIPE("xyhiphoe-pool-mk01"):replace_ingredient("advanced-circuit", "electronic-circuit")
 
@@ -155,10 +155,10 @@ RECIPE("py-heat-exchanger-mk03"):add_ingredient({type = "item", name = "small-pa
 
 ----RECIPES----
 
-RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
-RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+if data.raw.recipe['scrude-to-natural-gas'] then RECIPE("scrude-to-natural-gas"):add_ingredient({type = "fluid", name = "vacuum", amount = 100}) end
+if data.raw.recipe['scrude-to-light-oil'] then RECIPE("scrude-to-light-oil"):add_ingredient({type = "fluid", name = "vacuum", amount = 100}) end
 RECIPE("carbon-black"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
-RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount = 100})
+if data.raw.recipe['carbon-black-2'] then RECIPE("carbon-black-2"):add_ingredient({type = "fluid", name = "vacuum", amount = 100}) end
 RECIPE("small-parts-03"):replace_ingredient("lubricant", "grease")
 RECIPE("mining-molybdenum"):replace_ingredient("coal-gas", "gasoline"):replace_ingredient("lubricant", "drilling-fluid-3")
 RECIPE("mining-molybdenum"):remove_unlock("excavation-2"):add_unlock("excavation-3")
@@ -267,72 +267,5 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("heavy-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
-
---[[
-RECIPE {
-    type = "recipe",
-    name = "kerogen-3",
-    category = "kerogen",
-    energy_required = 15,
-    ingredients = {
-        {type = "fluid", name = "hot-air", amount = 1000},
-        {type = "fluid", name = "vacuum", amount = 500},
-        {type = "item", name = "coke", amount = 10},
-        {type = "item", name = "super-alloy", amount = 2},
-    },
-    results = {
-        {type = "item", name = "kerogen", amount = 500},
-    },
-    main_product = "kerogen",
-    subgroup = "py-petroleum-handling-recipes",
-    order = "a"
-}:add_unlock("kerogen")
-]]--
-
---moving fusion to space
---[[
-TECHNOLOGY('fusion-mk01'):remove_pack('production-science-pack'):add_prereq('rocket-silo')
-
-data.raw.generator['py-turbine'].collision_mask = {'ground-tile','water-tile','layer-14'}
-
-data.raw['assembling-machine']['py-heat-exchanger'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-14'}
-
-data.raw['assembling-machine']['fusion-reactor-mk01'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-14'}
-
-data.raw['assembling-machine']['fusion-reactor-mk02'].collision_mask = {"player-layer", 'ground-tile','water-tile','layer-14'}
-
---moving fusion items to space assembler
-
-RECIPE('blanket'):set_category("space-crafting")
-
-RECIPE('blanket-chassi'):set_category("space-crafting")
-
-RECIPE('divertor'):set_category("space-crafting")
-
-RECIPE('sc-unit'):set_category("space-crafting")
-
-RECIPE('wall-shield'):set_category("space-crafting")
-
-RECIPE('reinforced-wall-shield'):set_category("space-crafting")
-
-local _ignore_entities = {}
-
-for e, ent in pairs(data.raw['assembling-machine']) do
-    --log(ent.name)
-    -- if ent.collision_mask ~= nil then
-    --     for c, col in pairs(ent.collision_mask) do
-    --         --log(c)
-    --         --log(col)
-    --     end
-    --     -- if ent.collision_mask['layer-14'] == nil then
-    --     --     --log('hit')
-    --     --     --log(ent.name)
-    --     -- end
-    -- else
-    if ent.collision_mask == nil then
-        ent.collision_mask = {"item-layer", "object-layer", "player-layer", "water-tile", 'layer-15'}
-    end
-end
-]]--
 
 RECIPE('grease-table-mk04'):add_unlock('oil-machines-mk04'):add_ingredient({'bose-einstein-superfluid', 50}):add_ingredient({type = 'item', name = 'harmonic-absorber', amount = 10}):add_ingredient({type = 'item', name = 'pi-josephson-junction', amount = 10}):add_ingredient{'intelligent-unit', 25}

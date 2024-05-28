@@ -15,7 +15,7 @@ RECIPE {
     main_product = "ethylene-chlorohydrin",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):change_category("fbreactor")
+}:add_unlock("petroleum-gas-mk02").category = 'fbreactor'
 
 FLUID {
     type = "fluid",

@@ -1,12 +1,12 @@
-local noise = require("noise")
+local noise = require 'noise'
 
-DATA {
+data:extend{{
     type = "autoplace-control",
     category = "resource",
     name = "bitumen-seep",
     richness = false,
     order = "c"
-}
+}}
 
 ENTITY {
     type = "resource",
