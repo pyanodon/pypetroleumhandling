@@ -3,6 +3,11 @@ Date: When it's done
   Changes:
     - Added circuit connectivity to Sulfur Mine (credit: JStMorgan)
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.16
+Date: 2024-6-3
+  Changes:
+    - Added circuit connectivity to Sulfur Mine (credit: JStMorgan)
+---------------------------------------------------------------------------------------------------
 Version: 2.1.15
 Date: 2024-3-24
   Changes:
