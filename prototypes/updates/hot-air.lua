@@ -122,7 +122,6 @@ local function hotairrecipes(extra_recipes)
             RECIPE {
                 type = 'recipe',
                 name = hname,
-                --category = 'hot-air-advanced-foundry',
                 category = category,
                 enabled = false,
                 energy_required = recipe.energy_required,
@@ -172,5 +171,5 @@ local extra_hot_air_recipes = {
 hotairrecipes(extra_hot_air_recipes)
 
 RECIPE('hotair-flask'):add_unlock('hot-air-mk01').enabled = false
-RECIPE('hotair-molten-glass'):remove_unlock('glass'):add_unlock('hot-air-mk01')
-RECIPE('hotair-empty-petri-dish'):remove_unlock('petri-dish'):add_unlock('hot-air-mk01')
+if RECIPE['hotair-molten-glass'] then RECIPE('hotair-molten-glass'):remove_unlock('glass'):add_unlock('hot-air-mk01') end
+if RECIPE['hotair-empty-petri-dish'] then RECIPE('hotair-empty-petri-dish'):remove_unlock('petri-dish'):add_unlock('hot-air-mk01') end

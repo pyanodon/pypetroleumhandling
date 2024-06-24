@@ -1,64 +1,64 @@
 RECIPE {
-    type = "recipe",
-    name = "fracking-rig",
+    type = 'recipe',
+    name = 'fracking-rig',
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"stone-brick", 200},
-        {"pipe", 500},
-        {"concrete", 100},
-        {"processing-unit", 50},
-        {"small-parts-03", 200},
-        {"distilator", 4},
-        {"reformer-mk03", 4},
+        {'stone-brick',                                        200},
+        {'pipe',                                               500},
+        {'concrete',                                           100},
+        {'processing-unit',                                    50},
+        {'small-parts-03',                                     200},
+        {mods.pyrawores and 'distilator-mk03' or 'distilator', 4},
+        {'reformer-mk03',                                      4},
     },
     results = {
-        {"fracking-rig", 1}
+        {'fracking-rig', 1}
     }
-}:add_unlock("fracking"):replace_ingredient("distilator", "distilator-mk03")
+}:add_unlock('fracking')
 
 ITEM {
-    type = "item",
-    name = "fracking-rig",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/fracking-rig.png",
+    type = 'item',
+    name = 'fracking-rig',
+    icon = '__pypetroleumhandlinggraphics__/graphics/icons/fracking-rig.png',
     icon_size = 64,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-extras",
-    order = "b",
-    place_result = "fracking-rig",
+    subgroup = 'py-petroleum-handling-buildings-extras',
+    order = 'b',
+    place_result = 'fracking-rig',
     stack_size = 10
 }
 
 ENTITY {
-    type = "assembling-machine",
-    name = "fracking-rig",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/fracking-rig.png",
-	icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "fracking-rig"},
-    fast_replaceable_group = "fracking",
+    type = 'assembling-machine',
+    name = 'fracking-rig',
+    icon = '__pypetroleumhandlinggraphics__/graphics/icons/fracking-rig.png',
+    icon_size = 64,
+    flags = {'placeable-neutral', 'player-creation'},
+    minable = {mining_time = 0.5, result = 'fracking-rig'},
+    fast_replaceable_group = 'fracking',
     max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
+    corpse = 'medium-remnants',
+    dying_explosion = 'big-explosion',
     collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
     selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
     match_animation_speed_to_activity = false,
     module_specification = {
         module_slots = 2
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    crafting_categories = {"fracking"},
+    allowed_effects = {'consumption', 'speed', 'productivity', 'pollution'},
+    crafting_categories = {'fracking'},
     crafting_speed = 1,
     energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
+        type = 'electric',
+        usage_priority = 'secondary-input',
         emissions_per_minute = 50,
     },
-    energy_usage = "6000kW",
+    energy_usage = '6000kW',
     animation = {
         layers = {
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/1.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/1.png',
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -67,7 +67,7 @@ ENTITY {
                 shift = util.by_pixel(0, 160)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/2.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/2.png',
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -76,7 +76,7 @@ ENTITY {
                 shift = util.by_pixel(0, 64)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/3.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/3.png',
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -85,7 +85,7 @@ ENTITY {
                 shift = util.by_pixel(0, -32)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/4.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/4.png',
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -94,7 +94,7 @@ ENTITY {
                 shift = util.by_pixel(0, -128)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/5.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/5.png',
                 width = 415,
                 height = 96,
                 line_length = 4,
@@ -103,7 +103,7 @@ ENTITY {
                 shift = util.by_pixel(0, -224)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/6.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/6.png',
                 width = 415,
                 height = 32,
                 line_length = 4,
@@ -112,7 +112,7 @@ ENTITY {
                 shift = util.by_pixel(0, -288)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh1.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh1.png',
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -122,7 +122,7 @@ ENTITY {
                 shift = util.by_pixel(16, 144)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh2.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh2.png',
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -132,7 +132,7 @@ ENTITY {
                 shift = util.by_pixel(16, 48)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh3.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh3.png',
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -142,7 +142,7 @@ ENTITY {
                 shift = util.by_pixel(16, -16)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh4.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh4.png',
                 width = 448,
                 height = 96,
                 line_length = 4,
@@ -152,7 +152,7 @@ ENTITY {
                 shift = util.by_pixel(16, -112)
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh5.png",
+                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh5.png',
                 width = 448,
                 height = 32,
                 line_length = 4,
@@ -166,56 +166,56 @@ ENTITY {
     fluid_boxes = {
         --1
         {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            production_type = 'input',
+            pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {4.0, -7.0}}}
+            pipe_connections = {{type = 'input', position = {4.0, -7.0}}}
         },
         {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            production_type = 'input',
+            pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {0.0, -7.0}}}
+            pipe_connections = {{type = 'input', position = {0.0, -7.0}}}
         },
         {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            production_type = 'input',
+            pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {-4.0, -7.0}}}
+            pipe_connections = {{type = 'input', position = {-4.0, -7.0}}}
         },
         {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            production_type = 'output',
+            pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {4.0, 7.0}}}
+            pipe_connections = {{type = 'output', position = {4.0, 7.0}}}
         },
         {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            production_type = 'output',
+            pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {0.0, 7.0}}}
+            pipe_connections = {{type = 'output', position = {0.0, 7.0}}}
         },
         {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            production_type = 'output',
+            pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {-4.0, 7.0}}}
+            pipe_connections = {{type = 'output', position = {-4.0, 7.0}}}
         },
         off_when_no_fluid_recipe = false
     },
-    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    vehicle_impact_sound = {filename = '__base__/sound/car-metal-impact.ogg', volume = 0.65},
     working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/fracking-rig.ogg", volume = 1.2},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/fracking-rig.ogg", volume = 0.3},
+        sound = {filename = '__pypetroleumhandlinggraphics__/sounds/fracking-rig.ogg', volume = 1.2},
+        idle_sound = {filename = '__pypetroleumhandlinggraphics__/sounds/fracking-rig.ogg', volume = 0.3},
         apparent_volume = 2.5
     }
 }
