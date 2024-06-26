@@ -50,4 +50,4 @@ todo:
 
 
 DONE:
-middle oil: seperated into light, carbolic, and naphthalene oils
+middle oil: separated into light, carbolic, and naphthalene oils
