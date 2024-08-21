@@ -6,6 +6,6 @@ FLUID {
     default_temperature = 10,
     gas_temperature = 15,
     heat_capacity = "1KJ",
-    base_color = {r = 25, g = 50, b = 100},
+    base_color = {r = 255, g = 0, b = 0},
     flow_color = {r = 1, g = 1, b = 1},
 }
