@@ -1,4 +1,4 @@
--- require("prototypes.buildings.pumpjack-hightech")
+-- require 'prototypes.buildings.pumpjack-hightech'
 
 TECHNOLOGY("fluid-handling"):set_fields{prerequisites = {}}
 
@@ -52,15 +52,15 @@ RECIPE("pulp-mill-mk01"):add_ingredient({type = "item", name = "small-parts-01",
 
 RECIPE("construction-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
 RECIPE("logistic-robot-ht"):add_ingredient({type = "item", name = "small-parts-03", amount = 10})
-RECIPE('benzene-aromatics'):change_category('cracker')
+RECIPE('benzene-aromatics').category = 'cracker'
 
 
 
 ----RECIPES----
 
-RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50})
+if RECIPE['scrude-to-crude-oil'] then RECIPE("scrude-to-crude-oil"):add_ingredient({type = "fluid", name = "propene", amount = 50}) end
 RECIPE("rubber-03"):add_ingredient({type = "item", name = "phenol", amount = 4})
-RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):change_category("fbreactor")
+RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene").category = 'fbreactor'
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 --RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient({type = "item", name = "collagen", amount = 2})
@@ -176,7 +176,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "btx", amount = 100},
         {type = "fluid", name = "steam", amount = 200},
-        {type = "item", name = "nexelit-plate", amount = 1}, --lead plate
+        {type = "item", name = mods.pystellarexpedition and 'lead-plate' or "nexelit-plate", amount = 1}, --lead plate
     },
     results = {
         {type = "fluid", name = "ethylene", amount = 100},

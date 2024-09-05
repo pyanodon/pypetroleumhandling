@@ -37,6 +37,7 @@ ENTITY {
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "natural-gas-seep-mk02"},
+    placeable_by = {item = "natural-gas-seep-mk02", count = 1},
     resource_categories = {"natural-gas"},
     max_health = 200,
     corpse = "big-remnants",
@@ -54,7 +55,7 @@ ENTITY {
     {
       base_area = 20,
       base_level = 1,
-      pipe_covers = DATA.Pipes.covers(false, true, true, true),
+      pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
       {
         {

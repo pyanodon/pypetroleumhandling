@@ -1,18 +1,18 @@
-local noise = require("noise")
-DATA {
+local noise = require 'noise'
+data:extend{{
     type = "autoplace-control",
     category = "resource",
     name = "sulfur-patch",
     richness = true,
     order = "r-su"
-}
+}}
 
-DATA {
+data:extend{{
     type = "noise-layer",
     name = "sulfur-patch"
-}
+}}
 
-DATA {
+data:extend{{
     type = "resource",
     name = "sulfur-patch",
     category = "sulfur-patch",
@@ -39,6 +39,7 @@ DATA {
     autoplace = {
         name = "sulfur-patch",
         order = "b-sulfur-patch",
+        control = "sulfur-patch",
         -- We return the chance of spawning on any given tile here
         probability_expression = noise.define_noise_function( function(x, y, tile, map)
             -- This is the user's map setting for the frequency of this ore
@@ -76,4 +77,4 @@ DATA {
             shift = util.by_pixel(0, 0)
         }
     }
-}
+}}

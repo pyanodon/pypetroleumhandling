@@ -1,12 +1,12 @@
--- local resource_autoplace = require("resource-autoplace");
+-- local resource_autoplace = require 'resource-autoplace';
 --[[
-DATA {
+data:extend{{
     type = "autoplace-control",
     category = "resource",
     name = "oil-mk03",
     richness = true,
     order = "c"
-}
+}}
 ]]--
 ENTITY {
     type = "resource",
