@@ -317,7 +317,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 250},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
     },
     main_product = "natural-gas",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
@@ -340,7 +340,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
     },
     main_product = "gasoline",
     icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
@@ -363,7 +363,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "syngas", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
     },
     main_product = "syngas",
     icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
@@ -459,7 +459,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             },
             results = {
                 {type = "fluid", name = "methane", amount = 300},
-                {type = "fluid", name = "steam", amount = 500, temperature = 150},
+                {type = "fluid", name = "steam", amount = 500, temperature = 150, catalyst_amount = 500},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
             main_product = "methane",
@@ -479,7 +479,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             },
             results = {
                 {type = "fluid", name = "petroleum-gas", amount = 300},
-                {type = "fluid", name = "steam", amount = 500, temperature = 150},
+                {type = "fluid", name = "steam", amount = 500, temperature = 150, catalyst_amount = 500},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
             main_product = "petroleum-gas",
@@ -1040,7 +1040,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "condensates", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 150},
+        {type = "fluid", name = "steam", amount = 200, temperature = 150, catalyst_amount = 200},
         {type = "fluid", name = "naphtha", amount = 50},
     },
     main_product = "condensates",
