@@ -28,9 +28,9 @@ RECIPE {
         {type = 'fluid', name = 'gasoline',            amount = 5}
     },
     results = {
-        {type = 'fluid', name = 'light-oil',    amount = 300},
+        {type = 'fluid', name = 'light-oil', amount = 300},
         {type = 'fluid', name = 'residual-oil', amount = 50},
-        {type = 'fluid', name = 'steam',        amount = 600, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 600, temperature = 150, catalyst_amount = 600}
     },
     main_product = 'light-oil',
     subgroup = 'py-petroleum-handling-fluids',

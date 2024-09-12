@@ -11,7 +11,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "polybutadiene", amount = 100},
-        {type = "fluid", name = "steam", amount = 1000, temperature = 150},
+        {type = "fluid", name = "steam", amount = 1000, temperature = 150, catalyst_amount = 1000},
     },
     main_product = "polybutadiene",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/polybutadiene.png",

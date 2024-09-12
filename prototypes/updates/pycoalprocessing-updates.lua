@@ -185,11 +185,11 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 150, temperature = 800},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-fuel-oil.png',
     icon_size = 32,
-    --main_product = "combustion-mixture1",
+    --main_product = 'combustion-mixture1',
     subgroup = 'py-combustion',
     order = 'k'
 }:add_unlock('energy-2')
@@ -207,7 +207,7 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 100, temperature = 600},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-natural-gas.png',
     icon_size = 32,
@@ -228,11 +228,11 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 150, temperature = 520},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-aromatics.png',
     icon_size = 32,
-    --main_product = "combustion-mixture1",
+    --main_product = 'combustion-mixture1',
     subgroup = 'py-combustion',
     order = 'k'
 }:add_unlock('energy-2')
@@ -250,11 +250,11 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 200, temperature = 600},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-scrude.png',
     icon_size = 32,
-    --main_product = "combustion-mixture1",
+    --main_product = 'combustion-mixture1',
     subgroup = 'py-combustion',
     order = 'k'
 }:add_unlock('energy-2')
@@ -272,11 +272,11 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 100, temperature = 500},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-crude-oil.png',
     icon_size = 32,
-    --main_product = "combustion-mixture1",
+    --main_product = 'combustion-mixture1',
     subgroup = 'py-combustion',
     order = 'k'
 }:add_unlock('energy-2')
@@ -294,11 +294,11 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 100, temperature = 650},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-naphtha.png',
     icon_size = 32,
-    --main_product = "combustion-mixture1",
+    --main_product = 'combustion-mixture1',
     subgroup = 'py-combustion',
     order = 'k'
 }:add_unlock('energy-2')
@@ -316,11 +316,11 @@ RECIPE {
     },
     results = {
         {type = 'fluid', name = 'combustion-mixture1', amount = 150, temperature = 520},
-        {type = 'fluid', name = 'steam',               amount = 500, temperature = 150}
+        {type = 'fluid', name = 'steam', amount = 500, temperature = 150, catalyst_amount = 500}
     },
     icon = '__pypetroleumhandlinggraphics__/graphics/icons/combustion-lubricant.png',
     icon_size = 32,
-    --main_product = "combustion-mixture1",
+    --main_product = 'combustion-mixture1',
     subgroup = 'py-combustion',
     order = 'k'
 }:add_unlock('energy-2')
