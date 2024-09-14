@@ -1,7 +1,7 @@
 -- Holds circuit connection definitions for PyPH entities.
 -- variation counts from 0 (Python-like).
 
-circuit_connector_definitions["natural-gas-extractor-mkxx"] = circuit_connector_definitions.create
+circuit_connector_definitions["natural-gas-extractor-mkxx"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -12,7 +12,7 @@ circuit_connector_definitions["natural-gas-extractor-mkxx"] = circuit_connector_
   }
 )
 
-circuit_connector_definitions["oil-derrick-mk01"] = circuit_connector_definitions.create
+circuit_connector_definitions["oil-derrick-mk01"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -23,7 +23,7 @@ circuit_connector_definitions["oil-derrick-mk01"] = circuit_connector_definition
   }
 )
 
-circuit_connector_definitions["oil-derrick-mk02"] = circuit_connector_definitions.create
+circuit_connector_definitions["oil-derrick-mk02"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -34,7 +34,7 @@ circuit_connector_definitions["oil-derrick-mk02"] = circuit_connector_definition
   }
 )
 
-circuit_connector_definitions["oil-derrick-mk03"] = circuit_connector_definitions.create
+circuit_connector_definitions["oil-derrick-mk03"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -45,7 +45,7 @@ circuit_connector_definitions["oil-derrick-mk03"] = circuit_connector_definition
   }
 )
 
-circuit_connector_definitions["oil-derrick-mk04"] = circuit_connector_definitions.create
+circuit_connector_definitions["oil-derrick-mk04"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -56,7 +56,7 @@ circuit_connector_definitions["oil-derrick-mk04"] = circuit_connector_definition
   }
 )
 
-circuit_connector_definitions["oil-sand-extractor-mkxx"] = circuit_connector_definitions.create
+circuit_connector_definitions["oil-sand-extractor-mkxx"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -67,7 +67,7 @@ circuit_connector_definitions["oil-sand-extractor-mkxx"] = circuit_connector_def
   }
 )
 
-circuit_connector_definitions["sulfur-mine"] = circuit_connector_definitions.create
+circuit_connector_definitions["sulfur-mine"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -78,7 +78,7 @@ circuit_connector_definitions["sulfur-mine"] = circuit_connector_definitions.cre
   }
 )
 
-circuit_connector_definitions["tar-extractor-mkxx"] = circuit_connector_definitions.create
+circuit_connector_definitions["tar-extractor-mkxx"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
