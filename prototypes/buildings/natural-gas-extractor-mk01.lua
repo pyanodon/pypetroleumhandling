@@ -4,14 +4,14 @@ RECIPE {
   energy_required = 15,
   enabled = false,
   ingredients = {
-    {"steam-engine", 1},
-    {"iron-plate", 30},
-    {"electronic-circuit", 5},
-    {"small-parts-01", 10},
-    {"pipe", 10},
+    {type = "item", name = "steam-engine", amount = 1},
+    {type = "item", name = "iron-plate", amount = 30},
+    {type = "item", name = "electronic-circuit", amount = 5},
+    {type = "item", name = "small-parts-01", amount = 10},
+    {type = "item", name = "pipe", amount = 10},
   },
   results = {
-      {"natural-gas-seep-mk01", 1}
+      {type = "item", name = "natural-gas-seep-mk01", amount = 1}
   }
 }:add_unlock("drilling-fluid-mk01")
 

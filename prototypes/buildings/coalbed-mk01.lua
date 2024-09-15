@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"lab", 1},
-        {"iron-plate", 100},
-        {"electric-mining-drill", 3},
-        {"chemical-plant-mk01", 1},
-        {"small-parts-01", 20},
+        {type = "item", name = "lab", amount = 1},
+        {type = "item", name = "iron-plate", amount = 100},
+        {type = "item", name = "electric-mining-drill", amount = 3},
+        {type = "item", name = "chemical-plant-mk01", amount = 1},
+        {type = "item", name = "small-parts-01", amount = 20},
     },
     results = {
-        {"coalbed-mk01", 1}
+        {type = "item", name = "coalbed-mk01", amount = 1}
     }
 }:add_unlock("coalbed-mk01")
 

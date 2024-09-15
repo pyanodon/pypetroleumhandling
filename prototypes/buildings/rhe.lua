@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"stone-brick", 50},
-        {"pipe", 30},
-        {"boiler", 5},
-        {"electronic-circuit", 5},
-        {"small-parts-01", 20},
+        {type = "item", name = "stone-brick", amount = 50},
+        {type = "item", name = "pipe", amount = 30},
+        {type = "item", name = "boiler", amount = 5},
+        {type = "item", name = "electronic-circuit", amount = 5},
+        {type = "item", name = "small-parts-01", amount = 20},
     },
     results = {
-        {"rhe", 1}
+        {type = "item", name = "rhe", amount = 1}
     }
 }:add_unlock("hot-air-mk01")
 

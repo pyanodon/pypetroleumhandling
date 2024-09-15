@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"steel-plate", 50},
-        {"washer", 1},
-        {"gasifier", 1},
-        {"electronic-circuit", 25},
-        {"small-parts-01", 20},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "washer", amount = 1},
+        {type = "item", name = "gasifier", amount = 1},
+        {type = "item", name = "electronic-circuit", amount = 25},
+        {type = "item", name = "small-parts-01", amount = 20},
     },
     results = {
-        {"tholin-plant-mk01", 1}
+        {type = "item", name = "tholin-plant-mk01", amount = 1}
     }
 }:add_unlock("tholin-mk01")
 

@@ -4,17 +4,17 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"steel-plate", 50},
-        {"tholin-plant-mk01", 1},
-        {"nexelit-plate", 10},
-        {"concrete", 40},
-        {"plastic-bar", 10},
-        {"engine-unit", 5},
-        {"advanced-circuit", 10},
-        {"small-parts-02", 30},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "tholin-plant-mk01", amount = 1},
+        {type = "item", name = "nexelit-plate", amount = 10},
+        {type = "item", name = "concrete", amount = 40},
+        {type = "item", name = "plastic-bar", amount = 10},
+        {type = "item", name = "engine-unit", amount = 5},
+        {type = "item", name = "advanced-circuit", amount = 10},
+        {type = "item", name = "small-parts-02", amount = 30},
     },
     results = {
-        {"tholin-plant-mk02", 1}
+        {type = "item", name = "tholin-plant-mk02", amount = 1}
     }
 }:add_unlock("tholin-mk02")
 

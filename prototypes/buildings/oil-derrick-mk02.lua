@@ -4,17 +4,17 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {'evaporator',                                         1},
+        {type = "item", name = 'evaporator', amount = 1},
         {mods.pyrawores and 'distilator-mk02' or 'distilator', 1},
-        {'bitumen-seep-mk01',                                  1},
-        {'engine-unit',                                        5},
-        {'steel-plate',                                        50},
-        {'advanced-circuit',                                   12},
-        {'small-parts-02',                                     30},
-        {'pipe',                                               30},
+        {type = "item", name = 'bitumen-seep-mk01', amount = 1},
+        {type = "item", name = 'engine-unit', amount = 5},
+        {type = "item", name = 'steel-plate', amount = 50},
+        {type = "item", name = 'advanced-circuit', amount = 12},
+        {type = "item", name = 'small-parts-02', amount = 30},
+        {type = "item", name = 'pipe', amount = 30},
     },
     results = {
-        {'bitumen-seep-mk02', 1}
+        {type = "item", name = 'bitumen-seep-mk02', amount = 1}
     }
 }:add_unlock('oil-machines-mk02')
 

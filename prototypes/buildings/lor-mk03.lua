@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"lor-mk02", 1},
-        {"automated-factory-mk01", 1},
-        {"steel-plate", 100},
-        {"plastic-bar", 100},
-        {"electric-engine-unit", 15},
-        {"processing-unit", 15},
-        {"small-parts-03", 25},
+        {type = "item", name = "lor-mk02", amount = 1},
+        {type = "item", name = "automated-factory-mk01", amount = 1},
+        {type = "item", name = "steel-plate", amount = 100},
+        {type = "item", name = "plastic-bar", amount = 100},
+        {type = "item", name = "electric-engine-unit", amount = 15},
+        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "small-parts-03", amount = 25},
     },
     results = {
-        {"lor-mk03", 1}
+        {type = "item", name = "lor-mk03", amount = 1}
     }
 }:add_unlock("oil-machines-mk03")
 

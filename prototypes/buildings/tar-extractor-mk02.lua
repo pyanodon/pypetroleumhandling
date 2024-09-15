@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"tar-seep-mk01", 1},
-        {"advanced-circuit", 5},
-        {"small-parts-02", 15},
-        {"engine-unit", 10},
-        {"niobium-plate", 10},
+        {type = "item", name = "tar-seep-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "small-parts-02", amount = 15},
+        {type = "item", name = "engine-unit", amount = 10},
+        {type = "item", name = "niobium-plate", amount = 10},
     },
     results = {
-        {"tar-seep-mk02", 1}
+        {type = "item", name = "tar-seep-mk02", amount = 1}
     }
 }:add_unlock("oil-machines-mk02")
 

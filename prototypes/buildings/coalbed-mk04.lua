@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"coalbed-mk03", 1},
-        {"low-density-structure", 30},
-        {"small-parts-03", 30},
-        {"nbfe-alloy", 30},
+        {type = "item", name = "coalbed-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 30},
+        {type = "item", name = "small-parts-03", amount = 30},
+        {type = "item", name = "nbfe-alloy", amount = 30},
     },
     results = {
-        {"coalbed-mk04", 1}
+        {type = "item", name = "coalbed-mk04", amount = 1}
     }
 }:add_unlock("oil-machines-mk04")
 

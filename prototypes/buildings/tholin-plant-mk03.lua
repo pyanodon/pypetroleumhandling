@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"tholin-plant-mk02", 1},
-        {"processing-unit", 5},
-        {"niobium-plate", 15},
-        {"electric-engine-unit", 5},
-        {"kevlar", 30},
-        {"small-parts-03", 40},
+        {type = "item", name = "tholin-plant-mk02", amount = 1},
+        {type = "item", name = "processing-unit", amount = 5},
+        {type = "item", name = "niobium-plate", amount = 15},
+        {type = "item", name = "electric-engine-unit", amount = 5},
+        {type = "item", name = "kevlar", amount = 30},
+        {type = "item", name = "small-parts-03", amount = 40},
     },
     results = {
-        {"tholin-plant-mk03", 1}
+        {type = "item", name = "tholin-plant-mk03", amount = 1}
     }
 }:add_unlock("tholin-mk03")
 

@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"oil-sand-extractor-mk01", 1},
-        {"advanced-circuit", 25},
-        {"concrete", 20},
-        {"engine-unit", 3},
-        {"plastic-bar", 40},
-        {"niobium-plate", 30},
-        {"small-parts-02", 20},
+        {type = "item", name = "oil-sand-extractor-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 25},
+        {type = "item", name = "concrete", amount = 20},
+        {type = "item", name = "engine-unit", amount = 3},
+        {type = "item", name = "plastic-bar", amount = 40},
+        {type = "item", name = "niobium-plate", amount = 30},
+        {type = "item", name = "small-parts-02", amount = 20},
     },
     results = {
-        {"oil-sand-extractor-mk02", 1}
+        {type = "item", name = "oil-sand-extractor-mk02", amount = 1}
     }
 }:add_unlock("oil-machines-mk02")
 

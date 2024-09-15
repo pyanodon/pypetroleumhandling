@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"pumpjack-mk01", 1},
-        {"steel-plate", 40},
-        {"advanced-circuit", 5},
-        {"small-parts-02", 30},
-        {"engine-unit", 5},
+        {type = "item", name = "pumpjack-mk01", amount = 1},
+        {type = "item", name = "steel-plate", amount = 40},
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "small-parts-02", amount = 30},
+        {type = "item", name = "engine-unit", amount = 5},
     },
     results = {
-        {"pumpjack-mk02", 1}
+        {type = "item", name = "pumpjack-mk02", amount = 1}
     }
 }:add_unlock("oil-machines-mk02")
 

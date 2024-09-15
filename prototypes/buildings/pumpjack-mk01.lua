@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"steam-engine", 1},
-        {"iron-plate", 50},
-        {"burner-mining-drill", 1},
-        {"electronic-circuit", 2},
-        {"small-parts-01", 20},
+        {type = "item", name = "steam-engine", amount = 1},
+        {type = "item", name = "iron-plate", amount = 50},
+        {type = "item", name = "burner-mining-drill", amount = 1},
+        {type = "item", name = "electronic-circuit", amount = 2},
+        {type = "item", name = "small-parts-01", amount = 20},
     },
     results = {
-        {"pumpjack-mk01", 1}
+        {type = "item", name = "pumpjack-mk01", amount = 1}
     }
 }:add_unlock("drilling-fluid-mk01")
 

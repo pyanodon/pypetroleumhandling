@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"stone-brick", 20},
-        {"pipe", 20},
-        {"steel-plate", 30},
-        --{"processing-unit", 50},
-        --{"small-parts-03", 200},
+        {type = "item", name = "stone-brick", amount = 20},
+        {type = "item", name = "pipe", amount = 20},
+        {type = "item", name = "steel-plate", amount = 30},
+        --{type = "item", name = "processing-unit", amount = 50},
+        --{type = "item", name = "small-parts-03", amount = 200},
     },
     results = {
-        {"retorter", 1}
+        {type = "item", name = "retorter", amount = 1}
     }
 }:add_unlock("kerogen")
 

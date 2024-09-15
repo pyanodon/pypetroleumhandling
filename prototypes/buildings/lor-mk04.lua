@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {'lor-mk03',                                           1},
+        {type = "item", name = 'lor-mk03', amount = 1},
         {mods.pyrawores and 'distilator-mk02' or 'distilator', 1},
-        {'nbfe-alloy',                                         50},
-        {'low-density-structure',                              30},
-        {'small-parts-03',                                     25},
+        {type = "item", name = 'nbfe-alloy', amount = 50},
+        {type = "item", name = 'low-density-structure', amount = 30},
+        {type = "item", name = 'small-parts-03', amount = 25},
     },
     results = {
-        {'lor-mk04', 1}
+        {type = "item", name = 'lor-mk04', amount = 1}
     }
 }:add_unlock('oil-machines-mk04')
 

@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"vacuum-pump-mk01", 1},
-        {"steel-plate", 30},
-        {"pipe", 30},
-        {"steam-engine", 6},
-        {"electronic-circuit", 30},
-        {"small-parts-01", 10},
+        {type = "item", name = "vacuum-pump-mk01", amount = 1},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "pipe", amount = 30},
+        {type = "item", name = "steam-engine", amount = 6},
+        {type = "item", name = "electronic-circuit", amount = 30},
+        {type = "item", name = "small-parts-01", amount = 10},
     },
     results = {
-        {"lor-mk01", 1}
+        {type = "item", name = "lor-mk01", amount = 1}
     }
 }:add_unlock("oil-machines-mk01")
 
