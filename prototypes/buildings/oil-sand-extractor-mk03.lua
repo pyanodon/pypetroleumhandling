@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"oil-sand-extractor-mk02", 1},
-        {"processing-unit", 25},
-        {"electric-engine-unit", 10},
-        {"small-parts-03", 30},
+        {type = "item", name = "oil-sand-extractor-mk02", amount = 1},
+        {type = "item", name = "processing-unit", amount = 25},
+        {type = "item", name = "electric-engine-unit", amount = 10},
+        {type = "item", name = "small-parts-03", amount = 30},
     },
     results = {
-        {"oil-sand-extractor-mk03", 1}
+        {type = "item", name = "oil-sand-extractor-mk03", amount = 1}
     }
 }:add_unlock("oil-machines-mk03")
 

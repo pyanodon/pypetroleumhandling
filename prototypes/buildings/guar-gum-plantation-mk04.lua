@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"guar-gum-plantation-mk03", 1},
-        {"low-density-structure", 40},
-        {"nbfe-alloy", 15},
+        {type = "item", name = "guar-gum-plantation-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 40},
+        {type = "item", name = "nbfe-alloy", amount = 15},
     },
     results = {
-        {"guar-gum-plantation-mk04", 1}
+        {type = "item", name = "guar-gum-plantation-mk04", amount = 1}
     }
 }:add_unlock("oil-machines-mk04")
 

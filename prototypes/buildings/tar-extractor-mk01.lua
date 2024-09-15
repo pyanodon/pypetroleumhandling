@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"distilator", 1},
-        {"automated-factory-mk01", 1},
-        {"steel-plate", 50},
-        {"electronic-circuit", 5},
-        {"small-parts-01", 20},
-        {"pipe", 20},
+        {type = "item", name = "distilator", amount = 1},
+        {type = "item", name = "automated-factory-mk01", amount = 1},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "electronic-circuit", amount = 5},
+        {type = "item", name = "small-parts-01", amount = 20},
+        {type = "item", name = "pipe", amount = 20},
     },
     results = {
-        {"tar-seep-mk01", 1}
+        {type = "item", name = "tar-seep-mk01", amount = 1}
     }
 }:add_unlock("drilling-fluid-mk01")
 

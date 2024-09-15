@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"coalbed-mk01", 1},
-        {"electric-mining-drill", 2},
-        {"evaporator", 1},
-        {"engine-unit", 6},
-        {"steel-plate", 30},
-        {"small-parts-02", 20},
+        {type = "item", name = "coalbed-mk01", amount = 1},
+        {type = "item", name = "electric-mining-drill", amount = 2},
+        {type = "item", name = "evaporator", amount = 1},
+        {type = "item", name = "engine-unit", amount = 6},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "small-parts-02", amount = 20},
     },
     results = {
-        {"coalbed-mk02", 1}
+        {type = "item", name = "coalbed-mk02", amount = 1}
     }
 }:add_unlock("coalbed-mk02")
 

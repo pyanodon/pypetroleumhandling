@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"py-tank-4000", 2},
-        {"iron-plate", 20},
-        {"steel-plate", 45},
+        {type = "item", name = "py-tank-4000", amount = 2},
+        {type = "item", name = "iron-plate", amount = 20},
+        {type = "item", name = "steel-plate", amount = 45},
     },
     results = {
-        {"py-tank-10000", 1}
+        {type = "item", name = "py-tank-10000", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 

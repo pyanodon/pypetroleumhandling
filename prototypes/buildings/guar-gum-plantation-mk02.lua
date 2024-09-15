@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"guar-gum-plantation", 1},
-        {"steel-plate", 50},
-        {"niobium-pipe", 20},
-        {"engine-unit", 3},
-        {"small-parts-02", 50},
+        {type = "item", name = "guar-gum-plantation", amount = 1},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "niobium-pipe", amount = 20},
+        {type = "item", name = "engine-unit", amount = 3},
+        {type = "item", name = "small-parts-02", amount = 50},
     },
     results = {
-        {"guar-gum-plantation-mk02", 1}
+        {type = "item", name = "guar-gum-plantation-mk02", amount = 1}
     }
 }:add_unlock("oil-machines-mk02")
 

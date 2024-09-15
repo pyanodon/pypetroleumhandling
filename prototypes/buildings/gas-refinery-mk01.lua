@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"washer", 1},
-        {"steel-plate", 30},
-        {"pipe", 30},
-        {"steam-engine", 5},
-        {"tar-processing-unit", 1},
-        {"electronic-circuit", 10},
-        {"small-parts-01", 10},
+        {type = "item", name = "washer", amount = 1},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "pipe", amount = 30},
+        {type = "item", name = "steam-engine", amount = 5},
+        {type = "item", name = "tar-processing-unit", amount = 1},
+        {type = "item", name = "electronic-circuit", amount = 10},
+        {type = "item", name = "small-parts-01", amount = 10},
     },
     results = {
-        {"gas-refinery-mk01", 1}
+        {type = "item", name = "gas-refinery-mk01", amount = 1}
     }
 }:add_unlock("oil-machines-mk01")
 

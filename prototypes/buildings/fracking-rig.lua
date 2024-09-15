@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {'stone-brick',                                        200},
-        {'pipe',                                               500},
-        {'concrete',                                           100},
-        {'processing-unit',                                    50},
-        {'small-parts-03',                                     200},
+        {type = "item", name = 'stone-brick', amount = 200},
+        {type = "item", name = 'pipe', amount = 500},
+        {type = "item", name = 'concrete', amount = 100},
+        {type = "item", name = 'processing-unit', amount = 50},
+        {type = "item", name = 'small-parts-03', amount = 200},
         {mods.pyrawores and 'distilator-mk03' or 'distilator', 4},
-        {'reformer-mk03',                                      4},
+        {type = "item", name = 'reformer-mk03', amount = 4},
     },
     results = {
-        {'fracking-rig', 1}
+        {type = "item", name = 'fracking-rig', amount = 1}
     }
 }:add_unlock('fracking')
 

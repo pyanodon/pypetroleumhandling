@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"cracker-mk03", 1},
-        {"low-density-structure", 20},
-        {"nbfe-alloy", 20},
+        {type = "item", name = "cracker-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 20},
+        {type = "item", name = "nbfe-alloy", amount = 20},
     },
     results = {
-        {"cracker-mk04", 1}
+        {type = "item", name = "cracker-mk04", amount = 1}
     }
 }:add_unlock("oil-machines-mk04")
 

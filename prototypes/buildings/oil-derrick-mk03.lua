@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {'bitumen-seep-mk02',                                  1},
+        {type = "item", name = 'bitumen-seep-mk02', amount = 1},
         {mods.pyrawores and 'distilator-mk03' or 'distilator', 1},
-        {'steel-plate',                                        100},
-        {'electric-engine-unit',                               10},
-        {'processing-unit',                                    15},
-        {'small-parts-03',                                     25},
-        {'pipe',                                               20},
+        {type = "item", name = 'steel-plate', amount = 100},
+        {type = "item", name = 'electric-engine-unit', amount = 10},
+        {type = "item", name = 'processing-unit', amount = 15},
+        {type = "item", name = 'small-parts-03', amount = 25},
+        {type = "item", name = 'pipe', amount = 20},
     },
     results = {
-        {'bitumen-seep-mk03', 1}
+        {type = "item", name = 'bitumen-seep-mk03', amount = 1}
     }
 }:add_unlock('oil-machines-mk03')
 

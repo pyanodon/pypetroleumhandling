@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"tholin-atm-mk03", 1},
-        {"low-density-structure", 25},
-        {"nichrome", 30},
-        {"electric-engine-unit", 5},
+        {type = "item", name = "tholin-atm-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 25},
+        {type = "item", name = "nichrome", amount = 30},
+        {type = "item", name = "electric-engine-unit", amount = 5},
     },
     results = {
-        {"tholin-atm-mk04", 1}
+        {type = "item", name = "tholin-atm-mk04", amount = 1}
     }
 }:add_unlock("tholin-mk04")
 

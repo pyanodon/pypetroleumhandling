@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"pumpjack-mk03", 1},
-        {"nbfe-alloy", 30},
-        {"concrete", 35},
-        {"low-density-structure", 30},
-        {"small-parts-03", 40},
+        {type = "item", name = "pumpjack-mk03", amount = 1},
+        {type = "item", name = "nbfe-alloy", amount = 30},
+        {type = "item", name = "concrete", amount = 35},
+        {type = "item", name = "low-density-structure", amount = 30},
+        {type = "item", name = "small-parts-03", amount = 40},
     },
     results = {
-        {"pumpjack-mk04", 1}
+        {type = "item", name = "pumpjack-mk04", amount = 1}
     }
 }:add_unlock("oil-machines-mk04")
 

@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"tholin-plant-mk03", 1},
-        {"low-density-structure", 10},
-        {"nbfe-alloy", 5},
+        {type = "item", name = "tholin-plant-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 10},
+        {type = "item", name = "nbfe-alloy", amount = 5},
     },
     results = {
-        {"tholin-plant-mk04", 1}
+        {type = "item", name = "tholin-plant-mk04", amount = 1}
     }
 }:add_unlock("tholin-mk04")
 

@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"electric-mining-drill", 4},
-        {"steel-plate", 30},
-        {"electronic-circuit", 10},
-        {"steam-engine", 10},
-        {"small-parts-01", 10},
+        {type = "item", name = "electric-mining-drill", amount = 4},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "electronic-circuit", amount = 10},
+        {type = "item", name = "steam-engine", amount = 10},
+        {type = "item", name = "small-parts-01", amount = 10},
     },
     results = {
-        {"oil-sand-extractor-mk01", 1}
+        {type = "item", name = "oil-sand-extractor-mk01", amount = 1}
     }
 }:add_unlock("oil-sands")
 

@@ -4,13 +4,13 @@ RECIPE{
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {'bitumen-seep-mk03', 1},
-        {'distilator', 1},
-        {'nbfe-alloy', 50},
-        {'low-density-structure', 30},
-        {'pipe', 20}
+        {type = "item", name = 'bitumen-seep-mk03', amount = 1},
+        {type = "item", name = 'distilator', amount = 1},
+        {type = "item", name = 'nbfe-alloy', amount = 50},
+        {type = "item", name = 'low-density-structure', amount = 30},
+        {type = "item", name = 'pipe', amount = 20}
     },
-    results = {{'bitumen-seep-mk04', 1}}
+    results = {{type = "item", name = 'bitumen-seep-mk04', amount = 1}}
 }:add_unlock('oil-machines-mk04')
 
 ITEM{

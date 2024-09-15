@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"reformer-mk01", 1},
-        {"steel-plate", 30},
-        {"pipe", 30},
-        {"electronic-circuit", 30},
-        {"small-parts-01", 10},
+        {type = "item", name = "reformer-mk01", amount = 1},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "pipe", amount = 30},
+        {type = "item", name = "electronic-circuit", amount = 30},
+        {type = "item", name = "small-parts-01", amount = 10},
     },
     results = {
-        {"upgrader-mk01", 1}
+        {type = "item", name = "upgrader-mk01", amount = 1}
     }
 }:add_unlock("syngas")
 

@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"electric-mining-drill", 5},
-        {"steel-plate", 60},
-        {"distilator", 1},
-        {"electronic-circuit", 40}
+        {type = "item", name = "electric-mining-drill", amount = 5},
+        {type = "item", name = "steel-plate", amount = 60},
+        {type = "item", name = "distilator", amount = 1},
+        {type = "item", name = "electronic-circuit", amount = 40}
     },
     results = {
-        {"sulfur-mine", 1}
+        {type = "item", name = "sulfur-mine", amount = 1}
     }
 }:add_unlock("sulfur-processing")
 

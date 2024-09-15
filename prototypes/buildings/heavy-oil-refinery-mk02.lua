@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"heavy-oil-refinery-mk01", 1},
-        {"advanced-circuit", 5},
-        {"small-parts-02", 20},
-        {"concrete", 40},
-        {"engine-unit", 12},
-        {"pipe", 40},
-        {"niobium-plate", 10},
+        {type = "item", name = "heavy-oil-refinery-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "small-parts-02", amount = 20},
+        {type = "item", name = "concrete", amount = 40},
+        {type = "item", name = "engine-unit", amount = 12},
+        {type = "item", name = "pipe", amount = 40},
+        {type = "item", name = "niobium-plate", amount = 10},
     },
     results = {
-        {"heavy-oil-refinery-mk02", 1}
+        {type = "item", name = "heavy-oil-refinery-mk02", amount = 1}
     }
 }:add_unlock("oil-machines-mk02")
 

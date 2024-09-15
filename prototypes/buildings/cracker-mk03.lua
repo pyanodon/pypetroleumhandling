@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"cracker-mk02", 1},
-        {"processing-unit", 20},
-        {"concrete", 20},
-        {"electric-engine-unit", 10},
-        {"small-parts-03", 30},
+        {type = "item", name = "cracker-mk02", amount = 1},
+        {type = "item", name = "processing-unit", amount = 20},
+        {type = "item", name = "concrete", amount = 20},
+        {type = "item", name = "electric-engine-unit", amount = 10},
+        {type = "item", name = "small-parts-03", amount = 30},
     },
     results = {
-        {"cracker-mk03", 1}
+        {type = "item", name = "cracker-mk03", amount = 1}
     }
 }:add_unlock("oil-machines-mk03")
 

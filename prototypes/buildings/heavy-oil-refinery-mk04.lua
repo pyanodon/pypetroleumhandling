@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"heavy-oil-refinery-mk03", 1},
-        {"low-density-structure", 20},
-        {"nbfe-alloy", 20},
+        {type = "item", name = "heavy-oil-refinery-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 20},
+        {type = "item", name = "nbfe-alloy", amount = 20},
     },
     results = {
-        {"heavy-oil-refinery-mk04", 1}
+        {type = "item", name = "heavy-oil-refinery-mk04", amount = 1}
     }
 }:add_unlock("oil-machines-mk04")
 

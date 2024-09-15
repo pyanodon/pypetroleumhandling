@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"gas-refinery-mk02", 1},
-        {"steel-plate", 100},
-        {"plastic-bar", 100},
-        {"processing-unit", 15},
-        {"electric-engine-unit", 8},
-        {"small-parts-03", 30},
+        {type = "item", name = "gas-refinery-mk02", amount = 1},
+        {type = "item", name = "steel-plate", amount = 100},
+        {type = "item", name = "plastic-bar", amount = 100},
+        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "electric-engine-unit", amount = 8},
+        {type = "item", name = "small-parts-03", amount = 30},
     },
     results = {
-        {"gas-refinery-mk03", 1}
+        {type = "item", name = "gas-refinery-mk03", amount = 1}
     }
 }:add_unlock("oil-machines-mk03")
 

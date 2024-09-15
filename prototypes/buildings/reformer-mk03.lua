@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"reformer-mk02", 1},
-        {"small-parts-03", 20},
-        {"niobium-plate", 10},
-        {"processing-unit", 15},
-        {"electric-engine-unit", 20},
-        {"concrete", 40},
-        {"engine-unit", 10},
+        {type = "item", name = "reformer-mk02", amount = 1},
+        {type = "item", name = "small-parts-03", amount = 20},
+        {type = "item", name = "niobium-plate", amount = 10},
+        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "electric-engine-unit", amount = 20},
+        {type = "item", name = "concrete", amount = 40},
+        {type = "item", name = "engine-unit", amount = 10},
     },
     results = {
-        {"reformer-mk03", 1}
+        {type = "item", name = "reformer-mk03", amount = 1}
     }
 }:add_unlock("oil-machines-mk03")
 

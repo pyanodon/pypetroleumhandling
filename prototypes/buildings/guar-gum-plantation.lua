@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"pipe", 20},
-        {"steel-plate", 20},
-        {"botanical-nursery", 1},
-        {"steam-engine", 2},
-        {"electronic-circuit", 10},
-        {"small-parts-01", 30},
+        {type = "item", name = "pipe", amount = 20},
+        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "botanical-nursery", amount = 1},
+        {type = "item", name = "steam-engine", amount = 2},
+        {type = "item", name = "electronic-circuit", amount = 10},
+        {type = "item", name = "small-parts-01", amount = 30},
     },
     results = {
-        {"guar-gum-plantation", 1}
+        {type = "item", name = "guar-gum-plantation", amount = 1}
     }
 }:add_unlock("guar")
 

@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"tar-seep-mk02", 1},
-        {"small-parts-03", 20},
-        {"plastic-bar", 100},
-        {"processing-unit", 15},
-        {"electric-engine-unit", 10},
-        {"concrete", 50},
+        {type = "item", name = "tar-seep-mk02", amount = 1},
+        {type = "item", name = "small-parts-03", amount = 20},
+        {type = "item", name = "plastic-bar", amount = 100},
+        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "electric-engine-unit", amount = 10},
+        {type = "item", name = "concrete", amount = 50},
     },
     results = {
-        {"tar-seep-mk03", 1}
+        {type = "item", name = "tar-seep-mk03", amount = 1}
     }
 }:add_unlock("oil-machines-mk03")
 

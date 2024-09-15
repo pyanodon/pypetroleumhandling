@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"oil-sand-extractor-mk03", 1},
-        {"low-density-structure", 20},
-        {"nbfe-alloy", 20},
+        {type = "item", name = "oil-sand-extractor-mk03", amount = 1},
+        {type = "item", name = "low-density-structure", amount = 20},
+        {type = "item", name = "nbfe-alloy", amount = 20},
     },
     results = {
-        {"oil-sand-extractor-mk04", 1}
+        {type = "item", name = "oil-sand-extractor-mk04", amount = 1}
     }
 }:add_unlock("oil-machines-mk04")
 
