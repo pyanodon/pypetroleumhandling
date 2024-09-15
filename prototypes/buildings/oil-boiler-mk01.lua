@@ -36,7 +36,7 @@ ENTITY {
     minable = {mining_time = 0.2, result = "oil-boiler-mk01"},
     max_health = 200,
     corpse = "boiler-remnants",
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65 },
     mode = "output-to-separate-pipe",
     resistances =
     {
