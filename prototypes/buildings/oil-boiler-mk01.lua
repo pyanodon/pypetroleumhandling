@@ -58,8 +58,7 @@ ENTITY {
     target_temperature = 250,
     fluid_box =
     {
-      base_area = 1,
-      height = 2,
+      volume = 200,
       base_level = -1,
       pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
@@ -72,9 +71,8 @@ ENTITY {
     },
     output_fluid_box =
     {
-      base_area = 1,
-      height = 2,
-      base_level = 1,
+      volume = 200,
+      volume = 100,
       pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
       {
@@ -91,7 +89,7 @@ ENTITY {
       destroy_non_fuel_fluid = false,
 	  fluid_box =
 		{
-		base_area = 1,
+		volume = 100,
 		height = 2,
 		base_level = -1,
 		pipe_connections =
