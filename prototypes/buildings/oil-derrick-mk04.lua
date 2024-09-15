@@ -51,9 +51,7 @@ ENTITY {
     },
     output_fluid_box =
     {
-        base_area = 40,
-        base_level = 1,
-        --height = 10,
+        volume = 4000,
       pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
       {
@@ -146,7 +144,7 @@ ENTITY{
             ),
             pipe_covers = py.pipe_covers(false, true, true, true
             ),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = 'input', position = {-2, 6}, direction = defines.direction.south}}
         },
@@ -156,7 +154,7 @@ ENTITY{
             ),
             pipe_covers = py.pipe_covers(false, true, true, true
             ),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = 'input', position = {-1, 6}, direction = defines.direction.south}}
         },
