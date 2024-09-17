@@ -55,27 +55,29 @@ ENTITY {
         },
     },
     energy_usage = "450kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk02/left.png",
-                width = 128,
-                height = 288,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-51, -32)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk02/right.png",
-                width = 128,
-                height = 288,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(77, -32)
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk02/left.png",
+                    width = 128,
+                    height = 288,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-51, -32)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk02/right.png",
+                    width = 128,
+                    height = 288,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(77, -32)
+                },
+            }
+        },
     },
 
     fluid_boxes = {

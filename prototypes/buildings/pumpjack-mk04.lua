@@ -74,126 +74,128 @@ ENTITY {
         },
         off_when_no_fluid_recipe = true
     },
-    animation = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a1.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-160, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a2.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-128, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a3.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-96, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a4.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-64, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a5.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-32, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a6.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(0, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a7.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(32, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a8.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(64, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a9.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(96, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a10.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(128, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a11.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(160, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a12.png",
-                width = 32,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(192, -23)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a13.png",
-                width = 16,
-                height = 403,
-                line_length = 50,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = util.by_pixel(216, -23)
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a1.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-160, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a2.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-128, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a3.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-96, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a4.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-64, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a5.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-32, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a6.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(0, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a7.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(32, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a8.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(64, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a9.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(96, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a10.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(128, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a11.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(160, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a12.png",
+                    width = 32,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(192, -23)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk04/a13.png",
+                    width = 16,
+                    height = 403,
+                    line_length = 50,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(216, -23)
+                },
+            }
+        },
     },
 
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},

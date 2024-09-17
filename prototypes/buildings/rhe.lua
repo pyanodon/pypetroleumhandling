@@ -56,32 +56,34 @@ ENTITY {
         },
     },
     energy_usage = "300kW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/rhe/off.png",
-                width = 169,
-                height = 209,
-                line_length = 1,
-                --frame_count = 100,
-                shift = util.by_pixel(4.5, -24)
+                north_position = util.by_pixel(-1.5, -95),
+                west_position = util.by_pixel(-1.5, -95),
+                south_position = util.by_pixel(-1.5, -95),
+                east_position = util.by_pixel(-1.5, -95),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/rhe/on.png",
+                    --priority = "low",
+                    frame_count = 100,
+                    line_length = 10,
+                    width = 93,
+                    height = 31,
+                    animation_speed = 0.5
+                }
             },
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = util.by_pixel(-1.5, -95),
-            west_position = util.by_pixel(-1.5, -95),
-            south_position = util.by_pixel(-1.5, -95),
-            east_position = util.by_pixel(-1.5, -95),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/rhe/on.png",
-                --priority = "low",
-                frame_count = 100,
-                line_length = 10,
-                width = 93,
-                height = 31,
-                animation_speed = 0.5
+        },
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/rhe/off.png",
+                    width = 169,
+                    height = 209,
+                    line_length = 1,
+                    --frame_count = 100,
+                    shift = util.by_pixel(4.5, -24)
+                },
             }
         },
     },

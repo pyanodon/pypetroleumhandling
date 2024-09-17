@@ -55,67 +55,69 @@ ENTITY {
         },
     },
     energy_usage = "600kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/left.png",
-                width = 128,
-                height = 238,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.3,
-                shift = util.by_pixel(-48, -6)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/left-mask.png",
-                width = 128,
-                height = 238,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.3,
-                shift = util.by_pixel(-48, -6),
-                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/right.png",
-                width = 96,
-                height = 238,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.3,
-                shift = util.by_pixel(64, -6)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/right-mask.png",
-                width = 96,
-                height = 238,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.3,
-                shift = util.by_pixel(64, -6),
-                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-left.png",
-                width = 128,
-                height = 221,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(-48, 4)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-right.png",
-                width = 105,
-                height = 221,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(64, 4)
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/left.png",
+                    width = 128,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(-48, -6)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/left-mask.png",
+                    width = 128,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(-48, -6),
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/right.png",
+                    width = 96,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(64, -6)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/right-mask.png",
+                    width = 96,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(64, -6),
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-left.png",
+                    width = 128,
+                    height = 221,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(-48, 4)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/guar-gum-plantation/sh-right.png",
+                    width = 105,
+                    height = 221,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(64, 4)
+                },
+            }
+        },
     },
 
     fluid_boxes = {

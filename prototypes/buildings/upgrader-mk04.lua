@@ -53,77 +53,79 @@ ENTITY {
         },
     },
     energy_usage = "1200kW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/left-mk01.png",
-                width = 128,
-                height = 352,
-                line_length = 16,
-                frame_count = 80,
-                animation_speed = 0.2,
-                shift = util.by_pixel(-48, -64)
+                north_position = util.by_pixel(-48, -128),
+                west_position = util.by_pixel(-48, -128),
+                south_position = util.by_pixel(-48, -128),
+                east_position = util.by_pixel(-48, -128),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/left-light.png",
+                    --priority = "low",
+                    frame_count = 80,
+                    line_length = 16,
+                    width = 128,
+                    height = 224,
+                    animation_speed = 0.5
+                }
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/left-mk01-mask.png",
-                width = 128,
-                height = 352,
-                line_length = 16,
-                frame_count = 80,
-                animation_speed = 0.2,
-                shift = util.by_pixel(-48, -64),
-                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                north_position = util.by_pixel(64, -128),
+                west_position = util.by_pixel(64, -128),
+                south_position = util.by_pixel(64, -128),
+                east_position = util.by_pixel(64, -128),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/right-light.png",
+                    --priority = "low",
+                    frame_count = 80,
+                    line_length = 16,
+                    width = 96,
+                    height = 224,
+                    animation_speed = 0.5
+                }
             },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/right-mk01.png",
-                width = 128,
-                height = 352,
-                line_length = 16,
-                frame_count = 80,
-                animation_speed = 0.2,
-                shift = util.by_pixel(80, -64)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/right-mk01-mask.png",
-                width = 128,
-                height = 352,
-                line_length = 16,
-                frame_count = 80,
-                animation_speed = 0.2,
-                shift = util.by_pixel(80, -64),
-                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-            },
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = util.by_pixel(-48, -128),
-            west_position = util.by_pixel(-48, -128),
-            south_position = util.by_pixel(-48, -128),
-            east_position = util.by_pixel(-48, -128),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/left-light.png",
-                --priority = "low",
-                frame_count = 80,
-                line_length = 16,
-                width = 128,
-                height = 224,
-                animation_speed = 0.5
-            }
         },
-        {
-            north_position = util.by_pixel(64, -128),
-            west_position = util.by_pixel(64, -128),
-            south_position = util.by_pixel(64, -128),
-            east_position = util.by_pixel(64, -128),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/right-light.png",
-                --priority = "low",
-                frame_count = 80,
-                line_length = 16,
-                width = 96,
-                height = 224,
-                animation_speed = 0.5
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/left-mk01.png",
+                    width = 128,
+                    height = 352,
+                    line_length = 16,
+                    frame_count = 80,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(-48, -64)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/left-mk01-mask.png",
+                    width = 128,
+                    height = 352,
+                    line_length = 16,
+                    frame_count = 80,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(-48, -64),
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/right-mk01.png",
+                    width = 128,
+                    height = 352,
+                    line_length = 16,
+                    frame_count = 80,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(80, -64)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/upgrader-mk01/right-mk01-mask.png",
+                    width = 128,
+                    height = 352,
+                    line_length = 16,
+                    frame_count = 80,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(80, -64),
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                },
             }
         },
     },

@@ -56,149 +56,151 @@ ENTITY {
         },
     },
     energy_usage = "2100kW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/base.png",
-                width = 487,
-                height = 491,
-                frame_count = 1,
-                shift = util.by_pixel(2, -4)
+                north_position = util.by_pixel(-197, -271),
+                west_position = util.by_pixel(-197, -271),
+                south_position = util.by_pixel(-197, -271),
+                east_position = util.by_pixel(-197, -271),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-01.png",
+                    --priority = "low",
+                    frame_count = 80,
+                    line_length = 20,
+                    draw_as_glow = true,
+                    width = 81,
+                    height = 150,
+                    run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
             },
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = util.by_pixel(-197, -271),
-            west_position = util.by_pixel(-197, -271),
-            south_position = util.by_pixel(-197, -271),
-            east_position = util.by_pixel(-197, -271),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-01.png",
-                --priority = "low",
-                frame_count = 80,
-                line_length = 20,
-                draw_as_glow = true,
-                width = 81,
-                height = 150,
-                run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
+            {
+                north_position = util.by_pixel(174, -182),
+                west_position = util.by_pixel(174, -182),
+                south_position = util.by_pixel(174, -182),
+                east_position = util.by_pixel(174, -182),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-02.png",
+                    --priority = "low",
+                    frame_count = 60,
+                    line_length = 20,
+                    width = 81,
+                    draw_as_glow = true,
+                    height = 150,
+                    run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
+            {
+                north_position = util.by_pixel(47, -111),
+                west_position = util.by_pixel(47, -111),
+                south_position = util.by_pixel(47, -111),
+                east_position = util.by_pixel(47, -111),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-03.png",
+                    --priority = "low",
+                    frame_count = 70,
+                    line_length = 10,
+                    width = 81,
+                    draw_as_glow = true,
+                    height = 150,
+                    run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
+            {
+                north_position = util.by_pixel(181.5, -1),
+                west_position = util.by_pixel(181.5, -1),
+                south_position = util.by_pixel(181.5, -1),
+                east_position = util.by_pixel(181.5, -1),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-04.png",
+                    --priority = "low",
+                    frame_count = 90,
+                    line_length = 10,
+                    width = 81,
+                    draw_as_glow = true,
+                    height = 150,
+                    run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
+            {
+                north_position = util.by_pixel(185, 161.5),
+                west_position = util.by_pixel(185, 161.5),
+                south_position = util.by_pixel(185, 161.5),
+                east_position = util.by_pixel(185, 161.5),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-05.png",
+                    --priority = "low",
+                    frame_count = 80,
+                    line_length = 10,
+                    draw_as_glow = true,
+                    width = 81,
+                    height = 150,
+                    run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
+            {
+                north_position = util.by_pixel(110.5, 102.5),
+                west_position = util.by_pixel(110.5, 102.5),
+                south_position = util.by_pixel(110.5, 102.5),
+                east_position = util.by_pixel(110.5, 102.5),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/vent.png",
+                    --priority = "low",
+                    frame_count = 40,
+                    line_length = 10,
+                    width = 64,
+                    height = 64,
+                    --run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
+            {
+                north_position = util.by_pixel(-36, -232),
+                west_position = util.by_pixel(-36, -232),
+                south_position = util.by_pixel(-36, -232),
+                east_position = util.by_pixel(-36, -232),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/vent.png",
+                    --priority = "low",
+                    frame_count = 40,
+                    line_length = 10,
+                    width = 64,
+                    height = 64,
+                    --run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
+            {
+                north_position = util.by_pixel(-145.5, 103),
+                west_position = util.by_pixel(-145.5, 103),
+                south_position = util.by_pixel(-145.5, 103),
+                east_position = util.by_pixel(-145.5, 103),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/rotate.png",
+                    --priority = "low",
+                    frame_count = 80,
+                    line_length = 10,
+                    width = 128,
+                    height = 192,
+                    --run_mode = "forward-then-backward",
+                    animation_speed = 0.5
+                }
+            },
         },
-        {
-            north_position = util.by_pixel(174, -182),
-            west_position = util.by_pixel(174, -182),
-            south_position = util.by_pixel(174, -182),
-            east_position = util.by_pixel(174, -182),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-02.png",
-                --priority = "low",
-                frame_count = 60,
-                line_length = 20,
-                width = 81,
-                draw_as_glow = true,
-                height = 150,
-                run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(47, -111),
-            west_position = util.by_pixel(47, -111),
-            south_position = util.by_pixel(47, -111),
-            east_position = util.by_pixel(47, -111),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-03.png",
-                --priority = "low",
-                frame_count = 70,
-                line_length = 10,
-                width = 81,
-                draw_as_glow = true,
-                height = 150,
-                run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(181.5, -1),
-            west_position = util.by_pixel(181.5, -1),
-            south_position = util.by_pixel(181.5, -1),
-            east_position = util.by_pixel(181.5, -1),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-04.png",
-                --priority = "low",
-                frame_count = 90,
-                line_length = 10,
-                width = 81,
-                draw_as_glow = true,
-                height = 150,
-                run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(185, 161.5),
-            west_position = util.by_pixel(185, 161.5),
-            south_position = util.by_pixel(185, 161.5),
-            east_position = util.by_pixel(185, 161.5),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/cap-05.png",
-                --priority = "low",
-                frame_count = 80,
-                line_length = 10,
-                draw_as_glow = true,
-                width = 81,
-                height = 150,
-                run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(110.5, 102.5),
-            west_position = util.by_pixel(110.5, 102.5),
-            south_position = util.by_pixel(110.5, 102.5),
-            east_position = util.by_pixel(110.5, 102.5),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/vent.png",
-                --priority = "low",
-                frame_count = 40,
-                line_length = 10,
-                width = 64,
-                height = 64,
-                --run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(-36, -232),
-            west_position = util.by_pixel(-36, -232),
-            south_position = util.by_pixel(-36, -232),
-            east_position = util.by_pixel(-36, -232),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/vent.png",
-                --priority = "low",
-                frame_count = 40,
-                line_length = 10,
-                width = 64,
-                height = 64,
-                --run_mode = "forward-then-backward",
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(-145.5, 103),
-            west_position = util.by_pixel(-145.5, 103),
-            south_position = util.by_pixel(-145.5, 103),
-            east_position = util.by_pixel(-145.5, 103),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/rotate.png",
-                --priority = "low",
-                frame_count = 80,
-                line_length = 10,
-                width = 128,
-                height = 192,
-                --run_mode = "forward-then-backward",
-                animation_speed = 0.5
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/retorter/base.png",
+                    width = 487,
+                    height = 491,
+                    frame_count = 1,
+                    shift = util.by_pixel(2, -4)
+                },
             }
         },
     },

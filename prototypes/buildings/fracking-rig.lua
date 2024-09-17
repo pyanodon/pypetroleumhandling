@@ -57,113 +57,115 @@ ENTITY {
         },
     },
     energy_usage = '6000kW',
-    animation = {
-        layers = {
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/1.png',
-                width = 415,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, 160)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/2.png',
-                width = 415,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, 64)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/3.png',
-                width = 415,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -32)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/4.png',
-                width = 415,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -128)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/5.png',
-                width = 415,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -224)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/6.png',
-                width = 415,
-                height = 32,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -288)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh1.png',
-                width = 448,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(16, 144)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh2.png',
-                width = 448,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(16, 48)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh3.png',
-                width = 448,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(16, -16)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh4.png',
-                width = 448,
-                height = 96,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(16, -112)
-            },
-            {
-                filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh5.png',
-                width = 448,
-                height = 32,
-                line_length = 4,
-                frame_count = 80,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(16, -208)
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/1.png',
+                    width = 415,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, 160)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/2.png',
+                    width = 415,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, 64)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/3.png',
+                    width = 415,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -32)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/4.png',
+                    width = 415,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -128)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/5.png',
+                    width = 415,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -224)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/6.png',
+                    width = 415,
+                    height = 32,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -288)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh1.png',
+                    width = 448,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(16, 144)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh2.png',
+                    width = 448,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(16, 48)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh3.png',
+                    width = 448,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(16, -16)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh4.png',
+                    width = 448,
+                    height = 96,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(16, -112)
+                },
+                {
+                    filename = '__pypetroleumhandlinggraphics__/graphics/entity/fracking-rig/sh5.png',
+                    width = 448,
+                    height = 32,
+                    line_length = 4,
+                    frame_count = 80,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(16, -208)
+                },
+            }
+        },
     },
     fluid_boxes = {
         --1

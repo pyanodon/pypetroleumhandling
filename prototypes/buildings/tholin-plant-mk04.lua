@@ -53,111 +53,113 @@ ENTITY {
         },
     },
     energy_usage = "1400kW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off.png",
-                width = 224,
-                height = 347,
-                frame_count = 1,
-                shift = util.by_pixel(0, -60)
+                north_position = util.by_pixel(-64, -60),
+                west_position = util.by_pixel(-64, -60),
+                south_position = util.by_pixel(-64, -60),
+                east_position = util.by_pixel(-64, -60),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a.png",
+                    frame_count = 100,
+                    line_length = 20,
+                    width = 96,
+                    height = 347,
+                    animation_speed = 0.5,
+                }
             },
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off-mask.png",
-                width = 224,
-                height = 347,
-                frame_count = 1,
-                shift = util.by_pixel(0, -60),
-                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                north_position = util.by_pixel(-64, -60),
+                west_position = util.by_pixel(-64, -60),
+                south_position = util.by_pixel(-64, -60),
+                east_position = util.by_pixel(-64, -60),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a-mask.png",
+                    frame_count = 100,
+                    line_length = 20,
+                    width = 96,
+                    height = 347,
+                    animation_speed = 0.5,
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                }
             },
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = util.by_pixel(-64, -60),
-            west_position = util.by_pixel(-64, -60),
-            south_position = util.by_pixel(-64, -60),
-            east_position = util.by_pixel(-64, -60),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a.png",
-                frame_count = 100,
-                line_length = 20,
-                width = 96,
-                height = 347,
-                animation_speed = 0.5,
-            }
+            {
+                north_position = util.by_pixel(32, -60),
+                west_position = util.by_pixel(32, -60),
+                south_position = util.by_pixel(32, -60),
+                east_position = util.by_pixel(32, -60),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b.png",
+                    frame_count = 100,
+                    line_length = 20,
+                    width = 96,
+                    height = 347,
+                    aanimation_speed = 0.5,
+                }
+            },
+            {
+                north_position = util.by_pixel(32, -60),
+                west_position = util.by_pixel(32, -60),
+                south_position = util.by_pixel(32, -60),
+                east_position = util.by_pixel(32, -60),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b-mask.png",
+                    frame_count = 100,
+                    line_length = 20,
+                    width = 96,
+                    height = 347,
+                    animation_speed = 0.5,
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                }
+            },
+            {
+                north_position = util.by_pixel(96, -60),
+                west_position = util.by_pixel(96, -60),
+                south_position = util.by_pixel(96, -60),
+                east_position = util.by_pixel(96, -60),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c.png",
+                    frame_count = 100,
+                    line_length = 20,
+                    width = 32,
+                    height = 347,
+                    animation_speed = 0.5,
+                }
+            },
+            {
+                north_position = util.by_pixel(96, -60),
+                west_position = util.by_pixel(96, -60),
+                south_position = util.by_pixel(96, -60),
+                east_position = util.by_pixel(96, -60),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c-mask.png",
+                    frame_count = 100,
+                    line_length = 20,
+                    width = 32,
+                    height = 347,
+                    animation_speed = 0.5,
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                }
+            },
         },
-        {
-            north_position = util.by_pixel(-64, -60),
-            west_position = util.by_pixel(-64, -60),
-            south_position = util.by_pixel(-64, -60),
-            east_position = util.by_pixel(-64, -60),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-a-mask.png",
-                frame_count = 100,
-                line_length = 20,
-                width = 96,
-                height = 347,
-                animation_speed = 0.5,
-                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-            }
-        },
-        {
-            north_position = util.by_pixel(32, -60),
-            west_position = util.by_pixel(32, -60),
-            south_position = util.by_pixel(32, -60),
-            east_position = util.by_pixel(32, -60),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b.png",
-                frame_count = 100,
-                line_length = 20,
-                width = 96,
-                height = 347,
-                aanimation_speed = 0.5,
-            }
-        },
-        {
-            north_position = util.by_pixel(32, -60),
-            west_position = util.by_pixel(32, -60),
-            south_position = util.by_pixel(32, -60),
-            east_position = util.by_pixel(32, -60),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-b-mask.png",
-                frame_count = 100,
-                line_length = 20,
-                width = 96,
-                height = 347,
-                animation_speed = 0.5,
-                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-            }
-        },
-        {
-            north_position = util.by_pixel(96, -60),
-            west_position = util.by_pixel(96, -60),
-            south_position = util.by_pixel(96, -60),
-            east_position = util.by_pixel(96, -60),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c.png",
-                frame_count = 100,
-                line_length = 20,
-                width = 32,
-                height = 347,
-                animation_speed = 0.5,
-            }
-        },
-        {
-            north_position = util.by_pixel(96, -60),
-            west_position = util.by_pixel(96, -60),
-            south_position = util.by_pixel(96, -60),
-            east_position = util.by_pixel(96, -60),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-c-mask.png",
-                frame_count = 100,
-                line_length = 20,
-                width = 32,
-                height = 347,
-                animation_speed = 0.5,
-                tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off.png",
+                    width = 224,
+                    height = 347,
+                    frame_count = 1,
+                    shift = util.by_pixel(0, -60)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/tholin-plant-mk01/tholin-plant-mk01-off-mask.png",
+                    width = 224,
+                    height = 347,
+                    frame_count = 1,
+                    shift = util.by_pixel(0, -60),
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                },
             }
         },
     },
