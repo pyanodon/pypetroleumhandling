@@ -7,13 +7,13 @@ local update_rate = 67
 -- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
 -- if you need the commented code that was here, go to git revision <= 4e9cd2f4bc7916ea438986d8037d63338463438e
 script.on_init(function()
-    global.first_chunk = false
-    global.oil_derricks = {}
+    storage.first_chunk = false
+    storage.oil_derricks = {}
 	Wiki.events.on_init()
 end)
 
 script.on_configuration_changed(function()
-    if not global.oil_derricks == nil then global.oil_derricks = {} end
+    if not storage.oil_derricks == nil then storage.oil_derricks = {} end
 	Wiki.events.on_init()
 end)
 
@@ -97,7 +97,7 @@ local function add_seep(event)
 			assembler.set_recipe('drilling-fluids')
 			assembler.active = false
 			assembler.destructible = false
-			global.oil_derricks[drill.unit_number] = {
+			storage.oil_derricks[drill.unit_number] = {
 				entity = drill,
 				base = assembler,
 				drilling_fluid = '',
@@ -106,7 +106,7 @@ local function add_seep(event)
 			drill.active = false
 			-- Register for destruction event to handle removal via editor etc
 			script.register_on_entity_destroyed(drill)
-			render_text(global.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
+			render_text(storage.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
 		else
 			local resource_type = patch.name:match('(.*)(%-%w*)$')
 			drill.surface.create_entity {
@@ -127,7 +127,7 @@ script.on_event(defines.events.script_raised_built, add_seep)
 -- Destroy hidden assembler when removing drill
 local function remove_seep(assembler, source, source_id)
 	assembler.destroy()
-	global.oil_derricks[source_id or source.unit_number] = nil
+	storage.oil_derricks[source_id or source.unit_number] = nil
 end
 -- Match hidden assembler rotation to drill rotation
 local function rotate_seep(assembler, source)
@@ -156,7 +156,7 @@ local function on_entity_modified(event)
 			if child_entity then actions[event.name](child_entity, building) end
 		end
 	elseif unit_no then -- on_entity_destroyed provides a unit number and no entity
-		local child_entity = (global.oil_derricks[unit_no] or {}).base
+		local child_entity = (storage.oil_derricks[unit_no] or {}).base
 		if child_entity and child_entity.valid then
 			actions[event.name](child_entity, nil, unit_no)
 		end
@@ -175,12 +175,12 @@ local fluid_max_tier = 3
 local fluid_min_tier = 0 -- Tiers are zero-indexed here, god knows why
 
 script.on_nth_tick(update_rate, function()
-    for drill_id, drill in pairs(global.oil_derricks) do
+    for drill_id, drill in pairs(storage.oil_derricks) do
 		if not drill.base.valid then
 			if drill.entity and drill.entity.valid then
 				drill.entity.destroy()
 			end
-			global.oil_derricks[drill_id] = nil
+			storage.oil_derricks[drill_id] = nil
 			return
 		end
 
@@ -202,7 +202,7 @@ script.on_nth_tick(update_rate, function()
 					local contained_fluid = drill_contents[fluid_type]
 					if contained_fluid then
 						if contained_fluid >= fluid_threshold then
-							global.oil_derricks[drill_id].drilling_fluid = fluid_type
+							storage.oil_derricks[drill_id].drilling_fluid = fluid_type
 							drill.base.remove_fluid({name = fluid_type, amount = 10})
 							drill.entity.force.fluid_production_statistics.on_flow(fluid_type, -10)
 							drill_active = true
@@ -263,15 +263,15 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 	for _, drill in pairs(active_drills) do
 		local drill_data = derrick_types[drill.name]
 		if drill_data then
-			local drill_fluid = global.oil_derricks[drill.unit_number].drilling_fluid
+			local drill_fluid = storage.oil_derricks[drill.unit_number].drilling_fluid
 			local fluid_tier = ((drill_fluid:match('%d$') + 1) * 4)
 			local drill_tier = (drill.name:match('%d$') * 4)
 			local random_factor = math.random(4, 16)
 			local new_patch_size = 40000 * random_factor * drill_tier * fluid_tier
 
-			local base = global.oil_derricks[drill.unit_number].base
+			local base = storage.oil_derricks[drill.unit_number].base
 			if base and base.valid then base.destroy() end
-			global.oil_derricks[drill.unit_number] = nil
+			storage.oil_derricks[drill.unit_number] = nil
 
 			resource.surface.create_entity {
 				name = drill_data.resource,
