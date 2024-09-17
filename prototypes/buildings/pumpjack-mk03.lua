@@ -55,45 +55,47 @@ ENTITY {
         },
     },
     energy_usage = "650kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a1.png",
-                width = 96,
-                height = 394,
-                line_length = 20,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-96, -50)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a2.png",
-                width = 96,
-                height = 394,
-                line_length = 20,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(0, -50)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a3.png",
-                width = 96,
-                height = 394,
-                line_length = 20,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(96, -50)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a4.png",
-                width = 32,
-                height = 394,
-                line_length = 20,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(160, -50)
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a1.png",
+                    width = 96,
+                    height = 394,
+                    line_length = 20,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-96, -50)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a2.png",
+                    width = 96,
+                    height = 394,
+                    line_length = 20,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(0, -50)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a3.png",
+                    width = 96,
+                    height = 394,
+                    line_length = 20,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(96, -50)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk03/a4.png",
+                    width = 32,
+                    height = 394,
+                    line_length = 20,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(160, -50)
+                },
+            }
+        },
     },
 
     fluid_boxes = {

@@ -55,62 +55,64 @@ ENTITY {
         },
     },
     energy_usage = "800kW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/left-mk01.png",
-                width = 128,
-                height = 234,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-48, -3)
+                north_position = util.by_pixel(16, -64),
+                west_position = util.by_pixel(16, -64),
+                south_position = util.by_pixel(16, -64),
+                east_position = util.by_pixel(16, -64),
+                animation = {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/poof.png",
+                    --priority = "low",
+                    frame_count = 100,
+                    line_length = 10,
+                    width = 64,
+                    height = 96,
+                    animation_speed = 0.2
+                }
             },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/left-mask.png",
-                width = 128,
-                height = 234,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-48, -3),
-                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/right-mk01.png",
-                width = 128,
-                height = 234,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(80, -3)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/right-mask.png",
-                width = 128,
-                height = 234,
-                line_length = 16,
-                frame_count = 100,
-                animation_speed = 0.4,
-                shift = util.by_pixel(80, -3),
-                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-            },
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = util.by_pixel(16, -64),
-            west_position = util.by_pixel(16, -64),
-            south_position = util.by_pixel(16, -64),
-            east_position = util.by_pixel(16, -64),
-            animation = {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/poof.png",
-                --priority = "low",
-                frame_count = 100,
-                line_length = 10,
-                width = 64,
-                height = 96,
-                animation_speed = 0.2
+        },
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/left-mk01.png",
+                    width = 128,
+                    height = 234,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-48, -3)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/left-mask.png",
+                    width = 128,
+                    height = 234,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-48, -3),
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/right-mk01.png",
+                    width = 128,
+                    height = 234,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(80, -3)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/cracker-mk01/right-mask.png",
+                    width = 128,
+                    height = 234,
+                    line_length = 16,
+                    frame_count = 100,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(80, -3),
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                },
             }
         },
     },

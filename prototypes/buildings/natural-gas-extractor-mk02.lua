@@ -82,59 +82,61 @@ ENTITY {
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     monitor_visualization_tint = {r=78, g=173, b=255},
     --base_render_layer = "lower-object-above-shadow",
-    animations = {
-      layers = {
-          {
-              filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/raw.png",
-              width = 224,
-              height = 320,
-              line_length = 7,
-              frame_count = 30,
-              animation_speed = 1 / 5,
-              shift = util.by_pixel(0, -48)
-          },
-          {
-              filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/mask.png",
-              width = 224,
-              height = 320,
-              line_length = 7,
-              frame_count = 30,
-              animation_speed = 1 / 5,
-              tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0},
-              shift = util.by_pixel(0, -48)
-          },
-          {
-            filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/ao.png",
-            width = 288,
-            height = 352,
-            line_length = 7,
-            frame_count = 30,
-            animation_speed = 1 / 5,
-            shift = util.by_pixel(0, -32)
-          },
-          {
-            filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/l.png",
-            width = 224,
-            height = 320,
-            line_length = 7,
-            frame_count = 30,
-            animation_speed = 1 / 5,
-            draw_as_glow = true,
-            shift = util.by_pixel(0, -48)
-          },
-          {
-            filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/sh.png",
-            width = 288,
-            height = 352,
-            line_length = 1,
-            frame_count = 1,
-            repeat_count = 30,
-            animation_speed = 1 / 5,
-            draw_as_shadow = true,
-            shift = util.by_pixel(0, -32)
-          },
-  },
-},
+    graphics_set = {
+        animations = {
+          layers = {
+              {
+                  filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/raw.png",
+                  width = 224,
+                  height = 320,
+                  line_length = 7,
+                  frame_count = 30,
+                  animation_speed = 1 / 5,
+                  shift = util.by_pixel(0, -48)
+              },
+              {
+                  filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/mask.png",
+                  width = 224,
+                  height = 320,
+                  line_length = 7,
+                  frame_count = 30,
+                  animation_speed = 1 / 5,
+                  tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0},
+                  shift = util.by_pixel(0, -48)
+              },
+              {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/ao.png",
+                width = 288,
+                height = 352,
+                line_length = 7,
+                frame_count = 30,
+                animation_speed = 1 / 5,
+                shift = util.by_pixel(0, -32)
+              },
+              {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/l.png",
+                width = 224,
+                height = 320,
+                line_length = 7,
+                frame_count = 30,
+                animation_speed = 1 / 5,
+                draw_as_glow = true,
+                shift = util.by_pixel(0, -48)
+              },
+              {
+                filename = "__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/sh.png",
+                width = 288,
+                height = 352,
+                line_length = 1,
+                frame_count = 1,
+                repeat_count = 30,
+                animation_speed = 1 / 5,
+                draw_as_shadow = true,
+                shift = util.by_pixel(0, -32)
+              },
+      },
+    },
+    },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65 },
     working_sound =
     {

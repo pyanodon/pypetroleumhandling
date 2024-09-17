@@ -55,39 +55,41 @@ ENTITY {
         },
     },
     energy_usage = "250kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/right.png",
-                width = 96,
-                height = 214,
-                priority = "extra-high",
-                line_length = 10,
-                frame_count = 50,
-                animation_speed = 0.4,
-                shift = util.by_pixel(48, -20)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/left.png",
-                width = 96,
-                height = 214,
-                priority = "very-low",
-                line_length = 10,
-                frame_count = 50,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-48, -20)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
-                width = 217,
-                height = 165,
-                line_length = 8,
-                frame_count = 50,
-                animation_speed = 0.4,
-                draw_as_shadow = true,
-                shift = util.by_pixel(11, 15)
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/right.png",
+                    width = 96,
+                    height = 214,
+                    priority = "extra-high",
+                    line_length = 10,
+                    frame_count = 50,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(48, -20)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/left.png",
+                    width = 96,
+                    height = 214,
+                    priority = "very-low",
+                    line_length = 10,
+                    frame_count = 50,
+                    animation_speed = 0.4,
+                    shift = util.by_pixel(-48, -20)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
+                    width = 217,
+                    height = 165,
+                    line_length = 8,
+                    frame_count = 50,
+                    animation_speed = 0.4,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(11, 15)
+                },
+            }
+        },
     },
 
     fluid_boxes = {

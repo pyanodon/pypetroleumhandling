@@ -84,19 +84,21 @@ ENTITY {
     circuit_wire_connection_points = circuit_connector_definitions["sulfur-mine"].points,
     circuit_connector_sprites = circuit_connector_definitions["sulfur-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
-    animations = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/sulfur-mine/sulfur-mine.png",
-                width = 249,
-                height = 257,
-                line_length = 8,
-                frame_count = 15,
-                animation_speed = 0.3,
-                shift = util.by_pixel(12, -16)
-            },
-
-        }
+    graphics_set = {
+        animations = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/sulfur-mine/sulfur-mine.png",
+                    width = 249,
+                    height = 257,
+                    line_length = 8,
+                    frame_count = 15,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(12, -16)
+                },
+    
+            }
+        },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
