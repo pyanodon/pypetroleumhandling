@@ -50,14 +50,14 @@ ENTITY {
     },
     output_fluid_box =
     {
-      volume = 4000,
-      pipe_covers = py.pipe_covers(false, true, true, true),
-      pipe_connections =
-      {
-        {
-          positions = { {0, -4}, {4, -0}, {-0, 4}, {-4, 0} }
+        volume = 4000,
+        pipe_covers = py.pipe_covers(false, true, true, true),
+        pipe_connections = {
+            {flow_direction = "input-output", position = {0, -3.2}, direction = defines.direction.north},
+            {flow_direction = "input-output", position = {3.2, 0}, direction = defines.direction.east},
+            {flow_direction = "input-output", position = {0, 3.2}, direction = defines.direction.south},
+            {flow_direction = "input-output", position = {-3.2, 0}, direction = defines.direction.west},
         }
-      }
     },
     energy_usage = "1000kW",
     mining_speed = 4,
