@@ -1,4 +1,3 @@
-local noise = require 'noise'
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["sulfur-patch"] = {}
 
 data:extend{{
