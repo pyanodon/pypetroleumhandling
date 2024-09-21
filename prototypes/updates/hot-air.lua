@@ -48,7 +48,7 @@ local function hotairrecipes(extra_recipes)
         afrcount = afrcount + 1
         --add ingredient
         local result = recipe.main_product or recipe.result or recipe.results[1][1] or recipe.results[1].name
-        local index = recipe.category == 'glassworks' and 3
+        local index = recipe.category == 'glassworks' and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
             if recipe.ingredients[1].name == nil then
