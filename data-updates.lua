@@ -99,7 +99,7 @@ end
 data.raw.technology['coal-liquefaction'].effects = recipes_to_keep
 
 data.raw.resource['crude-oil'].autoplace = nil
-data.raw['autoplace-control']['crude-oil'] = nil
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["crude-oil"] = nil
 
 for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
     if preset and preset.basic_settings and preset.basic_settings.autoplace_controls and preset.basic_settings.autoplace_controls['crude-oil'] then
