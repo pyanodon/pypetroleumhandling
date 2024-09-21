@@ -39,9 +39,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-5.1, -5.1}, {5.1, 5.1}},
     selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
-    module_specification = {
-        module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = {"consumption", "speed", "productivity"},
     mining_speed = 4,
     energy_source = {

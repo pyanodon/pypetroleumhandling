@@ -41,9 +41,7 @@ ENTITY {
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
     match_animation_speed_to_activity = false,
-    module_specification = {
-        module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = {"speed","consumption"},
     crafting_categories = {"pumpjack"},
     crafting_speed = 4,

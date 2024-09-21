@@ -40,9 +40,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
-    module_specification = {
-        module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = {"consumption", "speed", "productivity"},
     energy_source = {
         type = "electric",
@@ -131,7 +129,7 @@ ENTITY{
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{0, 0}, {0, 0}},
     match_animation_speed_to_activity = false,
-    module_specification = {module_slots = 0},
+    module_slots = 0,
     allowed_effects = {},
     crafting_categories = {'drilling-fluid'},
     crafting_speed = 1,

@@ -42,9 +42,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
-    module_specification = {
-        module_slots = 2
-    },
+    module_slots = 2,
     allowed_effects = {"consumption", "speed", "productivity"},
     energy_source = {
         type = "electric",
