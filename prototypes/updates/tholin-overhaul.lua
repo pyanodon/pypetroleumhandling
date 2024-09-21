@@ -32,20 +32,6 @@ RECIPE {
 }:add_unlock('tholin-mk01')
 
 --Rocket Parts
-RECIPE {
-    type = 'recipe',
-    name = 'rocket-control-unit',
-    energy_required = 15,
-    enabled = false,
-    category = 'crafting',
-    ingredients =
-    {
-        {'advanced-circuit',   1},
-        {'electronic-circuit', 2},
-        {'speed-module',       1}
-    },
-    result = 'rocket-control-unit'
-}.category = 'electronic'
 
 local lds = RECIPE {
     type = 'recipe',
@@ -89,11 +75,13 @@ RECIPE {
     category = 'rocket-building',
     ingredients =
     {
-        {'rocket-control-unit',   1},
+        {'speed-module',          1},
         {'low-density-structure', 4},
         {'rocket-fuel',           10}
     },
-    result = 'rocket-part'
+    results = {
+        {type = "item", name = "rocket-part", amount = 1}
+    },
 }
 
 RECIPE {
@@ -113,25 +101,11 @@ RECIPE {
     result = 'rocket-silo',
     requester_paste_multiplier = 1
 }:add_ingredient {type = 'item', name = 'titanium-plate', amount = 500}
-if mods['pyhightech'] then
-    data.raw.technology['rocket-control-unit'].prerequisites =
-    {
-        'basic-electronics'
-    }
-end
-
-data.raw.technology['rocket-control-unit'].unit.ingredients =
-{
-    {'automation-science-pack', 1},
-    {'logistic-science-pack',   1},
-    {'chemical-science-pack',   1},
-}
 
 
 data.raw.technology['rocket-silo'].prerequisites =
 {
     'rocket-fuel',
-    'rocket-control-unit',
     'low-density-structure'
 }
 
