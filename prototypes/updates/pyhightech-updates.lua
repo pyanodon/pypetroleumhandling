@@ -144,7 +144,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("advanced-electronics")
+}:add_unlock("advanced-circuit")
 
 RECIPE {
     type = "recipe",
