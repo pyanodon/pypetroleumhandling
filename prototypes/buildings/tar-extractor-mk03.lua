@@ -54,15 +54,15 @@ ENTITY {
     },
     output_fluid_box =
     {
-      volume = 3000,
-      pipe_covers = py.pipe_covers(false, true, true, true),
-      pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-      pipe_connections =
-      {
-        {
-          positions = { {-2, -5.0}, {5.0, -2}, {2, 5.0}, {-5.0, 2} }
+        volume = 3000,
+        pipe_covers = py.pipe_covers(false, true, true, true),
+        pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+        pipe_connections = {
+            {flow_direction = "input-output", position = {-2, -4.4}, direction = defines.direction.north},
+            {flow_direction = "input-output", position = {4.4, -2}, direction = defines.direction.east},
+            {flow_direction = "input-output", position = {2, 4.4}, direction = defines.direction.south},
+            {flow_direction = "input-output", position = {-4.4, 2}, direction = defines.direction.west},
         }
-      }
     },
     energy_usage = "900kW",
     mining_speed = 3,

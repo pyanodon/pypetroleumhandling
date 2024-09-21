@@ -41,14 +41,14 @@ ENTITY {
         volume = 100000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {1.5, -4.5}},
-            {position = {-1.5, -4.5}},
-            {position = {4.5, 1.5}},
-            {position = {4.5, -1.5}},
-            {position = {1.5, 4.5}},
-            {position = {-1.5, 4.5}},
-            {position = {-4.5, 1.5}},
-            {position = {-4.5, -1.5}}
+            {position = {1.5, -3.9}, direction = defines.direction.north},
+            {position = {-1.5, -3.9}, direction = defines.direction.north},
+            {position = {3.9, 1.5}, direction = defines.direction.east},
+            {position = {3.9, -1.5}, direction = defines.direction.east},
+            {position = {1.5, 3.9}, direction = defines.direction.south},
+            {position = {-1.5, 3.9}, direction = defines.direction.south},
+            {position = {-3.9, 1.5}, direction = defines.direction.west},
+            {position = {-3.9, -1.5}, direction = defines.direction.west}
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
