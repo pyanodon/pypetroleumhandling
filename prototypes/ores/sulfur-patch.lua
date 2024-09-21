@@ -28,7 +28,7 @@ data:extend{{
         -- mining_particle = "sulfur-patch-particle",
         mining_time = 2,
         results = {
-            {"sulfur", 1}
+            {type = "item", name = "sulfur", amount = 1}
         },
     },
     resource_patch_search_radius = 12,

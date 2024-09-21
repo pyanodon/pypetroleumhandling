@@ -25,7 +25,7 @@ ENTITY {
         -- mining_particle = "oil-sand-ore-particle",
         mining_time = 1,
         results = {
-            {"oil-sand", 1}
+            {type = "item", name = "oil-sand", amount = 1}
         },
     },
     starting_area = true,
