@@ -103,4 +103,12 @@ data:extend {
         type = "recipe-category",
         name = "drilling-fluid"
     },
+    {
+        type = "recipe-category",
+        name = "pulp"
+    },
+    {
+        type = "recipe-category",
+        name = "fbreactor"
+    },
 }
