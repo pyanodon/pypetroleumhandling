@@ -66,10 +66,7 @@ ENTITY {
     mining_speed = 3,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, 0},
-    module_specification =
-    {
-        module_slots = 3
-    },
+    module_slots = 3,
     allowed_effects = {'consumption', 'speed', 'productivity'},
     radius_visualisation_picture =
     {

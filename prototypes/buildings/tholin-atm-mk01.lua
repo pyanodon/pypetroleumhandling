@@ -43,9 +43,7 @@ ENTITY {
     match_animation_speed_to_activity = false,
     fixed_recipe = "proto-tholins",
     --fixed_recipe = "tholins",
-    module_specification = {
-        module_slots = 1
-    },
+    module_slots = 1,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"tholin-atm"},
     crafting_speed = 1,

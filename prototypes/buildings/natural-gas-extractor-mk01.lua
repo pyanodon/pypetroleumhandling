@@ -63,10 +63,7 @@ ENTITY {
     mining_speed = 1,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, 0},
-    module_specification =
-    {
-      module_slots = 1
-    },
+    module_slots = 1,
     allowed_effects = {"consumption", "speed", "productivity"},
     radius_visualisation_picture =
     {
@@ -158,9 +155,7 @@ ENTITY {
     collision_box = {{ -3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{0,0}, {0,0}},
     match_animation_speed_to_activity = false,
-    module_specification = {
-        module_slots = 0
-    },
+    module_slots = 0,
     allowed_effects = {},
     crafting_categories = {"drilling-fluid"},
     crafting_speed = 1,

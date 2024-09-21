@@ -42,9 +42,7 @@ ENTITY {
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     match_animation_speed_to_activity = false,
     --fixed_recipe = "hot-air",
-    module_specification = {
-        module_slots = 1
-    },
+    module_slots = 1,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"rhe"},
     crafting_speed = 1,
