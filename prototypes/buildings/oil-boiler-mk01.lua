@@ -63,8 +63,8 @@ ENTITY {
       pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
       {
-        {type = "input-output", position = {-3.0, 0.0}},
-        {type = "input-output", position = {3.0, 0.0}}
+        {flow_direction = "input-output", position = {-2.29, 0.0}, direction = defines.direction.west},
+        {flow_direction = "input-output", position = {2.29, 0.0}, direction = defines.direction.east}
       },
       production_type = "input-output",
       filter = "water"
@@ -75,7 +75,7 @@ ENTITY {
       pipe_covers = py.pipe_covers(false, true, true, true),
       pipe_connections =
       {
-        {type = "output", position = {0, -3.0}}
+        {flow_direction = "output", position = {0, -2.29}, direction = defines.direction.north}
       },
       production_type = "output",
       filter = "steam"
@@ -90,16 +90,16 @@ ENTITY {
       destroy_non_fuel_fluid = false,
 	  fluid_box =
 		{
-		volume = 100,
-		height = 2,
-		base_level = -1,
-		pipe_connections =
-		{
-			{type = "input", position = {0, 3.0}}
-		},
-		pipe_covers = py.pipe_covers(false, true, true, true),
-		pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-		production_type = "input",
+      volume = 100,
+      height = 2,
+      base_level = -1,
+      pipe_connections =
+      {
+        {flow_direction = "input", position = {0, 2.29}, direction = defines.direction.south}
+      },
+      pipe_covers = py.pipe_covers(false, true, true, true),
+      pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+      production_type = "input",
 		},
 	effectivity = 2,
 	burns_fluid = true,
