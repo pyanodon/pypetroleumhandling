@@ -104,7 +104,7 @@ ENTITY {
                     width = 96,
                     height = 64,
                     line_length = 6,
-                    frame_count = 60,
+                    frame_count = 58,
                     animation_speed = 0.35,
                     shift = util.by_pixel(21, -208)
                 },
@@ -113,7 +113,7 @@ ENTITY {
                     width = 96,
                     height = 64,
                     line_length = 6,
-                    frame_count = 60,
+                    frame_count = 58,
                     animation_speed = 0.35,
                     shift = util.by_pixel(21, -208),
                     tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
