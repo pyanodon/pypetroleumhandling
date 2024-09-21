@@ -96,11 +96,11 @@ tech.dependencies = {'fast-inserter'}
 tech.effects = {}
 TECHNOLOGY(tech):add_pack('logistic-science-pack')
 
-TECHNOLOGY('stack-inserter').upgrade = false
-TECHNOLOGY('stack-inserter').prerequisites = {}
+TECHNOLOGY('bulk-inserter').upgrade = false
+TECHNOLOGY('bulk-inserter').prerequisites = {}
 
-tech = table.deepcopy(data.raw.technology['stack-inserter'])
-tech.name = 'stack-inserter-2'
-tech.dependencies = {'stack-inserter'}
+tech = table.deepcopy(data.raw.technology['bulk-inserter'])
+tech.name = 'bulk-inserter-2'
+tech.dependencies = {'bulk-inserter'}
 tech.effects = {}
 TECHNOLOGY(tech):add_pack('chemical-science-pack')
