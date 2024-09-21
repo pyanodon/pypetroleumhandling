@@ -1,5 +1,7 @@
 local noise = require 'noise'
 
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["bitumen-seep"] = {}
+
 data:extend{{
     type = "autoplace-control",
     category = "resource",
@@ -7,6 +9,37 @@ data:extend{{
     richness = false,
     order = "c"
 }}
+
+data:extend{
+    {
+        type = "noise-expression",
+        name = "py_bitumen_seep_starting_area",
+        -- 0% chance of spawning in starting area (tier == 0)
+        -- Using this is equivalent to has_starting_area_placement = false
+        expression = "clamp(var('tier_from_start'), 0, 1)"
+    },
+    {
+        type = "noise-expression",
+        name = "py_bitumen_seep_desired_frequency",
+        -- 1 in 48 chunks (each chunk is 64x64 tiles)
+        expression = "1 / (32 * 64^2)"
+    },
+    {
+        -- We return the chance of spawning on any given tile here
+        type = "noise-expression",
+        name = "py_bitumen_seep",
+        -- Our final chance, likely a very, very small decimal
+        expression = [[
+            py_bitumen_seep_starting_area * py_bitumen_seep_desired_frequency * var("control-setting:bitumen-seep:frequency:multiplier")
+        ]]
+    },
+    {
+        -- We return the richness here, which is just the quantity the resource tile yields
+        type = "noise-expression",
+        name = "py_bitumen_seep_richness",
+        expression = "2^16 * var('distance') * var('control-setting:bitumen-seep:richness:multiplier')"
+    }
+}
 
 ENTITY {
     type = "resource",
@@ -44,26 +77,9 @@ ENTITY {
       order = "c-bitumen-seep", -- Other resources are "b"; oil won't get placed if something else is already there.
       control = "bitumen-seep",
       -- We return the chance of spawning on any given tile here
-      probability_expression = noise.define_noise_function( function(x, y, tile, map)
-        -- This is the user's map setting for the frequency of this ore
-        local frequency_multiplier = noise.var("control-setting:bitumen-seep:frequency:multiplier")
-        -- 1 in 32 chunks (each chunk is 64x64 tiles)
-        local desired_frequency = 1 / (32 * 64^2)
-        -- Our final chance, likely a very, very small decimal
-        return desired_frequency * frequency_multiplier
-      end),
+      probability_expression = "py_bitumen_seep",
       -- We return the richness here, which is just the quantity the resource tile yields
-      richness_expression = noise.define_noise_function( function(x, y, tile, map)
-          -- This is the user's map setting for richness of this ore
-          -- We ignore size here because we're always a single tile resource
-          local richness_multiplier = noise.var("control-setting:bitumen-seep:richness:multiplier")
-          -- This is the distance from the starting position, which is how vanilla scales ore yield
-          local distance_value = noise.var("distance")
-          -- This is our multiplier for the above, determining the yield gains over distance
-          local scalar = 2^16
-          -- Add it all together or what is likely a pretty big number
-          return distance_value * scalar * richness_multiplier
-      end)
+      richness_expression = "py_bitumen_seep_richness"
     },
     stage_counts = {0},
     stages =
