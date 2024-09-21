@@ -122,7 +122,7 @@ if mods.pyrawores then long_handed_inserter_2:replace_ingredient('steel-plate', 
 
 local stack_inserter_2 = RECIPE {
     type = 'recipe',
-    name = 'stack-inserter-2',
+    name = 'bulk-inserter-2',
     category = 'crafting-with-fluid',
     enabled = false,
     energy_required = 8,
@@ -136,9 +136,9 @@ local stack_inserter_2 = RECIPE {
         {type = 'fluid', name = 'lubricant',            amount = 200},
     },
     results = {
-        {type = 'item', name = 'stack-inserter', amount = 15},
+        {type = 'item', name = 'bulk-inserter', amount = 15},
     },
     subgroup = 'py-petroleum-handling-recipes',
     order = 'r'
-}:add_unlock('stack-inserter-2')
+}:add_unlock('bulk-inserter-2')
 if mods.pyrawores then stack_inserter_2:replace_ingredient('steel-plate', 'titanium-plate') end
