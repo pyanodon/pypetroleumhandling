@@ -144,7 +144,7 @@ local actions = {
 
 local function on_entity_modified(event)
 	local building = event.entity
-	local unit_no = event.unit_number
+	local unit_no = event.useful_id
 	if event.entity then -- All but on_object_destroyed
 		-- on_player_rotated_entity can't be filtered :)
 		if derrick_types[building.name] then
