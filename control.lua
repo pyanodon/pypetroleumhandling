@@ -105,7 +105,7 @@ local function add_seep(event)
 			}
 			drill.active = false
 			-- Register for destruction event to handle removal via editor etc
-			script.register_on_entity_destroyed(drill)
+			script.register_on_object_destroyed(drill)
 			render_text(storage.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
 		else
 			local resource_type = patch.name:match('(.*)(%-%w*)$')
@@ -145,7 +145,7 @@ local actions = {
 local function on_entity_modified(event)
 	local building = event.entity
 	local unit_no = event.unit_number
-	if event.entity then -- All but on_entity_destroyed
+	if event.entity then -- All but on_object_destroyed
 		-- on_player_rotated_entity can't be filtered :)
 		if derrick_types[building.name] then
 			local child_entity = building.surface.find_entities_filtered {
@@ -155,7 +155,7 @@ local function on_entity_modified(event)
 			}[1]
 			if child_entity then actions[event.name](child_entity, building) end
 		end
-	elseif unit_no then -- on_entity_destroyed provides a unit number and no entity
+	elseif unit_no then -- on_object_destroyed provides a unit number and no entity
 		local child_entity = (storage.oil_derricks[unit_no] or {}).base
 		if child_entity and child_entity.valid then
 			actions[event.name](child_entity, nil, unit_no)
@@ -191,7 +191,7 @@ script.on_nth_tick(update_rate, function()
 		if not drill.entity.valid then
 			log("invalid drill encountered during update cycle, id: " .. drill_id)
 			on_entity_modified({
-				name = defines.events.on_entity_destroyed,
+				name = defines.events.on_object_destroyed,
 				unit_number = drill_id
 			})
 		else
