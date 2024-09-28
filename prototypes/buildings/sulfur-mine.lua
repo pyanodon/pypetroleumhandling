@@ -83,7 +83,7 @@ ENTITY {
     circuit_connector_sprites = circuit_connector_definitions["sulfur-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     graphics_set = {
-        animations = {
+        animation = {
             layers = {
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/sulfur-mine/sulfur-mine.png",

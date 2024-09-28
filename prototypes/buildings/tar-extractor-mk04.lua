@@ -77,7 +77,7 @@ ENTITY {
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     monitor_visualization_tint = {r=78, g=173, b=255},
     graphics_set = {
-        animations = {
+        animation = {
             layers = {
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/tar-extractor-mk01/mk01-a.png",

@@ -80,7 +80,7 @@ ENTITY {
     monitor_visualization_tint = {r = 78, g = 173, b = 255},
     --base_render_layer = "lower-object-above-shadow",
     graphics_set = {
-        animations = {
+        animation = {
             layers = {
                 {
                     filename = '__pypetroleumhandlinggraphics__/graphics/entity/gas-extractor/raw.png',

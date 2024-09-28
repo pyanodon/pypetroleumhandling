@@ -64,7 +64,7 @@ ENTITY {
     circuit_connector_sprites = circuit_connector_definitions["oil-sand-extractor-mkxx"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     graphics_set = {
-        animations = {
+        animation = {
             layers = {
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-a.png",
