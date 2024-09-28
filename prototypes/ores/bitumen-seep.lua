@@ -86,23 +86,13 @@ ENTITY {
       {
         filename = "__base__/graphics/entity/crude-oil/crude-oil.png",
         priority = "extra-high",
-        width = 74,
-        height = 60,
+        width = 148,
+        height = 120,
         frame_count = 4,
         variation_count = 1,
         shift = util.by_pixel(0, -2),
-        hr_version =
-        {
-          filename = "__base__/graphics/entity/crude-oil/hr-crude-oil.png",
-          priority = "extra-high",
-          width = 148,
-          height = 120,
-          frame_count = 4,
-          variation_count = 1,
-          shift = util.by_pixel(0, -2),
-          scale = 0.5,
+        scale = 0.5,
         }
-      }
     },
     map_color = {0.78, 0.2, 0.77},
     map_grid = false
