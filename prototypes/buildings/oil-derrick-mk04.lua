@@ -136,6 +136,7 @@ ENTITY{
     energy_source = {type = 'void'},
     energy_usage = '1W',
     fixed_recipe = 'drilling-fluids',
+    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         -- 1
         {
@@ -174,7 +175,6 @@ ENTITY{
             volume = 1000,
             pipe_connections = {{flow_direction = 'input', position = {2, 5.4}, direction = defines.direction.south}}
         },
-        off_when_no_fluid_recipe = false
     },
     selectable_in_game = false,
     localised_name = {'entity-name.oil-derrick-mk04'},

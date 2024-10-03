@@ -55,6 +55,7 @@ ENTITY {
         },
     },
     energy_usage = "900kW",
+    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         --1
         {
@@ -118,7 +119,6 @@ ENTITY {
             volume = 100,
             pipe_connections = {{flow_direction = "output", position = {6.4, -2.0}, direction = defines.direction.east}}
         },
-        off_when_no_fluid_recipe = false,
     },
     graphics_set = {
         animation = {
