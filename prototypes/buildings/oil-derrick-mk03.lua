@@ -58,10 +58,10 @@ ENTITY {
         volume = 3000,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
-            {flow_direction = "input-output", position = {0, -4.4}, direction = defines.direction.north},
-            {flow_direction = "input-output", position = {4.4, 0}, direction = defines.direction.east},
-            {flow_direction = "input-output", position = {0, 4.4}, direction = defines.direction.south},
-            {flow_direction = "input-output", position = {-4.4, 0}, direction = defines.direction.west},
+            {flow_direction = "input-output", position = {0, -4.0}, direction = defines.direction.north},
+            {flow_direction = "input-output", position = {4.0, 0}, direction = defines.direction.east},
+            {flow_direction = "input-output", position = {0, 4.0}, direction = defines.direction.south},
+            {flow_direction = "input-output", position = {-4.0, 0}, direction = defines.direction.west},
         }
     },
     energy_usage = '500kW',
@@ -162,28 +162,28 @@ ENTITY {
             pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {-2, 4.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {-2, 4.0}, direction = defines.direction.south}}
         },
         {
             production_type = 'input',
             pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {-1, 4.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {-1, 4.0}, direction = defines.direction.south}}
         },
         {
             production_type = 'input',
             pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {1, 4.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {1, 4.0}, direction = defines.direction.south}}
         },
         {
             production_type = 'input',
             pipe_picture = py.pipe_pictures('assembling-machine-2', nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {2, 4.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {2, 4.0}, direction = defines.direction.south}}
         },
     },
     selectable_in_game = false,
