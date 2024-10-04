@@ -1,11 +1,10 @@
 --Remove space science from satellite
 --[[
-data.raw.item.satellite.rocket_launch_product =
-    {
-        type = 'item',
-        name = 'filled-tholins-vessel',
-        amount = 500
-    }
+data.raw.item.satellite.rocket_launch_products = {{
+    type = 'item',
+    name = 'filled-tholins-vessel',
+    amount = 500
+}}
 ]] --
 
 RECIPE {
