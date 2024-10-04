@@ -60,8 +60,8 @@ ENTITY {
         base_level = -1,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
-            {flow_direction = "input-output", position = {-2.29, 0.0}, direction = defines.direction.west},
-            {flow_direction = "input-output", position = {2.29, 0.0}, direction = defines.direction.east}
+            {flow_direction = "input-output", position = {-2.0, 0.0}, direction = defines.direction.west},
+            {flow_direction = "input-output", position = {2.0, 0.0}, direction = defines.direction.east}
         },
         production_type = "input-output",
         filter = "water"
@@ -70,7 +70,7 @@ ENTITY {
         volume = 200,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
-            {flow_direction = "output", position = {0, -2.29}, direction = defines.direction.north}
+            {flow_direction = "output", position = {0, -2.0}, direction = defines.direction.north}
         },
         production_type = "output",
         filter = "steam"
@@ -87,7 +87,7 @@ ENTITY {
             height = 2,
             base_level = -1,
             pipe_connections = {
-                {flow_direction = "input", position = {0, 2.29}, direction = defines.direction.south}
+                {flow_direction = "input", position = {0, 2.0}, direction = defines.direction.south}
             },
             pipe_covers = py.pipe_covers(false, true, true, true),
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),

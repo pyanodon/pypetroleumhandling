@@ -54,10 +54,10 @@ ENTITY {
         volume = 4000,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
-            {flow_direction = "input-output", position = {0, -5.4}, direction = defines.direction.north},
-            {flow_direction = "input-output", position = {5.4, 0}, direction = defines.direction.east},
-            {flow_direction = "input-output", position = {0, 5.4}, direction = defines.direction.south},
-            {flow_direction = "input-output", position = {-5.4, 0}, direction = defines.direction.west},
+            {flow_direction = "input-output", position = {0, -5.0}, direction = defines.direction.north},
+            {flow_direction = "input-output", position = {5.0, 0}, direction = defines.direction.east},
+            {flow_direction = "input-output", position = {0, 5.0}, direction = defines.direction.south},
+            {flow_direction = "input-output", position = {-5.0, 0}, direction = defines.direction.west},
         }
     },
     energy_usage = "1000kW",
@@ -146,7 +146,7 @@ ENTITY{
             pipe_covers = py.pipe_covers(false, true, true, true
             ),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {-2, 5.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {-2, 5.0}, direction = defines.direction.south}}
         },
         {
             production_type = 'input',
@@ -155,7 +155,7 @@ ENTITY{
             pipe_covers = py.pipe_covers(false, true, true, true
             ),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {-1, 5.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {-1, 5.0}, direction = defines.direction.south}}
         },
         {
             production_type = 'input',
@@ -164,7 +164,7 @@ ENTITY{
             pipe_covers = py.pipe_covers(false, true, true, true
             ),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {1, 5.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {1, 5.0}, direction = defines.direction.south}}
         },
         {
             production_type = 'input',
@@ -173,7 +173,7 @@ ENTITY{
             pipe_covers = py.pipe_covers(false, true, true, true
             ),
             volume = 1000,
-            pipe_connections = {{flow_direction = 'input', position = {2, 5.4}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = 'input', position = {2, 5.0}, direction = defines.direction.south}}
         },
     },
     selectable_in_game = false,
