@@ -297,7 +297,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "ti",
-    stack_size = 5,
+    stack_size = 1,
     weight = 200e3,
     rocket_launch_products = {{
         type = 'item',
