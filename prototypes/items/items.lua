@@ -297,11 +297,11 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "ti",
-    stack_size = 1,
-    rocket_launch_product =
-    {
+    stack_size = 5,
+    weight = 200e3,
+    rocket_launch_products = {{
         type = 'item',
         name = 'filled-tholins-vessel',
         amount = 500
-    }
+    }}
 }
