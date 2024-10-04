@@ -1,12 +1,8 @@
-Version: 2.1.16
-Date: When it's done
-  Changes:
-    - Added circuit connectivity to Sulfur Mine (credit: JStMorgan)
 ---------------------------------------------------------------------------------------------------
-Version: 2.1.17
+Version: 3.0.0
 Date: in 5 hours
   Changes:
-    - fixed some recipes outputting more steam than input water when using productivity modules
+    - changed tholin capsule stack size to 500
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.16
 Date: 2024-6-3
