@@ -264,7 +264,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "th",
-    stack_size = 100
+    stack_size = 500
 }
 
 ITEM {
@@ -275,7 +275,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "th",
-    stack_size = 100
+    stack_size = 500
 }
 
 ITEM {
@@ -286,7 +286,7 @@ ITEM {
     flags = {},
     subgroup = "py-petroleum-handling-items",
     order = "th",
-    stack_size = 100
+    stack_size = 500
 }
 
 ITEM {
@@ -303,5 +303,6 @@ ITEM {
         type = 'item',
         name = 'filled-tholins-vessel',
         amount = 500
-    }}
+    }},
+    send_to_orbit_mode = "automated"
 }
