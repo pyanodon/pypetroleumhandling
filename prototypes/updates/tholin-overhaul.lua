@@ -116,9 +116,8 @@ data.raw.technology['rocket-silo'].unit.ingredients =
     {'military-science-pack',   1}
 }
 
-data.raw['rocket-silo']['rocket-silo'].rocket_result_inventory_size = 50
 
-data.raw['rocket-silo-rocket']['rocket-silo-rocket'].inventory_size = 5
+data.raw['rocket-silo']['rocket-silo'].to_be_inserted_to_rocket_inventory_size = 5
 
 
 RECIPE {
