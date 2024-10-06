@@ -174,7 +174,7 @@ local fluid_threshold = 50
 local fluid_max_tier = 3
 local fluid_min_tier = 0 -- Tiers are zero-indexed here, god knows why
 
-script.on_nth_tick(update_rate, function()
+py.register_on_nth_tick(update_rate, "drills", "pyph", function()
     for drill_id, drill in pairs(storage.oil_derricks) do
 		if not drill.base.valid then
 			if drill.entity and drill.entity.valid then
@@ -282,5 +282,12 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 		end
 	end
 end)
+
+remote.add_interface("pyph", {
+    ---@param func string
+    execute_on_nth_tick = function(func)
+        py.mod_nth_tick_funcs[func]()
+    end
+})
 
 py.finalize_events()
