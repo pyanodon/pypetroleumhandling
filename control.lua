@@ -243,8 +243,8 @@ local function swap_drill(drill, replacement)
 	local new_drill = surface.create_entity(parameters)
 	local destination_module_inventory = new_drill.get_module_inventory()
 	if source_module_inventory and destination_module_inventory then
-		for item, amount in pairs(module_contents) do
-			destination_module_inventory.insert{name = item, amount = amount}
+		for _, item in pairs(module_contents) do
+			destination_module_inventory.insert(item)
 		end
 	end
 end
