@@ -6,8 +6,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "ethylene-chlorohydrin", amount = 100},
-        {type = "fluid", name = "methanol", amount = 50},
-        {type = "fluid", name = "water", amount = 300}
+        {type = "fluid", name = "methanol",              amount = 50},
+        {type = "fluid", name = "water",                 amount = 300}
     },
     results = {
         {type = "fluid", name = "chloroethanol", amount = 100},

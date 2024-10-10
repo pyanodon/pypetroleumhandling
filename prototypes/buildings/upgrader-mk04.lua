@@ -4,9 +4,9 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "upgrader-mk03", amount = 1},
+        {type = "item", name = "upgrader-mk03",         amount = 1},
         {type = "item", name = "low-density-structure", amount = 20},
-        {type = "item", name = "nbfe-alloy", amount = 20},
+        {type = "item", name = "nbfe-alloy",            amount = 20},
     },
     results = {
         {type = "item", name = "upgrader-mk04", amount = 1}
@@ -29,7 +29,7 @@ ENTITY {
     type = "assembling-machine",
     name = "upgrader-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/upgrader-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "upgrader-mk04"},
     fast_replaceable_group = "upgrader",

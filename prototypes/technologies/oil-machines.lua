@@ -28,8 +28,8 @@ TECHNOLOGY {
         count = 200,
         ingredients = {
             {"automation-science-pack", 1},
-            {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1}
+            {"logistic-science-pack",   1},
+            {"chemical-science-pack",   1}
         },
         time = 45
     }
@@ -41,16 +41,16 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-03.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk02","coalbed-mk02"},
+    prerequisites = {"oil-machines-mk02", "coalbed-mk02"},
     dependencies = {"oil-machines-mk02"},
     effects = {},
     unit = {
         count = 200,
         ingredients = {
-            {'automation-science-pack', 1},
-            {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1},
-            {'production-science-pack', 1}
+            {"automation-science-pack", 1},
+            {"logistic-science-pack",   1},
+            {"chemical-science-pack",   1},
+            {"production-science-pack", 1}
         },
         time = 45
     }
@@ -68,12 +68,12 @@ TECHNOLOGY {
     unit = {
         count = 200,
         ingredients = {
-            {'automation-science-pack', 1},
-            {'logistic-science-pack', 1},
-            {'chemical-science-pack', 1},
-            {'military-science-pack', 1},
-            {'production-science-pack', 1},
-            {'utility-science-pack', 1}
+            {"automation-science-pack", 1},
+            {"logistic-science-pack",   1},
+            {"chemical-science-pack",   1},
+            {"military-science-pack",   1},
+            {"production-science-pack", 1},
+            {"utility-science-pack",    1}
         },
         time = 45
     }

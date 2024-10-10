@@ -1,4 +1,3 @@
-
 RECIPE {
     type = "recipe",
     name = "kerogen-extraction",
@@ -6,8 +5,8 @@ RECIPE {
     category = "kerogen",
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
-        {type = "item", name = "kerogen", amount = 25},
+        {type = "fluid", name = "steam",   amount = 100, minimum_temperature = 250},
+        {type = "item",  name = "kerogen", amount = 25},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 250},
@@ -100,4 +99,4 @@ RECIPE {
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
 }:add_unlock("scrude")
-]]--
+]] --

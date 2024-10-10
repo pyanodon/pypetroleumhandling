@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "tholin-atm-mk02", amount = 1},
-        {type = "item", name = "small-parts-03", amount = 20},
-        {type = "item", name = "nbfe-alloy", amount = 10},
-        {type = "item", name = "processing-unit", amount = 15},
-        {type = "item", name = "concrete", amount = 50},
+        {type = "item", name = "tholin-atm-mk02",      amount = 1},
+        {type = "item", name = "small-parts-03",       amount = 20},
+        {type = "item", name = "nbfe-alloy",           amount = 10},
+        {type = "item", name = "processing-unit",      amount = 15},
+        {type = "item", name = "concrete",             amount = 50},
         {type = "item", name = "electric-engine-unit", amount = 10},
     },
     results = {
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "tholin-atm-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholin-atm-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "tholin-atm-mk03"},
     fast_replaceable_group = "tholin-atm",
@@ -65,7 +65,7 @@ ENTITY {
                     height = 352,
                     line_length = 6,
                     frame_count = 30,
-                    run_mode= "forward-then-backward",
+                    run_mode = "forward-then-backward",
                     animation_speed = 0.35,
                     shift = util.by_pixel(-37, -64)
                 },
@@ -75,7 +75,7 @@ ENTITY {
                     height = 352,
                     line_length = 6,
                     frame_count = 30,
-                    run_mode= "forward-then-backward",
+                    run_mode = "forward-then-backward",
                     animation_speed = 0.35,
                     shift = util.by_pixel(-37, -64),
                     tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
@@ -86,7 +86,7 @@ ENTITY {
                     height = 384,
                     line_length = 6,
                     frame_count = 30,
-                    run_mode= "forward-then-backward",
+                    run_mode = "forward-then-backward",
                     animation_speed = 0.35,
                     shift = util.by_pixel(-173, -360)
                 },
@@ -96,7 +96,7 @@ ENTITY {
                     height = 384,
                     line_length = 6,
                     frame_count = 30,
-                    run_mode= "forward-then-backward",
+                    run_mode = "forward-then-backward",
                     animation_speed = 0.35,
                     shift = util.by_pixel(-173, -360),
                     tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}

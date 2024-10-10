@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "lab", amount = 1},
-        {type = "item", name = "iron-plate", amount = 100},
+        {type = "item", name = "lab",                   amount = 1},
+        {type = "item", name = "iron-plate",            amount = 100},
         {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "chemical-plant-mk01", amount = 1},
-        {type = "item", name = "small-parts-01", amount = 20},
+        {type = "item", name = "chemical-plant-mk01",   amount = 1},
+        {type = "item", name = "small-parts-01",        amount = 20},
     },
     results = {
         {type = "item", name = "coalbed-mk01", amount = 1}
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "coalbed-mk01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "coalbed-mk01"},
     fast_replaceable_group = "coalbed",
@@ -65,16 +65,16 @@ ENTITY {
                     animation_speed = 0.5,
                     shift = util.by_pixel(-64, -32)
                 },
-    			{
-    				filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/left-mask.png",
-    				width = 96,
-    				height = 298,
-    				line_length = 21,
-    				frame_count = 124,
-    				animation_speed = 0.5,
-    				shift = util.by_pixel(-64, -32),
-    				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-    			},
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/left-mask.png",
+                    width = 96,
+                    height = 298,
+                    line_length = 21,
+                    frame_count = 124,
+                    animation_speed = 0.5,
+                    shift = util.by_pixel(-64, -32),
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/mid-mk01.png",
                     width = 96,
@@ -84,7 +84,7 @@ ENTITY {
                     animation_speed = 0.5,
                     shift = util.by_pixel(32, -32)
                 },
-    			{
+                {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/mid-mask.png",
                     width = 96,
                     height = 298,
@@ -92,7 +92,7 @@ ENTITY {
                     frame_count = 124,
                     animation_speed = 0.5,
                     shift = util.by_pixel(32, -32),
-    				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/coalbed-mk01/right-mk01.png",

@@ -1,4 +1,3 @@
-
 RECIPE {
     type = "recipe",
     name = "tar-to-oil",
@@ -25,8 +24,8 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "tar", amount = 300},
-        {type = "item", name = "chromium", amount = 3},
+        {type = "fluid", name = "tar",      amount = 300},
+        {type = "item",  name = "chromium", amount = 3},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 100},
@@ -45,8 +44,8 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "scrude", amount = 100}, --add vacuum
-        {type = "item", name = "nexelit-plate", amount = 1},
+        {type = "fluid", name = "scrude",        amount = 100}, --add vacuum
+        {type = "item",  name = "nexelit-plate", amount = 1},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 100},
@@ -66,10 +65,10 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 100},
-        {type = "fluid", name = "water", amount = 200},
+        {type = "fluid", name = "water",  amount = 200},
     },
     results = {
-        {type = "fluid", name = "light-oil", amount = 100},
+        {type = "fluid", name = "light-oil",         amount = 100},
         {type = "fluid", name = "dirty-water-heavy", amount = 100},
     },
     main_product = "light-oil",
@@ -87,12 +86,12 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 100},
-        {type = "fluid", name = "steam", amount = 400},
+        {type = "fluid", name = "steam",  amount = 400},
         --propene
     },
     results = {
         {type = "fluid", name = "crude-oil", amount = 120},
-        {type = "fluid", name = "bitumen", amount = 20},
+        {type = "fluid", name = "bitumen",   amount = 20},
     },
     main_product = "crude-oil",
     icon = "__base__/graphics/icons/fluid/crude-oil.png",
@@ -128,7 +127,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "heavy-oil", amount = 100},
-        {type = "item", name = "nichrome", amount = 1}, -- Ticl4
+        {type = "item",  name = "nichrome",  amount = 1}, -- Ticl4
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 70},
@@ -147,8 +146,8 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "scrude", amount = 100},
-        {type = "item", name = "copper-plate", amount = 2}, --nickel
+        {type = "fluid", name = "scrude",       amount = 100},
+        {type = "item",  name = "copper-plate", amount = 2}, --nickel
     },
     results = {
         {type = "item", name = "sulfur", amount = 15},
@@ -167,7 +166,7 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "tar", amount = 50},
+        {type = "fluid", name = "tar",     amount = 50},
         {type = "fluid", name = "hot-air", amount = 25},
     },
     results = {
@@ -188,7 +187,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 50},
-        {type = "fluid", name = "hot-air", amount = 25},
+        {type = "fluid", name = "hot-air",   amount = 25},
     },
     results = {
         {type = "item", name = "carbon-black", amount = 2},
@@ -211,14 +210,14 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "heavy-oil", amount = 100},
-        {type = "item", name = "coke", amount = 20},
+        {type = "item",  name = "coke",      amount = 20},
     },
     main_product = "heavy-oil",
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
     icon_size = 64,
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("fuel-production"):add_ingredient({type = "fluid", name = "vacuum", amount = 70})
+}:add_unlock("fuel-production"):add_ingredient {type = "fluid", name = "vacuum", amount = 70}
 
 RECIPE {
     type = "recipe",
@@ -228,10 +227,10 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "hot-air", amount = 100},
-        {type = "item", name = "wood", amount = 12},
+        {type = "item",  name = "wood",    amount = 12},
     },
     results = {
-        {type = "fluid", name = "naphtha", amount = 25},
+        {type = "fluid", name = "naphtha",  amount = 25},
         {type = "fluid", name = "flue-gas", amount = 100},
     },
     main_product = "naphtha",
@@ -248,9 +247,9 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "naphtha", amount = 150},
-        {type = "fluid", name = "steam", amount = 800},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "naphtha",  amount = 150},
+        {type = "fluid", name = "steam",    amount = 800},
+        {type = "item",  name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "syngas", amount = 400},
@@ -270,7 +269,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 100},
-        {type = "fluid", name = "steam", amount = 200},
+        {type = "fluid", name = "steam",     amount = 200},
     },
     results = {
         {type = "fluid", name = "heavy-oil", amount = 100},
@@ -289,9 +288,9 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "crude-oil", amount = 100},
-        {type = "fluid", name = "steam", amount = 200},
-        {type = "item", name = "nexelit-plate", amount = 1},
+        {type = "fluid", name = "crude-oil",     amount = 100},
+        {type = "fluid", name = "steam",         amount = 200},
+        {type = "item",  name = "nexelit-plate", amount = 1},
     },
     results = {
         {type = "fluid", name = "heavy-oil", amount = 120},
@@ -310,14 +309,14 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "heavy-oil", amount = 250},
-        {type = "fluid", name = "water", amount = 2000},
-        {type = "fluid", name = "hot-air", amount = 150},
-        {type = "item", name = "nexelit-plate", amount = 1},
+        {type = "fluid", name = "heavy-oil",     amount = 250},
+        {type = "fluid", name = "water",         amount = 2000},
+        {type = "fluid", name = "hot-air",       amount = 150},
+        {type = "item",  name = "nexelit-plate", amount = 1},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 250},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
+        {type = "fluid", name = "steam",       amount = 2000, temperature = 150, catalyst_amount = 2000},
     },
     main_product = "natural-gas",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/natural-gas.png",
@@ -334,13 +333,13 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "heavy-oil", amount = 200},
-        {type = "fluid", name = "water", amount = 2000},
-        {type = "fluid", name = "hot-air", amount = 150},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "fluid", name = "water",     amount = 2000},
+        {type = "fluid", name = "hot-air",   amount = 150},
+        {type = "item",  name = "nichrome",  amount = 1},
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
+        {type = "fluid", name = "steam",    amount = 2000, temperature = 150, catalyst_amount = 2000},
     },
     main_product = "gasoline",
     icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
@@ -357,13 +356,13 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "heavy-oil", amount = 200},
-        {type = "fluid", name = "water", amount = 2000},
-        {type = "fluid", name = "hot-air", amount = 150},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "water",     amount = 2000},
+        {type = "fluid", name = "hot-air",   amount = 150},
+        {type = "item",  name = "chromium",  amount = 1},
     },
     results = {
         {type = "fluid", name = "syngas", amount = 300},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
+        {type = "fluid", name = "steam",  amount = 2000, temperature = 150, catalyst_amount = 2000},
     },
     main_product = "syngas",
     icon = "__pycoalprocessinggraphics__/graphics/icons/syngas.png",
@@ -380,7 +379,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "processed-light-oil", amount = 300},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "item",  name = "nichrome",            amount = 1},
     },
     results = {
         {type = "fluid", name = "olefin", amount = 400},
@@ -398,7 +397,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "processed-light-oil", amount = 300},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "item",  name = "nichrome",            amount = 1},
     },
     results = {
         {type = "fluid", name = "light-oil", amount = 400},
@@ -416,7 +415,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "natural-gas", amount = 200},
-        {type = "item", name = "coal", amount = 10},
+        {type = "item",  name = "coal",        amount = 10},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 100},
@@ -435,18 +434,19 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
         energy_required = 10,
         ingredients = {
             {type = "fluid", name = "pure-natural-gas", amount = 100},
-            {type = "fluid", name = "liquid-nitrogen", amount = 50},
+            {type = "fluid", name = "liquid-nitrogen",  amount = 50},
         },
         results = {
-            {type = "fluid", name = "methane", amount = 500},
-            {type = "fluid", name = "nitrogen", amount = 500},
+            {type = "fluid", name = "methane",      amount = 500},
+            {type = "fluid", name = "nitrogen",     amount = 500},
             {type = "fluid", name = "residual-gas", amount = 100},
         },
         main_product = "methane",
         subgroup = "py-hightech-fluids",
         order = "a"
     }:add_unlock("petroleum-gas-mk03")
-    else if mods["pyhightech"] then
+else
+    if mods["pyhightech"] then
         RECIPE {
             type = "recipe",
             name = "pure-natural-gas-to-methane-2",
@@ -455,11 +455,11 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             energy_required = 10,
             ingredients = {
                 {type = "fluid", name = "pure-natural-gas", amount = 100},
-                {type = "fluid", name = "water", amount = 500},
+                {type = "fluid", name = "water",            amount = 500},
             },
             results = {
-                {type = "fluid", name = "methane", amount = 300},
-                {type = "fluid", name = "steam", amount = 500, temperature = 150, catalyst_amount = 500},
+                {type = "fluid", name = "methane",      amount = 300},
+                {type = "fluid", name = "steam",        amount = 500, temperature = 150, catalyst_amount = 500},
                 {type = "fluid", name = "residual-gas", amount = 100},
             },
             main_product = "methane",
@@ -475,12 +475,12 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
             energy_required = 10,
             ingredients = {
                 {type = "fluid", name = "pure-natural-gas", amount = 100},
-                {type = "fluid", name = "water", amount = 500},
+                {type = "fluid", name = "water",            amount = 500},
             },
             results = {
                 {type = "fluid", name = "petroleum-gas", amount = 300},
-                {type = "fluid", name = "steam", amount = 500, temperature = 150, catalyst_amount = 500},
-                {type = "fluid", name = "residual-gas", amount = 100},
+                {type = "fluid", name = "steam",         amount = 500, temperature = 150, catalyst_amount = 500},
+                {type = "fluid", name = "residual-gas",  amount = 100},
             },
             main_product = "petroleum-gas",
             subgroup = "py-petroleum-handling-fluids",
@@ -497,7 +497,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "residual-gas", amount = 100},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "item",  name = "nichrome",     amount = 1},
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 200},
@@ -515,7 +515,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "residual-gas", amount = 100},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "item",  name = "nichrome",     amount = 1},
     },
     results = {
         {type = "fluid", name = "syngas", amount = 300},
@@ -533,7 +533,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "residual-gas", amount = 100},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "item",  name = "nichrome",     amount = 1},
     },
     results = {
         {type = "fluid", name = "olefin", amount = 250},
@@ -551,8 +551,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "aromatics", amount = 400},
-        {type = "fluid", name = "naphtha", amount = 120},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "naphtha",   amount = 120},
+        {type = "item",  name = "chromium",  amount = 1},
     },
     results = {
         {type = "fluid", name = "petroleum-gas", amount = 400},
@@ -625,15 +625,15 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("oil-distillation")
-]]--
+]] --
 
-  -- HIGH DISTILLATE --
+-- HIGH DISTILLATE --
 
-  -- MEDIUM DISTILLATE --
+-- MEDIUM DISTILLATE --
 
-  -- LOW DISTILLATE --
+-- LOW DISTILLATE --
 
-  -- RESIDUAL OIL --
+-- RESIDUAL OIL --
 
 RECIPE {
     type = "recipe",
@@ -642,9 +642,9 @@ RECIPE {
     category = "kerogen",
     energy_required = 15,
     ingredients = {
-        {type = "fluid", name = "hot-air", amount = 1000},
-        {type = "item", name = "coke", amount = 10},
-        {type = "item", name = "drill-head", amount = 3},
+        {type = "fluid", name = "hot-air",    amount = 1000},
+        {type = "item",  name = "coke",       amount = 10},
+        {type = "item",  name = "drill-head", amount = 3},
     },
     results = {
         {type = "item", name = "kerogen", amount = 70},
@@ -662,9 +662,9 @@ RECIPE {
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "hot-air", amount = 1000},
-        {type = "fluid", name = "steam", amount = 1000},
-        {type = "item", name = "coke", amount = 10},
-        {type = "item", name = "pipe", amount = 15},
+        {type = "fluid", name = "steam",   amount = 1000},
+        {type = "item",  name = "coke",    amount = 10},
+        {type = "item",  name = "pipe",    amount = 15},
     },
     results = {
         {type = "item", name = "kerogen", amount = 400},
@@ -681,7 +681,7 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "kerogen", amount = 100},
+        {type = "item", name = "kerogen",      amount = 100},
         {type = "item", name = "fuelrod-mk01", amount = 1},
     },
     results = {
@@ -699,8 +699,8 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "kerogen", amount = 100},
-        {type = "fluid", name = "water", amount = 3000},
+        {type = "item",  name = "kerogen", amount = 100},
+        {type = "fluid", name = "water",   amount = 3000},
         {type = "fluid", name = "hot-air", amount = 1000},
     },
     results = {
@@ -718,8 +718,8 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "kerogen", amount = 100},
-        {type = "fluid", name = "water", amount = 3000},
+        {type = "item",  name = "kerogen", amount = 100},
+        {type = "fluid", name = "water",   amount = 3000},
         {type = "fluid", name = "hot-air", amount = 1000},
     },
     results = {
@@ -737,12 +737,12 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "kerogen", amount = 100},
+        {type = "item",  name = "kerogen", amount = 100},
         {type = "fluid", name = "hot-air", amount = 300},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 450},
-        {type = "fluid", name = "crude-oil", amount = 50},
+        {type = "fluid", name = "crude-oil",   amount = 50},
     },
     main_product = "natural-gas",
     subgroup = "py-petroleum-handling-fluids",
@@ -758,13 +758,13 @@ if mods["pyrawores"] then
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400},
+            {type = "fluid", name = "steam",     amount = 400},
             --propene
         },
         results = {
-            {type = "fluid", name = "olefin", amount = 150},
+            {type = "fluid", name = "olefin",  amount = 150},
             {type = "fluid", name = "bitumen", amount = 50},
-            {type = "item", name = "soot", amount = 4},
+            {type = "item",  name = "soot",    amount = 4},
         },
         main_product = "olefin",
         subgroup = "py-petroleum-handling-scrude-recipes",
@@ -779,11 +779,11 @@ else
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400},
+            {type = "fluid", name = "steam",     amount = 400},
             --propene
         },
         results = {
-            {type = "fluid", name = "olefin", amount = 150},
+            {type = "fluid", name = "olefin",  amount = 150},
             {type = "fluid", name = "bitumen", amount = 50},
         },
         main_product = "olefin",
@@ -803,12 +803,12 @@ if mods["pyrawores"] then
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400},
-            {type = "item", name = "ticl4", amount = 1},
+            {type = "fluid", name = "steam",     amount = 400},
+            {type = "item",  name = "ticl4",     amount = 1},
         },
         results = {
             {type = "fluid", name = "bitumen", amount = 100},
-            {type = "item", name = "soot", amount = 4},
+            {type = "item",  name = "soot",    amount = 4},
         },
         main_product = "bitumen",
         subgroup = "py-petroleum-handling-scrude-recipes",
@@ -823,7 +823,7 @@ else
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "lubricant", amount = 300},
-            {type = "fluid", name = "steam", amount = 400},
+            {type = "fluid", name = "steam",     amount = 400},
         },
         results = {
             {type = "fluid", name = "bitumen", amount = 100},
@@ -842,7 +842,7 @@ RECIPE {
     energy_required = 12,
     ingredients = {
         {type = "fluid", name = "natural-gas", amount = 400},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "item",  name = "chromium",    amount = 1},
     },
     results = {
         {type = "fluid", name = "petroleum-gas", amount = 400},
@@ -859,8 +859,8 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},
-        {type = "fluid", name = "steam", amount = 300},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "steam",          amount = 300},
+        {type = "item",  name = "chromium",       amount = 1},
     },
     results = {
         {type = "fluid", name = "medium-distillate", amount = 100},
@@ -877,8 +877,8 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "medium-distillate", amount = 100},
-        {type = "fluid", name = "steam", amount = 300},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "steam",             amount = 300},
+        {type = "item",  name = "chromium",          amount = 1},
     },
     results = {
         {type = "fluid", name = "high-distillate", amount = 100},
@@ -898,8 +898,8 @@ RECIPE {
         {type = "fluid", name = "condensates", amount = 100},
     },
     results = {
-        {type = "fluid", name = "liquid-petgas", amount = 100},
-        {type = "fluid", name = "btx", amount = 30},
+        {type = "fluid", name = "liquid-petgas",     amount = 100},
+        {type = "fluid", name = "btx",               amount = 30},
         {type = "fluid", name = "dirty-water-heavy", amount = 50},
     },
     main_product = "liquid-petgas",
@@ -914,14 +914,14 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "syngas", amount = 100},
+        {type = "fluid", name = "syngas",        amount = 100},
         {type = "fluid", name = "petroleum-gas", amount = 25},
-        {type = "fluid", name = "hot-air", amount = 25}, --should be oxygen
+        {type = "fluid", name = "hot-air",       amount = 25}, --should be oxygen
         --needs ammonia
     },
     results = {
         {type = "fluid", name = "carbon-dioxide", amount = 50},
-        {type = "fluid", name = "hydrogen", amount = 50},
+        {type = "fluid", name = "hydrogen",       amount = 50},
     },
     main_product = "hydrogen",
     subgroup = "py-petroleum-handling-recipes",
@@ -935,8 +935,8 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "bitumen", amount = 100},
-        {type = "item", name = "chromium", amount = 2},
+        {type = "fluid", name = "bitumen",  amount = 100},
+        {type = "item",  name = "chromium", amount = 2},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 100},
@@ -955,9 +955,9 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "btx", amount = 100},
-        {type = "fluid", name = "steam", amount = 200},
-        {type = "item", name = "nexelit-plate", amount = 1},
+        {type = "fluid", name = "btx",           amount = 100},
+        {type = "fluid", name = "steam",         amount = 200},
+        {type = "item",  name = "nexelit-plate", amount = 1},
     },
     results = {
         {type = "fluid", name = "aromatics", amount = 200},
@@ -976,10 +976,10 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "btx", amount = 200},
+        {type = "fluid", name = "btx",      amount = 200},
         {type = "fluid", name = "methanol", amount = 120},
-        {type = "fluid", name = "steam", amount = 350},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "steam",    amount = 350},
+        {type = "item",  name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "styrene", amount = 100},
@@ -999,8 +999,8 @@ RECIPE {
     energy_required = 6,
     ingredients = {
         {type = "fluid", name = "natural-gas", amount = 100},
-        {type = "fluid", name = "hot-air", amount = 100},
-        {type = "item", name = "nichrome", amount = 1},
+        {type = "fluid", name = "hot-air",     amount = 100},
+        {type = "item",  name = "nichrome",    amount = 1},
     },
     results = {
         {type = "fluid", name = "methanol", amount = 150},
@@ -1016,16 +1016,16 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "fluid", name = "natural-gas", amount = 400},
-        {type = "fluid", name = "hot-air", amount = 100},
-        {type = "item", name = "copper-plate", amount = 2},
+        {type = "fluid", name = "natural-gas",  amount = 400},
+        {type = "fluid", name = "hot-air",      amount = 100},
+        {type = "item",  name = "copper-plate", amount = 2},
     },
     results = {
         {type = "fluid", name = "methanol", amount = 300},
     },
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("methanol-processing-1"):add_ingredient({type = "item", name = "ticl4", amount = 2})
+}:add_unlock("methanol-processing-1"):add_ingredient {type = "item", name = "ticl4", amount = 2}
 
 RECIPE {
     type = "recipe",
@@ -1035,13 +1035,13 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "natural-gas", amount = 150},
-        {type = "fluid", name = "water", amount = 200},
-        {type = "fluid", name = "gasoline", amount = 10},
+        {type = "fluid", name = "water",       amount = 200},
+        {type = "fluid", name = "gasoline",    amount = 10},
     },
     results = {
         {type = "fluid", name = "condensates", amount = 100},
-        {type = "fluid", name = "steam", amount = 200, temperature = 150, catalyst_amount = 200},
-        {type = "fluid", name = "naphtha", amount = 50},
+        {type = "fluid", name = "steam",       amount = 200, temperature = 150, catalyst_amount = 200},
+        {type = "fluid", name = "naphtha",     amount = 50},
     },
     main_product = "condensates",
     subgroup = "py-petroleum-handling-fluids",
@@ -1055,8 +1055,8 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "bitumen", amount = 100},
-        {type = "item", name = "chromium", amount = 2},
+        {type = "fluid", name = "bitumen",  amount = 100},
+        {type = "item",  name = "chromium", amount = 2},
     },
     results = {
         {type = "fluid", name = "scrude", amount = 100},
@@ -1066,7 +1066,7 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-}--:add_unlock("scrude")
+} --:add_unlock("scrude")
 
 RECIPE {
     type = "recipe",
@@ -1075,8 +1075,8 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "naphtha", amount = 100},
-        {type = "item", name = "iron-plate", amount = 2},
+        {type = "fluid", name = "naphtha",    amount = 100},
+        {type = "item",  name = "iron-plate", amount = 2},
     },
     results = {
         {type = "fluid", name = "aromatics", amount = 160},

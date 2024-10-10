@@ -1,9 +1,8 @@
-
 --add kerogen to stone patches
 if data.raw.resource.stone then
     data.raw.resource["stone"].minable.results = {
-        {type = "item", name = "stone", amount = 1},
-        {type = "item", name = "kerogen",amount = 1}
+        {type = "item", name = "stone",   amount = 1},
+        {type = "item", name = "kerogen", amount = 1}
     }
 end
 

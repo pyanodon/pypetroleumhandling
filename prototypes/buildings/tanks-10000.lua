@@ -5,8 +5,8 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "py-tank-4000", amount = 2},
-        {type = "item", name = "iron-plate", amount = 20},
-        {type = "item", name = "steel-plate", amount = 45},
+        {type = "item", name = "iron-plate",   amount = 20},
+        {type = "item", name = "steel-plate",  amount = 45},
     },
     results = {
         {type = "item", name = "py-tank-10000", amount = 1}
@@ -41,13 +41,13 @@ ENTITY {
         volume = 100000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {1.5, -3.9}, direction = defines.direction.north},
+            {position = {1.5, -3.9},  direction = defines.direction.north},
             {position = {-1.5, -3.9}, direction = defines.direction.north},
-            {position = {3.9, 1.5}, direction = defines.direction.east},
-            {position = {3.9, -1.5}, direction = defines.direction.east},
-            {position = {1.5, 3.9}, direction = defines.direction.south},
-            {position = {-1.5, 3.9}, direction = defines.direction.south},
-            {position = {-3.9, 1.5}, direction = defines.direction.west},
+            {position = {3.9, 1.5},   direction = defines.direction.east},
+            {position = {3.9, -1.5},  direction = defines.direction.east},
+            {position = {1.5, 3.9},   direction = defines.direction.south},
+            {position = {-1.5, 3.9},  direction = defines.direction.south},
+            {position = {-3.9, 1.5},  direction = defines.direction.west},
             {position = {-3.9, -1.5}, direction = defines.direction.west}
         }
     },

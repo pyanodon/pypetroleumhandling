@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pumpjack-mk03", amount = 1},
-        {type = "item", name = "nbfe-alloy", amount = 30},
-        {type = "item", name = "concrete", amount = 35},
+        {type = "item", name = "pumpjack-mk03",         amount = 1},
+        {type = "item", name = "nbfe-alloy",            amount = 30},
+        {type = "item", name = "concrete",              amount = 35},
         {type = "item", name = "low-density-structure", amount = 30},
-        {type = "item", name = "small-parts-03", amount = 40},
+        {type = "item", name = "small-parts-03",        amount = 40},
     },
     results = {
         {type = "item", name = "pumpjack-mk04", amount = 1}
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "pumpjack-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "pumpjack-mk04"},
     fast_replaceable_group = "pumpjack",
@@ -42,7 +42,7 @@ ENTITY {
     selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
     match_animation_speed_to_activity = false,
     module_slots = 4,
-    allowed_effects = {"speed","consumption"},
+    allowed_effects = {"speed", "consumption"},
     crafting_categories = {"pumpjack"},
     crafting_speed = 4,
     energy_source = {

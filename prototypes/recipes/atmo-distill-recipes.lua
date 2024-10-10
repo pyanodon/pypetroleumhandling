@@ -5,13 +5,13 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "raw-gas", amount = 500},
+        {type = "fluid", name = "raw-gas",  amount = 500},
         {type = "fluid", name = "gasoline", amount = 50},
     },
     results = {
         {type = "fluid", name = "natural-gas", amount = 250},
         {type = "fluid", name = "condensates", amount = 100},
-        {type = "fluid", name = "naphtha", amount = 50},
+        {type = "fluid", name = "naphtha",     amount = 50},
     },
     main_product = "natural-gas",
     subgroup = "py-petroleum-handling-fluids",
@@ -26,12 +26,12 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "scrude", amount = 300},
-        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
+        {type = "fluid", name = "steam",  amount = 100, minimum_temperature = 250},
     },
     results = {
         {type = "fluid", name = "condensates", amount = 250},
-        {type = "fluid", name = "light-oil", amount = 150},
-        {type = "fluid", name = "heavy-oil", amount = 100},
+        {type = "fluid", name = "light-oil",   amount = 150},
+        {type = "fluid", name = "heavy-oil",   amount = 100},
     },
     main_product = "condensates",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/scrude.png",
@@ -65,7 +65,7 @@ RECIPE {
     order = "a"
 }:add_unlock("scrude")
 --total:500 fluid
-]]--
+]] --
 
 RECIPE {
     type = "recipe",
@@ -75,14 +75,14 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "crude-oil", amount = 300},
-        {type = "fluid", name = "steam", amount = 400, minimum_temperature = 250},
+        {type = "fluid", name = "steam",     amount = 400, minimum_temperature = 250},
     },
     results = {
-        {type = "fluid", name = "condensates", amount = 125},
-        {type = "fluid", name = "high-distillate", amount = 125},
+        {type = "fluid", name = "condensates",       amount = 125},
+        {type = "fluid", name = "high-distillate",   amount = 125},
         {type = "fluid", name = "medium-distillate", amount = 100},
-        {type = "fluid", name = "low-distillate", amount = 100},
-        {type = "fluid", name = "residual-mixture", amount = 50},
+        {type = "fluid", name = "low-distillate",    amount = 100},
+        {type = "fluid", name = "residual-mixture",  amount = 50},
     },
     main_product = "medium-distillate",
     subgroup = "py-petroleum-handling-fluids",
@@ -98,14 +98,14 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "bitumen", amount = 300},
-        {type = "fluid", name = "steam", amount = 400, minimum_temperature = 250},
+        {type = "fluid", name = "steam",   amount = 400, minimum_temperature = 250},
     },
     results = {
-        {type = "fluid", name = "condensates", amount = 25},
-        {type = "fluid", name = "high-distillate", amount = 25},
+        {type = "fluid", name = "condensates",       amount = 25},
+        {type = "fluid", name = "high-distillate",   amount = 25},
         {type = "fluid", name = "medium-distillate", amount = 75},
-        {type = "fluid", name = "low-distillate", amount = 100},
-        {type = "fluid", name = "residual-mixture", amount = 250},
+        {type = "fluid", name = "low-distillate",    amount = 100},
+        {type = "fluid", name = "residual-mixture",  amount = 250},
     },
     main_product = "residual-mixture",
     subgroup = "py-petroleum-handling-fluids",

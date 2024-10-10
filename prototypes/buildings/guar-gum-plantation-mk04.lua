@@ -5,8 +5,8 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "guar-gum-plantation-mk03", amount = 1},
-        {type = "item", name = "low-density-structure", amount = 40},
-        {type = "item", name = "nbfe-alloy", amount = 15},
+        {type = "item", name = "low-density-structure",    amount = 40},
+        {type = "item", name = "nbfe-alloy",               amount = 15},
     },
     results = {
         {type = "item", name = "guar-gum-plantation-mk04", amount = 1}
@@ -29,7 +29,7 @@ ENTITY {
     type = "assembling-machine",
     name = "guar-gum-plantation-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "guar-gum-plantation-mk04"},
     fast_replaceable_group = "guar-gum-plantation",

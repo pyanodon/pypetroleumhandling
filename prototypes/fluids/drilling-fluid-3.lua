@@ -5,11 +5,11 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
+        {type = "fluid", name = "water",           amount = 500},
         {type = "fluid", name = "ethylene-glycol", amount = 50},
-        {type = "fluid", name = "boric-acid", amount = 100},
-        {type = "item", name = "guar-gum", amount = 1},
-        {type = "item", name = "chromium", amount = 3},
+        {type = "fluid", name = "boric-acid",      amount = 100},
+        {type = "item",  name = "guar-gum",        amount = 1},
+        {type = "item",  name = "chromium",        amount = 3},
     },
     results = {
         {type = "fluid", name = "drilling-fluid-3", amount = 300},

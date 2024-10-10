@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
+        {type = "item",  name = "small-parts-01",   amount = 2},
         {type = "fluid", name = "drilling-fluid-0", amount = 50},
     },
     results = {
@@ -23,8 +23,8 @@ RECIPE {
     enabled = false,
     energy_required = 9,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-01",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
@@ -42,8 +42,8 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "small-parts-02", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-02",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
@@ -61,8 +61,8 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-03", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-03",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -80,7 +80,7 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
+        {type = "item",  name = "small-parts-01",   amount = 2},
         {type = "fluid", name = "drilling-fluid-0", amount = 50},
     },
     results = {
@@ -98,8 +98,8 @@ RECIPE {
     enabled = false,
     energy_required = 9,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-01",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
@@ -117,8 +117,8 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "small-parts-02", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-02",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
@@ -136,8 +136,8 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-03", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-03",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -155,7 +155,7 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
+        {type = "item",  name = "small-parts-01",   amount = 2},
         {type = "fluid", name = "drilling-fluid-0", amount = 50},
     },
     results = {
@@ -173,8 +173,8 @@ RECIPE {
     enabled = false,
     energy_required = 9,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-01",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {
@@ -192,8 +192,8 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "small-parts-02", amount = 2},
-        {type = "item", name = "drill-head", amount = 1},
+        {type = "item",  name = "small-parts-02",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 1},
         {type = "fluid", name = "drilling-fluid-2", amount = 50},
     },
     results = {
@@ -211,8 +211,8 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "small-parts-03", amount = 2},
-        {type = "item", name = "drill-head", amount = 2},
+        {type = "item",  name = "small-parts-03",   amount = 2},
+        {type = "item",  name = "drill-head",       amount = 2},
         {type = "fluid", name = "drilling-fluid-3", amount = 50},
     },
     results = {
@@ -230,7 +230,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "small-parts-01", amount = 2},
+        {type = "item",  name = "small-parts-01",   amount = 2},
         {type = "fluid", name = "drilling-fluid-1", amount = 50},
     },
     results = {

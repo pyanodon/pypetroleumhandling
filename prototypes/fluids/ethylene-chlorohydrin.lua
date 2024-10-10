@@ -6,8 +6,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "carbon-dioxide", amount = 100},
-        {type = "fluid", name = "water", amount = 300},
-        {type = "item", name = "copper-plate", amount = 3}
+        {type = "fluid", name = "water",          amount = 300},
+        {type = "item",  name = "copper-plate",   amount = 3}
     },
     results = {
         {type = "fluid", name = "ethylene-chlorohydrin", amount = 100},
@@ -15,7 +15,7 @@ RECIPE {
     main_product = "ethylene-chlorohydrin",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02").category = 'fbreactor'
+}:add_unlock("petroleum-gas-mk02").category = "fbreactor"
 
 FLUID {
     type = "fluid",

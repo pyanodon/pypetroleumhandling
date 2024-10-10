@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "upgrader-mk01", amount = 1},
+        {type = "item", name = "upgrader-mk01",    amount = 1},
         {type = "item", name = "advanced-circuit", amount = 10},
-        {type = "item", name = "plastic-bar", amount = 40},
-        {type = "item", name = "engine-unit", amount = 10},
-        {type = "item", name = "niobium-plate", amount = 20},
-        {type = "item", name = "small-parts-02", amount = 20},
+        {type = "item", name = "plastic-bar",      amount = 40},
+        {type = "item", name = "engine-unit",      amount = 10},
+        {type = "item", name = "niobium-plate",    amount = 20},
+        {type = "item", name = "small-parts-02",   amount = 20},
     },
     results = {
         {type = "item", name = "upgrader-mk02", amount = 1}
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "upgrader-mk02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/upgrader-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "upgrader-mk02"},
     fast_replaceable_group = "upgrader",

@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "stone-brick", amount = 50},
-        {type = "item", name = "pipe", amount = 30},
-        {type = "item", name = "boiler", amount = 5},
+        {type = "item", name = "stone-brick",        amount = 50},
+        {type = "item", name = "pipe",               amount = 30},
+        {type = "item", name = "boiler",             amount = 5},
         {type = "item", name = "electronic-circuit", amount = 5},
-        {type = "item", name = "small-parts-01", amount = 20},
+        {type = "item", name = "small-parts-01",     amount = 20},
     },
     results = {
         {type = "item", name = "rhe", amount = 1}
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "rhe",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/rhe.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "rhe"},
     fast_replaceable_group = "cracker",

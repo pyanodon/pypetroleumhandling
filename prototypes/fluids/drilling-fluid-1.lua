@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "water", amount = 1000},
-        {type = "item", name = "sand", amount = 20},
-        {type = "item", name = "guar-gum", amount = 1}
+        {type = "fluid", name = "water",    amount = 1000},
+        {type = "item",  name = "sand",     amount = 20},
+        {type = "item",  name = "guar-gum", amount = 1}
     },
     results = {
         {type = "fluid", name = "drilling-fluid-1", amount = 200},

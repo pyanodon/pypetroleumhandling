@@ -5,12 +5,12 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "pressured-air", amount = 200},
-        {type = "fluid", name = "oil-sand-slurry", amount = 100},
-        {type = "item", name = "crushed-oil-sand", amount = 2}
+        {type = "fluid", name = "pressured-air",    amount = 200},
+        {type = "fluid", name = "oil-sand-slurry",  amount = 100},
+        {type = "item",  name = "crushed-oil-sand", amount = 2}
     },
     results = {
-        {type = "fluid", name = "bitumen-froth", amount = 100},
+        {type = "fluid", name = "bitumen-froth",     amount = 100},
         {type = "fluid", name = "dirty-water-heavy", amount = 100},
     },
     main_product = "bitumen-froth",

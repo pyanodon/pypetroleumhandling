@@ -1,4 +1,3 @@
-
 RECIPE {
     type = "recipe",
     name = "purified-natural-gas",
@@ -7,8 +6,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "refined-natural-gas", amount = 100},
-        {type = "fluid", name = "ethylene-glycol", amount = 50},
-        {type = "item", name = "filtration-media", amount = 1},
+        {type = "fluid", name = "ethylene-glycol",     amount = 50},
+        {type = "item",  name = "filtration-media",    amount = 1},
     },
     results = {
         {type = "fluid", name = "purified-natural-gas", amount = 100},

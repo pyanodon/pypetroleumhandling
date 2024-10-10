@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "stone-brick", amount = 20},
-        {type = "item", name = "pipe", amount = 20},
+        {type = "item", name = "pipe",        amount = 20},
         {type = "item", name = "steel-plate", amount = 30},
         --{type = "item", name = "processing-unit", amount = 50},
         --{type = "item", name = "small-parts-03", amount = 200},
@@ -30,9 +30,9 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "retorter",
-    fixed_recipe = 'kerogen-extraction',
+    fixed_recipe = "kerogen-extraction",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/retorter.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "retorter"},
     fast_replaceable_group = "retorter",

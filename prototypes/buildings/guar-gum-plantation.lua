@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pipe", amount = 20},
-        {type = "item", name = "steel-plate", amount = 20},
-        {type = "item", name = "botanical-nursery", amount = 1},
-        {type = "item", name = "steam-engine", amount = 2},
+        {type = "item", name = "pipe",               amount = 20},
+        {type = "item", name = "steel-plate",        amount = 20},
+        {type = "item", name = "botanical-nursery",  amount = 1},
+        {type = "item", name = "steam-engine",       amount = 2},
         {type = "item", name = "electronic-circuit", amount = 10},
-        {type = "item", name = "small-parts-01", amount = 30},
+        {type = "item", name = "small-parts-01",     amount = 30},
     },
     results = {
         {type = "item", name = "guar-gum-plantation", amount = 1}
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "guar-gum-plantation",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/guar-gum-plantation-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "guar-gum-plantation"},
     fast_replaceable_group = "guar-gum-plantation",
@@ -159,5 +159,5 @@ ENTITY {
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg", volume = 0.3},
         apparent_volume = 2.5
     },
-    next_upgrade = 'guar-gum-plantation-mk02'
+    next_upgrade = "guar-gum-plantation-mk02"
 }

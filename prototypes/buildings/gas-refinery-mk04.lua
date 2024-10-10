@@ -4,10 +4,10 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "gas-refinery-mk03", amount = 1},
+        {type = "item", name = "gas-refinery-mk03",     amount = 1},
         {type = "item", name = "low-density-structure", amount = 20},
-        {type = "item", name = "nbfe-alloy", amount = 20},
-        {type = "item", name = "small-parts-03", amount = 30},
+        {type = "item", name = "nbfe-alloy",            amount = 20},
+        {type = "item", name = "small-parts-03",        amount = 30},
     },
     results = {
         {type = "item", name = "gas-refinery-mk04", amount = 1}
@@ -30,7 +30,7 @@ ENTITY {
     type = "assembling-machine",
     name = "gas-refinery-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-refinery-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "gas-refinery-mk04"},
     fast_replaceable_group = "gas-refinery",

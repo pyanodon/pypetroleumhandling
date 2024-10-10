@@ -1,4 +1,3 @@
-
 RECIPE {
     type = "recipe",
     name = "carbon-black",
@@ -29,12 +28,12 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "anthracene-oil", amount = 50},
-        {type = "fluid", name = "sulfuric-acid", amount = 50},
-        {type = "item", name = "chromite-sand", amount = 5},
+        {type = "fluid", name = "sulfuric-acid",  amount = 50},
+        {type = "item",  name = "chromite-sand",  amount = 5},
     },
     results = {
         {type = "fluid", name = "anthraquinone", amount = 100},
-        {type = "fluid", name = "steam", amount = 50, temperature = 150},
+        {type = "fluid", name = "steam",         amount = 50, temperature = 150},
     },
     main_product = "anthraquinone",
     subgroup = "py-petroleum-handling-recipes",
@@ -74,14 +73,14 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "stone", amount = 5},
+        {type = "item",  name = "stone", amount = 5},
         {type = "fluid", name = "pitch", amount = 50},
     },
     results = {
         {type = "item", name = "stone-brick", amount = 4},
     },
     main_product = "stone-brick",
-}:add_unlock('tar-processing')
+}:add_unlock("tar-processing")
 
 --napathalene recipes
 
@@ -123,7 +122,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "aromatics", amount = 40},
-        {type = "item", name = "coke", amount = 3},
+        {type = "item",  name = "coke",      amount = 3},
     },
     main_product = "aromatics",
     subgroup = "py-petroleum-handling-recipes",
@@ -138,7 +137,7 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "naphthalene-oil", amount = 100},
-        {type = "item", name = "vanadium-oxide", amount = 2},
+        {type = "item",  name = "vanadium-oxide",  amount = 2},
     },
     results = {
         {type = "fluid", name = "anthraquinone", amount = 100},
@@ -157,7 +156,7 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "naphthalene-oil", amount = 100},
-        {type = "fluid", name = "carbolic-oil", amount = 20},
+        {type = "fluid", name = "carbolic-oil",    amount = 20},
     },
     results = {
         {type = "fluid", name = "organic-solvent", amount = 30},
@@ -181,7 +180,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "aromatics", amount = 50},
-        {type = "fluid", name = "gasoline", amount = 25},
+        {type = "fluid", name = "gasoline",  amount = 25},
     },
     main_product = "aromatics",
     subgroup = "py-petroleum-handling-recipes",

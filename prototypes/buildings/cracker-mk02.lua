@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "cracker-mk01", amount = 1},
+        {type = "item", name = "cracker-mk01",     amount = 1},
         {type = "item", name = "advanced-circuit", amount = 10},
-        {type = "item", name = "plastic-bar", amount = 40},
-        {type = "item", name = "niobium-plate", amount = 20},
-        {type = "item", name = "engine-unit", amount = 5},
-        {type = "item", name = "small-parts-02", amount = 20},
+        {type = "item", name = "plastic-bar",      amount = 40},
+        {type = "item", name = "niobium-plate",    amount = 20},
+        {type = "item", name = "engine-unit",      amount = 5},
+        {type = "item", name = "small-parts-02",   amount = 20},
     },
     results = {
         {type = "item", name = "cracker-mk02", amount = 1}
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "cracker-mk02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/cracker-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "cracker-mk02"},
     fast_replaceable_group = "cracker",

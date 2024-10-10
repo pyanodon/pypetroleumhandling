@@ -91,7 +91,7 @@ data:extend {
         type = "recipe-category",
         name = "kerogen"
     },
-	{
+    {
         type = "recipe-category",
         name = "converter-valve"
     },

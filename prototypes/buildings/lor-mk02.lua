@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "lor-mk01", amount = 1},
-        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "lor-mk01",         amount = 1},
+        {type = "item", name = "steel-plate",      amount = 50},
         {type = "item", name = "advanced-circuit", amount = 12},
-        {type = "item", name = "engine-unit", amount = 7},
-        {type = "item", name = "small-parts-02", amount = 30},
-        {type = "item", name = "pipe", amount = 30},
+        {type = "item", name = "engine-unit",      amount = 7},
+        {type = "item", name = "small-parts-02",   amount = 30},
+        {type = "item", name = "pipe",             amount = 30},
     },
     results = {
         {type = "item", name = "lor-mk02", amount = 1}
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "lor-mk02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/lor-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "lor-mk02"},
     fast_replaceable_group = "lor",

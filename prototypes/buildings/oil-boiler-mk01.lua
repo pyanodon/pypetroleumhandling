@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "lab", amount = 1},
-        {type = "item", name = "iron-plate", amount = 100},
+        {type = "item", name = "lab",                   amount = 1},
+        {type = "item", name = "iron-plate",            amount = 100},
         {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "gasifier", amount = 1},
-        {type = "item", name = "small-parts-01", amount = 20},
+        {type = "item", name = "gasifier",              amount = 1},
+        {type = "item", name = "small-parts-01",        amount = 20},
     },
     results = {
         {type = "item", name = "oil-boiler-mk01", amount = 1}
@@ -36,7 +36,7 @@ ENTITY {
     minable = {mining_time = 0.2, result = "oil-boiler-mk01"},
     max_health = 200,
     corpse = "boiler-remnants",
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65 },
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     mode = "output-to-separate-pipe",
     resistances = {
         {
@@ -61,7 +61,7 @@ ENTITY {
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
             {flow_direction = "input-output", position = {-2.0, 0.0}, direction = defines.direction.west},
-            {flow_direction = "input-output", position = {2.0, 0.0}, direction = defines.direction.east}
+            {flow_direction = "input-output", position = {2.0, 0.0},  direction = defines.direction.east}
         },
         production_type = "input-output",
         filter = "water"

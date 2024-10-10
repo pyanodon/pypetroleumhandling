@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "reformer-mk01", amount = 1},
-        {type = "item", name = "steel-plate", amount = 30},
-        {type = "item", name = "pipe", amount = 30},
+        {type = "item", name = "reformer-mk01",      amount = 1},
+        {type = "item", name = "steel-plate",        amount = 30},
+        {type = "item", name = "pipe",               amount = 30},
         {type = "item", name = "electronic-circuit", amount = 30},
-        {type = "item", name = "small-parts-01", amount = 10},
+        {type = "item", name = "small-parts-01",     amount = 10},
     },
     results = {
         {type = "item", name = "upgrader-mk01", amount = 1}
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "upgrader-mk01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/upgrader-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "upgrader-mk01"},
     fast_replaceable_group = "upgrader",

@@ -1,6 +1,6 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["sulfur-patch"] = {}
 
-data:extend{{
+data:extend {{
     type = "autoplace-control",
     category = "resource",
     name = "sulfur-patch",
@@ -13,7 +13,7 @@ data:extend{{
 --     name = "sulfur-patch"
 -- }}
 
-data:extend{
+data:extend {
     {
         type = "noise-expression",
         name = "py_sulfur_patch_starting_area",
@@ -44,12 +44,12 @@ data:extend{
     }
 }
 
-data:extend{{
+data:extend {{
     type = "resource",
     name = "sulfur-patch",
     category = "sulfur-patch",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/ores/sulfur-patch.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 1, g = 0.823, b = 0.0},

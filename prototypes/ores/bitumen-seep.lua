@@ -1,6 +1,6 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["bitumen-seep"] = {}
 
-data:extend{{
+data:extend {{
     type = "autoplace-control",
     category = "resource",
     name = "bitumen-seep",
@@ -8,7 +8,7 @@ data:extend{{
     order = "c"
 }}
 
-data:extend{
+data:extend {
     {
         type = "noise-expression",
         name = "py_bitumen_seep_starting_area",
@@ -46,7 +46,7 @@ ENTITY {
     icon_size = 64,
     flags = {"placeable-neutral"},
     category = "bitumen-seep",
-    order="a-b-a",
+    order = "a-b-a",
     infinite = false,
     highlight = true,
     --infinite_depletion_amount = 5,
@@ -55,45 +55,45 @@ ENTITY {
     tree_removal_max_distance = 32 * 32,
     minable =
     {
-      mining_time = 1,
-      results = {}
-      -- {
-      --   {
-      --     type = "fluid",
-      --     name = "drilling-waste",
-      --     amount_min = 1,
-      --     amount_max = 1,
-      --     probability = 0
-      --   }
-      -- }
+        mining_time = 1,
+        results = {}
+        -- {
+        --   {
+        --     type = "fluid",
+        --     name = "drilling-waste",
+        --     amount_min = 1,
+        --     amount_max = 1,
+        --     probability = 0
+        --   }
+        -- }
     },
     --collision_box = {{ -2.4, -2.4}, {2.4, 2.4}},
-    collision_box = {{ -5.4, -5.4}, {5.4, 5.4}},
-    selection_box = {{ -2.4, -2.4}, {2.4, 2.4}},
+    collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
+    selection_box = {{-2.4, -2.4}, {2.4, 2.4}},
     autoplace = {
-      name = "bitumen-seep",
-      order = "c-bitumen-seep", -- Other resources are "b"; oil won't get placed if something else is already there.
-      control = "bitumen-seep",
-      -- We return the chance of spawning on any given tile here
-      probability_expression = "py_bitumen_seep",
-      -- We return the richness here, which is just the quantity the resource tile yields
-      richness_expression = "py_bitumen_seep_richness"
+        name = "bitumen-seep",
+        order = "c-bitumen-seep", -- Other resources are "b"; oil won't get placed if something else is already there.
+        control = "bitumen-seep",
+        -- We return the chance of spawning on any given tile here
+        probability_expression = "py_bitumen_seep",
+        -- We return the richness here, which is just the quantity the resource tile yields
+        richness_expression = "py_bitumen_seep_richness"
     },
     stage_counts = {0},
     stages =
     {
-      sheet =
-      {
-        filename = "__base__/graphics/entity/crude-oil/crude-oil.png",
-        priority = "extra-high",
-        width = 148,
-        height = 120,
-        frame_count = 4,
-        variation_count = 1,
-        shift = util.by_pixel(0, -2),
-        scale = 0.5,
+        sheet =
+        {
+            filename = "__base__/graphics/entity/crude-oil/crude-oil.png",
+            priority = "extra-high",
+            width = 148,
+            height = 120,
+            frame_count = 4,
+            variation_count = 1,
+            shift = util.by_pixel(0, -2),
+            scale = 0.5,
         }
     },
     map_color = {0.78, 0.2, 0.77},
     map_grid = false
-  }
+}
