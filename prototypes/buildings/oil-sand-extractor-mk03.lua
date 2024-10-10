@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "oil-sand-extractor-mk02", amount = 1},
-        {type = "item", name = "processing-unit", amount = 25},
-        {type = "item", name = "electric-engine-unit", amount = 10},
-        {type = "item", name = "small-parts-03", amount = 30},
+        {type = "item", name = "processing-unit",         amount = 25},
+        {type = "item", name = "electric-engine-unit",    amount = 10},
+        {type = "item", name = "small-parts-03",          amount = 30},
     },
     results = {
         {type = "item", name = "oil-sand-extractor-mk03", amount = 1}

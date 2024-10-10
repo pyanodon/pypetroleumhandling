@@ -5,13 +5,13 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "aromatics", amount = 200},
-        {type = "fluid", name = "water", amount = 1000},
-        {type = "item", name = "copper-plate", amount = 1}, --titanium
+        {type = "fluid", name = "aromatics",    amount = 200},
+        {type = "fluid", name = "water",        amount = 1000},
+        {type = "item",  name = "copper-plate", amount = 1}, --titanium
     },
     results = {
         {type = "fluid", name = "polybutadiene", amount = 100},
-        {type = "fluid", name = "steam", amount = 1000, temperature = 150, catalyst_amount = 1000},
+        {type = "fluid", name = "steam",         amount = 1000, temperature = 150, catalyst_amount = 1000},
     },
     main_product = "polybutadiene",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/polybutadiene.png",

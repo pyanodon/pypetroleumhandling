@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steam-engine", amount = 1},
-        {type = "item", name = "iron-plate", amount = 50},
+        {type = "item", name = "steam-engine",        amount = 1},
+        {type = "item", name = "iron-plate",          amount = 50},
         {type = "item", name = "burner-mining-drill", amount = 1},
-        {type = "item", name = "electronic-circuit", amount = 2},
-        {type = "item", name = "small-parts-01", amount = 20},
+        {type = "item", name = "electronic-circuit",  amount = 2},
+        {type = "item", name = "small-parts-01",      amount = 20},
     },
     results = {
         {type = "item", name = "pumpjack-mk01", amount = 1}
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "pumpjack-mk01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "pumpjack-mk01"},
     fast_replaceable_group = "pumpjack",
@@ -42,7 +42,7 @@ ENTITY {
     selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
     match_animation_speed_to_activity = false,
     module_slots = 1,
-    allowed_effects = {"speed","consumption"},
+    allowed_effects = {"speed", "consumption"},
     crafting_categories = {"pumpjack"},
     crafting_speed = 1,
     energy_source = {

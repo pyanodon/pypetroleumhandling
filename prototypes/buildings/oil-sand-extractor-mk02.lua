@@ -5,12 +5,12 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "oil-sand-extractor-mk01", amount = 1},
-        {type = "item", name = "advanced-circuit", amount = 25},
-        {type = "item", name = "concrete", amount = 20},
-        {type = "item", name = "engine-unit", amount = 3},
-        {type = "item", name = "plastic-bar", amount = 40},
-        {type = "item", name = "niobium-plate", amount = 30},
-        {type = "item", name = "small-parts-02", amount = 20},
+        {type = "item", name = "advanced-circuit",        amount = 25},
+        {type = "item", name = "concrete",                amount = 20},
+        {type = "item", name = "engine-unit",             amount = 3},
+        {type = "item", name = "plastic-bar",             amount = 40},
+        {type = "item", name = "niobium-plate",           amount = 30},
+        {type = "item", name = "small-parts-02",          amount = 20},
     },
     results = {
         {type = "item", name = "oil-sand-extractor-mk02", amount = 1}

@@ -5,10 +5,10 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "syngas", amount = 100}, --benzene
-        {type = "fluid", name = "aromatics", amount = 100}, --ethylene
-        {type = "fluid", name = "steam", amount = 100},
-        {type = "item", name = "iron-oxide", amount = 2},
+        {type = "fluid", name = "syngas",     amount = 100}, --benzene
+        {type = "fluid", name = "aromatics",  amount = 100}, --ethylene
+        {type = "fluid", name = "steam",      amount = 100},
+        {type = "item",  name = "iron-oxide", amount = 2},
     },
     results = {
         {type = "fluid", name = "styrene", amount = 100},

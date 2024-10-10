@@ -4,9 +4,9 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "cracker-mk03", amount = 1},
+        {type = "item", name = "cracker-mk03",          amount = 1},
         {type = "item", name = "low-density-structure", amount = 20},
-        {type = "item", name = "nbfe-alloy", amount = 20},
+        {type = "item", name = "nbfe-alloy",            amount = 20},
     },
     results = {
         {type = "item", name = "cracker-mk04", amount = 1}
@@ -29,7 +29,7 @@ ENTITY {
     type = "assembling-machine",
     name = "cracker-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/cracker-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "cracker-mk04"},
     fast_replaceable_group = "cracker",

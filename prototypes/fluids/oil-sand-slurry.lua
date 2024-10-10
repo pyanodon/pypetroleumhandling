@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 350},
-        {type = "fluid", name = "water", amount = 300},
-        {type = "item", name = "crushed-oil-sand", amount = 2}
+        {type = "fluid", name = "steam",            amount = 350},
+        {type = "fluid", name = "water",            amount = 300},
+        {type = "item",  name = "crushed-oil-sand", amount = 2}
     },
     results = {
         {type = "fluid", name = "oil-sand-slurry", amount = 100}

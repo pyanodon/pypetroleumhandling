@@ -1,4 +1,3 @@
-
 --coke oven gas
 
 RECIPE {
@@ -8,12 +7,12 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "stone-brick", amount = 5},
+        {type = "item",  name = "stone-brick",   amount = 5},
         {type = "fluid", name = "coke-oven-gas", amount = 100, minimum_temperature = 250},
     },
     results = {
-        {type = "item", name = "warm-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 100},
+        {type = "item",  name = "warm-stone-brick", amount = 5},
+        {type = "fluid", name = "coke-oven-gas",    amount = 100, temperature = 100},
     },
     main_product = "warm-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -22,11 +21,11 @@ RECIPE {
     --icon_size = 32,
 }:add_unlock("hot-air-mk01")
 
-data.raw.recipe['coke-coal'].results =
-    {
-        {type = "item", name = "coke", amount = 4},
-        {type = "fluid", name = "coke-oven-gas", amount = 20, temperature = 250}
-    }
+data.raw.recipe["coke-coal"].results =
+{
+    {type = "item",  name = "coke",          amount = 4},
+    {type = "fluid", name = "coke-oven-gas", amount = 20, temperature = 250}
+}
 
 RECIPE {
     type = "recipe",
@@ -35,12 +34,12 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "warm-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas", amount = 100, minimum_temperature = 500},
+        {type = "item",  name = "warm-stone-brick", amount = 5},
+        {type = "fluid", name = "coke-oven-gas",    amount = 100, minimum_temperature = 500},
     },
     results = {
-        {type = "item", name = "warmer-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas", amount = 100, temperature = 250},
+        {type = "item",  name = "warmer-stone-brick", amount = 5},
+        {type = "fluid", name = "coke-oven-gas",      amount = 100, temperature = 250},
     },
     main_product = "warmer-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -57,12 +56,12 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "item", name = "stone-brick", amount = 20},
+        {type = "item",  name = "stone-brick",   amount = 20},
         {type = "fluid", name = "outlet-gas-04", amount = 100, minimum_temperature = 500},
     },
     results = {
-        {type = "item", name = "warm-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 250},
+        {type = "item",  name = "warm-stone-brick", amount = 20},
+        {type = "fluid", name = "outlet-gas-04",    amount = 100, temperature = 250},
     },
     main_product = "warm-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -78,12 +77,12 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "item", name = "warm-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04", amount = 100, minimum_temperature = 750},
+        {type = "item",  name = "warm-stone-brick", amount = 20},
+        {type = "fluid", name = "outlet-gas-04",    amount = 100, minimum_temperature = 750},
     },
     results = {
-        {type = "item", name = "warmer-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 500},
+        {type = "item",  name = "warmer-stone-brick", amount = 20},
+        {type = "fluid", name = "outlet-gas-04",      amount = 100, temperature = 500},
     },
     main_product = "warmer-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -99,12 +98,12 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "item", name = "warmer-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04", amount = 100, minimum_temperature = 1000},
+        {type = "item",  name = "warmer-stone-brick", amount = 20},
+        {type = "fluid", name = "outlet-gas-04",      amount = 100, minimum_temperature = 1000},
     },
     results = {
-        {type = "item", name = "hot-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04", amount = 100, temperature = 750},
+        {type = "item",  name = "hot-stone-brick", amount = 20},
+        {type = "fluid", name = "outlet-gas-04",   amount = 100, temperature = 750},
     },
     main_product = "hot-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -121,12 +120,12 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "warm-stone-brick", amount = 20},
-        {type = "fluid", name = "pressured-air", amount = 150},
+        {type = "item",  name = "warm-stone-brick", amount = 20},
+        {type = "fluid", name = "pressured-air",    amount = 150},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 150},
-        {type = "item", name = "stone-brick", amount = 20},
+        {type = "fluid", name = "hot-air",     amount = 150},
+        {type = "item",  name = "stone-brick", amount = 20},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
@@ -143,12 +142,12 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "warmer-stone-brick", amount = 20},
-        {type = "fluid", name = "pressured-air", amount = 150},
+        {type = "item",  name = "warmer-stone-brick", amount = 20},
+        {type = "fluid", name = "pressured-air",      amount = 150},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 300},
-        {type = "item", name = "stone-brick", amount = 20},
+        {type = "fluid", name = "hot-air",     amount = 300},
+        {type = "item",  name = "stone-brick", amount = 20},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
@@ -165,12 +164,12 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "item", name = "hot-stone-brick", amount = 20},
-        {type = "fluid", name = "pressured-air", amount = 150},
+        {type = "item",  name = "hot-stone-brick", amount = 20},
+        {type = "fluid", name = "pressured-air",   amount = 150},
     },
     results = {
-        {type = "fluid", name = "hot-air", amount = 500},
-        {type = "item", name = "stone-brick", amount = 20},
+        {type = "fluid", name = "hot-air",     amount = 500},
+        {type = "item",  name = "stone-brick", amount = 20},
     },
     main_product = "hot-air",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
@@ -188,15 +187,15 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "coke-oven-gas", amount = 100, maximum_temperature = 100},
-        {type = "fluid", name = "combustion-mixture1", amount = 50, minimum_temperature = 500}
+        {type = "fluid", name = "coke-oven-gas",       amount = 100, maximum_temperature = 100},
+        {type = "fluid", name = "combustion-mixture1", amount = 50,  minimum_temperature = 500}
     },
     results = {
         {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500},
     },
-    main_product= "coke-oven-gas",
+    main_product = "coke-oven-gas",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
-	--icon_size = 32,
+    --icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c1"
 }:add_unlock("hot-air-mk02")
@@ -208,15 +207,15 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 250},
-        {type = "fluid", name = "combustion-mixture1", amount = 75, minimum_temperature = 750}
+        {type = "fluid", name = "outlet-gas-04",       amount = 100, maximum_temperature = 250},
+        {type = "fluid", name = "combustion-mixture1", amount = 75,  minimum_temperature = 750}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750},
     },
-    main_product= "outlet-gas-04",
+    main_product = "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
-	--icon_size = 32,
+    --icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c2"
 }:add_unlock("hot-air-mk03")
@@ -228,15 +227,15 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "outlet-gas-04", amount = 100, maximum_temperature = 500},
+        {type = "fluid", name = "outlet-gas-04",       amount = 100, maximum_temperature = 500},
         {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 1000}
     },
     results = {
         {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000},
     },
-    main_product= "outlet-gas-04",
+    main_product = "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
-	--icon_size = 32,
+    --icon_size = 32,
     subgroup = "py-petroleum-handling-hot-air",
     order = "c3"
 }:add_unlock("hot-air-mk03")

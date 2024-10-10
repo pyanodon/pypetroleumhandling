@@ -1,5 +1,4 @@
-
-  RECIPE {
+RECIPE {
     type = "recipe",
     name = "residual-mixture-distillation",
     category = "distilator",
@@ -7,12 +6,12 @@
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "residual-mixture", amount = 200},
-        {type = "fluid", name = "vacuum", amount = 200},
+        {type = "fluid", name = "vacuum",           amount = 200},
     },
     results = {
-        {type = "fluid", name = "residual-oil", amount = 50},
+        {type = "fluid", name = "residual-oil",         amount = 50},
         {type = "fluid", name = "hot-residual-mixture", amount = 25},
-        {type = "item", name = "coke", amount = 40},
+        {type = "item",  name = "coke",                 amount = 40},
     },
     main_product = "residual-oil",
     subgroup = "py-petroleum-handling-fluids",
@@ -35,8 +34,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "residual-oil", amount = 200},
-        {type = "fluid", name = "steam", amount = 200},
-        {type = "item", name = "ash", amount = 10}
+        {type = "fluid", name = "steam",        amount = 200},
+        {type = "item",  name = "ash",          amount = 10}
     },
     results = {
         {type = "fluid", name = "residual-mixture", amount = 100},
@@ -54,7 +53,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "residual-mixture", amount = 100},
-        {type = "item", name = "coke", amount = 10}
+        {type = "item",  name = "coke",             amount = 10}
     },
     results = {
         {type = "fluid", name = "hot-residual-mixture", amount = 100},
@@ -73,11 +72,11 @@ if mods["pyrawores"] then
         energy_required = 6,
         ingredients = {
             {type = "fluid", name = "hot-residual-mixture", amount = 150},
-            {type = "fluid", name = "water", amount = 300},
-            {type = "fluid", name = "steam", amount = 300},
+            {type = "fluid", name = "water",                amount = 300},
+            {type = "fluid", name = "steam",                amount = 300},
         },
         results = {
-            {type = "item", name = "coke", amount = 40},
+            {type = "item",  name = "coke",          amount = 40},
             {type = "fluid", name = "coke-oven-gas", amount = 60, temperature = 500},
         },
         main_product = "coke",
@@ -93,8 +92,8 @@ else
         energy_required = 6,
         ingredients = {
             {type = "fluid", name = "hot-residual-mixture", amount = 150},
-            {type = "fluid", name = "water", amount = 300},
-            {type = "fluid", name = "steam", amount = 300},
+            {type = "fluid", name = "water",                amount = 300},
+            {type = "fluid", name = "steam",                amount = 300},
         },
         results = {
             {type = "item", name = "coke", amount = 30},

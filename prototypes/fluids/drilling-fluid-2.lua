@@ -7,10 +7,10 @@ if mods["pyhightech"] and mods["pyrawores"] then
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "hydrogen-chloride", amount = 50},
-            {type = "fluid", name = "ethylene-glycol", amount = 50},
-            {type = "fluid", name = "boric-acid", amount = 100},
-            {type = "item", name = "guar-gum", amount = 1},
-            {type = "item", name = "collagen", amount = 2}
+            {type = "fluid", name = "ethylene-glycol",   amount = 50},
+            {type = "fluid", name = "boric-acid",        amount = 100},
+            {type = "item",  name = "guar-gum",          amount = 1},
+            {type = "item",  name = "collagen",          amount = 2}
         },
         results = {
             {type = "fluid", name = "drilling-fluid-2", amount = 300},
@@ -19,7 +19,8 @@ if mods["pyhightech"] and mods["pyrawores"] then
         subgroup = "py-petroleum-handling-fluids",
         order = "h"
     }:add_unlock("drilling-fluid-mk03")
-    else if mods["pyhightech"] then
+else
+    if mods["pyhightech"] then
         RECIPE {
             type = "recipe",
             name = "drilling-fluid-2",
@@ -27,11 +28,11 @@ if mods["pyhightech"] and mods["pyrawores"] then
             enabled = false,
             energy_required = 4,
             ingredients = {
-                {type = "fluid", name = "acetic-acid", amount = 50},
+                {type = "fluid", name = "acetic-acid",     amount = 50},
                 {type = "fluid", name = "ethylene-glycol", amount = 50},
-                {type = "fluid", name = "boric-acid", amount = 100},
-                {type = "item", name = "guar-gum", amount = 1},
-                {type = "item", name = "collagen", amount = 2}
+                {type = "fluid", name = "boric-acid",      amount = 100},
+                {type = "item",  name = "guar-gum",        amount = 1},
+                {type = "item",  name = "collagen",        amount = 2}
             },
             results = {
                 {type = "fluid", name = "drilling-fluid-2", amount = 300},
@@ -48,10 +49,10 @@ if mods["pyhightech"] and mods["pyrawores"] then
             enabled = false,
             energy_required = 4,
             ingredients = {
-                {type = "fluid", name = "water", amount = 50},
+                {type = "fluid", name = "water",           amount = 50},
                 {type = "fluid", name = "ethylene-glycol", amount = 50},
-                {type = "fluid", name = "boric-acid", amount = 100},
-                {type = "item", name = "guar-gum", amount = 1}
+                {type = "fluid", name = "boric-acid",      amount = 100},
+                {type = "item",  name = "guar-gum",        amount = 1}
             },
             results = {
                 {type = "fluid", name = "drilling-fluid-2", amount = 200},

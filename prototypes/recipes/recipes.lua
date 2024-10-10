@@ -25,8 +25,8 @@ RECIPE {
     energy_required = 0.2,
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
-        {type = "item", name = "copper-cable", amount = 3},
-        {type = "item", name = "bolts", amount = 3},
+        {type = "item", name = "copper-cable",    amount = 3},
+        {type = "item", name = "bolts",           amount = 3},
     },
     results = {
         {type = "item", name = "small-parts-01", amount = 2},
@@ -46,11 +46,11 @@ RECIPE {
     energy_required = 1,
     ingredients = {
         {type = "item", name = "iron-gear-wheel", amount = 1},
-        {type = "item", name = "steel-plate", amount = 1},
-        {type = "item", name = "nexelit-plate", amount = 1},
-        {type = "item", name = "belt", amount = 2},
-        {type = "item", name = "bolts", amount = 10},
-        {type = "item", name = "iron-stick", amount = 3},
+        {type = "item", name = "steel-plate",     amount = 1},
+        {type = "item", name = "nexelit-plate",   amount = 1},
+        {type = "item", name = "belt",            amount = 2},
+        {type = "item", name = "bolts",           amount = 10},
+        {type = "item", name = "iron-stick",      amount = 3},
     },
     results = {
         {type = "item", name = "small-parts-02", amount = 3},
@@ -69,13 +69,13 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "small-parts-02", amount = 1},
-        {type = "item", name = "steel-plate", amount = 1}, --supersteel
-        {type = "item", name = "plastic-bar", amount = 5},
-        {type = "item", name = "rubber", amount = 2},
-        {type = "item", name = "belt", amount = 2},
-        {type = "item", name = "nenbit-matrix", amount = 1},
-        {type = "fluid", name = "lubricant", amount = 15},
+        {type = "item",  name = "small-parts-02", amount = 1},
+        {type = "item",  name = "steel-plate",    amount = 1}, --supersteel
+        {type = "item",  name = "plastic-bar",    amount = 5},
+        {type = "item",  name = "rubber",         amount = 2},
+        {type = "item",  name = "belt",           amount = 2},
+        {type = "item",  name = "nenbit-matrix",  amount = 1},
+        {type = "fluid", name = "lubricant",      amount = 15},
     },
     results = {
         {type = "item", name = "small-parts-03", amount = 3},
@@ -114,7 +114,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "polybutadiene", amount = 50},
-        {type = "item", name = "carbon-black", amount = 2},
+        {type = "item",  name = "carbon-black",  amount = 2},
     },
     results = {
         {type = "item", name = "rubber", amount = 1},
@@ -133,9 +133,9 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "polybutadiene", amount = 50},
+        {type = "fluid", name = "polybutadiene",   amount = 50},
         {type = "fluid", name = "organic-solvent", amount = 50},
-        {type = "item", name = "carbon-black", amount = 2},
+        {type = "item",  name = "carbon-black",    amount = 2},
     },
     results = {
         {type = "item", name = "rubber", amount = 4},
@@ -155,8 +155,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "polybutadiene", amount = 50},
-        {type = "fluid", name = "styrene", amount = 50},
-        {type = "item", name = "carbon-black", amount = 3},
+        {type = "fluid", name = "styrene",       amount = 50},
+        {type = "item",  name = "carbon-black",  amount = 3},
     },
     results = {
         {type = "item", name = "rubber", amount = 10},
@@ -168,7 +168,7 @@ RECIPE {
     order = "a"
 }:add_unlock("rubber-3")
 
-  -- LOW DISTILLATE --
+-- LOW DISTILLATE --
 
 RECIPE {
     type = "recipe",
@@ -177,9 +177,9 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "ppd", amount = 5},
-        {type = "fluid", name = "tpa", amount = 100},
-        {type = "fluid", name = "sulfuric-acid", amount = 50},
+        {type = "item",  name = "ppd",                amount = 5},
+        {type = "fluid", name = "tpa",                amount = 100},
+        {type = "fluid", name = "sulfuric-acid",      amount = 50},
         {type = "fluid", name = "industrial-solvent", amount = 50}
     },
     results = {
@@ -221,9 +221,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "lubricant", amount = 100},
+        {type = "fluid", name = "lubricant",        amount = 100},
         {type = "fluid", name = "drilling-fluid-1", amount = 100},
-        {type = "item", name = "drill-head", amount = 1}
+        {type = "item",  name = "drill-head",       amount = 1}
     },
     results = {
         {type = "item", name = "kerogen", amount = 20}

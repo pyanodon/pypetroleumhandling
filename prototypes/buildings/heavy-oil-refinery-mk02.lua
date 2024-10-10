@@ -5,12 +5,12 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "heavy-oil-refinery-mk01", amount = 1},
-        {type = "item", name = "advanced-circuit", amount = 5},
-        {type = "item", name = "small-parts-02", amount = 20},
-        {type = "item", name = "concrete", amount = 40},
-        {type = "item", name = "engine-unit", amount = 12},
-        {type = "item", name = "pipe", amount = 40},
-        {type = "item", name = "niobium-plate", amount = 10},
+        {type = "item", name = "advanced-circuit",        amount = 5},
+        {type = "item", name = "small-parts-02",          amount = 20},
+        {type = "item", name = "concrete",                amount = 40},
+        {type = "item", name = "engine-unit",             amount = 12},
+        {type = "item", name = "pipe",                    amount = 40},
+        {type = "item", name = "niobium-plate",           amount = 10},
     },
     results = {
         {type = "item", name = "heavy-oil-refinery-mk02", amount = 1}
@@ -33,7 +33,7 @@ ENTITY {
     type = "assembling-machine",
     name = "heavy-oil-refinery-mk02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk02"},
     fast_replaceable_group = "heavy-oil-refinery",

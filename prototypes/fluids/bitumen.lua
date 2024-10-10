@@ -6,11 +6,11 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "pressured-air", amount = 100},
-        {type = "fluid", name = "naphtha", amount = 70},
+        {type = "fluid", name = "naphtha",       amount = 70},
         {type = "fluid", name = "bitumen-froth", amount = 100},
     },
     results = {
-        {type = "fluid", name = "bitumen", amount = 250},
+        {type = "fluid", name = "bitumen",           amount = 250},
         {type = "fluid", name = "dirty-water-heavy", amount = 50},
     },
     main_product = "bitumen",

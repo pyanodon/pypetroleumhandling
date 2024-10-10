@@ -17,7 +17,7 @@ RECIPE {
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
 }:add_unlock("petroleum-gas-mk02")
-]]--
+]] --
 
 RECIPE {
     type = "recipe",
@@ -30,8 +30,8 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "refined-natural-gas", amount = 100},
-        {type = "fluid", name = "btx", amount = 30},
-        {type = "fluid", name = "dirty-water-heavy", amount = 50},
+        {type = "fluid", name = "btx",                 amount = 30},
+        {type = "fluid", name = "dirty-water-heavy",   amount = 50},
     },
     main_product = "refined-natural-gas",
     subgroup = "py-petroleum-handling-fluids",

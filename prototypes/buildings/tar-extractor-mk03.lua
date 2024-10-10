@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "tar-seep-mk02", amount = 1},
-        {type = "item", name = "small-parts-03", amount = 20},
-        {type = "item", name = "plastic-bar", amount = 100},
-        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "tar-seep-mk02",        amount = 1},
+        {type = "item", name = "small-parts-03",       amount = 20},
+        {type = "item", name = "plastic-bar",          amount = 100},
+        {type = "item", name = "processing-unit",      amount = 15},
         {type = "item", name = "electric-engine-unit", amount = 10},
-        {type = "item", name = "concrete", amount = 50},
+        {type = "item", name = "concrete",             amount = 50},
     },
     results = {
         {type = "item", name = "tar-seep-mk03", amount = 1}
@@ -59,9 +59,9 @@ ENTITY {
         pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
         pipe_connections = {
             {flow_direction = "input-output", position = {-2, -4.0}, direction = defines.direction.north},
-            {flow_direction = "input-output", position = {4.0, -2}, direction = defines.direction.east},
-            {flow_direction = "input-output", position = {2, 4.0}, direction = defines.direction.south},
-            {flow_direction = "input-output", position = {-4.0, 2}, direction = defines.direction.west},
+            {flow_direction = "input-output", position = {4.0, -2},  direction = defines.direction.east},
+            {flow_direction = "input-output", position = {2, 4.0},   direction = defines.direction.south},
+            {flow_direction = "input-output", position = {-4.0, 2},  direction = defines.direction.west},
         }
     },
     energy_usage = "900kW",
@@ -76,7 +76,7 @@ ENTITY {
     circuit_wire_connection_points = circuit_connector_definitions["tar-extractor-mkxx"].points,
     circuit_connector_sprites = circuit_connector_definitions["tar-extractor-mkxx"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
-    monitor_visualization_tint = {r=78, g=173, b=255},
+    monitor_visualization_tint = {r = 78, g = 173, b = 255},
     graphics_set = {
         animation = {
             layers = {
@@ -137,8 +137,8 @@ ENTITY {
                     shift = util.by_pixel(132, -20),
                     tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 },
+            },
         },
-    },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
@@ -148,7 +148,7 @@ ENTITY {
     },
 }
 
-local seep = table.deepcopy(data.raw['mining-drill']['tar-extractor-mk03'])
-seep.name = 'tar-seep-mk03'
-seep.resource_categories = {'bitumen-seep', 'tar-patch'}
-data:extend{seep}
+local seep = table.deepcopy(data.raw["mining-drill"]["tar-extractor-mk03"])
+seep.name = "tar-seep-mk03"
+seep.resource_categories = {"bitumen-seep", "tar-patch"}
+data:extend {seep}

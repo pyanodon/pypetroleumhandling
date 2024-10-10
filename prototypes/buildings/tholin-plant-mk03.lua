@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "tholin-plant-mk02", amount = 1},
-        {type = "item", name = "processing-unit", amount = 5},
-        {type = "item", name = "niobium-plate", amount = 15},
+        {type = "item", name = "tholin-plant-mk02",    amount = 1},
+        {type = "item", name = "processing-unit",      amount = 5},
+        {type = "item", name = "niobium-plate",        amount = 15},
         {type = "item", name = "electric-engine-unit", amount = 5},
-        {type = "item", name = "kevlar", amount = 30},
-        {type = "item", name = "small-parts-03", amount = 40},
+        {type = "item", name = "kevlar",               amount = 30},
+        {type = "item", name = "small-parts-03",       amount = 40},
     },
     results = {
         {type = "item", name = "tholin-plant-mk03", amount = 1}
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "tholin-plant-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/tholin-plant-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "tholin-plant-mk03"},
     fast_replaceable_group = "tholin-plant",

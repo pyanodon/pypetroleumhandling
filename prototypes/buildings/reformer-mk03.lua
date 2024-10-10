@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "reformer-mk02", amount = 1},
-        {type = "item", name = "small-parts-03", amount = 20},
-        {type = "item", name = "niobium-plate", amount = 10},
-        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "reformer-mk02",        amount = 1},
+        {type = "item", name = "small-parts-03",       amount = 20},
+        {type = "item", name = "niobium-plate",        amount = 10},
+        {type = "item", name = "processing-unit",      amount = 15},
         {type = "item", name = "electric-engine-unit", amount = 20},
-        {type = "item", name = "concrete", amount = 40},
-        {type = "item", name = "engine-unit", amount = 10},
+        {type = "item", name = "concrete",             amount = 40},
+        {type = "item", name = "engine-unit",          amount = 10},
     },
     results = {
         {type = "item", name = "reformer-mk03", amount = 1}
@@ -33,7 +33,7 @@ ENTITY {
     type = "assembling-machine",
     name = "reformer-mk03",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/reformer-mk03.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "reformer-mk03"},
     fast_replaceable_group = "reformer",

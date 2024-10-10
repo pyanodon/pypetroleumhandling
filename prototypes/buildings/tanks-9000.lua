@@ -6,8 +6,8 @@ RECIPE {
     ingredients = {
         {type = "item", name = "py-tank-5000", amount = 1},
         {type = "item", name = "py-tank-3000", amount = 1},
-        {type = "item", name = "iron-plate", amount = 15},
-        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "iron-plate",   amount = 15},
+        {type = "item", name = "steel-plate",  amount = 30},
     },
     results = {
         {type = "item", name = "py-tank-9000", amount = 1}
@@ -42,13 +42,13 @@ ENTITY {
         volume = 90000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {1.0, -3.4}, direction = defines.direction.north},
+            {position = {1.0, -3.4},  direction = defines.direction.north},
             {position = {-1.0, -3.4}, direction = defines.direction.north},
-            {position = {3.4, 1.0}, direction = defines.direction.east},
-            {position = {3.4, -1.0}, direction = defines.direction.east},
-            {position = {1.0, 3.4}, direction = defines.direction.south},
-            {position = {-1.0, 3.4}, direction = defines.direction.south},
-            {position = {-3.4, 1.0}, direction = defines.direction.west},
+            {position = {3.4, 1.0},   direction = defines.direction.east},
+            {position = {3.4, -1.0},  direction = defines.direction.east},
+            {position = {1.0, 3.4},   direction = defines.direction.south},
+            {position = {-1.0, 3.4},  direction = defines.direction.south},
+            {position = {-3.4, 1.0},  direction = defines.direction.west},
             {position = {-3.4, -1.0}, direction = defines.direction.west}
         }
     },

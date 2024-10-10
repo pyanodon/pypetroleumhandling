@@ -5,10 +5,10 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "gas-refinery-mk01", amount = 1},
-        {type = "item", name = "steel-plate", amount = 30},
-        {type = "item", name = "advanced-circuit", amount = 20},
-        {type = "item", name = "engine-unit", amount = 8},
-        {type = "item", name = "small-parts-02", amount = 30},
+        {type = "item", name = "steel-plate",       amount = 30},
+        {type = "item", name = "advanced-circuit",  amount = 20},
+        {type = "item", name = "engine-unit",       amount = 8},
+        {type = "item", name = "small-parts-02",    amount = 30},
     },
     results = {
         {type = "item", name = "gas-refinery-mk02", amount = 1}
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "gas-refinery-mk02",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/gas-refinery-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "gas-refinery-mk02"},
     fast_replaceable_group = "gas-refinery",

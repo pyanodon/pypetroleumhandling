@@ -6,8 +6,8 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
-        {type = "item", name = "sand", amount = 5},
-        {type = "item", name = "soil", amount = 5},
+        {type = "item",  name = "sand",  amount = 5},
+        {type = "item",  name = "soil",  amount = 5},
         --{type = "item", name = "clay", amount = 1}, needs pyht becuase reasons
     },
     results = {

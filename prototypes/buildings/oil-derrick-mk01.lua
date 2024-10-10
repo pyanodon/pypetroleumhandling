@@ -1,15 +1,14 @@
-
 RECIPE {
     type = "recipe",
     name = "oil-derrick-mk01",
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steam-engine", amount = 1},
-        {type = "item", name = "iron-plate", amount = 30},
+        {type = "item", name = "steam-engine",       amount = 1},
+        {type = "item", name = "iron-plate",         amount = 30},
         {type = "item", name = "electronic-circuit", amount = 5},
-        {type = "item", name = "small-parts-01", amount = 10},
-        {type = "item", name = "pipe", amount = 10},
+        {type = "item", name = "small-parts-01",     amount = 10},
+        {type = "item", name = "pipe",               amount = 10},
     },
     results = {
         {type = "item", name = "bitumen-seep-mk01", amount = 1}
@@ -59,8 +58,8 @@ ENTITY {
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
             {flow_direction = "input-output", position = {0, -2.0}, direction = defines.direction.north},
-            {flow_direction = "input-output", position = {2.0, 0}, direction = defines.direction.east},
-            {flow_direction = "input-output", position = {0, 2.0}, direction = defines.direction.south},
+            {flow_direction = "input-output", position = {2.0, 0},  direction = defines.direction.east},
+            {flow_direction = "input-output", position = {0, 2.0},  direction = defines.direction.south},
             {flow_direction = "input-output", position = {-2.0, 0}, direction = defines.direction.west},
         }
     },
@@ -76,7 +75,7 @@ ENTITY {
     circuit_wire_connection_points = circuit_connector_definitions["oil-derrick-mk01"].points,
     circuit_connector_sprites = circuit_connector_definitions["oil-derrick-mk01"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
-    monitor_visualization_tint = {r=78, g=173, b=255},
+    monitor_visualization_tint = {r = 78, g = 173, b = 255},
     animations = {
         layers = {
             {
@@ -106,8 +105,8 @@ ENTITY {
                 animation_speed = 0.3,
                 shift = util.by_pixel(0, -97)
             },
+        },
     },
-},
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 1.0},
@@ -116,23 +115,23 @@ ENTITY {
     },
 }
 
-local seep = table.deepcopy(data.raw['mining-drill']['oil-derrick-mk01'])
-seep.name = 'bitumen-seep-mk01'
-seep.resource_categories = {'bitumen-seep', 'oil-mk01'}
-data:extend{seep}
+local seep = table.deepcopy(data.raw["mining-drill"]["oil-derrick-mk01"])
+seep.name = "bitumen-seep-mk01"
+seep.resource_categories = {"bitumen-seep", "oil-mk01"}
+data:extend {seep}
 
 ENTITY {
     type = "assembling-machine",
     name = "bitumen-seep-mk01-base",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/coalbed-mk01.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral"},
     --minable = {mining_time = 0.5, result = "coalbed-mk01"},
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    selection_box = {{0,0}, {0,0}},
+    selection_box = {{0, 0}, {0, 0}},
     match_animation_speed_to_activity = false,
     module_slots = 0,
     allowed_effects = {},
@@ -142,7 +141,7 @@ ENTITY {
         type = "void",
     },
     energy_usage = "1W",
-    fixed_recipe = 'drilling-fluids',
+    fixed_recipe = "drilling-fluids",
     fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         --1
@@ -151,31 +150,31 @@ ENTITY {
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-2,2.0}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = "input", position = {-2, 2.0}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-1,2.0}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = "input", position = {-1, 2.0}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {1,2.0}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = "input", position = {1, 2.0}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {2,2.0}, direction = defines.direction.south}}
+            pipe_connections = {{flow_direction = "input", position = {2, 2.0}, direction = defines.direction.south}}
         },
     },
     selectable_in_game = false,
-    localised_name = {'entity-name.oil-derrick-mk01'},
-    localised_description = {'entity-description.oil-derrick-mk01'}
+    localised_name = {"entity-name.oil-derrick-mk01"},
+    localised_description = {"entity-description.oil-derrick-mk01"}
 }

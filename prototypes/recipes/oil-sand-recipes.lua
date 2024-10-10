@@ -9,7 +9,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crushed-oil-sand", amount = 1},
-        {type = "item", name = "stone", amount = 1, probability = 0.5}
+        {type = "item", name = "stone",            amount = 1, probability = 0.5}
     },
     main_product = "crushed-oil-sand",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/crusher-oil-sand.png",
@@ -26,7 +26,7 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "bitumen", amount = 100},
-        {type = "fluid", name = "water", amount = 200},
+        {type = "fluid", name = "water",   amount = 200},
     },
     results = {
         {type = "item", name = "sulfur", amount = 10},
@@ -45,9 +45,9 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "bitumen", amount = 100},
-        {type = "fluid", name = "water", amount = 200},
-        {type = "item", name = "chromium", amount = 1},
+        {type = "fluid", name = "bitumen",  amount = 100},
+        {type = "fluid", name = "water",    amount = 200},
+        {type = "item",  name = "chromium", amount = 1},
     },
     results = {
         {type = "fluid", name = "heavy-oil", amount = 100},
@@ -67,7 +67,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "bitumen", amount = 100},
-        {type = "fluid", name = "steam", amount = 300},
+        {type = "fluid", name = "steam",   amount = 300},
     },
     results = {
         {type = "fluid", name = "dirty-syngas", amount = 100},
@@ -87,14 +87,14 @@ if mods["pyrawores"] then
         enabled = false,
         energy_required = 24,
         ingredients = {
-            {type = "fluid", name = "dirty-syngas", amount = 400},
-            {type = "item", name = "filtration-media", amount = 1},
-            {type = "fluid", name = "water", amount = 1600},
+            {type = "fluid", name = "dirty-syngas",     amount = 400},
+            {type = "item",  name = "filtration-media", amount = 1},
+            {type = "fluid", name = "water",            amount = 1600},
         },
         results = {
             {type = "fluid", name = "purified-syngas", amount = 400},
-            {type = "fluid", name = "flue-gas", amount = 4000},
-            {type = "item", name = "soot", amount = 8},
+            {type = "fluid", name = "flue-gas",        amount = 4000},
+            {type = "item",  name = "soot",            amount = 8},
         },
         main_product = "purified-syngas",
         icon = "__pypetroleumhandlinggraphics__/graphics/icons/purified-syngas.png",
@@ -110,14 +110,14 @@ else
         enabled = false,
         energy_required = 24,
         ingredients = {
-            {type = "fluid", name = "dirty-syngas", amount = 400},
-            {type = "item", name = "filtration-media", amount = 1},
-            {type = "fluid", name = "water", amount = 1600},
+            {type = "fluid", name = "dirty-syngas",     amount = 400},
+            {type = "item",  name = "filtration-media", amount = 1},
+            {type = "fluid", name = "water",            amount = 1600},
         },
         results = {
             {type = "fluid", name = "hot-syngas", amount = 400},
-            {type = "fluid", name = "flue-gas", amount = 4000},
-            {type = "item", name = "ash", amount = 8},
+            {type = "fluid", name = "flue-gas",   amount = 4000},
+            {type = "item",  name = "ash",        amount = 8},
         },
         main_product = "hot-syngas",
         icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-syngas.png",
@@ -135,11 +135,11 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "hot-syngas", amount = 100},
-        {type = "fluid", name = "water", amount = 300},
+        {type = "fluid", name = "water",      amount = 300},
     },
     results = {
         {type = "fluid", name = "syngas", amount = 500},
-        {type = "fluid", name = "steam", amount = 300, temperature = 250, catalyst_amount = 300},
+        {type = "fluid", name = "steam",  amount = 300, temperature = 250, catalyst_amount = 300},
     },
     main_product = "syngas",
     subgroup = "py-petroleum-handling-oil-sand-recipes",

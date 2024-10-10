@@ -5,14 +5,14 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "tar", amount = 100},
+        {type = "fluid", name = "tar",   amount = 100},
         {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
     },
     results = {
-        {type = "fluid", name = "middle-oil", amount = 30},
-        {type = "fluid", name = "creosote", amount = 24}, --wash oil
+        {type = "fluid", name = "middle-oil",     amount = 30},
+        {type = "fluid", name = "creosote",       amount = 24}, --wash oil
         {type = "fluid", name = "anthracene-oil", amount = 75},
-        {type = "fluid", name = "pitch", amount = 140},
+        {type = "fluid", name = "pitch",          amount = 140},
     },
     crafting_machine_tint =
     {
@@ -36,11 +36,11 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "middle-oil", amount = 100},
-        {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
+        {type = "fluid", name = "steam",      amount = 100, minimum_temperature = 250},
     },
     results = {
-        {type = "fluid", name = "light-oil", amount = 50},
-        {type = "fluid", name = "carbolic-oil", amount = 50},
+        {type = "fluid", name = "light-oil",       amount = 50},
+        {type = "fluid", name = "carbolic-oil",    amount = 50},
         {type = "fluid", name = "naphthalene-oil", amount = 100},
     },
     crafting_machine_tint =
@@ -66,11 +66,11 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 100, minimum_temperature = 250},
     },
     results = {
-        {type = "fluid", name = "hydrogen", amount = 10},
-        {type = "fluid", name = "light-oil", amount = 20},
+        {type = "fluid", name = "hydrogen",        amount = 10},
+        {type = "fluid", name = "light-oil",       amount = 20},
         {type = "fluid", name = "naphthalene-oil", amount = 20},
-        {type = "fluid", name = "anthracene-oil", amount = 30},
-        {type = "item", name = "coke", amount = 10},
+        {type = "fluid", name = "anthracene-oil",  amount = 30},
+        {type = "item",  name = "coke",            amount = 10},
     },
     main_product = "coke",
     subgroup = "py-petroleum-handling-scrude-recipes",

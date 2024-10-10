@@ -5,10 +5,10 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "electric-mining-drill", amount = 4},
-        {type = "item", name = "steel-plate", amount = 30},
-        {type = "item", name = "electronic-circuit", amount = 10},
-        {type = "item", name = "steam-engine", amount = 10},
-        {type = "item", name = "small-parts-01", amount = 10},
+        {type = "item", name = "steel-plate",           amount = 30},
+        {type = "item", name = "electronic-circuit",    amount = 10},
+        {type = "item", name = "steam-engine",          amount = 10},
+        {type = "item", name = "small-parts-01",        amount = 10},
     },
     results = {
         {type = "item", name = "oil-sand-extractor-mk01", amount = 1}

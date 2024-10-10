@@ -22,16 +22,16 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "hydrogen", amount = 500},
-        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "water",    amount = 600},
         {type = "fluid", name = "gasoline", amount = 5}
     },
     results = {
         {type = "fluid", name = "pressured-hydrogen", amount = 50},
-        {type = "fluid", name = "steam", amount = 600, temperature = 150, catalyst_amount = 600}
+        {type = "fluid", name = "steam",              amount = 600, temperature = 150, catalyst_amount = 600}
     },
     main_product = "pressured-hydrogen",
     subgroup = "py-petroleum-handling-fluids",
     order = "a",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/compress-hydrogen.png",
     icon_size = 32,
-}:add_unlock("light-oil-mk02").category = 'compressor'
+}:add_unlock("light-oil-mk02").category = "compressor"

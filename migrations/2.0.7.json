@@ -1,5 +1,8 @@
 {
     "entity": [
-        ["natural-gas-1", "natural-gas-mk01"]
+        [
+            "natural-gas-1",
+            "natural-gas-mk01"
+        ]
     ]
 }

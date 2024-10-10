@@ -1,7 +1,7 @@
-local resource_autoplace = require 'resource-autoplace'
+local resource_autoplace = require "resource-autoplace"
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["oil-sand"] = {}
 
-data:extend{{
+data:extend {{
     type = "autoplace-control",
     category = "resource",
     name = "oil-sand",

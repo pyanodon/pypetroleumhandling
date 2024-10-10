@@ -1,4 +1,4 @@
-if not mods['pyrawores'] then
+if not mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "hot-air-1",
@@ -7,7 +7,7 @@ if not mods['pyrawores'] then
         enabled = false,
         energy_required = 3,
         ingredients = {
-            {type = "item", name = "stone-brick", amount = 10},
+            {type = "item",  name = "stone-brick",   amount = 10},
             {type = "fluid", name = "pressured-air", amount = 150},
         },
         results = {
