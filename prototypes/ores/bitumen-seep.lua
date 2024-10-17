@@ -1,4 +1,5 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["bitumen-seep"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["bitumen-seep"] = {}
 
 data:extend {{
     type = "autoplace-control",
@@ -28,14 +29,14 @@ data:extend {
         name = "py_bitumen_seep",
         -- Our final chance, likely a very, very small decimal
         expression = [[
-            py_bitumen_seep_starting_area * py_bitumen_seep_desired_frequency * var("control-setting:bitumen-seep:frequency:multiplier")
+            py_bitumen_seep_starting_area * py_bitumen_seep_desired_frequency * var("control:bitumen-seep:frequency")
         ]]
     },
     {
         -- We return the richness here, which is just the quantity the resource tile yields
         type = "noise-expression",
         name = "py_bitumen_seep_richness",
-        expression = "2^16 * var('distance') * var('control-setting:bitumen-seep:richness:multiplier')"
+        expression = "2^16 * var('distance') * var('control:bitumen-seep:richness')"
     }
 }
 

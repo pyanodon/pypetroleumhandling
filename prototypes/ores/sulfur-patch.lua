@@ -1,4 +1,5 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["sulfur-patch"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["sulfur-patch"] = {}
 
 data:extend {{
     type = "autoplace-control",
@@ -33,14 +34,14 @@ data:extend {
         name = "py_sulfur_patch",
         -- Our final chance, likely a very, very small decimal
         expression = [[
-            py_sulfur_patch_starting_area * py_sulfur_patch_desired_frequency * var("control-setting:sulfur-patch:frequency:multiplier")
+            py_sulfur_patch_starting_area * py_sulfur_patch_desired_frequency * var("control:sulfur-patch:frequency")
         ]]
     },
     {
         -- We return the richness here, which is just the quantity the resource tile yields
         type = "noise-expression",
         name = "py_sulfur_patch_richness",
-        expression = "2^16 * var('distance') * var('control-setting:sulfur-patch:richness:multiplier')"
+        expression = "2^16 * var('distance') * var('control:sulfur-patch:richness')"
     }
 }
 
