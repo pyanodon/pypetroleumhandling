@@ -34,8 +34,6 @@ RECIPE("fast-splitter"):remove_ingredient("small-parts-01"):add_ingredient {type
 RECIPE("express-transport-belt"):remove_ingredient("small-parts-01"):add_ingredient {type = "item", name = "small-parts-03", amount = 4}
 RECIPE("express-underground-belt"):remove_ingredient("small-parts-01"):add_ingredient {type = "item", name = "small-parts-03", amount = 6}
 RECIPE("express-splitter"):remove_ingredient("small-parts-01"):add_ingredient {type = "item", name = "small-parts-03", amount = 6}
-RECIPE("red-wire"):add_ingredient {type = "item", name = "rubber", amount = 1}
-RECIPE("green-wire"):add_ingredient {type = "item", name = "rubber", amount = 1}
 RECIPE("carbon-filter"):remove_ingredient("assembling-machine-2"):add_ingredient {type = "item", name = "assembling-machine-1", amount = 2}
 RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient {type = "item", name = "assembling-machine-1", amount = 2}
 RECIPE("small-parts-03"):replace_ingredient("glass", "glass-fiber"):replace_ingredient("tin-plate", "aerogel")
