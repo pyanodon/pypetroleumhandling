@@ -77,7 +77,7 @@ local function render_text(drill, time_to_live)
 	}
 end
 
-local function add_seep(event)
+py.on_event('on_built', function(event)
 	local drill = event.created_entity or event.entity
 	local drill_base = derrick_types[drill.name]
 	if not drill_base then return end
@@ -118,11 +118,7 @@ local function add_seep(event)
 		end
 		break
 	end
-end
-script.on_event(defines.events.on_built_entity, add_seep, event_filter)
-script.on_event(defines.events.on_robot_built_entity, add_seep, event_filter)
-script.on_event(defines.events.script_raised_revive, add_seep)
-script.on_event(defines.events.script_raised_built, add_seep)
+end)
 
 -- Destroy hidden assembler when removing drill
 local function remove_seep(assembler, source, source_id)
