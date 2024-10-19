@@ -133,6 +133,7 @@ end
 local actions = {
 	[defines.events.on_player_mined_entity] = remove_seep,
 	[defines.events.on_robot_mined_entity] = remove_seep,
+	[defines.events.on_space_platform_mined_entity] = remove_seep,
 	[defines.events.on_entity_died] = remove_seep,
 	[defines.events.on_object_destroyed] = remove_seep,
 	[defines.events.on_player_rotated_entity] = rotate_seep
@@ -161,6 +162,7 @@ end
 script.on_event(defines.events.on_player_mined_entity, on_entity_modified, event_filter)
 script.on_event(defines.events.on_robot_mined_entity, on_entity_modified, event_filter)
 script.on_event(defines.events.on_entity_died, on_entity_modified, event_filter)
+script.on_event(defines.events.on_space_platform_mined_entity, on_entity_modified, event_filter)
 script.on_event(defines.events.on_player_rotated_entity, on_entity_modified)
 script.on_event(defines.events.on_object_destroyed, on_entity_modified)
 
