@@ -77,7 +77,7 @@ local function render_text(drill, time_to_live)
 	}
 end
 
-py.on_event('on_built', function(event)
+py.on_event(py.events.on_built(), function(event)
 	local drill = event.created_entity or event.entity
 	local drill_base = derrick_types[drill.name]
 	if not drill_base then return end
