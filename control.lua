@@ -4,18 +4,13 @@ require "scripts/wiki/text-pages"
 
 local update_rate = 67
 
--- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
--- if you need the commented code that was here, go to git revision <= 4e9cd2f4bc7916ea438986d8037d63338463438e
-script.on_init(function()
-	storage.first_chunk = false
-	storage.oil_derricks = {}
-	Wiki.events.on_init()
+py.on_event(py.events.on_init(), function()
+	if storage.first_chunk == nil then storage.first_chunk = false end
+	storage.oil_derricks = storage.oil_derricks or {}
 end)
 
-script.on_configuration_changed(function()
-	if not storage.oil_derricks == nil then storage.oil_derricks = {} end
-	Wiki.events.on_init()
-end)
+-- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
+-- if you need the commented code that was here, go to git revision <= 4e9cd2f4bc7916ea438986d8037d63338463438e
 
 -- Correlates our derricks and what replaces them with the seep transition, along with their hidden assembler names
 local derrick_types = {}
