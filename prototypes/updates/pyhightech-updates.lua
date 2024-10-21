@@ -469,7 +469,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "water",          amount = 200},
         {type = "fluid", name = "carbon-dioxide", amount = 200},
-        {type = "item",  name = "py-fertilizer",  amount = 2},
+        {type = "item",  name = "fertilizer",  amount = 2},
         {type = "item",  name = "small-lamp",     amount = 1},
         {type = "item",  name = "soil",           amount = 8},
     },
