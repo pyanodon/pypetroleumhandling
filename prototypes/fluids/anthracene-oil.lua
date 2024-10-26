@@ -9,4 +9,6 @@ FLUID {
     heat_capacity = "1kJ",
     base_color = {r = 25, g = 50, b = 100},
     flow_color = {r = 1, g = 1, b = 1},
+    subgroup = "py-petroleum-handling-fluids",
+    order = "c"
 }
