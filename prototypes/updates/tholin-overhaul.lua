@@ -15,12 +15,12 @@ RECIPE {
     category = "crafting",
     ingredients =
     {
-        {"low-density-structure",       20},
-        {"solar-panel",                 5},
-        {"accumulator-mk01",            1},
-        {"advanced-circuit",            25},
-        {"rocket-fuel",                 10},
-        {"filled-proto-tholins-vessel", 500},
+        {type = "item", name = "low-density-structure",       amount = 20},
+        {type = "item", name = "solar-panel",                 amount = 5},
+        {type = "item", name = "accumulator-mk01",            amount = 1},
+        {type = "item", name = "advanced-circuit",            amount = 25},
+        {type = "item", name = "rocket-fuel",                 amount = 10},
+        {type = "item", name = "filled-proto-tholins-vessel", amount = 500},
     },
     results =
     {
@@ -40,12 +40,13 @@ local lds = RECIPE {
     enabled = false,
     ingredients =
     {
-        {"iron-plate",   2},
-        {"plastic-bar",  10},
-        {"copper-plate", 10}
+        {type = "item", name = "iron-plate",   amount = 2},
+        {type = "item", name = "plastic-bar",  amount = 10},
+        {type = "item", name = "copper-plate", amount = 10}
     },
-    result = "low-density-structure",
-    result_count = 5
+    results = {
+        {type = "item", name = "low-density-structure", amount = 5}
+    },
 }:add_ingredient("fiberglass", 5):replace_ingredient("copper-plate", "aerogel")
 if mods.pyrawores then lds:replace_ingredient("iron-plate", "aluminium-plate") end
 
@@ -60,8 +61,9 @@ local rocket_fuel = RECIPE {
         {type = "fluid", name = "olefin",   amount = 75},
         {type = "fluid", name = "gasoline", amount = 50}
     },
-    result = "rocket-fuel",
-    result_count = 5
+    results = {
+        {type = "item", name = "rocket-fuel", amount = 5}
+    },
 }
 if mods.pyrawores then rocket_fuel:replace_ingredient("olefin", "oxygen"):replace_ingredient("gasoline", "kerosene") end
 
@@ -74,9 +76,9 @@ RECIPE {
     category = "rocket-building",
     ingredients =
     {
-        {"speed-module",          1},
-        {"low-density-structure", 4},
-        {"rocket-fuel",           10}
+        {type = "item", name = "speed-module",          amount = 1},
+        {type = "item", name = "low-density-structure", amount = 4},
+        {type = "item", name = "rocket-fuel",           amount = 10}
     },
     results = {
         {type = "item", name = "rocket-part", amount = 1}
@@ -89,15 +91,17 @@ RECIPE {
     enabled = false,
     ingredients =
     {
-        {"steel-plate",          500},
-        --{"titanium-plate", 500},
-        {"concrete",             1000},
-        {"niobium-pipe",         50},
-        {"advanced-circuit",     100},
-        {"electric-engine-unit", 100}
+        {type = "item", name = "steel-plate",          amount = 500},
+        --{type = "item", name = "titanium-plate", amount = 500},
+        {type = "item", name = "concrete",             amount = 1000},
+        {type = "item", name = "niobium-pipe",         amount = 50},
+        {type = "item", name = "advanced-circuit",     amount = 100},
+        {type = "item", name = "electric-engine-unit", amount = 100}
     },
     energy_required = 30,
-    result = "rocket-silo",
+    results = {
+        {type = "item", name = "rocket-silo", amount = 1}
+    },
     requester_paste_multiplier = 1
 }:add_ingredient {type = "item", name = "titanium-plate", amount = 500}
 
@@ -110,10 +114,10 @@ data.raw.technology["rocket-silo"].prerequisites =
 
 data.raw.technology["rocket-silo"].unit.ingredients =
 {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack",   1},
-    {"chemical-science-pack",   1},
-    {"military-science-pack",   1}
+    {type = "item", name = "automation-science-pack", amount = 1},
+    {type = "item", name = "logistic-science-pack",   amount = 1},
+    {type = "item", name = "chemical-science-pack",   amount = 1},
+    {type = "item", name = "military-science-pack",   amount = 1}
 }
 
 

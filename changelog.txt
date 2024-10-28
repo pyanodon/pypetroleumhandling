@@ -4,6 +4,7 @@ Date: idk
   Changes:
     - Fixed coalbed recipes requiring 500 degree pressurized water.
     - Fixed some fluids not having subgroups.
+    - Fixed crash on startup with pyPH and pyHT.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.1
 Date: 2024-10-21
