@@ -43,7 +43,7 @@ ENTITY {
     match_animation_speed_to_activity = false,
     --fixed_recipe = "hot-air",
     module_slots = 1,
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"rhe"},
     crafting_speed = 1,
     energy_source = {
