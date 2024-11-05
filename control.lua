@@ -88,7 +88,8 @@ py.on_event(py.events.on_built(), function(event)
 				name = drill_base.base,
 				force = drill.force,
 				position = drill.position,
-				quality = drill.quality.name
+				quality = drill.quality.name,
+				direction = drill.direction
 			}
 			assembler.set_recipe("drilling-fluids")
 			assembler.active = false
