@@ -125,6 +125,7 @@ ENTITY {
     -- minable = {mining_time = 0.5, result = "coalbed-mk01"},
     max_health = 100,
     corpse = "medium-remnants",
+    hidden = true,
     dying_explosion = "big-explosion",
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{0, 0}, {0, 0}},

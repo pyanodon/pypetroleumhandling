@@ -7,6 +7,7 @@ Date: idk
     - Fixed crash on startup with pyPH and pyHT.
     - Fixed that bitumen seeps did not respect quality.
     - Fixed that the bitumen seep hidden assembler did not perserve the direction of the parent mining drill.
+    - Bitumen seep hidden assemblers are now hidden in factoriopedia.
     - A rose by any other quality would smell as sweet
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.1

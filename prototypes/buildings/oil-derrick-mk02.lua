@@ -123,6 +123,7 @@ ENTITY {
     flags = {"placeable-neutral"},
     --minable = {mining_time = 0.5, result = "coalbed-mk01"},
     max_health = 100,
+    hidden = true,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
     collision_box = {{-3.4, -3.4}, {3.4, 3.4}},

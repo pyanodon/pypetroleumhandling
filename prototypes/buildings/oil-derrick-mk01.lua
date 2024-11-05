@@ -140,6 +140,7 @@ ENTITY {
     energy_source = {
         type = "void",
     },
+    hidden = true,
     energy_usage = "1W",
     fixed_recipe = "drilling-fluids",
     fluid_boxes_off_when_no_fluid_recipe = false,
