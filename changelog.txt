@@ -1,14 +1,18 @@
 ---------------------------------------------------------------------------------------------------
-Version: 3.0.2
+Version: 3.0.3
 Date: 2024-11-5
   Changes:
-    - Fixed coalbed recipes requiring 500 degree pressurized water.
-    - Fixed some fluids not having subgroups.
-    - Fixed crash on startup with pyPH and pyHT.
     - Fixed that bitumen seeps did not respect quality.
     - Fixed that the bitumen seep hidden assembler did not perserve the direction of the parent mining drill.
     - Bitumen seep hidden assemblers are now hidden in factoriopedia.
     - Fixed unfriendly usage of YAFC's script_enabled table. Resolves https://github.com/pyanodon/pybugreports/issues/672
+---------------------------------------------------------------------------------------------------
+Version: 3.0.2
+Date: 2024-10-30
+  Changes:
+    - Fixed coalbed recipes requiring 500 degree pressurized water.
+    - Fixed some fluids not having subgroups.
+    - Fixed crash on startup with pyPH and pyHT.
     - A rose by any other quality would smell as sweet
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.1
