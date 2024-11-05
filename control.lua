@@ -87,7 +87,8 @@ py.on_event(py.events.on_built(), function(event)
 			local assembler = drill.surface.create_entity {
 				name = drill_base.base,
 				force = drill.force,
-				position = drill.position
+				position = drill.position,
+				quality = drill.quality.name
 			}
 			assembler.set_recipe("drilling-fluids")
 			assembler.active = false
@@ -107,7 +108,8 @@ py.on_event(py.events.on_built(), function(event)
 			drill.surface.create_entity {
 				name = resource_types[resource_type] .. drill.name:match("%d$"),
 				force = drill.force,
-				position = drill.position
+				position = drill.position,
+				quality = drill.quality.name
 			}
 			drill.destroy()
 		end
@@ -226,7 +228,8 @@ local function swap_drill(drill, replacement)
 		position = drill.position,
 		force = drill.force,
 		direction = drill.direction,
-		player = drill.last_user
+		player = drill.last_user,
+		quality = drill.quality.name,
 	}
 	local source_module_inventory = drill.get_module_inventory()
 	local module_contents
@@ -269,7 +272,8 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 			resource.surface.create_entity {
 				name = drill_data.resource,
 				amount = new_patch_size,
-				position = resource.position
+				position = resource.position,
+				quality = resource.quality.name
 			}
 			swap_drill(drill, drill_data.replacement)
 		end
