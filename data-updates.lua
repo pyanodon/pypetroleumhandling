@@ -106,14 +106,9 @@ for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
 end
 
 if data.data_crawler then
-	if mods["pyhightech"] then
-		data.script_enabled = {
-			{type = "entity", name = "crash-site-assembling-machine-1-repaired"},
-			{type = "entity", name = "tar-patch"}
-		}
-	else
-		data.script_enabled = {{type = "entity", name = "tar-patch"}}
-	end
+	data.script_enabled = data.script_enabled or {}
+	table.insert(data.script_enabled, "tar-patch")
+	if mods["pyhightech"] then table.insert(data.script_enabled, "crash-site-assembling-machine-1-repaired") end
 end
 
 require "prototypes.updates.hot-air"
