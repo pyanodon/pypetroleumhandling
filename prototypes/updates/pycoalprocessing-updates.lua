@@ -31,8 +31,8 @@ if not (mods["pyrawores"] or mods["pyhightech"]) then
     TECHNOLOGY("battery-equipment"):add_pack("chemical-science-pack")
     TECHNOLOGY("battery-mk2-equipment"):add_pack("production-science-pack")
     TECHNOLOGY("electric-energy-accumulators"):add_pack("chemical-science-pack")
-    TECHNOLOGY("accumulator-mk01"):add_pack("production-science-pack")
-    TECHNOLOGY("accumulator-mk02"):add_pack("utility-science-pack")
+    TECHNOLOGY("py-accumulator-mk01"):add_pack("production-science-pack")
+    TECHNOLOGY("py-accumulator-mk02"):add_pack("utility-science-pack")
 end
 --BUILDINDS--
 
