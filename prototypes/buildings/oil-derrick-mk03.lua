@@ -44,6 +44,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
+    forced_symmetry = "diagonal-pos",
     module_slots = 3,
     allowed_effects = {"consumption", "speed", "productivity"},
     energy_source = {
@@ -145,6 +146,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{0, 0}, {0, 0}},
+    forced_symmetry = "diagonal-pos",
     match_animation_speed_to_activity = false,
     module_slots = 0,
     allowed_effects = {},
