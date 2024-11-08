@@ -2,6 +2,7 @@
 Version: 3.0.5
 Date: right after your Phyrric Victory
   Changes:
+    - Fixed bitumen seep graphics.
     - Ukrainian translation (by bootseller)
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.4

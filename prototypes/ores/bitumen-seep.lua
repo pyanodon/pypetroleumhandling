@@ -87,8 +87,8 @@ ENTITY {
         {
             filename = "__base__/graphics/entity/crude-oil/crude-oil.png",
             priority = "extra-high",
-            width = 148,
-            height = 120,
+            width = 168,
+            height = 124,
             frame_count = 4,
             variation_count = 1,
             shift = util.by_pixel(0, -2),
