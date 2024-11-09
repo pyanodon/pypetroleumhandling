@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "heavy-oil",    amount = 200},
         {type = "fluid", name = "residual-oil", amount = 50},
-        {type = "fluid", name = "steam",        amount = 600, temperature = 150, catalyst_amount = 600}
+        {type = "fluid", name = "steam",        amount = 600, temperature = 150, ignored_by_productivity = 600, ignored_by_stats = 600}
     },
     main_product = "heavy-oil",
     subgroup = "py-petroleum-handling-fluids",

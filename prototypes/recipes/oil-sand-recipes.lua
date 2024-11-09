@@ -139,7 +139,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "syngas", amount = 500},
-        {type = "fluid", name = "steam",  amount = 300, temperature = 250, catalyst_amount = 300},
+        {type = "fluid", name = "steam",  amount = 300, temperature = 250, ignored_by_productivity = 300, ignored_by_stats = 300},
     },
     main_product = "syngas",
     subgroup = "py-petroleum-handling-oil-sand-recipes",
