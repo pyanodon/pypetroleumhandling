@@ -57,7 +57,6 @@ ENTITY {
     target_temperature = 250,
     fluid_box = {
         volume = 200,
-        base_level = -1,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
             {flow_direction = "input-output", position = {-2.0, 0.0}, direction = defines.direction.west},
@@ -85,7 +84,6 @@ ENTITY {
         fluid_box = {
             volume = 100,
             height = 2,
-            base_level = -1,
             pipe_connections = {
                 {flow_direction = "input", position = {0, 2.0}, direction = defines.direction.south}
             },
