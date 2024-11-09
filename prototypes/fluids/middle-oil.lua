@@ -4,7 +4,6 @@ FLUID {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/naphthalene-oil.png",
     icon_size = 64,
     default_temperature = 10,
-    base_flow_rate = 100,
     gas_temperature = 15,
     heat_capacity = "1kJ",
     base_color = {r = 255, g = 0, b = 0},
