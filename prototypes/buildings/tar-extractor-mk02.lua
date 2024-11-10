@@ -72,9 +72,8 @@ ENTITY {
         width = 12,
         height = 12
     },
-    circuit_wire_connection_points = circuit_connector_definitions["tar-extractor-mkxx"].points,
-    circuit_connector_sprites = circuit_connector_definitions["tar-extractor-mkxx"].sprites,
-    circuit_wire_max_distance = default_circuit_wire_max_distance,
+    circuit_connector = circuit_connector_definitions["tar-extractor-mkxx"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     monitor_visualization_tint = {r = 78, g = 173, b = 255},
     graphics_set = {
         animation = {
