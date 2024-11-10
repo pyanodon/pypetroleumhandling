@@ -42,7 +42,6 @@ ENTITY {
     collision_box = {{-7.4, -7.4}, {7.4, 7.4}},
     selection_box = {{-7.5, -7.5}, {7.5, 7.5}},
     forced_symmetry = "diagonal-pos",
-    match_animation_speed_to_activity = false,
     module_slots = 0,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"kerogen"},

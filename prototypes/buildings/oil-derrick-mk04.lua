@@ -130,7 +130,6 @@ ENTITY {
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{0, 0}, {0, 0}},
     forced_symmetry = "diagonal-pos",
-    match_animation_speed_to_activity = false,
     module_slots = 0,
     allowed_effects = {},
     crafting_categories = {"drilling-fluid"},

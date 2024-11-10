@@ -41,7 +41,6 @@ ENTITY {
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
     forced_symmetry = "diagonal-pos",
-    match_animation_speed_to_activity = false,
     module_slots = 3,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"pumpjack"},
