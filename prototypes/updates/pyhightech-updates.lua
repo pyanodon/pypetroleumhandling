@@ -50,8 +50,8 @@ RECIPE("nano-assembler-mk01"):add_ingredient {type = "item", name = "small-parts
 RECIPE("particle-accelerator-mk01"):add_ingredient {type = "item", name = "small-parts-02", amount = 15}
 RECIPE("pulp-mill-mk01"):add_ingredient {type = "item", name = "small-parts-01", amount = 15}
 
-RECIPE("construction-robot-ht"):add_ingredient {type = "item", name = "small-parts-03", amount = 10}
-RECIPE("logistic-robot-ht"):add_ingredient {type = "item", name = "small-parts-03", amount = 10}
+RECIPE("py-construction-robot-mk04"):add_ingredient {type = "item", name = "small-parts-03", amount = 10}
+RECIPE("py-logistic-robot-mk04"):add_ingredient {type = "item", name = "small-parts-03", amount = 10}
 RECIPE("benzene-aromatics").category = "cracker"
 
 
