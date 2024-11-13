@@ -94,16 +94,17 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "item", name = "rubber", amount = 2},
+        {type = "item", name = "rubber", amount = 1},
     },
     results = {
-        {type = "item", name = "belt", amount = 1},
+        {type = "item", name = "belt", amount = 2},
     },
     main_product = "belt",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/belt.png",
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
-    order = "a"
+    order = "a",
+    allow_productivity = true
 }:add_unlock("rubber")
 
 RECIPE {

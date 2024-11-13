@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.6
+Date: never. never ever. never ever ever.
+  Changes:
+    - Buffed the rubber -> belt recipe. Rubber -> belt ratio is flipped from 2:1 to 1:2. Allowed productivity.
+---------------------------------------------------------------------------------------------------
 Version: 3.0.5
 Date: 2024-11-9
   Changes:
