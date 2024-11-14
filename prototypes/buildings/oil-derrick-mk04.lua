@@ -88,8 +88,8 @@ ENTITY {
             },
         },
     },
-    animations = {
-        north = {
+    graphics_set = {
+        animation = {
             layers = {
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk04/fluid.png",
@@ -100,7 +100,7 @@ ENTITY {
                     animation_speed = 0.15,
                     shift = util.by_pixel(-29, 29)
                 },
-            }
+            },
         },
     },
     impact_category = "metal-large",

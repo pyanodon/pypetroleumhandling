@@ -79,26 +79,28 @@ ENTITY {
     circuit_connector = circuit_connector_definitions["oil-derrick-mk02"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     monitor_visualization_tint = {r = 78, g = 173, b = 255},
-    animations = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk02/base.png",
-                width = 224,
-                height = 427,
-                line_length = 9,
-                frame_count = 25,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -103)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk02/shadow.png",
-                width = 313,
-                height = 192,
-                line_length = 5,
-                frame_count = 25,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(48, 0)
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk02/base.png",
+                    width = 224,
+                    height = 427,
+                    line_length = 9,
+                    frame_count = 25,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -103)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk02/shadow.png",
+                    width = 313,
+                    height = 192,
+                    line_length = 5,
+                    frame_count = 25,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(48, 0)
+                },
             },
         },
     },

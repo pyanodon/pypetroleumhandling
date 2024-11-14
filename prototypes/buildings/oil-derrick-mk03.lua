@@ -77,45 +77,47 @@ ENTITY {
     circuit_connector = circuit_connector_definitions["oil-derrick-mk03"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     monitor_visualization_tint = {r = 78, g = 173, b = 255},
-    animations = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/bottom.png",
-                width = 288,
-                height = 288,
-                line_length = 7,
-                frame_count = 49,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, 0)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/top.png",
-                width = 288,
-                height = 288,
-                line_length = 7,
-                frame_count = 49,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -288)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/sh-left.png",
-                width = 160,
-                height = 288,
-                line_length = 7,
-                frame_count = 49,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(-64, 0)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/sh-right.png",
-                width = 192,
-                height = 288,
-                line_length = 7,
-                frame_count = 49,
-                animation_speed = 0.3,
-                draw_as_shadow = true,
-                shift = util.by_pixel(112, 0)
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/bottom.png",
+                    width = 288,
+                    height = 288,
+                    line_length = 7,
+                    frame_count = 49,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, 0)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/top.png",
+                    width = 288,
+                    height = 288,
+                    line_length = 7,
+                    frame_count = 49,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -288)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/sh-left.png",
+                    width = 160,
+                    height = 288,
+                    line_length = 7,
+                    frame_count = 49,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(-64, 0)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk03/sh-right.png",
+                    width = 192,
+                    height = 288,
+                    line_length = 7,
+                    frame_count = 49,
+                    animation_speed = 0.3,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(112, 0)
+                },
             },
         },
     },

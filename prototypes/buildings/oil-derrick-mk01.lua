@@ -76,34 +76,36 @@ ENTITY {
     circuit_connector = circuit_connector_definitions["oil-derrick-mk01"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     monitor_visualization_tint = {r = 78, g = 173, b = 255},
-    animations = {
-        layers = {
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/base.png",
-                width = 169,
-                height = 179,
-                line_length = 10,
-                frame_count = 100,
-                animation_speed = 0.3,
-                shift = util.by_pixel(5, -10)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/piston.png",
-                width = 32,
-                height = 64,
-                line_length = 25,
-                frame_count = 100,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -4)
-            },
-            {
-                filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/gush.png",
-                frame_count = 100,
-                line_length = 25,
-                width = 32,
-                height = 96,
-                animation_speed = 0.3,
-                shift = util.by_pixel(0, -97)
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/base.png",
+                    width = 169,
+                    height = 179,
+                    line_length = 10,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(5, -10)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/piston.png",
+                    width = 32,
+                    height = 64,
+                    line_length = 25,
+                    frame_count = 100,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -4)
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk01/gush.png",
+                    frame_count = 100,
+                    line_length = 25,
+                    width = 32,
+                    height = 96,
+                    animation_speed = 0.3,
+                    shift = util.by_pixel(0, -97)
+                },
             },
         },
     },

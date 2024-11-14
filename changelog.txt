@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.7
+Date: ?
+  Changes:
+    - Fixed bitumen extractors invisible in 2.0. Resolves https://github.com/pyanodon/pybugreports/issues/714
+---------------------------------------------------------------------------------------------------
 Version: 3.0.6
 Date: 2024-11-14
   Changes:
