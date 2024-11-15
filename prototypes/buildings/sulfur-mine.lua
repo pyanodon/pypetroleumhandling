@@ -34,29 +34,42 @@ ENTITY {
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "sulfur-mine"},
     fast_replaceable_group = "sulfur-mine",
-    max_health = 600,
+    max_health = 2000,
     resource_categories = {"sulfur-patch"},
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
     collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-
-    module_slots = 1,
+    module_slots = 3,
     allowed_effects = {"consumption", "speed", "productivity"},
     mining_speed = 5,
-    energy_source =
-    {
-        type = "burner",
-        fuel_categories = {"jerry"},
-        --fuel_categories = {"chemical", "biomass"},
+    effect_receiver = {
+        -- makes green modules 9x less effective in order to not trivalize the fluid fuel challenge.
+        -- 20% consumption is still possible with green beacons later on.
+        base_effect = {consumption = 9}
+    },
+    energy_source = {
+        type = "fluid",
         effectivity = 1,
-        fuel_inventory_size = 1,
-        burnt_inventory_size = 1,
         emissions_per_minute = {
-            pollution = 50
+            pollution = 5
         },
-        smoke =
-        {
+        light_flicker = {
+            minimum_light_size = 1.2,
+            color = defines.color.yellow,
+        },
+        burns_fluid = true,
+        scale_fluid_usage = true,
+        destroy_non_fuel_fluid = false,
+        fluid_box = {
+            volume = 3000,
+            pipe_connections = {
+                {flow_direction = "input", position = {0, 3.0}, direction = defines.direction.south}
+            },
+            pipe_covers = py.pipe_covers(false, true, true, true),
+            production_type = "input",
+        },
+        smoke = {
             {
                 name = "smoke",
                 north_position = {2, -3.75},
@@ -70,7 +83,7 @@ ENTITY {
             },
         },
     },
-    energy_usage = "500kW",
+    energy_usage = "3MW",
     mining_power = 5,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, -3.65},
