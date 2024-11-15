@@ -7,6 +7,7 @@ Date: ?
     - Greatly increased the fuel consumption of the sulfur mine from 500kW to 30MW.
     - Increased the number of module slots in the sulfur mine 1 -> 3.
     - Added light flicker effects to the sulfur mine.
+    - Diluted the effects of green modules on the antimony drill by a factor of 9x.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.6
 Date: 2024-11-14
