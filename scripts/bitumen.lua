@@ -233,6 +233,8 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 			}
 
 			drill.update_connections()
+
+			--force.print {"turd.font", {"turd.selected-alert", {"technology-name." .. master_tech_name}, {"technology-name." .. sub_tech_name}, player.name, player.color.r, player.color.g, player.color.b}}
 		end
 	end
 end)

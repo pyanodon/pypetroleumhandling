@@ -31,6 +31,22 @@
         [
             "natural-gas-seep-mk04",
             "natural-gas-derrick-mk04"
+        ],
+        [
+            "bitumen-seep-mk01",
+            "oil-derrick-mk01"
+        ],
+        [
+            "bitumen-seep-mk02",
+            "oil-derrick-mk02"
+        ],
+        [
+            "bitumen-seep-mk03",
+            "oil-derrick-mk03"
+        ],
+        [
+            "bitumen-seep-mk04",
+            "oil-derrick-mk04"
         ]
     ],
     "entity": [
@@ -97,6 +113,38 @@
         [
             "natural-gas-seep-mk04-base",
             "natural-gas-derrick-mk04-base"
+        ],
+        [
+            "bitumen-seep-mk01",
+            "oil-derrick-mk01"
+        ],
+        [
+            "bitumen-seep-mk02",
+            "oil-derrick-mk02"
+        ],
+        [
+            "bitumen-seep-mk03",
+            "oil-derrick-mk03"
+        ],
+        [
+            "bitumen-seep-mk04",
+            "oil-derrick-mk04"
+        ],
+        [
+            "bitumen-seep-mk01-base",
+            "oil-derrick-mk01-base"
+        ],
+        [
+            "bitumen-seep-mk02-base",
+            "oil-derrick-mk02-base"
+        ],
+        [
+            "bitumen-seep-mk03-base",
+            "oil-derrick-mk03-base"
+        ],
+        [
+            "bitumen-seep-mk04-base",
+            "oil-derrick-mk04-base"
         ]
     ],
     "recipe": [

@@ -93,10 +93,7 @@ require "prototypes.buildings.fracking-rig"
 require "prototypes.buildings.retorter"
 require "prototypes.buildings.oil-boiler-mk01"
 --seeps and extractors
-require "prototypes.buildings.oil-derrick-mk01"
-require "prototypes.buildings.oil-derrick-mk02"
-require "prototypes.buildings.oil-derrick-mk03"
-require "prototypes.buildings.oil-derrick-mk04"
+require "prototypes.buildings.oil-derrick"
 require "prototypes.buildings.tar-extractor"
 require "prototypes.buildings.natural-gas-derrick"
 
