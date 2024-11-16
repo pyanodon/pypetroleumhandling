@@ -3,6 +3,10 @@ Version: 3.0.7
 Date: ?
   Changes:
     - Fixed bitumen extractors invisible in 2.0. Resolves https://github.com/pyanodon/pybugreports/issues/714
+    - Fixed natural gas derrick/etc can input drilling fluid into wrong port. Resolves https://github.com/pyanodon/pybugreports/issues/718
+    - Fixed floating pipe connection graphics for unpopped tae extractors.
+    - Bitumen extractors can now be connected to the circuit network even before it is popped.
+    - Re-organized fluid inputs for bitumen extractors.
     - Sulfur mines no longer requires gas canisters can consume fuel directly.
     - Greatly increased the fuel consumption of the sulfur mine from 500kW to 30MW.
     - Increased the number of module slots in the sulfur mine 1 -> 3.

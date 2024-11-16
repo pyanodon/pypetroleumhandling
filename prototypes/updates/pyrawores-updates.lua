@@ -104,7 +104,7 @@ RECIPE("wet-scrubber-mk03"):add_ingredient {type = "item", name = "small-parts-0
 RECIPE("chemical-plant-mk02"):remove_unlock("machines-mk03"):add_unlock("oil-machines-mk02")
 RECIPE("chemical-plant-mk03"):remove_unlock("machines-mk04"):add_unlock("oil-machines-mk03")
 RECIPE("chemical-plant-mk04"):remove_unlock("machines-mk05"):add_unlock("oil-machines-mk04")
-RECIPE("natural-gas-seep-mk04"):replace_ingredient("distilator", "distilator-mk04")
+RECIPE("natural-gas-derrick-mk04"):replace_ingredient("distilator", "distilator-mk04")
 
 --RECIPES--
 

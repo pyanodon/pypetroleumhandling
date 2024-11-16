@@ -1,7 +1,7 @@
 -- Holds circuit connection definitions for PyPH entities.
 -- variation counts from 0 (Python-like).
 
-circuit_connector_definitions["natural-gas-extractor-mkxx"] = circuit_connector_definitions.create_vector
+circuit_connector_definitions["natural-gas-derrick-mkxx"] = circuit_connector_definitions.create_vector
     (
       universal_connector_template,
       { --Directions are up, right, down, left.

@@ -91,20 +91,14 @@ require "prototypes.buildings.guar-gum-plantation-mk03"
 require "prototypes.buildings.guar-gum-plantation-mk04"
 require "prototypes.buildings.fracking-rig"
 require "prototypes.buildings.retorter"
+require "prototypes.buildings.oil-boiler-mk01"
 --seeps and extractors
 require "prototypes.buildings.oil-derrick-mk01"
 require "prototypes.buildings.oil-derrick-mk02"
 require "prototypes.buildings.oil-derrick-mk03"
 require "prototypes.buildings.oil-derrick-mk04"
-require "prototypes.buildings.tar-extractor-mk01"
-require "prototypes.buildings.tar-extractor-mk02"
-require "prototypes.buildings.tar-extractor-mk03"
-require "prototypes.buildings.tar-extractor-mk04"
-require "prototypes.buildings.natural-gas-extractor-mk01"
-require "prototypes.buildings.natural-gas-extractor-mk02"
-require "prototypes.buildings.natural-gas-extractor-mk03"
-require "prototypes.buildings.natural-gas-extractor-mk04"
-require "prototypes.buildings.oil-boiler-mk01"
+require "prototypes.buildings.tar-extractor"
+require "prototypes.buildings.natural-gas-derrick"
 
 --(( RECIPES ))--
 require("prototypes.recipes.recipes")

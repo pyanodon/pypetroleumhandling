@@ -11,28 +11,19 @@ end)
 -- Correlates our derricks and what replaces them with the seep transition, along with their hidden assembler names
 local derrick_types = {}
 for i = 1, 4 do
-	derrick_types["bitumen-seep-mk0" .. i] = {
-		base = "bitumen-seep-mk0" .. i .. "-base",
-		replacement = "oil-derrick-mk0" .. i,
+	derrick_types["oil-derrick-mk0" .. i] = {
+		base = "oil-derrick-mk0" .. i .. "-base",
 		resource = "oil-mk0" .. i
 	}
-	derrick_types["tar-seep-mk0" .. i] = {
-		base = "tar-seep-mk01-base",
-		replacement = "tar-extractor-mk0" .. i,
+	derrick_types["tar-extractor-mk0" .. i] = {
+		base = "tar-extractor-mk0" .. i .. "-base",
 		resource = "tar-patch"
 	}
-	derrick_types["natural-gas-seep-mk0" .. i] = {
-		base = "natural-gas-seep-mk01-base",
-		replacement = "natural-gas-extractor-mk0" .. i,
+	derrick_types["natural-gas-derrick-mk0" .. i] = {
+		base = "natural-gas-derrick-mk0" .. i .. "-base",
 		resource = "natural-gas-mk01"
 	}
 end
-
-local resource_types = {
-	["oil"] = "oil-derrick-mk0",
-	["tar"] = "tar-extractor-mk0",
-	["natural-gas"] = "natural-gas-extractor-mk0"
-}
 
 local event_filter = {
 	{
@@ -77,41 +68,30 @@ py.on_event(py.events.on_built(), function(event)
 		area = {{drill.position.x - 1, drill.position.y - 1}, {drill.position.x + 1, drill.position.y + 1}},
 		type = "resource"
 	}
+	local patch = patches[1]
+	if not patch then return end
+	if patch.name ~= "bitumen-seep" then return end
 
-	for _, patch in pairs(patches) do
-		if patch.name == "bitumen-seep" then
-			local assembler = drill.surface.create_entity {
-				name = drill_base.base,
-				force = drill.force,
-				position = drill.position,
-				quality = drill.quality.name,
-				direction = drill.direction
-			}
-			assembler.set_recipe("drilling-fluids")
-			assembler.active = false
-			assembler.destructible = false
-			storage.oil_derricks[drill.unit_number] = {
-				entity = drill,
-				base = assembler,
-				drilling_fluid = "",
-				patch = patch
-			}
-			drill.active = false
-			-- Register for destruction event to handle removal via editor etc
-			script.register_on_object_destroyed(drill)
-			render_text(storage.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
-		else
-			local resource_type = patch.name:match("(.*)(%-%w*)$")
-			drill.surface.create_entity {
-				name = resource_types[resource_type] .. drill.name:match("%d$"),
-				force = drill.force,
-				position = drill.position,
-				quality = drill.quality.name
-			}
-			drill.destroy()
-		end
-		break
-	end
+	local assembler = drill.surface.create_entity {
+		name = drill_base.base,
+		force = drill.force,
+		position = drill.position,
+		quality = drill.quality.name,
+		direction = drill.direction
+	}
+	assembler.set_recipe("drilling-fluids")
+	assembler.active = false
+	assembler.destructible = false
+	storage.oil_derricks[drill.unit_number] = {
+		entity = drill,
+		base = assembler,
+		drilling_fluid = "",
+		patch = patch
+	}
+	drill.active = false
+	-- Register for destruction event to handle removal via editor etc
+	script.register_on_object_destroyed(drill)
+	render_text(storage.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
 end)
 
 -- Destroy hidden assembler when removing drill
@@ -186,27 +166,30 @@ py.register_on_nth_tick(update_rate, "drills", "pyph", function()
 				name = defines.events.on_object_destroyed,
 				unit_number = drill_id
 			}
-		else
-			if not drill_empty then
-				-- Check possible drilling fluids in descending order of quality
-				for current_tier = fluid_max_tier, fluid_min_tier, -1 do
-					local fluid_type = "drilling-fluid-" .. current_tier
-					local contained_fluid = drill_contents[fluid_type]
-					if contained_fluid then
-						if contained_fluid >= fluid_threshold then
-							storage.oil_derricks[drill_id].drilling_fluid = fluid_type
-							drill.base.remove_fluid {name = fluid_type, amount = 10}
-							drill.entity.force.get_fluid_production_statistics(drill.entity.surface_index).on_flow(fluid_type, -10)
-							drill_active = true
-						end
-						break
+			goto continue
+		end
+		
+		if not drill_empty then
+			-- Check possible drilling fluids in descending order of quality
+			for current_tier = fluid_max_tier, fluid_min_tier, -1 do
+				local fluid_type = "drilling-fluid-" .. current_tier
+				local contained_fluid = drill_contents[fluid_type]
+				if contained_fluid then
+					if contained_fluid >= fluid_threshold then
+						storage.oil_derricks[drill_id].drilling_fluid = fluid_type
+						drill.base.remove_fluid {name = fluid_type, amount = 10}
+						drill.entity.force.get_fluid_production_statistics(drill.entity.surface_index).on_flow(fluid_type, -10)
+						drill_active = true
 					end
+					break
 				end
 			end
-			drill.entity.active = drill_active
-
-			render_text(drill, update_rate + 1)
 		end
+		drill.entity.active = drill_active
+
+		render_text(drill, update_rate + 1)
+
+		::continue::
 	end
 end)
 
@@ -217,30 +200,6 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 		patch.amount = math.random(1000, 2500)
 	end
 end)
-
-local function swap_drill(drill, replacement)
-	local surface = drill.surface
-	local parameters = {
-		name = replacement,
-		position = drill.position,
-		force = drill.force,
-		direction = drill.direction,
-		player = drill.last_user,
-		quality = drill.quality.name,
-	}
-	local source_module_inventory = drill.get_module_inventory()
-	local module_contents
-	if source_module_inventory then module_contents = source_module_inventory.get_contents() end
-	drill.destroy()
-
-	local new_drill = surface.create_entity(parameters)
-	local destination_module_inventory = new_drill.get_module_inventory()
-	if source_module_inventory and destination_module_inventory then
-		for _, item in pairs(module_contents) do
-			destination_module_inventory.insert(item)
-		end
-	end
-end
 
 script.on_event(defines.events.on_resource_depleted, function(event)
 	local resource = event.entity
@@ -272,7 +231,8 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 				position = resource.position,
 				quality = resource.quality.name
 			}
-			swap_drill(drill, drill_data.replacement)
+
+			drill.update_connections()
 		end
 	end
 end)
