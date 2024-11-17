@@ -1,4 +1,8 @@
 local function pipe_picture()
+    if not mods["pyhightechgraphics"] then
+        return py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes)
+    end
+
     return {
         north = {
             filename = "__pyhightechgraphics__/graphics/entity/ht-pipes/pipe-to-ground-up.png",
@@ -36,6 +40,10 @@ local function pipe_picture()
 end
 
 local function pipe_cover()
+    if not mods["pyhightech"] then
+        return py.pipe_covers(true, true, true, true),
+    end
+
     return table.deepcopy(data.raw["pipe-to-ground"]["ht-pipes-to-ground"].fluid_box.pipe_covers)
 end
 
