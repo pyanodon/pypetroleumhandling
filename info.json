@@ -13,7 +13,7 @@
     "(?) pyrawores >= 1.2.6",
     "(?) pyhightech",
     "(?) rso-mod",
-    "~ pypetroleumhandlinggraphics >= 1.0.0",
+    "~ pypetroleumhandlinggraphics >= 3.0.2",
     "! wret-beacon-rebalance-mod",
     "! BigBags",
     "! ResearchFog",
