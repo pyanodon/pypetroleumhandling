@@ -41,7 +41,7 @@ end
 
 local function pipe_cover()
     if not mods["pyhightech"] then
-        return py.pipe_covers(true, true, true, true),
+        return py.pipe_covers(true, true, true, true)
     end
 
     return table.deepcopy(data.raw["pipe-to-ground"]["ht-pipes-to-ground"].fluid_box.pipe_covers)
