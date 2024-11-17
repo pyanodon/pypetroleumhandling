@@ -168,7 +168,7 @@ for i = 1, 4 do
                 {flow_direction = "output", position = {0, 3.0},  direction = defines.direction.south},
                 {flow_direction = "output", position = {-3.0, 0}, direction = defines.direction.west},
             },
-            pipe_covers = table.deepcopy(data.raw["pipe-to-ground"]["ht-pipes-to-ground"].fluid_box.pipe_covers),
+            pipe_covers = mods.pyhightech and table.deepcopy(data.raw["pipe-to-ground"]["ht-pipes-to-ground"].fluid_box.pipe_covers) or nil,
         },
         energy_usage = (3 * i) .. "MW",
         mining_speed = i,
