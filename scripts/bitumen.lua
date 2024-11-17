@@ -13,15 +13,18 @@ local derrick_types = {}
 for i = 1, 4 do
 	derrick_types["oil-derrick-mk0" .. i] = {
 		base = "oil-derrick-mk0" .. i .. "-base",
-		resource = "oil-mk0" .. i
+		resource = "oil-mk0" .. i,
+		fluid = "crude-oil",
 	}
 	derrick_types["tar-extractor-mk0" .. i] = {
 		base = "tar-extractor-mk0" .. i .. "-base",
-		resource = "tar-patch"
+		resource = "tar-patch",
+		fluid = "tar",
 	}
 	derrick_types["natural-gas-derrick-mk0" .. i] = {
 		base = "natural-gas-derrick-mk0" .. i .. "-base",
-		resource = "natural-gas-mk01"
+		resource = "natural-gas-mk0" .. i,
+		fluid = "raw-gas",
 	}
 end
 
@@ -201,6 +204,11 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 	end
 end)
 
+local function add_commas_to_number(number)
+	local formatted = tostring(number):reverse():gsub("(%d%d%d)", "%1,"):reverse()
+	return formatted:match("^,") and formatted:sub(2) or formatted
+end
+
 script.on_event(defines.events.on_resource_depleted, function(event)
 	local resource = event.entity
 	if resource.name ~= "bitumen-seep" then
@@ -214,27 +222,52 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 
 	for _, drill in pairs(active_drills) do
 		local drill_data = derrick_types[drill.name]
-		if drill_data then
-			local drill_fluid = storage.oil_derricks[drill.unit_number].drilling_fluid
-			local fluid_tier = ((drill_fluid:match("%d$") + 1) * 4)
-			local drill_tier = (drill.name:match("%d$") * 4)
-			local random_factor = math.random(4, 16)
-			local new_patch_size = 40000 * random_factor * drill_tier * fluid_tier
+		if not drill_data then goto continue end
 
-			local base = storage.oil_derricks[drill.unit_number].base
-			if base and base.valid then base.destroy() end
-			storage.oil_derricks[drill.unit_number] = nil
+		local drill_fluid = storage.oil_derricks[drill.unit_number].drilling_fluid
+		local fluid_tier = ((drill_fluid:match("%d$") + 1) * 4)
+		local drill_tier = (drill.name:match("%d$") * 4)
+		local random_factor = math.random(4, 16)
+		local new_patch_size = 40000 * random_factor * drill_tier * fluid_tier
 
-			resource.surface.create_entity {
-				name = drill_data.resource,
-				amount = new_patch_size,
-				position = resource.position,
-				quality = resource.quality.name
-			}
+		local base = storage.oil_derricks[drill.unit_number].base
+		if base and base.valid then base.destroy() end
+		storage.oil_derricks[drill.unit_number] = nil
 
-			drill.update_connections()
+		resource.surface.create_entity {
+			name = drill_data.resource,
+			amount = new_patch_size,
+			position = resource.position,
+			quality = resource.quality.name
+		}
 
-			--force.print {"turd.font", {"turd.selected-alert", {"technology-name." .. master_tech_name}, {"technology-name." .. sub_tech_name}, player.name, player.color.r, player.color.g, player.color.b}}
+		drill.update_connections()
+
+		local fluid = drill_data.fluid
+		drill.force.print {
+			"bitumen-seep-alert",
+			drill.name,
+			add_commas_to_number(new_patch_size * 100),
+			fluid,
+			drill.position.x,
+			drill.position.y,
+			drill.surface.name
+		}
+
+		local oil_explosion = drill.surface.create_entity{
+			name = "oil-explosion",
+			position = drill.position,
+			force = drill.force_index
+		}
+
+		-- slightly damage all entities in 20 tile radius
+		for _, entity in pairs(drill.surface.find_entities_filtered {position = drill.position, radius = 20, collision_mask = "object"}) do
+			if entity.is_entity_with_health then
+				local damage_amount = math.min(math.random(184, 222), entity.max_health * math.random(27, 33) / 100)
+				entity.damage(damage_amount, "enemy", "explosion", oil_explosion, drill)
+			end
 		end
+		
+		::continue::
 	end
 end)
