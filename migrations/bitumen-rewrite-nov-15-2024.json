@@ -99,6 +99,22 @@
             "natural-gas-derrick-mk04"
         ],
         [
+            "natural-gas-extractor-mk01",
+            "natural-gas-derrick-mk01"
+        ],
+        [
+            "natural-gas-extractor-mk02",
+            "natural-gas-derrick-mk02"
+        ],
+        [
+            "natural-gas-extractor-mk03",
+            "natural-gas-derrick-mk03"
+        ],
+        [
+            "natural-gas-extractor-mk04",
+            "natural-gas-derrick-mk04"
+        ],
+        [
             "natural-gas-seep-mk01-base",
             "natural-gas-derrick-mk01-base"
         ],
