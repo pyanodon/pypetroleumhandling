@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.7
-Date: ?
+Date: 2024-11-17
   Changes:
     - Fixed bitumen extractors invisible in 2.0. Resolves https://github.com/pyanodon/pybugreports/issues/714
     - Fixed natural gas derrick/etc can input drilling fluid into wrong port. Resolves https://github.com/pyanodon/pybugreports/issues/718
