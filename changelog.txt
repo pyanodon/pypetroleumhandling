@@ -3,6 +3,7 @@ Version: 3.0.9
 Date: ?
   Changes:
     - Removed unused scrude-to-methane recipe from factoriopedia.
+    - Added an unlock for the unused steam+naptha -> hydrogen recipe.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.8
 Date: 2024-11-18

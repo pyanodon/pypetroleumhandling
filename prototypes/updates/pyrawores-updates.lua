@@ -404,7 +404,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-petroleum-handling-scrude-recipes",
     order = "a"
-} --:add_unlock("scrude")
+}:add_unlock("light-oil-mk03")
 
 RECIPE {
     type = "recipe",
