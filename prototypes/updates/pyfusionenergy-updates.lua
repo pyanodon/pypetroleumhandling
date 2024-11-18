@@ -174,45 +174,26 @@ end
 
 ----EXCLUSIVE RECIPES----
 
-RECIPE {
-    type = "recipe",
-    name = "bitumen-to-vanadium",
-    category = "upgrader",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-        {type = "fluid", name = "bitumen",    amount = 4000},
-        {type = "item",  name = "agzn-alloy", amount = 1},
-    },
-    results = {
-        {type = "item", name = "vanadium-oxide", amount = 1},
-    },
-    main_product = "vanadium-oxide",
-    icon = "__pyfusionenergygraphics__/graphics/icons/vanadium-oxide.png",
-    icon_size = 32,
-    subgroup = "py-fusion-items",
-    order = "a"
-}:add_unlock("heavy-oil-mk04")
-
-RECIPE {
-    type = "recipe",
-    name = "tar-to-vanadium",
-    category = "upgrader",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "tar",        amount = 4000},
-        {type = "item",  name = "agzn-alloy", amount = 2},
-    },
-    results = {
-        {type = "item", name = "vanadium-oxide", amount = 1},
-    },
-    main_product = "vanadium-oxide",
-    icon = "__pyfusionenergygraphics__/graphics/icons/vanadium-oxide.png",
-    icon_size = 32,
-    subgroup = "py-fusion-items",
-    order = "a"
-}:add_unlock("heavy-oil-mk04")
+if mods.pystellarexpedition then
+    RECIPE {
+        type = "recipe",
+        name = "bitumen-to-vanadium",
+        category = "upgrader",
+        enabled = false,
+        energy_required = 3,
+        ingredients = {
+            {type = "fluid", name = "bitumen",    amount = 4000},
+            {type = "item",  name = "agzn-alloy", amount = 1},
+        },
+        results = {
+            {type = "item", name = "vanadium-oxide", amount = 3},
+        },
+        main_product = "vanadium-oxide",
+        subgroup = "py-fusion-items",
+        allow_productivity = true,
+        order = "a"
+    }:add_unlock("zinc-mk04")
+end
 
 RECIPE {
     type = "recipe",
