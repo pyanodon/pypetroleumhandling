@@ -82,27 +82,6 @@ end
 
 ----EXCLUSIVE RECIPES----
 
-
-RECIPE {
-    type = "recipe",
-    name = "scrude-to-methane",
-    category = "distilator",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "scrude",        amount = 100}, --add vacuum
-        {type = "item",  name = "nexelit-plate", amount = 1},
-    },
-    results = {
-        {type = "fluid", name = "methane", amount = 120},
-    },
-    main_product = "methane",
-    icon = "__pyhightechgraphics__/graphics/icons/methane.png",
-    icon_size = 32,
-    subgroup = "py-hightech-fluids",
-    order = "a"
-} --:add_unlock("scrude")
-
 RECIPE {
     type = "recipe",
     name = "extract-ammonia-scrude",
@@ -533,7 +512,6 @@ RECIPE {
 
 
 if mods["pyfusionenergy"] then
-    RECIPE("scrude-to-methane"):add_ingredient {type = "fluid", name = "vacuum", amount = 100}
     RECIPE("extract-ammonia-scrude"):replace_ingredient("nichrome", "molybdenum-plate")
 
     RECIPE {
