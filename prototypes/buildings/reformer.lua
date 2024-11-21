@@ -246,12 +246,13 @@ for i = 1, 4 do
                         tint = py.tints[i]
                     },
                     {
-                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/reformer-mk01/i8.png",
-                        width = 64,
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/reformer-mk01/sh.png",
+                        width = 128,
                         height = 769,
                         frame_count = 1,
                         line_length = 1,
-                        shift = util.by_pixel(272, -176)
+                        draw_as_shadow = true,
+                        shift = util.by_pixel(272 - 32, -176)
                     },
                 },
             },
@@ -354,44 +355,6 @@ for i = 1, 4 do
                                 line_length = 25,
                                 animation_speed = 0.4,
                                 shift = util.by_pixel(80, -176),
-                                tint = py.tints[i]
-                            },
-                            {
-                                filename = "__pypetroleumhandlinggraphics__/graphics/entity/reformer-mk01/i6.png",
-                                width = 64,
-                                height = 769,
-                                frame_count = 50,
-                                line_length = 25,
-                                animation_speed = 0.4,
-                                shift = util.by_pixel(144, -176)
-                            },
-                            {
-                                filename = "__pypetroleumhandlinggraphics__/graphics/entity/reformer-mk01/i6-mask.png",
-                                width = 64,
-                                height = 769,
-                                frame_count = 50,
-                                line_length = 25,
-                                animation_speed = 0.4,
-                                shift = util.by_pixel(144, -176),
-                                tint = py.tints[i]
-                            },
-                            {
-                                filename = "__pypetroleumhandlinggraphics__/graphics/entity/reformer-mk01/i7.png",
-                                width = 64,
-                                height = 769,
-                                frame_count = 50,
-                                line_length = 25,
-                                animation_speed = 0.4,
-                                shift = util.by_pixel(208, -176)
-                            },
-                            {
-                                filename = "__pypetroleumhandlinggraphics__/graphics/entity/reformer-mk01/i7-mask.png",
-                                width = 64,
-                                height = 769,
-                                frame_count = 50,
-                                line_length = 25,
-                                animation_speed = 0.4,
-                                shift = util.by_pixel(208, -176),
                                 tint = py.tints[i]
                             },
                         }

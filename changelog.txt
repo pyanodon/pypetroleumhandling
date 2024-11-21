@@ -7,6 +7,7 @@ Date: ?
     - Added an unlock for unused vanadium pentoxide recipes.
     - Added new graphics for the reformer.
     - Increased the healh of the reformer from 100, 100, 100, 100 to 300, 600, 900, 1200.
+    - Optimized VRAM consumption for the reformer.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.8
 Date: 2024-11-18
