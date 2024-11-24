@@ -111,8 +111,6 @@ if data.data_crawler then
 	if mods["pyhightech"] then table.insert(data.script_enabled, "crash-site-assembling-machine-1-repaired") end
 end
 
-require "prototypes.updates.hot-air"
-
 --gather recipes for module changes
 local recipes_list = {
 	"kevlar-2",
