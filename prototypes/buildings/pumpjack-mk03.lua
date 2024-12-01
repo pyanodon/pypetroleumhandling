@@ -96,7 +96,7 @@ ENTITY {
         },
     },
 
-    fluid_boxes_off_when_no_fluid_recipe = true,
+    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         --1
         {
