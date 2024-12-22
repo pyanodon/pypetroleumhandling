@@ -13,7 +13,8 @@ local hab = table.invert {
     "chromium-01",
     "copper-plate-4",
     "empty-comb-2",
-    "py-steel"
+    "py-steel",
+    "small-lamp-casting"
 }
 
 --add 50 hot-air ingredient, output +25%
