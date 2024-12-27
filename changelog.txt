@@ -4,6 +4,7 @@ Date: ????
   Changes:
     - Show fluid boxes all the time on Pumpjacks, Guar plantations, and Ionic Upgraders.
     - Add new lamp casting recipe to hot air blacklist.
+    - Buffed most of the tholins recipes
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.9
 Date: 2024-11-29

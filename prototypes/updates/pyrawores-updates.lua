@@ -432,15 +432,14 @@ RECIPE {
     name = "tholin-to-nitrogen",
     category = "tholin-plant",
     enabled = false,
-    energy_required = 6,
+    energy_required = 48,
     ingredients = {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "nitrogen", amount = 100},
+        {type = "fluid", name = "nitrogen", amount = 800},
     },
-    icon = "__pyraworesgraphics__/graphics/icons/nitrogen.png",
-    icon_size = 32,
+    main_product = "nitrogen",
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
 }:add_unlock("tholin-mk01")
@@ -450,15 +449,14 @@ RECIPE {
     name = "tholin-to-chlorine",
     category = "tholin-plant",
     enabled = false,
-    energy_required = 6,
+    energy_required = 13,
     ingredients = {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "chlorine", amount = 80},
+        {type = "fluid", name = "chlorine", amount = 180},
     },
-    icon = "__pyraworesgraphics__/graphics/icons/chlorine.png",
-    icon_size = 32,
+    main_product = "chlorine",
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
 }:add_unlock("tholin-mk02")
@@ -468,15 +466,14 @@ RECIPE {
     name = "tholin-to-hydrogen",
     category = "tholin-plant",
     enabled = false,
-    energy_required = 6,
+    energy_required = 36,
     ingredients = {
         {type = "fluid", name = "tholins", amount = 50},
     },
     results = {
-        {type = "fluid", name = "hydrogen", amount = 150},
+        {type = "fluid", name = "hydrogen", amount = 900},
     },
-    icon = "__pyraworesgraphics__/graphics/icons/hydrogen.png",
-    icon_size = 32,
+    main_product = "hydrogen",
     subgroup = "py-petroleum-handling-tholin-recipes",
     order = "b"
 }:add_unlock("tholin-mk01")
