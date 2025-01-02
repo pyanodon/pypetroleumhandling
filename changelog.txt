@@ -5,6 +5,7 @@ Date: ????
     - Show fluid boxes all the time on Pumpjacks, Guar plantations, and Ionic Upgraders.
     - Add new lamp casting recipe to hot air blacklist.
     - Buffed most of the tholins recipes
+    - Fixed Regenerative Heat Exchanger pipe covers having assembling machine graphics. Resolves https://github.com/pyanodon/pybugreports/issues/807
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.9
 Date: 2024-11-29
