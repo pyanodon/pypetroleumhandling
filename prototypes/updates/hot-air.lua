@@ -19,24 +19,18 @@ local hab = table.invert {
 
 --add 50 hot-air ingredient, output +25%
 local function hotairrecipes(extra_recipes)
-    --gather recipes for the casting unit
-    local recipes = table.deepcopy(data.raw.recipe)
     local afrecipes = {}
-    local afrecipesnames = {}
-    local afrcount = 0
-    local altrec = 0
 
-    for _, recipe in pairs(recipes) do
+    --gather recipes for the casting unit
+    for _, recipe in pairs(data.raw.recipe) do
         if recipe.category == "casting" and not hab[recipe.name] then
-            table.insert(afrecipes, recipe)
-            table.insert(afrecipesnames, recipe.name)
+            table.insert(afrecipes, table.deepcopy(recipe))
         end
     end
 
     for _, recipe in pairs(extra_recipes) do
         if data.raw.recipe[recipe] then
             table.insert(afrecipes, table.deepcopy(data.raw.recipe[recipe]))
-            table.insert(afrecipesnames, recipe.name)
         end
     end
 
@@ -46,73 +40,56 @@ local function hotairrecipes(extra_recipes)
             error("Don\'t use this")
         end
 
-        afrcount = afrcount + 1
         --add ingredient
-        local result = recipe.main_product or recipe.result or recipe.results[1][1] or recipe.results[1].name
+        local result = recipe.main_product or recipe.results[1].name
         local index = recipe.category == "glassworks" and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
-            if recipe.ingredients[1].name == nil then
-                local ing = recipe.ingredients
-                recipe.ingredients = {}
-                table.insert(recipe.ingredients, {type = "item", name = ing[1][1], amount = ing[1][2]})
-                if data.raw.item["solid-hot-air"] ~= nil then
-                    table.insert(recipe.ingredients, {type = "item", name = "solid-hot-air", amount = 50})
-                else
-                    table.insert(
-                        recipe.ingredients,
-                        {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
-                    )
-                end
-            elseif recipe.ingredients[1].name then
-                if data.raw.item["solid-hot-air"] ~= nil then
-                    table.insert(recipe.ingredients, {type = "item", name = "solid-hot-air", amount = 50})
-                else
-                    table.insert(
-                        recipe.ingredients,
-                        {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
-                    )
-                end
+            if data.raw.item["solid-hot-air"] ~= nil then
+                table.insert(recipe.ingredients, {type = "item", name = "solid-hot-air", amount = 50})
+            else
+                table.insert(
+                    recipe.ingredients,
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
+                )
             end
         elseif recipe.ingredients[2] ~= nil then
-            if recipe.ingredients[2].name == nil then
-                local ing = recipe.ingredients
-                recipe.ingredients = {}
-                table.insert(recipe.ingredients, {type = "item", name = ing[2][1], amount = ing[2][2]})
-                if data.raw.item["solid-hot-air"] ~= nil then
-                    table.insert(recipe.ingredients, {type = "item", name = "solid-hot-air", amount = 50})
-                else
-                    table.insert(
-                        recipe.ingredients,
-                        {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
-                    )
-                end
-            elseif recipe.ingredients[2].name then
-                if data.raw.item["solid-hot-air"] ~= nil then
-                    table.insert(recipe.ingredients, {type = "item", name = "solid-hot-air", amount = 50})
-                else
-                    table.insert(
-                        recipe.ingredients,
-                        {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
-                    )
-                end
+            if data.raw.item["solid-hot-air"] ~= nil then
+                table.insert(recipe.ingredients, {type = "item", name = "solid-hot-air", amount = 50})
+            else
+                table.insert(
+                    recipe.ingredients,
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
+                )
             end
         end
-        recipe:multiply_result_amount(result, 1.25)
 
         --find tech unlock of og recipe
-        local unlock
+        local unlock, effect_index
         for _, t in pairs(data.raw.technology) do
             --log(serpent.block(t))
             if t.effects ~= nil then
-                for _, u in pairs(t.effects) do
+                for i, u in pairs(t.effects) do
                     if u.recipe == recipe.name then
                         unlock = t.name
+                        effect_index = i
+                        break
                         --log(unlock)
                     end
                 end
             end
         end
+
+        -- to prod or not to prod
+        allow_productivity = false
+        if string.find(recipe.name, "casting") then
+            data.raw.recipe[recipe.name] = nil -- can be hidden instead if it causes issues
+            allow_productivity = true
+            table.remove(data.raw.technology[unlock].effects, effect_index)
+        else
+            recipe:multiply_result_amount(result, 1.25)
+        end
+
         --log(serpent.block(recipe))
         local hname = "hotair-" .. recipe.name
         local category
@@ -132,10 +109,10 @@ local function hotairrecipes(extra_recipes)
                 --icon_size = 32,
                 main_product = recipe.main_product or nil,
                 subgroup = recipe.subgroup,
-                order = recipe.order and (recipe.order .. "-a") or nil
+                order = recipe.order and (recipe.order .. "-a") or nil,
+                allow_productivity = allow_productivity,
             }
             --
-            altrec = altrec + 1
             if recipe.enabled == false then
                 if unlock ~= nil then
                     table.insert(data.raw.technology[unlock].effects, {type = "unlock-recipe", recipe = hname})
