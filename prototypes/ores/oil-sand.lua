@@ -47,7 +47,7 @@ ENTITY {
     stage_counts = {2000, 1600, 1400, 1200, 800, 400, 200, 10},
     stages = {
         sheet = {
-            filename = "__pypetroleumhandlinggraphics__/graphics/entity/ores/oil-sand/hr-oil-sand.png",
+            filename = "__pypetroleumhandlinggraphics__/graphics/entity/ores/oil-sand/oil-sand.png",
             priority = "extra-high",
             width = 128,
             height = 128,

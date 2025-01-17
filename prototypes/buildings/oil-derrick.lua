@@ -1,7 +1,7 @@
 local function pipe_picture()
     return {
         north = {
-            filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-up.png",
+            filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-up.png",
             priority = "extra-high",
             width = 128,
             height = 128,
@@ -9,7 +9,7 @@ local function pipe_picture()
             shift = {0, 1},
         },
         south = {
-            filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-down.png",
+            filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-down.png",
             priority = "extra-high",
             width = 128,
             height = 128,
@@ -17,7 +17,7 @@ local function pipe_picture()
             shift = {0, -1},
         },
         west = {
-            filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-left.png",
+            filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-left.png",
             priority = "extra-high",
             width = 128,
             height = 128,
@@ -25,7 +25,7 @@ local function pipe_picture()
             shift = {1, 0},
         },
         east = {
-            filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-right.png",
+            filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-right.png",
             priority = "extra-high",
             width = 128,
             height = 128,

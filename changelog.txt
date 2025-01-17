@@ -5,6 +5,7 @@ Date: tba
     - Removed non hot air advanced casting recipes and allowed productivity in them instead.
     - Moved hot air glassware from py science 1 unlock to hot air unlock. Resolves https://github.com/pyanodon/pybugreports/issues/811
     - Bitumen extractors no longer show "disabled by script" and instead shows a custom status explaining that it requires drilling fluid.
+    - Removed all legacy low-res graphic files from pyanodon.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.10
 Date: 2025-1-2
