@@ -3,6 +3,11 @@
 
 local update_rate = 67
 
+local BITUMEN_DISABLED_CUSTOM_STATUS = {
+    diode = defines.entity_status_diode.red,
+    label = {"entity-status.requires-drilling-fluid"}
+}
+
 py.on_event(py.events.on_init(), function()
 	if storage.first_chunk == nil then storage.first_chunk = false end
 	storage.oil_derricks = storage.oil_derricks or {}
@@ -83,7 +88,6 @@ py.on_event(py.events.on_built(), function(event)
 		direction = drill.direction
 	}
 	assembler.set_recipe("drilling-fluids")
-	assembler.active = false
 	assembler.destructible = false
 	storage.oil_derricks[drill.unit_number] = {
 		entity = drill,
@@ -91,7 +95,10 @@ py.on_event(py.events.on_built(), function(event)
 		drilling_fluid = "",
 		patch = patch
 	}
-	drill.active = false
+    for _, entity_to_disable in pairs{assembler, drill} do
+        entity_to_disable.active = false
+        entity_to_disable.custom_status = BITUMEN_DISABLED_CUSTOM_STATUS
+    end
 	-- Register for destruction event to handle removal via editor etc
 	script.register_on_object_destroyed(drill)
 	render_text(storage.oil_derricks[drill.unit_number], update_rate - game.tick % update_rate)
@@ -189,6 +196,11 @@ py.register_on_nth_tick(update_rate, "drills", "pyph", function()
 			end
 		end
 		drill.entity.active = drill_active
+        if drill_active then
+            drill.entity.custom_status = nil
+        else
+            drill.entity.custom_status = BITUMEN_DISABLED_CUSTOM_STATUS
+        end
 
 		render_text(drill, update_rate + 1)
 
