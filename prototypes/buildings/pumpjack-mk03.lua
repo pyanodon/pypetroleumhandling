@@ -40,7 +40,6 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
     selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
-    forced_symmetry = "diagonal-pos",
     module_slots = 3,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"pumpjack"},
