@@ -5,15 +5,15 @@ local nat_gas4 = table.deepcopy(data.raw.resource["crude-oil"])
 
 local minable =
 {
-  mining_time = 1,
-  results =
-  {
+    mining_time = 1,
+    results =
     {
-      type = "fluid",
-      name = "raw-gas",
-      amount = 100,
+        {
+            type = "fluid",
+            name = "raw-gas",
+            amount = 100,
+        }
     }
-  }
 }
 
 nat_gas1.name = "natural-gas-mk01"
@@ -44,4 +44,4 @@ nat_gas4.autoplace = nil
 nat_gas1.map_color = {r = 0.2, g = 0.1, b = 0.2}
 nat_gas4.category = "natural-gas"
 
-data:extend{nat_gas1, nat_gas2, nat_gas3, nat_gas4}
+data:extend {nat_gas1, nat_gas2, nat_gas3, nat_gas4}

@@ -62,14 +62,14 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {type = "item",                                        name = "evaporator",        amount = 1},
+        {type = "item",                                        name = "evaporator",       amount = 1},
         {mods.pyrawores and "distilator-mk02" or "distilator", 1},
         {type = "item",                                        name = "oil-derrick-mk01", amount = 1},
-        {type = "item",                                        name = "engine-unit",       amount = 5},
-        {type = "item",                                        name = "steel-plate",       amount = 50},
-        {type = "item",                                        name = "advanced-circuit",  amount = 12},
-        {type = "item",                                        name = "small-parts-02",    amount = 30},
-        {type = "item",                                        name = "pipe",              amount = 30},
+        {type = "item",                                        name = "engine-unit",      amount = 5},
+        {type = "item",                                        name = "steel-plate",      amount = 50},
+        {type = "item",                                        name = "advanced-circuit", amount = 12},
+        {type = "item",                                        name = "small-parts-02",   amount = 30},
+        {type = "item",                                        name = "pipe",             amount = 30},
     },
     results = {
         {type = "item", name = "oil-derrick-mk02", amount = 1}
@@ -82,7 +82,7 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {type = "item",                                        name = "oil-derrick-mk02",    amount = 1},
+        {type = "item",                                        name = "oil-derrick-mk02",     amount = 1},
         {mods.pyrawores and "distilator-mk03" or "distilator", 1},
         {type = "item",                                        name = "steel-plate",          amount = 100},
         {type = "item",                                        name = "electric-engine-unit", amount = 10},
@@ -101,7 +101,7 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {type = "item", name = "oil-derrick-mk03",     amount = 1},
+        {type = "item", name = "oil-derrick-mk03",      amount = 1},
         {type = "item", name = "distilator",            amount = 1},
         {type = "item", name = "nbfe-alloy",            amount = 50},
         {type = "item", name = "low-density-structure", amount = 30},
@@ -275,7 +275,7 @@ for i = 1, 4 do
     local name = "oil-derrick-mk0" .. i
     local icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-derrick-mk0" .. i .. ".png"
     local icon_size = 64
-    
+
     ITEM {
         type = "item",
         name = name,

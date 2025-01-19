@@ -42,10 +42,10 @@ ITEM {
 
     pictures =
     {
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p4.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p5.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p6.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p8.png", scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p4.png",  scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p5.png",  scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p6.png",  scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p8.png",  scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p11.png", scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p17.png", scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p27.png", scale = 0.66},
@@ -68,8 +68,8 @@ ITEM {
     pictures =
     {
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p10.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p9.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p7.png", scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p9.png",  scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p7.png",  scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p12.png", scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p13.png", scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p24.png", scale = 0.66},
@@ -91,9 +91,9 @@ ITEM {
 
     pictures =
     {
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p1.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p2.png", scale = 0.66},
-        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p3.png", scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p1.png",  scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p2.png",  scale = 0.66},
+        {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p3.png",  scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p14.png", scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p19.png", scale = 0.66},
         {size = 64, filename = "__pypetroleumhandlinggraphics__/graphics/icons/mip/p20.png", scale = 0.66},

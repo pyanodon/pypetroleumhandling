@@ -12,7 +12,7 @@ RECIPE("oil-sand-extractor-mk01"):add_ingredient {type = "item", name = "lead-pl
 RECIPE("oil-sand-extractor-mk02"):add_ingredient {type = "item", name = "duralumin", amount = 40}:add_ingredient {type = "item", name = "titanium-plate", amount = 50}
 RECIPE("oil-sand-extractor-mk03"):add_ingredient {type = "item", name = "stainless-steel", amount = 20}:add_ingredient {type = "item", name = "aluminium-plate", amount = 40}
 RECIPE("oil-sand-extractor-mk04"):add_ingredient {type = "item", name = "super-steel", amount = 20}
-RECIPE("heavy-oil-refinery-mk01"):add_ingredient {type = "item", name = "lead-plate", amount = 10}  --:add_ingredient({type = "item", name = "chromium", amount = 10})
+RECIPE("heavy-oil-refinery-mk01"):add_ingredient {type = "item", name = "lead-plate", amount = 10} --:add_ingredient({type = "item", name = "chromium", amount = 10})
 RECIPE("heavy-oil-refinery-mk02"):add_ingredient {type = "item", name = "duralumin", amount = 40}:add_ingredient {type = "item", name = "titanium-plate", amount = 50}
 RECIPE("heavy-oil-refinery-mk03"):add_ingredient {type = "item", name = "stainless-steel", amount = 25}:add_ingredient {type = "item", name = "aluminium-plate", amount = 40}:add_ingredient {type = "item", name = "py-heat-exchanger", amount = 1}
 RECIPE("heavy-oil-refinery-mk04"):add_ingredient {type = "item", name = "super-steel", amount = 25}

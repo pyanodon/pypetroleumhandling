@@ -70,14 +70,14 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {type = "item", name = "evaporator",            amount = 1},
-        {type = "item", name = "distilator",            amount = 1},
+        {type = "item", name = "evaporator",               amount = 1},
+        {type = "item", name = "distilator",               amount = 1},
         {type = "item", name = "natural-gas-derrick-mk01", amount = 1},
-        {type = "item", name = "steel-plate",           amount = 50},
-        {type = "item", name = "advanced-circuit",      amount = 12},
-        {type = "item", name = "engine-unit",           amount = 5},
-        {type = "item", name = "small-parts-02",        amount = 30},
-        {type = "item", name = "pipe",                  amount = 30},
+        {type = "item", name = "steel-plate",              amount = 50},
+        {type = "item", name = "advanced-circuit",         amount = 12},
+        {type = "item", name = "engine-unit",              amount = 5},
+        {type = "item", name = "small-parts-02",           amount = 30},
+        {type = "item", name = "pipe",                     amount = 30},
     },
     results = {
         {type = "item", name = "natural-gas-derrick-mk02", amount = 1}
@@ -92,12 +92,12 @@ RECIPE {
     ingredients = {
         {type = "item",                                        name = "natural-gas-derrick-mk02", amount = 1},
         {mods.pyrawores and "distilator-mk03" or "distilator", 1},
-        {type = "item",                                        name = "automated-factory-mk01", amount = 1},
-        {type = "item",                                        name = "steel-plate",            amount = 100},
-        {type = "item",                                        name = "processing-unit",        amount = 15},
-        {type = "item",                                        name = "electric-engine-unit",   amount = 5},
-        {type = "item",                                        name = "small-parts-03",         amount = 25},
-        {type = "item",                                        name = "pipe",                   amount = 20},
+        {type = "item",                                        name = "automated-factory-mk01",   amount = 1},
+        {type = "item",                                        name = "steel-plate",              amount = 100},
+        {type = "item",                                        name = "processing-unit",          amount = 15},
+        {type = "item",                                        name = "electric-engine-unit",     amount = 5},
+        {type = "item",                                        name = "small-parts-03",           amount = 25},
+        {type = "item",                                        name = "pipe",                     amount = 20},
     },
     results = {
         {type = "item", name = "natural-gas-derrick-mk03", amount = 1}
@@ -111,10 +111,10 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "natural-gas-derrick-mk03", amount = 1},
-        {type = "item", name = "distilator",            amount = 1},
-        {type = "item", name = "nbfe-alloy",            amount = 50},
-        {type = "item", name = "low-density-structure", amount = 30},
-        {type = "item", name = "pipe",                  amount = 20}
+        {type = "item", name = "distilator",               amount = 1},
+        {type = "item", name = "nbfe-alloy",               amount = 50},
+        {type = "item", name = "low-density-structure",    amount = 30},
+        {type = "item", name = "pipe",                     amount = 20}
     },
     results = {
         {type = "item", name = "natural-gas-derrick-mk04", amount = 1}

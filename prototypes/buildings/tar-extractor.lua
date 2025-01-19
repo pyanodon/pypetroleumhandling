@@ -442,4 +442,4 @@ local oil_explosion = {
     type = "explosion"
 }
 
-data:extend{oil_explosion}
+data:extend {oil_explosion}
