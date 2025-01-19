@@ -82,10 +82,14 @@ local function hotairrecipes(extra_recipes)
 
         -- to prod or not to prod
         allow_productivity = false
-        if string.find(recipe.name, "casting") then
-            data.raw.recipe[recipe.name] = nil -- can be hidden instead if it causes issues
-            allow_productivity = true
-            table.remove(data.raw.technology[unlock].effects, effect_index)
+        for _, ingredient in pairs(recipe.ingredients) do
+            if ingredient.name == "mold" then
+                allow_productivity = true
+                break
+            end
+        end
+        if allow_productivity then
+            data.raw.recipe[recipe.name].hidden = true
         else
             recipe:multiply_result_amount(result, 1.25)
         end
