@@ -40,6 +40,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
     selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+    forced_symmetry = "diagonal-pos",
     module_slots = 1,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"pumpjack"},
@@ -56,24 +57,13 @@ ENTITY {
         animation = {
             layers = {
                 {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/right.png",
-                    width = 96,
-                    height = 214,
-                    priority = "extra-high",
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack.png",
+                    width = 1770 / 10,
+                    height = 1070 / 5,
                     line_length = 10,
                     frame_count = 50,
+                    shift = {-0.2, -0.3},
                     animation_speed = 0.4,
-                    shift = util.by_pixel(48, -20)
-                },
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/left.png",
-                    width = 96,
-                    height = 214,
-                    priority = "very-low",
-                    line_length = 10,
-                    frame_count = 50,
-                    animation_speed = 0.4,
-                    shift = util.by_pixel(-48, -20)
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
@@ -94,15 +84,19 @@ ENTITY {
         --1
         {
             production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
+            pipe_picture = py.sexy_pipe_pictures(),
+            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
+            pipe_covers = pipecoverspictures(),
+            secondary_draw_orders = {north = -1, east = -1, west = -1},
             volume = 100,
             pipe_connections = {{flow_direction = "output", position = {-0.5, 2.5}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
-            pipe_covers = py.pipe_covers(true, true, true, true),
-            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0, -0.88}, nil, nil),
+            pipe_picture = py.sexy_pipe_pictures(),
+            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
+            pipe_covers = pipecoverspictures(),
+            secondary_draw_orders = {north = -1, east = -1, west = -1},
             volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {0.5, -2.5}, direction = defines.direction.north}}
         },

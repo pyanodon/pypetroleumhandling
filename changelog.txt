@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.12
+Date: 2024-1-20
+  Changes:
+    - Allowed pumpjacks to be flippable once again.
+    - Updated pumpjack pipe connections to prevent floating connector graphics in certain rotations.
+---------------------------------------------------------------------------------------------------
 Version: 3.0.11
 Date: 2024-1-20
   Changes:
