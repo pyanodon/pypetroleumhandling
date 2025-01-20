@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.11
-Date: tba
+Date: 2024-1-20
   Changes:
     - Removed non hot air advanced casting recipes and allowed productivity in them instead.
     - Moved hot air glassware from py science 1 unlock to hot air unlock. Resolves https://github.com/pyanodon/pybugreports/issues/811
