@@ -17,6 +17,7 @@ TECHNOLOGY("excavation-2"):add_pack("production-science-pack")
 TECHNOLOGY("excavation-3"):add_pack("military-science-pack"):add_pack("utility-science-pack"):add_pack("space-science-pack")
 
 data.raw.item["oil-refinery"].hidden = true
+data.raw.item["pumpjack"].hidden = true
 TECHNOLOGY("oil-processing"):remove_pack("chemical-science-pack")
 
 data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 15
