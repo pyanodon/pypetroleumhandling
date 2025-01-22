@@ -6,6 +6,7 @@ Date: ?
     - Migrated the internal name of the "railway-mk01" technology to "railway". Resolves https://github.com/pyanodon/pybugreports/issues/453
     - The vanilla oil refinery is now hidden from factoriopedia.
     - The vanilla pumpjack is now hidden from factoriopedia.
+    - Crude oil no longer shows up in the worldgen sliders when making a new save.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.12
 Date: 2025-1-20
