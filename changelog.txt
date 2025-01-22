@@ -1,12 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.13
+Date: ?
+  Changes:
+    - Migrated the internal name of the "vacuum-tube-electronics" technology to "electronics". Resolves https://github.com/pyanodon/pybugreports/issues/453
+---------------------------------------------------------------------------------------------------
 Version: 3.0.12
-Date: 2024-1-20
+Date: 2025-1-20
   Changes:
     - Allowed pumpjacks to be flippable once again.
     - Updated pumpjack pipe connections to prevent floating connector graphics in certain rotations.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.11
-Date: 2024-1-20
+Date: 2025-1-20
   Changes:
     - Removed non hot air advanced casting recipes and allowed productivity in them instead.
     - Moved hot air glassware from py science 1 unlock to hot air unlock. Resolves https://github.com/pyanodon/pybugreports/issues/811
