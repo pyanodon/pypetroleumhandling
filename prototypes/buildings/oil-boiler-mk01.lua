@@ -111,7 +111,7 @@ ENTITY {
             filename = "__base__/sound/boiler.ogg",
             volume = 0.8
         },
-        max_sounds_per_type = 3
+        max_sounds_per_prototype = 3
     },
     pictures = {
         north = {

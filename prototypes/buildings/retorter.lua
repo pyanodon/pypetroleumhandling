@@ -236,8 +236,7 @@ ENTITY {
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 1.4},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 0.05},
-        audible_distance_modifier = 0.22,
+        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 1.4, audible_distance_modifier = 0.22,},
+        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/retorter.ogg", volume = 0.05, audible_distance_modifier = 0.22,},
     }
 }
