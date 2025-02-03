@@ -8,6 +8,7 @@ Date: ?
     - The vanilla pumpjack is now hidden from factoriopedia.
     - Crude oil no longer shows up in the worldgen sliders when making a new save.
     - Deleted the graphics for vanilla pumpjack and vanilla oil refinery in order to save VRAM.
+    - Updated Ukrainian translation.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.12
 Date: 2025-1-20
