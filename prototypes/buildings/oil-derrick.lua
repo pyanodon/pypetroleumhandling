@@ -298,7 +298,7 @@ for i = 1, 4 do
         placeable_by = {item = name, count = 1},
         fast_replaceable_group = "oil-derrick",
         max_health = 700 * i,
-        resource_categories = {"bitumen-seep", "oil-mk0" .. i},
+        resource_categories = {"bitumen-seep", "oil-derrick"},
         corpse = "big-remnants",
         dying_explosion = "big-explosion",
         collision_box = collision_boxes_per_tier[i],

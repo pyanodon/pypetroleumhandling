@@ -4,6 +4,7 @@ Date: ?
   Changes:
     - Migrated the internal name of the "vacuum-tube-electronics" technology to "electronics". Resolves https://github.com/pyanodon/pybugreports/issues/453
     - Migrated the internal name of the "railway-mk01" technology to "railway". Resolves https://github.com/pyanodon/pybugreports/issues/453
+    - Fixed mega oil derricks (derrick MK 04) may not be installed in existing bitumen seeps which were popped by mk 1-3. Resolves https://github.com/pyanodon/pybugreports/issues/869
     - The vanilla oil refinery is now hidden from factoriopedia.
     - The vanilla pumpjack is now hidden from factoriopedia.
     - Crude oil no longer shows up in the worldgen sliders when making a new save.

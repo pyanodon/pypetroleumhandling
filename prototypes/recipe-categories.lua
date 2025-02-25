@@ -5,11 +5,7 @@ data:extend {
     },
     {
         type = "resource-category",
-        name = "oil-mk01"
-    },
-    {
-        type = "resource-category",
-        name = "oil-mk02"
+        name = "oil-derrick"
     },
     {
         type = "resource-category",
@@ -18,14 +14,6 @@ data:extend {
     {
         type = "resource-category",
         name = "sulfur-patch"
-    },
-    {
-        type = "resource-category",
-        name = "oil-mk03"
-    },
-    {
-        type = "resource-category",
-        name = "oil-mk04"
     },
     {
         type = "resource-category",

@@ -1,21 +1,10 @@
--- local resource_autoplace = require 'resource-autoplace';
---[[
-data:extend{{
-    type = "autoplace-control",
-    category = "resource",
-    name = "oil-mk01",
-    richness = true,
-    order = "c"
-}}
-]] --
-
 ENTITY {
     type = "resource",
     name = "oil-mk01",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral"},
-    category = "oil-mk01",
+    category = "oil-derrick",
     order = "a-b-a",
     infinite = false,
     highlight = true,
