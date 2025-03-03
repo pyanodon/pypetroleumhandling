@@ -879,20 +879,19 @@ RECIPE {
     subgroup = "py-rawores-coke",
 }
 
-
 RECIPE {
     type = "recipe",
     name = "casting-bolts",
     category = "casting",
     enabled = false,
-    energy_required = 1,
+    energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "molten-iron",  amount = 25},
+        {type = "fluid", name = "molten-iron",  amount = 100},
         {type = "item",  name = "borax",        amount = 3},
         {type = "item",  name = "sand-casting", amount = 1},
     },
     results = {
-        {type = "item", name = "bolts", amount = 25}
+        {type = "item", name = "bolts", amount = 150}
     },
     main_product = "bolts",
     subgroup = "py-rawores-iron",

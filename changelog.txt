@@ -2,7 +2,8 @@
 Version: 3.0.14
 Date: ???
   Changes:
-    - Fixed some recipes not having defined catalysts
+    - Fixed some recipes not having defined catalysts.
+    - Greatly buffed the bolts casting recipe. Resolves https://github.com/pyanodon/pybugreports/issues/860
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.13
 Date: 2025-2-26
