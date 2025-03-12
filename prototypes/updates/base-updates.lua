@@ -60,7 +60,9 @@ end
 
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["crude-oil"] = nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["crude-oil"] = nil
-data.raw["autoplace-control"]["crude-oil"] = nil
+if not mods["PyBlock"] then
+    data.raw["autoplace-control"]["crude-oil"] = nil
+end
 
 for _, preset in pairs(data.raw["map-gen-presets"]["default"]) do
     if preset and preset.basic_settings and preset.basic_settings.autoplace_controls and preset.basic_settings.autoplace_controls["crude-oil"] then
