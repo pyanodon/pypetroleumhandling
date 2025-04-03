@@ -5,7 +5,12 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {},
-    effects = {},
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "lor-mk01"
+        }
+    },
     unit = {
         count = 200,
         ingredients = {
