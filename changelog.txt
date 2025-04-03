@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
 Date: ?
-  Changes:
-    - Added description text for items & fluids
+    - Added description text for various items & fluids
+    - Moved the unlock for light oil refinery MK01 from py1 to logi science. Resolves https://github.com/pyanodon/pybugreports/issues/934
+    - Fixed including tanks in a blueprint would cause the entire blueprint to be unrotatable. Resolves https://github.com/pyanodon/pybugreports/issues/920
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.14
 Date: 2025-3-3
