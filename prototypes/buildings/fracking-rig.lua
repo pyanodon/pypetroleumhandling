@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item",                                        name = "stone-brick",     amount = 200},
-        {type = "item",                                        name = "pipe",            amount = 500},
-        {type = "item",                                        name = "concrete",        amount = 100},
-        {type = "item",                                        name = "processing-unit", amount = 50},
-        {type = "item",                                        name = "small-parts-03",  amount = 200},
-        {mods.pyrawores and "distilator-mk03" or "distilator", 4},
-        {type = "item",                                        name = "reformer-mk03",   amount = 4},
+        {type = "item", name = "stone-brick",                                        amount = 200},
+        {type = "item", name = "pipe",                                               amount = 500},
+        {type = "item", name = "concrete",                                           amount = 100},
+        {type = "item", name = "processing-unit",                                    amount = 50},
+        {type = "item", name = "small-parts-03",                                     amount = 200},
+        {type = "item", name = mods.pyrawores and "distilator-mk03" or "distilator", amount = 4},
+        {type = "item", name = "reformer-mk03",                                      amount = 4},
     },
     results = {
         {type = "item", name = "fracking-rig", amount = 1}

@@ -90,14 +90,14 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {type = "item",                                        name = "natural-gas-derrick-mk02", amount = 1},
-        {mods.pyrawores and "distilator-mk03" or "distilator", 1},
-        {type = "item",                                        name = "automated-factory-mk01",   amount = 1},
-        {type = "item",                                        name = "steel-plate",              amount = 100},
-        {type = "item",                                        name = "processing-unit",          amount = 15},
-        {type = "item",                                        name = "electric-engine-unit",     amount = 5},
-        {type = "item",                                        name = "small-parts-03",           amount = 25},
-        {type = "item",                                        name = "pipe",                     amount = 20},
+        {type = "item", name = "natural-gas-derrick-mk02",                           amount = 1},
+        {type = "item", name = mods.pyrawores and "distilator-mk03" or "distilator", amount = 1},
+        {type = "item", name = "automated-factory-mk01",                             amount = 1},
+        {type = "item", name = "steel-plate",                                        amount = 100},
+        {type = "item", name = "processing-unit",                                    amount = 15},
+        {type = "item", name = "electric-engine-unit",                               amount = 5},
+        {type = "item", name = "small-parts-03",                                     amount = 25},
+        {type = "item", name = "pipe",                                               amount = 20},
     },
     results = {
         {type = "item", name = "natural-gas-derrick-mk03", amount = 1}
