@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
-Date: ?
+Date: 2025-4-13
   Changes:
     - Changed the color of naphthalene oil. Resolves https://github.com/pyanodon/pybugreports/issues/899
     - Added description text for various items & fluids
