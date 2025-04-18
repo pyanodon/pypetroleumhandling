@@ -71,6 +71,7 @@ local engine_unit_2 = RECIPE {
     results = {
         {type = "item", name = "engine-unit", amount = 3},
     },
+    allow_productivity = true,
     main_product = "engine-unit",
     subgroup = "py-petroleum-handling-recipes",
     order = "r"
