@@ -251,5 +251,5 @@ RECIPE {
 }:add_unlock("heavy-oil-mk02"):replace_ingredient("chromium", "sncr-alloy")
 
 if RECIPE["grease-table-mk04"] then
-    RECIPE("grease-table-mk04"):add_unlock("oil-machines-mk04"):add_ingredient {"bose-einstein-superfluid", 50}:add_ingredient {type = "item", name = "harmonic-absorber", amount = 10}:add_ingredient {type = "item", name = "pi-josephson-junction", amount = 10}:add_ingredient {"intelligent-unit", 25}
+    RECIPE("grease-table-mk04"):add_unlock("oil-machines-mk04"):add_ingredient {type = "item", name = "bose-einstein-superfluid", amount = 50}:add_ingredient {type = "item", name = "harmonic-absorber", amount = 10}:add_ingredient {type = "item", name = "pi-josephson-junction", amount = 10}:add_ingredient {type = "item", name = "intelligent-unit", amount = 25}
 end

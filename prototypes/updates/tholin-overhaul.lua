@@ -47,7 +47,7 @@ local lds = RECIPE {
     results = {
         {type = "item", name = "low-density-structure", amount = 5}
     },
-}:add_ingredient("fiberglass", 5):replace_ingredient("copper-plate", "aerogel")
+}:add_ingredient {type = "item", name = "fiberglass", amount = 5}:replace_ingredient("copper-plate", "aerogel")
 if mods.pyrawores then lds:replace_ingredient("iron-plate", "aluminium-plate") end
 
 local rocket_fuel = RECIPE {
