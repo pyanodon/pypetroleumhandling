@@ -107,6 +107,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/rhe.ogg", volume = 0.9},
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/rhe.ogg", volume = 0.3},
-        apparent_volume = 2.5
+        apparent_volume = 1.2
     }
 }
