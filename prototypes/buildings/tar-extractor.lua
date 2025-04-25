@@ -399,10 +399,6 @@ local oil_explosion = {
         },
         type = "direct"
     },
-    flags = {
-        "not-on-map",
-    },
-    hidden = true,
     icon = "__base__/graphics/item-group/effects.png",
     icon_size = 64,
     name = "oil-explosion",
