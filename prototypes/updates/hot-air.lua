@@ -1,7 +1,7 @@
 local hotair = {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/hot-air.png",
     icon_size = 64,
-    shift = {-7.5, -7.5},
+    shift = {7.5, -7.5},
     scale = 0.25
 }
 
