@@ -31,4 +31,4 @@ RECIPE {
     order = "a",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/compress-hydrogen.png",
     icon_size = 32,
-}:add_unlock("light-oil-mk02").category = "compressor"
+}:add_unlock("light-oil-mk02"):change_category("compressor")
