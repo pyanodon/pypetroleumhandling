@@ -92,4 +92,4 @@ RECIPE {
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
     order = "a"
-}:add_unlock("guar").category = "pulp"
+}:add_unlock("guar"):change_category("pulp")
