@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.16
-Date: tba
+Date: 2025-6-1
   Changes:
     - Allowed productivity in advanced engine unit recipe.
     - Halfed the volume of regenerative heat exchangers. Resolves https://github.com/pyanodon/pybugreports/issues/951
