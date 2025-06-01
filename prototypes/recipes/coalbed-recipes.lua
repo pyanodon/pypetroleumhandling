@@ -146,7 +146,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "coalbed-gas",      amount = 200},
-        {type = "fluid", name = "hot-air",          amount = 500},
+        {type = "fluid", name = "hot-air",          amount = 300},
         {type = "item",  name = "filtration-media", amount = 1},
     },
     results = {

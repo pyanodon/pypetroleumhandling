@@ -5,6 +5,7 @@ Date: tba
     - Allowed productivity in advanced engine unit recipe.
     - Halfed the volume of regenerative heat exchangers. Resolves https://github.com/pyanodon/pybugreports/issues/951
     - Reduced the hot air requirement in coalbed -> acidgas from 500 -> 250.
+    - Reduced hotair requirement in coalbed -> refined syngas recipe from 500 -> 300.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
 Date: 2025-4-13
