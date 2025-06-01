@@ -125,7 +125,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "coalbed-gas", amount = 200},
-        {type = "fluid", name = "hot-air",     amount = 500},
+        {type = "fluid", name = "hot-air",     amount = 250},
     },
     results = {
         {type = "fluid", name = "acidgas",  amount = 150},
