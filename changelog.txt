@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.17
+Date: ???
+  Changes:
+    - Fixed unknown key issues in bitumen seep extraction. Resolves https://github.com/pyanodon/pybugreports/issues/989
+---------------------------------------------------------------------------------------------------
 Version: 3.0.16
 Date: 2025-6-1
   Changes:
