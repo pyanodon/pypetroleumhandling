@@ -37,10 +37,7 @@ require "prototypes.technologies.oil-distillation"
 require "prototypes/technologies/vanadium-processing"
 
 --(( BUILDINGS ))--
-require "prototypes.buildings.oil-sand-extractor-mk01"
-require "prototypes.buildings.oil-sand-extractor-mk02"
-require "prototypes.buildings.oil-sand-extractor-mk03"
-require "prototypes.buildings.oil-sand-extractor-mk04"
+require "prototypes.buildings.oil-sand-extractor"
 require "prototypes.buildings.heavy-oil-refinery-mk01"
 require "prototypes.buildings.heavy-oil-refinery-mk02"
 require "prototypes.buildings.heavy-oil-refinery-mk03"
@@ -203,22 +200,22 @@ else
     data.raw.fluid["hydrogen"].fuel_value = "20kJ"
 end
 
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "syngas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "refsyngas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "methanol", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "combustion-mixture1", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "oleochemicals", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "olefin", damage_modifier = 2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "btx", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "scrude", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "natural-gas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "fuel-oil", damage_modifier = 1.2})
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "syngas", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "refsyngas", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "methanol", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "combustion-mixture1", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "oleochemicals", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "olefin", damage_modifier = 2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "btx", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "scrude", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "natural-gas", damage_modifier = 1.2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "fuel-oil", damage_modifier = 1.2 })
 
 if mods["pyhightech"] then
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "methane", damage_modifier = 1.2})
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "benzene", damage_modifier = 1.2})
+    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "methane", damage_modifier = 1.2 })
+    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "benzene", damage_modifier = 1.2 })
 end
 
 if mods["pyalienlife"] then
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "ethanol", damage_modifier = 1.2})
+    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "ethanol", damage_modifier = 1.2 })
 end
