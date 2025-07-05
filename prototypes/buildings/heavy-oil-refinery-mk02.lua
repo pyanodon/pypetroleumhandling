@@ -45,7 +45,7 @@ ENTITY {
     forced_symmetry = "diagonal-pos",
     module_slots = 2,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"hor"},
+    crafting_categories = {"hor", "oil-processing"},
     crafting_speed = 2,
     energy_source = {
         type = "electric",
