@@ -1,0 +1,21 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+
+[*.json]
+indent_size = 4
+insert_final_newline = false
+
+[*.lua]
+indent_size = 4
+insert_final_newline = true
+
+continuation_indent = 4
+max_line_length = unset
+
+space_around_table_field_list = false
