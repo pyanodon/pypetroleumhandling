@@ -1,4 +1,5 @@
 *.db
 Thumbs.*
 .build/
-.vscode/
+.vscode/*
+!.vscode/extensions.json
