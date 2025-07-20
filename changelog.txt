@@ -1,3 +1,7 @@
+Version: 3.0.20
+Date: ????-??-??
+  Changes:
+    - Anthracene + Hydrogen -> Gasoline recipe can now be used in automation science. Resolves https://github.com/pyanodon/pybugreports/issues/1066
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19
 Date: 2025-07-20
