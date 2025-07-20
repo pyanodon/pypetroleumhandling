@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {type = "item", name = "upgrader-mk01", amount = 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("syngas")
 
 ITEM {
     type = "item",
