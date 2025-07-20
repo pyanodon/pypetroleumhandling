@@ -1,8 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.19
+Date: 2025-07-20
+  Changes:
+    - Aromatic plastic recipe now fixed with medium py
+---------------------------------------------------------------------------------------------------
 Version: 3.0.18
 Date: 2025-06-29
   Changes:
-    - Aromatic plastic recipe now fixed with medium py
     - Fixed unknown key issues in bitumen seep extraction. Resolves https://github.com/pyanodon/pybugreports/issues/989
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.17
