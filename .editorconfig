@@ -18,4 +18,16 @@ insert_final_newline = true
 continuation_indent = 4
 max_line_length = unset
 
+# additional settings https://github.com/CppCXY/EmmyLuaCodeStyle/blob/master/lua.template.editorconfig
+
+# none/single/double
+quote_style = double
+
+# keep/remove/remove_table_only/remove_string_only
+call_arg_parentheses = remove_table_only
+
 space_around_table_field_list = false
+
+space_around_table_append_operator = false
+
+space_inside_square_brackets = false
