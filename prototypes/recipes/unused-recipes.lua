@@ -69,7 +69,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "light-oil",         amount = 100},
-        {type = "fluid", name = "dirty-water-heavy", amount = 100},
+        {type = "fluid", name = "tailings", amount = 100},
     },
     main_product = "light-oil",
     icon = "__base__/graphics/icons/fluid/light-oil.png",
@@ -900,7 +900,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "liquid-petgas",     amount = 100},
         {type = "fluid", name = "btx",               amount = 30},
-        {type = "fluid", name = "dirty-water-heavy", amount = 50},
+        {type = "fluid", name = "tailings", amount = 50},
     },
     main_product = "liquid-petgas",
     subgroup = "py-petroleum-handling-fluids",
