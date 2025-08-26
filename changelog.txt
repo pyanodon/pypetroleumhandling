@@ -1,13 +1,15 @@
-Version: ???
+---------------------------------------------------------------------------------------------------
+Version: 3.2.0?
 Date: ???
   Changes:
     - Efficiency modules disabled for sulfur mines
     - Ground borer now needs aromatics to mine zinc
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.20
-Date: ????-??-??
+Date: 2025-08-12
   Changes:
     - Anthracene + Hydrogen -> Gasoline recipe can now be used in automation science. Resolves https://github.com/pyanodon/pybugreports/issues/1066
+    - Fixed Bulk Inserter 1 and 2 technologies not having the correct prerequesites and dependants. Resolves https://github.com/pyanodon/pybugreports/issues/1086 and https://github.com/pyanodon/pybugreports/issues/1099
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19
 Date: 2025-07-20
