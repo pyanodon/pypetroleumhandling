@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.2.0?
+Date: ???
+  Changes:
+    - Efficiency modules disabled for sulfur mines
+    - Ground borer now needs aromatics to mine zinc
+---------------------------------------------------------------------------------------------------
 Version: 3.0.20
 Date: 2025-08-12
   Changes:
