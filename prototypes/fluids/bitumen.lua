@@ -10,7 +10,7 @@ RECIPE {
         {type = "fluid", name = "bitumen-froth", amount = 100},
     },
     results = {
-        {type = "fluid", name = "bitumen",           amount = 250},
+        {type = "fluid", name = "bitumen",  amount = 250},
         {type = "fluid", name = "tailings", amount = 50},
     },
     main_product = "bitumen",

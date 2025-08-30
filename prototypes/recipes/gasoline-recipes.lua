@@ -3,7 +3,7 @@ RECIPE {
     name = "anthracene-gasoline-hydrogenation",
     category = "upgrader",
     enabled = false,
-	hidden = true,
+    hidden = true,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "anthracene-oil", amount = 50},

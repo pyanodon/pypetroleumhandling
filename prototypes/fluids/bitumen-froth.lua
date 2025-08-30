@@ -10,8 +10,8 @@ RECIPE {
         {type = "item",  name = "crushed-oil-sand", amount = 2}
     },
     results = {
-        {type = "fluid", name = "bitumen-froth",     amount = 100},
-        {type = "fluid", name = "tailings", amount = 100},
+        {type = "fluid", name = "bitumen-froth", amount = 100},
+        {type = "fluid", name = "tailings",      amount = 100},
     },
     main_product = "bitumen-froth",
     subgroup = "py-petroleum-handling-scrude-recipes",
