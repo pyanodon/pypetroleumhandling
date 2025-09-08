@@ -95,8 +95,4 @@ data:extend {
         type = "recipe-category",
         name = "pulp"
     },
-    {
-        type = "recipe-category",
-        name = "fbreactor"
-    },
 }

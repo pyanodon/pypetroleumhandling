@@ -347,7 +347,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "plastic-bar-02",
-    category = "cracker",
+    category = mods.pyhightech and "fbreactor" or "cracker",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -358,7 +358,7 @@ RECIPE {
         {type = "item", name = "plastic-bar", amount = 5},
     },
     main_product = "plastic-bar",
-}:replace_ingredient("naphtha", "propene").category = "fbreactor"
+}:replace_ingredient("naphtha", "propene")
 
 if mods["pyhightech"] then
     RECIPE("plastic-bar-02"):add_unlock("plastics-mk03")
