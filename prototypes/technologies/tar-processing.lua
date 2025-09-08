@@ -21,8 +21,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"tar-processing-mk01"},
+    prerequisites = {"tar-processing-mk01"},
     effects = {},
     unit = {
         count = 200,
@@ -40,8 +39,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk03.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"tar-processing-mk02"},
+    prerequisites = {"tar-processing-mk02"},
     effects = {},
     unit = {
         count = 200,
