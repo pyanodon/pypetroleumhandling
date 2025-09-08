@@ -538,7 +538,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -559,7 +559,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -580,7 +580,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -601,7 +601,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -622,7 +622,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -643,7 +643,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -664,7 +664,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {

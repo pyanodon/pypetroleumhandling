@@ -106,18 +106,16 @@ RECIPE {
 }:add_ingredient {type = "item", name = "titanium-plate", amount = 500}
 
 
-data.raw.technology["rocket-silo"].prerequisites =
-{
+data.raw.technology["rocket-silo"].prerequisites = {
     "rocket-fuel",
     "low-density-structure"
 }
 
-data.raw.technology["rocket-silo"].unit.ingredients =
-{
-    {type = "item", name = "automation-science-pack", amount = 1},
-    {type = "item", name = "logistic-science-pack",   amount = 1},
-    {type = "item", name = "chemical-science-pack",   amount = 1},
-    {type = "item", name = "military-science-pack",   amount = 1}
+data.raw.technology["rocket-silo"].unit.ingredients = {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack",   1},
+    {"chemical-science-pack",   1},
+    {"military-science-pack",   1}
 }
 
 
