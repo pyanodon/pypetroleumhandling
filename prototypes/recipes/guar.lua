@@ -92,5 +92,4 @@ RECIPE {
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
     order = "a",
-    category = mods.pyalienlife and "pulp" or "chemistry"
-}:add_unlock("guar")
+}:add_unlock("guar"):change_category("pulp")

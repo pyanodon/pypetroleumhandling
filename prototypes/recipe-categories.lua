@@ -91,8 +91,4 @@ data:extend {
         type = "recipe-category",
         name = "drilling-fluid"
     },
-    {
-        type = "recipe-category",
-        name = "pulp"
-    },
 }
