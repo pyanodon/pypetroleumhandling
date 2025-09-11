@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.21
+Date: ???
+  Changes:
+    - Anthracene + Hydrogen -> Gasoline recipe can no longer be used in automation science.
+    - Ironic upgrader MK01 unlock moved to oil machines MK01 (previously was in syngas technology).
+---------------------------------------------------------------------------------------------------
 Version: 3.0.20
 Date: 2025-08-12
   Changes:
