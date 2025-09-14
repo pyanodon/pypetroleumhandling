@@ -530,7 +530,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "iron-ore", amount = 10},
+        {type = "item", name = "iron-ore", amount = 10, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",      amount = 1, probability = 0.3}
     },
     main_product = "iron-ore",
@@ -538,7 +538,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -551,7 +550,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "copper-ore", amount = 8},
+        {type = "item", name = "copper-ore", amount = 8, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",        amount = 1, probability = 0.3}
     },
     main_product = "copper-ore",
@@ -559,7 +558,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -572,7 +570,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "ore-aluminium", amount = 10},
+        {type = "item", name = "ore-aluminium", amount = 10, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",           amount = 1, probability = 0.3}
     },
     main_product = "ore-aluminium",
@@ -580,7 +578,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -593,7 +590,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "ore-zinc", amount = 8},
+        {type = "item", name = "ore-zinc", amount = 8, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",      amount = 1, probability = 0.3}
     },
     main_product = "ore-zinc",
@@ -601,7 +598,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -614,7 +610,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "ore-lead", amount = 8},
+        {type = "item", name = "ore-lead", amount = 8, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",      amount = 1, probability = 0.3}
     },
     main_product = "ore-lead",
@@ -622,7 +618,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -635,7 +630,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "silver-plate", amount = 1, probability = 0.3},
+        {type = "item", name = "silver-plate", amount = 1, probability = 0.3, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",          amount = 1, probability = 0.3}
     },
     main_product = "silver-plate",
@@ -643,7 +638,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
@@ -656,7 +650,7 @@ RECIPE {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "gold-plate", amount = 1, probability = 0.5},
+        {type = "item", name = "gold-plate", amount = 1, probability = 0.5, autotech_is_not_primary_source = true},
         {type = "item", name = "ash",        amount = 1, probability = 0.3}
     },
     main_product = "gold-plate",
@@ -664,7 +658,6 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items-class",
     order = "b",
-    autotech_ignore = true
 }:add_unlock("oil-sands")
 
 RECIPE {
