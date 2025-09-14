@@ -89,7 +89,10 @@ local function hotairrecipes(extra_recipes)
             end
         end
         if allow_productivity then
-            data.raw.recipe[recipe.name].hidden = true
+            if unlock then
+                data.raw.recipe[recipe.name]:remove_unlock(unlock)
+            end
+            data.raw.recipe[recipe.name] = nil
         else
             recipe:multiply_result_amount(result, 1.25)
         end

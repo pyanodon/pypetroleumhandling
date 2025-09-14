@@ -3,6 +3,7 @@ Version: 3.0.21
 Date: ?????
   Changes:
     - Added Dutch locale
+    - Removed various unused casting recipe prototypes from the game. Resolves https://github.com/pyanodon/pybugreports/issues/1128
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.20
 Date: 2025-08-12
