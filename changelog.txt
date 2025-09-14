@@ -16,6 +16,7 @@ Date: ???
     - phyrric: 3000 -> 10000
     - Anthracene + Hydrogen -> Gasoline recipe can no longer be used in automation science.
     - Ironic upgrader MK01 unlock moved to oil machines MK01 (previously was in syngas technology).
+    - Added Dutch locale
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.20
 Date: 2025-08-12
