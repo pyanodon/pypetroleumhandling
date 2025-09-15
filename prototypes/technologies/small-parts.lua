@@ -23,8 +23,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/special-small-parts.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"small-parts-mk02"},
+    prerequisites = {"small-parts-mk02"},
     effects = {},
     unit = {
         count = 200,

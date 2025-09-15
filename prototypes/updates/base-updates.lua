@@ -15,6 +15,7 @@ end
 
 TECHNOLOGY("excavation-2"):add_pack("production-science-pack")
 TECHNOLOGY("excavation-3"):add_pack("military-science-pack"):add_pack("utility-science-pack"):add_pack("space-science-pack")
+TECHNOLOGY("plastics"):remove_prereq("oil-processing")
 
 data.raw.item["oil-refinery"].hidden = true
 data.raw.item["pumpjack"].hidden = true

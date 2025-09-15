@@ -58,7 +58,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"rubber"},
-    dependencies = {"rubber"},
     effects = {},
     unit = {
         count = 200,
@@ -76,8 +75,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/rubber.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"rubber-2"},
+    prerequisites = {"rubber-2"},
     effects = {},
     unit = {
         count = 200,
@@ -92,7 +90,7 @@ TECHNOLOGY {
 
 local tech = table.deepcopy(data.raw.technology["fast-inserter"])
 tech.name = "fast-inserter-2"
-tech.dependencies = {"fast-inserter"}
+tech.prerequisites = {"fast-inserter"}
 tech.effects = {}
 TECHNOLOGY(tech):add_pack("logistic-science-pack")
 
@@ -101,6 +99,6 @@ TECHNOLOGY("bulk-inserter").prerequisites = {}
 
 tech = table.deepcopy(data.raw.technology["bulk-inserter"])
 tech.name = "bulk-inserter-2"
-tech.dependencies = {"bulk-inserter"}
+tech.prerequisites = {"bulk-inserter"}
 tech.effects = {}
 TECHNOLOGY(tech):add_pack("chemical-science-pack")

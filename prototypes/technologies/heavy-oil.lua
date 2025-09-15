@@ -4,6 +4,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/heavy-oil-mk01.png",
     icon_size = 128,
     order = "c-a",
+    prerequisites = {},
     effects = {},
     unit = {
         count = 100,
@@ -21,7 +22,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/heavy-oil-mk02.png",
     icon_size = 128,
     order = "c-a",
-    dependencies = {"heavy-oil-mk01"},
+    prerequisites = {"heavy-oil-mk01"},
     effects = {},
     unit = {
         count = 150,
@@ -40,7 +41,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/heavy-oil-mk03.png",
     icon_size = 128,
     order = "c-a",
-    dependencies = {"heavy-oil-mk02"},
+    prerequisites = {"heavy-oil-mk02"},
     effects = {},
     unit = {
         count = 150,
