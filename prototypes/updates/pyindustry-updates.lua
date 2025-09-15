@@ -45,5 +45,5 @@ RECIPE {
     icon_size = 64,
     subgroup = "py-items-class",
     order = "b",
-    ignore_in_pypp = true
+    autotech_ignore = true
 }:add_unlock("separation")

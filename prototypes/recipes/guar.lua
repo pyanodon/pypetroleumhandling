@@ -91,5 +91,5 @@ RECIPE {
     },
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
-    order = "a"
+    order = "a",
 }:add_unlock("guar"):change_category("pulp")

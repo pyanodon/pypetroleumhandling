@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "ethylene-chlorohydrin",
-    category = "mixer", --pyph fbreactor
+    category = mods.pyhightech and "fbreactor" or "mixer",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -15,7 +15,7 @@ RECIPE {
     main_product = "ethylene-chlorohydrin",
     subgroup = "py-petroleum-handling-fluids",
     order = "a"
-}:add_unlock("petroleum-gas-mk02"):change_category("fbreactor")
+}:add_unlock("petroleum-gas-mk02")
 
 FLUID {
     type = "fluid",

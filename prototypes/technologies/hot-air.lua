@@ -21,8 +21,7 @@ if mods["pyrawores"] then
         icon = "__pypetroleumhandlinggraphics__/graphics/technology/hot-air-mk02.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"hot-air-mk01",},
-        dependencies = {"hot-air-mk01"},
+        prerequisites = {"hot-air-mk01"},
         effects = {},
         unit = {
             count = 150,
@@ -40,7 +39,7 @@ if mods["pyrawores"] then
         icon = "__pypetroleumhandlinggraphics__/graphics/technology/hot-air-mk03.png",
         icon_size = 128,
         order = "c-a",
-        dependencies = {"hot-air-mk02"},
+        prerequisites = {"hot-air-mk02"},
         effects = {},
         unit = {
             count = 150,

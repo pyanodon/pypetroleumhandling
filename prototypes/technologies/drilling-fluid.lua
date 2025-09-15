@@ -22,8 +22,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"drilling-fluid-mk01"},
+    prerequisites = {"drilling-fluid-mk01"},
     effects = {},
     unit = {
         count = 100,
@@ -42,8 +41,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk03.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"drilling-fluid-mk02"},
+    prerequisites = {"drilling-fluid-mk02"},
     effects = {},
     unit = {
         count = 100,
@@ -63,8 +61,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/drilling-fluid-mk04.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"drilling-fluid-mk03"},
+    prerequisites = {"drilling-fluid-mk03"},
     effects = {},
     unit = {
         count = 100,

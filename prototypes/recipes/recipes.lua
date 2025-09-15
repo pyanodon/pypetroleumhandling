@@ -209,7 +209,6 @@ RECIPE {
         {type = "item", name = "soil", amount = 1},
     },
     subgroup = "py-petroleum-handling-recipes",
-    ignore_for_dependencies = true,
     order = "a"
 }
 

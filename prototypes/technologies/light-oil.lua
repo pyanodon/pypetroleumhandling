@@ -27,8 +27,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"light-oil-mk01"},
+    prerequisites = {"light-oil-mk01"},
     effects = {},
     unit = {
         count = 200,
@@ -46,8 +45,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/light-oil-processing-mk03.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"light-oil-mk02"},
+    prerequisites = {"light-oil-mk02"},
     effects = {},
     unit = {
         count = 200,

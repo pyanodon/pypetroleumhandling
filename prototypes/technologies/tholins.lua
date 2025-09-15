@@ -25,7 +25,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"tholin-mk01"},
-    dependencies = {"tholin-mk01"},
     effects = {},
     unit = {
         count = 200,
@@ -47,7 +46,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"tholin-mk02"},
-    dependencies = {"tholin-mk02"},
     effects = {},
     unit = {
         count = 200,
@@ -70,7 +68,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"tholin-mk03"},
-    dependencies = {"tholin-mk03"},
     effects = {},
     unit = {
         count = 200,
