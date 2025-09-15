@@ -89,7 +89,10 @@ local function hotairrecipes(extra_recipes)
             end
         end
         if allow_productivity then
-            data.raw.recipe[recipe.name].hidden = true
+            if unlock then
+                data.raw.recipe[recipe.name]:remove_unlock(unlock)
+            end
+            data.raw.recipe[recipe.name] = nil
         else
             recipe:multiply_result_amount(result, 1.25)
         end
@@ -152,6 +155,6 @@ local extra_hot_air_recipes = {
 --add hot air
 hotairrecipes(extra_hot_air_recipes)
 
-RECIPE("hotair-flask"):remove_unlock("py-science-pack-mk01"):add_unlock("hot-air-mk01").enabled = false
+RECIPE("hotair-flask"):remove_unlock("py-science-pack-1"):add_unlock("hot-air-mk01").enabled = false
 if RECIPE["hotair-molten-glass"] then RECIPE("hotair-molten-glass"):remove_unlock("glass"):add_unlock("hot-air-mk01") end
 if RECIPE["hotair-empty-petri-dish"] then RECIPE("hotair-empty-petri-dish"):remove_unlock("petri-dish"):add_unlock("hot-air-mk01") end

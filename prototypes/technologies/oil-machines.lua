@@ -22,7 +22,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk01"},
-    dependencies = {"oil-machines-mk01"},
     effects = {},
     unit = {
         count = 200,
@@ -41,8 +40,7 @@ TECHNOLOGY {
     icon = "__pypetroleumhandlinggraphics__/graphics/technology/oil-machines-03.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"oil-machines-mk02", "coalbed-mk02"},
-    dependencies = {"oil-machines-mk02"},
+    prerequisites = {"oil-machines-mk02"},
     effects = {},
     unit = {
         count = 200,
@@ -63,7 +61,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"oil-machines-mk03"},
-    dependencies = {"oil-machines-mk03"},
     effects = {},
     unit = {
         count = 200,
