@@ -9,10 +9,7 @@
     "description": "Adds realistic petrochemical processing into Factorio. Process bitumen hydrocarbons into hundreds of products and drill deep for underground oil deposits.",
     "dependencies": [
         "base >= 2.0.48",
-        "pyfusionenergy >= 3.0.0",
-        "pyindustry >= 3.0.0",
-        "? pyrawores >= 3.0.0",
-        "? pyhightech >= 3.0.0",
+        "pyhightech >= 4.0.0",
         "(?) rso-mod",
         "~ pypetroleumhandlinggraphics >= 3.0.4",
         "! wret-beacon-rebalance-mod",

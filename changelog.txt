@@ -2,6 +2,7 @@
 Version: 4.0.0
 Date: ???
   Changes:
+    - Linearilized Dependencies.
     - Efficiency modules disabled for sulfur mines
     - Ground borer now needs aromatics to mine zinc
 ---------------------------------------------------------------------------------------------------
