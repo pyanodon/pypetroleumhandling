@@ -2,6 +2,7 @@
 Version: 4.0.0
 Date: ???
   Changes:
+    - Linearilized Dependencies.
     - Efficiency modules disabled for sulfur mines
     - Ground borer now needs aromatics to mine zinc
     - The 180k and 250k fluid tanks are no longer located within pypetrolemhandling. All tanks are now stored inside pyindustry.
