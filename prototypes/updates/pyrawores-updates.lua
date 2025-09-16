@@ -112,7 +112,7 @@ RECIPE("oil-sand-slurry").category = "hydroclassifier"
 RECIPE("bitumen").category = "flotation"
 RECIPE("chloroethanol").category = "wet-scrubber"
 RECIPE("ethylene-glycol").category = "scrubber"
-RECIPE("py-tank-10000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
+RECIPE("py-tank-250000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
 if RECIPE["bitumen-to-scrude"] then RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient {type = "fluid", name = "hydrogen", amount = 100} end
 if RECIPE["tar-to-scrude"] then RECIPE("tar-to-scrude"):replace_ingredient("chromium", "ticl4") end
 if RECIPE["extract-sulfur-scrude"] then RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate") end
