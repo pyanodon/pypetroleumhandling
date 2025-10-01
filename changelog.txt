@@ -6,6 +6,7 @@ Date: ????
     - Added Spanish locale courtesy of @rubysunflower on Discord
     - Updated Simplified Chinese locale courtesy of @alone on Discord
     - Fixed all techs added by "enable all feature flags" not being seen by autotech.
+    - Shaft mk02 now allows productivity
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.21
 Date: 2025-09-15
