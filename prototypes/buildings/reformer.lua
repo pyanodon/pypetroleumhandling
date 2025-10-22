@@ -136,22 +136,22 @@ for i = 1, 4 do
 
             {
                 production_type = "output",
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "output", position = {-6.0, 2.0}, direction = defines.direction.west}}
             },
             {
                 production_type = "output",
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "output", position = {-6.0, -2.0}, direction = defines.direction.west}}
             },
             {
                 production_type = "output",
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "output", position = {6.0, 2.0}, direction = defines.direction.east}}
             },
             {
                 production_type = "output",
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "output", position = {6.0, -2.0}, direction = defines.direction.east}}
             },
         },
