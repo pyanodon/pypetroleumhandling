@@ -62,7 +62,7 @@ ENTITY {
             pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
             pipe_covers = pipecoverspictures(),
             secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "output", position = {-3.0, 5.0}, direction = defines.direction.south}}
         },
         {
