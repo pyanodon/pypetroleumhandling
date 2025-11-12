@@ -6,6 +6,7 @@ Date: ????
     - Added Spanish locale courtesy of @rubysunflower on Discord
     - Increased the output fluidbox size of all buildings from 100->1000. Allows fluid transfer at even higher rates before hitting engine limitations. Resolves https://github.com/pyanodon/pybugreports/issues/1203
     - Fixed all techs added by "enable all feature flags" not being seen by autotech.
+    - Shaft mk02 now allows productivity
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.21
 Date: 2025-09-15
