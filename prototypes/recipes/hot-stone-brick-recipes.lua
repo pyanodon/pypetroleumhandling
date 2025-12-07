@@ -12,7 +12,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warm-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas",    amount = 100, temperature = 100, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "coke-oven-gas",    amount = 100, temperature = 100, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warm-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -39,7 +39,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warmer-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas",      amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "coke-oven-gas",      amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warmer-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -61,7 +61,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warm-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04",    amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "outlet-gas-04",    amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warm-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -82,7 +82,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warmer-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04",      amount = 100, temperature = 500, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "outlet-gas-04",      amount = 100, temperature = 500, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warmer-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -103,7 +103,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "hot-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04",   amount = 100, temperature = 750, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "outlet-gas-04",   amount = 100, temperature = 750, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "hot-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -191,7 +191,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 50,  minimum_temperature = 500}
     },
     results = {
-        {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500, ignored_by_stats = 95, ignored_by_productivity = 95},
+        {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500, ignored_by_stats = 95, ignored_by_productivity = 95, autotech_is_not_primary_source = true},
     },
     main_product = "coke-oven-gas",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
@@ -211,7 +211,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 75,  minimum_temperature = 750}
     },
     results = {
-        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750, ignored_by_stats = 95, ignored_by_productivity = 95},
+        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750, ignored_by_stats = 95, ignored_by_productivity = 95, autotech_is_not_primary_source = true},
     },
     main_product = "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
@@ -231,7 +231,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 1000}
     },
     results = {
-        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000, ignored_by_stats = 95, ignored_by_productivity = 95},
+        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000, ignored_by_stats = 95, ignored_by_productivity = 95, autotech_is_not_primary_source = true},
     },
     main_product = "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
