@@ -56,7 +56,7 @@ local function render_text(drill, time_to_live)
     if not patch or not patch.valid then return end
 
     rendering.draw_text {
-        time_to_live = 68,
+        time_to_live = time_to_live or update_rate + 1,
         target = drill.entity,
         text = patch.amount,
         surface = drill.entity.surface,
@@ -202,7 +202,7 @@ py.register_on_nth_tick(update_rate, "drills", "pyph", function()
             drill.entity.custom_status = BITUMEN_DISABLED_CUSTOM_STATUS
         end
 
-        render_text(drill, update_rate + 1)
+        render_text(drill)
 
         ::continue::
     end
