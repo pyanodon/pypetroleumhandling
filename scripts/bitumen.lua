@@ -13,32 +13,40 @@ py.on_event(py.events.on_init(), function()
     storage.oil_derricks = storage.oil_derricks or {}
 end)
 
-local function random_patch_discovery_size(drill_tier, fluid_tier)
-    return 40000 * math.random(4, 16) * drill_tier * fluid_tier
-end
-
 -- Correlates our derricks and what replaces them with the seep transition, along with their hidden assembler names
 local derrick_types = {}
 for i = 1, 4 do
     derrick_types["oil-derrick-mk0" .. i] = {
         base = "oil-derrick-mk0" .. i .. "-base",
         resource = "oil-mk0" .. i,
-        fluid = "crude-oil",
-        discovery_size = random_patch_discovery_size,
+        fluid = "crude-oil", -- NOTE if creating fluid resources, resource amount created is multiplied by 100 (engine thing)
+        rand_min = 4, -- random int from [min, max] or [1, max] or no random value (always 1) if both nil
+        rand_max = 16, -- random int from [min, max] or [1, max] or no random value (always 1) if both nil
+        base_mult = 160000, -- base multiplier for patch size. default 1
+        drill_tier_mult = 1, -- multiplier bonus for drill tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
+        fluid_tier_mult = 1, -- multiplier bonus for fluid tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
         alert = "bitumen-seep-alert"
     }
     derrick_types["tar-extractor-mk0" .. i] = {
         base = "tar-extractor-mk0" .. i .. "-base",
         resource = "tar-patch",
         fluid = "tar",
-        discovery_size = random_patch_discovery_size,
+        rand_min = 4,
+        rand_max = 16,
+        base_mult = 160000,
+        drill_tier_mult = 1,
+        fluid_tier_mult = 1,
         alert = "bitumen-seep-alert"
     }
     derrick_types["natural-gas-derrick-mk0" .. i] = {
         base = "natural-gas-derrick-mk0" .. i .. "-base",
         resource = "natural-gas-mk0" .. i,
         fluid = "raw-gas",
-        discovery_size = random_patch_discovery_size,
+        rand_min = 4,
+        rand_max = 16,
+        base_mult = 160000,
+        drill_tier_mult = 1,
+        fluid_tier_mult = 1,
         alert = "bitumen-seep-alert"
     }
 end
@@ -210,9 +218,13 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 
     local drill_data = derrick_types[drill.name]
     local drill_fluid = storage.oil_derricks[drill.unit_number].drilling_fluid
-    local fluid_tier = ((drill_fluid:match("%d$") + 1) * 4)
-    local drill_tier = (drill.name:match("%d$") * 4)
-    local new_patch_size = drill_data.discovery_size(drill_tier, fluid_tier)
+    local fluid_tier = drill_fluid:match("%d$") + 1
+    local drill_tier = drill.name:match("%d$")
+    local new_patch_size = (drill_data.rand_min and math.random(drill_data.rand_min, drill_data.rand_max) or
+        drill_data.rand_max and math.random(drill_data.rand_max) or 1) *
+        fluid_tier ^ (drill_data.fluid_tier_mult or 1) *
+        drill_tier ^ (drill_data.drill_tier_mult or 1) *
+        (drill_data.base_mult or 1)
 
     local base = storage.oil_derricks[drill.unit_number].base
     if base and base.valid then base.destroy() end
