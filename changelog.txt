@@ -3,6 +3,8 @@ Version: 3.0.23
 Date: ????
   Changes:
     - Added a module slot to the retorter
+    - Added remote API for bitumen seep type drilling operations
+    - Fixed a rare crash during bitumen seep discovery explosions
     - Fixed iron stick recipe having unlocks in techs even though it's unlocked from the start. Resolves https://github.com/pyanodon/pybugreports/issues/1356
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.22
