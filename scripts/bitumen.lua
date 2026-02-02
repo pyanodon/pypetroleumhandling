@@ -25,7 +25,8 @@ for i = 1, 4 do
         base_mult = 160000, -- base multiplier for patch size. default 1
         drill_tier_mult = 1, -- multiplier bonus for drill tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
         fluid_tier_mult = 1, -- multiplier bonus for fluid tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
-        alert = "bitumen-seep-alert"
+        alert = "bitumen-seep-alert",
+        explosion_radius = 20
     }
     derrick_types["tar-extractor-mk0" .. i] = {
         base = "tar-extractor-mk0" .. i .. "-base",
@@ -36,7 +37,8 @@ for i = 1, 4 do
         base_mult = 160000,
         drill_tier_mult = 1,
         fluid_tier_mult = 1,
-        alert = "bitumen-seep-alert"
+        alert = "bitumen-seep-alert",
+        explosion_radius = 20
     }
     derrick_types["natural-gas-derrick-mk0" .. i] = {
         base = "natural-gas-derrick-mk0" .. i .. "-base",
@@ -47,7 +49,8 @@ for i = 1, 4 do
         base_mult = 160000,
         drill_tier_mult = 1,
         fluid_tier_mult = 1,
-        alert = "bitumen-seep-alert"
+        alert = "bitumen-seep-alert",
+        explosion_radius = 20
     }
 end
 
@@ -250,6 +253,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         drill.surface.name
     }
 
+    if not drill_data.explosion_radius then return end
     local oil_explosion = drill.surface.create_entity {
         name = "oil-explosion",
         position = drill.position,
@@ -257,7 +261,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
     }
 
     -- slightly damage all entities in 20 tile radius
-    for _, entity in pairs(drill.surface.find_entities_filtered {position = drill.position, radius = 20, collision_mask = "object"}) do
+    for _, entity in pairs(drill.surface.find_entities_filtered {position = drill.position, radius = drill_data.explosion_radius, collision_mask = "object"}) do
         if entity.valid and entity.is_entity_with_health then
             entity.damage(math.min(math.random(184, 222), entity.max_health * math.random(27, 33) / 100), "enemy", "explosion", oil_explosion, drill.valid and drill or nil)
         end
