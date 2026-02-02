@@ -258,10 +258,8 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 
     -- slightly damage all entities in 20 tile radius
     for _, entity in pairs(drill.surface.find_entities_filtered {position = drill.position, radius = 20, collision_mask = "object"}) do
-        if entity.valid and entity ~= drill and entity.is_entity_with_health then
-            entity.damage(math.min(math.random(184, 222), entity.max_health * math.random(27, 33) / 100), "enemy", "explosion", oil_explosion, drill)
+        if entity.valid and entity.is_entity_with_health then
+            entity.damage(math.min(math.random(184, 222), entity.max_health * math.random(27, 33) / 100), "enemy", "explosion", oil_explosion, drill.valid and drill or nil)
         end
     end
-    -- damage the drill last so its valid for references
-    drill.damage(math.min(math.random(184, 222), drill.max_health * math.random(27, 33) / 100), "enemy", "explosion", oil_explosion, drill)
 end)
