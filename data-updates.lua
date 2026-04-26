@@ -34,6 +34,7 @@ RECIPE("rectisol"):remove_ingredient("assembling-machine-2"):add_ingredient {typ
 RECIPE("small-parts-03"):replace_ingredient("glass", "glass-fiber"):replace_ingredient("tin-plate", "aerogel")
 RECIPE("utility-science-pack"):add_ingredient {type = "item", name = "small-parts-03", amount = 30}
 RECIPE("rail"):replace_ingredient("iron-stick", {type = "item", name = "bolts", amount = 4})
+RECIPE("iron-stick"):remove_unlock{"concrete", "circuit-network"}
 
 if data.data_crawler then
     data.script_enabled = data.script_enabled or {}
