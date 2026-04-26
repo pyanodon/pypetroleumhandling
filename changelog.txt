@@ -2,6 +2,7 @@
 Version: 3.0.23
 Date: ????
   Changes:
+    - Fixed the Tholins page in the py wiki to display up to date information, and re-arranged the fluids to match their order in the tholins techs.
     - Added a module slot to the retorter
     - Fixed iron stick recipe having unlocks in techs even though it's unlocked from the start. Resolves https://github.com/pyanodon/pybugreports/issues/1356
     - Updated German locale courtesy of @Spunk42
