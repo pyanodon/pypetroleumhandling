@@ -4,6 +4,8 @@ Date: ????
   Changes:
     - Fixed the Tholins page in the py wiki to display up to date information, and re-arranged the fluids to match their order in the tholins techs.
     - Added a module slot to the retorter
+    - Added remote API for bitumen seep type drilling operations
+    - Fixed a rare crash during bitumen seep discovery explosions
     - Fixed iron stick recipe having unlocks in techs even though it's unlocked from the start. Resolves https://github.com/pyanodon/pybugreports/issues/1356
     - Updated German locale courtesy of @Spunk42
     - Added glow to oil boiler (thanks, Fallenking947!)
