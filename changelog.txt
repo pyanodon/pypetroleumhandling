@@ -8,6 +8,7 @@ Date: ????
     - Updated German locale courtesy of @Spunk42
     - Added glow to oil boiler (thanks, Fallenking947!)
     - Fixed oil sand extractors sitting too low. Resolves https://github.com/pyanodon/pybugreports/issues/1287
+    - Fixed being able to place oil derricks inside other buildings by force-building it. Resolves https://github.com/pyanodon/pybugreports/issues/1444
     - Shaft mk02 now allows productivity
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.22
