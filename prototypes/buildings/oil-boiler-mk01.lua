@@ -94,6 +94,12 @@ ENTITY {
         effectivity = 2,
         burns_fluid = true,
         scale_fluid_usage = true,
+        light_flicker = {
+            minimum_intensity = 0,
+            maximum_intensity = 0,
+            light_intensity_to_size_coefficient = 0,
+            color = {0, 0, 0},
+        },
         --fluid_usage_per_tick = 2,
         smoke = {{
             name = "turbine-smoke",
@@ -127,6 +133,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -157,6 +164,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -187,6 +195,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -217,6 +226,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,

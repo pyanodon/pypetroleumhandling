@@ -72,7 +72,7 @@ ENTITY {
                     line_length = 16,
                     frame_count = 80,
                     animation_speed = 0.2,
-                    shift = util.by_pixel(-112, 0),
+                    shift = util.by_pixel(-112, -10),
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-a-mask.png",
@@ -81,7 +81,7 @@ ENTITY {
                     line_length = 16,
                     frame_count = 80,
                     animation_speed = 0.2,
-                    shift = util.by_pixel(-112, 0),
+                    shift = util.by_pixel(-112, -10),
                     tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
                 },
                 {
@@ -91,7 +91,7 @@ ENTITY {
                     line_length = 16,
                     frame_count = 80,
                     animation_speed = 0.2,
-                    shift = util.by_pixel(16, 0),
+                    shift = util.by_pixel(16, -10),
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-b-mask.png",
@@ -100,7 +100,7 @@ ENTITY {
                     line_length = 16,
                     frame_count = 80,
                     animation_speed = 0.2,
-                    shift = util.by_pixel(16, 0),
+                    shift = util.by_pixel(16, -10),
                     tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
                 },
                 {
@@ -110,7 +110,7 @@ ENTITY {
                     line_length = 16,
                     frame_count = 80,
                     animation_speed = 0.2,
-                    shift = util.by_pixel(128, 0),
+                    shift = util.by_pixel(128, -10),
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/oil-sand-extractor-mk01-c-mask.png",
@@ -119,7 +119,7 @@ ENTITY {
                     line_length = 16,
                     frame_count = 80,
                     animation_speed = 0.2,
-                    shift = util.by_pixel(128, 0),
+                    shift = util.by_pixel(128, -10),
                     tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
                 },
                 {
@@ -130,7 +130,7 @@ ENTITY {
                     frame_count = 80,
                     animation_speed = 0.2,
                     draw_as_shadow = true,
-                    shift = util.by_pixel(-112, 0),
+                    shift = util.by_pixel(-112, -10),
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/sh-b.png",
@@ -140,7 +140,7 @@ ENTITY {
                     frame_count = 80,
                     animation_speed = 0.2,
                     draw_as_shadow = true,
-                    shift = util.by_pixel(16, 0),
+                    shift = util.by_pixel(16, -10),
                 },
                 {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-sand-extractor-mk01/sh-c.png",
@@ -150,7 +150,7 @@ ENTITY {
                     frame_count = 80,
                     animation_speed = 0.2,
                     draw_as_shadow = true,
-                    shift = util.by_pixel(144, 0),
+                    shift = util.by_pixel(144, -10),
                 },
             }
         },

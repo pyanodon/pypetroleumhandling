@@ -296,7 +296,6 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         placeable_by = {item = name, count = 1},
-        fast_replaceable_group = "oil-derrick",
         max_health = 700 * i,
         resource_categories = {"bitumen-seep", "oil-derrick"},
         corpse = "big-remnants",
