@@ -217,7 +217,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         limit = 1,
         type = "mining-drill"
     }[1]
-    if not drill or not derrick_types[drill.name] then return end
+    if not drill or not derrick_types[drill.name] or not storage.oil_derricks[drill.unit_number] then return end
 
     local drill_data = derrick_types[drill.name]
     local drill_fluid = storage.oil_derricks[drill.unit_number].drilling_fluid
