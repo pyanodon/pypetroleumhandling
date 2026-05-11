@@ -10,6 +10,7 @@ Date: ????
     - Fixed oil sand extractors sitting too low. Resolves https://github.com/pyanodon/pybugreports/issues/1287
     - Fixed being able to place oil derricks inside other buildings by force-building it. Resolves https://github.com/pyanodon/pybugreports/issues/1444
     - Shaft mk02 now allows productivity
+    - Fixed that hydrogen locale was in the wrong mod. Resolves https://github.com/pyanodon/pybugreports/issues/1384
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.22
 Date: 2025-12-28
