@@ -1,39 +1,47 @@
 RECIPE {
     type = "recipe",
-    name = "oil-boiler-mk01",
+    name = "oil-boiler-mk04",
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "lab",                   amount = 1},
-        {type = "item", name = "iron-plate",            amount = 100},
-        {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "gasifier",              amount = 1},
-        {type = "item", name = "small-parts-01",        amount = 20},
+        {type = "item", name = "oil-boiler-mk03",         amount = 1},
+        {type = "item", name = "ht-pipes",                amount = 25},
+        {type = "item", name = "mechanical-parts-04",     amount = 2},
+        {type = "item", name = "nxzngd",                  amount = 10},
+        {type = "item", name = "sc-engine",               amount = 5},
+        {type = "item", name = "intelligent-unit",        amount = 5},
+        {type = "item", name = "small-parts-03",          amount = 30},
+        {type = "item", name = "super-alloy",             amount = 30},
+        {type = "item", name = "metastable-quasicrystal", amount = 5},
+        {type = "item", name = "science-coating",         amount = 5},
+        {type = "item", name = "wall-shield",             amount = 10},
+        {type = "item", name = "nbfe-alloy",              amount = 20},
+        {type = "item", name = "low-density-structure",   amount = 35}
     },
     results = {
-        {type = "item", name = "oil-boiler-mk01", amount = 1}
+        {type = "item", name = "oil-boiler-mk04", amount = 1}
     }
-}:add_unlock("oil-machines-mk01")
+}:add_unlock("oil-machines-mk04")
 
 ITEM {
     type = "item",
-    name = "oil-boiler-mk01",
+    name = "oil-boiler-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
     order = "b",
-    place_result = "oil-boiler-mk01",
+    place_result = "oil-boiler-mk04",
     stack_size = 10
 }
 
 ENTITY {
     type = "boiler",
-    name = "oil-boiler-mk01",
+    name = "oil-boiler-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.2, result = "oil-boiler-mk01"},
+    minable = {mining_time = 0.2, result = "oil-boiler-mk04"},
     max_health = 200,
     corpse = "boiler-remnants",
     impact_category = "metal-large",
@@ -56,7 +64,7 @@ ENTITY {
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     target_temperature = 250,
     fluid_box = {
-        volume = 200,
+        volume = 3200,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
             {flow_direction = "input-output", position = {-2.0, 0.0}, direction = defines.direction.west},
@@ -66,7 +74,7 @@ ENTITY {
         filter = "water"
     },
     output_fluid_box = {
-        volume = 200,
+        volume = 3200,
         pipe_covers = py.pipe_covers(false, true, true, true),
         pipe_connections = {
             {flow_direction = "output", position = {0, -2.0}, direction = defines.direction.north}
@@ -75,7 +83,7 @@ ENTITY {
         filter = "steam"
     },
     fast_replaceable_group = "oil-boiler",
-    energy_consumption = "29.61MW",
+    energy_consumption = "473.76MW",
     energy_source = {
         type = "fluid",
         emissions_per_minute = {
@@ -83,7 +91,7 @@ ENTITY {
         },
         destroy_non_fuel_fluid = false,
         fluid_box = {
-            volume = 100,
+            volume = 1600,
             height = 2,
             pipe_connections = {
                 {flow_direction = "input", position = {0, 2.0}, direction = defines.direction.south}
@@ -95,12 +103,6 @@ ENTITY {
         effectivity = 2,
         burns_fluid = true,
         scale_fluid_usage = true,
-        light_flicker = {
-            minimum_intensity = 0,
-            maximum_intensity = 0,
-            light_intensity_to_size_coefficient = 0,
-            color = {0, 0, 0},
-        },
         --fluid_usage_per_tick = 2,
         smoke = {{
             name = "turbine-smoke",
@@ -134,7 +136,6 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
-                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -165,7 +166,6 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
-                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -196,7 +196,6 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
-                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -227,7 +226,6 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
-                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
