@@ -29,7 +29,7 @@ ITEM {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-extras",
+    subgroup = "py-petroleum-handling-buildings-mk04",
     order = "b",
     place_result = "oil-boiler-mk04",
     stack_size = 10
