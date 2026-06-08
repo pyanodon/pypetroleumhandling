@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.23
-Date: ????
+Date: 2026-06-08
   Changes:
     - Fixed the Tholins page in the py wiki to display up to date information, and re-arranged the fluids to match their order in the tholins techs.
     - Added a module slot to the retorter
