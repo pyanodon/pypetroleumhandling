@@ -40,7 +40,6 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
     selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
-    forced_symmetry = "diagonal-pos",
     module_slots = 1,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"pumpjack"},
@@ -88,7 +87,7 @@ ENTITY {
             pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
             pipe_covers = pipecoverspictures(),
             secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "output", position = {-0.5, 2.5}, direction = defines.direction.south}}
         },
         {
@@ -97,7 +96,7 @@ ENTITY {
             pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
             pipe_covers = pipecoverspictures(),
             secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {0.5, -2.5}, direction = defines.direction.north}}
         },
     },
@@ -105,6 +104,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.8},
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }

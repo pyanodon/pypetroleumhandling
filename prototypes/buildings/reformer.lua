@@ -97,7 +97,6 @@ for i = 1, 4 do
         dying_explosion = "big-explosion",
         collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
         selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
-        forced_symmetry = "diagonal-pos",
         module_slots = i,
         allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
         crafting_categories = {"reformer"},
@@ -115,43 +114,43 @@ for i = 1, 4 do
             --1
             {
                 production_type = "input",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {2.0, -6.0}, direction = defines.direction.north}}
             },
             {
                 production_type = "input",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {-2.0, -6.0}, direction = defines.direction.north}}
             },
             {
                 production_type = "input",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {2.0, 6.0}, direction = defines.direction.south}}
             },
             {
                 production_type = "input",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {-2.0, 6.0}, direction = defines.direction.south}}
             },
 
             {
                 production_type = "output",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "output", position = {-6.0, 2.0}, direction = defines.direction.west}}
             },
             {
                 production_type = "output",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "output", position = {-6.0, -2.0}, direction = defines.direction.west}}
             },
             {
                 production_type = "output",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "output", position = {6.0, 2.0}, direction = defines.direction.east}}
             },
             {
                 production_type = "output",
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "output", position = {6.0, -2.0}, direction = defines.direction.east}}
             },
         },
@@ -366,7 +365,6 @@ for i = 1, 4 do
         working_sound = {
             sound = {filename = "__pypetroleumhandlinggraphics__/sounds/reformer.ogg", volume = 1.4},
             idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/reformer.ogg", volume = 0.3},
-            apparent_volume = 2.5
         }
     }
 end

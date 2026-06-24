@@ -50,9 +50,8 @@ ENTITY {
         },
     },
     energy_usage = "1100kW",
-    mining_power = 1,
     resource_searching_radius = 6.49,
-    vector_to_place_result = {0, -5.65},
+    vector_to_place_result = {0, -5.8},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
@@ -157,6 +156,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg", volume = 1.0},
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }

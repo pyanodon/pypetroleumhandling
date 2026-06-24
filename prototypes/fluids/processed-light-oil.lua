@@ -17,7 +17,7 @@ if mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "processed-light-oil-2",
-        category = "gas-separator",
+        categories = {"gas-separator"},
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "hot-reaction-gas", amount = 150},
@@ -35,7 +35,7 @@ else
     RECIPE {
         type = "recipe",
         name = "processed-light-oil",
-        category = "gas-separator",
+        categories = {"gas-separator"},
         energy_required = 4,
         ingredients = {
             {type = "fluid", name = "hot-reaction-gas", amount = 100},

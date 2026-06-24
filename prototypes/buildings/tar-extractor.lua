@@ -151,7 +151,7 @@ for i = 1, 4 do
             },
         },
         output_fluid_box = {
-            volume = 1000,
+            volume = 100,
             pipe_connections = {
                 {flow_direction = "output", position = {-2, -4.0}, direction = defines.direction.north},
                 {flow_direction = "output", position = {4.0, -2},  direction = defines.direction.east},
@@ -238,7 +238,6 @@ for i = 1, 4 do
         working_sound = {
             sound = {filename = "__pypetroleumhandlinggraphics__/sounds/tar-extractor.ogg", volume = 1.0},
             idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/tar-extractor.ogg", volume = 0.3},
-            apparent_volume = 2.5
         },
     }
 
@@ -254,7 +253,6 @@ for i = 1, 4 do
         hidden = true,
         collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
         selection_box = {{0, 0}, {0, 0}},
-        forced_symmetry = "diagonal-pos",
         module_slots = 0,
         allowed_effects = {},
         crafting_categories = {"drilling-fluid"},
@@ -271,28 +269,28 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {3, -4}, direction = defines.direction.north}}
             },
             {
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {4, 3}, direction = defines.direction.east}}
             },
             {
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {-3, 4}, direction = defines.direction.south}}
             },
             {
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 pipe_connections = {{flow_direction = "input", position = {-4, -3}, direction = defines.direction.west}}
             },
         },
@@ -399,8 +397,6 @@ local oil_explosion = {
         },
         type = "direct"
     },
-    icon = "__base__/graphics/item-group/effects.png",
-    icon_size = 64,
     name = "oil-explosion",
     icons = {
         {icon = "__base__/graphics/icons/explosion.png", tint = {0, 0, 0}},

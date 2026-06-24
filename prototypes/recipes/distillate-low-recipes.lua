@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-heavy-oil",
-    category = "compressor",
+    categories = {"compressor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -22,7 +22,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-coal-gas",
-    category = "hor",
+    categories = {"hor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -40,7 +40,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-btx",
-    category = "hor",
+    categories = {"hor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -58,7 +58,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-lubricant",
-    category = "hor",
+    categories = {"hor"},
     enabled = false,
     energy_required = 4,
     ingredients = {

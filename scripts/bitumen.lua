@@ -13,42 +13,59 @@ py.on_event(py.events.on_init(), function()
     storage.oil_derricks = storage.oil_derricks or {}
 end)
 
+---@class DerrickPrototype
+---@field drill EntityID
+---@field base EntityID
+---@field resource data.ResourceEntityName
+---@field fluid FluidID NOTE if creating fluid resources, resource amount created is multiplied by 100 (engine thing)
+---@field rand_min? uint random int from [min, max] or [1, max] or no random value (always 1) if both nil
+---@field rand_max? uint random int from [min, max] or [1, max] or no random value (always 1) if both nil
+---@field base_mult? uint base multiplier for patch size. default 1
+---@field drill_tier_mult? uint multiplier bonus for drill tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
+---@field fluid_amt_exp? uint multiplier bonus for fluid tier (1-4)^n. default 1, set to 0 to disable fludi tier multiplier
+---@field alert string
+---@field explosion_radius? uint
+
 -- Correlates our derricks and what replaces them with the seep transition, along with their hidden assembler names
+---@type {[EntityID]: DerrickPrototype}
 local derrick_types = {}
 for i = 1, 4 do
     derrick_types["oil-derrick-mk0" .. i] = {
+        drill = "oil-derrick-mk0" .. i,
         base = "oil-derrick-mk0" .. i .. "-base",
         resource = "oil-mk0" .. i,
-        fluid = "crude-oil", -- NOTE if creating fluid resources, resource amount created is multiplied by 100 (engine thing)
-        rand_min = 4, -- random int from [min, max] or [1, max] or no random value (always 1) if both nil
-        rand_max = 16, -- random int from [min, max] or [1, max] or no random value (always 1) if both nil
-        base_mult = 160000, -- base multiplier for patch size. default 1
-        drill_tier_mult = 1, -- multiplier bonus for drill tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
-        fluid_tier_mult = 1, -- multiplier bonus for fluid tier (1-4)^n. default 1, set to 0 to disable drill tier multipleir
+        fluid = "crude-oil",
+        rand_min = 4,
+        rand_max = 16,
+        base_mult = 1600,
+        drill_tier_mult = 2,
+        fluid_amt_exp = 2,
         alert = "bitumen-seep-alert",
         explosion_radius = 20
     }
     derrick_types["tar-extractor-mk0" .. i] = {
+        drill = "tar-extractor-mk0" .. i,
         base = "tar-extractor-mk0" .. i .. "-base",
         resource = "tar-patch",
         fluid = "tar",
         rand_min = 4,
         rand_max = 16,
-        base_mult = 160000,
-        drill_tier_mult = 1,
-        fluid_tier_mult = 1,
+        base_mult = 1600,
+        drill_tier_mult = 2,
+        fluid_amt_exp = 2,
         alert = "bitumen-seep-alert",
         explosion_radius = 20
     }
     derrick_types["natural-gas-derrick-mk0" .. i] = {
+        drill = "natural-gas-derrick-mk0" .. i,
         base = "natural-gas-derrick-mk0" .. i .. "-base",
         resource = "natural-gas-mk0" .. i,
         fluid = "raw-gas",
         rand_min = 4,
         rand_max = 16,
-        base_mult = 160000,
-        drill_tier_mult = 1,
-        fluid_tier_mult = 1,
+        base_mult = 1600,
+        drill_tier_mult = 2,
+        fluid_amt_exp = 2,
         alert = "bitumen-seep-alert",
         explosion_radius = 20
     }
@@ -59,17 +76,21 @@ local resource_patches = {
 }
 
 remote.add_interface("py-drilling", {
+    ---@param resource_name data.ResourceEntityName
     ["add-resource-patch"] = function (resource_name)
         resource_patches[resource_name] = true
     end,
+    ---@param resource_name data.ResourceEntityName
     ["remove-resource-patch"] = function (resource_name)
         resource_patches[resource_name] = nil
     end,
-    ["add-mining-drill"] = function (mining_drill, extra_data)
-        derrick_types[mining_drill] = extra_data
+    ---@param prototype DerrickPrototype
+    ["add-mining-drill"] = function (prototype)
+        derrick_types[prototype.drill] = prototype
     end,
-    ["remove-mining-drill"] = function (mining_drill)
-        derrick_types[mining_drill] = nil
+    ---@param drill_name EntityID
+    ["remove-mining-drill"] = function (drill_name)
+        derrick_types[drill_name] = nil
     end,
 })
 
@@ -115,11 +136,11 @@ py.on_event(py.events.on_built(), function(event)
     storage.oil_derricks[drill.unit_number] = {
         entity = drill,
         base = assembler,
-        drilling_fluid = "",
+        drilling_fluid_amount = 1,
         patch = patch
     }
-    assembler.active = false
-    drill.active = false
+    assembler.disabled_by_script = true
+    drill.disabled_by_script = true
     drill.custom_status = BITUMEN_DISABLED_CUSTOM_STATUS
     -- Register for destruction event to handle removal
     script.register_on_object_destroyed(drill)
@@ -127,6 +148,7 @@ py.on_event(py.events.on_built(), function(event)
 end)
 
 -- Destroy hidden assembler when removing drill
+---@param event EventData.on_object_destroyed
 py.on_event(defines.events.on_object_destroyed, function(event)
     local unit_no = event.useful_id
     if not unit_no then return end -- on_object_destroyed provides a unit number and no entity
@@ -135,6 +157,7 @@ py.on_event(defines.events.on_object_destroyed, function(event)
     storage.oil_derricks[unit_no] = nil
 end)
 
+---@param event EventData.on_player_rotated_entity
 script.on_event(defines.events.on_player_rotated_entity, function (event)
     local building = event.entity
     if not derrick_types[building.name] then return end
@@ -153,49 +176,50 @@ local fluid_max_tier = 3
 local fluid_min_tier = 0 -- Tiers are zero-indexed here, god knows why
 
 py.register_on_nth_tick(update_rate, "drills", "pyph", function()
-    for drill_id, drill in pairs(storage.oil_derricks) do
-        if not drill.base.valid or not drill.entity.valid then
-            log("invalid drill encountered during update cycle, id: " .. drill_id)
-            if drill.entity.valid then drill.entity.destroy() end
-            if drill.base.valid then drill.base.destroy() end
-            storage.oil_derricks[drill_id] = nil
+    for id, derrick in pairs(storage.oil_derricks) do
+        if not derrick.base.valid or not derrick.entity.valid then
+            log("invalid drill encountered during update cycle, id: " .. id)
+            if derrick.entity.valid then derrick.entity.destroy() end
+            if derrick.base.valid then derrick.base.destroy() end
+            storage.oil_derricks[id] = nil
             goto continue
         end
 
         local drill_active = false
-        local drill_contents = drill.base.get_fluid_contents()
-        local drill_empty = next(drill_contents) == nil
+        local drill_contents = derrick.base.get_fluid_contents()
 
-        if not drill_empty then
+        if next(drill_contents) then
+            local fluid_amt_exp = derrick_types[derrick.entity.name].fluid_amt_exp
             -- Check possible drilling fluids in descending order of quality
-            for current_tier = fluid_max_tier, fluid_min_tier, -1 do
-                local fluid_type = "drilling-fluid-" .. current_tier
-                local contained_fluid = drill_contents[fluid_type]
-                if contained_fluid then
-                    if contained_fluid >= fluid_threshold then
-                        storage.oil_derricks[drill_id].drilling_fluid = fluid_type
-                        drill.base.remove_fluid {name = fluid_type, amount = 10}
-                        drill.entity.force.get_fluid_production_statistics(drill.entity.surface_index).on_flow(fluid_type, -10)
+            for tier = fluid_max_tier, fluid_min_tier, -1 do
+                local fluid_type = "drilling-fluid-" .. tier
+                local fluid_amount = drill_contents[fluid_type]
+                if fluid_amount then
+                    if fluid_amount >= fluid_threshold then
+                        storage.oil_derricks[id].drilling_fluid_amount = storage.oil_derricks[id].drilling_fluid_amount + (fluid_amt_exp and 10 * (tier + 1) ^ fluid_amt_exp or 0)
+                        derrick.base.remove_fluid {name = fluid_type, amount = 10}
+                        derrick.entity.force.get_fluid_production_statistics(derrick.entity.surface_index).on_flow(fluid_type, -10)
                         drill_active = true
                     end
                     break
                 end
             end
         end
-        drill.entity.active = drill_active
+        derrick.entity.disabled_by_script = not drill_active
         if drill_active then
-            drill.entity.custom_status = nil
+            derrick.entity.custom_status = nil
         else
-            drill.entity.custom_status = BITUMEN_DISABLED_CUSTOM_STATUS
+            derrick.entity.custom_status = BITUMEN_DISABLED_CUSTOM_STATUS
         end
 
-        render_text(drill)
+        render_text(derrick)
 
         ::continue::
     end
 end)
 
 -- Overwrites seep amounts when they are generated
+---@param event EventData.on_chunk_generated
 script.on_event(defines.events.on_chunk_generated, function(event)
     local bitumen_patches = event.surface.find_entities_filtered {name = "bitumen-seep", area = event.area}
     for _, patch in pairs(bitumen_patches) do
@@ -203,6 +227,8 @@ script.on_event(defines.events.on_chunk_generated, function(event)
     end
 end)
 
+---@param number number
+---@return string
 local function add_commas_to_number(number)
     local formatted = tostring(number):reverse():gsub("(%d%d%d)", "%1,"):reverse()
     return formatted:match("^,") and formatted:sub(2) or formatted
@@ -217,24 +243,23 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         limit = 1,
         type = "mining-drill"
     }[1]
-    if not drill or not derrick_types[drill.name] or not storage.oil_derricks[drill.unit_number] then return end
+    local derrick = storage.oil_derricks[drill.unit_number]
+    if not derrick then return end
 
-    local drill_data = derrick_types[drill.name]
-    local drill_fluid = storage.oil_derricks[drill.unit_number].drilling_fluid
-    local fluid_tier = drill_fluid:match("%d$") + 1
-    local drill_tier = drill.name:match("%d$")
-    local new_patch_size = (drill_data.rand_min and math.random(drill_data.rand_min, drill_data.rand_max) or
-        drill_data.rand_max and math.random(drill_data.rand_max) or 1) *
-        fluid_tier ^ (drill_data.fluid_tier_mult or 1) *
-        drill_tier ^ (drill_data.drill_tier_mult or 1) *
-        (drill_data.base_mult or 1)
+    local prototype = derrick_types[drill.name]
+    local drill_tier = drill.name:match("%d$") or 1
+    local new_patch_size = (prototype.rand_min and math.random(prototype.rand_min, prototype.rand_max) or
+        prototype.rand_max and math.random(prototype.rand_max) or 1) *
+        derrick.drilling_fluid_amount *
+        drill_tier ^ (prototype.drill_tier_mult or 1) *
+        (prototype.base_mult or 1)
 
-    local base = storage.oil_derricks[drill.unit_number].base
+    local base = derrick.base
     if base and base.valid then base.destroy() end
     storage.oil_derricks[drill.unit_number] = nil
 
     resource.surface.create_entity {
-        name = drill_data.resource,
+        name = prototype.resource,
         amount = new_patch_size,
         position = resource.position,
         quality = resource.quality.name
@@ -242,9 +267,9 @@ script.on_event(defines.events.on_resource_depleted, function(event)
 
     drill.update_connections()
 
-    local fluid = drill_data.fluid
+    local fluid = prototype.fluid
     drill.force.print {
-        drill_data.alert,
+        prototype.alert,
         drill.name,
         add_commas_to_number(new_patch_size * 100),
         fluid,
@@ -253,7 +278,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         drill.surface.name
     }
 
-    if not drill_data.explosion_radius then return end
+    if not prototype.explosion_radius then return end
     local oil_explosion = drill.surface.create_entity {
         name = "oil-explosion",
         position = drill.position,
@@ -261,7 +286,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
     }
 
     -- slightly damage all entities in 20 tile radius
-    for _, entity in pairs(drill.surface.find_entities_filtered {position = drill.position, radius = drill_data.explosion_radius, collision_mask = "object"}) do
+    for _, entity in pairs(drill.surface.find_entities_filtered {position = drill.position, radius = prototype.explosion_radius, collision_mask = "object"}) do
         if entity.valid and entity.is_entity_with_health then
             entity.damage(math.min(math.random(184, 222), entity.max_health * math.random(27, 33) / 100), "enemy", "explosion", oil_explosion, drill.valid and drill or nil)
         end

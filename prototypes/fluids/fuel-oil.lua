@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "scrude-to-fuel-oil",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "crude-to-fuel-oil",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {

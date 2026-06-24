@@ -83,7 +83,6 @@ ENTITY {
         destroy_non_fuel_fluid = false,
         fluid_box = {
             volume = 100,
-            height = 2,
             pipe_connections = {
                 {flow_direction = "input", position = {0, 2.0}, direction = defines.direction.south}
             },
