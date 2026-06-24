@@ -197,7 +197,7 @@ py.register_on_nth_tick(update_rate, "drills", "pyph", function()
                 if fluid_amount then
                     if fluid_amount >= fluid_threshold then
                         storage.oil_derricks[id].drilling_fluid_amount = storage.oil_derricks[id].drilling_fluid_amount + (fluid_amt_exp and 10 * (tier + 1) ^ fluid_amt_exp or 0)
-                        derrick.base.remove_fluid {name = fluid_type, amount = 10}
+                        derrick.base.extract_fluid {name = fluid_type, amount = 10}
                         derrick.entity.force.get_fluid_production_statistics(derrick.entity.surface_index).on_flow(fluid_type, -10)
                         drill_active = true
                     end
