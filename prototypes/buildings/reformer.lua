@@ -104,9 +104,7 @@ for i = 1, 4 do
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions_per_minute = {
-                pollution = 50 * i
-            },
+            emissions_per_minute = {pollution = 50 * i},
         },
         energy_usage = (2.5 * i) .. "MW",
         fluid_boxes_off_when_no_fluid_recipe = false,
