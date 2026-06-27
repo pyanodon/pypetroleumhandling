@@ -337,7 +337,6 @@ for i = 1, 4 do
         icon_size = icon_size,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
-        fast_replaceable_group = "pumpjack",
         max_health = 100,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",

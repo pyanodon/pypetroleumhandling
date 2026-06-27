@@ -95,6 +95,7 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "lor",
+        next_upgrade = i ~= 4 and "lor-mk0" .. (i+1) or nil,
         max_health = 300 * i,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",

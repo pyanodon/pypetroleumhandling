@@ -135,6 +135,7 @@ for i = 1, 4 do
         minable = {mining_time = 0.5, result = name},
         placeable_by = {item = name, count = 1},
         fast_replaceable_group = "tar-extractor",
+        next_upgrade = i ~= 4 and "tar-extractor-mk0" .. (i+1) or nil,
         max_health = 700 * i,
         resource_categories = {"tar-patch", "bitumen-seep"},
         corpse = "big-remnants",

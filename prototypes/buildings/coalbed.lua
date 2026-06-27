@@ -92,6 +92,7 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "coalbed",
+        next_upgrade = i ~= 4 and "coalbed-mk0" .. (i+1) or nil,
         max_health = 100 * i,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",

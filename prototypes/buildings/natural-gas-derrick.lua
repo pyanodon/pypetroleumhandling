@@ -145,6 +145,8 @@ for i = 1, 4 do
         icon_size = icon_size,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
+        fast_replaceable_group = "natural-gas-derrick",
+        next_upgrade = i ~= 4 and "natural-gas-derrick-mk0" .. (i+1) or nil,
         placeable_by = {item = name, count = 1},
         resource_categories = {"bitumen-seep", "natural-gas"},
         max_health = 200,
@@ -241,7 +243,6 @@ for i = 1, 4 do
         working_sound = {
             sound = {filename = "__pypetroleumhandlinggraphics__/sounds/gas-extractor.ogg", volume = 0.3},
         },
-        fast_replaceable_group = "natural-gas-derrick",
     }
 
     ENTITY {

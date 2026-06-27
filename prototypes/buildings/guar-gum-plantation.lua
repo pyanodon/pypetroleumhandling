@@ -89,8 +89,9 @@ for i = 1, 4 do
         icon = icon,
         icon_size = icon_size,
         flags = {"placeable-neutral", "player-creation"},
-        minable = { mining_time = 0.5,result = name},
+        minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "guar-gum-plantation",
+        next_upgrade = i~=4 and "guar-gum-plantation-mk0" .. (i+1) or nil,
         max_health = 100,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",
@@ -213,6 +214,5 @@ for i = 1, 4 do
                 volume = 0.3
             }
         },
-        next_upgrade = "guar-gum-plantation-mk02"
     }
 end
