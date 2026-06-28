@@ -93,7 +93,7 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "heavy-oil-refinery",
-        next_upgrade = i ~= 4 and "heavy-oil-refinery-mk0" .. (i+1) or nil,
+        next_upgrade = i ~= 4 and "heavy-oil-refinery-mk0" .. (i + 1) or nil,
         max_health = 100,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",
@@ -227,8 +227,8 @@ for i = 1, 4 do
         },
         impact_category = "metal-large",
         working_sound = {
-            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg",volume = 1.7},
-            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg",volume = 0.3}
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 0.3}
         }
     }
 end

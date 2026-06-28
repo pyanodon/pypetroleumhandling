@@ -313,7 +313,7 @@ local input_pipe_pos_per_tier = {
 
 local sound_indexes = {1, 1, 2, 2}
 
-local usage_table = {250,450,650,750}
+local usage_table = {250, 450, 650, 750}
 
 for i = 1, 4 do
     local name = "pumpjack-mk0" .. i
@@ -379,7 +379,7 @@ for i = 1, 4 do
         impact_category = "metal-large",
         working_sound = {
             sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk0" .. sound_indexes[i] .. ".ogg", volume = 0.8}, --lazy implementation via indexes, idk how to "if" this parameter properly
-            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk0" .. sound_indexes[i] .. ".ogg",volume = 0.3}
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk0" .. sound_indexes[i] .. ".ogg", volume = 0.3}
         }
     }
 end

@@ -66,7 +66,7 @@ RECIPE {
     }
 }:add_unlock("oil-machines-mk04")
 
-local usage_table = {400,600,1000,1500}
+local usage_table = {400, 600, 1000, 1500}
 
 for i = 1, 4 do
     local name = i == 1 and "guar-gum-plantation" or "guar-gum-plantation-mk0" .. i
@@ -93,7 +93,7 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "guar-gum-plantation",
-        next_upgrade = i~=4 and "guar-gum-plantation-mk0" .. (i+1) or nil,
+        next_upgrade = i ~= 4 and "guar-gum-plantation-mk0" .. (i + 1) or nil,
         max_health = 100,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",
@@ -207,8 +207,8 @@ for i = 1, 4 do
         },
         impact_category = "metal-large",
         working_sound = {
-            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg",volume = 1.4},
-            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg",volume = 0.3}
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg", volume = 1.4},
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/guar-gum.ogg", volume = 0.3}
         },
     }
 end

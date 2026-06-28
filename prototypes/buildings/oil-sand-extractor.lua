@@ -210,8 +210,8 @@ for i = 1, 4 do
         },
         impact_category = "metal-large",
         working_sound = {
-            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg",volume = 1.0},
-            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg",volume = 0.3}
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg", volume = 1.0},
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-sand-extractor.ogg", volume = 0.3}
         }
     }
 end
