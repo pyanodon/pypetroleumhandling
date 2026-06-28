@@ -185,14 +185,8 @@ for i = 1, 4 do
         },
         impact_category = "metal-large",
         working_sound = {
-            sound = {
-                filename = "__pypetroleumhandlinggraphics__/sounds/gas-refinery.ogg",
-                volume = 1.5
-            },
-            idle_sound = {
-                filename = "__pypetroleumhandlinggraphics__/sounds/gas-refinery.ogg",
-                volume = 0.3
-            }
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/gas-refinery.ogg",volume = 1.5},
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/gas-refinery.ogg",volume = 0.3}
         }
     }
 end
