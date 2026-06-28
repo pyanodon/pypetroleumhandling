@@ -47,3 +47,8 @@ git merge --ff-only "$commit_hash"
 
 gh pr create --title "Merge $tn into a single file" --body "Preserves blame history, do not squash when merging"
 
+#deleting temporal branches
+git branch -d "$bn-1"
+git branch -d "$bn-2"
+git branch -d "$bn-3"
+
