@@ -10,7 +10,7 @@ fn="./prototypes/buildings/cracker"
 ext=".lua"
 
 # first make a new branch and switch
-git switch master
+git switch 2.1-prep
 git checkout -b "$bn-output"
 
 git checkout -b "$bn-1"
