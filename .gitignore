@@ -3,3 +3,4 @@ Thumbs.*
 .build/
 .vscode/*
 !.vscode/extensions.json
+merge.sh

@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # friendly name used in commit messages
-tn="heavy-oil-refinery"
+tn="upgrader"
 # branch name suffix
-bn="heavy-oil-refinery"
+bn="upgrader"
 # output file path, mk01-mk04 should be the same thing with the mk suffix
-fn="./prototypes/buildings/heavy-oil-refinery"
+fn="./prototypes/buildings/upgrader"
 # extension
 ext=".lua"
 
