@@ -8,7 +8,7 @@ RECIPE {
         {type = "item", name = "iron-plate",         amount = 50},
         {type = "item", name = "steam-engine",       amount = 5},
         {type = "item", name = "electronic-circuit", amount = 20},
-        {type = "item", name = "small-parts-01",     amount = 20}
+        {type = "item", name = "small-parts-01",     amount = 20},
     },
     results = {
         {type = "item", name = "cracker-mk01", amount = 1}
@@ -26,7 +26,7 @@ RECIPE {
         {type = "item", name = "plastic-bar",      amount = 40},
         {type = "item", name = "niobium-plate",    amount = 20},
         {type = "item", name = "engine-unit",      amount = 5},
-        {type = "item", name = "small-parts-02",   amount = 20}
+        {type = "item", name = "small-parts-02",   amount = 20},
     },
     results = {
         {type = "item", name = "cracker-mk02", amount = 1}
@@ -43,7 +43,7 @@ RECIPE {
         {type = "item", name = "processing-unit",      amount = 20},
         {type = "item", name = "concrete",             amount = 20},
         {type = "item", name = "electric-engine-unit", amount = 10},
-        {type = "item", name = "small-parts-03",       amount = 30}
+        {type = "item", name = "small-parts-03",       amount = 30},
     },
     results = {
         {type = "item", name = "cracker-mk03", amount = 1}
@@ -58,7 +58,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "cracker-mk03",          amount = 1},
         {type = "item", name = "low-density-structure", amount = 20},
-        {type = "item", name = "nbfe-alloy",            amount = 20}
+        {type = "item", name = "nbfe-alloy",            amount = 20},
     },
     results = {
         {type = "item", name = "cracker-mk04", amount = 1}
@@ -214,14 +214,8 @@ for i = 1, 4 do
         },
         impact_category = "metal-large",
         working_sound = {
-            sound = {
-                filename = "__pypetroleumhandlinggraphics__/sounds/cracker.ogg",
-                volume = 1.5
-            },
-            idle_sound = {
-                filename = "__pypetroleumhandlinggraphics__/sounds/cracker.ogg",
-                volume = 0.3
-            }
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/cracker.ogg",volume = 1.5},
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/cracker.ogg",volume = 0.3}
         }
     }
 end
