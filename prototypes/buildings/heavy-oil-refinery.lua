@@ -16,167 +16,6 @@ RECIPE {
     }
 }:add_unlock("oil-machines-mk01")
 
-ITEM {
-    type = "item",
-    name = "heavy-oil-refinery-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk01.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
-    order = "b",
-    place_result = "heavy-oil-refinery-mk01",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "heavy-oil-refinery-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk01.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk01"},
-    fast_replaceable_group = "heavy-oil-refinery",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
-    selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
-    module_slots = 1,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"hor", "oil-processing"},
-    crafting_speed = 1,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 50
-        },
-    },
-    energy_usage = "500kW",
-    tall = true,
-    graphics_set = {
-        working_visualisations = {
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5
-                }
-            },
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-                }
-            },
-        },
-        animation = {
-            layers = {
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62)
-                },
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62),
-                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-                },
-            }
-        },
-    },
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, -6.0}, direction = defines.direction.north}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, 6.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-6.0, 0}, direction = defines.direction.west}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {6.0, 0}, direction = defines.direction.east}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 0.3},
-    }
-}
 RECIPE {
     type = "recipe",
     name = "heavy-oil-refinery-mk02",
@@ -196,167 +35,6 @@ RECIPE {
     }
 }:add_unlock("oil-machines-mk02")
 
-ITEM {
-    type = "item",
-    name = "heavy-oil-refinery-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk02.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk02",
-    order = "b",
-    place_result = "heavy-oil-refinery-mk02",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "heavy-oil-refinery-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk02.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk02"},
-    fast_replaceable_group = "heavy-oil-refinery",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
-    selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
-    module_slots = 2,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"hor", "oil-processing"},
-    crafting_speed = 2,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 50
-        },
-    },
-    energy_usage = "700kW",
-    tall = true,
-    graphics_set = {
-        working_visualisations = {
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                }
-            },
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-                }
-            },
-        },
-        animation = {
-            layers = {
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62)
-                },
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62),
-                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-                },
-            }
-        },
-    },
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, -6.0}, direction = defines.direction.north}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, 6.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-6.0, 0}, direction = defines.direction.west}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {6.0, 0}, direction = defines.direction.east}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 0.3},
-    }
-}
 RECIPE {
     type = "recipe",
     name = "heavy-oil-refinery-mk03",
@@ -375,167 +53,6 @@ RECIPE {
     }
 }:add_unlock("oil-machines-mk03")
 
-ITEM {
-    type = "item",
-    name = "heavy-oil-refinery-mk03",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk03.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk03",
-    order = "b",
-    place_result = "heavy-oil-refinery-mk03",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "heavy-oil-refinery-mk03",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk03.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk03"},
-    fast_replaceable_group = "heavy-oil-refinery",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
-    selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
-    module_slots = 3,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"hor", "oil-processing"},
-    crafting_speed = 3,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 50
-        },
-    },
-    energy_usage = "900kW",
-    tall = true,
-    graphics_set = {
-        working_visualisations = {
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                }
-            },
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-                }
-            },
-        },
-        animation = {
-            layers = {
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62)
-                },
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62),
-                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-                },
-            }
-        },
-    },
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, -6.0}, direction = defines.direction.north}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, 6.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-6.0, 0}, direction = defines.direction.west}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {6.0, 0}, direction = defines.direction.east}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 0.3},
-    }
-}
 RECIPE {
     type = "recipe",
     name = "heavy-oil-refinery-mk04",
@@ -551,164 +68,167 @@ RECIPE {
     }
 }:add_unlock("oil-machines-mk04")
 
-ITEM {
-    type = "item",
-    name = "heavy-oil-refinery-mk04",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk04.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk04",
-    order = "b",
-    place_result = "heavy-oil-refinery-mk04",
-    stack_size = 10
-}
+for i = 1, 4 do
+    local name = "heavy-oil-refinery-mk0" .. i
+    local icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk0" .. i .. ".png"
+    local icon_size = 64
 
-ENTITY {
-    type = "assembling-machine",
-    name = "heavy-oil-refinery-mk04",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/hor-mk04.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "heavy-oil-refinery-mk04"},
-    fast_replaceable_group = "heavy-oil-refinery",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
-    selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
-    module_slots = 4,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"hor", "oil-processing"},
-    crafting_speed = 4,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 50
+    ITEM {
+        type = "item",
+        name = name,
+        icon = icon,
+        icon_size = icon_size,
+        flags = {},
+        subgroup = "py-petroleum-handling-buildings-mk0" .. i,
+        order = "b",
+        place_result = name,
+        stack_size = 10
+    }
+
+    ENTITY {
+        type = "assembling-machine",
+        name = name,
+        icon = icon,
+        icon_size = icon_size,
+        flags = {"placeable-neutral", "player-creation"},
+        minable = {mining_time = 0.5, result = name},
+        fast_replaceable_group = "heavy-oil-refinery",
+        max_health = 100,
+        corpse = "medium-remnants",
+        dying_explosion = "big-explosion",
+        collision_box = {{-6.4, -6.4}, {6.4, 6.4}},
+        selection_box = {{-6.5, -6.5}, {6.5, 6.5}},
+        module_slots = i,
+        allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
+        crafting_categories = {"hor", "oil-processing"},
+        crafting_speed = i,
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+            emissions_per_minute = {pollution = 50}
         },
-    },
-    energy_usage = "1100kW",
-    tall = true,
-    graphics_set = {
-        working_visualisations = {
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                }
-            },
-            {
-                north_position = util.by_pixel(0, 62.5),
-                west_position = util.by_pixel(0, 62.5),
-                south_position = util.by_pixel(0, 62.5),
-                east_position = util.by_pixel(0, 62.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 224,
-                    animation_speed = 0.5,
-                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                }
-            },
-            {
-                north_position = util.by_pixel(0, -177.5),
-                west_position = util.by_pixel(0, -177.5),
-                south_position = util.by_pixel(0, -177.5),
-                east_position = util.by_pixel(0, -177.5),
-                animation = {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
-                    --priority = "low",
-                    frame_count = 50,
-                    line_length = 8,
-                    width = 224,
-                    height = 256,
-                    animation_speed = 0.5,
-                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-                }
-            },
-        },
-        animation = {
-            layers = {
+        energy_usage = (300 + (200 * i)) .. "kW",
+        tall = true,
+        graphics_set = {
+            working_visualisations = {
                 {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62)
+                    north_position = util.by_pixel(0, 62.5),
+                    west_position = util.by_pixel(0, 62.5),
+                    south_position = util.by_pixel(0, 62.5),
+                    east_position = util.by_pixel(0, 62.5),
+                    animation = {
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot.png",
+                        -- priority = "low",
+                        frame_count = 50,
+                        line_length = 8,
+                        width = 224,
+                        height = 224,
+                        animation_speed = 0.5
+                    }
                 },
                 {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
-                    width = 448,
-                    height = 551,
-                    frame_count = 1,
-                    shift = util.by_pixel(16, -62),
-                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                    north_position = util.by_pixel(0, 62.5),
+                    west_position = util.by_pixel(0, 62.5),
+                    south_position = util.by_pixel(0, 62.5),
+                    east_position = util.by_pixel(0, 62.5),
+                    animation = {
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/bot-mask.png",
+                        -- priority = "low",
+                        frame_count = 50,
+                        line_length = 8,
+                        width = 224,
+                        height = 224,
+                        animation_speed = 0.5,
+                        tint = py.tints[i]
+                    }
                 },
+                {
+                    north_position = util.by_pixel(0, -177.5),
+                    west_position = util.by_pixel(0, -177.5),
+                    south_position = util.by_pixel(0, -177.5),
+                    east_position = util.by_pixel(0, -177.5),
+                    animation = {
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top.png",
+                        -- priority = "low",
+                        frame_count = 50,
+                        line_length = 8,
+                        width = 224,
+                        height = 256,
+                        animation_speed = 0.5
+                    }
+                },
+                {
+                    north_position = util.by_pixel(0, -177.5),
+                    west_position = util.by_pixel(0, -177.5),
+                    south_position = util.by_pixel(0, -177.5),
+                    east_position = util.by_pixel(0, -177.5),
+                    animation = {
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/top-mask.png",
+                        -- priority = "low",
+                        frame_count = 50,
+                        line_length = 8,
+                        width = 224,
+                        height = 256,
+                        animation_speed = 0.5,
+                        tint = py.tints[i]
+                    }
+                }
+            },
+            animation = {
+                layers = {
+                    {
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mk01.png",
+                        width = 448,
+                        height = 551,
+                        frame_count = 1,
+                        shift = util.by_pixel(16, -62)
+                    },
+                    {
+                        filename = "__pypetroleumhandlinggraphics__/graphics/entity/heavy-oil-refinery-mk01/off-mask.png",
+                        width = 448,
+                        height = 551,
+                        frame_count = 1,
+                        shift = util.by_pixel(16, -62),
+                        tint = py.tints[i]
+                    }
+                }
             }
         },
-    },
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, -6.0}, direction = defines.direction.north}}
+        fluid_boxes_off_when_no_fluid_recipe = false,
+        fluid_boxes = { -- 1
+            {
+                production_type = "input",
+                pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+                pipe_covers = py.pipe_covers(false, true, true, true),
+                volume = 100,
+                pipe_connections = {{flow_direction = "input", position = {0, -6.0}, direction = defines.direction.north}}
+            },
+            {
+                production_type = "input",
+                pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+                pipe_covers = py.pipe_covers(false, true, true, true),
+                volume = 100,
+                pipe_connections = {{flow_direction = "input", position = {0, 6.0}, direction = defines.direction.south}}
+            },
+            {
+                production_type = "output",
+                pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+                pipe_covers = py.pipe_covers(false, true, true, true),
+                volume = 100,
+                pipe_connections = {{flow_direction = "output", position = {-6.0, 0}, direction = defines.direction.west}}
+            },
+            {
+                production_type = "output",
+                pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+                pipe_covers = py.pipe_covers(false, true, true, true),
+                volume = 100,
+                pipe_connections = {{flow_direction = "output", position = {6.0, 0}, direction = defines.direction.east}}
+            }
         },
-        {
-            production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0, 6.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-6.0, 0}, direction = defines.direction.west}}
-        },
-        {
-            production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
-            pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {6.0, 0}, direction = defines.direction.east}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 0.3},
+        impact_category = "metal-large",
+        working_sound = {
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 1.7},
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/hor.ogg", volume = 0.3}
+        }
     }
-}
+end
