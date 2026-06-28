@@ -53,6 +53,7 @@ ENTITY {
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
+    tall = true,
     pictures = {
         picture = {
             sheet = {

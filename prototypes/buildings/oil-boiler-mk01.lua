@@ -118,6 +118,7 @@ ENTITY {
         },
         max_sounds_per_prototype = 3
     },
+    tall = true,
     pictures = {
         north = {
             structure = {

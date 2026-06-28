@@ -154,6 +154,7 @@ for i = 1, 4 do
                 pipe_connections = {{flow_direction = "output", position = {6.0, -2.0}, direction = defines.direction.east}}
             },
         },
+        tall = true,
         graphics_set = {
             animation = {
                 layers = {

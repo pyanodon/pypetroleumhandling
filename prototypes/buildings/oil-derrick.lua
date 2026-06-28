@@ -337,6 +337,7 @@ for i = 1, 4 do
         circuit_connector = circuit_connector_definitions["oil-derrick-mk01"],
         circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
         monitor_visualization_tint = {r = 78, g = 173, b = 255},
+        tall = i == 2 or i == 3,
         graphics_set = graphic_sets_per_tier[i],
         impact_category = "metal-large",
         working_sound = {
