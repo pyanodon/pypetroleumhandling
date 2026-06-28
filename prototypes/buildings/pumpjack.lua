@@ -15,97 +15,6 @@ RECIPE {
     }
 }:add_unlock("drilling-fluid-mk01")
 
-ITEM {
-    type = "item",
-    name = "pumpjack-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk01.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk01",
-    order = "b",
-    place_result = "pumpjack-mk01",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "pumpjack-mk01",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk01.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "pumpjack-mk01"},
-    fast_replaceable_group = "pumpjack",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
-    selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
-    module_slots = 1,
-    allowed_effects = {"speed", "consumption"},
-    crafting_categories = {"pumpjack"},
-    crafting_speed = 1,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 2
-        },
-    },
-    energy_usage = "250kW",
-    graphics_set = {
-        animation = {
-            layers = {
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack.png",
-                    width = 1770 / 10,
-                    height = 1070 / 5,
-                    line_length = 10,
-                    frame_count = 50,
-                    shift = {-0.2, -0.3},
-                    animation_speed = 0.4,
-                },
-                {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
-                    width = 217,
-                    height = 165,
-                    line_length = 8,
-                    frame_count = 50,
-                    animation_speed = 0.4,
-                    draw_as_shadow = true,
-                    shift = util.by_pixel(11, 15)
-                },
-            }
-        },
-    },
-
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "output",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-0.5, 2.5}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {0.5, -2.5}, direction = defines.direction.north}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.8},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.3},
-    }
-}
 RECIPE {
     type = "recipe",
     name = "pumpjack-mk02",
@@ -123,44 +32,67 @@ RECIPE {
     }
 }:add_unlock("oil-machines-mk02")
 
-ITEM {
-    type = "item",
-    name = "pumpjack-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk02.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk02",
-    order = "b",
-    place_result = "pumpjack-mk02",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "pumpjack-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk02.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "pumpjack-mk02"},
-    fast_replaceable_group = "pumpjack",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
-    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    module_slots = 2,
-    allowed_effects = {"speed", "consumption"},
-    crafting_categories = {"pumpjack"},
-    crafting_speed = 2,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 2
-        },
+RECIPE {
+    type = "recipe",
+    name = "pumpjack-mk03",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+        {type = "item", name = "pumpjack-mk02",        amount = 1},
+        {type = "item", name = "pipe",                 amount = 40},
+        {type = "item", name = "processing-unit",      amount = 10},
+        {type = "item", name = "small-parts-03",       amount = 40},
+        {type = "item", name = "electric-engine-unit", amount = 5},
     },
-    energy_usage = "450kW",
-    graphics_set = {
+    results = {
+        {type = "item", name = "pumpjack-mk03", amount = 1}
+    }
+}:add_unlock("oil-machines-mk03")
+
+RECIPE {
+    type = "recipe",
+    name = "pumpjack-mk04",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+        {type = "item", name = "pumpjack-mk03",         amount = 1},
+        {type = "item", name = "nbfe-alloy",            amount = 30},
+        {type = "item", name = "concrete",              amount = 35},
+        {type = "item", name = "low-density-structure", amount = 30},
+        {type = "item", name = "small-parts-03",        amount = 40},
+    },
+    results = {
+        {type = "item", name = "pumpjack-mk04", amount = 1}
+    }
+}:add_unlock("oil-machines-mk04")
+
+local graphic_set_per_tier = {
+    {
+        animation = {
+            layers = {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack.png",
+                    width = 1770 / 10,
+                    height = 1070 / 5,
+                    line_length = 10,
+                    frame_count = 50,
+                    shift = {-0.2, -0.3},
+                    animation_speed = 0.4
+                },
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/pumpjack-mk01/small-pumpjack-sh.png",
+                    width = 217,
+                    height = 165,
+                    line_length = 8,
+                    frame_count = 50,
+                    animation_speed = 0.4,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(11, 15)
+                }
+            }
+        }
+    },
+    {
         animation = {
             layers = {
                 {
@@ -180,94 +112,11 @@ ENTITY {
                     frame_count = 100,
                     animation_speed = 0.4,
                     shift = util.by_pixel(77, -32)
-                },
+                }
             }
-        },
+        }
     },
-
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "output",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-1.0, 3.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {1.0, -3.0}, direction = defines.direction.north}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.8},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk01.ogg", volume = 0.3},
-    }
-}
-RECIPE {
-    type = "recipe",
-    name = "pumpjack-mk03",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-        {type = "item", name = "pumpjack-mk02",        amount = 1},
-        {type = "item", name = "pipe",                 amount = 40},
-        {type = "item", name = "processing-unit",      amount = 10},
-        {type = "item", name = "small-parts-03",       amount = 40},
-        {type = "item", name = "electric-engine-unit", amount = 5},
-    },
-    results = {
-        {type = "item", name = "pumpjack-mk03", amount = 1}
-    }
-}:add_unlock("oil-machines-mk03")
-
-ITEM {
-    type = "item",
-    name = "pumpjack-mk03",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk03.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk03",
-    order = "b",
-    place_result = "pumpjack-mk03",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "pumpjack-mk03",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk03.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "pumpjack-mk03"},
-    fast_replaceable_group = "pumpjack",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-4.4, -4.4}, {4.4, 4.4}},
-    selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
-    module_slots = 3,
-    allowed_effects = {"speed", "consumption"},
-    crafting_categories = {"pumpjack"},
-    crafting_speed = 3,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 2
-        },
-    },
-    energy_usage = "650kW",
-    graphics_set = {
+    {
         animation = {
             layers = {
                 {
@@ -305,116 +154,11 @@ ENTITY {
                     frame_count = 100,
                     animation_speed = 0.4,
                     shift = util.by_pixel(160, -50)
-                },
+                }
             }
-        },
+        }
     },
-
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "output",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-3.0, 4.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {3.0, -4.0}, direction = defines.direction.north}}
-        },
-    },
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk02.ogg", volume = 0.8},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk02.ogg", volume = 0.3},
-    }
-}
-RECIPE {
-    type = "recipe",
-    name = "pumpjack-mk04",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-        {type = "item", name = "pumpjack-mk03",         amount = 1},
-        {type = "item", name = "nbfe-alloy",            amount = 30},
-        {type = "item", name = "concrete",              amount = 35},
-        {type = "item", name = "low-density-structure", amount = 30},
-        {type = "item", name = "small-parts-03",        amount = 40},
-    },
-    results = {
-        {type = "item", name = "pumpjack-mk04", amount = 1}
-    }
-}:add_unlock("oil-machines-mk04")
-
-ITEM {
-    type = "item",
-    name = "pumpjack-mk04",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk04.png",
-    icon_size = 64,
-    flags = {},
-    subgroup = "py-petroleum-handling-buildings-mk04",
-    order = "b",
-    place_result = "pumpjack-mk04",
-    stack_size = 10
-}
-
-ENTITY {
-    type = "assembling-machine",
-    name = "pumpjack-mk04",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk04.png",
-    icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "pumpjack-mk04"},
-    fast_replaceable_group = "pumpjack",
-    max_health = 100,
-    corpse = "medium-remnants",
-    dying_explosion = "big-explosion",
-    collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
-    selection_box = {{-5.5, -5.5}, {5.5, 5.5}},
-    module_slots = 4,
-    allowed_effects = {"speed", "consumption"},
-    crafting_categories = {"pumpjack"},
-    crafting_speed = 4,
-    energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = {
-            pollution = 3
-        },
-    },
-    energy_usage = "750kW",
-    fluid_boxes_off_when_no_fluid_recipe = false,
-    fluid_boxes = {
-        --1
-        {
-            production_type = "output",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {-3.0, 5.0}, direction = defines.direction.south}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = py.sexy_pipe_pictures(),
-            pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
-            pipe_covers = pipecoverspictures(),
-            secondary_draw_orders = {north = -1, east = -1, west = -1},
-            volume = 100,
-            pipe_connections = {{flow_direction = "input", position = {3.0, -5.0}, direction = defines.direction.north}}
-        },
-    },
-    graphics_set = {
+    {
         animation = {
             layers = {
                 {
@@ -533,14 +277,109 @@ ENTITY {
                     frame_count = 150,
                     animation_speed = 0.4,
                     shift = util.by_pixel(216, -23)
-                },
+                }
+            }
+        }
+    },
+}
+
+local collision_boxes_per_tier = {
+    {{-2.9, -2.9}, {2.9, 2.9}},
+    {{-3.4, -3.4}, {3.4, 3.4}},
+    {{-4.4, -4.4}, {4.4, 4.4}},
+    {{-5.4, -5.4}, {5.4, 5.4}},
+}
+
+local selection_boxes_per_tier = {
+    {{-3.0, -3.0}, {3.0, 3.0}},
+    {{-3.5, -3.5}, {3.5, 3.5}},
+    {{-4.5, -4.5}, {4.5, 4.5}},
+    {{-5.5, -5.5}, {5.5, 5.5}},
+}
+
+local output_pipe_pos_per_tier = {
+    {-0.5, 2.5},
+    {-1.0, 3.0},
+    {-3.0, 4.0},
+    {-3.0, 5.0},
+}
+
+local input_pipe_pos_per_tier = {
+    {0.5, -2.5},
+    {1.0, -3.0},
+    {3.0, -4.0},
+    {3.0, -5.0},
+}
+
+local sound_indexes = {1, 1, 2, 2}
+
+local usage_table = {250,450,650,750}
+
+for i = 1, 4 do
+    local name = "pumpjack-mk0" .. i
+    local icon = "__pypetroleumhandlinggraphics__/graphics/icons/pumpjack-mk0" .. i .. ".png"
+    local icon_size = 64
+
+    ITEM {
+        type = "item",
+        name = name,
+        icon = icon,
+        icon_size = icon_size,
+        flags = {},
+        subgroup = "py-petroleum-handling-buildings-mk0" .. i,
+        order = "b",
+        place_result = name,
+        stack_size = 10
+    }
+
+    ENTITY {
+        type = "assembling-machine",
+        name = name,
+        icon = icon,
+        icon_size = icon_size,
+        flags = {"placeable-neutral", "player-creation"},
+        minable = {mining_time = 0.5, result = name},
+        max_health = 100,
+        corpse = "medium-remnants",
+        dying_explosion = "big-explosion",
+        collision_box = collision_boxes_per_tier[i],
+        selection_box = selection_boxes_per_tier[i],
+        module_slots = i,
+        allowed_effects = {"speed", "consumption"},
+        crafting_categories = {"pumpjack"},
+        crafting_speed = i,
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+            emissions_per_minute = {pollution = 2 or i == 4 and 3}
+        },
+        energy_usage = usage_table[i] .. "kW",
+        graphics_set = graphic_set_per_tier[i],
+        fluid_boxes_off_when_no_fluid_recipe = false,
+        fluid_boxes = { -- 1
+            {
+                production_type = "output",
+                pipe_picture = py.sexy_pipe_pictures(),
+                pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
+                pipe_covers = pipecoverspictures(),
+                secondary_draw_orders = {north = -1, east = -1, west = -1},
+                volume = 100,
+                pipe_connections = {{flow_direction = "output", position = output_pipe_pos_per_tier[i], direction = defines.direction.south}}
+            },
+            {
+                production_type = "input",
+                pipe_picture = py.sexy_pipe_pictures(),
+                pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
+                pipe_covers = pipecoverspictures(),
+                secondary_draw_orders = {north = -1, east = -1, west = -1},
+                volume = 100,
+                pipe_connections = {{flow_direction = "input", position = input_pipe_pos_per_tier[i], direction = defines.direction.north}}
             }
         },
-    },
-
-    impact_category = "metal-large",
-    working_sound = {
-        sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk02.ogg", volume = 0.8},
-        idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk02.ogg", volume = 0.3},
+        impact_category = "metal-large",
+        working_sound = {
+            sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk0" .. sound_indexes[i] .. ".ogg", volume = 0.8}, --lazy implementation via indexes, idk how to "if" this parameter properly
+            idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/pumpjack-mk0" .. sound_indexes[i] .. ".ogg",volume = 0.3}
+        }
     }
-}
+end
