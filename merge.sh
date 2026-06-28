@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # friendly name used in commit messages
-tn="cracker"
+tn="gas-refinery"
 # branch name suffix
-bn="cracker-merge"
+bn="gas-refinery"
 # output file path, mk01-mk04 should be the same thing with the mk suffix
-fn="./prototypes/buildings/cracker"
+fn="./prototypes/buildings/gas-refinery"
 # extension
 ext=".lua"
 
