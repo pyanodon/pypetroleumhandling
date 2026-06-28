@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # friendly name used in commit messages
-tn="gas-refinery"
+tn="heavy-oil-refinery"
 # branch name suffix
-bn="gas-refinery"
+bn="heavy-oil-refinery"
 # output file path, mk01-mk04 should be the same thing with the mk suffix
-fn="./prototypes/buildings/gas-refinery"
+fn="./prototypes/buildings/heavy-oil-refinery"
 # extension
 ext=".lua"
 
@@ -51,4 +51,5 @@ gh pr create --title "Merge $tn into a single file" --body "Preserves blame hist
 git branch -d "$bn-1"
 git branch -d "$bn-2"
 git branch -d "$bn-3"
+git branch -d "$bn-4"
 
