@@ -90,7 +90,6 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "oil-sand-extractor",
-        next_upgrade = i ~= 4 and "oil-sand-extractor-mk0" .. (i + 1) or nil,
         max_health = 700,
         resource_categories = {"oil-sand"},
         corpse = "big-remnants",
