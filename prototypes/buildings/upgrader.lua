@@ -147,7 +147,7 @@ for i = 1, 4 do
                         height = 352,
                         line_length = 16,
                         frame_count = 80,
-                        animation_speed = 0.6-i,
+                        animation_speed = 0.6 - (i * 0.1),
                         shift = util.by_pixel(-48, -64)
                     },
                     {
@@ -156,7 +156,7 @@ for i = 1, 4 do
                         height = 352,
                         line_length = 16,
                         frame_count = 80,
-                        animation_speed = 0.6-i,
+                        animation_speed = 0.6 - (i * 0.1),
                         shift = util.by_pixel(-48, -64),
                         tint = py.tints[i]
                     },
@@ -166,7 +166,7 @@ for i = 1, 4 do
                         height = 352,
                         line_length = 16,
                         frame_count = 80,
-                        animation_speed = 0.6-i,
+                        animation_speed = 0.6 - (i * 0.1),
                         shift = util.by_pixel(80, -64)
                     },
                     {
@@ -175,7 +175,7 @@ for i = 1, 4 do
                         height = 352,
                         line_length = 16,
                         frame_count = 80,
-                        animation_speed = 0.6-i,
+                        animation_speed = 0.6 - (i * 0.1),
                         shift = util.by_pixel(80, -64),
                         tint = py.tints[i]
                     },
