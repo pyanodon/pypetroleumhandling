@@ -339,6 +339,7 @@ for i = 1, 4 do
         icon_size = icon_size,
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
+        fast_replaceable_group = "pumpjack",
         max_health = 100,
         corpse = "medium-remnants",
         dying_explosion = "big-explosion",
@@ -351,7 +352,7 @@ for i = 1, 4 do
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions_per_minute = {pollution = 2 or i == 4 and 3}
+            emissions_per_minute = {pollution = i < 4 and 2 or 3}
         },
         energy_usage = usage_table[i] .. "kW",
         graphics_set = graphic_set_per_tier[i],

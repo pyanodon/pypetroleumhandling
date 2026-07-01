@@ -66,6 +66,7 @@ RECIPE {
 }:add_unlock("oil-machines-mk04")
 
 local usage_table = {600, 600, 800, 1000}
+local animation_table = {0.5, 0.3, 0.2, 0.1}
 
 for i = 1, 4 do
     local name = "cracker-mk0" .. i
@@ -121,7 +122,7 @@ for i = 1, 4 do
                         line_length = 10,
                         width = 64,
                         height = 96,
-                        animation_speed = 0.1
+                        animation_speed = animation_table[i]
                     }
                 }
             },

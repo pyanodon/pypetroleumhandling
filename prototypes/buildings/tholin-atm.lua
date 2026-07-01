@@ -159,7 +159,7 @@ for i = 1, 4 do
                         height = 64,
                         line_length = 6,
                         frame_count = 58,
-                        animation_speed = 0.3,
+                        animation_speed = 0.35,
                         shift = util.by_pixel(21, -208)
                     },
                     {
