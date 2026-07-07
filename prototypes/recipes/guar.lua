@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "guar-01",
-    category = "guar",
+    categories = {"guar"},
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "guar-02",
-    category = "guar",
+    categories = {"guar"},
     enabled = false,
     energy_required = 80,
     ingredients = {
@@ -40,7 +40,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "guar-03",
-    category = "guar",
+    categories = {"guar"},
     enabled = false,
     energy_required = 80,
     ingredients = {
@@ -61,7 +61,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "guar-separation",
-    category = "solid-separator",
+    categories = {"solid-separator"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -79,7 +79,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "guar-gum",
-    category = "ball-mill",
+    categories = {"ball-mill"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -92,4 +92,4 @@ RECIPE {
     main_product = "guar-gum",
     subgroup = "py-petroleum-handling-recipes",
     order = "a",
-}:add_unlock("guar"):change_category("pulp")
+}:add_unlock("guar"):replace_category("ball-mill", "pulp")

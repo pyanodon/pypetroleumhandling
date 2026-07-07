@@ -31,7 +31,6 @@ ENTITY {
             {type = "item", name = "oil-sand", amount = 1}
         },
     },
-    starting_area = true,
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings {

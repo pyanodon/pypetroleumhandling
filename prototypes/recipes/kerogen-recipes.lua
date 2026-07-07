@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-extraction",
     enabled = true,
-    category = "kerogen",
+    categories = {"kerogen"},
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "steam",   amount = 100, minimum_temperature = 250},
@@ -21,7 +21,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-natural-gas",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = true,
     energy_required = 4,
     ingredients = {
@@ -41,7 +41,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-light-oil",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = true,
     energy_required = 4,
     ingredients = {
@@ -62,7 +62,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-naphtha",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = true,
     energy_required = 4,
     ingredients = {
@@ -83,7 +83,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-sulfur-scrude",
-    category = "desulfurization",
+    categories = {"desulfurization"},
     enabled = true,
     energy_required = 4,
     ingredients = {

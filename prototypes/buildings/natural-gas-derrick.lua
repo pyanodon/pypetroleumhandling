@@ -161,7 +161,7 @@ for i = 1, 4 do
             usage_priority = "secondary-input"
         },
         output_fluid_box = {
-            volume = 1000,
+            volume = 100,
             pipe_connections = {
                 {flow_direction = "output", position = {0, -3.0}, direction = defines.direction.north},
                 {flow_direction = "output", position = {3.0, 0},  direction = defines.direction.east},
@@ -242,7 +242,6 @@ for i = 1, 4 do
         impact_category = "metal-large",
         working_sound = {
             sound = {filename = "__pypetroleumhandlinggraphics__/sounds/gas-extractor.ogg", volume = 0.3},
-            apparent_volume = 0.5
         },
         fast_replaceable_group = "natural-gas-derrick",
     }
@@ -275,7 +274,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {-2, 3.0}, direction = defines.direction.south}}
             },
@@ -283,7 +282,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {-2, -3.0}, direction = defines.direction.north}}
             },
@@ -291,7 +290,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {2, -3.0}, direction = defines.direction.north}}
             },
@@ -299,7 +298,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 1000,
+                volume = 100,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {2, 3.0}, direction = defines.direction.south}}
             },

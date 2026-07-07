@@ -17,7 +17,7 @@ if mods["pyrawores"] then
 RECIPE {
     type = "recipe",
     name = "hot-reaction-gas",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -38,7 +38,7 @@ else
     RECIPE {
         type = "recipe",
         name = "hot-reaction-gas",
-        category = "lor",
+        categories = {"lor"},
         enabled = false,
         energy_required = 4,
         ingredients = {

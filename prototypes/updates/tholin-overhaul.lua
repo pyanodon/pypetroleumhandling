@@ -12,7 +12,7 @@ RECIPE {
     name = "tholin-capsule",
     energy_required = 5,
     enabled = false,
-    category = "crafting",
+    categories = {"crafting"},
     ingredients =
     {
         {type = "item", name = "low-density-structure",       amount = 20},
@@ -35,7 +35,7 @@ RECIPE {
 local lds = RECIPE {
     type = "recipe",
     name = "low-density-structure",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     energy_required = 20,
     enabled = false,
     ingredients =
@@ -55,7 +55,7 @@ local rocket_fuel = RECIPE {
     name = "rocket-fuel",
     energy_required = 20,
     enabled = false,
-    category = "hor",
+    categories = {"hor"},
     ingredients =
     {
         {type = "fluid", name = "olefin",   amount = 75},
@@ -73,7 +73,7 @@ RECIPE {
     energy_required = 3,
     enabled = false,
     hidden = true,
-    category = "rocket-building",
+    categories = {"rocket-building"},
     ingredients =
     {
         {type = "item", name = "speed-module",          amount = 1},
@@ -125,7 +125,7 @@ data.raw["rocket-silo"]["rocket-silo"].to_be_inserted_to_rocket_inventory_size =
 RECIPE {
     type = "recipe",
     name = "empty-proto-tholins-vessel",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 20,
     ingredients = {
@@ -140,7 +140,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "fill-proto-tholins-vessel",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -156,7 +156,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "empty-tholins-vessel",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 1,
     ingredients = {

@@ -3,7 +3,7 @@
 RECIPE {
     type = "recipe",
     name = "warm-stone-brick-1",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -30,7 +30,7 @@ data.raw.recipe["coke-coal"].results =
 RECIPE {
     type = "recipe",
     name = "warmer-stone-brick-1",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -52,7 +52,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warm-stone-brick-2",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -73,7 +73,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warmer-stone-brick-2",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -94,7 +94,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "hot-stone-brick",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -115,7 +115,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warm-air-1",
-    category = "rhe",
+    categories = {"rhe"},
     --hidden = true,
     enabled = false,
     energy_required = 2,
@@ -137,7 +137,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warmer-air-2",
-    category = "rhe",
+    categories = {"rhe"},
     --hidden = true,
     enabled = false,
     energy_required = 2,
@@ -159,7 +159,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "hot-air-3",
-    category = "rhe",
+    categories = {"rhe"},
     --hidden = true,
     enabled = false,
     energy_required = 2,
@@ -183,7 +183,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "reheat-coke-gas",
-    category = "heat-exchanger",
+    categories = {"heat-exchanger"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -203,7 +203,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "reheat-outlet-gas-1",
-    category = "heat-exchanger",
+    categories = {"heat-exchanger"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -223,7 +223,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "reheat-outlet-gas-2",
-    category = "heat-exchanger",
+    categories = {"heat-exchanger"},
     enabled = false,
     energy_required = 4,
     ingredients = {

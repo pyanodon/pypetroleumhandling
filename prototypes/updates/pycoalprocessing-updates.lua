@@ -71,7 +71,7 @@ end
 RECIPE {
     type = "recipe",
     name = "tar-quenching",
-    category = "quenching-tower",
+    categories = {"quenching-tower"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -175,7 +175,7 @@ RECIPE("mining-niobium"):remove_unlock("excavation-2"):add_unlock("excavation-3"
 RECIPE {
     type = "recipe",
     name = "fuel-oil-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -197,7 +197,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -218,7 +218,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -240,7 +240,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -262,7 +262,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "crude-oil-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -284,7 +284,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphtha-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -306,7 +306,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "lubricant-combustion",
-    category = "combustion",
+    categories = {"combustion"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -329,7 +329,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-olefin-scrude",
-    category = "desulfurization",
+    categories = {"desulfurization"},
     enabled = false,
     energy_required = 4,
     ingredients = {

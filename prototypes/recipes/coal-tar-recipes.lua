@@ -1,8 +1,8 @@
 RECIPE {
     type = "recipe",
     name = "carbon-black",
-    category = "reformer",
-    --category = "distilator",
+    categories = {"reformer"},
+    --categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -22,8 +22,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "anthraquinone-from-anthracene",
-    --category = "reformer",
-    category = "distilator",
+    --categories = {"reformer"},
+    categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -43,8 +43,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "carbolic-oil-creosote",
-    --category = "reformer",
-    category = "tar",
+    --categories = {"reformer"},
+    categories = {"tar"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -69,7 +69,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stone-brick-2",
-    category = "hpf",
+    categories = {"hpf"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -87,8 +87,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphthalene-oil-creosote",
-    --category = "reformer",
-    category = "tar",
+    --categories = {"reformer"},
+    categories = {"tar"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -112,8 +112,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-from-naphthalene",
-    --category = "reformer",
-    category = "distilator",
+    --categories = {"reformer"},
+    categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -132,7 +132,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "anthraquinone-from-naphthalene",
-    category = "reformer",
+    categories = {"reformer"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -150,8 +150,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphthalene-solvent",
-    --category = "reformer",
-    category = "distilator",
+    --categories = {"reformer"},
+    categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -171,8 +171,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "light-oil-aromatics",
-    --category = "reformer",
-    category = "distilator",
+    --categories = {"reformer"},
+    categories = {"distilator"},
     enabled = false,
     energy_required = 2,
     ingredients = {

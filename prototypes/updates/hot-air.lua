@@ -23,7 +23,7 @@ local function hotairrecipes(extra_recipes)
 
     --gather recipes for the casting unit
     for _, recipe in pairs(data.raw.recipe) do
-        if recipe.category == "casting" and not hab[recipe.name] then
+        if recipe:has_category("casting") and not hab[recipe.name] then
             table.insert(afrecipes, table.deepcopy(recipe))
         end
     end
@@ -42,7 +42,7 @@ local function hotairrecipes(extra_recipes)
 
         --add ingredient
         local result = recipe.main_product or recipe.results[1].name
-        local index = recipe.category == "glassworks" and 3 or nil
+        local index = recipe:has_category("glassworks") and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
             if data.raw.item["solid-hot-air"] ~= nil then
@@ -50,7 +50,7 @@ local function hotairrecipes(extra_recipes)
             else
                 table.insert(
                     recipe.ingredients,
-                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index} -- TODO: Compare to 2.0
                 )
             end
         elseif recipe.ingredients[2] ~= nil then
@@ -59,10 +59,18 @@ local function hotairrecipes(extra_recipes)
             else
                 table.insert(
                     recipe.ingredients,
-                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}  --TODO: Compare to 2.0
                 )
             end
         end
+        -- Fix the fluidbox indexing
+        -- if index == 3 then
+        --     for fb_index, ingredient in pairs(recipe.ingredients) do
+        --         if ingredient.type == "fluid" and not ingredient.fluidbox_index then
+        --             ingredient.fluidbox_index = fb_index
+        --         end
+        --     end
+        -- end
 
         --find tech unlock of og recipe
         local unlock, effect_index
@@ -81,7 +89,7 @@ local function hotairrecipes(extra_recipes)
         end
 
         -- to prod or not to prod
-        allow_productivity = false
+        local allow_productivity = false
         for _, ingredient in pairs(recipe.ingredients) do
             if ingredient.name == "mold" then
                 allow_productivity = true
@@ -99,15 +107,11 @@ local function hotairrecipes(extra_recipes)
 
         --log(serpent.block(recipe))
         local hname = "hotair-" .. recipe.name
-        local category
-        if recipe.category ~= nil then
-            category = recipe.category
-        end
         if recipe.results then
             RECIPE {
                 type = "recipe",
                 name = hname,
-                category = category,
+                categories = recipe.categories,
                 enabled = false,
                 energy_required = recipe.energy_required,
                 ingredients = recipe.ingredients,

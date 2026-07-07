@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.0
+Date: ???
+  Changes:
+    - Updated to Factorio 2.1
+    - Removed unnecessary prototype values to clear up the log
+    - Fixed that you could abuse bitumen seep drilling by changing drilling tiers last minute. Resolves https://github.com/pyanodon/pybugreports/issues/1483
+    - Updated bitumen seep resource formulae. See codex for more info, only the English translation has been updated.
+    - Updated vector_to_place_result so items shouldn't drop on the floor. Resolves https://github.com/pyanodon/pybugreports/issues/1486
+    - Fixed that many buildings did not have certain pipe covers rendered
+    - Reduced most fluidbox sizes from 1000 to 100
+    - Added the following entities to be hidden when visibility of tall entities is toggled: heavy oil refinery, oil burner, reformer, 90k tank, ionic upgrader
+---------------------------------------------------------------------------------------------------
 Version: 3.0.23
 Date: 2026-06-08
   Changes:
