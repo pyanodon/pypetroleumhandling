@@ -96,6 +96,7 @@ for i = 1, 4 do
         dying_explosion = "big-explosion",
         collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
         selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+        use_mirroring = true,
         fixed_recipe = "proto-tholins",
         --fixed_recipe = "tholins",
         module_slots = i,

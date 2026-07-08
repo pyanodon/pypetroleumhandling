@@ -345,6 +345,7 @@ for i = 1, 4 do
         dying_explosion = "big-explosion",
         collision_box = collision_boxes_per_tier[i],
         selection_box = selection_boxes_per_tier[i],
+        use_mirroring = true,
         module_slots = i,
         allowed_effects = {"speed", "consumption"},
         crafting_categories = {"pumpjack"},
