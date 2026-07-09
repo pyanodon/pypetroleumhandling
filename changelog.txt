@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.1
-Date: ????
+Date: 2026-07-09
   Changes:
     - Fixed bitumen seep resource formulae in the codex having the wrong multiplier
     - Restored mirroring for buildings
