@@ -111,6 +111,7 @@ for i = 1, 4 do
             emissions_per_minute = {pollution = 50},
         },
         energy_usage = usage_table[i] .. "kW",
+        tall = true,
         graphics_set = {
             working_visualisations = {
                 {
