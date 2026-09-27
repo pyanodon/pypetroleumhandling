@@ -9,7 +9,7 @@ RECIPE("mk02-fluid-wagon"):add_ingredient {type = "item", name = "rubber", amoun
 RECIPE("py-roboport-mk02"):add_ingredient {type = "item", name = "small-parts-02", amount = 20}
 RECIPE("py-roboport-mk03"):add_ingredient {type = "item", name = "small-parts-03", amount = 50}
 
-table.insert(RECIPE("ash-separation").results, {type = "item", name = "soot", amount = 1, independent_probability = 0.2})
+table.insert(RECIPE("ash-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "soot", amount = 1, independent_probability = 0.2})
 
 RECIPE {
     type = "recipe",

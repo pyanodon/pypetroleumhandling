@@ -1,3 +1,4 @@
+---@diagnostic disable
 for _, derrick in pairs(storage.oil_derricks) do
     derrick.drilling_fluid_amount = 1
     if derrick.drilling_fluid ~= "" then

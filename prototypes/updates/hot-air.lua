@@ -23,7 +23,7 @@ local function hotairrecipes(extra_recipes)
 
     --gather recipes for the casting unit
     for _, recipe in pairs(data.raw.recipe) do
-        if recipe:has_category("casting") and not hab[recipe.name] then
+        if RECIPE(recipe):has_category("casting") and not hab[recipe.name] then
             table.insert(afrecipes, table.deepcopy(recipe))
         end
     end
@@ -98,7 +98,7 @@ local function hotairrecipes(extra_recipes)
         end
         if allow_productivity then
             if unlock then
-                data.raw.recipe[recipe.name]:remove_unlock(unlock)
+                RECIPE(data.raw.recipe[recipe.name]):remove_unlock(unlock)
             end
             data.raw.recipe[recipe.name] = nil
         else
@@ -126,7 +126,7 @@ local function hotairrecipes(extra_recipes)
             --
             if recipe.enabled == false then
                 if unlock ~= nil then
-                    table.insert(data.raw.technology[unlock].effects, {type = "unlock-recipe", recipe = hname})
+                    table.insert(data.raw.technology[unlock].effects--[[@cast -?]], {type = "unlock-recipe", recipe = hname})
                 end
             else
                 data.raw.recipe[hname].enabled = true

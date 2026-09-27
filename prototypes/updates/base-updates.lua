@@ -1,6 +1,6 @@
 --add kerogen to stone patches
 if data.raw.resource.stone then
-    data.raw.resource["stone"].minable.results = {
+    data.raw.resource["stone"].minable--[[@cast -?]].results = {
         {type = "item", name = "stone",   amount = 1},
         {type = "item", name = "kerogen", amount = 1}
     }
@@ -46,11 +46,10 @@ local vanilla_techs_to_delete_recipes_from = {
 for _, tech_name in pairs(vanilla_techs_to_delete_recipes_from) do
     local tech = data.raw.technology[tech_name]
     local recipes_to_keep = {}
-    for _, recipe in pairs(tech.effects) do
+    for _, recipe in pairs(tech.effects--[[@cast -?]]) do
         if recipe.type == "unlock-recipe" then
             if remove_old_oil_stuff[recipe.recipe] then
                 recipe.hidden = true
-                recipe.hidden_in_factoriopedia = true
             else
                 table.insert(recipes_to_keep, recipe)
             end
@@ -59,6 +58,7 @@ for _, tech_name in pairs(vanilla_techs_to_delete_recipes_from) do
     tech.effects = recipes_to_keep
 end
 
+---@diagnostic disable-next-line: need-check-nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["crude-oil"] = nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["crude-oil"] = nil
 data.raw["autoplace-control"]["crude-oil"] = nil

@@ -1,3 +1,11 @@
+---@namespace PyCoalProcessing
+---@type PyCoalProcessingStorage
+storage = storage --[[@as PyCoalProcessingStorage]]
+
+---@class (partial) PyCoalProcessingStorage
+---@field first_chunk boolean
+---@field oil_derricks table
+
 -- This script manages oil seep resources, mining them, and transforming them from seeps to the appropriate type when depleted
 -- if you need the commented code that was here, go to git revision <= 4e9cd2f4bc7916ea438986d8037d63338463438e
 
@@ -242,13 +250,13 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         position = resource.position,
         limit = 1,
         type = "mining-drill"
-    }[1]
+    }[1]--[[@as LuaEntity]]
     local derrick = storage.oil_derricks[drill.unit_number]
     if not derrick then return end
 
     local prototype = derrick_types[drill.name]
     local drill_tier = drill.name:match("%d$") or 1
-    local new_patch_size = (prototype.rand_min and math.random(prototype.rand_min, prototype.rand_max) or
+    local new_patch_size = (prototype.rand_min and math.random(prototype.rand_min, prototype.rand_max--[[@cast -?]]) or
         prototype.rand_max and math.random(prototype.rand_max) or 1) *
         derrick.drilling_fluid_amount *
         drill_tier ^ (prototype.drill_tier_mult or 1) *
@@ -268,7 +276,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
     drill.update_connections()
 
     local fluid = prototype.fluid
-    drill.force.print {
+    drill.force--[[@as LuaForce]].print {
         prototype.alert,
         drill.name,
         add_commas_to_number(new_patch_size * 100),
@@ -276,7 +284,7 @@ script.on_event(defines.events.on_resource_depleted, function(event)
         drill.position.x,
         drill.position.y,
         drill.surface.name
-    }
+    }--[[@as LocalisedString]]
 
     if not prototype.explosion_radius then return end
     local oil_explosion = drill.surface.create_entity {
