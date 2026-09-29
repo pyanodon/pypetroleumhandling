@@ -214,7 +214,7 @@ ITEM {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/kerogen.png",
     icon_size = 32,
     flags = {},
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "2MJ",
     subgroup = "py-petroleum-handling-items",
     order = "a",
