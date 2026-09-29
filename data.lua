@@ -128,6 +128,9 @@ require "prototypes/fluids/naphthalene-oil"
 require "prototypes/fluids/pitch"
 require "prototypes/fluids/middle-oil"
 
+--mod-data
+require "prototypes/mod-data/bitumen"
+
 if mods["pyrawores"] then
     require "prototypes.fluids.purified-syngas"
     data.raw.fluid["purified-syngas"].fuel_value = "1MJ"
