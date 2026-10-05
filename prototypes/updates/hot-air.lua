@@ -42,7 +42,7 @@ local function hotairrecipes(extra_recipes)
 
         --add ingredient
         local result = recipe.main_product or recipe.results[1].name
-        local index = recipe:has_category("glassworks") and 3 or nil
+        local index = RECIPE(recipe):has_category("glassworks") and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
             if data.raw.item["solid-hot-air"] ~= nil then
@@ -98,11 +98,11 @@ local function hotairrecipes(extra_recipes)
         end
         if allow_productivity then
             if unlock then
-                RECIPE(data.raw.recipe[recipe.name]):remove_unlock(unlock)
+                RECIPE(recipe):remove_unlock(unlock)
             end
             data.raw.recipe[recipe.name] = nil
         else
-            recipe:multiply_result_amount(result, 1.25)
+            RECIPE(recipe):multiply_result_amount(result, 1.25)
         end
 
         --log(serpent.block(recipe))
