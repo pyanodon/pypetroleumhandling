@@ -36,6 +36,7 @@ RECIPE("utility-science-pack"):add_ingredient {type = "item", name = "small-part
 RECIPE("rail"):replace_ingredient("iron-stick", {type = "item", name = "bolts", amount = 4})
 RECIPE("iron-stick"):remove_unlock{"concrete", "circuit-network"}
 
+---@diagnostic disable-next-line: undefined-field
 if data.data_crawler then
     data.script_enabled = data.script_enabled or {}
     table.insert(data.script_enabled, "tar-patch")

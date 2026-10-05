@@ -111,7 +111,7 @@ data.raw.technology["rocket-silo"].prerequisites = {
     "low-density-structure"
 }
 
-data.raw.technology["rocket-silo"].unit.ingredients = {
+data.raw.technology["rocket-silo"].unit--[[@cast -?]].ingredients = {
     {"automation-science-pack", 1},
     {"logistic-science-pack",   1},
     {"chemical-science-pack",   1},

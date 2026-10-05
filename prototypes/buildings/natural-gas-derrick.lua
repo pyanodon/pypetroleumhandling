@@ -1,6 +1,6 @@
 local function pipe_picture()
     if not mods["pyhightechgraphics"] then
-        return py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes)
+        return py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, nil)
     end
 
     return {
