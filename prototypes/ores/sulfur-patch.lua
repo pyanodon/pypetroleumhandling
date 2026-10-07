@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: need-check-nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["sulfur-patch"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["sulfur-patch"] = {}
 

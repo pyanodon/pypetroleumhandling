@@ -126,7 +126,7 @@ local function hotairrecipes(extra_recipes)
             --
             if recipe.enabled == false then
                 if unlock ~= nil then
-                    table.insert(data.raw.technology[unlock].effects, {type = "unlock-recipe", recipe = hname})
+                    table.insert(data.raw.technology[unlock].effects--[[@cast -?]], {type = "unlock-recipe", recipe = hname})
                 end
             else
                 data.raw.recipe[hname].enabled = true

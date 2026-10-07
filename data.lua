@@ -175,23 +175,23 @@ if mods["pyrawores"] then
 else
     data.raw.fluid["hydrogen"].fuel_value = "20kJ"
 end
-
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "syngas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "refsyngas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "methanol", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "combustion-mixture1", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "oleochemicals", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "olefin", damage_modifier = 2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "btx", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "scrude", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "natural-gas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "fuel-oil", damage_modifier = 1.2})
+local flamethrower_ammo = data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids--[[@as data.StreamFluidProperties]]
+table.insert(flamethrower_ammo, {type = "syngas", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "refsyngas", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "methanol", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "combustion-mixture1", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "oleochemicals", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "olefin", damage_modifier = 2})
+table.insert(flamethrower_ammo, {type = "btx", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "scrude", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "natural-gas", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "fuel-oil", damage_modifier = 1.2})
 
 if mods["pyhightech"] then
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "methane", damage_modifier = 1.2})
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "benzene", damage_modifier = 1.2})
+    table.insert(flamethrower_ammo, {type = "methane", damage_modifier = 1.2})
+    table.insert(flamethrower_ammo, {type = "benzene", damage_modifier = 1.2})
 end
 
 if mods["pyalienlife"] then
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "ethanol", damage_modifier = 1.2})
+    table.insert(flamethrower_ammo, {type = "ethanol", damage_modifier = 1.2})
 end

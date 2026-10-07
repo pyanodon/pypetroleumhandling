@@ -155,9 +155,9 @@ RECIPE("hot-syngas-cooldown"):remove_unlock("coal-processing-3"):add_unlock("oil
 
 RECIPE("py-coal-tile"):remove_unlock("py-asphalt"):add_unlock("py-asphalt-mk02")
 
-table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-aluminium", amount = 1, independent_probability = 0.1})
-table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-zinc", amount = 1, independent_probability = 0.1})
-table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-lead", amount = 1, independent_probability = 0.1})
+table.insert(RECIPE("soot-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "ore-aluminium", amount = 1, independent_probability = 0.1})
+table.insert(RECIPE("soot-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "ore-zinc", amount = 1, independent_probability = 0.1})
+table.insert(RECIPE("soot-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "ore-lead", amount = 1, independent_probability = 0.1})
 
 RECIPE("rail-2"):add_ingredient {type = "item", name = "bolts", amount = 4}
 
