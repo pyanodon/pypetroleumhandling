@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "bitumen",
-    category = "mixer", --pyro flotation
+    categories = {"mixer"}, --pyro flotation
     enabled = false,
     energy_required = 4,
     ingredients = {

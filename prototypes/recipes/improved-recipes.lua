@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "transport-belt-2",
-    category = "crafting",
+    categories = {"crafting"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "fast-transport-belt-2",
-    category = "crafting",
+    categories = {"crafting"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -39,7 +39,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "express-transport-belt-2",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -59,7 +59,7 @@ RECIPE {
 local engine_unit_2 = RECIPE {
     type = "recipe",
     name = "engine-unit-2",
-    category = "advanced-crafting",
+    categories = {"advanced-crafting"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -81,7 +81,7 @@ if mods.pyrawores then engine_unit_2:replace_ingredient("steel-plate", "duralumi
 RECIPE {
     type = "recipe",
     name = "fast-inserter-2",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -102,7 +102,7 @@ RECIPE {
 local long_handed_inserter_2 = RECIPE {
     type = "recipe",
     name = "long-handed-inserter-2",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -124,7 +124,7 @@ if mods.pyrawores then long_handed_inserter_2:replace_ingredient("steel-plate", 
 local stack_inserter_2 = RECIPE {
     type = "recipe",
     name = "bulk-inserter-2",
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     energy_required = 8,
     ingredients = {

@@ -2,7 +2,7 @@
 RECIPE {
     type = "recipe",
     name = "refined-natural-gas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -22,7 +22,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "raw-gas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 4,
     ingredients = {

@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: need-check-nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["sulfur-patch"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["sulfur-patch"] = {}
 
@@ -70,7 +71,6 @@ data:extend {{
     tree_removal_probability = 0.7,
     tree_removal_max_distance = 32 * 32,
     autoplace = {
-        name = "sulfur-patch",
         order = "b-sulfur-patch",
         control = "sulfur-patch",
         -- We return the chance of spawning on any given tile here

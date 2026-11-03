@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "oil-sand-slurry",
-    category = "mixer", --pyro hydro
+    categories = {"mixer"}, --pyro hydro
     enabled = false,
     energy_required = 3,
     ingredients = {

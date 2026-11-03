@@ -3,7 +3,7 @@
 RECIPE {
     type = "recipe",
     name = "warm-stone-brick-1",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -12,7 +12,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warm-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas",    amount = 100, temperature = 100, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "coke-oven-gas",    amount = 100, temperature = 100, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warm-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -30,7 +30,7 @@ data.raw.recipe["coke-coal"].results =
 RECIPE {
     type = "recipe",
     name = "warmer-stone-brick-1",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -39,7 +39,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warmer-stone-brick", amount = 5},
-        {type = "fluid", name = "coke-oven-gas",      amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "coke-oven-gas",      amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warmer-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -52,7 +52,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warm-stone-brick-2",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -61,7 +61,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warm-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04",    amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "outlet-gas-04",    amount = 100, temperature = 250, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warm-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -73,7 +73,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warmer-stone-brick-2",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -82,7 +82,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "warmer-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04",      amount = 100, temperature = 500, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "outlet-gas-04",      amount = 100, temperature = 500, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "warmer-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -94,7 +94,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "hot-stone-brick",
-    category = "rhe",
+    categories = {"rhe"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -103,7 +103,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "hot-stone-brick", amount = 20},
-        {type = "fluid", name = "outlet-gas-04",   amount = 100, temperature = 750, ignored_by_stats = 100, ignored_by_productivity = 100},
+        {type = "fluid", name = "outlet-gas-04",   amount = 100, temperature = 750, ignored_by_stats = 100, ignored_by_productivity = 100, autotech_is_not_primary_source = true},
     },
     main_product = "hot-stone-brick",
     subgroup = "py-petroleum-handling-hot-air",
@@ -115,7 +115,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warm-air-1",
-    category = "rhe",
+    categories = {"rhe"},
     --hidden = true,
     enabled = false,
     energy_required = 2,
@@ -137,7 +137,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "warmer-air-2",
-    category = "rhe",
+    categories = {"rhe"},
     --hidden = true,
     enabled = false,
     energy_required = 2,
@@ -159,7 +159,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "hot-air-3",
-    category = "rhe",
+    categories = {"rhe"},
     --hidden = true,
     enabled = false,
     energy_required = 2,
@@ -183,7 +183,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "reheat-coke-gas",
-    category = "heat-exchanger",
+    categories = {"heat-exchanger"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -191,7 +191,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 50,  minimum_temperature = 500}
     },
     results = {
-        {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500, ignored_by_stats = 95, ignored_by_productivity = 95},
+        {type = "fluid", name = "coke-oven-gas", amount = 95, temperature = 500, ignored_by_stats = 95, ignored_by_productivity = 95, autotech_is_not_primary_source = true},
     },
     main_product = "coke-oven-gas",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
@@ -203,7 +203,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "reheat-outlet-gas-1",
-    category = "heat-exchanger",
+    categories = {"heat-exchanger"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -211,7 +211,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 75,  minimum_temperature = 750}
     },
     results = {
-        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750, ignored_by_stats = 95, ignored_by_productivity = 95},
+        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 750, ignored_by_stats = 95, ignored_by_productivity = 95, autotech_is_not_primary_source = true},
     },
     main_product = "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
@@ -223,7 +223,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "reheat-outlet-gas-2",
-    category = "heat-exchanger",
+    categories = {"heat-exchanger"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -231,7 +231,7 @@ RECIPE {
         {type = "fluid", name = "combustion-mixture1", amount = 100, minimum_temperature = 1000}
     },
     results = {
-        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000, ignored_by_stats = 95, ignored_by_productivity = 95},
+        {type = "fluid", name = "outlet-gas-04", amount = 95, temperature = 1000, ignored_by_stats = 95, ignored_by_productivity = 95, autotech_is_not_primary_source = true},
     },
     main_product = "outlet-gas-04",
     --icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",

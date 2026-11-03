@@ -23,7 +23,7 @@ local function hotairrecipes(extra_recipes)
 
     --gather recipes for the casting unit
     for _, recipe in pairs(data.raw.recipe) do
-        if recipe.category == "casting" and not hab[recipe.name] then
+        if RECIPE(recipe.name):has_category("casting") and not hab[recipe.name] then
             table.insert(afrecipes, table.deepcopy(recipe))
         end
     end
@@ -42,7 +42,16 @@ local function hotairrecipes(extra_recipes)
 
         --add ingredient
         local result = recipe.main_product or recipe.results[1].name
-        local index = recipe.category == "glassworks" and 3 or nil
+        local categories = recipe.categories
+        if not categories and recipe.category then categories = {recipe.category} end
+        local is_glassworks = false
+        for _, category in pairs(categories or {}) do
+            if category == "glassworks" then
+                is_glassworks = true
+                break
+            end
+        end
+        local index = is_glassworks and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
             if data.raw.item["solid-hot-air"] ~= nil then
@@ -64,6 +73,31 @@ local function hotairrecipes(extra_recipes)
             end
         end
 
+        local has_custom_index = false
+        for _, ingredient in pairs(recipe.ingredients) do
+            if ingredient.type == "fluid" and ingredient.fluidbox_index then
+                has_custom_index = true
+                break
+            end
+        end
+        if has_custom_index then
+            local used = {}
+            for _, ingredient in pairs(recipe.ingredients) do
+                if ingredient.type == "fluid" and ingredient.fluidbox_index then
+                    used[ingredient.fluidbox_index] = true
+                end
+            end
+            local next_index = 1
+            while used[next_index] do next_index = next_index + 1 end
+            for _, ingredient in pairs(recipe.ingredients) do
+                if ingredient.type == "fluid" and not ingredient.fluidbox_index then
+                    ingredient.fluidbox_index = next_index
+                    used[next_index] = true
+                    while used[next_index] do next_index = next_index + 1 end
+                end
+            end
+        end
+
         --find tech unlock of og recipe
         local unlock, effect_index
         for _, t in pairs(data.raw.technology) do
@@ -81,7 +115,7 @@ local function hotairrecipes(extra_recipes)
         end
 
         -- to prod or not to prod
-        allow_productivity = false
+        local allow_productivity = false
         for _, ingredient in pairs(recipe.ingredients) do
             if ingredient.name == "mold" then
                 allow_productivity = true
@@ -90,24 +124,18 @@ local function hotairrecipes(extra_recipes)
         end
         if allow_productivity then
             if unlock then
-                data.raw.recipe[recipe.name]:remove_unlock(unlock)
+                RECIPE(recipe.name):remove_unlock(unlock)
             end
             data.raw.recipe[recipe.name] = nil
-        else
-            recipe:multiply_result_amount(result, 1.25)
         end
 
         --log(serpent.block(recipe))
         local hname = "hotair-" .. recipe.name
-        local category
-        if recipe.category ~= nil then
-            category = recipe.category
-        end
         if recipe.results then
-            RECIPE {
+            local harecipe = RECIPE {
                 type = "recipe",
                 name = hname,
-                category = category,
+                categories = categories,
                 enabled = false,
                 energy_required = recipe.energy_required,
                 ingredients = recipe.ingredients,
@@ -119,10 +147,13 @@ local function hotairrecipes(extra_recipes)
                 order = recipe.order and (recipe.order .. "-a") or nil,
                 allow_productivity = allow_productivity,
             }
+            if not allow_productivity then
+                harecipe:multiply_result_amount(result, 1.25)
+            end
             --
             if recipe.enabled == false then
                 if unlock ~= nil then
-                    table.insert(data.raw.technology[unlock].effects, {type = "unlock-recipe", recipe = hname})
+                    table.insert(data.raw.technology[unlock].effects--[[@cast -?]], {type = "unlock-recipe", recipe = hname})
                 end
             else
                 data.raw.recipe[hname].enabled = true

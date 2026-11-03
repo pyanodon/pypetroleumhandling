@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "tar-to-oil",
-    category = "upgrader",
+    categories = {"upgrader"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-to-scrude",
-    category = "upgrader",
+    categories = {"upgrader"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -40,7 +40,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-natural-gas",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -60,7 +60,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-light-oil",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -81,7 +81,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-crude-oil",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -103,7 +103,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "heavy-oil-to-naphtha",
-    category = "olefin",
+    categories = {"olefin"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -122,7 +122,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "heavy-oil-to-gasoline",
-    category = "olefin",
+    categories = {"olefin"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -142,7 +142,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-sulfur-scrude",
-    category = "desulfurization",
+    categories = {"desulfurization"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -162,7 +162,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "carbon-black",
-    category = "reformer",
+    categories = {"reformer"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -182,7 +182,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "carbon-black-2",
-    category = "reformer",
+    categories = {"reformer"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -202,7 +202,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-to-heavycoke",
-    category = "hor",
+    categories = {"hor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -222,7 +222,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "wood-to-nafta",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -243,7 +243,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphtha-to-syngas",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -264,7 +264,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "crude-oil-to-heavy-oil",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -284,7 +284,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "crude-oil-to-heavy-oil-2",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -305,7 +305,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "heavy-oil-to-natural-gas",
-    category = "fts-reactor",
+    categories = {"fts-reactor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -328,7 +328,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "heavy-oil-to-gasoline-2",
-    category = "fts-reactor",
+    categories = {"fts-reactor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -351,7 +351,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "heavy-oil-to-syngas",
-    category = "fts-reactor",
+    categories = {"fts-reactor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -374,7 +374,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "processed-light-oil-to-olefins",
-    category = "reformer",
+    categories = {"reformer"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -392,7 +392,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "processed-light-oil-to-light-oil",
-    category = "reformer",
+    categories = {"reformer"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -410,7 +410,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-to-crude",
-    category = "upgrader",
+    categories = {"upgrader"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -429,7 +429,7 @@ if mods["pyhightech"] and mods["pyrawores"] and mods["pyfusionenergy"] then
     RECIPE {
         type = "recipe",
         name = "pure-natural-gas-to-methane",
-        category = "gas-refinery",
+        categories = {"gas-refinery"},
         enabled = false,
         energy_required = 10,
         ingredients = {
@@ -450,7 +450,7 @@ else
         RECIPE {
             type = "recipe",
             name = "pure-natural-gas-to-methane-2",
-            category = "gas-refinery",
+            categories = {"gas-refinery"},
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -470,7 +470,7 @@ else
         RECIPE {
             type = "recipe",
             name = "pure-natural-gas-to-petgas",
-            category = "gas-refinery",
+            categories = {"gas-refinery"},
             enabled = false,
             energy_required = 10,
             ingredients = {
@@ -492,7 +492,7 @@ end
 RECIPE {
     type = "recipe",
     name = "residual-gas-to-gasoline",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -510,7 +510,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "residual-gas-to-syngas",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -528,7 +528,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "residual-gas-to-olefins",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -546,7 +546,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-2-petgas",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -568,7 +568,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "oil-breakdown",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -588,7 +588,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-breakdown",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -608,7 +608,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-breakdown-2",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -639,7 +639,7 @@ RECIPE {
     type = "recipe",
     name = "kerogen-1",
     enabled = false,
-    category = "kerogen",
+    categories = {"kerogen"},
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "hot-air",    amount = 1000},
@@ -657,7 +657,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "kerogen-2",
-    category = "kerogen",
+    categories = {"kerogen"},
     enabled = false,
     energy_required = 15,
     ingredients = {
@@ -677,7 +677,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "kerogen-extraction",
-    category = "hpf",
+    categories = {"hpf"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -695,7 +695,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "kerogen-extraction-2",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -714,7 +714,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "kerogen-extraction-3",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -733,7 +733,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "kerogen-separation",
-    category = "gas-separator",
+    categories = {"gas-separator"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -753,7 +753,7 @@ if mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "lubricant-breakdown-olefin",
-        category = "cracker",
+        categories = {"cracker"},
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -774,7 +774,7 @@ else
     RECIPE {
         type = "recipe",
         name = "lubricant-breakdown-olefin-2",
-        category = "cracker",
+        categories = {"cracker"},
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -798,7 +798,7 @@ if mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "lubricant-breakdown-bitumen",
-        category = "hor",
+        categories = {"hor"},
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -818,7 +818,7 @@ else
     RECIPE {
         type = "recipe",
         name = "lubricant-breakdown-bitumen",
-        category = "hor",
+        categories = {"hor"},
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -837,7 +837,7 @@ end
 RECIPE {
     type = "recipe",
     name = "natural-gas-to-petgas",
-    category = "carbonfilter",
+    categories = {"carbonfilter"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -854,7 +854,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-medium-distillate",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -872,7 +872,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "medium-distillate-to-high-distillate",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -891,7 +891,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "gas-condensates",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -910,7 +910,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "syngas-to-h2",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -931,7 +931,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-to-scrude",
-    category = "hor",
+    categories = {"hor"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -951,7 +951,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "btx-to-aromatics",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -972,7 +972,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "btx-to-styrene",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -994,7 +994,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "methane-to-methanol",
-    category = "methanol",
+    categories = {"methanol"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -1012,7 +1012,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "methane-to-methanol4",
-    category = "methanol",
+    categories = {"methanol"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -1030,7 +1030,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "condensates",
-    category = "compressor",
+    categories = {"compressor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -1051,7 +1051,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-to-scrude",
-    category = "hor",
+    categories = {"hor"},
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -1071,7 +1071,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "nafta-to-aromatics",
-    category = "reformer",
+    categories = {"reformer"},
     enabled = false,
     energy_required = 4,
     ingredients = {

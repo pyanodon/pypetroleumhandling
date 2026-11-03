@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "oil-01",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -19,7 +19,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "oil-02",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 9,
     ingredients = {
@@ -38,7 +38,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "oil-03",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -57,7 +57,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "oil-04",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -76,7 +76,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-01",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -94,7 +94,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-02",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 9,
     ingredients = {
@@ -113,7 +113,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-03",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -132,7 +132,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-04",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -151,7 +151,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-01",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -169,7 +169,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-02",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 9,
     ingredients = {
@@ -188,7 +188,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-03",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -207,7 +207,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-04",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -226,7 +226,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "water-saline-pumpjack",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -244,7 +244,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "water-free",
-    category = "pumpjack",
+    categories = {"pumpjack"},
     enabled = false,
     energy_required = 1,
     ingredients = {

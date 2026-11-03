@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "minor-extract-gas-from-coalbed-3",
-    category = "coalbed",
+    categories = {"coalbed"},
     enabled = false,
     energy_required = 15,
     ingredients = {
@@ -21,7 +21,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-gas-from-coalbed-3",
-    category = "coalbed",
+    categories = {"coalbed"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -41,7 +41,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-gas-from-coalbed-4",
-    category = "coalbed",
+    categories = {"coalbed"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -62,7 +62,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "coalbed-gas-to-coalgas",
-    category = "carbonfilter",
+    categories = {"carbonfilter"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -80,7 +80,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "coalbed-gas-to-syngas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -99,7 +99,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "coalbed-gas-to-co2",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -120,7 +120,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "coalbed-gas-to-acidgas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -141,7 +141,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "coalbed-gas-to-refsyngas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -162,7 +162,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "refined-natural-gas-to-refsyngas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -183,7 +183,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-to-syngas",
-    category = "gas-refinery",
+    categories = {"gas-refinery"},
     enabled = false,
     energy_required = 8,
     ingredients = {

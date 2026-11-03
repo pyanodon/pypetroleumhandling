@@ -2,7 +2,7 @@ if mods["pyhightech"] and mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "drilling-fluid-2",
-        category = "mixer",
+        categories = {"mixer"},
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -24,7 +24,7 @@ else
         RECIPE {
             type = "recipe",
             name = "drilling-fluid-2",
-            category = "mixer",
+            categories = {"mixer"},
             enabled = false,
             energy_required = 4,
             ingredients = {
@@ -45,7 +45,7 @@ else
         RECIPE {
             type = "recipe",
             name = "drilling-fluid-2",
-            category = "mixer",
+            categories = {"mixer"},
             enabled = false,
             energy_required = 4,
             ingredients = {

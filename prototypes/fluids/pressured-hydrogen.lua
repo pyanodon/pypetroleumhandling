@@ -15,7 +15,7 @@ FLUID {
 RECIPE {
     type = "recipe",
     name = "pressured-hydrogen",
-    category = "rectisol",
+    categories = {"rectisol"},
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "hydrogen", amount = 500},
@@ -31,4 +31,4 @@ RECIPE {
     order = "a",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/compress-hydrogen.png",
     icon_size = 32,
-}:add_unlock("light-oil-mk02"):change_category("compressor")
+}:add_unlock("light-oil-mk02"):replace_category("rectisol", "compressor")

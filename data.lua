@@ -37,50 +37,20 @@ require "prototypes.technologies.oil-distillation"
 require "prototypes/technologies/vanadium-processing"
 
 --(( BUILDINGS ))--
-require "prototypes.buildings.oil-sand-extractor-mk01"
-require "prototypes.buildings.oil-sand-extractor-mk02"
-require "prototypes.buildings.oil-sand-extractor-mk03"
-require "prototypes.buildings.oil-sand-extractor-mk04"
-require "prototypes.buildings.heavy-oil-refinery-mk01"
-require "prototypes.buildings.heavy-oil-refinery-mk02"
-require "prototypes.buildings.heavy-oil-refinery-mk03"
-require "prototypes.buildings.heavy-oil-refinery-mk04"
-require "prototypes.buildings.upgrader-mk01"
-require "prototypes.buildings.upgrader-mk02"
-require "prototypes.buildings.upgrader-mk03"
-require "prototypes.buildings.upgrader-mk04"
-require "prototypes.buildings.cracker-mk01"
-require "prototypes.buildings.cracker-mk02"
-require "prototypes.buildings.cracker-mk03"
-require "prototypes.buildings.cracker-mk04"
+require "prototypes.buildings.oil-sand-extractor"
+require "prototypes.buildings.heavy-oil-refinery"
+require "prototypes.buildings.upgrader"
+require "prototypes.buildings.cracker"
 require "prototypes.buildings.reformer"
 require "prototypes.buildings.rhe"
-require "prototypes.buildings.tholin-atm-mk01"
-require "prototypes.buildings.tholin-atm-mk02"
-require "prototypes.buildings.tholin-atm-mk03"
-require "prototypes.buildings.tholin-atm-mk04"
-require "prototypes.buildings.pumpjack-mk01"
-require "prototypes.buildings.pumpjack-mk02"
-require "prototypes.buildings.pumpjack-mk03"
-require "prototypes.buildings.pumpjack-mk04"
-require "prototypes.buildings.tholin-plant-mk01"
-require "prototypes.buildings.tholin-plant-mk02"
-require "prototypes.buildings.tholin-plant-mk03"
-require "prototypes.buildings.tholin-plant-mk04"
+require "prototypes.buildings.tholin-atm"
+require "prototypes.buildings.pumpjack"
+require "prototypes.buildings.tholin-plant"
 require "prototypes.buildings.light-oil-refinery"
-require "prototypes.buildings.coalbed-mk01"
-require "prototypes.buildings.coalbed-mk02"
-require "prototypes.buildings.coalbed-mk03"
-require "prototypes.buildings.coalbed-mk04"
-require "prototypes.buildings.gas-refinery-mk01"
-require "prototypes.buildings.gas-refinery-mk02"
-require "prototypes.buildings.gas-refinery-mk03"
-require "prototypes.buildings.gas-refinery-mk04"
+require "prototypes.buildings.coalbed"
+require "prototypes.buildings.gas-refinery"
 require "prototypes.buildings.sulfur-mine"
 require "prototypes.buildings.guar-gum-plantation"
-require "prototypes.buildings.guar-gum-plantation-mk02"
-require "prototypes.buildings.guar-gum-plantation-mk03"
-require "prototypes.buildings.guar-gum-plantation-mk04"
 require "prototypes.buildings.fracking-rig"
 require "prototypes.buildings.retorter"
 require "prototypes.buildings.oil-boiler-mk01"
@@ -200,23 +170,23 @@ if mods["pyrawores"] then
 else
     data.raw.fluid["hydrogen"].fuel_value = "20kJ"
 end
-
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "syngas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "refsyngas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "methanol", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "combustion-mixture1", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "oleochemicals", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "olefin", damage_modifier = 2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "btx", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "scrude", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "natural-gas", damage_modifier = 1.2})
-table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "fuel-oil", damage_modifier = 1.2})
+local flamethrower_ammo = data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids--[[@as data.StreamFluidProperties]]
+table.insert(flamethrower_ammo, {type = "syngas", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "refsyngas", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "methanol", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "combustion-mixture1", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "oleochemicals", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "olefin", damage_modifier = 2})
+table.insert(flamethrower_ammo, {type = "btx", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "scrude", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "natural-gas", damage_modifier = 1.2})
+table.insert(flamethrower_ammo, {type = "fuel-oil", damage_modifier = 1.2})
 
 if mods["pyhightech"] then
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "methane", damage_modifier = 1.2})
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "benzene", damage_modifier = 1.2})
+    table.insert(flamethrower_ammo, {type = "methane", damage_modifier = 1.2})
+    table.insert(flamethrower_ammo, {type = "benzene", damage_modifier = 1.2})
 end
 
 if mods["pyalienlife"] then
-    table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, {type = "ethanol", damage_modifier = 1.2})
+    table.insert(flamethrower_ammo, {type = "ethanol", damage_modifier = 1.2})
 end

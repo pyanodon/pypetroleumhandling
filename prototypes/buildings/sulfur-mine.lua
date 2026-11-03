@@ -73,7 +73,7 @@ ENTITY {
                 south_position = {2, -3.75},
                 frequency = 90,
                 starting_vertical_speed = 0.09,
-                slow_down_factor = 1,
+                vertical_speed_slowdown = 1,
                 starting_frame_deviation = 60
             },
         },
@@ -81,7 +81,7 @@ ENTITY {
     energy_usage = "30MW",
     mining_power = 5,
     resource_searching_radius = 0.49,
-    vector_to_place_result = {0, -3.65},
+    vector_to_place_result = {0, -3.8},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
@@ -109,6 +109,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/sulfur-mine.ogg", volume = 1.0},
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/sulfur-mine.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "medium-distillate-to-stripped-distillate",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -19,7 +19,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-light-oil",
-    category = "compressor",
+    categories = {"compressor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -40,7 +40,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-gasoline",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -58,7 +58,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-methanol",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -76,7 +76,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-olefin",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -94,7 +94,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-fuel-oil",
-    category = "lor",
+    categories = {"lor"},
     enabled = false,
     energy_required = 4,
     ingredients = {

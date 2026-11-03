@@ -83,17 +83,22 @@ ENTITY {
         destroy_non_fuel_fluid = false,
         fluid_box = {
             volume = 100,
-            height = 2,
             pipe_connections = {
                 {flow_direction = "input", position = {0, 2.0}, direction = defines.direction.south}
             },
             pipe_covers = py.pipe_covers(false, true, true, true),
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.75}, nil, nil),
             production_type = "input",
         },
         effectivity = 2,
         burns_fluid = true,
         scale_fluid_usage = true,
+        light_flicker = {
+            minimum_intensity = 0,
+            maximum_intensity = 0,
+            light_intensity_to_size_coefficient = 0,
+            color = {0, 0, 0},
+        },
         --fluid_usage_per_tick = 2,
         smoke = {{
             name = "turbine-smoke",
@@ -113,6 +118,7 @@ ENTITY {
         },
         max_sounds_per_prototype = 3
     },
+    tall = true,
     pictures = {
         north = {
             structure = {
@@ -127,6 +133,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -157,6 +164,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -187,6 +195,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,
@@ -217,6 +226,7 @@ ENTITY {
             fire = {
                 filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-burner-mk01/anim.png",
                 priority = "extra-high",
+                draw_as_glow = true,
                 frame_count = 80,
                 line_length = 10,
                 width = 96,

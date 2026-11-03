@@ -52,7 +52,7 @@ RECIPE("pulp-mill-mk01"):add_ingredient {type = "item", name = "small-parts-01",
 
 RECIPE("py-construction-robot-mk04"):add_ingredient {type = "item", name = "small-parts-03", amount = 10}
 RECIPE("py-logistic-robot-mk04"):add_ingredient {type = "item", name = "small-parts-03", amount = 10}
-RECIPE("benzene-aromatics").category = "cracker"
+RECIPE("benzene-aromatics"):replace_category("distilator", "cracker")
 
 
 
@@ -60,7 +60,7 @@ RECIPE("benzene-aromatics").category = "cracker"
 
 if RECIPE["scrude-to-crude-oil"] then RECIPE("scrude-to-crude-oil"):add_ingredient {type = "fluid", name = "propene", amount = 50} end
 RECIPE("rubber-03"):add_ingredient {type = "item", name = "phenol", amount = 4}
-RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene").category = "fbreactor"
+RECIPE("styrene"):replace_ingredient("syngas", "benzene"):replace_ingredient("aromatics", "ethylene"):replace_category("upgrader", "fbreactor")
 RECIPE("chloroethanol"):replace_ingredient("methanol", "ethylene"):remove_unlock("petroleum-gas-mk02"):add_unlock("ethylene")
 --RECIPE("pure-natural-gas"):replace_ingredient("active-carbon", "colloidal-silica")
 RECIPE("drilling-fluid-3"):add_ingredient {type = "item", name = "collagen", amount = 2}
@@ -85,7 +85,7 @@ end
 RECIPE {
     type = "recipe",
     name = "extract-ammonia-scrude",
-    category = "desulfurization",
+    categories = {"desulfurization"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -106,7 +106,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "rubber-04",
-    category = "upgrader",
+    categories = {"upgrader"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -128,7 +128,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "btx-to-benzene",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -149,7 +149,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "btx-to-ethylene",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -170,7 +170,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "btx-to-methane",
-    category = "cracker",
+    categories = {"cracker"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -191,7 +191,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-cyanic-acid",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -208,7 +208,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-ethylene",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -225,7 +225,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-benzene",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -242,7 +242,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-ammonia",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -259,7 +259,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-methane",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 24,
     ingredients = {
@@ -276,7 +276,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-acetone",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -293,7 +293,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-methanal",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -310,7 +310,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-propene",
-    category = "tholin-plant",
+    categories = {"tholin-plant"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -328,8 +328,8 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "processed-light-oil-to-benzene",
-    --category = "reformer",
-    category = "distilator",
+    --categories = {"reformer"},
+    categories = {"distilator"},
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -348,7 +348,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-methane-from-coalbed",
-    category = "coalbed",
+    categories = {"coalbed"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -370,7 +370,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-methane-from-coalbed-2",
-    category = "coalbed",
+    categories = {"coalbed"},
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -394,7 +394,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "residual-gas-to-propene",
-    category = "distilator",
+    categories = {"distilator"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -413,7 +413,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "guar-04",
-    category = "guar",
+    categories = {"guar"},
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -434,7 +434,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "guar-05",
-    category = "guar",
+    categories = {"guar"},
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -455,7 +455,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphtha-2-tall-oil",
-    category = "lor",
+    categories = {"lor"},
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "naphtha", amount = 150},
@@ -471,7 +471,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-cumene",
-    category = "lor",
+    categories = {"lor"},
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -488,7 +488,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "stripped-distillate-to-benzene",
-    category = "lor",
+    categories = {"lor"},
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "stripped-distillate", amount = 100},
@@ -509,7 +509,7 @@ if mods["pyfusionenergy"] then
     RECIPE {
         type = "recipe",
         name = "methane-to-methanol7",
-        category = "methanol",
+        categories = {"methanol"},
         enabled = false,
         energy_required = 6,
         ingredients = {
@@ -527,7 +527,7 @@ if mods["pyfusionenergy"] then
     RECIPE {
         type = "recipe",
         name = "methane-to-methanol8",
-        category = "methanol",
+        categories = {"methanol"},
         enabled = false,
         energy_required = 6,
         ingredients = {
@@ -547,7 +547,7 @@ end
 RECIPE {
     type = "recipe",
     name = "methane-to-methanol5",
-    category = "methanol",
+    categories = {"methanol"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -565,7 +565,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "methane-to-methanol6",
-    category = "methanol",
+    categories = {"methanol"},
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -583,7 +583,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-to-methane",
-    category = "carbonfilter",
+    categories = {"carbonfilter"},
     enabled = false,
     energy_required = 12,
     ingredients = {
