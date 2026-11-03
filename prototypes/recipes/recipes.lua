@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "bolts",
-    categories = {"crafting"},
+    category = "crafting",
     enabled = true,
     energy_required = 0.2,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "small-parts-01",
-    categories = {"crafting"},
+    category = "crafting",
     enabled = true,
     energy_required = 0.2,
     ingredients = {
@@ -41,7 +41,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "small-parts-02",
-    categories = {"crafting"},
+    category = "crafting",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -65,7 +65,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "small-parts-03",
-    categories = {"crafting-with-fluid"},
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -90,7 +90,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "belt",
-    categories = {"crafting"},
+    category = "crafting",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -110,7 +110,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "rubber-01",
-    categories = {"hor"},
+    category = "hor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -130,7 +130,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "rubber-02",
-    categories = {"hor"},
+    category = "hor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -151,7 +151,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "rubber-03",
-    categories = {"hor"},
+    category = "hor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -174,7 +174,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "kevlar-2",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -193,7 +193,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "drilling-fluids",
-    categories = {"drilling-fluid"},
+    category = "drilling-fluid",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/drilling-fluid-1.png",
     icon_size = 64,
     enabled = false,
@@ -217,7 +217,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "mining-kerogen",
-    categories = {"ground-borer"},
+    category = "ground-borer",
     enabled = false,
     energy_required = 3,
     ingredients = {

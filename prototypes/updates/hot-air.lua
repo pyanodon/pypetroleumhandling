@@ -42,7 +42,16 @@ local function hotairrecipes(extra_recipes)
 
         --add ingredient
         local result = recipe.main_product or recipe.results[1].name
-        local index = RECIPE(recipe.name):has_category("glassworks") and 3 or nil
+        local categories = recipe.categories
+        if not categories and recipe.category then categories = {recipe.category} end
+        local is_glassworks = false
+        for _, category in pairs(categories or {}) do
+            if category == "glassworks" then
+                is_glassworks = true
+                break
+            end
+        end
+        local index = is_glassworks and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
             if data.raw.item["solid-hot-air"] ~= nil then
@@ -50,7 +59,7 @@ local function hotairrecipes(extra_recipes)
             else
                 table.insert(
                     recipe.ingredients,
-                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index} -- TODO: Compare to 2.0
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
                 )
             end
         elseif recipe.ingredients[2] ~= nil then
@@ -59,18 +68,35 @@ local function hotairrecipes(extra_recipes)
             else
                 table.insert(
                     recipe.ingredients,
-                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}  --TODO: Compare to 2.0
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
                 )
             end
         end
-        -- Fix the fluidbox indexing
-        -- if index == 3 then
-        --     for fb_index, ingredient in pairs(recipe.ingredients) do
-        --         if ingredient.type == "fluid" and not ingredient.fluidbox_index then
-        --             ingredient.fluidbox_index = fb_index
-        --         end
-        --     end
-        -- end
+
+        local has_custom_index = false
+        for _, ingredient in pairs(recipe.ingredients) do
+            if ingredient.type == "fluid" and ingredient.fluidbox_index then
+                has_custom_index = true
+                break
+            end
+        end
+        if has_custom_index then
+            local used = {}
+            for _, ingredient in pairs(recipe.ingredients) do
+                if ingredient.type == "fluid" and ingredient.fluidbox_index then
+                    used[ingredient.fluidbox_index] = true
+                end
+            end
+            local next_index = 1
+            while used[next_index] do next_index = next_index + 1 end
+            for _, ingredient in pairs(recipe.ingredients) do
+                if ingredient.type == "fluid" and not ingredient.fluidbox_index then
+                    ingredient.fluidbox_index = next_index
+                    used[next_index] = true
+                    while used[next_index] do next_index = next_index + 1 end
+                end
+            end
+        end
 
         --find tech unlock of og recipe
         local unlock, effect_index
@@ -109,7 +135,7 @@ local function hotairrecipes(extra_recipes)
             local harecipe = RECIPE {
                 type = "recipe",
                 name = hname,
-                categories = recipe.categories,
+                categories = categories,
                 enabled = false,
                 energy_required = recipe.energy_required,
                 ingredients = recipe.ingredients,

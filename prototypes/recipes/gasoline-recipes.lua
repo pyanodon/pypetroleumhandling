@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "anthracene-gasoline-hydrogenation",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "anthracene-gasoline-cracking",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 4,
     ingredients = {

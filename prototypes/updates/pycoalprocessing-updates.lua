@@ -4,20 +4,20 @@
 
 --disabled RECIPES
 
-RECIPE("tar-oil"):remove_unlock("coal-processing-3"):set_fields {hidden = true}
-RECIPE("sulfur-crudeoil"):remove_unlock("desulfurization"):set_fields {hidden = true}
-RECIPE("sulfur-heavyoil"):remove_unlock("desulfurization"):set_fields {hidden = true}
-RECIPE("sulfur-lightoil"):remove_unlock("desulfurization"):set_fields {hidden = true}
-RECIPE("sulfur-petgas"):remove_unlock("desulfurization"):set_fields {hidden = true}
-RECIPE("creosote"):remove_unlock("creosote"):set_fields {hidden = true}
-RECIPE("heavy-oil_from_coal-gas"):remove_unlock("advanced-oil-processing"):set_fields {hidden = true}
-RECIPE("heavyoil-to-coal-gas"):remove_unlock("advanced-oil-processing"):set_fields {hidden = true}
-RECIPE("tar-gasification"):remove_unlock("tar-processing"):set_fields {hidden = true}
-RECIPE("coalgas-syngas"):remove_unlock("desulfurization"):set_fields {hidden = true}
-RECIPE("aromatics-to-rubber"):remove_unlock("advanced-oil-processing"):set_fields {hidden = true}
-RECIPE("oleochemicals-crude-oil"):remove_unlock("advanced-oil-processing"):set_fields {hidden = true}
-RECIPE("creosote-to-aromatics"):remove_unlock("creosote"):set_fields {hidden = true}
-RECIPE("anthraquinone"):remove_unlock("sulfur-processing"):set_fields {hidden = true}
+RECIPE("tar-oil"):remove_unlock("coal-processing-3"):hide()
+RECIPE("sulfur-crudeoil"):remove_unlock("desulfurization"):hide()
+RECIPE("sulfur-heavyoil"):remove_unlock("desulfurization"):hide()
+RECIPE("sulfur-lightoil"):remove_unlock("desulfurization"):hide()
+RECIPE("sulfur-petgas"):remove_unlock("desulfurization"):hide()
+RECIPE("creosote"):remove_unlock("creosote"):hide()
+RECIPE("heavy-oil_from_coal-gas"):remove_unlock("advanced-oil-processing"):hide()
+RECIPE("heavyoil-to-coal-gas"):remove_unlock("advanced-oil-processing"):hide()
+RECIPE("tar-gasification"):remove_unlock("tar-processing"):hide()
+RECIPE("coalgas-syngas"):remove_unlock("desulfurization"):hide()
+RECIPE("aromatics-to-rubber"):remove_unlock("advanced-oil-processing"):hide()
+RECIPE("oleochemicals-crude-oil"):remove_unlock("advanced-oil-processing"):hide()
+RECIPE("creosote-to-aromatics"):remove_unlock("creosote"):hide()
+RECIPE("anthraquinone"):remove_unlock("sulfur-processing"):hide()
 
 --TECHNOLOGIES--
 TECHNOLOGY("excavation-1"):add_pack("chemical-science-pack")
@@ -71,7 +71,7 @@ end
 RECIPE {
     type = "recipe",
     name = "tar-quenching",
-    categories = {"quenching-tower"},
+    category = "quenching-tower",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -91,9 +91,9 @@ RECIPE {
     order = "tailings-a"
 }:add_unlock("separation")
 
-RECIPE("tailings-copper-iron"):remove_unlock("separation"):set_fields {hidden = true}
+RECIPE("tailings-copper-iron"):remove_unlock("separation"):hide()
 
-RECIPE("tailings-borax-niobium"):remove_unlock("fluid-separation"):set_fields {hidden = true}
+RECIPE("tailings-borax-niobium"):remove_unlock("fluid-separation"):hide()
 
 --parts2
 
@@ -175,7 +175,7 @@ RECIPE("mining-niobium"):remove_unlock("excavation-2"):add_unlock("excavation-3"
 RECIPE {
     type = "recipe",
     name = "fuel-oil-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -197,7 +197,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "natural-gas-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -218,7 +218,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -240,7 +240,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -262,7 +262,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "crude-oil-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -284,7 +284,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphtha-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -306,7 +306,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "lubricant-combustion",
-    categories = {"combustion"},
+    category = "combustion",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -329,7 +329,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-olefin-scrude",
-    categories = {"desulfurization"},
+    category = "desulfurization",
     enabled = false,
     energy_required = 4,
     ingredients = {

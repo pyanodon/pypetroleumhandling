@@ -1,6 +1,6 @@
 RECIPE("py-asphalt"):replace_ingredient("tar", "pitch")
 
-RECIPE("reformer-mk02"):add_ingredient {type = "item", name = "py-tank-5000", amount = 2}
+RECIPE("reformer-mk02"):add_ingredient {type = "item", name = "py-tank-5", amount = 2}
 RECIPE("py-construction-robot-mk01"):add_ingredient {type = "item", name = "belt", amount = 3}
 RECIPE("py-logistic-robot-mk01"):add_ingredient {type = "item", name = "belt", amount = 3}
 RECIPE("mk02-locomotive"):add_ingredient {type = "item", name = "rubber", amount = 40}
@@ -9,12 +9,12 @@ RECIPE("mk02-fluid-wagon"):add_ingredient {type = "item", name = "rubber", amoun
 RECIPE("py-roboport-mk02"):add_ingredient {type = "item", name = "small-parts-02", amount = 20}
 RECIPE("py-roboport-mk03"):add_ingredient {type = "item", name = "small-parts-03", amount = 50}
 
-table.insert(RECIPE("ash-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "soot", amount = 1, independent_probability = 0.2})
+table.insert(RECIPE("ash-separation").results, {type = "item", name = "soot", amount = 1, probability = 0.2})
 
 RECIPE {
     type = "recipe",
     name = "bitumen-to-asphalt",
-    categories = {"hor"},
+    category = "hor",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -30,16 +30,16 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-separation",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "item", name = "soot", amount = 2}
     },
     results = {
-        {type = "item", name = "iron-ore",   amount = 1, independent_probability = 0.2},
-        {type = "item", name = "copper-ore", amount = 1, independent_probability = 0.2},
-        {type = "item", name = "ash",        amount = 1, independent_probability = 0.3}
+        {type = "item", name = "iron-ore",   amount = 1, probability = 0.2},
+        {type = "item", name = "copper-ore", amount = 1, probability = 0.2},
+        {type = "item", name = "ash",        amount = 1, probability = 0.3}
     },
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s.png",
     icon_size = 64,
