@@ -120,6 +120,7 @@ local function render_text(drill, time_to_live)
     }
 end
 
+---@param event EventData.on_built_entity|EventData.on_robot_built_entity|EventData.on_space_platform_built_entity|EventData.script_raised_built|EventData.script_raised_revive
 py.on_event(py.events.on_built(), function(event)
     local drill = event.entity
     local drill_base = derrick_types[drill.name]

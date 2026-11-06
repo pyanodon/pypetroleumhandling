@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.5
-Date: ???
+Date: ????
   Changes:
+    - Moved yafc integrations from postprocessing to here
     - Fixed hot air nerfing casting recipes instead of buffing them
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.4
