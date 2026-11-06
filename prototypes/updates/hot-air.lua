@@ -101,14 +101,12 @@ local function hotairrecipes(extra_recipes)
                 RECIPE(recipe.name):remove_unlock(unlock)
             end
             data.raw.recipe[recipe.name] = nil
-        else
-            RECIPE(recipe.name):multiply_result_amount(result, 1.25)
         end
 
         --log(serpent.block(recipe))
         local hname = "hotair-" .. recipe.name
         if recipe.results then
-            RECIPE {
+            local harecipe = RECIPE {
                 type = "recipe",
                 name = hname,
                 categories = recipe.categories,
@@ -123,6 +121,9 @@ local function hotairrecipes(extra_recipes)
                 order = recipe.order and (recipe.order .. "-a") or nil,
                 allow_productivity = allow_productivity,
             }
+            if not allow_productivity then
+                harecipe:multiply_result_amount(result, 1.25)
+            end
             --
             if recipe.enabled == false then
                 if unlock ~= nil then
