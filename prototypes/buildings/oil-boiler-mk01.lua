@@ -21,7 +21,7 @@ ITEM {
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
     flags = {},
-    subgroup = "py-petroleum-handling-buildings-extras",
+    subgroup = "py-petroleum-handling-buildings-mk01",
     order = "b",
     place_result = "oil-boiler-mk01",
     stack_size = 10
@@ -74,6 +74,7 @@ ENTITY {
         production_type = "output",
         filter = "steam"
     },
+    fast_replaceable_group = "oil-boiler",
     energy_consumption = "29.61MW",
     energy_source = {
         type = "fluid",
