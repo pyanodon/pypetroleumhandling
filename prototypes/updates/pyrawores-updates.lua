@@ -108,11 +108,11 @@ RECIPE("natural-gas-derrick-mk04"):replace_ingredient("distilator", "distilator-
 
 --RECIPES--
 
-RECIPE("oil-sand-slurry"):replace_category("mixer", "hydroclassifier")
-RECIPE("bitumen"):replace_category("mixer", "flotation")
-RECIPE("chloroethanol"):replace_category("mixer", "wet-scrubber")
-RECIPE("ethylene-glycol"):replace_category("mixer", "scrubber")
-RECIPE("py-tank-10000"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
+RECIPE("oil-sand-slurry").category = "hydroclassifier"
+RECIPE("bitumen").category = "flotation"
+RECIPE("chloroethanol").category = "wet-scrubber"
+RECIPE("ethylene-glycol").category = "scrubber"
+RECIPE("py-tank-10"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
 if RECIPE["bitumen-to-scrude"] then RECIPE("bitumen-to-scrude"):replace_ingredient("chromium", "sncr-alloy"):add_ingredient {type = "fluid", name = "hydrogen", amount = 100} end
 if RECIPE["tar-to-scrude"] then RECIPE("tar-to-scrude"):replace_ingredient("chromium", "ticl4") end
 if RECIPE["extract-sulfur-scrude"] then RECIPE("extract-sulfur-scrude"):replace_ingredient("copper-plate", "nickel-plate") end
@@ -139,7 +139,7 @@ RECIPE("mining-lead"):replace_ingredient("coal-gas", "acetylene"):remove_ingredi
 RECIPE("mining-nickel"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient {type = "fluid", name = "drilling-fluid-2", amount = 150}
 RECIPE("mining-tin"):remove_ingredient("lubricant"):add_ingredient {type = "fluid", name = "drilling-fluid-1", amount = 150}:replace_ingredient("coal-gas", "steam")
 RECIPE("mining-titanium"):replace_ingredient("coal-gas", "acetylene"):remove_ingredient("lubricant"):add_ingredient {type = "fluid", name = "drilling-fluid-1", amount = 100}
-RECIPE("mining-zinc"):replace_ingredient("coal-gas", "syngas"):remove_ingredient("lubricant"):add_ingredient {type = "fluid", name = "drilling-fluid-2", amount = 150}
+RECIPE("mining-zinc"):replace_ingredient("coal-gas", "aromatics"):remove_ingredient("lubricant"):add_ingredient {type = "fluid", name = "drilling-fluid-2", amount = 150}
 
 --RECIPE('drilling-fluid-1'):add_ingredient({type = 'item', name = 'starch', amount = 4})
 RECIPE("drilling-fluid-2"):add_ingredient {type = "item", name = "starch", amount = 4}
@@ -155,9 +155,9 @@ RECIPE("hot-syngas-cooldown"):remove_unlock("coal-processing-3"):add_unlock("oil
 
 RECIPE("py-coal-tile"):remove_unlock("py-asphalt"):add_unlock("py-asphalt-mk02")
 
-table.insert(RECIPE("soot-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "ore-aluminium", amount = 1, independent_probability = 0.1})
-table.insert(RECIPE("soot-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "ore-zinc", amount = 1, independent_probability = 0.1})
-table.insert(RECIPE("soot-separation").results--[[@as data.ProductPrototype]], {type = "item", name = "ore-lead", amount = 1, independent_probability = 0.1})
+table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-aluminium", amount = 1, probability = 0.1})
+table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-zinc", amount = 1, probability = 0.1})
+table.insert(RECIPE("soot-separation").results, {type = "item", name = "ore-lead", amount = 1, probability = 0.1})
 
 RECIPE("rail-2"):add_ingredient {type = "item", name = "bolts", amount = 4}
 
@@ -166,7 +166,7 @@ RECIPE("rail-2"):add_ingredient {type = "item", name = "bolts", amount = 4}
 RECIPE {
     type = "recipe",
     name = "sncr-alloy",
-    categories = {"py-rawores-smelter"},
+    category = "py-rawores-smelter",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -186,7 +186,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "sncr-alloy-2",
-    categories = {"py-rawores-smelter"},
+    category = "py-rawores-smelter",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -207,7 +207,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-to-nickel",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -227,7 +227,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-to-nitrogen",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -246,7 +246,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-to-nickel",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -266,7 +266,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-to-hydrogen",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -286,7 +286,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "extract-nitrogen-scrude",
-    categories = {"desulfurization"},
+    category = "desulfurization",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -307,7 +307,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "heavy-oil-to-kerosene",
-    categories = {"olefin"},
+    category = "olefin",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -326,7 +326,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "ticl4",
-    categories = {"hpf"},
+    category = "hpf",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -347,7 +347,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "plastic-bar-02",
-    categories = {mods.pyhightech and "fbreactor" or "cracker"},
+    category = mods.pyhightech and "fbreactor" or "cracker",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -369,7 +369,7 @@ end
 RECIPE {
     type = "recipe",
     name = "aromatics-to-petgas",
-    categories = {"reformer"},
+    category = "reformer",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -389,7 +389,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "naphtha-to-h2",
-    categories = {"cracker"},
+    category = "cracker",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -409,7 +409,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "btx-to-xylenol",
-    categories = {"cracker"},
+    category = "cracker",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -430,7 +430,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-nitrogen",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 48,
     ingredients = {
@@ -447,7 +447,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-chlorine",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 13,
     ingredients = {
@@ -464,7 +464,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-hydrogen",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 36,
     ingredients = {
@@ -481,7 +481,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "coalbed-gas-to-hydrogen",
-    categories = {"gas-refinery"},
+    category = "gas-refinery",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -500,7 +500,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrubbing-purified-syngas",
-    categories = {"wet-scrubber"},
+    category = "wet-scrubber",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -523,7 +523,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-iron",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -531,7 +531,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "iron-ore", amount = 10, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",      amount = 1, independent_probability = 0.3}
+        {type = "item", name = "ash",      amount = 1, probability = 0.3}
     },
     main_product = "iron-ore",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-iron.png",
@@ -543,7 +543,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-copper",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -551,7 +551,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "copper-ore", amount = 8, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",        amount = 1, independent_probability = 0.3}
+        {type = "item", name = "ash",        amount = 1, probability = 0.3}
     },
     main_product = "copper-ore",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-copper.png",
@@ -563,7 +563,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-aluminium",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -571,7 +571,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "ore-aluminium", amount = 10, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",           amount = 1, independent_probability = 0.3}
+        {type = "item", name = "ash",           amount = 1, probability = 0.3}
     },
     main_product = "ore-aluminium",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-aluminium.png",
@@ -583,7 +583,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-zinc",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -591,7 +591,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "ore-zinc", amount = 8, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",      amount = 1, independent_probability = 0.3}
+        {type = "item", name = "ash",      amount = 1, probability = 0.3}
     },
     main_product = "ore-zinc",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-zinc.png",
@@ -603,7 +603,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-lead",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -611,7 +611,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "ore-lead", amount = 8, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",      amount = 1, independent_probability = 0.3}
+        {type = "item", name = "ash",      amount = 1, probability = 0.3}
     },
     main_product = "ore-lead",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-lead.png",
@@ -623,15 +623,15 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-silver",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "silver-plate", amount = 1, independent_probability = 0.3, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",          amount = 1, independent_probability = 0.3}
+        {type = "item", name = "silver-plate", amount = 1, probability = 0.3, autotech_is_not_primary_source = true},
+        {type = "item", name = "ash",          amount = 1, probability = 0.3}
     },
     main_product = "silver-plate",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-silver.png",
@@ -643,15 +643,15 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "soot-to-gold",
-    categories = {"solid-separator"},
+    category = "solid-separator",
     enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "soot", amount = 10}
     },
     results = {
-        {type = "item", name = "gold-plate", amount = 1, independent_probability = 0.5, autotech_is_not_primary_source = true},
-        {type = "item", name = "ash",        amount = 1, independent_probability = 0.3}
+        {type = "item", name = "gold-plate", amount = 1, probability = 0.5, autotech_is_not_primary_source = true},
+        {type = "item", name = "ash",        amount = 1, probability = 0.3}
     },
     main_product = "gold-plate",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/class-s-gold.png",
@@ -663,7 +663,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-2-diesel",
-    categories = {"lor"},
+    category = "lor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -682,7 +682,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-2-diesel2",
-    categories = {"lor"},
+    category = "lor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -701,7 +701,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "aromatics-2-petgas2",
-    categories = {"lor"},
+    category = "lor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -720,7 +720,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "high-distillate-separation-hydrogen",
-    categories = {"gas-refinery"},
+    category = "gas-refinery",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -738,7 +738,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-xylenol",
-    categories = {"hor"},
+    category = "hor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -756,7 +756,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-kerosene",
-    categories = {"hor"},
+    category = "hor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -775,7 +775,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "oil-breakdown-2",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -797,7 +797,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "quench-ovengas",
-    categories = {"quenching-tower"},
+    category = "quenching-tower",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -817,7 +817,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrubber-outletgas2",
-    categories = {"wet-scrubber"},
+    category = "wet-scrubber",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -837,7 +837,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrubber-outletgas4",
-    categories = {"lor"},
+    category = "lor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -857,7 +857,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "redhot-coke",
-    categories = {"bof"},
+    category = "bof",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -875,7 +875,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "casting-bolts",
-    categories = {"casting"},
+    category = "casting",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -894,7 +894,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "casting-small-parts",
-    categories = {"casting"},
+    category = "casting",
     enabled = false,
     energy_required = 1,
     ingredients = {

@@ -17,12 +17,10 @@ TECHNOLOGY("excavation-2"):add_pack("production-science-pack")
 TECHNOLOGY("excavation-3"):add_pack("military-science-pack"):add_pack("utility-science-pack"):add_pack("space-science-pack")
 TECHNOLOGY("plastics"):remove_prereq("oil-processing")
 
-data.raw.item["oil-refinery"].hidden = true
-data.raw.item["pumpjack"].hidden = true
-data.raw["assembling-machine"]["oil-refinery"].hidden = true
-data.raw["assembling-machine"]["oil-refinery"].graphics_set = nil
-data.raw["mining-drill"]["pumpjack"].hidden = true
-data.raw["mining-drill"]["pumpjack"].graphics_set = nil
+ITEM("oil-refinery"):hide()
+ENTITY("oil-refinery"):hide().graphics_set = nil
+ITEM("pumpjack"):hide()
+ENTITY("pumpjack"):hide().graphics_set = nil
 TECHNOLOGY("oil-processing"):remove_pack("chemical-science-pack")
 
 data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 15
