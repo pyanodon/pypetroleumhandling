@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "residual-mixture-distillation",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -29,7 +29,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "residual-mixture",
-    categories = {"mixer"},
+    category = "mixer",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -48,7 +48,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "hot-residual-mixture",
-    categories = {"hpf"},
+    category = "hpf",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -67,7 +67,7 @@ if mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "hot-residual-mixture-to-coke",
-        categories = {"upgrader"},
+        category = "upgrader",
         enabled = false,
         energy_required = 6,
         ingredients = {
@@ -87,7 +87,7 @@ else
     RECIPE {
         type = "recipe",
         name = "hot-residual-mixture-to-coke-2",
-        categories = {"upgrader"},
+        category = "upgrader",
         enabled = false,
         energy_required = 6,
         ingredients = {

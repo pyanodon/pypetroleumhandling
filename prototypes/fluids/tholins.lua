@@ -3,7 +3,7 @@
 RECIPE {
     type = "recipe",
     name = "tholins",
-    categories = {"tholin-atm"},
+    category = "tholin-atm",
     enabled = false,
     energy_required = 4,
     ingredients = {

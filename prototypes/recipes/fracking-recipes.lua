@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "frack-saline-water",
-    categories = {"fracking"},
+    category = "fracking",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -23,7 +23,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "frack-tar",
-    categories = {"fracking"},
+    category = "fracking",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -45,7 +45,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "frack-oil",
-    categories = {"fracking"},
+    category = "fracking",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -67,7 +67,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "frack-natural-gas",
-    categories = {"fracking"},
+    category = "fracking",
     enabled = false,
     energy_required = 10,
     ingredients = {

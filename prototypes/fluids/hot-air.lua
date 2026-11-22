@@ -2,7 +2,7 @@ if not mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "hot-air-1",
-        categories = {"rhe"},
+        category = "rhe",
         --hidden = true,
         enabled = false,
         energy_required = 3,

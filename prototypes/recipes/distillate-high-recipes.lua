@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "high-distillate-condensing",
-    categories = {"lor"},
+    category = "lor",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -20,7 +20,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "condensed-distillate-separation",
-    categories = {"gas-refinery"},
+    category = "gas-refinery",
     enabled = false,
     energy_required = 5,
     ingredients = {

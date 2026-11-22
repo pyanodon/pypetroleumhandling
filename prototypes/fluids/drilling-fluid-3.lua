@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "drilling-fluid-3",
-    categories = {"mixer"},
+    category = "mixer",
     enabled = false,
     energy_required = 4,
     ingredients = {

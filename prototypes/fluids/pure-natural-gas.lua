@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "pure-natural-gas",
-    categories = {"carbonfilter"},
+    category = "carbonfilter",
     enabled = false,
     energy_required = 10,
     ingredients = {

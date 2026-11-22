@@ -1,4 +1,3 @@
----@diagnostic disable-next-line: need-check-nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["bitumen-seep"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["bitumen-seep"] = {}
 
@@ -73,6 +72,7 @@ ENTITY {
     collision_box = {{-5.4, -5.4}, {5.4, 5.4}},
     selection_box = {{-2.4, -2.4}, {2.4, 2.4}},
     autoplace = {
+        name = "bitumen-seep",
         order = "c-bitumen-seep", -- Other resources are "b"; oil won't get placed if something else is already there.
         control = "bitumen-seep",
         -- We return the chance of spawning on any given tile here

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "natural-gas-refining",
-    categories = {"compressor"},
+    category = "compressor",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -21,7 +21,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-refining",
-    categories = {"reformer"},
+    category = "reformer",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -44,7 +44,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "scrude-refining",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -70,7 +70,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "oil-refining",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -93,7 +93,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-refining",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 10,
     ingredients = {

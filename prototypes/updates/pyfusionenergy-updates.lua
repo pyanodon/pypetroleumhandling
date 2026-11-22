@@ -178,7 +178,7 @@ if mods.pystellarexpedition then
     RECIPE {
         type = "recipe",
         name = "bitumen-to-vanadium",
-        categories = {"upgrader"},
+        category = "upgrader",
         enabled = false,
         energy_required = 3,
         ingredients = {
@@ -198,7 +198,7 @@ end
 RECIPE {
     type = "recipe",
     name = "methane-to-methanol2",
-    categories = {"methanol"},
+    category = "methanol",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -216,7 +216,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "methane-to-methanol3",
-    categories = {"methanol"},
+    category = "methanol",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -235,7 +235,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "low-distillate-to-grease",
-    categories = {"hor"},
+    category = "hor",
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "low-distillate", amount = 100},

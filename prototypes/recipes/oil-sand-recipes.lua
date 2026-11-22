@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "crush-oil-sand",
-    categories = {"crusher"},
+    category = "crusher",
     enabled = false,
     energy_required = 1.5,
     ingredients = {
@@ -9,7 +9,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crushed-oil-sand", amount = 1},
-        {type = "item", name = "stone",            amount = 1, independent_probability = 0.5}
+        {type = "item", name = "stone",            amount = 1, probability = 0.5}
     },
     main_product = "crushed-oil-sand",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/crusher-oil-sand.png",
@@ -21,7 +21,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-to-sulfur",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -41,7 +41,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-to-heavy-oil",
-    categories = {"upgrader"},
+    category = "upgrader",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -62,7 +62,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "bitumen-gasification",
-    categories = {"cracker"},
+    category = "cracker",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -83,7 +83,7 @@ if mods["pyrawores"] then
     RECIPE {
         type = "recipe",
         name = "quenching-dirty-syngas",
-        categories = {"quenching-tower"},
+        category = "quenching-tower",
         enabled = false,
         energy_required = 24,
         ingredients = {
@@ -106,7 +106,7 @@ else
     RECIPE {
         type = "recipe",
         name = "quenching-dirty-syngas",
-        categories = {"quenching-tower"},
+        category = "quenching-tower",
         enabled = false,
         energy_required = 24,
         ingredients = {
@@ -130,7 +130,7 @@ end
 RECIPE {
     type = "recipe",
     name = "hot-syngas-cooldown",
-    categories = {"heat-exchanger"},
+    category = "heat-exchanger",
     enabled = false,
     energy_required = 4,
     ingredients = {

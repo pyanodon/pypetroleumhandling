@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "ethylene-glycol",
-    categories = {"mixer"}, --pyro scrubber
+    category = "mixer", --pyro scrubber
     enabled = false,
     energy_required = 4,
     ingredients = {
