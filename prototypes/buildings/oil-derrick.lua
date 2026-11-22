@@ -231,15 +231,6 @@ local graphic_sets_per_tier = {
         animation = {
             layers = {
                 {
-                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk04/off.png",
-                    priority = "extra-high",
-                    width = 384,
-                    height = 437,
-                    frame_count = 1,
-                    repeat_count = 80,
-                    shift = util.by_pixel(16, -43),
-                },
-                {
                     filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk04/fluid.png",
                     width = 224,
                     height = 192,
@@ -305,13 +296,14 @@ for i = 1, 4 do
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         placeable_by = {item = name, count = 1},
+        fast_replaceable_group = "oil-derrick",
         max_health = 700 * i,
         resource_categories = {"bitumen-seep", "oil-derrick"},
         corpse = "big-remnants",
         dying_explosion = "big-explosion",
         collision_box = collision_boxes_per_tier[i],
         selection_box = selection_boxes_per_tier[i],
-        use_mirroring = true,
+        forced_symmetry = "diagonal-pos",
         module_slots = i,
         allowed_effects = {"consumption", "speed", "productivity"},
         energy_source = {
@@ -321,6 +313,19 @@ for i = 1, 4 do
                 pollution = 20 * i
             },
         },
+        base_picture = (i == 4) and {
+            sheets =
+            {
+                {
+                    filename = "__pypetroleumhandlinggraphics__/graphics/entity/oil-derrick-mk04/off.png",
+                    priority = "extra-high",
+                    width = 384,
+                    height = 437,
+                    frame_count = 1,
+                    shift = util.by_pixel(16, -43),
+                },
+            },
+        } or nil,
         output_fluid_box = {
             volume = i * 1000,
             pipe_covers = pipe_cover(),
@@ -338,12 +343,12 @@ for i = 1, 4 do
         circuit_connector = circuit_connector_definitions["oil-derrick-mk01"],
         circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
         monitor_visualization_tint = {r = 78, g = 173, b = 255},
-        tall = i == 2 or i == 3,
         graphics_set = graphic_sets_per_tier[i],
         impact_category = "metal-large",
         working_sound = {
             sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 1.0},
             idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/oil-derrick.ogg", volume = 0.3},
+            apparent_volume = 2.5
         },
     }
 
@@ -358,7 +363,7 @@ for i = 1, 4 do
         dying_explosion = "big-explosion",
         collision_box = collision_boxes_per_tier[i],
         selection_box = {{0, 0}, {0, 0}},
-        use_mirroring = true,
+        forced_symmetry = "diagonal-pos",
         module_slots = 0,
         allowed_effects = {},
         crafting_categories = {"drilling-fluid"},
@@ -376,7 +381,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 100,
+                volume = 1000,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {1 + i, 1 + i}, direction = defines.direction.south}}
             },
@@ -384,7 +389,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 100,
+                volume = 1000,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {1 + i, -(1 + i)}, direction = defines.direction.east}}
             },
@@ -392,7 +397,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 100,
+                volume = 1000,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {-(1 + i), -(1 + i)}, direction = defines.direction.north}}
             },
@@ -400,7 +405,7 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = pipe_picture(),
                 pipe_covers = pipe_cover(),
-                volume = 100,
+                volume = 1000,
                 render_layer = "lower-object",
                 pipe_connections = {{flow_direction = "input", position = {-(1 + i), 1 + i}, direction = defines.direction.west}}
             },

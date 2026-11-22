@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "naphtha-to-syngas",
-    categories = {"cracker"},
+    category = "cracker",
     enabled = false,
     energy_required = 4,
     ingredients = {

@@ -23,7 +23,7 @@ local function hotairrecipes(extra_recipes)
 
     --gather recipes for the casting unit
     for _, recipe in pairs(data.raw.recipe) do
-        if RECIPE(recipe.name):has_category("casting") and not hab[recipe.name] then
+        if recipe.category == "casting" and not hab[recipe.name] then
             table.insert(afrecipes, table.deepcopy(recipe))
         end
     end
@@ -42,7 +42,7 @@ local function hotairrecipes(extra_recipes)
 
         --add ingredient
         local result = recipe.main_product or recipe.results[1].name
-        local index = RECIPE(recipe.name):has_category("glassworks") and 3 or nil
+        local index = recipe.category == "glassworks" and 3 or nil
 
         if recipe.ingredients[1] ~= nil then
             if data.raw.item["solid-hot-air"] ~= nil then
@@ -50,7 +50,7 @@ local function hotairrecipes(extra_recipes)
             else
                 table.insert(
                     recipe.ingredients,
-                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index} -- TODO: Compare to 2.0
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
                 )
             end
         elseif recipe.ingredients[2] ~= nil then
@@ -59,18 +59,10 @@ local function hotairrecipes(extra_recipes)
             else
                 table.insert(
                     recipe.ingredients,
-                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}  --TODO: Compare to 2.0
+                    {type = "fluid", name = "hot-air", amount = 50, fluidbox_index = index}
                 )
             end
         end
-        -- Fix the fluidbox indexing
-        -- if index == 3 then
-        --     for fb_index, ingredient in pairs(recipe.ingredients) do
-        --         if ingredient.type == "fluid" and not ingredient.fluidbox_index then
-        --             ingredient.fluidbox_index = fb_index
-        --         end
-        --     end
-        -- end
 
         --find tech unlock of og recipe
         local unlock, effect_index
@@ -89,7 +81,7 @@ local function hotairrecipes(extra_recipes)
         end
 
         -- to prod or not to prod
-        local allow_productivity = false
+        allow_productivity = false
         for _, ingredient in pairs(recipe.ingredients) do
             if ingredient.name == "mold" then
                 allow_productivity = true
@@ -98,18 +90,24 @@ local function hotairrecipes(extra_recipes)
         end
         if allow_productivity then
             if unlock then
-                RECIPE(recipe.name):remove_unlock(unlock)
+                data.raw.recipe[recipe.name]:remove_unlock(unlock)
             end
             data.raw.recipe[recipe.name] = nil
+        else
+            recipe:multiply_result_amount(result, 1.25)
         end
 
         --log(serpent.block(recipe))
         local hname = "hotair-" .. recipe.name
+        local category
+        if recipe.category ~= nil then
+            category = recipe.category
+        end
         if recipe.results then
-            local harecipe = RECIPE {
+            RECIPE {
                 type = "recipe",
                 name = hname,
-                categories = recipe.categories,
+                category = category,
                 enabled = false,
                 energy_required = recipe.energy_required,
                 ingredients = recipe.ingredients,
@@ -121,13 +119,10 @@ local function hotairrecipes(extra_recipes)
                 order = recipe.order and (recipe.order .. "-a") or nil,
                 allow_productivity = allow_productivity,
             }
-            if not allow_productivity then
-                harecipe:multiply_result_amount(result, 1.25)
-            end
             --
             if recipe.enabled == false then
                 if unlock ~= nil then
-                    table.insert(data.raw.technology[unlock].effects--[[@cast -?]], {type = "unlock-recipe", recipe = hname})
+                    table.insert(data.raw.technology[unlock].effects, {type = "unlock-recipe", recipe = hname})
                 end
             else
                 data.raw.recipe[hname].enabled = true

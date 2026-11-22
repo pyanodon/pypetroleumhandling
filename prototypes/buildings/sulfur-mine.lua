@@ -41,13 +41,8 @@ ENTITY {
     collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     module_slots = 3,
-    allowed_effects = {"consumption", "speed", "productivity"},
+    allowed_effects = {"speed", "productivity"},
     mining_speed = 5,
-    effect_receiver = {
-        -- makes green modules 9x less effective in order to not trivalize the fluid fuel challenge.
-        -- 20% consumption is still possible with green beacons later on.
-        base_effect = {consumption = 9}
-    },
     energy_source = {
         type = "fluid",
         effectivity = 1,
@@ -78,14 +73,15 @@ ENTITY {
                 south_position = {2, -3.75},
                 frequency = 90,
                 starting_vertical_speed = 0.09,
-                vertical_speed_slowdown = 1,
+                slow_down_factor = 1,
                 starting_frame_deviation = 60
             },
         },
     },
-    energy_usage = "3MW",
+    energy_usage = "30MW",
+    mining_power = 5,
     resource_searching_radius = 0.49,
-    vector_to_place_result = {0, -3.8},
+    vector_to_place_result = {0, -3.65},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
@@ -113,5 +109,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pypetroleumhandlinggraphics__/sounds/sulfur-mine.ogg", volume = 1.0},
         idle_sound = {filename = "__pypetroleumhandlinggraphics__/sounds/sulfur-mine.ogg", volume = 0.3},
+        apparent_volume = 2.5
     }
 }

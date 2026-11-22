@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "tholin-to-co2",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 36,
     ingredients = {
@@ -18,7 +18,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-syngas",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -35,7 +35,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-acetylene",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 24,
     ingredients = {
@@ -52,7 +52,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-acidgas",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -69,7 +69,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-methanol",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -86,7 +86,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-refsyngas",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -103,7 +103,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-glycerol",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -120,7 +120,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-olefins",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -139,7 +139,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-deuterium",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -156,7 +156,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-helium3",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -173,7 +173,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tholin-to-tritium",
-    categories = {"tholin-plant"},
+    category = "tholin-plant",
     enabled = false,
     energy_required = 6,
     ingredients = {

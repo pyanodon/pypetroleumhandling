@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "tar-refining",
-    categories = {"tar"},
+    category = "tar",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -31,7 +31,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "tar-refining-tops",
-    categories = {"tar"},
+    category = "tar",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -58,7 +58,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "pitch-refining",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 5,
     ingredients = {

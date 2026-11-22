@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "bitumen-froth",
-    categories = {"pan"},
+    category = "pan",
     enabled = false,
     energy_required = 5,
     ingredients = {

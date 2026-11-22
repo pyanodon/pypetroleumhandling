@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "chloroethanol",
-    categories = {"mixer"}, --pyro wet-scrubber
+    category = "mixer", --pyro wet-scrubber
     enabled = false,
     energy_required = 4,
     ingredients = {

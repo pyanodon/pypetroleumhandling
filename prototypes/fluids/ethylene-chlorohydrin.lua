@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "ethylene-chlorohydrin",
-    categories = {mods.pyhightech and "fbreactor" or "mixer"},
+    category = mods.pyhightech and "fbreactor" or "mixer",
     enabled = false,
     energy_required = 4,
     ingredients = {

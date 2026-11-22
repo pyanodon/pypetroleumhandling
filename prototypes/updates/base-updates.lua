@@ -1,6 +1,6 @@
 --add kerogen to stone patches
 if data.raw.resource.stone then
-    data.raw.resource["stone"].minable--[[@cast -?]].results = {
+    data.raw.resource["stone"].minable.results = {
         {type = "item", name = "stone",   amount = 1},
         {type = "item", name = "kerogen", amount = 1}
     }
@@ -17,12 +17,10 @@ TECHNOLOGY("excavation-2"):add_pack("production-science-pack")
 TECHNOLOGY("excavation-3"):add_pack("military-science-pack"):add_pack("utility-science-pack"):add_pack("space-science-pack")
 TECHNOLOGY("plastics"):remove_prereq("oil-processing")
 
-data.raw.item["oil-refinery"].hidden = true
-data.raw.item["pumpjack"].hidden = true
-data.raw["assembling-machine"]["oil-refinery"].hidden = true
-data.raw["assembling-machine"]["oil-refinery"].graphics_set = nil
-data.raw["mining-drill"]["pumpjack"].hidden = true
-data.raw["mining-drill"]["pumpjack"].graphics_set = nil
+ITEM("oil-refinery"):hide()
+ENTITY("oil-refinery"):hide().graphics_set = nil
+ITEM("pumpjack"):hide()
+ENTITY("pumpjack"):hide().graphics_set = nil
 TECHNOLOGY("oil-processing"):remove_pack("chemical-science-pack")
 
 data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 15
@@ -46,10 +44,11 @@ local vanilla_techs_to_delete_recipes_from = {
 for _, tech_name in pairs(vanilla_techs_to_delete_recipes_from) do
     local tech = data.raw.technology[tech_name]
     local recipes_to_keep = {}
-    for _, recipe in pairs(tech.effects--[[@cast -?]]) do
+    for _, recipe in pairs(tech.effects) do
         if recipe.type == "unlock-recipe" then
             if remove_old_oil_stuff[recipe.recipe] then
                 recipe.hidden = true
+                recipe.hidden_in_factoriopedia = true
             else
                 table.insert(recipes_to_keep, recipe)
             end
@@ -58,7 +57,6 @@ for _, tech_name in pairs(vanilla_techs_to_delete_recipes_from) do
     tech.effects = recipes_to_keep
 end
 
----@diagnostic disable-next-line: need-check-nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["crude-oil"] = nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["crude-oil"] = nil
 data.raw["autoplace-control"]["crude-oil"] = nil
